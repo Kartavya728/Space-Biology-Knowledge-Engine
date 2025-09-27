@@ -1,30 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gemini Demo</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gemini Demo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="min-h-screen bg-gray-50">
-    <div class="max-w-3xl mx-auto p-6">
-        <header class="mb-6">
-            <h1 class="text-3xl font-bold text-gray-800">Ask Gemini</h1>
-            <p class="text-gray-600">Type a prompt and get a response.</p>
-        </header>
+  <div class="max-w-3xl mx-auto p-6">
+    <header class="mb-6">
+      <h1 class="text-3xl font-bold text-gray-800">Ask Gemini</h1>
+      <p class="text-gray-600">Type a prompt and get a response streamed live.</p>
+    </header>
 
-        <form method="post" class="bg-white shadow rounded-lg p-4 space-y-4">
-            {% csrf_token %}
-            <input class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:border-blue-400" type="text" name="user_input" placeholder="Type something..." required>
-            <button class="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded" type="submit">Submit</button>
-        </form>
+    <form id="chat-form" class="bg-white shadow rounded-lg p-4 space-y-4">
+      {% csrf_token %}
+      <input
+        id="user-input"
+        class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:border-blue-400"
+        type="text"
+        name="user_input"
+        placeholder="Type something..."
+        required
+      >
+      <button
+        class="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded"
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
 
-        {% if output %}
-            <section class="mt-6 bg-white shadow rounded-lg p-4">
-                <h2 class="text-xl font-semibold text-gray-800 mb-2">Gemini says:</h2>
-                <p class="whitespace-pre-wrap text-gray-700">{{ output }}</p>
-            </section>
-        {% endif %}
-    </div>
+    <section id="output-section" class="mt-6 bg-white shadow rounded-lg p-4 hidden">
+      <h2 class="text-xl font-semibold text-gray-800 mb-2">Gemini says:</h2>
+      <p id="output" class="whitespace-pre-wrap text-gray-700"></p>
+    </section>
+  </div>
+
+  <script>
+    const form = document.getElementById("chat-form");
+    const userInputEl = document.getElementById("user-input");
+    const outputSection = document.getElementById("output-section");
+    const outputEl = document.getElementById("output");
+
+    let typingQueue = [];
+    let typingInterval = null;
+
+    function startTypingEffect() {
+      if (typingInterval) return; // already typing
+
+      typingInterval = setInterval(() => {
+        if (typingQueue.length > 0) {
+          outputEl.textContent += typingQueue.shift();
+        } else {
+          clearInterval(typingInterval);
+          typingInterval = null;
+        }
+      }, 30); // speed (ms per char) → tweak for faster/slower typing
+    }
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const userInput = userInputEl.value.trim();
+      if (!userInput) return;
+
+      outputEl.textContent = "";
+      outputSection.classList.remove("hidden");
+
+      if (window.currentStream) {
+        window.currentStream.close();
+      }
+
+      const streamUrl = "/?user_input=" + encodeURIComponent(userInput);
+      const eventSource = new EventSource(streamUrl);
+      window.currentStream = eventSource;
+
+      eventSource.onmessage = function (event) {
+        if (event.data === "[DONE]") {
+          eventSource.close();
+          return;
+        }
+        // push characters to queue instead of appending directly
+        typingQueue.push(...event.data);
+        startTypingEffect();
+      };
+
+      eventSource.onerror = function () {
+        console.error("SSE error, closing stream.");
+        eventSource.close();
+      };
+    });
+  </script>
 </body>
 </html>
