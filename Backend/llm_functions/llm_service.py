@@ -1,35 +1,30 @@
-from django.conf import settings
-import os
-import json
-import os
 from dotenv import load_dotenv
+import os
 from langchain.chat_models import init_chat_model
 
-# Load variables from .env
-# Removed unused imports to keep the code clean
-# from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
-# from langchain_core.output_parsers import JsonOutputParser
-# from langchain_core.runnables import Runnable
-# THIS IS THE CRUCIAL CHANGE: Import from langchain_google_genai directly
-
-def generate_text_with_gemini(user_input: str) -> dict: 
-    load_dotenv()  
+def generate_text_with_gemini(user_input: str):
+    """
+    Stream responses from Gemini as SSE messages.
+    """
+    load_dotenv()
 
     api_key = os.getenv("GOOGLE_API_KEY")
     if api_key is None:
-        raise ValueError("GOOGLE_API_KEY not found in .env file!")
+        yield "data: ERROR - GOOGLE_API_KEY not found in .env file!\n\n"
+        return
 
     os.environ["GOOGLE_API_KEY"] = api_key
 
-    # Initialize the ChatGoogleGenerativeAI model directly
     model = init_chat_model(
-    "gemini-2.5-flash",
-    model_provider="google_genai",
-    streaming=True
+        "gemini-2.5-flash",
+        model_provider="google_genai",
+        streaming=True
     )
 
     try:
-        result = model.invoke(user_input)
-        return {"status": "success", "output": result.content}
+        for chunk in model.stream(user_input):
+            if hasattr(chunk, "content") and chunk.content:
+                yield f"data: {chunk.content}\n\n"
+        yield "data: [DONE]\n\n"   # signal end
     except Exception as e:
-        return {"status": "error", "message": str(e)}
+        yield f"data: ERROR - {str(e)}\n\n"
