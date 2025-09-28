@@ -14,6 +14,5 @@ def home(request):
         response["X-Accel-Buffering"] = "no"
         return response
 
-    # On plain GET (without query param), render template
     return render(request, "core/home.html")
 

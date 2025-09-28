@@ -25,6 +25,6 @@ def generate_text_with_gemini(user_input: str):
         for chunk in model.stream(user_input):
             if hasattr(chunk, "content") and chunk.content:
                 yield f"data: {chunk.content}\n\n"
-        yield "data: [DONE]\n\n"   # signal end
+        yield "data: [DONE]\n\n"
     except Exception as e:
         yield f"data: ERROR - {str(e)}\n\n"

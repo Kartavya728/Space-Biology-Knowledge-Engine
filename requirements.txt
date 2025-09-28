@@ -1,0 +1,8 @@
+langchain
+langchain-community
+langchain-core
+langchain-chroma
+python-dotenv
+ollama
+beautifulsoup4
+langchain-google-genai
