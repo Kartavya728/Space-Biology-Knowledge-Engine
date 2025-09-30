@@ -1,0 +1,5 @@
+This is a correction to: James F Fleming, Davide Pisani, Kazuharu Arakawa, The Evolution of Temperature and Desiccation-Related Protein Families in Tardigrada Reveals a Complex Acquisition of Extremotolerance,Genome Biology and Evolution, Volume 16, Issue 1, January 2024,https://doi.org/10.1093/gbe/evad217
+In the originally published online version of this manuscript, details in the caption to Figure 7 were errored.
+These should read: “[…]CAHS is represented inred, MAHS in purple, SAHS in green, EtAHS alpha inyellow, EtAHS beta inpink, and MRE11 inblue.[…]” instead of: “[…] CAHS is represented inblue, MAHS in purple, SAHS in green, EtAHS alpha inred, EtAHS beta inorange, and MRE11 inblack.[…]”.
+These errors are outlined only in this correction notice to preserve the version of record.
+Articles from Genome Biology and Evolution are provided here courtesy ofOxford University Press

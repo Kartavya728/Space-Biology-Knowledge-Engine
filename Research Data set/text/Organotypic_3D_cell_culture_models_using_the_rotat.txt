@@ -1,0 +1,738 @@
+Abstract
+Human papillomavirus (HPV) infection occurs in differentiating epithelial tissues, and cancers caused by the high-risk types (e.g., HPV16 and HPV18) typically occur at oropharyngeal and anogenital anatomical sites. The HPV life cycle is differentiation-dependent, requiring tissue culture methodology able to recapitulate the three-dimensional (3D) stratified epithelium. Here we report two distinct and complementary methods to grow differentiating epithelial tissues that mimic many critical morphological and biochemical aspects ofin vivotissue. The first approach involves growing primary human epithelial cells on top of a dermal equivalent consisting of collagen fibers and living fibroblast cells. When these cells are grown at the liquid-air interface, differentiation occurs and allows for epithelial stratification. The second approach uses a rotating wall vessel (RWV) bioreactor. The low-fluid-shear microgravity environment inside the bioreactor allows the cells to use collagen-coated microbeads as a growth scaffold and self assemble into 3D cellular aggregates. These approaches are applied to epithelial cells derived from HPV-positive and -negative oral and cervical tissues. The second part of the protocol introduces potential downstream applications for these 3D tissue models.
+We describe methods that will allow readers to start successfully culturing 3D tissues from oral and cervical cells. These tissues have been used for microscopic visualization, scanning-electron microscopy, and large -omics studies to gain insights into epithelial biology, the HPV life cycle, and host-pathogen interactions.
+Support Protocol 1: Isolation of epithelial cells from patient-derived tissues
+Support Protocol 2: Growth and maintenance of primary human epithelial cells in monolayer culture
+Support Protocol 3: PCR-based HPV screening of primary cell cultures
+Basic Protocol 1: Establishing human primary cell-derived 3D organotypic raft cultures
+Support Protocol 4: Growth and maintenance of human A2EN cells as monolayer culture
+Support Protocol 5: Preparing the slow turning lateral vessel bioreactor
+Support Protocol 6: Preparing the cytodex-3 microcarrier beads
+Basic Protocol 2: Establishing human 3D cervical tissues using the rotating wall vessel bioreactor
+Basic Protocol 3: Histological assessment of 3D organotypic raft tissues
+Basic Protocol 4: Spatial analysis of protein expression in 3D organotypic raft cultures
+Basic Protocol 5: Immunofluorescent microscopy imaging of rotating wall vessel derived 3D tissues
+Basic Protocol 6: Ultrastructural visualization and imaging of rotating wall vessel derived 3D tissues
+Support Protocol 7: RNA extraction from 3D tissues
+Basic Protocol 7: Characterization of gene expression by RT-qPCR
+Keywords:HPV, organotypic rafts, rotating wall vessel, bioreactor, 3D culture, cervix, oral, host-microbe interactions
+INTRODUCTION
+Papillomaviruses are a diverse family of double-stranded DNA viruses with an epithelial tropism, infecting both cutaneous and mucosal epithelia of vertebrate hosts, including humans. Human papillomaviruses (HPVs) are ubiquitous infectious agents in human populations (Schiffman et al., 2016) and the most common sexually transmitted pathogen (Satterwhite et al., 2013). Oncogenic HPV infections are responsible for a staggering ~5% of human cancers (de Martel et al., 2020;Zapatka et al., 2020). In addition to being responsible for virtually all cervical cancers, the incidence of HPV-associated oral cancers has dramatically increased during recent years (Chaturvedi et al., 2011;Marur et al., 2010), making oropharyngeal squamous cell carcinoma (OPSCC) the most common HPV-related malignancy in the United States (Eisenberg et al., 2018). Of note, most HPV-positive OPSCCs arise in the tonsil crypts.
+Following the initial infection of basal cells, the HPV DNA is amplified and established as a low copy number extrachromosomal genome. Within these actively dividing cells, the HPV genome replicates alongside the host genome. As part of the cellular differentiation cycle, infected cells detach from the basement membrane and enter the suprabasal epithelial layer. Unlike uninfected cells, the expression of the viral E6 (Duffy et al., 2003;Kranjec et al., 2017;Morgan et al., 2018) and E7 (Bodily et al., 2011;Flores et al., 2000;Müller et al., 1999) proteins promotes unscheduled cell cycle progression, supporting continuous viral replication. As the cells continue to differentiate, increased expression of the E1 and E2 replication proteins leads to a transition towards productive viral DNA amplification (Sakakibara et al., 2013). Finally, within the terminally differentiated layers of the epithelium, the viral capsid proteins (L1,Buck et al., 2013); and L2,Wang & Roden, 2013) are synthesized, leading to virion assembly. This synchronized gene expression implies that the completion of the viral life cycle requires the three-dimensional stratified epithelium.
+Keratinocytes in the different strata of the differentiated tissue must coordinate their gene expression to fulfill specific and dynamic functions during cellular differentiation. At the stratum level, expression of many of the cellular genes are known, but how spatio-temporal gene expression is regulated is a topic of intense investigation (Cavazza et al., 2016;Finnegan et al., 2019;Joost et al., 2016;Klein et al., 2017;Lopez-Pajares et al., 2015;Rubin et al., 2019). Modeling the physiologically relevant tissues will be critical to further our understanding of the viral life cycle.
+The methods described in this protocol will outline two distinct and complementary approaches to reliably and reproducibly generate and characterize 3D tissues. By modeling the complexity of the full-thickness epithelium, these culture methods address a significant limitation of two-dimensional monolayer cultures. These culture models have been shown to faithfully recapitulate many morphological and physiological characteristics of tissuein vivo. These cultures not only preserve the cellular architecture of the cervical or tonsillar tissue but also respond to external stimuli in ways that mimic the response in thein vivomicroenvironment (Asselineau & Prunieras, 1984;Kopan et al., 1987;Radtke et al., 2012;Radtke & Herbst-Kralovetz, 2012).
+We provide methods to successfully isolate oral and cervical cells from donor-derived tissues, grow these cells into 3D epithelial tissues, and characterize them through a series of microscopic (histological, scanning electron microscopy, and immunofluorescence) and transcriptome-based analyses (Fig. 1). Support Protocol 1 describes the isolation of primary epithelial cells (keratinocytes) from patient-derived tissues (e.g., cervical biopsies and tonsillectomies). These primary cultures are maintained as monolayers inSupport Protocol 2and screened for HPV DNA by PCR inSupport Protocol 3.Basic Protocols 1and2describe two distinct methods to generate 3D cultures: organotypic rafting or rotating wall vessel bioreactor. Cells and materials for Basic Protocol 2 are prepared using Support Protocol 4 (to grow and maintain cells) as well as Support Protocols 5 and 6 (to prepare the bioreactor and carrier beads used). An array of host differentiation and viral life cycle characterization techniques are detailed inBasic Protocol 3(histology), Basic Protocols 3 and 4 (immunofluorescence for raft tissues or rotating wall vessel tissues, respectively), Basic Protocol 6 (electron microscopy), and Support Protocol 7 (RNA extraction) coupled with Basic Protocol 7 (RT-qPCR).
+Figure 1.
+img-1901
+Flowchart of all protocols described in this protocol for preparing, culturing, and characterizing 3D oral and cervical tissue models for studying interactions between HPV and the infected host. The dotted line connecting Support Protocol 1 to Basic Protocol 2 indicates that, with proper optimization, it should be feasible to culture primary cells in the Rotating wall vessel bioreactor.
+Biosafety and ethics considerations
+CAUTION: Human tissues, cells, and HPV virions are a potential biohazard. Laboratory personnel should follow all biosafety and ethical guidelines relevant to local facilities, institutions, and governing bodies to properly acquire and handle donor-derived human samples that may contain pathogenic microorganisms. Appropriately trained individuals should conduct all work in accordance with your local guidelines and regulations. Human papillomavirus is considered a biosafety level 2 (BSL-2) pathogen (Dunne et al., 2014;Human Papillomavirus Vaccination: Recommendations of the Advisory Committee on Immunization Practices (ACIP)) and since 3D raft cultures are capable of producing infectious viral particles within the superficial layer (as virus-laden squames), BSL-2 precautions (e.g., personal protective equipment and using a biosafety cabinet) must be taken while handling cultures. In addition to good laboratory practice and aseptic technique, these precautions ensure reader safety and preserve the quality of results by limiting contamination.
+SUPPORT PROTOCOL 1:Isolation of epithelial cells from patient derived tissues
+Keratinocytes are the predominant cell type that comprises stratified epithelia and can be isolated directly from patient-derived donor tissues from anatomic sites (e.g., oral and cervical epithelia) relevant to the HPV life cycle. This protocol provides detailed steps to isolate these primary cells from donor specific tissues. These tissues should be isolated by qualified medical personnel in accordance with institutional and Federal human protection guidelines. Tissues and isolated cell lines are a biosafety level 2 pathogen and should be handled accordingly. As an alternative, primary keratinocytes are available commercially.
+Materials
+Reagents, solutions, and cell lines
+Donor tissue specimens collected by qualified personnel
+Transport media (see recipe)
+Dulbecco’s phosphate-buffered saline (D-PBS; ThermoFisher Scientific, cat. no. 14190–144)
+10% buffered formalin (Fisher Scientific, cat. no. SF98–4)
+Penicillin and streptomycin (ThermoFisher Scientific, cat. no. 15140122)
+Amphotericin B (Sigma-Aldrich, cat. no. A2411–250MG)
+Dispase II, working concentration 2.4 U/ml in HBSS (Sigma-Aldrich, cat. no. D4693–1G)
+0.25% trypsin/EDTA (ThermoFisher Scientific, cat. no. 25200056)
+Inactivation media (see recipe)0.4% Trypan blue (VWR, cat. no. 97063–702)
+Rheinwald-Green medium (F-media; see recipe)
+Terminally Irradiated (6000 Rad) 3T3-Swiss albino J2 mouse embryonic fibroblasts (see Current Protocols article:Takashima, 2001)
+Hardware and instruments
+50 ml conical tubes
+4°C fridge
+1.5 ml microcentrifuge tubes
+Scalpel and sterile blades
+Autoclave sterilizer
+Sterile forceps
+−80°C freezer
+6-well plate
+70 μm cell strainer (Corning, cat. no. 352350)
+Automated cell counter and counting slides
+Centrifuge
+10 cm tissue culture plates (USA Scientific, cat. no. CC7682–3394)
+Humidified 5% CO2incubator
+Humidified 10% CO2incubator
+Liquid nitrogen tank
+Protocol steps
+In collaboration with clinical personnel, collect relevant donor tissues and place in 50 ml conical tubes, submerging the tissues (e.g., whole tonsils, hysterectomies, or cervical biopsies) in transport media.
+More starter material, with greater epithelial surface area, will yield more keratinocytes and a greater chance of success. Ideally start with at least 10 mm × 10 mm of tissue. We have successfully used this protocol with smaller input (e.g., small cervical biopsies: < 5 mm of tissue).
+Rinse tissue once in 1X D-PBS.
+Perform this and all subsequent steps at room temperature (unless otherwise stated for incubations) and in a biosafety cabinet, adhering to aseptic technique.
+Observe gross morphology, measure tissue dimensions, and photograph for records.
+In a 10 cm dish, use forceps and scalpel with blade to remove the underlying hypodermis and loose connective tissue as much as possible while leaving the epithelial lining/casing intact (seeFig. 2).
+It is critical that the epithelial portion of the tissue is not discarded, as this contains the keratinocytes. The goal of this step is to remove as much of the non-epithelial tissue as possible so that a pure culture can be achieved.
+Dissect the tissue into smaller pieces (< 10 mm in size).
+Place the tissue piece(s) in the wells of a 6-well plate, ensuring they are not overly crowded and can lay flat (and that they separate donor tissues are kept apart), and cover using 2 ml room temperature dispase II (2.4 U/ml in HBSS, with antibiotics and antimycotic added: penicillin and streptomycin at 1X, and amphotericin B at 0.625 μg/ml).
+Incubate tissue overnight at 4°C (~16 hours).
+Figure 2.
+img-1902
+Gross photograph of a palatine tonsil removed via tonsillectomy and ready to process (in a 10 cm dish, with a cm ruler underneath) for isolating primary keratinocytes. Arrows depict the epithelial casing (it is critical that this portion be kept, as it contains the keratinocytes) and the underlying hypodermis (and lymphoid) tissue.
+SUPPORT PROTOCOL 2:Growth and maintenance of primary human epithelial cells in monolayer culture
+Primary human keratinocytes are used to seed 3D raft cultures described inBasic Protocol 1. Our lab cultures these cells in co-culture with terminally differentiated J2 fibroblast feeder cells as described by Rheinwald and Green (Rheinwald & Green, 1975b). This protocol describes how to culture and expand these primary cells.
+Materials
+Reagents, solutions, and cell lines
+Primary epithelial cells in culture: sub-confluent 10 cm plate
+Versene (0.48 mM EDTA in PBS, ThermoFisher Scientific, cat. no. 15040066)
+Dulbecco’s phosphate-buffered saline (D-PBS; ThermoFisher Scientific, cat. no. 14190–144)
+0.25% trypsin/EDTA (ThermoFisher Scientific, cat. no. 25200056)
+Rheinwald-Green media (F-media; see recipe)
+J2 fibroblast growth media (see recipe)
+0.4% Trypan blue (VWR, cat. no. 97063–702)
+ROCK inhibitor (Y-27632; Chemdea, cat. no. CD0141)
+Hardware and instruments
+Humidified 5% CO2incubator
+Humidified 10% CO2incubator
+Inverted light microscope
+Biosafety cabinet with vacuum aspiration system
+Pasteur pipettes
+Serological pipettes
+15 ml conical tubes
+Automated cell counter and counting slides
+Centrifuge
+Protocol steps
+Culture J2 fibroblasts in J2 medium using standard sub-culturing techniques (see Current Protocols article:Takashima, 2001).
+Critical. Cells should be used at low passage. J2 cell morphology should be monitored to avoid transformation of the feeder culture.
+Plate 1 × 106feeders on a 10-cm dish and allow them to attach and spread overnight in a 37°C CO2incubator.
+Irradiate cells with a dose of 6000R.
+Change the medium to complete F-media and plate 200,000 primary cells (e.g., from Support Protocol 1, Step 10) onto the irradiated feeder monolayer.
+ROCK inhibitor (Y-27632) can be added to these cultures at a final concentration of 10 μM to conditionally immortalize these primary epithelial cells (Chapman et al., 2010,2014). It is critical that Y-27632 is removed before differentiating the cells using raft or RWV technologies.
+Replace the media every 48 hours until cells reach 85–90% confluency.
+Critical. Cells should grow in individual colonies and should not contact neighboring colonies.
+Remove 10 cm plate of primary epithelial cells (e.g., human tonsillar keratinocytes, HTKs; or human cervical keratinocytes, HCKs) from the incubator and confirm by microscope that they are ready to harvest: sub-confluent, just before colonies start to touch.
+If this is the first passage of the isolated cells it is important that you preserve their viability and make sufficient cryovial stocks. The majority of the cells harvested should be used for making these stocks, continued culturing, or for experiments or other molecular extractions. Only a small number of cells (< 106) will be needed for DNA isolation.
+In a biosafety cabinet, use a Pasteur pipette to vacuum aspirate the media from the cells, using the edge of the plate to avoid scraping the surface layer of cells.
+Add 5 ml of Versene to the plate using a serological pipette, ensure full coverage by rocking back and forth and side-to-side, and incubate at room temperature for 1 min, then pipette the Versene up and down over the cells to help remove the feeder cells. Confirm by microscope that the feeders lift from the plate. It may be necessary to slightly agitate the plate by rocking back and forth, taking care not to spill the contents.
+Versene will cause the J2 fibroblast feeder cells to detach whilst leaving the keratinocytes adhered.
+Vacuum aspirate the Versene and suspended J2 feeder cells.
+Rinse the cells in 5 ml D-PBS to help remove any residual J2 feeder cells.
+Vacuum aspirate the D-PBS and any residual feeder cells.
+Add 3 ml of 37°C 0.25% trypsin/EDTA, ensure full coverage of the surface of the plate by rocking back and forth and side-to-side, and incubate at 37°C until keratinocyte colonies are dissociated and detached from the plate (~5 to 10 min). Check by microscope often to ensure cells do not remain in trypsin longer than necessary.
+Add 7 ml of F-media to inactivate the trypsin, pipette up/down, rinsing the plate, to create a cell suspension, and transfer this 10 ml total volume to a 50 ml conical tube. These cells can be counted, to determine the number of cells per ml, and used in downstream protocols (for seeding the basal keratinocyte layer inBasic Protocol 1; for PCR-based HPV screening inSupport Protocol 3; and as a 2D monolayer control for RNA extraction inSupport Protocol 7and RT-qPCR inBasic Protocol 7).
+SUPPORT PROTOCOL 3:PCR-based HPV screening of primary cell cultures
+HPV infections are prevalent. As such, it is possible that the primary human oral or cervical epithelial cells were infected at the time of isolation. This protocol uses a well-characterized degenerate primer PCR to amplify a 450 bp fragment of the L1 gene (Manos et al., 1989;Tachezy et al., 1994). This PCR can detect a wide array of HPV types. Since we typically experimentally infect these primary cells with HPV virions, we only use cell lines that are negative for HPV sequences.
+Materials
+Reagents, solutions, and cell lines
+Primary epithelial cells in culture: sub-confluent 10 cm plate (see Support Protocol 2)
+Versene (0.48 mM EDTA in PBS, ThermoFisher Scientific, cat. no. 15040066)
+Dulbecco’s phosphate-buffered saline (D-PBS; ThermoFisher Scientific, cat. no. 14190–144)
+0.25% trypsin/EDTA (ThermoFisher Scientific, cat. no. 25200056)
+Incomplete F-media (see recipe)
+0.4% Trypan blue (VWR, cat. no. 97063–702)
+DNeasy Blood & Tissue Kit (Qiagen, cat. no. 69506)
+ThermoFisher PCR kit (ThermoFisher Scientific, cat. no. EP0402)
+dNTP mix, 2 mM each (made from dNTP set, ThermoFisher Scientific, cat. no. 10297018)
+Nuclease-free water
+MY09 primer 5’-CGTCCMARRGGAWACTGATC-3’ (Manos et al., 1989)
+MY11 primer 5’-GCMCAGGGWCATAAYAATGG-3’ (Manos et al., 1989)
+According to IUPAC DNA code: M = A or C; R = A or G; W = A or T; Y = C or T
+GAPDH forward primer 5’-GGCAGCAGCAAGCATTCCT-3’ (Van Doorslaer et al., 2016)
+GAPDH reverse primer 5’-GCCCAACACCCCCAGTCA-3’ (Van Doorslaer et al., 2016)
+Positive control DNA (e.g., HPV18 plasmid, containing L1)
+Negative control DNA (e.g., J2/3T3 feeder fibroblasts)
+Agarose (Lonza, cat. no. 50074)
+1x TAE buffer (see recipes)
+Gel loading dye, Purple, 6X (New England Biolabs, cat. no. B7024S)
+GeneRuler 1 kb Plus DNA Ladder (ThermoFisher Scientific, cat. no. SM1333)
+Ethidium bromide (Fisher Scientific, cat. no. MP1ETBC1001)
+Hardware and instruments
+Humidified 5% CO2incubator
+Humidified 10% CO2incubator
+Inverted light microscope
+Biosafety cabinet with vacuum aspiration system
+Pasteur pipettes
+Serological pipettes
+50 ml conical tubes
+Automated cell counter and counting slides
+Centrifuge
+Thermomixer or heat block, 56°C
+Nanodrop spectrophotometer
+200 μl PCR tubes
+Thermocycler
+100 ml graduated cylinder
+500 ml Erlenmeyer flask
+Microwave
+Thermal protection gloves
+Electrophoresis apparatus (casting tray, tape, comb, powerpack, electrodes)
+Gel loading pipet tips
+Staining tray
+Rocking platform
+Gel imaging dock (UV transilluminator, hood, and camera)
+Protocol steps
+Part 1 Total DNA extraction
+Remove J2 feeders and collect primary cells as described inSupport Protocol 2.
+Calculate the required volume of cell suspension needed for DNA isolation.
+We find that starting with 7.5 × 105cells for DNA isolation will typically yield ~10 to 20 μg of purified DNA: 50 to 100 ng/μl of 200 μl eluate.
+Centrifuge cells 150 ×gfor 7 min.
+Aspirate the supernatant carefully, without disturbing the pellet, then resuspend in 5 ml D-PBS to wash.
+Centrifuge 150 ×gfor 7 min.
+Aspirate supernatant, then proceed with DNA isolation (cell lysis).
+If you wish to perform DNA isolation at a future time you can flash freeze this pellet of cells in liquid nitrogen and store at −80°C. The cells will no longer be viable, but the DNA should remain stable, and we recommend flash-freezing and storing at such low temperatures in case you also need to preserve the samples for RNA isolation.
+Extract DNA using the Qiagen DNeasy Blood & Tissue Kit following instructions.
+We elute with 2 × 100 μl pre-warmed (56°C) molecular-grade nuclease-free water.
+Measure DNA concentration and purity spectrophotometrically, using the same elution buffer as a blank.
+Concentration will depend on several factors, including the number of cells used for extraction, elution volume used, and the overall success of the cell lysis and DNA isolation procedure. Refer to your DNA isolation kit troubleshooting guide for tips on improving yield and purity.
+Part 2 PCR detection of HPV L1 gene
+Aliquot master mix to 200 μl PCR tubes.
+Store PCR products short-term at 4°C and long-term at −20°C.
+Part 3 PCR detection of a human gene to confirm DNA extraction
+Aliquot master mix to 200 μl PCR tubes.
+Store PCR products short-term at 4°C and long-term at −20°C.
+Part 4 Visualize specific PCR amplicons by gel electrophoresis
+Cast a gel by mixing agarose powder (2 g for a 2% gel) with 100 ml 1x TAE.
+Load samples with gel loading pipet tips after mixing 10 μl of PCR product with 2 μl 6x loading dye. Include 5 μl of GeneRuler 1 kb Plus DNA ladder.
+We recommend leaving empty wells between each sample or ladder-containing lane in case there is any accidental spillover from one well into the other, which could confound interpretation between adjacent samples.
+Run the gel until the dye front is 2/3 down the gel.
+Stain gel using Ethidium Bromide or other DNA stain.
+BASIC PROTOCOL 1:Establishing human primary cell derived 3D organotypic raft cultures
+This protocol highlights the steps taken to generate a full-thickness 3D organotypic raft tissue. First, we establish a dermal equivalent containing collagen and fibroblasts. A basal layer of keratinocytes (HPV-positive or negative) is seeded onto this dermal equivalent. Finally, we will lift these rafts to the air-liquid interface and allow the tissue to differentiate for several weeks. We will show examples of human foreskin, human cervical, and human tonsillar epithelia. The cervical cells were infected with HPV18 before starting the differentiation process. We will demonstrate that, despite using the same method, the organotypic tissues display features reminiscent of the original tissue.
+Materials
+Reagents, solutions, and cell lines
+Human fibroblasts hTERT immortalized (e.g., HFF-hTERT RRID:CVCL_VC40).
+Alternatively, can use mouse J2/3T3 or primary human fibroblasts, either foreskin-derived or from origin site being modeled
+Primary human epithelial cells isolated inSupport Protocol 1
+Fibroblast growth media (see recipe)
+10x Hanks’ Balanced Salt Solution with phenol red (Sigma, cat. no. H4385–100ML)
+4 M NaOH
+Fetal Bovine Serum (FBS)
+Rat Tail Collagen, Type I (Corning, cat. no. 354236): 4 mg/ml
+Dulbecco’s phosphate-buffered saline (D-PBS; ThermoFisher Scientific, cat. no. 14190–144)
+0.25% Trypsin/EDTA (ThermoFisher Scientific, cat. no. 25200056)
+0.4% Trypan blue (VWR, cat. no. 97063–702)
+Differentiation Media (see recipe)
+Complete F-media (see recipe)
+10% buffered formalin (Fisher Scientific, cat. no. SF98–4)
+70% ethanol
+Liquid nitrogen
+Hardware and instruments
+Vacuum aspirator
+Pasteur pipettes
+Pipettes
+Microscope
+50 ml conical tubes
+1.5 ml microcentrifuge tubes
+Automated cell counter and counting slides
+Centrifuge and rotor for 50 ml conical tubes
+48-well plates
+Small container (large enough to hold 50 ml conical tube and ice)
+CO2incubator
+6-well plates
+Membrane inserts (Millipore, cat. no. PICM0RG50)
+Sterile forceps
+Sterile microspatulas (such as Fisher Scientific, cat. no. 21-401-10)
+Parafilm
+−80°C freezer
+Protocol steps
+This protocol will generate 12 medium-sized (Jackson et al., 2019) 3D organotypic raft tissues, which contract over time from their initial diameter of ~10 mm to ~5 mm
+Day #1 – Prepare dermal equivalents
+Pellet the cells by centrifugation (7 min, 150 ×g)
+Resuspend in 960 μl cold FBS (1 × 106cells/ml)
+It is critical that this is performed in a pre-cooled (−20°C freezer) 50 ml conical tube that is stored on ice.
+Ensure that the collagen is neutralized prior to adding the fibroblast cells
+Do not introduce air bubbles
+Incubate in 37°C 5% CO2incubator for 20 min to solidify. Confirm that the dermal equivalents turn opaque.
+Carefully add 400 μl fibroblast growth media to each raft, along the side of the well.
+Incubate overnight (~16–18 hrs) at 37°C, 5% CO2
+Day #2 – Seed basal keratinocyte layer
+Harvest the keratinocytes as per Support Protocol 2 (Steps 6 to 13). The protocol needs 250k cells for each medium-sized raft.
+Remove liquid from atop the dermal equivalents with aspiration initially (taking care not to get too close to the layer) and a pipettor to remove any remaining liquid.
+Resuspend keratinocytes to 250k/50 μl keratinocyte growth media.
+Deposit mixed keratinocytes drop-wise on top of dermal equivalents, then rock back and forth side to side front to back, and angle in each direction to distribute. Check that keratinocytes are evenly distributed under the microscope. You should be able to focus through the dermal layer and see the basal keratinocytes seeded on top
+Incubate cells 2 hr at 37°C 5% CO2to allow initial adherence of this basal keratinocyte layer
+Carefully/slowlyadd 400 μl F-media, moving around the edge of the well in a circular motion, so that loosely adherence cells won’t be washed to one side. Check by microscope to ensure that no obvious detachment of cells has occurred.
+Incubate overnight at 37°C 5% CO2
+Day #3 – Lifting to the air-liquid interface
+Proceed with lifting ~24 hours post-seeding of the keratinocytes
+Pre-label 6-well plate as per experimental design.
+Aliquot exactly 1.1 ml of 37°C differentiation media into the wells of the 6-well plate. Ensure that the media completely covers the bottom surface of each well.
+In the 48-well plate, carefully remove F-media from the submerged cultures (dermal equivalent with basal layer of keratinocytes on top) by holding the plate on an angle and using a pipette (1000 μl, then 200 μl) to remove the liquid without disturbing the culture.
+Loosen the rafts within the well by sliding a 200 μl pipette tip carefully around the outside edge.
+Remove excess liquid that builds up around the rafts on top the membrane shortly after lifting.
+Incubate rafts at 37°C 5% CO2for 20 min, then remove any additional excess liquid that builds up around the rafts, and ensure the rafts are well-positioned and not touching each other or overlapping the edge of the membrane. Gently move them if needed with a 200 μl pipette tip.
+Incubate 37°C 5% CO2for the duration of the rafting experiment (1 to 3 weeks, typically 2 weeks), changing media every 48 hours.
+Media changes
+After 48 hours, aspirate media from 6-well plates using a pipette along the side of the well, being careful not to flip the membrane insert or disrupt the rafts.
+Once the rafts are ready to harvest, with 2 weeks typically sufficient for full epithelial stratification, they can be processed for downstream analyses.
+Tissue collection for histology
+Use a microspatula or forceps to carefully transfer the entire raft into 500 μl of 10% buffered formalin within a 1.5 ml microcentrifuge tube.
+Incubate the raft tissue for 24 hours at room temperature to allow the fixative to permeate.
+Remove the formalin and gently wash the raft twice with 500 μl 70% ethanol
+Tissue collection for molecular processing
+Photographs of the rafting process are shown inFig. 3.
+Figure 3.
+img-1903
+3D organotypic raft culturing process. Rafts are prepared over an initial period of 3 days, Day 1 prepare the dermal equivalent (see photograph above of the solidified collagen-fibroblast mixture in a 48-well plate). On Day 2 the basal layer of keratinocytes is seeded atop the dermal equivalent containing active fibroblasts (note the pH color change from reddish pink to peachy orange). On Day 3 the cultures are lifted to the air-liquid interface (see photograph depicting rafts on their membranes within a 6-well plate). These lifted rafts are cultured for two weeks, changing media every 48 hrs (see photograph, depicting the rafts with visual opacity due to differentiation and stratification). Note that the rafts contract during growth (compare diameter of raft at time of lifting vs. at harvest)
+SUPPORT PROTOCOL 4:Growth and maintenance of human A2EN cells as monolayer culture
+We use human, cervical A2EN cells to seed the rotating wall vessel bioreactors and generate the 3D cervical epithelial cell model. This protocol describes how to thaw, culture, and expand the A2EN cells.
+Materials
+Reagents, solutions, and cell lines
+Human endocervical EC line (A2EN)
+Gibco Keratinocyte serum-free medium (1X), without calcium chloride (Thermo Scientific, cat. no. 37010022)
+Invivogen Primocin, 50 mg/ml (Thermo Scientific, cat. no. NC9392943)
+Calcium chloride dihydrate, certified ACS (Fisher Scientific, cat. no. C79–500)
+Corning 0.5% trypsin, 0.1% EDTA in HBSS without calcium, magnesium and sodium bicarbonate (Fisher Scientific, cat. no. MT25053CI)
+Corning RPMI 1640 medium, 1X with L-glutamine (Fisher Scientific, cat. no. MT10040CV)
+Corning regular fetal bovine serum (Fisher Scientific, cat. no. MT35010CV
+Dubecco’s phosphate-buffered saline, 1X (Fisher Scientific, cat. no. MT21031CV)
+Invitrogen 0.4% Trypan blue solution (Fisher Scientific, cat no.T10282)
+Hardware and instruments
+Falcon T25 25 cm2tissue culture treated flask (Fisher Scientific, cat. no. 10-126-10)
+Falcon T75 75 cm2tissue culture treated flask (Fisher Scientific, cat. no. 10-126-11)
+Falcon T150 150 cm2tissue culture treated flask (Fisher Scientific, cat. no. 08-772-48)
+15 ml conical tubes
+50 ml conical tubes
+Autoclave sterilizer
+Inverted light microscope
+0.5 ml microcentrifuge tubes
+1.5 ml microcentrifuge tubes
+Protocol steps
+Rapidly thaw a 1 ml frozen aliquot of human A2EN cells (~1×106cells/ml) in a 37°C water bath.
+Slowly add cells in a drop-wise manner to 9 ml pre-warmed (37°C) complete KFSM in a 15 ml conical tube.
+Centrifuge cells at 322 ×gfor 5 minutes at room temperature. Remove and discard supernatant. Resuspend cells in 5 ml pre-warmed complete KFSM medium.
+Transfer cells to a T25 25 cm2flask. Incubate at 37°C, 5% CO2. Monitor daily by light microscopy and change medium every 2–3 days until cells reach 90–95% confluency.
+Remove and discard spent culture medium. Detach monolayer A2EN cells by treatment with 0.5 ml 0.5% trypsin-EDTA solution at 37°C, 5% CO2for 5–10 minutes. Suspend A2EN cells in 9.5 ml neutralization medium and transfer to a sterile 15 ml conical tube. Harvest cells by centrifugation (seestep 3). Discard supernatant and resuspend A2EN cells in 10 ml pre-warmed complete KFSM medium.
+Subculture A2EN cells into a T75 cm2flask and add 5 ml complete KFSM medium to a final volume of 15 ml. Incubate cells at 37°C, 5% CO2. Subculture A2EN monolayer cells every 2–3 days by repeatingstep 6.
+When A2EN monolayer cells reach 90–95% confluency, detach, harvest, and resuspend A2EN cells according tostep 6.Transfer A2EN cells into a T150 cm2flask and adjust to 25 ml with pre-warmed complete KFSM medium. Continue incubating at 37°C, 5% CO2until A2EN monolayer cells reach 90–95% confluency.
+SUPPORT PROTOCOL 5:Preparing the slow turning lateral vessel bioreactor
+This protocol describes the steps taken to prepare the slow-turning lateral vessel (STLV) bioreactor system prior to culturing human A2EN cervical epithelial cells.
+Materials
+Reagents, solutions, and cell lines
+70% Ethanol
+Sterile dH2O
+Hardware and instruments
+Slow-turning lateral vessel (STLV) bioreactor system (55 ml autoclavable STLV bioreactor, rotator base and speed control power supply) (SYNTHECON)
+55 ml disposable high-aspect rotating wall vessel (HARV) (SYNTHECON)
+Smith’s Medical ASD sterile one-way stop cocks (Fisher Scientific, cat. no. NC9889364)
+Sterile 5 ml Luer-lock syringes (Fisher Scientific, cat. no. 14-955-458)
+Sterile 10 ml Luer-lock syringes (Fisher Scientific, cat. no. 14-955-459)
+Sterilization pouch
+Autoclave sterilizer
+Protocol steps
+Assemble the STLV bioreactor according to the manufacturer’s instructions.
+Decontaminate the STLV bioreactor by filling with 70% (v/v) ethanol through the central port. Seal the central port with the provided plug and incubate overnight at room temperature. Remove ethanol and repeat overnight incubation in 70% ethanol.
+Remove ethanol and fill STLV bioreactor with sterile ddH2O. Incubate overnight at room temperature. Remove ddH2O and repeat overnight incubation in fresh sterile ddH2O. Remove ddH2O. Remove the central port and wrap in aluminum foil. Loosen STLV bioreactor unit screws using the tool provided by the vendor. Place wrapped central port and STLV bioreactor unit in a sterilization pouch.
+Autoclave at 110°C for 20 minutes and allow the unit to cool. Tighten screws and attach the sterile one-way stop cocks to each side port.
+SUPPORT PROTOCOL 6:Preparing the cytodex-3 microcarrier beads
+During suspension growth inside the slow-turning lateral vessel bioreactor, the epithelial cells will attach to and grow on Cytodex-3 collagen-coated microcarrier beads allowing the cells to grow under physiologically relevant low fluid‐shear conditions.
+This protocol describes the steps taken to prepare the Cytodex-3 microcarrier beads before culturing cells within the RWV bioreactor.
+Materials
+Reagents, solutions, and cell lines
+Sterile Dulbecco’s phosphate-buffered solution, 1X (Fisher Scientific, cat. no. MT21031CV)
+Neutralization medium (see recipe)
+Gibco Keratinocyte serum-free medium (1X), without calcium chloride (Thermo Scientific, cat. no. 37010022)
+Hardware and instruments
+Cytodex-3 collagen-coated microcarrier beads (Sigma Aldrich, cat. no. C3275–10G)
+Autoclave sterilizer
+Protocol steps
+Add 300 mg of Cytodex-3 microcarrier beads to a 50 ml conical tube containing 25 ml D-PBS.
+Incubate overnight at room temperature to allow beads to hydrate.
+Autoclave beads at 110°C for 20 min. Allow beads to cool to room temperature.
+Allow beads to settle to the bottom of the tube and remove the upper layer of D-PBS. Wash beads with 25 ml neutralization medium. Allow beads to settle and remove and discard the neutralization medium.
+Repeat wash procedure with 25 ml neutralization medium and allow beads to settle. Remove and discard the neutralization medium.
+Wash beads with 25 ml complete KFSM medium. Allow beads to settle and repeat wash with 10 ml complete KFSM medium. Use immediately for seeding and differentiating 3D human cervical cells in the rotating wall vessel bioreactor (see Basic Protocol 2)
+BASIC PROTOCOL 2:Establishing human 3D cervical tissues using the rotating wall vessel bioreactor
+This protocol describes a method to generate physiologically relevant 3D tissues using innovative rotating wall vessel (RWV) bioreactor technology. Inside the RWV bioreactor, cells experience low physiological fluid shear conditions. The bioreactors come in two different formats, a high-aspect rotating vessel (HARV) or a slow-turning lateral vessel (STLV), in which they differ by their aeration source. Epithelial cells are mixed with collagen coated microbeads and added to the bioreactor. Following differentiation, the tissues can be harvested and used to study host-pathogen interactions. We provide details on how to culture HPV E6 and E7 immortalized, human cervical A2EN cells. However, with minor modifications, these methods can be used to create several three-dimensional (3D) cell culture models (i.e., vagina, gastrointestinal, lung, colon, placental, and neuronal) that exhibit physiologically relevant features observedin vivo(Carterson et al., 2005;Hjelm et al., 2010;Höner zu Bentrup et al., 2006;LaMarca et al., 2005;Myers et al., 2008;Nickerson et al., 2001).
+The RWV bioreactor cell culture system provides a low fluid shear microenvironment that enables cells to form 3D cellular aggregates within vivo-like characteristics, including tight junctions, mucin production, extracellular processes (i.e. microvilli), and cellular polarity.
+Materials
+Reagents, solutions, and cell lines
+Human endocervical EC line (A2EN)
+Gibco Keratinocyte serum-free medium (1X), without calcium chloride (Thermo Scientific, cat. no. 37010022)
+Invivogen Primocin, 50 mg/ml (Thermo Scientific, cat. no. NC9392943)
+Invitrogen 0.4% Trypan blue solution (Fisher Scientific, cat. no.T10282)
+70% Ethanol
+Hardware and instruments
+Prepared STLV BIOREACTOR
+Prepared Cytodex-3 collagen-coated microcarrier beads
+Sterile 5 ml Luer-lock syringes (Fisher Scientific, cat. no. 14-955-458)
+Sterile 10 ml Luer-lock syringes (Fisher Scientific, cat. no. 14-955-459)
+Inverted light microscope
+Protocol steps
+Perform these procedures in a class II biosafety cabinet with laminar air flow.
+This protocol is estimated to generate ~36 1 ml aliquots in two 24-well plates.
+1. Detach human A2EN cervical epithelial cells cultured as monolayers from Support Protocol 4 by trypsinization as outlined inSupport Protocol 4and resuspend in 10 ml prewarmed complete KFSM medium. Add 10 μl of the cell suspension to a 0.5 ml microcentrifuge tube. Add 10 μl 0.4% trypan blue solution and mix gently by pipetting. Enumerate live cells by trypan blue exclusion staining.
+2. Add 1×107viable cells to the conical tube containing the prepared Cytodex-3 microcarrier beads. Carefully pour the A2EN cells and microcarrier beads into the STLV bioreactor through the central port. Seal the central port with the provided plug and incubate at 37°C, 5% CO2without rotation for 1 hour to allow A2EN cells to adhere to beads.
+3. Remove plungers from the sterile syringes and resleeve plungers in their plastic wrapper to maintain sterility. Attach one 5 ml and one 10 ml syringe to the one-way stop cocks.
+4. Open both stop cocks and fill the STLV bioreactor with complete KFSM medium through the 10 ml syringe.
+5. Close the 5 ml syringe stop cock when the medium begins to flow into the syringe port. Continue filling with complete KFSM medium to the 10 ml syringe line. Insert both plungers and remove bubbles.
+It is important to ensure all bubbles are removed from the medium within the STLV to avoid mechanical shearing of the cells from the bead surface and to promote 3D A2EN cellular aggregate formation.
+6. Attach the STLV bioreactor to the rotator unit housed inside a 37°C incubator. Turn on the power and adjust the rotational speed to 20 rpm.
+5. Allow the STLV bioreactor to incubate at 37°C, 20 rpm for three days without changing the culture medium. Remove bubbles daily to maximize cell attachment to microcarrier beads and minimize disruption of 3D cellular aggregate formation.
+7. Unpackage new 5 ml and 10 ml syringes. Remove plungers and resleeve in their plastic wrapper to maintain sterility. Replace old syringes with new syringes.
+8. Fill STLV bioreactor with fresh, prewarmed complete KFSM medium, as outlined insteps 4–5 above.
+9. Reattach the STLV bioreactor to the rotating unit and resume incubation at 37°C, 20 rpm.
+The bioreactor must be incubated with continuous rotation, except when replacing culture medium and transferring 3D A2EN cellular aggregates to the disposable HARV.
+10. Replace the culture medium every other day until day 10; after day 10, replace culture medium daily until day 28 of incubation.
+11. Monitor development of the 3D A2EN cellular aggregates on a weekly basis by removing ~0.2 ml of resuspended A2EN cellular aggregates from the central port using a wide-bore 1000 μl pipette tip. Place 3D A2EN cellular aggregates in a small petri dish containing 0.5–1 ml of medium and visualize using an inverted light microscope.
+12. After 21 days of incubation in the STLV bioreactor, unpackage a sterile disposable HARV bioreactor and remove the central plug.
+12. Decontaminate the STLV surface with 70% ethanol and dry thoroughly.
+13. Aspirate and discard 30 ml of spent culture medium from the STLV bioreactor.
+14. Remove the central port plug and gently swirl the STLV bioreactor to resuspend the 3D A2EN cellular aggregates.
+15. Carefully pour the mixture into a sterile 50 ml conical tube. Allow the 3D A2EN cellular aggregates to settle.
+16. Aspirate and discard ~10 ml of the upper supernatant layer. Gently swirl the 50 ml conical tube to resuspend the 3D A2EN cellular aggregates.
+17. Using a wide-bore 1000 μl pipette, carefully transfer the 3D A2EN cellular aggregates into the disposable HARV bioreactor through the central port.
+18. Collect residual 3D A2EN cellular aggregates by rinsing the 50 ml conical tube walls with 10 ml of fresh prewarmed complete KFSM medium. Transfer residual 3D A2EN cellular aggregates to the HARV bioreactor and replace the central plug.
+19. Unpackage new 5 ml and 10 ml syringes and remove plungers. Resleeve plungers in their plastic wrappers to maintain sterility. Attach syringes to the disposable HARV built-in stop cocks. Fill with prewarmed complete KFSM medium, as outlined insteps 4–5 above.
+It is important to ensure all bubbles are removed from the medium within the STLV to avoid mechanical shearing of the cells from the bead surface and to promote 3D A2EN cellular aggregate formation.
+20. Attach the disposable HARV bioreactor to the rotator unit and incubate at 37°C, 20 rpm for 7 additional days. Replace medium daily, as outlined instep 4–5 above.
+21. The 3D human A2EN cellular aggregates are ready to harvest for downstream experimentation on day 28 of incubation.
+22. Remove syringe plungers and aspirate and discard ~30 ml of culture medium. Remove the central port from the HARV bioreactor, gently swirl to resuspend the 3D A2EN cellular aggregates, and carefully pour mixture into a sterile 50 ml conical tube.
+23. Allow 3D A2EN cellular aggregates to settle. Aspirate 10 ml of the top layer of culture medium and add to the disposable HARV bioreactor.
+24. Gently swirl the disposable HARV to collect residual 3D A2EN cellular aggregates and carefully pour into the 50 ml conical tube to pool the samples.
+25. Allow the 3D A2EN cellular aggregates to settle.
+26. Aspirate and discard the top layer of culture medium.
+Perform all remaining steps with KFSM medium without Primocin added.
+27. Wash 3D A2EN cellular aggregates with 15 ml of KFSM medium without Primocin. Gently swirl tube to ensure 3D A2EN aggregates are thoroughly washed. Allow 3D A2EN cellular aggregates to settle.
+28. Aspirate and discard the upper layer of medium. Repeat rinse with ~40 ml of KFSM medium lacking Primocin. Allow 3D A2EN cellular aggregates to settle.
+29. Swirl 50 ml conical tube to thoroughly resuspend 3D A2EN cellular aggregates. Using a wide-bore 1000 μl pipette tip, aliquot 1 ml samples into a sterile 24-well tissue-treated culture plate.
+It is important to thoroughly resuspend 3D cellular aggregates before each 1 ml aliquot to ensure 3D A2EN cellular aggregates are evenly partitioned amongst the 24-well plate.
+30. Halfway through the aliquot process (after transferring to 18 wells), transfer 1 ml of 3D A2EN cellular aggregates to a sterile 1.5 ml microcentrifuge tube for enumerating 3D A2EN cells by trypan blue exclusion.
+31. Incubate the 1.5 ml microfuge tube containing 3D A2EN cellular aggregates at 37°C and continue aliquoting 3D A2EN cellular aggregates into the remaining wells of both 24-well plates. When complete, incubate both 24-well plates at 37°C, 5% CO2.
+32. The 3D A2EN cellular aggregates are now ready to be used for downstream assays.
+33. To count the cells, aspirate and discard the upper layer of culture medium from the 1.5 ml microcentrifuge tube containing 3D A2EN cellular aggregates fromstep 30. Avoid transferring the 3D A2EN cellular aggregates. Wash the 3D A2EN cellular aggregates with 1 ml of sterile D-PBS pre-warmed to 37°C. Allow the 3D A2EN cellular aggregates to settle.
+34. Aspirate and discard the upper layer of D-PBS, being careful not to remove the 3D A2EN cellular aggregates.
+35. Treat the 3D A2EN cellular aggregates with 300 μl of pre-warmed trypsin-EDTA to dissociate the 3D A2EN cells from the microcarrier bead matrix. Invert the tube several times to mix thoroughly. Incubate the 3D A2EN cellular aggregates at 37°C for 10 minutes with periodic inversion to promote detachment.
+The beads will progressively look like “particles of sand” as the 3D A2EN cells dissociate from the microcarrier beads with continued incubation in the trypsin-EDTA solution.
+36. Add pre-warmed neutralization medium to the 1.5 ml microfuge tube to the 1 ml gradient line (~500–600 μl). Mix thoroughly by inverting the tube several times. Allow the microcarrier beads to settle.
+37. Aspirate 10 μl of the A2EN cell-containing supernatant into a sterile 0.5 ml microcentrifuge tube. Add 10 μl of 0.4% trypan blue solution and gently mix by pipetting. Enumerate viable cells using an automated cell counter (e.g., Invitrogen Countess) or manually using a hemocytometer, according to the manufacturer’s instructions.
+38. Utilize 3D A2EN cellular aggregates incubating in the 24-well plates for downstream experimental analysis.
+A workflow diagram for generating 3D A2EN cells is shown inFig. 4.
+Figure 4.
+img-1904
+Workflow diagram for generating 3D A2EN cells using RWV bioreactor technology. Downstream experimental procedures for utilizing 3D A2EN cells includes, but is not limited to, infection with bacteria or viruses, investigating compound cytotoxicity, and ultrastructural imaging using scanning electron microscopy or transmission electron microscopy.
+BASIC PROTOCOL 3:Histological assessment of 3D organotypic raft tissues
+The methods outlined inBasic Protocol 1aim to generate tissues that accurately represent the original tissue. Routine histological assessment on formalin-fixed paraffin-embedded tissue sections usually involves staining with haematoxylin and eosin (H&E) staining. This allows for visualization of organotypic cultures. Comparison with known tissues, e.g., through the Human Protein Atlas (http://www.proteinatlas.org, see the Normal Tissue Histology section of the Dictionary;Uhlén et al., 2005), will allow for comparison between the organotypic tissues and theirin vivocounterparts. Finally, histological assessment can be the first step in observing any morphological changes related to your experiment.
+Methods for tissue embedding, sectioning, and H&E staining are beyond the scope of this protocol. We provide details on methods that will allow the reader to identify epithelial strata in their cultures, compare these structures to genuine tissues, and ultimately determine the success of their raft cultures.
+Materials
+H&E stained slides with permanently mounted coverslip (rafts should be cut in half, bisected, and embedded so that the open faces are orientated to allow a cross-sectional view of the epithelium, 4 μm thickness, two sections per slide)
+Microscope with color camera
+Protocol Steps
+Observe the entire epithelium for each tissue piece for histological features.
+Example histology data are shown inFig. 5.
+Figure 5.
+img-1905
+Histological microscope images of 3D organotypic epithelia. Hematoxylin and eosin (H&E) stained cross-sections of 3D rafts grown from (A) HPV18 negative (top) and positive (bottom) human cervical keratinocytes and (B) human tonsillar keratinocytes clearly show stratified squamous epithelial structure. Different layers of the organotypic epithelia are marked with arrows.
+BASIC PROTOCOL 4:Spatial analysis of protein expression in 3D organotypic raft cultures
+While H&E stained tissues provide a general idea of the histological features of these 3D cultures (Basic Protocol 3), this stain does not provide data on specific proteins that have unique expression patterns between different tissues, spatially according to the differentiation state of the tissue, or dysregulated as a result of viral activities. This protocol provides methods to characterize target proteins in 3D raft tissue using immunofluorescence on formalin-fixed paraffin embedded tissue sections. The conditions used here work for detecting differentiation (e.g., keratins) and viral life cycle related markers (e.g., dysregulated cell cycle proteins, such as p16), but the reader should keep in mind that conditions (e.g., as antigen-retrieval, blocking buffer composition, and antibody dilutions) may need to be optimized for a specific target of interests.
+Materials
+Reagents, solutions, and cell lines
+Formalin-fixed paraffin embedded unstained tissue sections on microscope slides
+Xylenes
+100% EtOH
+10mM Citrate buffer pH 6 (or, alternatively, optimal antigen-retrieval buffer)
+1X phosphate buffered saline (PBS, from 10x stock, see recipe)
+Bovine serum albumin (Bioworld, cat. no. 22070023–2)
+2% BSA/PBS block or equivalent
+Tween-20 (Fisher Scientific, cat. no. BP337–500)
+Mouse anti-human KRT10 monoclonal antibody (clone DE-K10, ThermoFisher Scientific, cat. no. MA5–13705, 0.2 mg/ml stock concentration)
+Mouse anti-human p16INK4A monoclonal antibody (clone JC8, Santa Cruz Biotechnologies, cat. no. sc-56330, 0.2 mg/ml stock concentration)
+Goat anti-Mouse IgG (H+L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 488 (green, ThermoFisher Scientific, cat. no. A-11029)
+Goat anti-Mouse IgG (H+L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 555 (red, ThermoFisher Scientific, cat. no. A-21424)
+ProLong Gold antifade reagent with 4′,6-diamidino-2-phenylindole (Molecular Probes, Invitrogen).
+Hardware and instruments
+Coplin jar or equivalent
+Chemical fume hood
+Delicate task kimwipes
+Steamer (KLARSTEIN Electric Food Steamer, 1500 W) or pressure cooker
+Barrier pen or wax pencil
+Glass Coverslips
+Cardboard slide book for storage
+Humidified staining chamber
+Protocol steps
+Day #1
+Rinse slides twice using ddH2O
+Draw hydrophobic circles around tissue sections using a barrier pen or wax pencil
+Rinse the slide in 1x PBS.
+Dilute the primary antibody at appropriate dilution/concentration (1:100, 2 μg/ml final concentration, for both anti-KRT10 and anti-p16), in the blocking buffer (e.g., 2% BSA/PBS).
+Shake off blocking buffer. Carefully place the slides flat in a humidified staining chamber and add 100 μl diluted primary antibody. Include a no-primary antibody control (blocking buffer only) for assessing non-specific secondary antibody signal. Incubate overnight in the fridge at 4°C.
+Day #2
+Rinse slides using 1x PBS
+Incubate slides in 1x PBS for 5 minutes at room temperature
+Repeat step 13 for a total of three washes
+Rinse slides using 1x PBS
+Incubate slides in 1x PBS for 5 minutes at room temperature
+Repeat step 17 for a total of three washes
+Mount w/ DAPI-containing mounting media, one drop per section (~25 μl), enough to cover tissue area.
+Store slides protected from light and allow curing mountant to cure.
+Store slides at 4°C or room temp afterward, depending on the mountant used.
+Image slides using a fluorescence microscope.
+Example immunofluorescence data are shown inFig. 6.
+Figure 6.
+img-1906
+Immunofluorescence images of 3D organotypic rafts depicting protein-level confirmation of (A, B) differentiation marker keratin 10 (KRT10) and (C) HPV-induced host cell cycle dysregulation marker p16INK4A. In panel A, KRT10 (red cytoplasmic signal) is expressed in suprabasal differentiated cells, in only the uppermost layers in cervical and tonsillar-derived 3D rafts, compared to all suprabasal cells in foreskin-derived 3D rafts as a control. The white dotted line indicates the transition from dermis to epidermis. Differential staining of cytokeratins highlights the differences between tissues derived from unique anatomic sites, such as non-keratinizing epithelium of the oral mucosa and cervix compared to keratinizing epithelium of the foreskin. Importantly, Basic Protocol 1 yields 3D organotypic raft tissues that resemble the anatomic site of origin dependent on the primary keratinocytes used. Reference images are from the Human Protein Atlas (HPA, available fromhttp://www.proteinatlas.org,Uhlén et al., 2005) with immunohistochemical stain (DAB, brown) for KRT10 (ENSG00000186395): normal skin tissue (T-01000, Skin 1, CAB000132, Male, age 63, Patient id: 2418), normal cervical tissue (T-83000, HPA012014, Female, age 37, Patient id: 4504), and normal tonsil tissue (T-61100, CAB000132, Male, age 31, Patient id: 2511). An enlarged view of KRT10-stained tonsillar raft tissue is shown in panel B, corresponding to the white-dotted box. In panel C, p16INK4A(red) is over-expressed in HPV-positive tissues, with stronger and more diffuse cytoplasmic staining as a signature of HPV-induced changes within host cells. Cell nuclei are DAPI-stained (blue) and the basal layer of keratinocytes are visually separated from the underlying dermis (containing fibroblasts embedded in collagen) by a white-dotted line.
+BASIC PROTOCOL 5:Immunofluorescent microscopy imaging of rotating wall vessel derived 3D tissues
+Similar to the method described inBasic Protocol 4, this protocol describes a method to identify specific proteins and their expression patterns in the 3D RWV derived tissues.
+Materials
+Reagents, solutions, and cell lines
+3D tissue aggregates generated inBasic Protocol 2
+1X phosphate buffered saline (PBS, from 10x stock, see recipe)
+4% formaldehyde in 1x PBS (Electron Microscopy Sciences, cat. no. 15710)
+0.5% Triton X-100 in 1x PBS (Electron Microscopy Sciences, cat. no. 22140)
+Bovine serum albumin (BSA; Bioworld, cat. no. 22070023–2)
+8% BSA diluted in 1x PBS
+Mouse anti-human KRT10 monoclonal antibody (clone DE-K10, ThermoFisher Scientific, cat. no. MA5–13705, 0.2 mg/ml stock concentration)
+Mouse anti-human p16INK4A monoclonal antibody (clone JC8, Santa Cruz Biotechnologies, cat. no. sc-56330, 0.2 mg/ml stock concentration)
+Goat anti-Mouse IgG (H+L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 488 (green, ThermoFisher Scientific, cat. no. A-11029)
+Goat anti-Mouse IgG (H+L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 555 (red, ThermoFisher Scientific, cat. no. A-21424)
+0.1% Tween 20 (VWR) in PBS (T-PBS)
+ProLong Gold antifade reagent with 4′,6-diamidino-2-phenylindole (Molecular Probes, Invitrogen, cat. no.P36931)
+Hardware and instruments
+1.5 ml centrifuge tubes
+centrifuge
+Glass Coverslips
+Cardboard slide book for storage
+Protocol steps
+Transfer ~100 μl aggregates to a 1.5 ml tube
+Add 200 μl 4% formaldehyde and incubate 30 minutes at room temperature
+Repeat step 4 for a total of 3 washes
+Add 200 μl 0.5% Triton X-100 to permeabilize the cells
+incubate 5 minutes at room temperature
+Repeat step 8 for a total of 3 washes
+Add 200 μl 8% BSA to block non-specific binding
+Incubate 1 hour at 37°C
+Repeat step 12 for a total of 3 washes
+Dilute the primary antibody at appropriate dilution/concentration (1:100, 2 μg/ml final concentration, for both anti-KRT10 and anti-p16), in the blocking buffer (e.g., 8% BSA/PBS).
+Incubate cells and primary antibody for 2 hours at 37°C (or overnight at 4°C)
+Repeat step 16 for a total of 3 washes
+Dilute the appropriate fluorophore-conjugated secondary antibody at appropriate dilution/concentration (e.g., 1:500) in the blocking buffer (e.g., 8% BSA/PBS)
+Incubate cells and secondary antibody for 1 hour at 37°C
+Repeat step 16 for a total of 3 washes
+Rinse aggregates once with ddH2O
+Place 1 drop of mounting media on microscope slide
+Transfer labeled aggregates on top of mounting media with a cut-off 1000 μl pipette tip
+place coverslip over aggregates
+Cure slide overnight
+BASIC PROTOCOL 6:Ultrastructural visualization and imaging of rotating wall vessel derived 3D tissues
+The use of scanning electron microscopy allows researchers to visualize macromolecular structures and organelles. This approach allows for the unbiased visualization of surface characteristics and secretory vesicles/mucus deposits between adjacent cells and on the apical cell surface. These methods provide further characterization of the 3D models.
+Materials
+Reagents, solutions, and cell lines
+3D RWV-derived A2EN cervical cell aggregates generated inBasic Protocol 2
+8% glutaraldehyde solution (Electron Microscopy Sciences, cat. no. 16220)
+Dubecco’s phosphate-buffered saline, 1X (Fisher Scientific, cat. no. MT21031CV)
+4% Osmium tetroxide solution (Electron Microscopy Sciences, cat. no. 19410)
+20% EtOH
+50% EtOH
+75% EtOH
+95% EtOH
+100% EtOH
+Hardware and instruments
+1.5 ml microcentrifuge tubes
+Wide-bore 1000 μl pipette tips (cut ~0.5” from the tip and autoclaved to sterilize)
+Disposable transfer pipette (Fisher Scientific, cat. no.
+Critical point dryer
+SEM specimen mount (Electron Microscopy Sciences, cat. no. 7550)
+Conductive carbon adhesive tabs (Electron Microscopy Sciences, cat. no. 77825–12)
+Sputter Coater
+Scanning electron microscope
+Protocol steps
+Fixation of 3D A2EN cervical cells in glutaraldehyde
+Immediately after the 28 day differentiation period or post-infection, transfer the 3D A2EN cervical cell aggregates (see Basic Protocol 2, Step 38) and supernatant from one well of the 24-well plate to a 1.5 ml microcentrifuge tube using a wide-bore 1000 μl pipette tip.
+Allow aggregates to settle to the bottom of the tube and aspirate the supernatant using a standard-bore 1000 μl pipette tip. Be careful not to remove the 3D A2EN cervical cell aggregates when removing supernatant.
+Rinse the 3D A2EN cervical cell aggregates with 1X sterile D-PBS. Gently invert the tube several times to mix thoroughly. Allow the aggregates to settle to the bottom of the tube.
+Aspirate the supernatant and repeat the wash from step 4.
+Remove the supernatant and add fix the 3D A2EN cervical cell aggregates with 500 μl of 2.5% glutaraldehyde solution. Gently invert the tube several times to mix thoroughly.
+Incubate the 3D A2EN cervical cells aggregates at room temperature for 30 minutes. Gently invert or flick the tube periodically to ensure complete fixation.
+Transfer the 3D A2EN cervical cells suspended in 2.5% glutaraldehyde to a 4°C fridge and incubate overnight.
+The next day, remove and discard the supernatant in an appropriate receptacle for glutaraldehyde waste. Rinse the fixed 3D A2EN cervical cell aggregates with 1 ml sterile D-PBS. Gently invert the tube to mix thoroughly. and allow the aggregates to settle to the bottom of the tube.
+Aspirate the supernatant and repeat the rinse procedure 2X.
+Suspend the 3D A2EN cervical cell aggregates in 1 ml sterile D-PBS. Store at 4°C until further use (cells may be stored up to 1 month under these conditions).
+Scanning electron microscopy of 3D A2EN cervical cell aggregates
+Prepare a 1% osmium tetroxide solution in 1X D-PBS. You will need 1 ml per sample being processed for SEM imaging.
+Aspirate the D-PBS supernatant from the 1.5 ml tube containing the 3D A2EN cervical cell aggregates.
+Rinse the 3D A2EN cervical cell aggregates in 1 ml D-PBS. Invert the tube several times to mix thoroughly. Incubate the sample at room temperature for 7–8 minutes.
+Aspirate the supernatant and repeat the rinse with 1 ml D-PBS 3X.
+Aspirate the supernatant and add 1 ml of 1% osmium tetroxide solution. Invert the tube several times to mix thoroughly. Incubate at room temperature for 1 hour.
+Remove the supernatant rinse the 3D A2EN cervical cell aggregates in 1 ml dH2O. Invert the tube several times to mix thoroughly. Incubate at room temperature for 7–8 minutes.
+Aspirate the supernatant and repeat the dH2O rinse 4X.
+Aspirate the supernatant and add 1 ml of 20% EtOH to dehydrate the samples. Invert the tube several times to mix thoroughly. Incubate at room temperature for 8–10 minutes.
+Aspirate the supernatant and add 1 ml of 50% EtOH to dehydrate the samples. Invert the tube several times to mix thoroughly. Incubate at room temperature for 8–10 minutes.
+Aspirate the supernatant and add 1 ml of 75% EtOH to dehydrate the samples. Invert the tube several times to mix thoroughly. Incubate at room temperature for 8–10 minutes.
+Aspirate the supernatant and add 1 ml of 95% EtOH to dehydrate the samples. Invert the tube several times to mix thoroughly. Incubate at room temperature for 8–10 minutes.
+Aspirate the supernatant and add 1 ml of 100% EtOH to dehydrate the samples. Invert the tube several times to mix thoroughly. Incubate at room temperature for 8–10 minutes.
+Aspirate the supernatant and repeat the dehydration process in 100% EtOH 2X.
+Complete the drying process in a critical point dryer according to the manufacturer’s instructions.
+Carefully transfer the samples to a SEM specimen mount containing a conductive carbon adhesive disk. Do not overload the specimen mount with too many 3D A2EN cervical cell aggregates.
+Transfer the specimen mounts to a sputter coater and coat with thin-layer of PdAu according to the manufacturer’s instructions.
+Visualize and image specimens using a scanning electron microscope.
+Sample scanning electron microscopy data are shown inFig. 7.
+Figure 7.
+img-1907
+Scanning electron microscopy (SEM) of 3D A2EN cervical cell aggregates. 3D A2EN treated with D-PBS (mock infection controls) are depicted on the left. Infection withLactobacillus gasseri, a health-associated cervicovaginal bacterium, is depicted on the right. 3D A2EN cervical cell aggregates treated with D-PBS or infected withL. gasseriwere incubated for 24 hour under anaerobic conditions prior to processing for SEM imaging.
+SUPPORT PROTOCOL 7:RNA extraction from 3D tissues
+These methods are optimized to extract total cellular (and viral) RNA from these 3D tissues (Basic Protocols 1 and 2). This RNA can be used to detect cellular and viral transcripts by qPCR (Basic Protocol 7) or used for transcriptomic analysis. Since the entire tissue is lysed, the gene expression profile will aggregate the different differentiated layers of tissue.
+Materials
+Reagents, solutions, and cell lines
+Frozen raft tissue (epidermal compartment) in 1.5 ml microcentrifuge tube (Basic Protocol 1)
+-OR-
+500 μl of aggregates in 1.5 ml microcentrifuge tube (Basic Protocol 2)
+Forceps
+Liquid nitrogen
+RNeasy Mini Kit (Qiagen, cat. no. 74106)
+Beta-mercaptoethanol
+70% ethanol
+1X Phosphate buffered saline (PBS)
+TURBO DNA-free Kit (ThermoFisher Scientific, cat. no. AM1907)
+Hardware and instruments
+Pellet pestle (also referred to as a micro pestle)
+Pipettors and pipet tips
+Needles (20g, 25g) and syringes
+QIAshredder columns (Qiagen, cat. no. 79656)
+Microcentrifuge
+Thermomixer or heat block (56°C)
+Protocol steps
+Add 700 μl lysis buffer (containing 1 % beta-mercaptoethanol) from the RNeasy Mini Kit.
+Rinse the micro pestle and sides of the tube with this lysis buffer when using epithelial raft tissue mechanically disrupted by grinding.
+Load 700 μl onto a QIAshredder column and centrifuge at maximum speed.
+Follow the RNeasy Mini Kit procedure to bind, wash, and elute RNA.
+We elute with 50 μl pre-warmed (56°C) nuclease-free water.
+Remove DNA from eluate using the Turbo-free DNase kit according to the manufacturer’s instructions.
+Quantify the RNA concentration and purity spectrophotometrically.
+Proceed with reverse transcription immediately, keeping the RNA on ice, or store the RNA at −80°C. Avoid repeated freeze-thaw cycles as this could lead to degradation.
+BASIC PROTOCOL 7:Characterization of gene expression by RT-qPCR
+The RNA isolated inSupport Protocol 6can be used to detect cellular and viral transcripts by qPCR.
+Here we provide an example to quantify the expression of HPV18 L1 mRNA. The L1 gene is expressed in differentiated cells, and is a marker for the switch to late viral gene expression and, presumably, virion assembly. Other viral and cellular genes can be quantified using different primer sets. The expression of many human ‘housekeeping’ genes changes throughout cellular differentiation (Steele et al., 2002). We detect the human PPIA (Peptidyl-prolyl cis-trans isomerase A) gene as a reference.
+Since the entire tissue is lysed, the gene expression profile will aggregate the different layers of tissue.
+Materials
+Reagents, solutions, and cell lines
+Cellular RNA extracted inSupport Protocol 7
+SuperScript IV First-Strand Synthesis System (ThermoFisher Scientific, cat. no. 18091200)
+Human reference gene (stable through differentiation,Steele et al., 2002)
+PPIA, forward primer: 5’-AGAACTTCATCCTAAAGCATACGG-3’ (Dooley et al., 2016)
+PPIA, reverse primer: 5’-TGCTTGCCATCCAACCACTC-3’ (Dooley et al., 2016)
+Late viral life cycle marker
+HPV18 L1, forward primer: 5’-TAACACTACGCCTATAATACATTTAAAAGATG-3’
+HPV18 L1, reverse primer: 5’-TACAACTCTTGCCACAGAAGGA-3’
+Nuclease-free water
+PowerUp SYBR Green Master Mix (ThermoFisher Scientific, cat. no. A25742)
+Hardware and instruments
+Pipettors and pipet tips
+Needles (20g, 25g) and syringes
+Thermomixer or heat block (56°C and 37°C)
+1.5 ml microcentrifuge tubes
+Mini-centrifuge with 200 μl PCR tube adapter
+Thermocycler
+Electronic pipettor (8-channel, 96 to 384-well adaptable)
+384-well tips
+Multichannel pipette reservoirs
+384-well optical PCR plate
+Sealable plate cover
+Centrifuge with plate adaptor
+Real-time thermocycler and computer with acquisition software
+Protocol steps
+Reverse transcribe RNA to cDNA
+Dilute the cDNA 10x by adding 180 μl nuclease-free water.
+Keep the cDNA on ice if proceeding directly with qPCR, otherwise store at −20°C.
+qPCR
+Plan your plate layout ahead of time, including all samples (with technical replicates), controls, and target wells.
+Prepare separate target master mixes in 1.5 ml microcentrifuge tubes, for 10 μl reaction volume per well (7.5 μl of master mix per well) for each primer pair.
+Mix by pipetting up/down 10x.
+Dispense 7.5 μl mastermix to each well.
+Dispense the template cDNA and controls (no-template control, water)
+After the run, discard the plate and analyze the data using the ΔΔCt method (Livak & Schmittgen, 2001).
+Example RT-qPCR data are shown inFig. 8.
+Figure 8.
+img-1908
+Differentiation activates expression of the late viral genes. Expression of HPV18 L1 is quantified using RT-qPCR. HPV18 L1 (sliced transcript), in HPV18-infected human cervical keratinocyte 3D raft vs 2D monolayer culture. Fold change was calculated using the 2−ΔΔCtmethod, with HPV18 L1 relative to the human reference gene PPIA, and fold change calculated as 3D raft vs 2D monolayer culture.
+REAGENTS AND SOLUTIONS
+50X TAE Buffer
+50 mM EDTA disodium salt
+2 M Tris
+1 M glacial/acetic acid
+Citrate buffer pH 6, 10 mM, 1 L
+2.94 g sodium citrate dihydrate (MW = 294.1 g/mol)
+Up to 1 L with autoclaved ddH2O
+Adjust to pH 6 with NaOH
+Store at room temperature, up to 3 months
+Complete keratinocyte serum-free medium (KFSM) with 100 μg/ml Primocin
+500 ml keratinocyte serum-free medium
+Recombinant epidermal growth factor (supplied with medium)
+Bovine pituitary extract (supplied with medium)
+220 μl 100 mg/ml sterile CaCl2solution
+1 ml Primocin, 50 mg/ml
+Human fibroblast growth media, 500 ml (sterile)
+DMEM (ThermoFisher Scientific, cat. no. 11960044)
+10% fetal bovine serum (FBS)
+100 U/ml penicillin/100 μg/ml streptomycin (ThermoFisher Scientific, cat. no. 15140122)
+2 mM L-glutamine (Invitrogen #25030081)
+Inactivation media, 500 ml (sterile)
+DMEM (ThermoFisher Scientific, cat. no. 11960044)
+10% fetal bovine serum (FBS)
+100 U/ml penicillin/100 μg/ml streptomycin (ThermoFisher Scientific, cat. no. 15140122)
+2 mM L-glutamine (Invitrogen, cat. no. 25030081)
+0.625 μg/ml Amphotericin B (25 mg/ml stock in DMSO, Sigma-Aldrich, cat. no. A2411–250MG)
+J2 Fibroblast growth media, 500 ml (sterile)
+DMEM (ThermoFisher Scientific, cat. no. 11960044)
+10% newborn calf serum (NCS)
+100 U/ml penicillin/100 μg/ml streptomycin (ThermoFisher Scientific, cat. no. 15140122)
+2 mM L-glutamine (Invitrogen #25030081)
+Neutralization medium
+500 ml RPMI 1640 medium (ThermoFisher Scientific , cat no. 11875093)
+50 ml fetal bovine serum (Fisher Scientific, cat. no. MT35010CV)
+Phosphate buffered saline (PBS), 10x stock
+14.2 g Na2HPO4(MW = 141.96 g/mol)
+2.4 g KH2PO4(MW = 136.09 g/mol)
+80 g NaCl (MW = 58.44 g/mol)
+2 g KCl (MW = 74.55 g/mol)
+Up to 1 L with autoclaved ddH2O
+pH should be ~7.4 when diluted to 1x (100 ml 10x stock + 900 ml ddH2O)
+Raft Differentiation media, 50 ml (sterile)
+35.5 ml F12 (ThermoFisher Scientific, cat. no. 11765054)
+11.8 ml DMEM (ThermoFisher Scientific, cat. no. 11960044)
+5% fetal bovine serum (FBS; Thermo Fisher Hyclone SH30071.03)
+2 mM L-glutamine (Invitrogen #25030081)
+0.4 μg/ml hydrocortisone (Sigma #H4001)
+8.4 ng/ml cholera toxin (Calbiochem #227036)
+24 μg/ml adenine (Sigma #A-2786)
+5 μg/ml insulin (Gemini #700–112P)
+100 U/ml penicillin/100 μg/ml streptomycin (ThermoFisher Scientific, cat. no. 15140122)
+1.88 mM CaCl2(final concentration, F12/DMEM in F-media is already ~0.66 mM)
+Store up to 2 weeks at 4°C
+Note absence of EGF compared to Rheinwald-Green media below
+Rheinwald-Green (F-) media, 500 ml (sterile)
+355 ml F12 (ThermoFisher Scientific, cat. no. 11765054)
+118 ml DMEM (ThermoFisher Scientific, cat. no. 11960044)
+5% fetal bovine serum (FBS; Thermo Fisher Hyclone SH30071.03)
+2 mM L-glutamine (Invitrogen #25030081)
+0.4 μg/ml hydrocortisone (Sigma #H4001)
+8.4 ng/ml cholera toxin (Calbiochem #227036)
+10 ng/ml EGF (Invitrogen #PHG0311)
+24 μg/ml adenine (Sigma #A-2786)
+5 μg/ml insulin (Gemini #700–112P)
+100 U/ml penicillin/100 μg/ml streptomycin (ThermoFisher Scientific, cat. no. 15140122)
+Store up to 2 weeks at 4°C
+Transport medium
+DMEM (ThermoFisher Scientific, cat. no. 11960044)
+100 U/ml penicillin/100 μg/ml streptomycin (ThermoFisher Scientific, cat. no. 15140122)
+1.67 μg/ml Amphotericin B (25 mg/ml stock in DMSO, Sigma-Aldrich, cat. no. A2411–250MG)
+COMMENTARY
+BACKGROUND INFORMATION
+The papillomavirus life cycle is intricately linked to the differentiation status of the infected tissue and cells. Therefore, the complex papillomavirus replicative cycle has been difficult to recapitulate in the laboratory. To decipher the fundamental biology of HPVs, it is essential to recapitulate the 3D structure of these tissues. Furthermore, epidemiological data strongly suggest that the nature of the infected tissue (i.e., cervix or tonsillar crypts) plays a critical role in how HPV interacts with the host (Doorbar & Griffin, 2019;Roberts et al., 2019). This protocol provides complementary methods to establish 3D organotypic tissues representing cervical and oral epithelia. Unlike conventional monolayer cultures, both organotypic raft cultures and RWV-derived human 3D tissues recapitulate physiological architecture, such as apical and basal cell polarity, and ultrastructural features (Asselineau & Prunieras, 1984;Kopan et al., 1987;Radtke et al., 2012;Radtke & Herbst-Kralovetz, 2012).
+Organotypic raft cultures (named due to the apparent floating nature of the cell-matrix) have been critical in deciphering different aspects of the HPV life cycle. These methods were initially developed to study skin biology and skin grafting research (Bell et al., 1983;Rheinwald & Green, 1975a), and were later adapted to study HPV. The complete life cycle of a human papillomavirus (HPV) was first elucidated in this culture system (Dollard et al., 1992;McCance et al., 1988;Meyers et al., 1992). In addition to the current protocol, other, excellent organotypic raft protocols have been published and used (Anacker & Moody, 2012;Lambert et al., 2005;Lee et al., 2016;Ozbun & Patterson, 2014;Roberts et al., 2019). The ability to establish these 3D organotypic raft cultures from diverse human tissues will allow researchers to study how HPV (or other pathogens) interact with these physiologically relevant tissues. Indeed, we demonstrate that once isolated, these cells maintain properties reminiscent of the initial tissue.
+The rotating wall vessel (RWV) bioreactor technology was developed by NASA in the 1990’s to study the impact of low fluid-shear modeled microgravity environment and this methodology was found to promote cellular differentiation and faithfully recapitulate features of human tissue (Unsworth & Lelkes, 1998). Cells are cultured with microcarrier beads providing an extracellular matrix for cells to attach within the low fluid-shear environment using RWV bioreactor thereby promoting cellular differentiation and formation of 3D tissue aggregates (Gardner & Herbst-Kralovetz, 2016). This culture methodology has been utilized to generate organotypic epithelial tissues from a wide variety of sites that recapitulate thein vivoarchitecture, barrier function, secretion of mucins, apical-basolateral polarity and transcriptional programs ofin vivotissue as reviewed extensively (Barrila et al., 2010;Gardner & Herbst-Kralovetz, 2016). Furthermore, the 3D RWV-derived organotypic tissues have also been utilized to study a plethora of host-microbe interactions, including throughout the female reproductive tract (Barrila et al., 2010,2018;Crabbé et al., 2017;Drummond et al., 2016;Gardner & Herbst-Kralovetz, 2016,2018;Herbst-Kralovetz et al., 2016;Ilhan et al., 2020;Łaniewski et al., 2017;Nickerson et al., 2001;Sainz et al., 2009). It is becoming increasingly clear that 3D RVW-derived organoids provide researchers with advancedin vitromodel systems that better resemble humanin vivotissue equivalents and are desirable when suitable animal models of infection are lacking or to complement other existing model systems.
+There is currently no animal model that adequately mimics the humanLactobacillus-dominated cervicovaginal microenvironment (Herbst-Kralovetz et al., 2016;Witkin & Ledger, 2012). Human cervical and vaginal lines derived from explanted tissues suffer from a finite life span and conventional 2D monolayer cultures fail to exhibit features of their parentalin vivotissue. The 3D RWV-derived A2EN cervical cells, on the other hand, faithfully recapitulate cellular phenotypes ofin vivotissue, such as apical and basal cellular polarity, microvilli, mucin secretion, and intracellular tight junctions (Radtke et al., 2012;Radtke & Herbst-Kralovetz, 2012). Human A2EN cervical cells are immortalized by stable transfection with the HPV E6 and E7 proteins, therefore providing long-term replicative capacity (Herbst-Kralovetz et al., 2008). Additionally, 3D A2EN cervical models have been colonized effectively withLactobacillusspp. and bacterial vaginosis-associated bacteria, exposed to microbial products and challenged with pathogens and found to recapitulate clinical features of the cervicovaginal microenvironment (Gardner et al., 2020;McGowin et al., 2013;Radtke et al., 2012;Winkle et al., 2016). Therefore, 3D RWV-derived cervical cell models described in these protocols may allow researchers to study how genital bacteria and pathogens of the cervicovaginal microenvironment influence the HPV lifecycle.
+In conclusion, we provide detailed protocols on establishing and analyzing 3D tissues to study the interactions between HPV and its specific host tissues.
+CRITICAL PARAMETERS
+A successful 3D organotypic raft culture experiment requires healthy, proliferative cells. Furthermore, it is critical that researchers adhere to the stepwise process of building and lifting the rafts. Finally, these raft tissues are fragile, and careful handling throughout is essential. Both the fibroblasts and keratinocytes need to be viable to function properly for the duration of the raft procedure and should be proliferative without showing signs of senescence or transformation prior to initiating rafts. It is also critical that the appropriate media are used during each step of the procedure: EGF-containing F-media (with or without ROCK inhibition) when the basal keratinocytes are seeded. A switch to differentiation media (calcium-supplemented, without EGF and no ROCK inhibitor) is made once the tissues are lifted to the air-liquid interface. Each step of the raft process requires careful handling. When seeding the dermal equivalents you must work quickly, before the collagen-mixture solidifies, while avoiding the introduction of air bubbles. When lifting the rafts onto membranes you must take care not to break, drop, or place the cultures upside down.
+With regard to the 3D RWV bioreactor-derived model system one should consider the initial set up cost of purchase the RWV bioreactor system (RLSS-4, power source, etc) and the time investment to generate fully differentiated 3D aggregates (28 days). The most critical parameters include the preparation of the beads and bioreactor, growth and health of the cells and appropriate seeding of the bioreactor. Additional parameters include close monitoring and maintenance of cells over the 28 day period. Bioreactors require media to be changed daily after a point in the protocol when the cells are consuming the nutrients as indicated by a color change in media. Following media changes, one must ensure that there are no bubbles in the bioreactor. These bubbles are removed carefully from the ports and the elimination of these bubbles are extremely important for aggregate formation. In addition, the rotation must be maintained 24 hours a day except for when changing the media. Failure to turn the rotator back, prior to differentiation and harvest, will result in a ruined batch of aggregates.
+TROUBLESHOOTING
+SeeTable 1for a list of common problems encountered when working with 3D tissue cultures, their possible causes, and our troubleshooting tips.
+Table 1.
+Troubleshooting guide for 3D tissue models.
+Problem, Possible Cause, Solution
+table00001
+TIME CONSIDERATIONS
+Protocol-specific time considerations are listed inTable 2.
+Table 2.
+Time considerations for 3D tissue models.
+Protocol, Time
+table00002
+ACKNOWLEDGEMENTS
+This work was supported by a State of Arizona Improving Health TRIF to KVD. We are thankful to our colleagues for sharing materials and equipment. We are also grateful to past and present Van Doorslaer and Campos lab members for discussion during joint lab meetings, and in particular Kelly King for irradiating feeder fibroblasts used for primary keratinocyte culture as well as David Williams for preparing the HPV18-infected human cervical keratinocytes. We would like to acknowledge past and present Herbst-Kralovetz lab members for development and refinement of 3D RWV bioreactor protocols and downstream assays over the years. In addition, we are grateful for the generous gift of human A2EN cells from Dr. Alison Quayle (Louisiana State University Health Science Center).
+Footnotes
+INTERNET RESOURCES
+https://www.proteinatlas.org/
+Human Protein Atlas: an excellent reference for tissue histology and immunohistochemistry stains, including uterine cervix and tonsillar epithelium.
+LITERATURE CITED

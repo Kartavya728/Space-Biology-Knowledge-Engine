@@ -1,0 +1,488 @@
+Abstract
+img-ab-tgr1
+The emergence of
+double mutation delta (B.1.617.2) variants has
+dropped vaccine effectiveness against SARS-CoV-2 infection. Although
+COVID-19 is responsible for more than 5.4 M deaths till now, more
+than 40% of infected individuals are asymptomatic carriers as the
+immune system of the human body can control the SARS-CoV-2 infection.
+Herein, we report for the first time that human host defense neutrophil
+α-defensin HNP1 and human cathelicidin LL-37 peptide-conjugated
+graphene quantum dots (GQDs) have the capability to prevent the delta
+variant virus entry into the host cells via blocking SARS-CoV-2 delta
+variant (B.1.617.2) spike protein receptor-binding domain (RBD) binding
+with host cells’ angiotensin converting enzyme 2 (ACE2). Experimental
+data shows that due to the binding between the delta variant spike
+protein RBD and bioconjugate GQDs, in the presence of the delta variant
+spike protein, the fluorescence signal from GQDs quenched abruptly.
+Experimental quenching data shows a nonlinear Stern–Volmer
+quenching profile, which indicates multiple binding sites. Using the
+modified Hill equation, we have determinedn= 2.6
+and the effective binding affinity 9 nM, which is comparable with
+the ACE2–spike protein binding affinity (8 nM). Using the alpha,
+beta, and gamma variant spike-RBD, experimental data shows that the
+binding affinity for the delta B.1.617.2 variant is higher than those
+for the other variants. Further investigation using the HEK293T-human
+ACE2 cell line indicates that peptide-conjugated GQDs have the capability
+for completely inhibiting the entry of delta variant SARS-CoV-2 pseudovirions
+into host cells via blocking the ACE2–spike protein binding.
+Experimental data shows that the inhibition efficiency for LL-37 peptide-
+and HNP1 peptide-attached GQDs are much higher than that of only one
+type of peptide-attached GQDs.
+1. Introduction
+The
+current global pandemic caused by severe acute respiratory
+syndrome coronavirus 2 (SARS-CoV-2) is responsible for over 5.4 million
+death till now.1−4It is now well understood that during COVID-19 infection, the spike
+protein S1 unit containing the receptor-binding domain (S-RBD) facilitates
+the virus attachment to humans by binding to the angiotensin converting
+enzyme 2 (ACE2) receptor in the nasal epithelial mucosal cells, which
+is the key path for SARS-CoV-2 entry into human host cells.5−9Therefore, the SARS-CoV-2 S protein became the target for COVID-19
+vaccines available in the market, which can generate neutralizing
+antibodies against the S-RBD upon immunization.9−14The emergence of double mutant delta (B.1.617.2) variants, which
+contain the L452R and T478K mutations on the S-RBD, has enhanced the
+binding affinity with ACE2.1−6Recent reports also indicate that mutations on the S-RBD lead to
+a prominent decline in neutralizing antibody levels against the delta
+variant by antibodies generated during previous infection or vaccination.7−12Due to the above fact, designing a new strategy to block the spike
+protein–ACE interaction is very important for preventing mutate
+variant infection.
+Although the mortality rate is very high
+for COVID-19, reported
+data also indicates that around 42% of infected individuals are asymptomatic
+carriers, which indicates that SARS-CoV-2 can be effectively controlled
+by the human’s innate immune system.1−9α-Defensin human neutrophil peptides (HNP1, HNP2, HNP3, and
+HNP4) and human β-defensins (HBD1, HBD2, and HBD3) as well as
+LL-37 (leucine-leucine-37) cathelicidin family peptides are members
+of the innate immune system.11,15−17Defensins and cathelicidin peptides play a crucial role in the human
+body for viral inhibition via binding and destabilizing.11,15−17Driven by the need to block the delta variant infection,
+herein we report the design of HNP1 and LL-37 peptide-conjugated graphene
+quantum dots (GQDs), which have the capability to bind to the SARS-CoV-2
+delta variant (B.1.617.2) spike protein RBD and block the S-RBD interaction
+with ACE2, which prevents the virus entry into the host cells, as
+shown inFigure1.
+Figure 1.
+img-gr1
+(A) Scheme
+showing the design of HNP1 and LL-37 human host defense
+peptide-conjugated GQDs and binding of HNP1 and LL-37 peptide-conjugated
+GQDs in the presence of the SARS-CoV-2 delta variant (B.1.617.2) spike
+protein RBD. (B) Scheme showing the blocking of the S-RBD interaction
+with ACE2 on a human cell membrane and preventing the SARS-CoV-2 virus
+entry.
+Graphene quantum dots (GQDs) consisting
+of a graphene lattice and
+containing single or few sheets of graphene fragments exhibit size-dependent
+luminescence properties originating from the quantum confinement effects
+and edge effects.18−23GQDs containing different surface groups such as carboxy, epoxy,
+and hydroxyl exhibit a high water solubility, high surface area, excellent
+photostability, and biocompatibility.18−23Due to their unique optical and other properties, GQDs became a
+very good choice for use in bioimaging, biosensing, and other biotechnology
+applications.18−23In our design, bioconjugated GQD fluorescence has been used to monitor
+the SARS-CoV-2 delta variant (B.1.617.2) spike protein RBD–host
+cells’ angiotensin converting enzyme 2 (ACE2) interaction to
+determine the effective binding affinity. Also, the functional groups
+on the surface and edge of GQDs have been used for the inactivation
+of the virus via decomposition of the lipid membrane of the virus
+and for the removal of spike proteins that are attached on the lipid
+membrane.
+2. Materials and Methods
+2.1. Synthesis
+and Characterization of HNP1 and
+LL-37 Human Host Defense Peptide-Attached Graphene Quantum Dots (GQDs)
+GQDs were developed in a two-step process, as shown inScheme S1in the Supporting Information. Initially,
+graphene oxide (GO) nanosheets were synthesized from natural graphite
+powder using the modified Hummer’s method as we and others
+have reported before.18−23In the next step, GQDs were synthesized using a hydrothermal method
+in the presence of dimethyl formamide (DMF).18−23The transmission electron microscopy (TEM) image reported inFigure S2Ain the Supporting Information shows
+the two-dimensional (2D) morphology of the freshly prepared GO with
+5 ± 2 μm size. On the other hand, the TEM image reported
+inFigure S2Bshows the zero-dimensional
+(0D) morphology of the freshly prepared GQDs whose sizes are 4 ±
+2 nm.Table S1shows the dynamic light
+scattering (DLS) measurement data, which matches well with the TEM
+data. As shown inFigure1A, for the development of HNP1 and LL-37 human host defense
+peptide-attached GQDs, we used carbodiimide coupling chemistry between
+the carboxy group of graphene oxides and the amine group of peptides.
+The FTIR data from peptide-attached GQDs, as reported inFigure S2G, shows the presence of the −OH
+stretch, −CH stretch, −amide-I, −amide-II, and
+−amide-III bands, which indicates that the peptides are attached
+on the GQD surfaces. The DLS data indicates the ζ-potential
+changes from −14 ± 2 mV to 3 ± 1 mV after peptide
+binding, which also indicates that the peptides are on the surface
+of GQDs. The TEM data reported inFigure2A indicates that the size of peptide-conjugated
+GQDs are 6 ± 2 nm, which matches very well with the DLS data
+reported inTable S1. The inset inFigure2A shows the high-resolution
+TEM for peptide-conjugated GQDs, which shows the graphite structure
+with a stripe distance of ∼0.24 nm.18−23Similarly,Figure S2Cin the Supporting
+Information shows the powder X-ray diffraction (XRD) pattern, which
+indicates a broad peak at 26.5° due to the (002) reflection of
+graphite.18−23Figure S2Dshows the Raman spectra of
+peptide-attached GQDs, which indicate the presence of the D band at
+∼1350 cm–1and the G band at ∼1590
+cm–1due to the graphene structure.18−23
+Figure 2.
+img-gr2
+(A)
+TEM image of freshly prepared peptide-conjugated GQDs. The
+high-resolution TEM image in the inset demonstrates the crystal lattice
+fringe for peptide-conjugated GQDs. (B) Photograph showing the fluorescence
+image from HNP1 and LL-37 peptide-conjugated GQDs in the presence
+(B2) and absence (B1) of the SARS-CoV-2 delta variant (B.1.617.2)
+spike protein. (C) Fluorescence spectra from peptide-conjugated GQDs
+in the presence of the spike protein at different concentrations.
+(D) Time-resolved photoluminescence decay curve from peptide-conjugated
+GQDs in the absence and presence of the spike protein at different
+concentrations. (E) Plot of log[F0/F] versus log[spike concentration, in nM] for HNP1 and LL-37
+peptide-conjugated GQDs, which indicates the nonlinear fluorescence
+quenching process. (F) Fluorescence spectra from HNP1 human host defense
+peptide-conjugated GQDs in the presence of the SARS-CoV-2 delta variant
+(B.1.617.2) spike protein at different concentrations. (G) Plot of
+log[F0/F] versus log[spike
+concentration, in μM] for HNP1 peptide-conjugated GQDs, which
+indicates the nonlinear fluorescence quenching process. (H) Plot showing
+the binding curve between the peptide-conjugated GQDs and SARS-CoV-2
+delta variant (B.1.617.2) spike protein in the ELISA plate-based assay.
+2.2. Binding Studies between
+the SARS-CoV-2 Delta
+Variant (B.1.617.2) Spike Protein RBD and HNP1 and LL-37 Human Host
+Defense Peptide-Attached GQDs Using Peptide-Attached GQD-Based Luminescence
+For the binding between the SARS-CoV-2 delta variant (B.1.617.2)
+spike protein RBD and HNP1 and LL-37 human host defense peptide-attached
+GQDs, we used a binding buffer. The experimental details are reported
+in theSupporting Information. For the
+detection of luminescence from HNP1 and LL-37 human host defense peptide-attached
+GQDs, in the presence and absence of the SARS-CoV-2 delta variant
+(B.1.617.2) spike protein RBD, we used a portable fluorescence spectrometer
+developed by us with a laser excitation of 360 nm from a diode laser.13,14,21,22For emission signal collection, we used a miniaturized QE65000 spectrometer
+from Ocean Optics.13,14,21,22All measurements were performed with 5 ms
+integration time with five spectra averaging using the software.13,14,21,22
+2.3. ELISA-like Assay for Determining the Binding
+between the Delta Variant (B.1.617.2) Spike Protein and Peptide-Attached
+GQDs
+For this purpose, we used an ELISA-like assay using
+His-tag delta variant SARS-CoV-2 S1 proteins, which were adsorbed
+to a 96-well plate overnight at 4 °C. For comparison with fluorescence
+assay data, we kept the concentrations of GQDs and spike proteins
+the same for both the measurements. After that, the plate was blocked
+using a blocking buffer and then different concentrations of peptide-attached
+GQDs were incubated on the plate. In the next step, we used a streptavidin
+protein that is covalently conjugated to a horseradish peroxidase
+(HRP) enzyme to determine the binding.11−15We also used TMB (3,3′,5,5′-tetramethylbenzidine)
+for colorimetric assay detection.11−15Signal intensity was recorded using a plate reader.
+After that, data were graphed in GraphPad Prism. From the binding
+curve, we estimated the binding constants (KD) using the Hill equation, as reported before.7,8,11,12
+2.4. In Vitro Experiments for Blocking ACE2 Binding
+with Baculovirus Pseudotyped with a SARS-CoV-2 Delta Variant (B.1.617.2)
+Spike Protein Using Fluorescence Imaging
+For this experiment,
+we used human embryonic kidney-239T cells with a high expression of
+ACE2 (HEK-293T).11−15,26,27Since delta variant SARS-CoV-2 is a biosafety-level-3 virus, for
+our experiment, we used a GFP (green fluorescent protein)-tagged Baculovirus
+pseudotyped with a SARS-CoV-2 delta variant (B.1.617.2) spike protein
+(catalog number #C1123G).11−15,26,27The experimental details are reported in theSupporting Information.
+2.5. Virus
+Inhibition Experiments for HNP1 and
+LL-37 Human Host Defense Peptide-Attached GQDs
+For this experiment,
+we used HEK293T cells. Dilutions of test HNP1 and LL-37 human host
+defense peptide-attached GQDs were made in DMEM.13,14,26,27The GFP-tagged
+Baculovirus pseudotyped with a SARS-CoV-2 delta variant (B.1.617.2)
+spike protein stock was mixed with the HNP1 and LL-37 human host defense
+peptide-attached GQDs at different concentrations and incubated for
+1 h. The experimental details are reported in the Supporting Information.
+3. Results and Discussion
+3.1. Determining
+the Photoluminescence Quantum
+Yield and Lifetime from HNP1 and LL-37 Human Host Defense Peptide-Attached
+GQDs
+The UV–vis spectra from HNP1 and LL-37 human
+host defense peptide-attached GQDs, as reported inFigure S2E, show two peaks. The first absorption peak is observed
+at ∼270 nm, which can be due to the π–π*
+transition, and the second peak is at ∼306 nm, which can be
+due to the n−π* transition.18−23Figure S2FandFigure2C show the luminescence spectra of peptide-attached
+GQDs at 360 nm excitation, where the strong emission maximum at 416
+nm can be due to the electron–hole recombination and quantum
+size effect.18−23Figure2B shows that
+peptide-attached GQDs exhibit a strong blue fluorescence under UV
+light. The photoluminescence quantum yield (PLQY) was determined to
+be ∼0.28 for peptide-attached GQDs. The photoluminescence decay
+profiles for peptide-attached GQDs are reported inFigure2D, which fit very well with
+the triple exponential function with τ1= 0.32 ns,
+τ2= 2.2 ns, and τ3= 7.3 ns.
+3.2. Determining the Biocompatibility and Cytotoxicity
+To determine the biocompatibility and cytotoxicity of the LL-37
+and HNP1 peptide-attached GQDs, we used normal skin HaCaT cells, lung
+cancer A549 cells, and human embryonic kidney-239T cells with a high
+expression of ACE2 (HEK-293T).11−15,26,27All cells were treated with 60 μg/mL GQDs + 4 μg/mL
+LL-37 + 4 μg/mL HNP1 for 48 h.11−15,26,27As reported inFigures S3A,Bin the Supporting
+Information, after treatment with LL-37 and HNP1 peptide-attached
+GQDs or only GQDs or only peptides, the cell viability was hardly
+changed for all the cell lines. The reported experimental data clearly
+indicate that the LL-37 and HNP1 peptide-attached GQDs do not exhibit
+any detectable cytotoxicity after 48 h of treatment.
+3.3. Determining the Binding Affinity between the
+SARS-CoV-2 Delta Variant (B.1.617.2) Spike Protein RBD and HNP1 and
+LL-37 Human Host Defense Peptide-Attached GQDs
+Next, we have
+determined whether the SARS-CoV-2 delta variant (B.1.617.2) spike
+protein RBD can bind with HNP1 and LL-37 human host defense peptide-attached
+GQDs, which is a very important parameter for the inhibition of virus
+infection. The experimental details are reported in theSupporting Information. The luminescence signals
+from GQDs in the presence and absence of the spike protein were recorded
+with a laser excitation of 360 nm from a diode laser.11−15,26,27The reported photograph inFigure2B also shows that the intense fluorescence from peptide-conjugated
+GQDs decreases in the presence of the spike protein.
+In the
+case of peptide-attached GQDs, the graphene quantum dots can bind
+with the spike protein via hydrophobic interaction, hydrogen bonding,
+and charge transfer interaction.18,19On the other
+hand, LL-37 and HNP1 peptides can bind with the spike protein via
+hydrogen bonding, electrostatic interaction, and hydrophobic interaction.11,12,15The observed huge fluorescence
+quenching clearly indicates the strong interaction between peptide-attached
+GQDs and the spike protein. The reported fluorescence quenching can
+be the result of the static quenching due to the formation of a nonfluorescent
+complex in the ground state. On the other hand, the observed quenching
+can be due to the dynamic quenching, which is based on the Förster
+resonance energy transfer from the donor peptide-attached GQDs to
+the acceptor spike protein. As reported inFigure2D, the photoluminescence decay curve remains
+almost the same in the presence or absence of the delta variant (B.1.617.2)
+spike protein, which indicates that the fluorescence lifetime (τ1= 0.30 ns, τ2= 2.2 ns, and τ3= 7.1 ns) in the presence of the spike protein is very similar
+to the data in the absence of the protein. The experimental lifetime
+data clearly indicates that the observed quenching is a static quenching
+process.
+Similarly, as reported inFigure S1Ein the Supporting Information, the UV–vis absorption
+maximum
+from peptide-attached GQDs is ∼10 nm shifted to a higher wavelength
+in the presence of the spike protein, which also indicates the formation
+of a complex in the ground state between the peptide-attached GQDs
+and spike protein. Often, the static quenching process can be described
+by the Stern–Volmer equation20,22,24,25as described below
+table00001
+img-2463
+table00002
+img-2464
+whereF0is the fluorescence intensity
+from the peptide-conjugated
+GQDs in the absence of the spike protein,Fis the
+fluorescence intensity in the presence of the spike protein, and [spike]
+is the protein concentration.KSVis the
+Stern–Volmer constant, which depends on quencher rate coefficients
+(Kq) and the lifetime τ0of the GQDs’ excited state in the absence of spike. As shown
+inFigure2E, the plot
+of log[F0/F] versus log[spike
+concentration, in nM] for HNP1 and LL-37 peptide-conjugated GQDs indicates
+the nonlinear fluorescence quenching process, which may be due to
+the multiple binding sites.
+Since we have observed a nonlinear
+Stern–Volmer quenching
+profile, we have used the modified Hill equation24,25
+table00003
+img-2465
+whereKbis the dissociation constant, [S]tis the concentration of the spike protein
+at any
+given time, [G]tis the
+concentration of peptide-conjugated GQDs at any given time, andnis the Hill coefficient. We have determined the binding
+affinity, which is the inverse of the dissociation constant, by fitting
+the curve witheq3,
+as reported inFigures2E,G. As shown inTable1, we have determined the binding affinity as 8 ± 1 nM andn= 2.6.
+Table 1. Binding Affinity Measured by Fluorescence
+Quenching and ELISA Assays.
+system, GQD-based fluorescence
+quenching, ELISA-like assay
+table00004
+As shown inFigures2F,G, the luminescence signal from HNP1 human host defense
+peptide-attached
+GQDs decreases slowly as the concentration of the spike protein increases.
+By fitting the curve usingeq3, we have determined the binding affinity as 120 ± 20
+nM in this case, as reported inTable1.
+To verify our data with a well-documented assay,
+we used the ELISA-like
+assay using the His-tag delta variant SARS-CoV-2 S1 protein.26,27The experimental details are reported in theSupporting Information. As reported inFigure2H, the plot shows the binding curve between
+the peptide-conjugated GQDs and spike protein in an ELISA plate-based
+assay. From the binding curve, we have estimated the binding affinity
+as 9 ± 1 nm for the delta variant spike with LL-37 and HNP1 peptide-conjugated
+GQDs, which matches very well with the fluorescence quenching data.
+Similarly, we have estimated the binding affinity for the delta variant
+spike with different peptide-conjugated GQDs, LL-37 and HNP1 peptides
+and ACE2, as reported inTable1.
+From the experimental data, we can conclude that the
+binding affinities
+for the delta variant spike with LL-37 peptide- and HNP1 peptide-attached
+GQDs are comparable with that for ACE2-delta variant spike binding.
+Also, the binding affinities for LL-37 peptide- and HNP1 peptide-attached
+GQDs are better than only one type of peptide-attached GQDs. The observed
+higher binding affinity of GQDs conjugated with both the peptides
+(HNP and LL-37) than GQDs conjugated with a single type of peptide
+can be due to the presence of multiple binding sites in the spike
+protein in the case of two peptide-attached GQDs. The reported theoretical
+modeling indicates that LL37 can bind to the spike-RBD in eight sites
+(LYS417, GLN493, THR500, ASN501, TYR505, THR500, ASN501, and GLY502).7,11On the other hand, HNP1 can bind to the spike-RBD in six sites (LYS417,
+ALA475, PHE486, ASN487, TYR489, and GLN493).7,11The
+observed higher binding may be due to the multiple binding site interaction.
+During the past three years of pandemic, several new viral lineages
+such as alpha (B.1.1.7), beta (B.1.351), gamma (P1), delta (B.1.617.2),
+and omicron (B.1.1.529) variants had risen.1−6To understand how the binding affinity between LL-37 & HNP1-attached
+GQDs and the SARS-CoV-2 S1 protein RBD of different variants varies,
+we have determined the effects of RBD mutations on the binding capability
+with peptide-attached GQDs. As reported inTable2, our experimental data indicate that the
+binding affinity for the delta B.1.617.2 variant spike-RBD is higher
+than those for the alpha, beta, and gamma variant spike-RBD.
+Table 2. Binding Affinity between the LL-37
+& HNP1-Attached GQDs and SARS-CoV-2 S1 Protein RBD (Different
+Variants) Measured by Fluorescence Quenching and ELISA Assays.
+system, GQD-based fluorescence quenching, ELISA-like assay
+table00005
+3.4. Demonstrating ACE2–Spike
+Protein Binding
+Blocking Using the B Pseudotyped SARS-CoV-2 Delta Variant (B.1.617.2)
+Virus
+Next, to find out whether LL-37 peptide- and HNP1 peptide-attached
+GQDs can bind with delta variant SARS-CoV-2, we have performed an
+experiment using Baculovirus pseudotyped with a SARS-CoV-2 delta variant
+(B.1.617.2) spike protein. As shown inFigure3A, the luminescence intensity from peptide-attached
+GQDs decreases abruptly in the presence of 1000 virus, which indicates
+that LL-37 peptide- and HNP1 peptide-attached GQDs can bind with Baculovirus
+pseudotyped SARS-CoV-2.
+Figure 3.
+img-gr3
+(A) Fluorescence spectra from HNP1 and LL-37
+peptide-conjugated
+GQDs in the presence and absence of GFP-tagged Baculovirus pseudotyped
+with a SARS-CoV-2 delta variant (B.1.617.2) spike protein. (B) TEM
+image of Baculovirus pseudotyped after they are treated with HNP1
+human host defense peptide-attached GQDs for 30 min. (C) TEM image
+of Baculovirus pseudotyped after they are treated with HNP1 and LL-37
+human host defense peptide-attached GQDs for 30 min. (D–H)
+Inhibition of SARS-CoV-2 spike protein binding to the surface of HEK-293T
+cells expressing ACE2. The green fluorescence is due to the presence
+of GFP-tagged Baculovirus pseudotyped with a SARS-CoV-2 delta variant
+(B.1.617.2) spike protein on the surface of HEK-293T cells expressing
+ACE2. (D) Fluorescence image of HEK-293T cells in the presence of
+GFP-tagged pseudotyped delta virus without GQDs. (E) Bright-field
+image of HEK-293T cells in the presence of GFP-tagged Baculovirus
+pseudotyped without GQDs. (F) Fluorescence image of HEK-293T cells
+in the presence of GFP-tagged virus bound with LL-37 human host defense
+peptide-attached GQDs. (G) Fluorescence image of HEK-293T cells in
+the presence of GFP-tagged virus bound with LL-37 & HNP1 human
+host defense peptide-attached GQDs. (H) Bright-field image of HEK-293T
+cells in the presence of GFP-tagged virus bound with LL-37 & HNP1
+human host defense peptide-attached GQDs.
+As reported inFigure3B,C, the TEM images indicate that peptide-conjugated GQDs
+are bound on the virus. Since the binding affinity for LL-37 peptide-
+and HNP1 peptide-attached GQDs are much higher than only HNP1-attached
+GQDs, we observed that much higher amounts of GQDs are bound on the
+virus when both peptides are attached on GQDs. After that, to determine
+whether HNP1 and LL-37 peptide-conjugated GQDs have the capability
+to prevent the delta variant virus entry into the host cells via blocking
+the spike protein RBD–ACE2 binding, we have used human embryonic
+kidney-239T cells with a high expression of ACE2 (HEK-293T). For this
+experiment, we have used GFP-tagged Baculovirus pseudotyped with a
+SARS-CoV-2 delta variant (B.1.617.2) spike protein (catalog number
+#C1123G). The experimental details are reported in theSupporting Information.26,27As shown inFigure3D, in the absence of peptide-attached GQDs, the pseudotyped delta
+variant virus binds with ACE2 on HEK-293T cells. The observed green
+fluorescence is due to the presence of GFP-tagged pseudotyped virus
+particles on the surface of HEK-293T cells via binding with ACE2.Figure3E shows the bright-field
+image of HEK-293T cells, which indicates the presence of the pseudotyped
+virus on the cell surface. As shown inFigure3H, in the presence of LL-37 and HNP1 peptide-attached
+GQDs, the pseudotyped delta variant virus cannot bind with ACE2 on
+HEK-293 T cells, and as a result, we have not observed any green fluorescence.
+Since LL-37 and HNP1 peptide-attached GQDs have high binding affinity
+with the delta variant spike protein, the data shown above indicates
+that they can be used to completely block the binding between ACE2
+and the spike protein. Due to the above fact, LL-37 and HNP1 peptide-attached
+GQDs have the capability for completely inhibiting the entry of delta
+variant SARS-CoV-2 pseudovirions into host cells. On the other hand,
+as reported inFigures3F,G, LL-37 peptide-attached GQDs and HNP1 peptide-attached GQDs cannot
+completely block the virus spike protein–ACE2 binding. As reported
+inFigure4B, the blocking
+capability decreases from 100 to 8% when only GQDs have been used.
+Also, the blocking ability correlates very nicely with the spike binding
+affinity, as reported inTable1.
+Figure 4.
+img-gr4
+(A) Interaction of Baculovirus pseudotyped with a SARS-CoV-2 delta
+variant (B.1.617.2) spike protein and ACE2 on HEK-293T cells, measured
+using fluorescence imaging. (B) Inhibition efficiency of Baculovirus
+pseudotyped with the delta variant spike protein in infected HEK293T
+cells in the presence of buffer (Mock), GQDs (30 μg/mL), HNP1
+(4 μg/mL)-attached GQDs (30 μg/mL), LL-37 (4 μg/mL)-attached
+GQDs (30 μg/mL), and LL-37 (4 μg/mL) and HNP1 (4 μg/mL)-attached
+GQDs (30 μg/mL). (C) SEM image of Baculovirus pseudotyped with
+a SARS-CoV-2 delta variant (B.1.617.2) spike protein when they are
+treated with peptide-attached GQDs for 6 h. (D) TEM image of Baculovirus
+pseudotyped with a SARS-CoV-2 delta variant (B.1.617.2) spike protein
+when they are treated with peptide-attached GQDs for 12 h.
+3.5. Determining the Inhibition Ability for LL-37
+and HNP1 Peptide-Conjugated GQDs Using the B Pseudotyped SARS-CoV-2
+Delta Variant (B.1.617.2) Virus
+Next, we have estimated the
+inhibition ability for delta variant SARS-CoV-2 pseudovirions using
+peptide-conjugated GQDs. The experimental details are reported in
+theSupporting Information.13,14,26,27Figure4B shows the
+% inhibition, which clearly shows that 100% inhibition was achieved
+in the case of LL-37 (4 μg/mL) and HNP1 (4 μg/mL)-attached
+GQDs (30 μg/mL). On the other hand, less than the 10% inhibition
+was achieved when only GQDs (30 μg/mL) were used.
+The
+reported data inTable3andFigure4B also
+indicate that 70% inhibition can be achieved when LL-37 (4 μg/mL)
+peptide-attached GQDs (30 μg/mL) were used. Similarly, using
+only the LL-37 (4 μg/mL) peptide, we have achieved 40% inhibition.
+From the reported inhibition data, we can conclude that the inhibition
+efficiencies for LL-37 and HNP1-attached GQDs are much higher than
+only one type of peptide-attached GQDs or only peptide or GQDs. To
+understand better about the above experimental observation, we have
+also performed TEM and SEM imaging experiments after LL-37 and HNP1-attached
+GQDs are exposed to the virus for 12 h. The SEM image inFigure4C and the TEM image
+inFigure4D clearly
+show that LL-37 and HNP1-attached GQDs can destroy the lipid membrane
+of Baculovirus pseudotyped with a SARS-CoV-2 delta variant (B.1.617.2)
+spike protein. Due to the above fact, the delta variant virus collapses
+and spike proteins that are attached on the lipid membrane are removed.
+The above process helps to stop the spread of the delta variant virus.
+Table 3. Half-Maximal Inhibitory Concentration
+(IC50) for the Peptide-Conjugated GQDs, Only Peptide, and GQDs Using
+HEK293T Cells Expressing the ACE2 Receptor.
+system, IC50
+table00006
+4. Conclusions
+In conclusion, in the current article, we show that HNP1 and LL-37
+peptide-conjugated GQDs can be used to prevent the delta variant virus
+entry into the host cells by blocking spike protein RBD binding with
+ACE2. We have demonstrated that peptide-attached GQD-based fluorescence
+quenching can be used for determining the binding affinity of the
+delta variant (B.1.617.2) spike protein. The reported experimental
+data show that the effective binding affinity between the HNP1 and
+LL-37 peptide-conjugated GQDs and delta variant spike protein is comparable
+with the ACE2–spike protein binding affinity. Using the alpha,
+beta, and gamma variant spike-RBD, we have shown that the binding
+affinity for the delta B.1.617.2 variant is higher than those for
+other variants. Our experimental observation using the HEK293T-human
+ACE2 cell line demonstrated that LL-37 and HNP1 peptide-conjugated
+GQDs have the capability for completely inhibiting the entry of delta
+variant SARS-CoV-2 pseudovirions into host cells and the inhibition
+efficiency for two peptide-attached GQDs is much higher than those
+for only one type of peptide-attached GQDs or only peptides or GQDs.
+Acknowledgments
+P.C.R. thanks NSF-RAPID
+grant no. DMR-2030439 and
+NSF-PREM grant no. DMR-1826886 for their generous funding. We also
+thank NIH-NIMHD grant no. 1U54MD015929-01 for the bioimaging core
+facility.R.T. is supported by NASA award (80NSSC19K1603)
+and COVID-19 funds from the University of Mississippi Medical Center.
+Supporting Information Available
+The Supporting
+Information is
+available free of charge athttps://pubs.acs.org/doi/10.1021/acsomega.2c00113.
+Design and characterization
+of the LL-37 and HNP1-attached
+GQDs and other experiments such as binding affinity measurement and
+virus inhibition experiments (PDF)
+The authors declare
+no
+competing financial interest.
+Supplementary Material
+References
+Associated Data
+This section collects any data citations, data availability statements, or supplementary materials included in this article.
+Supplementary Materials
+Articles from ACS Omega are provided here courtesy ofAmerican Chemical Society

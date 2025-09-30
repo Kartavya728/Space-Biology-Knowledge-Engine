@@ -1,0 +1,233 @@
+Summary
+Measurements of telomere length in skeletal muscle stem cells (MuSCs), a rare cell population within muscles, provide insights into cellular dysfunction in diseased conditions. Here, we describe a protocol (cryosectionmusclequantitativefluorescentinsituhybridization) using skeletal muscle cryosections for assessments of telomere length in MuSCs, in their native environment. Using a free software, telomere length measurements are assessed on a single-cell level. We also provide methodology to perform data analyses in several ways.
+For complete details on the use and execution of this protocol, please refer toTichy et al. (2021).
+Subject areas:Cell Biology, Cell isolation, Cell-based Assays, In Situ Hybridization, Microscopy, Stem Cells
+Graphical abstract
+img-1787
+Highlights
+CRYO MuQ-FISH can measure telomere length on resident skeletal muscle stem cells
+This protocol is ideal for archival samples
+Telomere length quantitation can be normalized to DAPI or centromere intensity
+Telomere outputs include both total sum intensity and mean intensity per nucleus
+Measurements of telomere length in skeletal muscle stem cells (MuSCs), a rare cell population within muscles, provide insights into cellular dysfunction in diseased conditions. Here, we describe a protocol (cryosectionmusclequantitativefluorescentinsituhybridization) using skeletal muscle cryosections for assessments of telomere length in MuSCs, in their native environment. Using a free software, telomere length measurements are assessed on a single-cell level. We also provide methodology to perform data analyses in several ways.
+Before you begin
+Experimental design and considerations
+Reductions in telomere length in muscle stem cells (MuSCs) have been recently discovered in chronic muscle injury conditions, including Duchenne muscular dystrophy (Tichy et al., 2017,2021), which results in a more severe disease phenotype (Sacco et al., 2010). Many common methods for conducting telomere length assessments in other cell and tissue types requires the isolation of primary cells, which may disrupt the tissue environment, requires large numbers of cells to obtain enough genomic DNA for appraisal [Telomere Restriction Fragment/TRF analysis (Mender and Shay, 2015)], or only provides the average telomere length over the entirety of the cell population [Telomere:single copy gene QPCR methodology (Cawthon, 2002)] . The quantitative fluorescent in-situ hybridization (Q-FISH) technique, which allows for assessment of telomere length based on the fluorescence intensity of a hybridized probe, coupled with semi-automated telomere length assessments using a free software (Telometer), provides robust information that can eliminate such limitations. Here, we provide a protocol where our previously established and validated muscle stem cell-specific Q-FISH protocol for measuring telomeres in FACS-isolated MuSCs [MuQ-FISH (Tichy et al., 2017)], has been altered and adapted for use on cryosections of murine skeletal muscle (CRYO MuQ-FISH), leaving the MuSC niche intact. This method can be beneficial for telomere length quantitation of archival samples and may also be adapted to examine telomere lengths in additional muscle-resident cell types, as well as cell types from other tissues. This protocol is also compatible with skeletal muscle cryosections derived from species other than mice but testing and optimization should be conducted by the end user.
+Note:This protocol utilizes skeletal muscle tissue from research animals and human cohorts. Ensure that the use of research animals has been approved by the appropriate institutional animal care and use committee (IACUC) or equivalent oversight body. Additionally, procurement and use of tissues derived from human sources should follow the appropriate organizational rules regarding informed consent and be approved by the end user’s institutional review board. Sample collection for this protocol was done according to institutional guidelines and regulations of the University of Pennsylvania.
+Note:For telomere data extraction from images, the following software must be installed on the analysis computer: java se (https://www.oracle.com/java/technologies/javase-downloads.html) and the freeware Telometer (https://demarzolab.pathology.jhmi.edu/telometer/download.html). Install software according to instructions listed on the websites.
+This protocol includes the following steps: 1) Skeletal muscle preparation, embedding, sectioning, 2) CRYO MuQ-FISH, 3) image collection, 4) analysis and statistics
+Skeletal muscle preparation, embedding, and sectioning
+Timing: 2 days
+img-1788
+Humanely euthanize mice according to an approved IACUC protocol methodology and institutional guidelines.
+Note:This protocol uses male mice between 2 and 5 months of age. However, this protocol can be applied to samples derived from other ages and both sexes of mice.
+Spray the lower half of mouse body with 70% ethanol.
+Lay mouse on its back and completely remove skin from the back legs.
+Dissect desired hindlimb skeletal muscles for assessment.
+Note:For downstream assessments, it is ideal to compare the same types of muscles, rather than mixing different anatomical groups. We routinely utilize either the Tibialis anterior or the gastrocnemius muscles for telomere length measurements.
+Pause point:Cryoblocks can be stored at −80°C indefinitely.
+img-1789
+Pause point:Slides can be stored at −20°C indefinitely.
+img-1790
+Key resources table
+REAGENT or RESOURCE, SOURCE, IDENTIFIER
+table00001
+Materials and equipment
+Buffers
+TET buffer
+Reagent, Final concentration, Amount
+table00002
+pH 7.6. Buffer can be stored at room temperature (25°C) indefinitely if making a larger batch. Do not reuse buffer.
+Hybridization buffer
+Reagent, Final concentration, Amount
+table00003
+pH 6.0. Use immediately after making buffer.
+Wash Buffer I
+Reagent, Final concentration, Amount
+table00004
+pH 7.2. Wash buffer I can be prepared in large stocks and stored at room temperature (25°C) for several months.
+Wash Buffer II
+Reagent, Final concentration, Amount
+table00005
+pH 7.2. Wash buffer II can be prepared in large stocks and stored at room temperature (25°C) for several months.
+Wash Buffer III
+Reagent, Final concentration, Amount
+table00006
+pH 7.2. Wash buffer III can be prepared in large stocks and stored at room temperature (25°C) for several months.
+Wash Buffer IV
+Reagent, Final concentration, Amount
+table00007
+pH 7.2. Wash buffer IV can be prepared in large stocks and stored at room temperature (25°C) for several months.
+Antibody Blocking Buffer
+Reagent, Final concentration, Amount
+table00008
+pH 7.4. Blocking buffer should be stored at 4°C when not in use and is stable for several weeks.
+Phosphate Buffered Saline (PBS), 1×
+Reagent, Final concentration, Amount
+table00009
+pH 7.4. PBS is stored at room temperature (25°C) and is stable for several months.
+Equipment
+The following equipment was used for the described protocol.
+−20°C freezer
+−80°C freezer
+4°C refrigerator
+Compact Digital Rocker (Thermo Scientific, Cat#88880020)
+Isotemp Water Bath (Fisher Scientific, Model #2320)
+Steamer (Hamilton Beach, Model# VS02)
+Thermobrite slide warmer (Leica, Model #S500-12)
+Thermomixer (Eppendorf, Model# F1.5)
+Widefield microscope (Nikon, Model# NiU)
+Alternatives:A hybridization oven may also be utilized for wash buffer incubations and telomere probe preheating and hybridization, as well as additional heating steps. Common equipment such as freezers, refrigerators, rockers, water baths, steamers, and thermomixers are interchangeable with any other brand and model. Any widefield microscope equipped with the proper filter sets and a 100×objective can complete the imaging described in this protocol.
+Software
+The following software are instrumental in analysis of datasets generated using this protocol.
+Java SE 11 or later
+Telometer v3.0.5
+Microsoft Excel 365 or equivalent
+Graphpad prism 9.1.2 or later
+Step-by-step method details
+Telomere, centromere, muscle stem cell, and nuclear staining
+Timing: 2 days
+img-1791
+Remove one slide from each desired sample set from −20°C and warm to room temperature (25°C).
+Permeabilize sections by immersing slides in 0.5% Triton X-100 in PBS for 10 min in a coplin jar at room temperature (25°C).
+Note:The coplin jar used in this protocol holds approximately 50 mL of solution and 8 slides. If more slides must be stained, we recommend using a tissue-tek staining dish and 24-place slide holder. This alternative setup requires 200–250 mL of solution volume for adequate coverage of the slides.
+Wash slides twice with PBS for 3 min each at room temperature (25°C).
+img-1792
+img-1793
+img-1794
+Table 1.
+Telomere/centromere probe hybridization conditions
+Steps, Temperature, Time
+table00010
+Image acquisition
+Timing: less than 3 days
+img-1795
+CRITICAL:The imaging must take place as soon as possible after staining, and imaging must be completed for all samples in as short a period of time as possible. Given the sensitivity of Q-FISH assays, minor changes in fluorescence intensities can result in skewed datasets. Even with antifade agents in the mounting medium, it is imperative to image cells of interest as quickly as possible, so we recommend completing imaging of all samples in 3 days or less.
+img-1796
+Identify the optimal exposure settings for DAPI, telomere Alexa Fluor 647 signal, and optional centromere Cy3 imaging.Troubleshooting 1,Troubleshooting 2
+Note:Several slides should be examined before determining the optimal exposure settings. It is undesirable to have oversaturated or undersaturated pixels in any of the images. In either situation, fewer regions of interest are identified.
+CRITICAL:Once intensity settings are determined, the exposure settings should not be changed for the duration of the particular experiment.
+img-1797
+Optional:Obtaining z-stacks and flattening with an extended depth of focus algorithm will provide more telomere and optional centromere foci per cell, but a single focal plane with many foci in focus is sufficient to yield useable data for analysis.
+Note:Imaging more VCAM+ cells will produce a better representation of the population of MuSCs throughout the muscle. Ensure that more than one muscle section is examined per slide.
+Note:If imaging of all desired cells from all samples cannot be completed in one day, stagger the genotypes/treatments during imaging to ensure fading that occurs between imaging sessions will be similar between the groups.
+Note:It is best to avoid imaging/assessing cells of interest that are positioned on top of or below other cells/nuclei, as telomere length quantitated from overlapping cells may confound the datasets.
+Pause point:After all needed images are collected, downstream analysis can be conducted at the end user’s leisure.
+img-1798
+Figure 1.
+img-1799
+Representative image of a skeletal muscle cryosection processed for telomere staining
+Blue: DAPI staining. Red: telomere probe. Green: VCAM muscle stem cell marker. White: optional centromere probe staining for alternative normalization. Yellow text: DAPI, VCAM, and telomere merged image (typical processing). Cyan text: DAPI, VCAM, telomere and centromere merged image. Use of centromere probe requires telomere length normalization to DAPI. Then centromere normalization to DAPI. Finally, a ratio of the two values is generated. Scale bar: 10 μm.
+Cryosection MuSC-fluorescentin situhybridization (CRYO MuQ-FISH) telomere length data collection and analysis
+Timing: varies based on sample size. Several hours to several days.
+img-1800
+Telomere length is measured using a semi-automated ImageJ-based platform known as Telometer. Telometer provides step-by step instructions to analyze 16-bit monochrome images for telomere length. The premise involves creating a project that is saved on a local machine, identifying cells of interest, and measuring the intensity of telomeres, relative to the total DAPI intensity of that cell. The readout from Telometer produces both total sum intensity of telomeres, which can be normalized to DAPI intensity to account for differences in cell cycle position, as well as the mean intensity of telomeres, which can also be normalized to DAPI. Should nuclear architecture or staining be compromised, telomere measurements can instead be normalized to centromere intensities. In this fashion, Telometer steps are conducted twice. Once, where the telomere signal is assessed relative to DAPI, and then those same cells of interest are analyzed a second time, where the centromere intensities are measured instead of the telomere intensities. The ratio of these measurements would then be used for dataset readouts.
+Open Telometer software and create a new project in the “Admin” tab (Figure 2A).
+Click the “Score” tab and follow the on-screen instructions for each step.
+Select the Project name for your analysis grouping and the Preset objective (in this case 100×telomere) and subtract Cy3 background. The scoring tag adds metadata to the analysis. We do not usually alter this.
+Select the Telomere 16-bit monochrome exported tiff image when prompted for opening the first image.
+Note:Telometer defaults as the telomere signal being a Cy3 image. In this protocol, the telomere image is the Alexa Fluor 647 channel image, and it is this image that is opened first when prompted.
+Next, open the DAPI 16-bit monochrome exported tiff image when prompted.
+Normalize the Telomere image by clicking and forming a box of any size in an area absent of features and click “normalize” (Figure 2B).
+Repeat normalization for the DAPI image when prompted (Figure 2C).
+Continue following software prompts for creating masked images to narrow down regions in the image that contain telomere foci.
+Threshold the masked image, if necessary, when prompted to obtain the greatest telomere foci in the image with the least background (Figure 2D).
+Note:The Telometer software typically does a decent job with auto-thresholding, so the investigator does not often need to further threshold.
+Manually draw a circle encompassing a nucleus of interest when prompted. Refer to the color image to determine which nuclei are clearly VCAM+ and designate the nucleus of interest. Selection of VCAM nuclei should only occur for cells in the satellite cell position (between the basal lamina and sarcolemma). Name the nucleus as desired (Figure 2E).
+Select the “+ Add Nucleus” button. Repeat for additional VCAM+ cells in the image, if any. Click the “next” button (Figure 2F).
+Optional:Telometer next gives the option to separate conjoined telomere foci (if counting telomere number) and manually remove halo artifacts from out of focus light. These functions are completely optional for the analysis.
+Select “complete.” The data will be stored on your local machine. To view images at a later time that have been processed and analyzed, select the “View” option in the Telometer tab (Figure 2G).
+Repeat step 15–23 for remaining images to analyze. Ensure that they are being saved in the proper project data file and appropriately named.
+To analyze datasets using the Telomere sum option, refer to the last column of the dataset. It represents the telomere sum intensity divided by DAPI sum intensity formula∗100.
+Optional:If telomere mean intensities are desired per cell instead of total (sum) intensities, calculate this value by dividing the datasets in the Telomere Mean column by its respective DAPI Sum.
+Optional:If one desires to normalize to centromere intensity instead of DAPI intensity, the procedure for telomere analysis is repeated, but instead of using the Telomere images on prompt to open, the centromere images are opened instead. The nuclei should be named and selected similarly in the same order as the telomere analysis. Then the last column of data from the telomere analysis is divided by the last column of centromere data analysis.Troubleshooting 5
+Graph datasets as desired in Graphpad prism. Data can be graphed as total intensity values, or data can be graphed as histograms to demonstrate minor shifts of telomere length within the populations (Figure 3).Troubleshooting 6
+Note:The telomere and centromere probes are probes that recognize mammalian DNA sequences and are functional in other species, including samples from rat and human. We have found that this protocol is compatible with muscle tissues of human and rat skeletal muscle cryosections (Figures 4and5). We also examined the adaptability of this protocol to several other tissue types (spleen, liver, kidney, testicle, and colon) and found this protocol does appropriately label telomeres in all tissues examined (Figure 5), increasing the impact and usability of this method. However, in such tissues, it may be necessary to utilize thinner sections or more advanced microscopes (confocal microscopy), given the increased number of focal planes exhibiting telomere foci observed.
+Figure 2.
+img-1801
+Processing cells of interest for telomere analysis by Telometer
+(A) Telomere radio button depicting different options for data acquisition and analysis.
+(B) Representative monochrome image of telomere image fromFigure 1. Yellow box is the region chosen for background normalization.
+(C). Representative DAPI monochrome image fromFigure 1. Yellow box is the region chosen for background normalization.
+(D) Thresholding of telomere channel to determine optimal balance between telomere foci identification with the least background.
+(E) Selection of VCAM+ nucleus fromFigure 1by manually outlining when prompted by the software.
+(F) Naming of a selected VCAM+ nucleus.
+(G) Masked image used for data analysis by Telometer.
+(H) Selected data outputs provided by Telometer analysis. Cell ID: unique identifier for a particular cell that was analyzed. Experiment name: selected at beginning of analysis (project name). Scoring Name (Tag): prefix added to dataset. Usually the date of analysis. Sum (DAPI): measured DAPI total intensity. Sum (Telomere): Total measured telomere intensity. Mean (Telomere): Mean intensity of Telomere signal per nucleus. Telomere Sum/DAPI Sum (Percent): Value used to graph datasets.
+Figure 3.
+img-1802
+Example graphical plots from Telometer analysis
+(A) CRYO MuQ-FISH Telomere Sum Intensity/DAPI Sum Intensity (Percent) data graphed from 2 different mouse genotypes subjected to chronic injury. Note the significant reduction of telomere lengths in genotype 2. Genotypes depicted in this figure are those used in our companion article (Tichy et al., 2021) and are control and IKK2CAMuSCmice subjected to chronic injuries.
+(B) CRYO MuQ-FISH data binned in Microsoft Excel from (A) and plotted as percent of cells per mouse and per genotype. Bins are arbitrarily assigned. Note that the shift of the population of genotype 2 to the left is indicative of telomere shortening.
+(C) CRYO MuQ-FISH Telomere Mean Intensity/DAPI Sum Intensity (calculated percent) from analysis in (A).
+(D) Histogram representation of data from (C). For all graphs, N=3 mice per genotype, with a minimum of 35 cells imaged per mouse. Depicted are mean ± SEM. ∗∗∗∗ p<0.0001.
+Figure 4.
+img-1803
+Application of CRYO MUQ-FISH to human skeletal muscle samples reveals compatibility of the method with human tissues
+Cryosections were stained with the endothelial marker CD31 and processed for CRYO MuQ-FISH. Scale bar: 10 μm.
+Figure 5.
+img-1804
+Assessment of CRYO MuQ-FISH protocol translatability to additional tissue and organism types
+Scale bar: 10 μm. Note- background was left intentionally higher to demonstrate surrounding tissue architecture. Adult 17-month-old male Sprague-Dawley rat tissues were collected and processed identically as described in the CRYO MuQ-FISH protocol and imaged for telomere signal and DAPI. We found this protocol capable of staining telomeres in tissues of the tibialis anterior muscle, colon, liver, kidney, spleen, and testicle. Scale bar: 10 μm.
+Expected outcomes
+This protocol demonstrates the methodology to process cryosections of skeletal muscle for telomere analysis. We utilized VCAM as a muscle stem cell marker (Liu et al., 2015;Maesner et al., 2016); however, this protocol can likely be applied to additional resident skeletal muscle populations, once appropriate markers are identified and tested for compatibility. Here, we utilized data from two different genotypes of mice that underwent chronic, repetitive injuries, to demonstrate different ways to represent the data (Figure 3). Additionally, to confirm the validity of the CRYO MuQ-FISH method, we compared CRYO MuQ-FISH with our traditional MuQ-FISH method using isolated MuSCs. We found similar pattens of telomere shortening in a mouse model of Duchenne muscular dystrophy coupled with a telomere defect (Figure 6).
+Figure 6.
+img-1805
+Comparisons of CRYO MuQ-FISH with previously established telomere length assessments in isolated MuSCs demonstrates no differences in expected data outcomes
+(A) MuSCs were FACS-sorted (CD11b-/CD31-/CD45-/Sca1-/CD34+/α7Integrin+) from wildtype mice or dystrophic mice lacking the telomere component Terc (mdx/mTRG2). MuSCs were subjected to our previously established and validated MuQ-FISH method to assess telomere length. Depicted are mean ± SEM. Percent difference between the two groups is displayed.
+(B) Data from (A) plotted as a histogram to demonstrate the cellular distribution of telomere lengths.
+(C) CRYO MuQ-FISH of VCAM+ cells in skeletal muscle cryosections from mice used in (A). Gastrocnemius muscles were processed for telomere length by the CRYO MuQ-FISH protocol. Note the similar percent difference in telomere length between the groups compared with what is shown in (A).
+(D) Histogram representation of data depicted in (C). Note the similarity in structure of the histograms between (C) and (D). For all graphs, N=3 male mice per genotype (5–7 months of age), with a minimum of 35 cells imaged per mouse. Depicted are mean ± SEM.
+Quantification and statistical analysis
+Comparisons of data between genotypes are conducted using unpaired student T-tests with Welch’s correction. Cells from at 3 mice or samples per experimental condition should be examined, with at least 35 cells imaged per mouse.
+Limitations
+This protocol utilizes the quantitative fluorescence in situ hybridization method for measuring telomere length. Because measurements of telomere length are based on fluorescent intensities, it is critical to image the slides as soon as possible, since fading will occur over time. Samples should not be imaged between different experiments, but instead they should only be imaged in the same batch in as short a time window as possible, since fluorescent intensities will be variable between experiments. Normalization must be done to respective control samples to combine datasets. Since MuSCs comprise a rare population of cells and are very small in size, a 100×or equivalent high-powered objective is necessary to visualize the telomere foci to get meaningful datasets.
+Troubleshooting
+Problem 1
+No Q-FISH telomere probe signal present following imaging (step 9).
+Potential solution
+Antigen retrieval time was insufficient or not completed with boiling buffer. Ensure that temperatures and times are completed as outlined in this protocol.
+Probe was bleached or stored improperly after being prepared. Always use a new aliquot of telomere/centromere probe from −80°C and ensure that it is protected from light throughout this protocol.
+Inappropriate dilution of probe was used, hybridization buffer was not correctly made, hybridization conditions were not followed. If probes are too dilute, increase the amount of the Q-FISH probes used in the protocol. Confirm that hybridization buffer is completely dissolved and that no air bubbles were present when hybridization occurred. Confirm the heating source during denaturation and hybridization is at the proper temperatures.
+Problem 2
+High background staining (step 9).
+Potential solution
+Do not let the tissue dry out at any step following permeabilization. Avoid Cy3/Alexa fluor red/orange dyes except for centromeric region staining.
+Problem 3
+Large numbers of samples that cannot be imaged in the required timeframe (step 10d).
+Potential solution
+While imaging samples in the same time window is optimal, if too many samples are present, a 3-day window may not be sufficient time to complete the acquisition, resulting in fading of the sample and alteration of the data. To overcome this caveat, it may be possible to normalize the intensity of a particular reference sample imaged on different days using fluorescent beads, such as those found in the InSpeck Microscopy Image Intensity Calibration Kit. These kits contain beads of varying but defined intensities from which a standard curve can be generated on each day within the same experiment.
+Problem 4
+Telometer is not displaying recorded datasets (step 25d).
+Potential solution
+Ensure that you are trying to view data in the appropriate project file. It may be necessary to use the “refresh” button to repopulate the project file, particularly if one is trying to view data that was accumulated since Telometer was first opened.
+Problem 5
+DAPI staining intensity is not consistent between experimental groups or nuclear architecture is dissimilar (step 26).
+Potential solution
+Conduct telomere analysis by normalizing to a centromeric probe. First do telomere analysis normalized to DAPI. Then repeat the Telometer analysis on the same cells using the centromere image instead of the telomere image. Ensure to label cells of interest in the same order between the telomere identification and the centromere identification. Finally, divide the Telomere sum/DAPI sum percent by the Centromere sum/DAPI sum. Utilize those values for graphing.
+Problem 6
+Inconsistent data between experiments (step 27).
+Potential solution
+Given that Q-FISH is an intensity-based measurement, experimental samples are ideally measured at the same time with the same exposure settings. If too many samples are present, fading can occur between sample sets that would confound downstream analysis. Thus, it is optimal to image all experimental groups as soon as possible, and comparisons between different experiments are not possible. Additionally, telomere probe in hybridization buffer should completely cover the sample without any air bubbles. While the values themselves may be different, due to inherent differences between experimental preparations, calculations of percent difference between groups can be useful in confirming that datasets are similar.
+Resource availability
+Lead contact
+Further information and requests for resources and reagents should be directed to and will be fulfilled by the lead contact, Foteini Mourkioti (fmour@pennmedicine.upenn.edu).
+Materials availability
+This study did not generate new materials or unique reagents.
+Acknowledgments
+We thank both Jim Morgan and Alan Meeker (Johns Hopkins) for the current version of Telometer. This work was supported by the NASA (18-FG_ind_2–0022) and the NIH (R01HL146662) to F.M.
+Author contributions
+E.D.T. designed and performed experiments, developed, and optimized the protocol, and wrote the manuscript. F.M. designed experiments, interpreted data, and wrote the manuscript.
+Declaration of interests
+The authors declare no competing interests.
+Contributor Information
+Elisia D. Tichy, Email: etichy@pennmedicine.upenn.edu.
+Foteini Mourkioti, Email: fmour@pennmedicine.upenn.edu.
+Data and code availability
+This study did not generate any unique data sets or code.
+References
+Associated Data
+This section collects any data citations, data availability statements, or supplementary materials included in this article.
+Data Availability Statement
+This study did not generate any unique data sets or code.
+Articles from STAR Protocols are provided here courtesy ofElsevier
