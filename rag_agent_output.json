@@ -1,0 +1,13 @@
+{
+  "para1": {
+    "text": "LangChain is a framework for developing applications powered by large language models (LLMs). It simplifies every stage of the LLM application lifecycle. LangChain's key features include simplifying the development and deployment of LLM-powered applications, enabling rich and context-aware responses, and offering modular abstractions for essential components required to interact with language models. These components include Schema, Models, Prompts, Indexes, Memory, Chains, and Agents. It can be used across different fields like content creation, customer service, and data analytics.",
+    "images": {},
+    "tables": {}
+  },
+  "_metadata": {
+    "total_paragraphs": 1,
+    "total_images": [],
+    "total_tables": [],
+    "source_documents": 1
+  }
+}
