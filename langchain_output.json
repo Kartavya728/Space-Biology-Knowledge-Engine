@@ -1,0 +1,23 @@
+{
+  "para1": {
+    "text": "LangChain is an open source framework that enables software developers working with artificial intelligence (AI) and its machine learning subset to combine large language models with other external components to develop LLM-powered applications.",
+    "images": {},
+    "tables": {}
+  },
+  "para2": {
+    "text": "It simplifies the process of creating generative AI application interfaces by streamlining the process of accessing and organizing large quantities of data.",
+    "images": {},
+    "tables": {}
+  },
+  "para3": {
+    "text": "Further details may require additional context or more specific queries.",
+    "images": {},
+    "tables": {}
+  },
+  "_metadata": {
+    "total_paragraphs": 3,
+    "total_images": [],
+    "total_tables": [],
+    "source_documents": 3
+  }
+}

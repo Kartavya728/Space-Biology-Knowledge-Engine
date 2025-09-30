@@ -1,0 +1,33 @@
+{
+  "para1": {
+    "text": "The Arabidopsis 14-3-3 proteins exhibit amino acid similarity, with some regions being highly conserved and others showing divergence. Sequence alignments and structural models help visualize these patterns (img-2052, img-2053).",
+    "images": {
+      "img_1": "img-2052"
+    },
+    "tables": {}
+  },
+  "para2": {
+    "text": "The degree of amino acid similarity across the 13 Arabidopsis 14-3-3s is displayed graphically (img-2052). Residue conservation is highest in the client binding channel (img-2053).",
+    "images": {
+      "img_1": "img-2053"
+    },
+    "tables": {}
+  },
+  "para3": {
+    "text": "Additional visual references: img-2051",
+    "images": {
+      "img_1": "img-2051"
+    },
+    "tables": {}
+  },
+  "_metadata": {
+    "total_paragraphs": 3,
+    "total_images": [
+      "img-2051",
+      "img-2052",
+      "img-2053"
+    ],
+    "total_tables": [],
+    "source_documents": 3
+  }
+}
