@@ -3,61 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gemini Demo</title>
+  <title>React Agent with RAG</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="min-h-screen bg-gray-50">
-  <div class="max-w-3xl mx-auto p-6">
-    <header class="mb-6">
-      <h1 class="text-3xl font-bold text-gray-800">Ask Gemini</h1>
-      <p class="text-gray-600">Type a prompt and get a response streamed live.</p>
+<body class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+  <div class="max-w-4xl mx-auto p-6">
+    <header class="mb-8 text-center">
+      <h1 class="text-4xl font-bold text-gray-800 mb-2">🤖 AI Research Assistant</h1>
+      <p class="text-gray-600">Ask questions about scientific documents with images and tables</p>
     </header>
 
-    <form id="chat-form" class="bg-white shadow rounded-lg p-4 space-y-4">
+    <form id="chat-form" class="bg-white shadow-lg rounded-xl p-6 space-y-4">
       {% csrf_token %}
       <input
         id="user-input"
-        class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:border-blue-400"
+        class="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:border-blue-500"
         type="text"
         name="user_input"
-        placeholder="Type something..."
+        placeholder="e.g., Tell me about amino acid similarity in Arabidopsis proteins"
         required
       >
       <button
-        class="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded"
+        id="submit-btn"
+        class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold py-3 rounded-lg transition-all duration-200 shadow-md"
         type="submit"
       >
-        Submit
+        Send Query
       </button>
     </form>
 
-    <section id="output-section" class="mt-6 bg-white shadow rounded-lg p-4 hidden">
-      <h2 class="text-xl font-semibold text-gray-800 mb-2">Gemini says:</h2>
-      <p id="output" class="whitespace-pre-wrap text-gray-700"></p>
+    <section id="thinking-section" class="mt-6 bg-gray-800 text-green-400 shadow-lg rounded-xl p-4 hidden font-mono text-sm">
+      <h2 class="text-lg font-semibold mb-2">🔍 Agent Working...</h2>
+      <pre id="thinking-output" class="whitespace-pre-wrap"></pre>
+    </section>
+
+    <section id="output-section" class="mt-6 space-y-4 hidden">
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">📝 Results</h2>
+      <div id="paragraphs-container" class="space-y-4"></div>
+      <div id="metadata-section" class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-lg hidden">
+        <h3 class="font-semibold text-blue-900 mb-2">📊 Metadata</h3>
+        <pre id="metadata-output" class="text-sm text-blue-800"></pre>
+      </div>
     </section>
   </div>
 
   <script>
     const form = document.getElementById("chat-form");
     const userInputEl = document.getElementById("user-input");
+    const submitBtn = document.getElementById("submit-btn");
+    const thinkingSection = document.getElementById("thinking-section");
+    const thinkingOutput = document.getElementById("thinking-output");
     const outputSection = document.getElementById("output-section");
-    const outputEl = document.getElementById("output");
-
-    let typingQueue = [];
-    let typingInterval = null;
-
-    function startTypingEffect() {
-      if (typingInterval) return; // already typing
-
-      typingInterval = setInterval(() => {
-        if (typingQueue.length > 0) {
-          outputEl.textContent += typingQueue.shift();
-        } else {
-          clearInterval(typingInterval);
-          typingInterval = null;
-        }
-      }, 30); // speed (ms per char) → tweak for faster/slower typing
-    }
+    const paragraphsContainer = document.getElementById("paragraphs-container");
+    const metadataSection = document.getElementById("metadata-section");
+    const metadataOutput = document.getElementById("metadata-output");
 
     form.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -65,8 +64,14 @@
       const userInput = userInputEl.value.trim();
       if (!userInput) return;
 
-      outputEl.textContent = "";
-      outputSection.classList.remove("hidden");
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Processing...";
+
+      thinkingOutput.textContent = "";
+      thinkingSection.classList.remove("hidden");
+      outputSection.classList.add("hidden");
+      paragraphsContainer.innerHTML = "";
+      metadataSection.classList.add("hidden");
 
       if (window.currentStream) {
         window.currentStream.close();
@@ -77,17 +82,65 @@
       window.currentStream = eventSource;
 
       eventSource.onmessage = function (event) {
-        if (event.data === "[DONE]") {
-          eventSource.close();
-          return;
+        try {
+          const data = JSON.parse(event.data);
+
+          if (data.type === "thinking") {
+            thinkingOutput.textContent += data.content;
+            thinkingSection.scrollTop = thinkingSection.scrollHeight;
+          }
+          else if (data.type === "paragraph") {
+            outputSection.classList.remove("hidden");
+            
+            const paraDiv = document.createElement("div");
+            paraDiv.className = "bg-white shadow-md rounded-lg p-5 border-l-4 border-blue-500";
+            
+            const paraText = document.createElement("p");
+            paraText.className = "text-gray-700 leading-relaxed mb-3";
+            paraText.textContent = data.content.text;
+            paraDiv.appendChild(paraText);
+
+            if (data.content.images && Object.keys(data.content.images).length > 0) {
+              const imgDiv = document.createElement("div");
+              imgDiv.className = "mt-3 p-3 bg-blue-50 rounded-lg";
+              imgDiv.innerHTML = `<span class="font-semibold text-blue-900">🖼️ Images:</span> ${Object.values(data.content.images).join(", ")}`;
+              paraDiv.appendChild(imgDiv);
+            }
+
+            if (data.content.tables && Object.keys(data.content.tables).length > 0) {
+              const tblDiv = document.createElement("div");
+              tblDiv.className = "mt-3 p-3 bg-green-50 rounded-lg";
+              tblDiv.innerHTML = `<span class="font-semibold text-green-900">📊 Tables:</span> ${Object.values(data.content.tables).join(", ")}`;
+              paraDiv.appendChild(tblDiv);
+            }
+
+            paragraphsContainer.appendChild(paraDiv);
+          }
+          else if (data.type === "metadata") {
+            metadataSection.classList.remove("hidden");
+            metadataOutput.textContent = JSON.stringify(data.content, null, 2);
+          }
+          else if (data.type === "done") {
+            thinkingSection.classList.add("hidden");
+            submitBtn.disabled = false;
+            submitBtn.textContent = "Send Query";
+            eventSource.close();
+          }
+          else if (data.type === "error") {
+            alert("Error: " + data.content);
+            submitBtn.disabled = false;
+            submitBtn.textContent = "Send Query";
+            eventSource.close();
+          }
+        } catch (err) {
+          console.error("Parse error:", err);
         }
-        // push characters to queue instead of appending directly
-        typingQueue.push(...event.data);
-        startTypingEffect();
       };
 
       eventSource.onerror = function () {
-        console.error("SSE error, closing stream.");
+        console.error("SSE error");
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Send Query";
         eventSource.close();
       };
     });
