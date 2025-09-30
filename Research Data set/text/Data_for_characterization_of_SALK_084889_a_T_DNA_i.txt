@@ -1,0 +1,50 @@
+Abstract
+In this article we report the identification of T-DNA (transfer DNA) insertion sites within two different gene regions in the genome of an Arabidopsis mutant line, SALK_084889. The T-DNA positions are in the 3′ UTR (untranslated region) of DREB2A (Dehydration-responsive element-binding protein 2A) (AT5G05410) and promoter of LOX1 (Lipoxygenase 1) (AT1G55020) as determined by DNA-PCR and sanger sequencing. The expression levels of DREB2A and LOX1 were also analyzed using quantitative realtime PCR (qPCR) in SALK_084889 and wild type Arabidopsis (Col, Columbia). Further, the comparison of drought and heat tolerance between Col and SALK_084889 were conducted by stress treatments. The present data indicate that in SALK_084889, the expression of DREB2A is not downregulated under normal growth conditions but can be affected only in roots under drought treatment, while LOX1 is significantly downregulated in both roots and shoots under all tested conditions. These data are original and have not been published elsewhere.
+Keywords:Arabidopsis, DREB2A, LOX1, SALK_084889, T-DNA
+Specifications Table
+table00001
+Value of the data
+T-DNA insertion lines provide important resource for genetic analysis based on mutagenesis in plant research. SALK lines are the most widely used T-DNA insertion lines for the model plant Arabidopsis. Accurate assessment of insertions is critical for understanding the value of the insertion lines.
+SALK_084889 is annotated as a T-DNA insertion line ofDREB2A, a key regulator of drought and heat response in Arabidopsis. We characterizedDREB2Aexpression in normal and drought conditions in this line, which is relevant for analysis ofDREB2Amutants in further investigation.
+TheLOX1gene plays a critical role in multiple bioprocesses associated with lipid peroxidation. Our data identified a T-DNA insertion within promoter ofLOX1and showed the knock-out expression ofLOX1in SALK_084889. These are valuable information for mutation analysis ofLOX1.
+1. Data
+The dataset of this article provides information on T-DNA insertions in SALK_084889.Fig. 1shows the T-DNA bands amplified withinDREB2A(AT5G05410) andLOX1(AT1G55020) genes of SALK_084889 as well as T-DNA insertion sites determined by Sanger sequencing.Fig. 2A–B showDREB2Aexpression in both roots and shoots in normal conditions with or without drought treatment.Fig. 2C–D showLOX1expression in roots and shoots in normal conditions.Fig. 3,Fig. 4show the comparison of survival rates between Col and SALK_084889 plants in drought and heat treatments.Table 1shows the sequences of primers used in experiments forFig. 1,Fig. 2.
+Fig. 1.
+img-773
+T-DNA insertion in 3′ UTR ofDREB2A(AT5G05410) and promoter ofLOX1(AT1G55020) in SALK_084889. (A) Gene structure ofDREB2A. The T-DNA position is in +1264 bp after transcription start site. (B) PCR amplification of wild type allele band using forward (F) and reverse (R) gene specific primers DREB2A-F and DREB2A-R (F-R) as well as T-DNA band using LBb1.3 and DREB2A-R (LBb-R). One Col wild-type seedling and eight randomly selected SALK_084889 seedlings were used. (C) Gene structure ofLOX1. The T-DNA position is in −4 bp before transcription start site. (D) DNA-PCR of wild type allele band using gene specific primers LOX1-F and LOX1-R (F-R) as well as T-DNA band using LBb1.3 and LOX1-R (LBb-R). All primers are listed inTable 1. The SEQ files of sanger sequencing are shown inSupplementary material.
+Fig. 2.
+img-774
+Relative expression levels ofDREB2AandLOX1. The expression ofDREB2Awas determined in roots (A) and shoots (B) of Col or SALK_084889 plants with or without drought treatments. The expression ofLOX1was determined in roots (C) and shoots (D) of Col or SALK_084889 plants in normal condition. The expression levels ofDREB2AorLOX1in Col in normal conditions were initiated as “1” so that relative expression levels of other samples were determined. TheUBQ11(AT4G05050) gene was used as the internal control. The Ct (cycle threshold) values are shown inSupplementary table 1. Data are means±SE (n=3). The student׳st-test was performed to show the significant difference of gene expression between Col and SALK_084889 (*p<0.05, **p<0.01).
+Fig. 3.
+img-775
+Drought tolerance of SALK_084889. (A) Phenotype of Col or SALK_084889 plants after drought treatment followed by recovery. (B) Survival rate of Col or SALK_084889 plants treated by drought. The number of survived plants are shown inSupplementary table 2. Data are means±SD (n=3). The student׳st-test was performed to show the significant difference of survival rate between Col and SALK_084889 (**p<0.01).
+Fig. 4.
+img-776
+Heat tolerance of SALK_084889. (A) Phenotype of Col or SALK_084889 plants after heat treatment followed by recovery. (B) Survival rate of Col or SALK_084889 plants treated by heat. The number of survived plants are shown inSupplementary table 2. Data are means±SD (n=3). The student׳st-test was performed to show the significant difference of survival rate between Col and SALK_084889 (**p<0.01).
+Table 1.
+Primers used for the presented data.
+Gene, Name, Sequence (5′-3′), Usage
+table00002
+2. Experimental design, materials and methods
+Arabidopsis seeds of wild tyoe (Col) and SALK_084889 were obtained from Arabidopsis Biological Resource Center. SALK_084889 was reported as a T-DNA insertion line ofDREB2A(AT5G05410) gene. For identification of T-DNA insertion sites, Col and SALK_084889 seeds were grown in soil at 22 °C under constant light condition. Eight randomly selected SALK_084889 seedlings were subjected to DNA-PCR to confirm all seeds are homozygous. ForDREB2A, the gene specific primers DREB2A-F and DREB2A-R were used to amplify wild type allele band while LBb1.3 and DREB2A-R primers were used to amplify T-DNA band. ForLOX1, the gene specific primers LOX1-F and LOX1-R were used to amplify wild type allele band while LBb1.3 and LOX1-R primers were used to amplify T-DNA band. The amplicons of T-DNA bands ofDREB2AandLOX1were purified by subjected to sanger sequencing and the alignment of sequences was performed using Vector NTI v10.0 program (InforMax Inc). For Expression analysis, Col and SALK_084889 seeds were grown in 0.5× MS media (2.2 g of MS basal salts (Sigma), 5 g of Sucrose, 0.5 g of MES, and 1 mL of 1,000× Gamborg vitamins (Sigma) per liter at pH 5.75) at 22 °C under constant light condition. The 14 day old plants were harvested from MS plates and directly preserved in RNALater (Ambion). For drought treatment, harvested Arabidopsis plants were dehydrated on Whatman 3mm paper (Whatman) at 22 °C and 60% humidity under dim light for 2 hprior to fixation in RNALater. For RNA extraction, root and shoot tissues were dissected in RNALater solution and then total RNA was isolated using the Qiagen RNAeasy kit (Qiagen). Quantitative realtime PCR was performed using Fast SYBR Green Master Mix (Thermo Fisher) and 2-ΔΔCtmethod was employed to calculate the relative expression levels ofDREB2A and LOX1. Three replicates were used for each sample andUBQ11(AT4G05050) gene was used as the internal control. For drought and heat tolerance determination of SALK_084889, Col and SALK_084889 seeds were grown in soil at 22 °C under constant light condition. For drought test, the 10 day old plants were transferred to pre-dried soil and withhold water for 4 days prior to recovery by watering for 7 days. For heat test, the 7 day old plants were pre-incubated in 37 °C for 1 h and then treated at 49 °C for 1 h prior to recovery in 22 °C for 2 days. Survival rates and phenotypes of Col and SALK_084889 plants were recorded. Student׳st-test was used for statistical analysis.
+Acknowledgements
+The authors thank the support from members of the UF Space Plants Lab. This work was funded by NASA Space Life and Physical Sciences Grants NNX13AM46G and NNA04CC61G awarded to RJF and ALP managed through Kennedy Space Center.
+Footnotes
+Transparency data associated with this article can be found in the online version at10.1016/j.dib.2017.05.047.
+Supplementary data associated with this article can be found in the online version at10.1016/j.dib.2017.05.047.
+Contributor Information
+Anna-Lisa Paul, Email: alp@ufl.edu.
+Robert J. Ferl, Email: robferl@ufl.edu.
+Transparency document. Supporting information
+Supplementary material
+.
+Appendix A. Supplementary material
+Supplementary material
+.
+References
+Associated Data
+This section collects any data citations, data availability statements, or supplementary materials included in this article.
+Supplementary Materials
+Supplementary material
+Supplementary material
+Articles from Data in Brief are provided here courtesy ofElsevier

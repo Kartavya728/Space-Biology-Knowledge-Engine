@@ -1,0 +1,35 @@
+ABSTRACT
+Sphingomonadaceae are common membrane colonizers and biofilm formers. As part of our studies on long-term genetic changes in drinking water biofilm species, we report the draft genome sequence ofSphingomonasstrain Sph5, isolated from a tap water filtration membrane. The isolate was determined asSphingomonas paucimobilisthrough whole genome sequencing andde novoassembly.
+KEYWORDS:draft genome, WGS, water,Sphingomonas
+ANNOUNCEMENT
+Widely used for drinking water, membrane filtration systems face biofouling due to microbe accumulation and biofilm formation. Studies reveal Sphingomonadaceae as common initial colonizers, persisting dominantly during biofilm growth (1–4). Here, we report the genome sequence of a prevalent isolate.
+Sphingomonasspp. Sph5 was isolated from a biofilm on a Nadir MP005 microfiltration membrane used for drinking water biofouling studies (1,5). Sph5 was previously reported to be phylogenetically closest toSphingomonas sanguinisstrains BAB-7166 (99%) and NBRC 13937 (99%) based on 16S rRNA sequencing and cultivation methods (1). However, the whole genome sequence (WGS) was not reported. WGS analysis is critical to uncover strain-specific traits associated with membrane biofouling. Here, we report the WGS ofSphingomonasspp. Sph5 using Illumina short-read sequencing andde novoassembly methods.
+We received theSphingomonasspp. Sph5 water isolate from Wetsus, Netherlands. Single isolated colonies were obtained on Reasoner’s 2A agar (R2A, Teknova R0005; Difco 214530) and cultured in R2A broth at room temperature. Genomic DNA was extracted using DNeasy UltraClean microbial kit (Qiagen 12224) following the company-provided protocol.
+Sequencing libraries were generated using Kapa’s Hyperplus kit (KK8514) and IDT adapters (#00989130v2). Quality was verified using an Agilent Tapestation and qPCR (NEBNext Library Quant Kit, E7630L) on Thermo Fisher’s Quantstudio5.
+Nineteen million 2 × 150 bp reads were obtained on a NovaSeq (Illumina) at Anschutz Medical Campus Genomics and Microarray Core, with an average Phred score of 33–36 calculated by FastQC [v0.11.9 (6)].
+Assembly was performed with SPADES, default isolate settings [v3.15.2 (7)]. Contigs were aligned to NCBI databases with DIAMOND [v2.0.13 (8)]. Completeness was estimated using BUSCO [v5.2.2 (9)] proteobacteria marker genes. Of the 219 genes, there were 214 (97.7%) complete and single copy, 2 (0.9%) duplicated, 1 (0.5%) fragmented, and 2 (0.9%) missing.
+For species identification, average nucleotide identity (ANI) was calculated between all completeSphingomonasgenomes and Sph5 with PYANI [v0.2.11 (10)] and MUMMER [v4.0.0 (11)]. ANI scores between Sph5 andS. paucimobilisranged from 99.77%–99.95%, while ANI between Sph5 andS. sanguiniswas 87.74%.
+Annotations were predicted with Prokka [v1.14.6 (12)], givenS. sanguinisandS. paucimobilisreferences (Table 1), and used for orthogroup-based phylogeny construction with Orthofinder [v2.5.4 (13)], MAFFT [v7.490 (14)], and FastTree [v.2.1.10 (15)].
+TABLE 1.
+Summary of the draft whole genome sequences ofSphingomonas paucimobilisSph5 from the tap water filtration membrane
+Variable, Data
+table00001
+The WGS phylogeny (Fig. 1) confirms that Sph5 is closest toS. paucimobiliswhile related toS. sanguinis. As a result,S. paucimobilisreference genomes were used for RagTag [v2.1.0 (16)] scaffolding of Sph5 contigs. ASM1602843v1 was the best scaffold (93.6% total length in three longest contigs of resulting assembly). Realignment of raw reads to ASM1602843v1-scaffolded Sph5 assembly with BWA [v0.7.17 (17)], SamTools [v1.12 (18)], and Picard [v2.25.0 (19)], evaluated by Mosdepth [v0.3.3 (20)], supports this (99.48% reads aligned, 1,089× coverage).
+Fig 1.
+img-2879
+Orthofinder-generated rooted tree of 50 completeSphingomonasgenomes with the Sph5 strain. Branch lengths represent evolutionary distance. We used the multiple-sequence alignment option with MAFFT and used FastTree to infer the trees. The mathematical parameters used are built in to the OrthoFinder tool, and we did not alter them from the default.
+Re-annotation with Prokka predicts 4,321 CDS, 3 rRNAs, 54 tRNAs, 1 tmRNA, and 1 repeat region. Of the CDS, 3,342 could be functionally annotated.
+ACKNOWLEDGMENTS
+This research was funded by NASA Space Biology, grant number 80NSSC19K1597, and NASA BAC, grant number HS5HWWK1AAU5.
+Contributor Information
+Jiseon Yang, Email: jyang41@asu.edu.
+Julia A. Maresca, 
+University of Delaware College of Engineering, Newark, Delaware, USA
+DATA AVAILABILITY
+The assembly and raw data are deposited at NCBI through the SRA genome submission portal under the accession numbersJAMRJL000000000andSRR25337554. The version deposited in this paper is the first version.
+REFERENCES
+Associated Data
+This section collects any data citations, data availability statements, or supplementary materials included in this article.
+Data Availability Statement
+The assembly and raw data are deposited at NCBI through the SRA genome submission portal under the accession numbersJAMRJL000000000andSRR25337554. The version deposited in this paper is the first version.
+Articles from Microbiology Resource Announcements are provided here courtesy ofAmerican Society for Microbiology (ASM)

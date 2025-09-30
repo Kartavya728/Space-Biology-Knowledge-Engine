@@ -1,0 +1,108 @@
+Abstract
+Low fluid shear force, including that encountered in microgravity models, induces bacterial responses, but the range of bacteria capable of responding to this signal remains poorly characterized. We systematically analyzed a range of Gram negative Enterobacteriaceae for conservation of the low-shear modeled microgravity (LSMMG) response using phenotypic assays, qPCR, and targeted mutations. Our results indicate LSMMG response conservation across Enterobacteriacae with potential variance in up- or down-regulation of a given response depending on genus. Based on the data, we analyzed the role of thetrpoperon genes and the TrpR regulator in the LSMMG response using targeted mutations in these genes inS.Typhimurium andE. coli. We found no alteration of the LSMMG response compared to WT in these mutant strains under the conditions tested here. To our knowledge, this study is first-of-kind forCitrobacter, Enterobacter, andSerratia,presents novel data forEscherichia, and provides the first analysis oftrpgenes in LSMMG responses. This impacts our understanding of how LSMMG affects bacteria and our ability to modify bacteria with this condition in the future.
+Keywords:Enterobacteriaceae, environmental response, low shear modeled microgravity, rotating wall vessel, Salmonella Typhimurium.
+INTRODUCTION
+A large body of studies aimed at characterizing the effects of low fluid shear force environments on bacterial cells,including the microgravity environment of spaceflight and ground-based rotating wall vessel (RWV) culture, have focused on the Gram negative enteric pathogenSalmonella entericaserovar Typhimurium [1-7]. Other studies have also focused on additional bacteria includingEscherichia coli[8-15],Pseudomonas aeruginosa[16-18],Yersinia pestis[19,20], andStaphylococcus aureus[15,21,22] with a range of different phenotypic results. However, the range of bacteria capable of responding to this condition and the potential similarities/differences in this response remain poorly characterized. Additionally, to our knowledge, a systematic, “side-by-side” study to examine the conservation of the low fluid shear response in a range of different bacterial genera using common assay conditions has not been reported in the literature. In this study,we analyzed different members of the Gram negative Enterobacteriaceae family for conservation of the low fluid shear response in the RWV using phenotypic and molecular assays to delineate the commonalities and differences of these organisms to culture in this environmental condition. Many members of the Enterobactericeae family are enteric organisms that inhabit the intestine as part of their lifecycles, and consequently, these bacteria likely encounter low fluid shear regions in their natural habitat such as the spaces between microvilli . In addition, as bacterial engineering expands to include a larger range of bacteria, the use of novel growth conditions will be applied to a greater variety of genera.
+The RWV culture apparatus (Fig.1) allows a physiolo-gically-relevant low fluid shear force growth environment that induces a number of phenotypic responses in bacteria including altered stress resistance [1-5,7,12,16,21], increased survival in cellular and animal hosts [1,3,4,7], and altered gene expression [1,3,5,7,13,14,17,18]. The RWV is used to induce prokaryotic and eukaryotic cellular phenotypes that are difficult or not possible to obtain using conventional culture conditions [1,18,21,24]. This includes use as a ground-based modeled microgravity environment to study effects/phenotypes that correlate to those observed in spaceflight experiments [3,7,17,24]. The alteration of bacterial virulence observed during growth in spaceflight and in the RWV is currently being used for applications related to bacterial engineering and modificationviagrowth conditions [1,3,7,18,25-27]. Given these commonalities and based upon previous modeling, the environmental growth condition obtained in the RWV apparatus has been termed low shear modeled microgravity (LSMMG) [2,4,5].
+Fig. (1).
+img-1941
+The rotating wall vessel (RWV).PanelA: 
+The rotating wall vessel serves as a low fluid shear cell culture apparatus. The 
+vessel is completely filled with media containing cells (no air bubbles) and 
+rotated at 25 rpm. In the pictured orientation of the vessel (LSMMG condition), 
+this creates a low shear, low turbulence suspension culture environment for cell 
+growth. Aeration is providedviaan air-permeable membrane located in the 
+back of the vessel (not visible).PanelB: The two orientations of 
+the RWV for experimental set up. For RWV experiments, two separate apparatuses 
+are used that are set up in two different orientations using the same culture 
+inoculation. In the control orientation, the low fluid shear environment is 
+abolished and increased fluid shear levels are present. The only difference in 
+the two cultures is the orientation of each vessel.PanelC: A 
+diagram of the orbital path of a representative cell in the LSMMG orientation of 
+the RWV to demonstrate the nature of the low fluid shear cell suspension. This 
+is achieved in large part by the solid body rotation of the media in the 
+apparatus in such a way that sedimentation is offset to allow suspension with a 
+minimum of fluid shear forces.
+Previous experimental results in the literature point to a possible relationship betweentrpgenes and the LSMMG/ spaceflight response in bacteria. InS.Typhimurium , thetrpDgene was one of the few genes in a group found to be up-regulated by all low-shear/microgravity conditions tested including LSMMG in LB media  and by spaceflight in both LB and M9 media [3,7], and this result was observed using both microarray and qPCR analysis [3,5,7]. In addition, a study with adherent-invasiveE. colishowed that a mutation in a tryptophan permease gene decreased LSMMG-induced adherence to tissue culture cells, and this phenotype was complemented by restoring the WT gene or by exogenous indole supplementation . These results, combined with new observations in this report, provided significant justification for analyzing the role oftrpgenes in the conservation of the LSMMG response. Overall, our results indicate that the LSMMG response is conserved across Enterobacteriaceae but with potential variation in the “direction” of regulation of a given phenotype, and that associatedtrpgenes are not involved in this conservation under the conditions tested here.
+MATERIALS AND METHODS
+Rotating Wall Vessel (RWV) Cultures
+Cultures were grown in the RWV in LB (Lennox) broth as previously described [3,4,7]. Experimental set-up with RWV cultures is depicted in Fig. (1). The RWV apparatus used was model RCCS-1 from Synthecon, Inc., Houston, TX as used in previous studies [3,4,7]. Strains used in this study were as follows:S.Typhimurium χ3339 ,E. coliTOP10 (Invitrogen, Carlsbad, CA),E. coliMG1655 ,E. coliDH5a (Invitrogen, Carlsbad, CA),E. coliAS11 ,E. cloacaeATCC23355 ,C. freundiiATCC8090 , andS. marcescensATCC14041 .
+Stress Assays and qPCR
+Acid and oxidative stress assays were performed as previously described [3,4,7]. The qPCR reactions were performed as previously described using 16S rRNA andlpxCgenes for normalization [3,34]. DNA oligonucleotides used as primers in qPCR are provided in Table1.
+Table 1.
+DNA oligonucleotides used in this study.
+Name, Sequence
+table00001
+Mutant Strain Construction
+Deletion mutations in thetrpRandtrpDEgenes were constructed using standard recombineering techniques inS.Typhimurium andE. coliand confirmed using both PCR and phenotypic indications . DNA oligonucleotides used in the recombineering are provided in Table1. Briefly, PCR products were amplified from the template plasmid pKD3 using primers containing 40-bp regions of homology to the ends of thetrpRandtrpDEgenes such that deletion of the genes would be obtained. Strains containing plasmid pKD46 were electroporated with the PCR products, and colonies were selected on LB-Cm medium.
+RESULTS
+RWV Growth Kinetics
+To determine if the individual members of Enterobacteriaceae exhibited similar growth kinetics in both LSMMG and control conditions (an important parameter for comparing the two culture orientations with a given species), we grew the following members of this family in the RWV in the LSMMG and control orientations (Fig.2):S.Typhimurium ,E. coli,Enterobacter cloacae,Citrobacter freundii, andSerratia marcescens.Data obtained withS.Typhimurium have previously shown that growth in LSMMG and control conditions results in very similar kinetic profiles for this organism in LB medium [1,4,7]. Analysis of bacterial growth in the LSMMG and control conditions forE. coli, E. cloacae, C. freundii, andS. marcescensrevealed essentially identical kinetics in both environments for each organism (Fig.2). This assures that phenotypic assays performed at a given point in the growth of LSMMG and control cultures are using cells at equivalent growth phases.
+Fig. (2).
+img-1942
+Growth of Enterobacteriaceae in the RWV.PanelA: 
+A representative growth curve for Enterobacteriaceae (Enterobacter cloacaeATCC23355) in the RWV for the LSMMG and control conditions in LB media, 37 °C. 
+The RWV apparatuses were set-up and operated as shown in Fig. (1) and as 
+previously described [1, 3-5, 7]. At the indicated time points, aliquots were removed from the indicated 
+apparatuses, serial-diluted, and plated for CFU/ml counts in triplicate. This 
+experiment was also performed forEscherichia coliTOP10,Citrobacter 
+freudiiATCC8090, andSerratia marcsescensATCC14041 with equivalent 
+results (data shown in panel B below).PanelB: Cultures of the indicated bacteria were grown in the RWV 
+in the LSMMG and control conditions in LB media and samples processed as in panel A. For each time point, the ratio of CFU/ml 
+LSMMG to control was calculated. The results were obtained from at least two 
+independent cultures for each strain, and the average and standard deviation are 
+plotted. ForE. coli, the data shown here is for strain TOP10. StrainsE. coliMG1655,E. coliDH5 α, 
+andE. coliAS11 displayed results equivalent to those presented here 
+(data not shown).
+Acid and Oxidative Stress Phenotypes
+Previous studies have demonstrated that resistance to acid and oxidative stress is altered by LSMMG inS.Typhimurium [1-5,7,33]. Therefore, we tested each genus (includingS.Typhimurium ) for these phenotypes by comparing LSMMG and control cultures for resistance to acid stress (pH=3.5, citric acid) and oxidative stress (hydrogen peroxide, 35 - 70 mM) (Figs.3and4). It is worth noting that acid stress resistance was tested using the conditions reported in the Wilson,et al.(2007) and Wilson,et al. (2008) references in which resistance is decreased by LSMMG inS.Typhimurium for cultures grown 24 hours which more appropriately matched spaceflight conditions involved in those studies [3,7].
+Fig. (3).
+img-1943
+LSMMG-mediated alteration of acid stress resistance in
+Enterobacteriaceae.The indicated strains were grown in the RWV in the LSMMG and control
+conditions for testing of acid stress resistance (pH=3.5, citric
+acid, 2 hours stress exposure) as previously described 
+[3, 7]. To test survival of the stress in the LSMMG and control samples,
+aliquots from each sample were removed from the stress,
+serially-diluted in PBS, and plated for CFU counts on LB media. The
+percent survival of the bacteria compared to the number present at
+t=0 before addition of the stress was determined for each sample,
+and then a ratio of percent survival values was calculated and
+plotted as indicated in the graph (either control/control or
+LSMMG/control). The data was obtained from at least three
+independent experiments each plated in triplicate, and the average
+and standard deviation are plotted. The differences between LSMMG
+and control were significant at p-value
+< 0.05.
+Fig. (4).
+img-1944
+Oxidative stress resistance altered by LSMMG in Enterobacteriaceae.RWV cultures of the indicated strains were tested for oxidative stress resistance
+(hydrogen peroxide, 35 - 70 mM, 2 hours stress exposure)
+as described in Fig. (3) and as previously described
+[4, 33] The data was obtained from at least three independent experiments
+each plated in triplicate, and the average and standard deviation
+are plotted. The differences between LSMMG and control were
+significant at p-value < 0.05.
+ForS.Typhimurium , acid stress resistance was decreased in LSMMG as reported previously (Fig.3) [3,7]. However, under the same conditions, resistance to acid stress was increased by LSMMG forE. coli, and this result was repeated in four differentE. colistrains to ensure that strain differences did not explain the deviation from theS.Typhimurium phenotype (Fig.3). InE. cloacaeandS. marcescens, LSMMG decreased and increased acid stress resistance, respectively (Fig.3). ForC. freundii, acid stress resistance was not significantly different between LSMMG and control cultures (Fig.3). For oxidative stress resistance, LSMMG decreased resistance for all tested genera (Fig.4). These results are equivalent to previously published data forS.Typhimurium [4,33]. ForS. marcescens, oxidative stress resistance could not be tested due to the fact that this organism could not be killed by the levels of hydrogen peroxide we tested for this study (up to 175 mM for this organism).
+qPCR Assays
+To test for changes in gene expression induced by LSMMG in different genera, we isolated total RNA fromS.Typhimurium ,E. coli,E. cloacae, andC. freundiicultures grown at LSMMG and control conditions and analyzed gene expression using qRT-PCR [3,18]. InS.Typhimurium , the expression of thehfqandtrpDgenes was decreased and increased, respectively, by LSMMG (Fig.5). This result is consistent with previously published data which identified altered expression of these genes by LSMMG using microarray analysis and qPCR [3,5,7]. InE. coli, LSMMG decreased the expression of both genes indicating that LSMMG altered gene expression in this genus, but that the direction oftrpDregulation was reversed compared toS.Typhimurium (Fig.5). This is interesting given the fact that the direction of LSMMG-induced acid resistance alteration was also reversed accordingly in these two genera (Fig.3). InC. freundii,hfqexpression was also decreased by LSMMG, buttrpDexpression was not significantly altered (Fig.5). As inE. coli, thetrpDresult also correlates to the acid resistance phenotype inC. freundiiwhere LSMMG did not cause altered resistance to this stress. InE. cloacae, we did not observe alteration ofhfqexpression by LSMMG but did observe an increase in expression of theydcIgene by LSMMG (Fig.5). TheydcIresult is consistent with previously reported data which identified this gene as LSMMG-regulated inS.Typhimurium [4,5]. Overall, qRT-PCR analysis demonstrated that a molecular response to LSMMG resulting in gene expression changes is conserved across Enterobactericeae, but the direction of gene expression change (i.e. up or down) can potentially vary depending on genus.
+Fig. (5).
+img-1945
+qRT-PCR analysis to determine LSMMG-induced alterations of gene expression in Enterobacteriaceae. Total RNA harvested from LSMMG and control cultures was converted to single-stranded cDNA and used as template in qPCR analysis with primers hybridizing to the indicated genes as described previously [3, 18]. PCR product levels were normalized to both the 16S rRNA andlpxCgenes [3, 34], and a ratio of each gene level for LSMMG to control was calculated to give a fold-difference in expression between the two samples as previously described . Differences in expression between LSMMG and control samples were significant at p-value < 0.05. The data was obtained from at least four qPCR reactions using RNA from at least two independent cultures for each condition, and the data is plotted as the average and standard deviation.
+Analysis of Role oftrpGenes
+In the experiments above, we observed an inverse correlation between the direction of change in acid resistance by LSMMG and the direction of regulation oftrpDexpression by LSMMG inS.Typhimurium andE. coli(Figs.3,5). In addition,we observed that inC. freundii, these phenotypes correlated to eachother in that LSMMG did not induce alteration of acid stress ortrpDexpression in this species (Figs.3,5). This observation is curious since thetrpgenes are not involved in acid resistance, and the activity of the anthrylate synthase enzyme encoded by thetrpoperon is not involved in environmental stress resistance. However,inS.Typhimurium , thetrpDgene was one of the few genes in a group found to be up-regulated by all low-shear/micro-gravity conditions tested including LSMMG in LB media  and by spaceflight in both LB and M9 media [3,7], and this result was observed using both microarray and qPCR analysis [3,5,7]. In addition, a study with adherent-invasiveE. colishowed that a mutation in a tryptophan permease gene altered an LSMMG-induced phenotype related to cell adherence, and this alteration was complemented by restoring the WT gene or by exogenous indole supplementation . Taken together, the above observations provided justification to analyze the role oftrpgenes in the LSMMG response.We reasoned that the changes intrpDexpression under LSMMG could be related to a regulatory mechanism acting up-stream of thetrpoperon that is responsive to and/or involved in the LSMMG response pathway. The TrpR protein is a transcriptional regulator that controls expression of thetrpoperon as well as several other genes distributed across theS.Typhimurium andE. coligenomes . Since this protein regulates a global gene regulon, we viewed TrpR as a possible candidate regulatory mechanism through which the LSMMG response acts in bacteria. We therefore constructed ΔtrpRmutations inS.Typhimurium andE. coli, and we tested these mutants for display of LSMMG phenotypes (Fig.6). We found that the deletion of TrpR had no effect on the acid and oxidative stress LSMMG responses in these genera indicating that TrpR is likely not involved in the LSMMG response under the conditions tested here (Fig.6). In addition, we also considered the possibility that the anthrylate synthase enzyme encoded by thetrpoperon could be having a role in the LSMMG response. Therefore, we constructed a ΔtrpDEmutation inS.Typhimurium andE. colithat knocked out expression of this enzyme, and we tested these mutants for LSMMG phenotypes compared to WT (Fig.6). As with the ΔtrpRstrains, we observed no effect of ΔtrpDEon LSMMG responses in these genera indicating that thetrpoperon genes are not involved the LSMMG response as tested here.
+Fig. (6).
+img-1946
+Analysis of role oftrpgenes in LSMMG phenotypes.S.Typhimurium  andE.coliΔtrpRand ΔtrpDEstrains were compared to respective WT strains for LSMMG-mediated alteration of 
+acid and oxidative stress as described in Figs. (3,4). 
+The data was obtained from at least three independent experiments each plated in 
+triplicate, and the average and standard deviation are plotted. The differences 
+between LSMMG and control were significant at p-value < 0.05.
+DISCUSSION
+The results presented here provide significant evidence using several strains and multiple assays that the response to the LSMMG growth environment is conserved across Enterobacteriaceae.Thus, the pathways and mechanisms used for sensing this environmental signal appear to be present in these different cells. This report also demonstrates that in a “side-by-side” study, the direction of LSMMG-induced regulation of phenotypes and gene expression can vary depending on genus. These results indicate that applications using the LSMMG environment (and related spaceflight conditions) have the potential to be targeted to a range of Entrobacteriaceae genera. Future work will focus on understanding the underlying causes of the variance in the direction of LSMMG regulation observed here and on the use of LSMMG/spaceflight to engineer bacteria in different ways.
+ACKNOWLEDGMENTS
+We thank the Villanova University Biology Department, Sigma Xi Grants-in-Aid G20111015158058, and NASA grant NNX09AH40G for support of this work. We thank members of the Villanova Biology Department for discussions and assistance during this work.
+CONFLICT OF INTEREST
+The authors confirm that this article content has no conflict of interest.
+REFERENCES
+Articles from The Open Microbiology Journal are provided here courtesy ofBentham Science Publishers

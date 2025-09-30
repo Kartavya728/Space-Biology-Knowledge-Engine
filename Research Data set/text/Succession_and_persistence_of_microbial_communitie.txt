@@ -1,0 +1,7 @@
+Correction to: Microbiome (2018) 6:204
+10.1186/s40168-018-0585-2
+Following publication of the original article , the authors reported a typographic error in scientific notation in the number of reads, the text should read as:
+“Approximately 7.3 × 108reads associated with microorganisms were generated after high quality trimming from PMA (21 samples) and non-PMA treated (21 samples) samples. All metagenomics reads were normalized across all samples, which yielded 3.1 × 108in total, and 7.4 × 106assigned to each sample, without affecting the taxonomic diversity.”
+The authors regret these errors and the inconvenience caused.
+Reference
+Articles from Microbiome are provided here courtesy ofBMC
