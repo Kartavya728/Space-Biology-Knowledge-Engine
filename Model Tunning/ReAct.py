@@ -357,7 +357,7 @@ if __name__ == "__main__":
     print("#"*80)
     
     result1 = run_query(
-        "Tell me about amino acid similarity across Arabidopsis proteins with figures",
+        "Tell me significant GO terms assigned with AgriGO and gProfiler to 130 genes of the physiological adaptation with only FArg: GArgFC",
         "arabidopsis_output.json"
     )
     
