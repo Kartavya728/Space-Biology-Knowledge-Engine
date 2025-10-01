@@ -3,6 +3,6 @@ from . import views
 
 urlpatterns = [
     path('', views.home, name='home'),
-    path('api/chat/', views.home, name='chat_api'),  # Use home view for chat API
-    # path('health/', views.health_check, name='health_check'),  # Remove or define
+    path('api/chat/', views.chat_api, name='chat_api'),
+    path('api/chat/options/', views.chat_options, name='chat_options'),
 ]

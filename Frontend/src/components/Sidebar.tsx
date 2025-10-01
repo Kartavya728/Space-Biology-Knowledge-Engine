@@ -47,7 +47,7 @@ export function Sidebar({
       case 'investor':
         return 'bg-green-500';
       case 'mission-architect':
-        return 'bg-red-500';
+        return 'bg-amber-400';
       default:
         return 'bg-purple-500';
     }
@@ -66,7 +66,7 @@ export function Sidebar({
     { id: 'investor', label: 'Manager/Investor', icon: TrendingUp },
     { id: 'mission-architect', label: 'Mission Architect', icon: Map }
   ];
-
+  
   return (
     <motion.div 
       className="w-80 h-full bg-black/20 backdrop-blur-sm border-r border-white/10 flex flex-col"
