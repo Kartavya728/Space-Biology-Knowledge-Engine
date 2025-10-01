@@ -8,17 +8,19 @@ import {
   Upload, 
   Mic, 
   Image as ImageIcon, 
-  FileText, 
+  FileText,
   Brain,
   TrendingUp,
   Map,
   Sparkles,
   Loader2,
   MessageCircle,
-  ExternalLink
+  ExternalLink,
+  ChevronDown,
+  Zap,
+  CheckCircle
 } from 'lucide-react';
 import { AIAgent3D } from './AIAgent3D';
-import { LoadingAnimation } from './LoadingAnimation';
 import { ResponseDisplay } from './ResponseDisplay';
 import { ChatBot } from './ChatBot';
 import { api } from '../utils/api';
@@ -27,8 +29,11 @@ export function MainContent({ userType, theme }) {
   const [query, setQuery] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [response, setResponse] = useState(null);
+  const [overallTitle, setOverallTitle] = useState('');
   const [thinkingSteps, setThinkingSteps] = useState([]);
   const [showChat, setShowChat] = useState(false);
+  const [isQuerySubmitted, setIsQuerySubmitted] = useState(false);
+  const [showTransition, setShowTransition] = useState(false);
   const fileInputRef = useRef(null);
 
   const analystOptions = {
@@ -78,8 +83,11 @@ export function MainContent({ userType, theme }) {
     }
 
     setIsLoading(true);
+    setIsQuerySubmitted(true);
     setResponse(null);
+    setOverallTitle('');
     setThinkingSteps([]);
+    setShowTransition(false);
 
     const collectedParagraphs = [];
     let collectedMetadata = null;
@@ -93,20 +101,34 @@ export function MainContent({ userType, theme }) {
         (event) => {
           if (event.type === 'thinking') {
             setThinkingSteps(prev => [...prev, event.content]);
+          } else if (event.type === 'title') {
+            setOverallTitle(event.content);
           } else if (event.type === 'paragraph') {
             collectedParagraphs.push(event.content);
+            // Update response in real-time
+            setResponse({
+              paragraphs: [...collectedParagraphs],
+              metadata: collectedMetadata,
+              userType,
+              overallTitle
+            });
           } else if (event.type === 'metadata') {
             collectedMetadata = event.content;
+            setResponse({
+              paragraphs: collectedParagraphs,
+              metadata: event.content,
+              userType,
+              overallTitle
+            });
           } else if (event.type === 'error') {
             console.error('Analysis error:', event.content);
             alert(`Error: ${event.content}`);
           } else if (event.type === 'done') {
-            setResponse({
-              paragraphs: collectedParagraphs,
-              metadata: collectedMetadata,
-              userType
-            });
-            setIsLoading(false);
+            setShowTransition(true);
+            setTimeout(() => {
+              setIsLoading(false);
+              setIsQuerySubmitted(false);
+            }, 1000);
           }
         }
       );
@@ -114,6 +136,7 @@ export function MainContent({ userType, theme }) {
       console.error('Analysis error:', error);
       alert('Failed to analyze content. Please try again.');
       setIsLoading(false);
+      setIsQuerySubmitted(false);
     }
   };
 
@@ -129,8 +152,16 @@ export function MainContent({ userType, theme }) {
   const AnalystIcon = currentAnalyst.icon;
 
   return (
-    <div className="h-full flex flex-col">
-      <div className="p-6 border-b border-white/10">
+    <div className="h-full flex flex-col relative overflow-hidden">
+      {/* Header */}
+      <motion.div 
+        className="p-6 border-b border-white/10"
+        animate={{
+          y: isQuerySubmitted ? -100 : 0,
+          opacity: isQuerySubmitted ? 0 : 1
+        }}
+        transition={{ duration: 0.5 }}
+      >
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -151,116 +182,90 @@ export function MainContent({ userType, theme }) {
             <Sparkles className="w-8 h-8 text-white" />
           </motion.div>
         </motion.div>
-      </div>
+      </motion.div>
 
       <div className="flex-1 flex overflow-hidden">
         <div className="flex-1 flex flex-col">
           <div className="flex-1 p-6 overflow-auto">
             <div className="max-w-4xl mx-auto space-y-6">
-              <div className="flex justify-center mb-6">
-                <AIAgent3D userType={userType} isThinking={isLoading} />
-              </div>
+              
+              {/* Query Display (when submitted) */}
+              <AnimatePresence>
+                {isQuerySubmitted && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -50 }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    <Card className="bg-gradient-to-r from-purple-500/20 to-blue-500/20 backdrop-blur-sm border-white/20">
+                      <CardContent className="p-4">
+                        <div className="flex items-start gap-3">
+                          <Zap className="w-5 h-5 text-yellow-400 mt-1 flex-shrink-0" />
+                          <div className="flex-1">
+                            <p className="text-white font-medium text-lg">{query}</p>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </motion.div>
+                )}
+              </AnimatePresence>
 
-              <Card className="bg-white/5 backdrop-blur-sm border-white/10">
-                <CardHeader>
-                  <CardTitle className="text-white flex items-center gap-2">
-                    <AnalystIcon className="w-5 h-5" />
-                    Custom Analyst: {currentAnalyst.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-300 mb-4">{currentAnalyst.description}</p>
-                  <div className="grid grid-cols-2 gap-2">
-                    {currentAnalyst.prompts.map((prompt, index) => (
-                      <motion.button
-                        key={index}
-                        whileHover={{ scale: 1.02 }}
-                        whileTap={{ scale: 0.98 }}
-                        onClick={() => handleSubmit(prompt)}
-                        className="p-3 text-left bg-white/5 hover:bg-white/10 rounded-lg border border-white/10 text-gray-300 hover:text-white transition-all text-sm"
-                      >
-                        {prompt}
-                      </motion.button>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
+              {/* AI Agent 3D (only when not loading) */}
+              {!isQuerySubmitted && (
+                <div className="flex justify-center mb-6">
+                  <AIAgent3D userType={userType} isThinking={false} />
+                </div>
+              )}
 
-              <Card className="bg-white/5 backdrop-blur-sm border-white/10">
-                <CardContent className="p-6">
-                  <div className="space-y-4">
-                    <Textarea
-                      value={query}
-                      onChange={(e) => setQuery(e.target.value)}
-                      placeholder="Ask me anything about NASA research, space science, or upload a research paper..."
-                      className="min-h-32 bg-white/5 border-white/20 text-white placeholder:text-gray-400 resize-none"
-                    />
-                    
-                    <div className="flex items-center justify-between">
-                      <div className="flex gap-2">
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          onClick={() => fileInputRef.current?.click()}
-                          className="border-white/20 text-gray-300 hover:text-white hover:bg-white/10"
-                        >
-                          <Upload className="w-4 h-4 mr-2" />
-                          Upload
-                        </Button>
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          className="border-white/20 text-gray-300 hover:text-white hover:bg-white/10"
-                        >
-                          <ImageIcon className="w-4 h-4 mr-2" />
-                          Image
-                        </Button>
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          className="border-white/20 text-gray-300 hover:text-white hover:bg-white/10"
-                        >
-                          <Mic className="w-4 h-4 mr-2" />
-                          Audio
-                        </Button>
-                      </div>
-                      
-                      <Button
-                        onClick={() => handleSubmit()}
-                        disabled={isLoading}
-                        className={`bg-gradient-to-r ${theme.primary} hover:opacity-90 px-6`}
-                      >
-                        {isLoading ? (
-                          <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                        ) : (
-                          <Send className="w-4 h-4 mr-2" />
-                        )}
-                        {isLoading ? 'Analyzing...' : 'Analyze'}
-                      </Button>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
+              {/* Thinking Process Box */}
               <AnimatePresence>
                 {isLoading && thinkingSteps.length > 0 && (
                   <motion.div
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 0.9 }}
+                    initial={{ opacity: 0, scale: 0.95, y: 20 }}
+                    animate={{ opacity: 1, scale: 1, y: 0 }}
+                    exit={{ 
+                      opacity: 0, 
+                      scale: 0.95, 
+                      y: -20,
+                      transition: { duration: 0.5 }
+                    }}
+                    transition={{ duration: 0.5 }}
                   >
-                    <Card className="bg-white/5 backdrop-blur-sm border-white/10">
-                      <CardContent className="p-4">
+                    <Card className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 backdrop-blur-sm border-blue-400/30 shadow-xl">
+                      <CardHeader>
+                        <CardTitle className="text-white flex items-center gap-2">
+                          <motion.div
+                            animate={{ rotate: 360 }}
+                            transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+                          >
+                            <Brain className="w-5 h-5 text-blue-400" />
+                          </motion.div>
+                          Agent Thinking Process
+                          <motion.div
+                            className="ml-auto flex gap-1"
+                            animate={{ opacity: [0.5, 1, 0.5] }}
+                            transition={{ duration: 1.5, repeat: Infinity }}
+                          >
+                            <div className="w-2 h-2 bg-blue-400 rounded-full" />
+                            <div className="w-2 h-2 bg-purple-400 rounded-full" />
+                            <div className="w-2 h-2 bg-pink-400 rounded-full" />
+                          </motion.div>
+                        </CardTitle>
+                      </CardHeader>
+                      <CardContent className="p-4 max-h-96 overflow-y-auto">
                         <div className="space-y-2">
                           {thinkingSteps.map((step, idx) => (
                             <motion.div
                               key={idx}
                               initial={{ opacity: 0, x: -20 }}
                               animate={{ opacity: 1, x: 0 }}
-                              className="flex items-center gap-2 text-gray-300 text-sm"
+                              transition={{ delay: idx * 0.05 }}
+                              className="flex items-start gap-3 text-gray-300 text-sm p-2 bg-white/5 rounded-lg"
                             >
-                              <Loader2 className="w-4 h-4 animate-spin" />
-                              {step}
+                              <Loader2 className="w-4 h-4 animate-spin text-blue-400 mt-0.5 flex-shrink-0" />
+                              <span className="flex-1">{step}</span>
                             </motion.div>
                           ))}
                         </div>
@@ -270,60 +275,183 @@ export function MainContent({ userType, theme }) {
                 )}
               </AnimatePresence>
 
+              {/* Transition Animation */}
               <AnimatePresence>
-                {response && !isLoading && (
+                {showTransition && (
                   <motion.div
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 1.2 }}
+                    transition={{ duration: 0.8 }}
+                    className="flex justify-center"
+                  >
+                    <motion.div
+                      className={`p-6 bg-gradient-to-r ${theme.primary} rounded-full`}
+                      animate={{
+                        scale: [1, 1.2, 1],
+                        rotate: [0, 180, 360]
+                      }}
+                      transition={{ duration: 1 }}
+                    >
+                      <CheckCircle className="w-12 h-12 text-white" />
+                    </motion.div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
+              {/* Input Card (hidden when submitted) */}
+              {!isQuerySubmitted && (
+                <motion.div
+                  initial={{ opacity: 1 }}
+                  animate={{ opacity: 1 }}
+                >
+                  <Card className="bg-white/5 backdrop-blur-sm border-white/10">
+                    <CardHeader>
+                      <CardTitle className="text-white flex items-center gap-2">
+                        <AnalystIcon className="w-5 h-5" />
+                        Custom Analyst: {currentAnalyst.title}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-gray-300 mb-4">{currentAnalyst.description}</p>
+                      <div className="grid grid-cols-2 gap-2">
+                        {currentAnalyst.prompts.map((prompt, index) => (
+                          <motion.button
+                            key={index}
+                            whileHover={{ scale: 1.02 }}
+                            whileTap={{ scale: 0.98 }}
+                            onClick={() => handleSubmit(prompt)}
+                            className="p-3 text-left bg-white/5 hover:bg-white/10 rounded-lg border border-white/10 text-gray-300 hover:text-white transition-all text-sm"
+                          >
+                            {prompt}
+                          </motion.button>
+                        ))}
+                      </div>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="bg-white/5 backdrop-blur-sm border-white/10 mt-6">
+                    <CardContent className="p-6">
+                      <div className="space-y-4">
+                        <Textarea
+                          value={query}
+                          onChange={(e) => setQuery(e.target.value)}
+                          placeholder="Ask me anything about NASA research, space science, or upload a research paper..."
+                          className="min-h-32 bg-white/5 border-white/20 text-white placeholder:text-gray-400 resize-none"
+                        />
+                        
+                        <div className="flex items-center justify-between">
+                          <div className="flex gap-2">
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              onClick={() => fileInputRef.current?.click()}
+                              className="border-white/20 text-gray-300 hover:text-white hover:bg-white/10"
+                            >
+                              <Upload className="w-4 h-4 mr-2" />
+                              Upload
+                            </Button>
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              className="border-white/20 text-gray-300 hover:text-white hover:bg-white/10"
+                            >
+                              <ImageIcon className="w-4 h-4 mr-2" />
+                              Image
+                            </Button>
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              className="border-white/20 text-gray-300 hover:text-white hover:bg-white/10"
+                            >
+                              <Mic className="w-4 h-4 mr-2" />
+                              Audio
+                            </Button>
+                          </div>
+                          
+                          <Button
+                            onClick={() => handleSubmit()}
+                            disabled={isLoading}
+                            className={`bg-gradient-to-r ${theme.primary} hover:opacity-90 px-6`}
+                          >
+                            {isLoading ? (
+                              <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                            ) : (
+                              <Send className="w-4 h-4 mr-2" />
+                            )}
+                            {isLoading ? 'Analyzing...' : 'Analyze'}
+                          </Button>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              )}
+
+              {/* Response Display */}
+              <AnimatePresence>
+                {response && response.paragraphs && response.paragraphs.length > 0 && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -20 }}
+                    exit={{ opacity: 0, y: -50 }}
+                    transition={{ duration: 0.6, delay: 0.3 }}
                   >
                     <ResponseDisplay response={response} theme={theme} />
                   </motion.div>
                 )}
               </AnimatePresence>
 
+              {/* Reference Papers */}
               {response && (
-                <Card className="bg-white/5 backdrop-blur-sm border-white/10">
-                  <CardHeader>
-                    <CardTitle className="text-white flex items-center gap-2">
-                      <ExternalLink className="w-5 h-5" />
-                      Reference Papers & Resources
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="grid gap-3">
-                      <a href="https://osdr.nasa.gov" target="_blank" rel="noopener noreferrer" 
-                         className="flex items-center gap-3 p-3 bg-white/5 hover:bg-white/10 rounded-lg border border-white/10 text-gray-300 hover:text-white transition-all">
-                        <FileText className="w-5 h-5" />
-                        <div>
-                          <p className="font-medium">NASA Open Science Data Repository</p>
-                          <p className="text-sm text-gray-400">Primary data and metadata from studies</p>
-                        </div>
-                      </a>
-                      <a href="https://lsda.jsc.nasa.gov" target="_blank" rel="noopener noreferrer"
-                         className="flex items-center gap-3 p-3 bg-white/5 hover:bg-white/10 rounded-lg border border-white/10 text-gray-300 hover:text-white transition-all">
-                        <FileText className="w-5 h-5" />
-                        <div>
-                          <p className="font-medium">NASA Space Life Sciences Library</p>
-                          <p className="text-sm text-gray-400">Additional relevant publications</p>
-                        </div>
-                      </a>
-                      <a href="https://taskbook.nasaprs.com" target="_blank" rel="noopener noreferrer"
-                         className="flex items-center gap-3 p-3 bg-white/5 hover:bg-white/10 rounded-lg border border-white/10 text-gray-300 hover:text-white transition-all">
-                        <FileText className="w-5 h-5" />
-                        <div>
-                          <p className="font-medium">NASA Task Book</p>
-                          <p className="text-sm text-gray-400">Grant information for studies</p>
-                        </div>
-                      </a>
-                    </div>
-                  </CardContent>
-                </Card>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5 }}
+                >
+                  <Card className="bg-white/5 backdrop-blur-sm border-white/10">
+                    <CardHeader>
+                      <CardTitle className="text-white flex items-center gap-2">
+                        <ExternalLink className="w-5 h-5" />
+                        Reference Papers & Resources
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="grid gap-3">
+                        <a href="https://osdr.nasa.gov" target="_blank" rel="noopener noreferrer" 
+                           className="flex items-center gap-3 p-3 bg-white/5 hover:bg-white/10 rounded-lg border border-white/10 text-gray-300 hover:text-white transition-all">
+                          <FileText className="w-5 h-5" />
+                          <div>
+                            <p className="font-medium">NASA Open Science Data Repository</p>
+                            <p className="text-sm text-gray-400">Primary data and metadata from studies</p>
+                          </div>
+                        </a>
+                        <a href="https://lsda.jsc.nasa.gov" target="_blank" rel="noopener noreferrer"
+                           className="flex items-center gap-3 p-3 bg-white/5 hover:bg-white/10 rounded-lg border border-white/10 text-gray-300 hover:text-white transition-all">
+                          <FileText className="w-5 h-5" />
+                          <div>
+                            <p className="font-medium">NASA Space Life Sciences Library</p>
+                            <p className="text-sm text-gray-400">Additional relevant publications</p>
+                          </div>
+                        </a>
+                        <a href="https://taskbook.nasaprs.com" target="_blank" rel="noopener noreferrer"
+                           className="flex items-center gap-3 p-3 bg-white/5 hover:bg-white/10 rounded-lg border border-white/10 text-gray-300 hover:text-white transition-all">
+                          <FileText className="w-5 h-5" />
+                          <div>
+                            <p className="font-medium">NASA Task Book</p>
+                            <p className="text-sm text-gray-400">Grant information for studies</p>
+                          </div>
+                        </a>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </motion.div>
               )}
             </div>
           </div>
         </div>
 
+        {/* Chat Button */}
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
@@ -333,6 +461,7 @@ export function MainContent({ userType, theme }) {
           <MessageCircle className="w-6 h-6 text-white" />
         </motion.button>
 
+        {/* Chat Panel */}
         <AnimatePresence>
           {showChat && (
             <motion.div
