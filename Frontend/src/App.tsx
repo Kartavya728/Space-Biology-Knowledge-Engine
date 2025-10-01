@@ -2,35 +2,38 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { LoginPage } from './components/LoginPage';
 import { Dashboard } from './components/Dashboard';
+import { HomePage } from './components/HomePage'; // ✅ new import
 import { mockAuth } from './utils/auth/mockAuth';
 import { Toaster } from './components/ui/sonner';
 
 export default function App() {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [userType, setUserType] = useState('scientist'); // scientist, investor, mission-architect
+  const [userType, setUserType] = useState('scientist');
+  const [showHome, setShowHome] = useState(true); // ✅ new state
 
   useEffect(() => {
-    // Check for existing session
     const checkSession = async () => {
       const { data: { session }, error } = mockAuth.getSession();
       if (session?.user) {
         setUser(session.user);
         setUserType(session.user.userType || 'scientist');
+        setShowHome(false); // skip homepage if already logged in
       }
       setLoading(false);
     };
 
     checkSession();
 
-    // Listen for auth changes
     const { data: { subscription } } = mockAuth.onAuthStateChange(
       (event, session) => {
         if (event === 'SIGNED_IN' && session?.user) {
           setUser(session.user);
           setUserType(session.user.userType || 'scientist');
+          setShowHome(false);
         } else if (event === 'SIGNED_OUT') {
           setUser(null);
+          setShowHome(true);
         }
         setLoading(false);
       }
@@ -42,6 +45,7 @@ export default function App() {
   const handleSignOut = async () => {
     await mockAuth.signOut();
     setUser(null);
+    setShowHome(true);
   };
 
   if (loading) {
@@ -54,6 +58,10 @@ export default function App() {
         />
       </div>
     );
+  }
+
+  if (showHome) {
+    return <HomePage onGetStarted={() => setShowHome(false)} />;
   }
 
   if (!user) {
