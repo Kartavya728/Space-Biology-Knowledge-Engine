@@ -2913,3 +2913,28 @@ html {
 .overflow-x-auto tr:hover {
   background-color: rgba(255, 255, 255, 0.05);
 }
+
+/* Enhanced table styling for imported HTML tables */
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.table-container th {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #e5e7eb;
+  font-weight: 600;
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.table-container td {
+  padding: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.table-container tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
