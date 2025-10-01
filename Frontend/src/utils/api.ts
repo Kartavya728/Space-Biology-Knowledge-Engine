@@ -6,7 +6,7 @@ interface AnalysisRequest {
 }
 
 interface StreamEvent {
-  type: 'thinking' | 'paragraph' | 'metadata' | 'error' | 'done';
+  type: 'thinking' | 'thinking_detail' | 'title' | 'paragraph' | 'metadata' | 'error' | 'done';
   content: any;
 }
 
@@ -15,13 +15,13 @@ const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000
 export const api = {
   /**
    * Stream analysis response using Server-Sent Events
+   * Enhanced to handle title, thinking, and paragraph events with low latency
    */
   streamAnalysis: async (
     request: AnalysisRequest,
     onEvent: (event: StreamEvent) => void
   ): Promise<void> => {
     try {
-      // Remove /api/ prefix since Django URLs already have it
       const url = `${API_BASE_URL}/api/chat/`;
       console.log('Sending request to:', url);
       console.log('Request payload:', request);
@@ -58,10 +58,12 @@ export const api = {
           break;
         }
 
+        // Decode chunk immediately for low latency
         buffer += decoder.decode(value, { stream: true });
         
+        // Process all complete messages in buffer
         const messages = buffer.split('\n\n');
-        buffer = messages.pop() || '';
+        buffer = messages.pop() || ''; // Keep incomplete message in buffer
 
         for (const message of messages) {
           if (message.trim().startsWith('data: ')) {
@@ -69,7 +71,9 @@ export const api = {
             if (jsonStr) {
               try {
                 const event = JSON.parse(jsonStr);
-                console.log('Received event:', event.type);
+                console.log('Received event:', event.type, event.content ? `(${typeof event.content})` : '');
+                
+                // Immediately dispatch event for real-time updates
                 onEvent(event);
               } catch (e) {
                 console.error('Failed to parse SSE message:', jsonStr, e);
