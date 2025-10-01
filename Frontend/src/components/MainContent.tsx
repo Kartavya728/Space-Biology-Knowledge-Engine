@@ -1,9 +1,8 @@
 import React, { useState, useRef } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from './ui/button';
 import { Textarea } from './ui/textarea';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
-import { Badge } from './ui/badge';
 import { 
   Send, 
   Upload, 
@@ -22,17 +21,15 @@ import { AIAgent3D } from './AIAgent3D';
 import { LoadingAnimation } from './LoadingAnimation';
 import { ResponseDisplay } from './ResponseDisplay';
 import { ChatBot } from './ChatBot';
-import { toast } from 'sonner@2.0.3';
 import { api } from '../utils/api';
 
 export function MainContent({ userType, theme }) {
   const [query, setQuery] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [response, setResponse] = useState(null);
-  const [selectedAnalyst, setSelectedAnalyst] = useState(null);
+  const [thinkingSteps, setThinkingSteps] = useState([]);
   const [showChat, setShowChat] = useState(false);
   const fileInputRef = useRef(null);
-  const audioInputRef = useRef(null);
 
   const analystOptions = {
     scientist: {
@@ -76,30 +73,46 @@ export function MainContent({ userType, theme }) {
   const handleSubmit = async (customPrompt = null) => {
     const finalQuery = customPrompt || query;
     if (!finalQuery.trim()) {
-      toast.error('Please enter a query or upload a file');
+      alert('Please enter a query or upload a file');
       return;
     }
 
     setIsLoading(true);
     setResponse(null);
+    setThinkingSteps([]);
+
+    const collectedParagraphs = [];
+    let collectedMetadata = null;
 
     try {
-      // Get the appropriate analysis function based on user type
-      const analysisFunction = api.getAnalysisFunction(userType);
-      
-      // Call the API with the query
-      const data = await analysisFunction({
-        query: finalQuery,
-        userType,
-        analyst: selectedAnalyst
-      });
-      
-      setResponse(data);
-      
+      await api.streamAnalysis(
+        {
+          query: finalQuery,
+          userType,
+        },
+        (event) => {
+          if (event.type === 'thinking') {
+            setThinkingSteps(prev => [...prev, event.content]);
+          } else if (event.type === 'paragraph') {
+            collectedParagraphs.push(event.content);
+          } else if (event.type === 'metadata') {
+            collectedMetadata = event.content;
+          } else if (event.type === 'error') {
+            console.error('Analysis error:', event.content);
+            alert(`Error: ${event.content}`);
+          } else if (event.type === 'done') {
+            setResponse({
+              paragraphs: collectedParagraphs,
+              metadata: collectedMetadata,
+              userType
+            });
+            setIsLoading(false);
+          }
+        }
+      );
     } catch (error) {
       console.error('Analysis error:', error);
-      toast.error('Failed to analyze content. Please try again.');
-    } finally {
+      alert('Failed to analyze content. Please try again.');
       setIsLoading(false);
     }
   };
@@ -107,9 +120,8 @@ export function MainContent({ userType, theme }) {
   const handleFileUpload = (event) => {
     const file = event.target.files[0];
     if (file) {
-      // Handle file upload logic
       setQuery(`Analyze the uploaded file: ${file.name}`);
-      toast.success(`File "${file.name}" uploaded successfully`);
+      alert(`File "${file.name}" uploaded successfully`);
     }
   };
 
@@ -118,7 +130,6 @@ export function MainContent({ userType, theme }) {
 
   return (
     <div className="h-full flex flex-col">
-      {/* Header */}
       <div className="p-6 border-b border-white/10">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -143,16 +154,13 @@ export function MainContent({ userType, theme }) {
       </div>
 
       <div className="flex-1 flex overflow-hidden">
-        {/* Main Content Area */}
         <div className="flex-1 flex flex-col">
           <div className="flex-1 p-6 overflow-auto">
             <div className="max-w-4xl mx-auto space-y-6">
-              {/* AI Agent 3D Component */}
               <div className="flex justify-center mb-6">
                 <AIAgent3D userType={userType} isThinking={isLoading} />
               </div>
 
-              {/* Analyst Selection */}
               <Card className="bg-white/5 backdrop-blur-sm border-white/10">
                 <CardHeader>
                   <CardTitle className="text-white flex items-center gap-2">
@@ -178,7 +186,6 @@ export function MainContent({ userType, theme }) {
                 </CardContent>
               </Card>
 
-              {/* Input Section */}
               <Card className="bg-white/5 backdrop-blur-sm border-white/10">
                 <CardContent className="p-6">
                   <div className="space-y-4">
@@ -235,20 +242,34 @@ export function MainContent({ userType, theme }) {
                 </CardContent>
               </Card>
 
-              {/* Loading Animation */}
               <AnimatePresence>
-                {isLoading && (
+                {isLoading && thinkingSteps.length > 0 && (
                   <motion.div
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.9 }}
                   >
-                    <LoadingAnimation userType={userType} />
+                    <Card className="bg-white/5 backdrop-blur-sm border-white/10">
+                      <CardContent className="p-4">
+                        <div className="space-y-2">
+                          {thinkingSteps.map((step, idx) => (
+                            <motion.div
+                              key={idx}
+                              initial={{ opacity: 0, x: -20 }}
+                              animate={{ opacity: 1, x: 0 }}
+                              className="flex items-center gap-2 text-gray-300 text-sm"
+                            >
+                              <Loader2 className="w-4 h-4 animate-spin" />
+                              {step}
+                            </motion.div>
+                          ))}
+                        </div>
+                      </CardContent>
+                    </Card>
                   </motion.div>
                 )}
               </AnimatePresence>
 
-              {/* Response Display */}
               <AnimatePresence>
                 {response && !isLoading && (
                   <motion.div
@@ -261,7 +282,6 @@ export function MainContent({ userType, theme }) {
                 )}
               </AnimatePresence>
 
-              {/* Reference Links */}
               {response && (
                 <Card className="bg-white/5 backdrop-blur-sm border-white/10">
                   <CardHeader>
@@ -304,7 +324,6 @@ export function MainContent({ userType, theme }) {
           </div>
         </div>
 
-        {/* Chat Bot Toggle */}
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
@@ -314,7 +333,6 @@ export function MainContent({ userType, theme }) {
           <MessageCircle className="w-6 h-6 text-white" />
         </motion.button>
 
-        {/* Chat Bot Overlay */}
         <AnimatePresence>
           {showChat && (
             <motion.div
@@ -329,7 +347,6 @@ export function MainContent({ userType, theme }) {
         </AnimatePresence>
       </div>
 
-      {/* Hidden file inputs */}
       <input
         ref={fileInputRef}
         type="file"

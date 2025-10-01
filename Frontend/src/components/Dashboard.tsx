@@ -15,20 +15,20 @@ export function Dashboard({ user, userType, onUserTypeChange, onSignOut }) {
       case 'scientist':
         return {
           primary: 'from-blue-500 to-cyan-500',
-          background: 'from-slate-900 via-blue-900 to-slate-900',
+          background: 'from-slate-900 via-blue-800 to-slate-900',
           accent: 'blue'
         };
       case 'investor':
         return {
           primary: 'from-green-500 to-emerald-500',
-          background: 'from-slate-900 via-green-900 to-slate-900',
+          background: 'from-slate-900 via-green-300 to-slate-900',
           accent: 'green'
         };
       case 'mission-architect':
         return {
           primary: 'from-red-500 to-orange-500',
-          background: 'from-slate-900 via-red-900 to-slate-900',
-          accent: 'red'
+          background: 'from-slate-900 via-amber-900 to-slate-900',
+          accent: 'amber'
         };
       default:
         return {

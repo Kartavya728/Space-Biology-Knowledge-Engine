@@ -1,26 +1,32 @@
-// API service for connecting to the Django backend
+// API service for connecting to the Django backend with SSE support
 
 interface AnalysisRequest {
   query: string;
   userType?: string;
-  analyst?: string;
 }
 
-interface AnalysisResponse {
-  response: any;
-  analysis_type: string;
-  error?: string;
+interface StreamEvent {
+  type: 'thinking' | 'paragraph' | 'metadata' | 'error' | 'done';
+  content: any;
 }
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000/api';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000';
 
 export const api = {
   /**
-   * Perform scientific analysis
+   * Stream analysis response using Server-Sent Events
    */
-  scientificAnalysis: async (request: AnalysisRequest): Promise<AnalysisResponse> => {
+  streamAnalysis: async (
+    request: AnalysisRequest,
+    onEvent: (event: StreamEvent) => void
+  ): Promise<void> => {
     try {
-      const response = await fetch(`${API_BASE_URL}/analysis/scientific/`, {
+      // Remove /api/ prefix since Django URLs already have it
+      const url = `${API_BASE_URL}/api/chat/`;
+      console.log('Sending request to:', url);
+      console.log('Request payload:', request);
+
+      const response = await fetch(url, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -28,78 +34,57 @@ export const api = {
         body: JSON.stringify(request),
       });
 
+      console.log('Response status:', response.status);
+
       if (!response.ok) {
-        throw new Error(`Error: ${response.status}`);
+        const errorText = await response.text();
+        throw new Error(`HTTP error! status: ${response.status}, message: ${errorText}`);
       }
 
-      return await response.json();
-    } catch (error) {
-      console.error('Scientific analysis error:', error);
-      throw error;
-    }
-  },
+      const reader = response.body?.getReader();
+      const decoder = new TextDecoder();
 
-  /**
-   * Perform investment analysis
-   */
-  investmentAnalysis: async (request: AnalysisRequest): Promise<AnalysisResponse> => {
-    try {
-      const response = await fetch(`${API_BASE_URL}/analysis/investment/`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(request),
+      if (!reader) {
+        throw new Error('Response body is not readable');
+      }
+
+      let buffer = '';
+
+      while (true) {
+        const { done, value } = await reader.read();
+        
+        if (done) {
+          console.log('Stream completed');
+          break;
+        }
+
+        buffer += decoder.decode(value, { stream: true });
+        
+        const messages = buffer.split('\n\n');
+        buffer = messages.pop() || '';
+
+        for (const message of messages) {
+          if (message.trim().startsWith('data: ')) {
+            const jsonStr = message.replace('data: ', '').trim();
+            if (jsonStr) {
+              try {
+                const event = JSON.parse(jsonStr);
+                console.log('Received event:', event.type);
+                onEvent(event);
+              } catch (e) {
+                console.error('Failed to parse SSE message:', jsonStr, e);
+              }
+            }
+          }
+        }
+      }
+    } catch (error) {
+      console.error('Stream analysis error:', error);
+      onEvent({
+        type: 'error',
+        content: `Connection error: ${error instanceof Error ? error.message : 'Unknown error'}`
       });
-
-      if (!response.ok) {
-        throw new Error(`Error: ${response.status}`);
-      }
-
-      return await response.json();
-    } catch (error) {
-      console.error('Investment analysis error:', error);
-      throw error;
-    }
-  },
-
-  /**
-   * Perform mission planning analysis
-   */
-  missionAnalysis: async (request: AnalysisRequest): Promise<AnalysisResponse> => {
-    try {
-      const response = await fetch(`${API_BASE_URL}/analysis/mission/`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(request),
-      });
-
-      if (!response.ok) {
-        throw new Error(`Error: ${response.status}`);
-      }
-
-      return await response.json();
-    } catch (error) {
-      console.error('Mission analysis error:', error);
-      throw error;
-    }
-  },
-
-  /**
-   * Get the appropriate analysis function based on user type
-   */
-  getAnalysisFunction: (userType: string) => {
-    switch (userType) {
-      case 'scientist':
-        return api.scientificAnalysis;
-      case 'investor':
-        return api.investmentAnalysis;
-      case 'mission-architect':
-        return api.missionAnalysis;
-      default:
-        return api.scientificAnalysis; // Default to scientific analysis
+      onEvent({ type: 'done', content: null });
     }
   }
 };

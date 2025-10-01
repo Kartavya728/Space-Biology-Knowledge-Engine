@@ -2890,3 +2890,26 @@ html {
     transform: rotate(360deg);
   }
 }
+/* Table styling for dynamically loaded HTML tables */
+.overflow-x-auto table {
+  width: 100%;
+  border-collapse: collapse;
+  color: rgb(209 213 219);
+}
+
+.overflow-x-auto th,
+.overflow-x-auto td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.overflow-x-auto th {
+  background-color: rgba(255, 255, 255, 0.05);
+  font-weight: 600;
+  color: rgb(229 231 235);
+}
+
+.overflow-x-auto tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}

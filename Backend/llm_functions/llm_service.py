@@ -32,7 +32,7 @@ class StructuredResponse(BaseModel):
 
 
 # ============================================================================
-# VECTOR STORE INITIALIZATION (SAME AS reAct.py)
+# VECTOR STORE INITIALIZATION
 # ============================================================================
 
 api_key = os.getenv("GOOGLE_API_KEY")
@@ -52,7 +52,41 @@ except Exception as e:
 
 
 # ============================================================================
-# RAG FUNCTIONS (EXACT COPY FROM reAct.py)
+# ROLE-BASED PROMPTS
+# ============================================================================
+
+ROLE_PROMPTS = {
+    'scientist': """You are a scientific research analyst. Focus on:
+    - Research methodologies and experimental design
+    - Statistical significance and data analysis
+    - Novel hypotheses and scientific implications
+    - Peer-reviewed findings and validation
+    - Technical details and mechanisms
+    Provide detailed scientific analysis with proper citations.""",
+    
+    'investor': """You are an investment analyst specializing in space technology. Focus on:
+    - Commercial applications and market potential
+    - Investment opportunities and ROI projections
+    - Competitive landscape and market size
+    - Technology readiness level (TRL) and commercialization timeline
+    - Funding requirements and revenue models
+    - Risk assessment and mitigation strategies
+    Provide business-focused analysis with financial implications.""",
+    
+    'mission-architect': """You are a space mission planning expert. Focus on:
+    - Mission feasibility and technical requirements
+    - Safety considerations and risk mitigation
+    - Engineering challenges and solutions
+    - Resource requirements (fuel, power, life support)
+    - Timeline and mission architecture
+    - Integration with existing systems
+    - Moon/Mars mission applicability
+    Provide mission-planning focused analysis with practical implementation details."""
+}
+
+
+# ============================================================================
+# RAG FUNCTIONS
 # ============================================================================
 
 def parse_media_refs(metadata: Dict) -> Dict[str, List[str]]:
@@ -127,13 +161,12 @@ Total Documents: {result['total_documents']}"""
 
 
 # ============================================================================
-# OUTPUT PARSER (EXACT COPY FROM reAct.py)
+# OUTPUT PARSER
 # ============================================================================
 
 def parse_to_structured_json(agent_response: str, media_references: Dict) -> Dict:
     print("\n[PARSER] Converting to structured JSON with smart paragraph handling...")
     
-    # Split response into initial paragraphs
     paragraphs_text = [p.strip() for p in agent_response.split('\n\n') if p.strip()]
     
     paragraphs = []
@@ -142,7 +175,6 @@ def parse_to_structured_json(agent_response: str, media_references: Dict) -> Dic
     unused_images = set(media_references.get('images', []))
     unused_tables = set(media_references.get('tables', []))
     
-    # Process existing paragraphs and track media usage
     for para_text in paragraphs_text:
         para_images = []
         para_tables = []
@@ -162,10 +194,8 @@ def parse_to_structured_json(agent_response: str, media_references: Dict) -> Dic
         paragraph = Paragraph(text=para_text, images=para_images, tables=para_tables)
         paragraphs.append(paragraph)
     
-    # Smart paragraph management: ensure at least 3 paragraphs
     current_para_count = len(paragraphs)
     
-    # If we have unused media, create media-only paragraphs
     if unused_images or unused_tables:
         if unused_images:
             media_text = f"Additional visual references: {', '.join(sorted(unused_images))}"
@@ -189,7 +219,6 @@ def parse_to_structured_json(agent_response: str, media_references: Dict) -> Dic
             all_tables_used.update(unused_tables)
             current_para_count += 1
     
-    # If still less than 3 paragraphs, split the largest paragraph
     while current_para_count < 3 and any(len(p.text) > 200 for p in paragraphs):
         longest_idx = max(range(len(paragraphs)), key=lambda i: len(paragraphs[i].text))
         longest_para = paragraphs[longest_idx]
@@ -201,7 +230,6 @@ def parse_to_structured_json(agent_response: str, media_references: Dict) -> Dic
                 first_half = '. '.join(sentences[:mid]) + '.'
                 second_half = '. '.join(sentences[mid:])
                 
-                # Distribute media between splits
                 mid_img = len(longest_para.images) // 2
                 mid_tbl = len(longest_para.tables) // 2
                 
@@ -224,7 +252,6 @@ def parse_to_structured_json(agent_response: str, media_references: Dict) -> Dic
         else:
             break
     
-    # If still less than 3 and data is insufficient, add summary paragraphs
     if current_para_count < 3:
         if current_para_count == 1:
             summary_para = Paragraph(
@@ -253,8 +280,8 @@ def parse_to_structured_json(agent_response: str, media_references: Dict) -> Dic
     output_dict = {
         f"para{i+1}": {
             "text": para.text,
-            "images": {f"img_{j+1}": img for j, img in enumerate(para.images)} if para.images else {},
-            "tables": {f"table_{j+1}": tbl for j, tbl in enumerate(para.tables)} if para.tables else {}
+            "images": para.images,  # Return as array, not dict
+            "tables": para.tables   # Return as array, not dict
         }
         for i, para in enumerate(structured.paragraphs)
     }
@@ -276,10 +303,9 @@ def parse_to_structured_json(agent_response: str, media_references: Dict) -> Dic
 # MAIN GENERATOR FOR DJANGO STREAMING
 # ============================================================================
 
-def generate_text_with_gemini(user_input: str):
+def generate_text_with_gemini(user_input: str, user_type: str = 'scientist'):
     """
-    Generator function for Django StreamingHttpResponse
-    Uses EXACT agent setup from reAct.py
+    Generator function for Django StreamingHttpResponse with role-based analysis
     """
     
     api_key = os.getenv("GOOGLE_API_KEY")
@@ -299,14 +325,13 @@ def generate_text_with_gemini(user_input: str):
     os.environ["TAVILY_API_KEY"] = tavily_key
     
     try:
-        # Step 1: Initialize
-        yield "data: " + json.dumps({"type": "thinking", "content": "Starting analysis...\n"}) + "\n\n"
+        yield "data: " + json.dumps({"type": "thinking", "content": f"Starting {user_type} analysis...\n"}) + "\n\n"
         
         print("\n" + "="*80)
         print(f"QUERY: {user_input}")
+        print(f"USER TYPE: {user_type}")
         print("="*80)
         
-        # Step 2: Setup LLM (EXACT SAME AS reAct.py)
         yield "data: " + json.dumps({"type": "thinking", "content": "Initializing AI agent...\n"}) + "\n\n"
         
         print("\n[SETUP] Initializing agent with streaming...")
@@ -318,7 +343,6 @@ def generate_text_with_gemini(user_input: str):
             callbacks=[StreamingStdOutCallbackHandler()]
         )
         
-        # Step 3: Setup Tools (EXACT SAME AS reAct.py)
         yield "data: " + json.dumps({"type": "thinking", "content": "Setting up tools...\n"}) + "\n\n"
         
         rag_tool = Tool(
@@ -330,14 +354,17 @@ def generate_text_with_gemini(user_input: str):
         
         web_search = TavilySearchResults(
             max_results=1,
-            description="use to Search the web for current information if and only if KnowledgeBaseRetrieval fails to provide sufficient information.",
+            description="Search the web for current information if KnowledgeBaseRetrieval fails.",
             name="WebSearch"
         )
         
         tools = [rag_tool, web_search]
         
-        # Step 4: Create Agent (EXACT SAME AS reAct.py)
-        yield "data: " + json.dumps({"type": "thinking", "content": "Creating agent...\n"}) + "\n\n"
+        yield "data: " + json.dumps({"type": "thinking", "content": "Creating specialized agent...\n"}) + "\n\n"
+        
+        # Modify prompt based on role
+        role_context = ROLE_PROMPTS.get(user_type, ROLE_PROMPTS['scientist'])
+        enhanced_query = f"{role_context}\n\nUser Query: {user_input}"
         
         prompt = hub.pull("hwchase17/react")
         agent = create_react_agent(llm, tools, prompt)
@@ -352,13 +379,13 @@ def generate_text_with_gemini(user_input: str):
         )
         
         print(f"[SETUP] Tools: {[tool.name for tool in tools]}")
+        print(f"[SETUP] Role: {user_type}")
         
-        # Step 5: Execute Agent (EXACT SAME AS reAct.py)
         yield "data: " + json.dumps({"type": "thinking", "content": "Processing your query...\n"}) + "\n\n"
         
         print("\n[AGENT] Processing with streaming...\n")
         
-        result = agent_executor.invoke({"input": user_input})
+        result = agent_executor.invoke({"input": enhanced_query})
         
         yield "data: " + json.dumps({"type": "thinking", "content": "Agent completed analysis\n"}) + "\n\n"
         
@@ -370,16 +397,17 @@ def generate_text_with_gemini(user_input: str):
         print(agent_output)
         print("="*80)
         
-        # Step 6: Get Media References (EXACT SAME AS reAct.py)
         yield "data: " + json.dumps({"type": "thinking", "content": "Retrieving media references...\n"}) + "\n\n"
         
         rag_result = get_context_with_media(user_input, k=5)
         media_refs = rag_result['references']
         
-        # Step 7: Parse to JSON (EXACT SAME AS reAct.py)
         yield "data: " + json.dumps({"type": "thinking", "content": "Structuring response...\n"}) + "\n\n"
         
         structured_json = parse_to_structured_json(agent_output, media_refs)
+        
+        # Add user_type to metadata
+        structured_json["_metadata"]["user_type"] = user_type
         
         print("\n" + "="*80)
         print("FINAL JSON OUTPUT:")
@@ -387,17 +415,14 @@ def generate_text_with_gemini(user_input: str):
         print(json.dumps(structured_json, indent=2))
         print("="*80)
         
-        # Step 8: Stream Paragraphs
         for key, value in structured_json.items():
             if key.startswith('para'):
                 yield "data: " + json.dumps({'type': 'paragraph', 'content': value}) + "\n\n"
                 time.sleep(0.05)
         
-        # Step 9: Send Metadata
         if '_metadata' in structured_json:
             yield "data: " + json.dumps({'type': 'metadata', 'content': structured_json['_metadata']}) + "\n\n"
         
-        # Step 10: Done
         yield "data: " + json.dumps({"type": "done"}) + "\n\n"
         
     except Exception as e:

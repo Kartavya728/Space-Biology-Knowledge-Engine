@@ -22,88 +22,126 @@ import {
 export function AboutTeam({ theme }) {
   const teamMembers = [
     {
-      name: 'Alex Chen',
-      role: 'AI/ML Engineer & Team Lead',
-      avatar: '🚀',
-      description: 'Specialized in natural language processing and computer vision for space research applications.',
-      skills: ['Machine Learning', 'NLP', 'Computer Vision', 'Python', 'TensorFlow'],
-      achievements: [
-        'NASA Space Apps Challenge 2023 Winner',
-        'Published 5 papers on AI in space exploration',
-        'Former SpaceX AI Researcher'
-      ],
-      social: {
-        github: 'alexchen-ai',
-        linkedin: 'alex-chen-ml',
-        email: 'alex@astronots.space'
-      },
-      icon: Brain,
-      color: 'from-blue-500 to-cyan-500'
+    name: 'Kartavya',
+    role: 'RAG System and Frontend',
+    avatar: '🚀',
+    description: 'Develops scalable Retrieval-Augmented Generation (RAG) systems and integrates them into dynamic, user-friendly interfaces.',
+    skills: ['RAG', 'React', 'JavaScript', 'LangChain', 'Frontend Architecture'],
+    achievements: [
+      'Built scalable RAG pipelines with LLM integration',
+      'Designed intuitive interfaces for complex data queries',
+      'Contributor to open-source AI tooling'
+    ],
+    social: {
+      github: 'kartavya-dev',
+      linkedin: 'kartavya-rag',
+      email: 'kartavya@astronots.space'
     },
-    {
-      name: 'Sarah Johnson',
-      role: 'Space Systems Engineer',
-      avatar: '🛰️',
-      description: 'Expert in spacecraft systems and mission planning with 8 years of NASA experience.',
-      skills: ['Systems Engineering', 'Mission Planning', 'MATLAB', 'CAD', 'Project Management'],
-      achievements: [
-        'Led 3 successful satellite missions',
-        'NASA Exceptional Achievement Medal',
-        'Mars 2020 Mission Contributor'
-      ],
-      social: {
-        github: 'sarah-space',
-        linkedin: 'sarah-johnson-space',
-        email: 'sarah@astronots.space'
-      },
-      icon: Rocket,
-      color: 'from-red-500 to-orange-500'
+    icon: Brain,
+    color: 'from-blue-500 to-cyan-500'
+  },
+     {
+    name: 'Surya Shrivastav',
+    role: 'Knowledge Graph Builder',
+    avatar: '🛰️',
+    description: 'Specializes in building and maintaining semantic knowledge graphs to enhance information discovery and retrieval.',
+    skills: ['Knowledge Graphs', 'Neo4j', 'SPARQL', 'Python', 'Graph Databases'],
+    achievements: [
+      'Built a research-driven knowledge graph from unstructured data',
+      'Optimized graph traversal for high-speed querying',
+      'Designed ontology for academic domains'
+    ],
+    social: {
+      github: 'surya-kg',
+      linkedin: 'surya-shrivastav',
+      email: 'surya@astronots.space'
     },
-    {
-      name: 'Mike Rodriguez',
-      role: 'Data Scientist',
-      avatar: '📊',
-      description: 'Data analytics expert with focus on large-scale scientific dataset processing and visualization.',
-      skills: ['Data Science', 'Statistical Analysis', 'R', 'SQL', 'Big Data'],
-      achievements: [
-        'Processed 10TB+ NASA research data',
-        'Created predictive models for mission success',
-        'Open source contributor to space data tools'
-      ],
-      social: {
-        github: 'mike-data-space',
-        linkedin: 'mike-rodriguez-data',
-        email: 'mike@astronots.space'
-      },
-      icon: Database,
-      color: 'from-green-500 to-emerald-500'
+    icon: Rocket,
+    color: 'from-red-500 to-orange-500'
+  },
+  {
+    name: 'Saksham Sethia',
+    role: 'Backend',
+    avatar: '⚙️',
+    description: 'Develops and maintains backend infrastructure including APIs, data pipelines, and service orchestration.',
+    skills: ['Node.js', 'Python', 'API Development', 'PostgreSQL', 'Docker'],
+    achievements: [
+      'Built APIs powering RAG and KG systems',
+      'Implemented scalable data ingestion pipelines',
+      'Integrated backend with frontend using REST and WebSocket'
+    ],
+    social: {
+      github: 'saksham-backend',
+      linkedin: 'saksham-sethia',
+      email: 'saksham@astronots.space'
     },
-    {
-      name: 'Emma Kim',
-      role: 'UI/UX Designer',
-      avatar: '🎨',
-      description: 'Creative designer passionate about making complex scientific data accessible and beautiful.',
-      skills: ['UI/UX Design', 'Figma', 'React', 'Design Systems', 'Data Visualization'],
-      achievements: [
-        'Designed interfaces for 3 space missions',
-        'Winner of NASA UX Design Challenge',
-        'Featured in Space UI Design Magazine'
-      ],
-      social: {
-        github: 'emma-space-design',
-        linkedin: 'emma-kim-ux',
-        email: 'emma@astronots.space'
-      },
-      icon: Palette,
-      color: 'from-purple-500 to-pink-500'
-    }
+    icon: Database,
+    color: 'from-yellow-500 to-amber-500'
+  },
+      {
+    name: 'Yash Sharma',
+    role: 'Data Scientist',
+    avatar: '📊',
+    description: 'Applies statistical and machine learning techniques to extract insights from complex datasets and support model training.',
+    skills: ['Data Science', 'Python', 'Pandas', 'Model Evaluation', 'Visualization'],
+    achievements: [
+      'Processed and analyzed 10,000+ scientific documents',
+      'Built evaluation pipeline for LLM-based tools',
+      'Generated key insights for user behavior and system accuracy'
+    ],
+    social: {
+      github: 'yash-ds',
+      linkedin: 'yash-sharma',
+      email: 'yash@astronots.space'
+    },
+    icon: Database,
+    color: 'from-green-500 to-emerald-500'
+  },
+   {
+    name: 'Sapphire',
+    role: 'Knowledge Graph',
+    avatar: '🧠',
+    description: 'Focuses on data modeling and semantic structuring to enable contextual understanding of research data.',
+    skills: ['Ontology Design', 'GraphQL', 'Data Modeling', 'Python', 'Linked Data'],
+    achievements: [
+      'Enhanced graph accuracy with advanced entity linking',
+      'Designed modular schemas for evolving scientific domains',
+      'Integrated external data sources into the KG pipeline'
+    ],
+    social: {
+      github: 'sapphire-kg',
+      linkedin: 'sapphire-graph',
+      email: 'sapphire@astronots.space'
+    },
+    icon: Brain,
+    color: 'from-indigo-500 to-blue-500'
+  },
+   {
+    name: 'Sanvi',
+    role: 'UI/UX Designer',
+    avatar: '🎨',
+    description: 'Creates engaging, user-centric interfaces that simplify access to complex scientific knowledge.',
+    skills: ['UI/UX Design', 'Figma', 'Prototyping', 'Design Systems', 'Accessibility'],
+    achievements: [
+      'Designed interfaces for LLM-powered search tools',
+      'Conducted usability tests with domain experts',
+      'Implemented design systems for consistency and scalability'
+    ],
+    social: {
+      github: 'sanvi-uiux',
+      linkedin: 'sanvi-designer',
+      email: 'sanvi@astronots.space'
+    },
+    icon: Palette,
+    color: 'from-purple-500 to-pink-500'
+  },
   ];
 
   const projectStats = [
-    { label: 'Research Papers Analyzed', value: '10,000+', icon: Award },
-    { label: 'Active Users', value: '2,500+', icon: Users },
-    { label: 'AI Models Trained', value: '15', icon: Brain },
-    { label: 'Insights Generated', value: '50,000+', icon: Target }
+    { label: 'Research Papers Analyzed', value: '608+', icon: Award },
+    { label: 'Active Users', value: '2', icon: Users },
+    { label: 'AI Models Trained', value: '3', icon: Brain },
+    { label: 'Insights Generated', value: '20+', icon: Target }
   ];
 
   const challenges = [
