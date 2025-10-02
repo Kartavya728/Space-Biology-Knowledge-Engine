@@ -1,5 +1,7 @@
 import React from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
+import Spline from '@splinetool/react-spline';
+
 import {
   Rocket,
   Upload,
@@ -155,32 +157,6 @@ export  function HomePage() {
 
   return (
     <div className={`relative min-h-screen ${theme.bgDarkClass} ${theme.textLight} overflow-visible`} style={{ position: 'relative', zIndex: 1 }}>
-      {/* Animated Background */}
-      <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
-        {[...Array(120)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute bg-blue-300 rounded-full opacity-0"
-            style={{
-              width: `${Math.random() * 2 + 0.5}px`,
-              height: `${Math.random() * 2 + 0.5}px`,
-              top: `${Math.random() * 100}%`,
-              left: `${Math.random() * 100}%`,
-            }}
-            animate={{
-              opacity: [0, Math.random() * 0.8 + 0.2, 0],
-              y: [0, Math.random() * 100 - 50, 0],
-              x: [0, Math.random() * 100 - 50, 0],
-              scale: [1, 1.3, 1],
-            }}
-            transition={{
-              duration: Math.random() * 25 + 15,
-              repeat: Infinity,
-              delay: Math.random() * 10,
-            }}
-          />
-        ))}
-      </div>
 
       {/* Hero Section */}
       <section className="relative flex flex-col items-center justify-center text-center min-h-screen px-6 py-20" style={{ zIndex: 10 }}>
@@ -190,15 +166,34 @@ export  function HomePage() {
           transition={{ duration: 0.8 }}
           className="space-y-8"
         >
-          <motion.div
-            animate={{ rotate: 360 }}
-            transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-            className="w-32 h-32 mx-auto  rounded-full flex items-center justify-center transform hover:scale-110 transition-transform duration-300 "
-          >
-            <Rocket className="w-16 h-16 text-white" />
-          </motion.div>
+        <div className="flex justify-center mb-6">
+          
+        <Spline 
+ scene="https://prod.spline.design/bbnnYGg7rbVCFdtN/scene.splinecode"
+  onLoad={(splineApp) => {
+    const obj = splineApp.findObjectByName('YourModelName'); // name in Spline
+    if (obj) {
+      // Set position (x, y, z)
+      obj.position.x = 0;
+      obj.position.y = 200;
+      obj.position.z = 0;
+
+      // Set rotation (radians)
+      obj.rotation.x = Math.PI / 4; // 45° tilt
+      obj.rotation.y = Math.PI / 6; // 30° turn
+      obj.rotation.z = 0;
+
+      // Set scale
+      obj.scale.x = 0.2;
+      obj.scale.y = 0.2;
+      obj.scale.z = 0.5;
+    }
+  }}
+/>
+
+          </div>
           <h1 className="text-5xl md:text-7xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-400 leading-tight">
-            AstroNots
+            AstroNots Agent
           </h1>
           <p className="text-lg md:text-2xl text-gray-300 max-w-3xl mx-auto font-light leading-relaxed">
             Empowering the future of space exploration by transforming{" "}
