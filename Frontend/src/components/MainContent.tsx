@@ -52,12 +52,12 @@ export function MainContent({ userType, theme }) {
   const analystOptions = {
     scientist: {
       title: 'Scientific Analysis',
-      description: 'Generate new hypotheses and analyze research methodologies',
+      description: 'Tools we Provide you',
       icon: Brain,
       color: 'blue',
       prompts: [
-        'Analyze the methodology in this research paper',
-        'What new hypotheses can be generated from these findings?',
+        'Search for the reseach papers based on topics',
+        'Advanced discussion on NASA\'s research',
         'Explain the statistical significance of these results',
         'How does this research contribute to the field?'
       ]

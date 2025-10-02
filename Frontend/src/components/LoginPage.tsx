@@ -1,20 +1,23 @@
 import React, { useState } from 'react';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
-import { Badge } from './ui/badge';
 import { Rocket, Users, Target, Brain, TrendingUp, Map } from 'lucide-react';
-import { mockAuth } from '../utils/auth/mockAuth';
-import { toast } from 'sonner@2.0.3';
+import { useAuth } from '../auth/context/AuthContext';
+import { toast } from 'sonner';
 
-export function LoginPage({ onUserTypeChange }) {
+function LoginPage() {
   const [isLogin, setIsLogin] = useState(true);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
   const [name, setName] = useState('');
   const [loading, setLoading] = useState(false);
   const [selectedUserType, setSelectedUserType] = useState('scientist');
+  const [error, setError] = useState('');
+  
+  const { signIn, signUp } = useAuth();
 
   const userTypes = [
     {
@@ -42,53 +45,89 @@ export function LoginPage({ onUserTypeChange }) {
 
   const teamMembers = [
     { name: 'Kartavya', role: 'RAG System and Frontend', avatar: '🚀' },
-    { name: 'Surya Shrivastav', role: 'Knowldge Graph builder', avatar: '🛰️' },
+    { name: 'Surya Shrivastav', role: 'Knowledge Graph builder', avatar: '🛰️' },
     { name: 'Yash Sharma', role: 'Data Scientist', avatar: '📊' },
-    { name: 'Sapphire ..', role: 'Knowledge Graph', avatar: '🎨' },
-    { name: 'Sanvi ..', role: 'UI/UX Designer', avatar: '🎨' },
-    { name: 'Saksham Sethia', role: 'Backend', avatar: '🎨' }
+    { name: 'Sapphire', role: 'Knowledge Graph', avatar: '💎' },
+    { name: 'Sanvi', role: 'UI/UX Designer', avatar: '🎨' },
+    { name: 'Saksham Sethia', role: 'Backend', avatar: '⚙️' }
   ];
 
-  const handleAuth = async () => {
+  const handleAuth = async (e) => {
+    if (e) e.preventDefault();
+    setError('');
     setLoading(true);
+
     try {
       // Validation
-      if (!email.trim()) {
-        throw new Error('Please enter your email address');
-      }
-      if (!password) {
-        throw new Error('Please enter your password');
-      }
-      if (!isLogin && !name.trim()) {
-        throw new Error('Please enter your full name');
-      }
-      if (!isLogin && password.length < 6) {
-        throw new Error('Password must be at least 6 characters long');
+      if (!email.trim() || !password) {
+        setError('Please fill in all fields.');
+        toast.error('Please fill in all fields.');
+        return;
       }
 
       if (isLogin) {
-        const { data, error } = await mockAuth.signIn(email.trim(), password);
-        if (error) {
-          throw error;
+        // ============ Sign In Logic ============
+        const result = await signIn(email.trim(), password);
+        if (!result.success) {
+          setError(result.error?.message || 'Sign-in failed.');
+          toast.error(result.error?.message || 'Sign-in failed.');
+          return;
         }
-        onUserTypeChange(data.user.userType || selectedUserType);
+        
+        // Success - App.tsx will handle navigation via session state
         toast.success('Welcome back to AstroNots!');
+        
+        // Clear form
+        setEmail('');
+        setPassword('');
       } else {
-        const { data, error } = await mockAuth.signUp(
-          email.trim(), 
-          password, 
-          name.trim(), 
-          selectedUserType
-        );
-        if (error) {
-          throw error;
+        // ============ Sign Up Logic ============
+        if (!name.trim()) {
+          setError('Please enter your full name.');
+          toast.error('Please enter your full name.');
+          return;
         }
-        onUserTypeChange(selectedUserType);
-        toast.success('Welcome to AstroNots! 🚀');
+        
+        if (!confirmPassword) {
+          setError('Please confirm your password.');
+          toast.error('Please confirm your password.');
+          return;
+        }
+        
+        if (password !== confirmPassword) {
+          setError('Passwords do not match.');
+          toast.error('Passwords do not match.');
+          return;
+        }
+        
+        if (password.length < 8) {
+          setError('Password must be at least 8 characters long.');
+          toast.error('Password must be at least 8 characters long.');
+          return;
+        }
+
+        // Sign up with selectedUserType
+        const result = await signUp(email.trim(), password, selectedUserType);
+        if (!result.success) {
+          setError(result.error?.message || 'Error during sign up.');
+          toast.error(result.error?.message || 'Error during sign up.');
+          return;
+        }
+        
+        // Success - App.tsx will handle navigation via session state
+        toast.success(`Successfully registered! Welcome to AstroNots! 🚀`);
+        
+        // Clear form
+        setEmail('');
+        setPassword('');
+        setConfirmPassword('');
+        setName('');
       }
-    } catch (error) {
-      toast.error(error.message);
-      console.error('Auth error:', error);
+    } catch (err) {
+      console.error('Auth error:', err);
+      const errorMsg = 'An unexpected error occurred. Please try again.';
+      setError(errorMsg);
+      toast.error(errorMsg);
     } finally {
       setLoading(false);
     }
@@ -105,7 +144,7 @@ export function LoginPage({ onUserTypeChange }) {
           className="absolute top-0 right-0 w-1/3 h-1/2 opacity-20"
         >
           <img 
-            src="https://images.unsplash.com/photo-1607539594630-e86855287bc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXJzJTIwcGxhbmV0JTIwc3BhY2UlMjBleHBsb3JhdGlvbnxlbnwxfHx8fDE3NTkzMDcwMTd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            src="https://images.unsplash.com/photo-1607539594630-e86855287bc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXJzJTIwcGxhbmV0JTIwc3BhY2UlMjBleHBsb3JhdGlvbnxlbnwxfHx8fDE3NTkzMDcwMTd8MA&ixlib=rb-4.1.0&q=80&w=1080"
             alt="Space Station"
             className="w-full h-full object-cover rounded-lg"
           />
@@ -116,14 +155,14 @@ export function LoginPage({ onUserTypeChange }) {
           className="absolute bottom-0 left-0 w-1/4 h-1/3 opacity-15"
         >
           <img 
-            src="https://images.unsplash.com/photo-1614729375290-b2a429db839b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxyb2NrZXQlMjBsYXVuY2glMjBzcGFjZWNyYWZ0fGVufDF8fHx8MTc1OTMwNzAyMXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            src="https://images.unsplash.com/photo-1614729375290-b2a429db839b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxyb2NrZXQlMjBsYXVuY2glMjBzcGFjZWNyYWZ0fGVufDF8fHx8MTc1OTMwNzAyMXww&ixlib=rb-4.1.0&q=80&w=1080"
             alt="Rocket Launch"
             className="w-full h-full object-cover rounded-lg"
           />
         </motion.div>
       </div>
       
-      {/* Animated background elements */}
+      {/* Animated background elements - Stars */}
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(20)].map((_, i) => (
           <motion.div
@@ -222,7 +261,7 @@ export function LoginPage({ onUserTypeChange }) {
           >
             <Card className="bg-white/10 backdrop-blur-sm border-white/20">
               <CardHeader>
-                <CardTitle className="text-white text-center">
+                <CardTitle className="text-white text-center text-2xl">
                   {isLogin ? 'Welcome Back' : 'Join AstroNots'}
                 </CardTitle>
               </CardHeader>
@@ -260,6 +299,7 @@ export function LoginPage({ onUserTypeChange }) {
                   </div>
                 </div>
 
+                {/* Name field - only for signup */}
                 {!isLogin && (
                   <Input
                     type="text"
@@ -271,6 +311,7 @@ export function LoginPage({ onUserTypeChange }) {
                   />
                 )}
                 
+                {/* Email field */}
                 <Input
                   type="email"
                   placeholder="Email"
@@ -280,20 +321,41 @@ export function LoginPage({ onUserTypeChange }) {
                   required
                 />
                 
+                {/* Password field */}
                 <Input
                   type="password"
-                  placeholder="Password (min 6 characters)"
+                  placeholder={isLogin ? "Password" : "Password (min 8 characters)"}
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   className="bg-white/10 border-white/30 text-white placeholder:text-gray-400"
                   required
-                  minLength={6}
+                  minLength={isLogin ? undefined : 8}
                 />
 
+                {/* Confirm Password field - only for signup */}
+                {!isLogin && (
+                  <Input
+                    type="password"
+                    placeholder="Confirm Password"
+                    value={confirmPassword}
+                    onChange={(e) => setConfirmPassword(e.target.value)}
+                    className="bg-white/10 border-white/30 text-white placeholder:text-gray-400"
+                    required
+                  />
+                )}
+
+                {/* Error message */}
+                {error && (
+                  <div className="p-3 rounded-lg bg-red-500/20 border border-red-500/50 text-red-200 text-sm">
+                    {error}
+                  </div>
+                )}
+
+                {/* Submit Button */}
                 <Button 
                   onClick={handleAuth}
-                  disabled={loading || !email || !password || (!isLogin && !name)}
-                  className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600"
+                  disabled={loading || !email || !password || (!isLogin && (!name || !confirmPassword))}
+                  className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {loading ? (
                     <motion.div
@@ -306,88 +368,99 @@ export function LoginPage({ onUserTypeChange }) {
                   )}
                 </Button>
 
-                {/* Demo Account Buttons */}
-                <div className="space-y-2">
-                  <p className="text-gray-400 text-sm text-center">Try demo accounts:</p>
-                  <div className="grid grid-cols-3 gap-2">
+                {/* Demo Account Buttons - Only show in login mode */}
+                {isLogin && (
+                  <div className="space-y-2">
+                    <p className="text-gray-400 text-sm text-center">Try demo accounts:</p>
+                    <div className="grid grid-cols-3 gap-2">
+                      <Button 
+                        onClick={() => {
+                          setEmail('scientist@astronots.space');
+                          setPassword('science123');
+                          setSelectedUserType('scientist');
+                          toast.success('Scientist demo loaded! Now click "Launch Mission"');
+                        }}
+                        variant="outline"
+                        size="sm"
+                        className="border-blue-500/30 text-blue-300 hover:bg-blue-500/10 text-xs"
+                        type="button"
+                      >
+                        🔬 Scientist
+                      </Button>
+                      <Button 
+                        onClick={() => {
+                          setEmail('investor@astronots.space');
+                          setPassword('invest123');
+                          setSelectedUserType('investor');
+                          toast.success('Investor demo loaded! Now click "Launch Mission"');
+                        }}
+                        variant="outline"
+                        size="sm"
+                        className="border-green-500/30 text-green-300 hover:bg-green-500/10 text-xs"
+                        type="button"
+                      >
+                        💰 Investor
+                      </Button>
+                      <Button 
+                        onClick={() => {
+                          setEmail('architect@astronots.space');
+                          setPassword('mission123');
+                          setSelectedUserType('mission-architect');
+                          toast.success('Mission Architect demo loaded! Now click "Launch Mission"');
+                        }}
+                        variant="outline"
+                        size="sm"
+                        className="border-red-500/30 text-red-300 hover:bg-red-500/10 text-xs"
+                        type="button"
+                      >
+                        🚀 Architect
+                      </Button>
+                    </div>
+                    
+                    {/* Quick Login Button for Testing */}
                     <Button 
                       onClick={async () => {
-                        setEmail('scientist@astronots.space');
-                        setPassword('science123');
-                        setName('Dr. Sarah Chen');
-                        setSelectedUserType('scientist');
-                        setIsLogin(true);
-                        toast.success('Scientist demo loaded! Now click "Launch Mission"');
+                        try {
+                          setLoading(true);
+                          setEmail('scientist@astronots.space');
+                          setPassword('science123');
+                          const result = await signIn('scientist@astronots.space', 'science123');
+                          if (!result.success) {
+                            toast.error(result.error?.message || 'Quick login failed');
+                          } else {
+                            toast.success('Quick login successful!');
+                            // App.tsx handles navigation
+                          }
+                        } catch (err) {
+                          console.error('Quick login error:', err);
+                          toast.error('Login failed: ' + (err as Error).message);
+                        } finally {
+                          setLoading(false);
+                        }
                       }}
                       variant="outline"
                       size="sm"
-                      className="border-blue-500/30 text-blue-300 hover:bg-blue-500/10 text-xs"
+                      className="w-full border-purple-500/30 text-purple-300 hover:bg-purple-500/10 text-xs"
+                      type="button"
                     >
-                      🔬 Scientist
-                    </Button>
-                    <Button 
-                      onClick={() => {
-                        setEmail('investor@astronots.space');
-                        setPassword('invest123');
-                        setName('Mike Johnson');
-                        setSelectedUserType('investor');
-                        setIsLogin(true);
-                        toast.success('Investor demo loaded! Now click "Launch Mission"');
-                      }}
-                      variant="outline"
-                      size="sm"
-                      className="border-green-500/30 text-green-300 hover:bg-green-500/10 text-xs"
-                    >
-                      💰 Investor
-                    </Button>
-                    <Button 
-                      onClick={() => {
-                        setEmail('architect@astronots.space');
-                        setPassword('mission123');
-                        setName('Emma Rodriguez');
-                        setSelectedUserType('mission-architect');
-                        setIsLogin(true);
-                        toast.success('Mission Architect demo loaded! Now click "Launch Mission"');
-                      }}
-                      variant="outline"
-                      size="sm"
-                      className="border-red-500/30 text-red-300 hover:bg-red-500/10 text-xs"
-                    >
-                      🚀 Architect
+                      ⚡ Quick Login (Scientist)
                     </Button>
                   </div>
-                  
-                  {/* Quick Login Button for Testing */}
-                  <Button 
-                    onClick={async () => {
-                      try {
-                        setLoading(true);
-                        const result = await mockAuth.signIn('scientist@astronots.space', 'science123');
-                        if (result.error) {
-                          toast.error(result.error.message);
-                        } else {
-                          onUserTypeChange('scientist');
-                          toast.success('Quick login successful!');
-                        }
-                      } catch (err) {
-                        console.error('Quick login error:', err);
-                        toast.error('Login failed: ' + err.message);
-                      } finally {
-                        setLoading(false);
-                      }
-                    }}
-                    variant="outline"
-                    size="sm"
-                    className="w-full border-purple-500/30 text-purple-300 hover:bg-purple-500/10 text-xs"
-                  >
-                    ⚡ Quick Login (Scientist)
-                  </Button>
-                </div>
+                )}
 
+                {/* Toggle between Sign In and Sign Up */}
                 <div className="text-center">
                   <button
-                    onClick={() => setIsLogin(!isLogin)}
+                    onClick={() => {
+                      setIsLogin(!isLogin);
+                      setError('');
+                      setEmail('');
+                      setPassword('');
+                      setConfirmPassword('');
+                      setName('');
+                    }}
                     className="text-purple-300 hover:text-white transition-colors text-sm"
+                    type="button"
                   >
                     {isLogin ? "Don't have an account? Sign up" : "Already have an account? Sign in"}
                   </button>
@@ -400,3 +473,7 @@ export function LoginPage({ onUserTypeChange }) {
     </div>
   );
 }
+
+// Export both named and default
+export { LoginPage };
+export default LoginPage;
