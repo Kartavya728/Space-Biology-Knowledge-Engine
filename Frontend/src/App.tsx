@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { LoginPage } from './components/LoginPage';
 import { Dashboard } from './components/Dashboard';
-import { HomePage } from './components/HomePage'; // ✅ new import
+import { HomePage } from './components/HomePage'; // ✅ existing import
+import { FloatingButton } from './components/FloatingButton'; // ✅ new import
 import { mockAuth } from './utils/auth/mockAuth';
 import { Toaster } from './components/ui/sonner';
 
@@ -60,9 +61,17 @@ export default function App() {
     );
   }
 
-  if (showHome) {
-    return <HomePage onGetStarted={() => setShowHome(false)} />;
-  }
+if (showHome) {
+  return (
+    <>
+      <HomePage onGetStarted={() => setShowHome(false)} />
+      <FloatingButton onClick={() => setShowHome(false)} />
+    </>
+  );
+}
+
+
+
 
   if (!user) {
     return <LoginPage onUserTypeChange={setUserType} />;

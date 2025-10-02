@@ -95,7 +95,7 @@ export function LoginPage({ onUserTypeChange }) {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 overflow-hidden relative">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 overflow-hidden relative">
       {/* Background Images */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute inset-0 bg-black/40" />

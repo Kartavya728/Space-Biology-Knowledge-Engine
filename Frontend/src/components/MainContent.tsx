@@ -1,39 +1,52 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from './ui/button';
 import { Textarea } from './ui/textarea';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
+import Spline from '@splinetool/react-spline/next';
 import { 
   Send, 
   Upload, 
   Mic, 
-  Image as ImageIcon, 
+  Image, 
   FileText,
   Brain,
   TrendingUp,
   Map,
   Sparkles,
   Loader2,
-  MessageCircle,
-  ExternalLink,
   ChevronDown,
   Zap,
-  CheckCircle
+  CheckCircle,
+  Terminal,
+  Database,
+  Search
 } from 'lucide-react';
 import { AIAgent3D } from './AIAgent3D';
 import { ResponseDisplay } from './ResponseDisplay';
-import { ChatBot } from './ChatBot';
 import { api } from '../utils/api';
+
+interface ThinkingStep {
+  step: string;
+  message: string;
+  details?: any;
+  preview?: string;
+  output?: string;
+  timestamp: number;
+}
 
 export function MainContent({ userType, theme }) {
   const [query, setQuery] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [response, setResponse] = useState(null);
   const [overallTitle, setOverallTitle] = useState('');
-  const [thinkingSteps, setThinkingSteps] = useState([]);
-  const [showChat, setShowChat] = useState(false);
-  const [isQuerySubmitted, setIsQuerySubmitted] = useState(false);
+  const [thinkingHistory, setThinkingHistory] = useState<ThinkingStep[]>([]);
   const [showTransition, setShowTransition] = useState(false);
+  const [expandedSteps, setExpandedSteps] = useState<Set<number>>(new Set());
+  const [streamingStepIndex, setStreamingStepIndex] = useState<number | null>(null);
+  const [streamedText, setStreamedText] = useState('');
+  const [streamSpeed, setStreamSpeed] = useState(5);
+  const [isQuerySubmitted, setIsQuerySubmitted] = useState(false);
   const fileInputRef = useRef(null);
 
   const analystOptions = {
@@ -75,6 +88,55 @@ export function MainContent({ userType, theme }) {
     }
   };
 
+  useEffect(() => {
+    if (streamingStepIndex === null || !isLoading) return;
+
+    const step = thinkingHistory[streamingStepIndex];
+    if (!step) return;
+
+    const contentToStream = step.preview || step.output || (step.details ? JSON.stringify(step.details, null, 2) : '');
+    
+    if (!contentToStream || streamedText.length >= contentToStream.length) {
+      setTimeout(() => {
+        setExpandedSteps(new Set());
+        setStreamedText('');
+        
+        let nextIndex = streamingStepIndex + 1;
+        while (nextIndex < thinkingHistory.length) {
+          const nextStep = thinkingHistory[nextIndex];
+          if (nextStep.preview || nextStep.output || nextStep.details) {
+            setStreamingStepIndex(nextIndex);
+            setExpandedSteps(new Set([nextIndex]));
+            return;
+          }
+          nextIndex++;
+        }
+        
+        setStreamingStepIndex(null);
+      }, 300);
+      return;
+    }
+
+    const timer = setTimeout(() => {
+      const nextLength = Math.min(streamedText.length + streamSpeed, contentToStream.length);
+      setStreamedText(contentToStream.slice(0, nextLength));
+    }, 50);
+
+    return () => clearTimeout(timer);
+  }, [streamedText, streamingStepIndex, thinkingHistory, streamSpeed, isLoading]);
+
+  useEffect(() => {
+    if (thinkingHistory.length > 0 && streamingStepIndex === null && isLoading) {
+      const firstContentIndex = thinkingHistory.findIndex(
+        step => step.preview || step.output || step.details
+      );
+      if (firstContentIndex !== -1) {
+        setStreamingStepIndex(firstContentIndex);
+        setExpandedSteps(new Set([firstContentIndex]));
+      }
+    }
+  }, [thinkingHistory, streamingStepIndex, isLoading]);
+
   const handleSubmit = async (customPrompt = null) => {
     const finalQuery = customPrompt || query;
     if (!finalQuery.trim()) {
@@ -86,8 +148,11 @@ export function MainContent({ userType, theme }) {
     setIsQuerySubmitted(true);
     setResponse(null);
     setOverallTitle('');
-    setThinkingSteps([]);
+    setThinkingHistory([]);
+    setExpandedSteps(new Set());
     setShowTransition(false);
+    setStreamingStepIndex(null);
+    setStreamedText('');
 
     const collectedParagraphs = [];
     let collectedMetadata = null;
@@ -99,20 +164,27 @@ export function MainContent({ userType, theme }) {
           userType,
         },
         (event) => {
-          if (event.type === 'thinking') {
-            setThinkingSteps(prev => [...prev, event.content]);
-          } else if (event.type === 'title') {
+          if (event.type === 'thinking_step') {
+            const newStep: ThinkingStep = {
+              ...event.content,
+              timestamp: Date.now()
+            };
+            
+            setThinkingHistory(prev => [...prev, newStep]);
+          } 
+          else if (event.type === 'title') {
             setOverallTitle(event.content);
-          } else if (event.type === 'paragraph') {
+          } 
+          else if (event.type === 'paragraph') {
             collectedParagraphs.push(event.content);
-            // Update response in real-time
             setResponse({
               paragraphs: [...collectedParagraphs],
               metadata: collectedMetadata,
               userType,
               overallTitle
             });
-          } else if (event.type === 'metadata') {
+          } 
+          else if (event.type === 'metadata') {
             collectedMetadata = event.content;
             setResponse({
               paragraphs: collectedParagraphs,
@@ -120,10 +192,12 @@ export function MainContent({ userType, theme }) {
               userType,
               overallTitle
             });
-          } else if (event.type === 'error') {
+          } 
+          else if (event.type === 'error') {
             console.error('Analysis error:', event.content);
             alert(`Error: ${event.content}`);
-          } else if (event.type === 'done') {
+          } 
+          else if (event.type === 'done') {
             setShowTransition(true);
             setTimeout(() => {
               setIsLoading(false);
@@ -148,17 +222,34 @@ export function MainContent({ userType, theme }) {
     }
   };
 
+  const toggleStep = (index: number) => {
+    const newExpanded = new Set(expandedSteps);
+    if (newExpanded.has(index)) {
+      newExpanded.delete(index);
+    } else {
+      newExpanded.add(index);
+    }
+    setExpandedSteps(newExpanded);
+  };
+
+  const getStepIcon = (step: string) => {
+    if (step.includes('retrieval') || step.includes('document')) return Database;
+    if (step.includes('search') || step.includes('tool')) return Search;
+    if (step.includes('agent')) return Brain;
+    return Terminal;
+  };
+
   const currentAnalyst = analystOptions[userType];
   const AnalystIcon = currentAnalyst.icon;
 
   return (
     <div className="h-full flex flex-col relative overflow-hidden">
-      {/* Header */}
       <motion.div 
         className="p-6 border-b border-white/10"
         animate={{
           y: isQuerySubmitted ? -100 : 0,
-          opacity: isQuerySubmitted ? 0 : 1
+          opacity: isQuerySubmitted ? 0 : 1,
+          height: isQuerySubmitted ? 0 : 'auto'
         }}
         transition={{ duration: 0.5 }}
       >
@@ -189,7 +280,6 @@ export function MainContent({ userType, theme }) {
           <div className="flex-1 p-6 overflow-auto">
             <div className="max-w-4xl mx-auto space-y-6">
               
-              {/* Query Display (when submitted) */}
               <AnimatePresence>
                 {isQuerySubmitted && (
                   <motion.div
@@ -212,16 +302,14 @@ export function MainContent({ userType, theme }) {
                 )}
               </AnimatePresence>
 
-              {/* AI Agent 3D (only when not loading) */}
               {!isQuerySubmitted && (
                 <div className="flex justify-center mb-6">
                   <AIAgent3D userType={userType} isThinking={false} />
                 </div>
               )}
 
-              {/* Thinking Process Box */}
               <AnimatePresence>
-                {isLoading && thinkingSteps.length > 0 && (
+                {isLoading && thinkingHistory.length > 0 && (
                   <motion.div
                     initial={{ opacity: 0, scale: 0.95, y: 20 }}
                     animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -242,7 +330,7 @@ export function MainContent({ userType, theme }) {
                           >
                             <Brain className="w-5 h-5 text-blue-400" />
                           </motion.div>
-                          Agent Thinking Process
+                          Agent Reasoning Process
                           <motion.div
                             className="ml-auto flex gap-1"
                             animate={{ opacity: [0.5, 1, 0.5] }}
@@ -254,28 +342,131 @@ export function MainContent({ userType, theme }) {
                           </motion.div>
                         </CardTitle>
                       </CardHeader>
-                      <CardContent className="p-4 max-h-96 overflow-y-auto">
-                        <div className="space-y-2">
-                          {thinkingSteps.map((step, idx) => (
+                      <CardContent className="p-4 max-h-[600px] overflow-y-auto space-y-2">
+                        {thinkingHistory.map((step, idx) => {
+                          const StepIcon = getStepIcon(step.step);
+                          const isExpanded = expandedSteps.has(idx);
+                          const isStreaming = idx === streamingStepIndex;
+                          const hasContent = step.preview || step.output || step.details;
+                          
+                          return (
                             <motion.div
                               key={idx}
                               initial={{ opacity: 0, x: -20 }}
                               animate={{ opacity: 1, x: 0 }}
-                              transition={{ delay: idx * 0.05 }}
-                              className="flex items-start gap-3 text-gray-300 text-sm p-2 bg-white/5 rounded-lg"
+                              transition={{ delay: idx * 0.02 }}
+                              className="bg-white/5 rounded-lg border border-white/10 overflow-hidden"
                             >
-                              <Loader2 className="w-4 h-4 animate-spin text-blue-400 mt-0.5 flex-shrink-0" />
-                              <span className="flex-1">{step}</span>
+                              <button
+                                onClick={() => !isStreaming && hasContent && toggleStep(idx)}
+                                disabled={isStreaming}
+                                className={`w-full p-3 flex items-center gap-3 text-left transition-colors ${
+                                  !isStreaming && hasContent ? 'hover:bg-white/5 cursor-pointer' : 'cursor-default'
+                                }`}
+                              >
+                                <motion.div
+                                  animate={{ rotate: isExpanded ? 180 : 0 }}
+                                  transition={{ duration: 0.3 }}
+                                >
+                                  <ChevronDown className={`w-4 h-4 flex-shrink-0 ${
+                                    hasContent ? 'text-blue-400' : 'text-gray-600'
+                                  }`} />
+                                </motion.div>
+                                
+                                <StepIcon className="w-4 h-4 text-purple-400 flex-shrink-0" />
+                                
+                                <span className="text-gray-300 flex-1 text-sm">
+                                  {step.message}
+                                </span>
+                                
+                                {isStreaming && (
+                                  <Loader2 className="w-4 h-4 animate-spin text-blue-400 flex-shrink-0" />
+                                )}
+                              </button>
+                              
+                              <AnimatePresence>
+                                {isExpanded && hasContent && (
+                                  <motion.div
+                                    initial={{ height: 0, opacity: 0 }}
+                                    animate={{ height: 'auto', opacity: 1 }}
+                                    exit={{ height: 0, opacity: 0 }}
+                                    transition={{ duration: 0.3 }}
+                                    className="overflow-hidden"
+                                  >
+                                    <div className="p-3 pt-0 space-y-3">
+                                      {isStreaming ? (
+                                        <div className="bg-white/5 rounded-lg p-3">
+                                          <div className="flex items-center gap-2 mb-2">
+                                            <Terminal className="w-3 h-3 text-green-400" />
+                                            <span className="text-xs text-gray-400 font-semibold">
+                                              {step.preview ? 'Content Preview' : step.output ? 'Retrieved Output' : 'Details'}
+                                            </span>
+                                          </div>
+                                          <pre className="text-xs text-gray-300 whitespace-pre-wrap font-mono overflow-x-auto">
+                                            {streamedText}
+                                            <motion.span
+                                              animate={{ opacity: [1, 0] }}
+                                              transition={{ duration: 0.5, repeat: Infinity }}
+                                              className="inline-block w-1 h-3 bg-blue-400 ml-1"
+                                            />
+                                          </pre>
+                                        </div>
+                                      ) : (
+                                        <>
+                                          {step.details && (
+                                            <div className="bg-white/5 rounded-lg p-3">
+                                              <div className="flex items-center gap-2 mb-2">
+                                                <Terminal className="w-3 h-3 text-green-400" />
+                                                <span className="text-xs text-gray-400 font-semibold">Details</span>
+                                              </div>
+                                              <pre className="text-xs text-gray-300 whitespace-pre-wrap font-mono overflow-x-auto">
+                                                {JSON.stringify(step.details, null, 2)}
+                                              </pre>
+                                            </div>
+                                          )}
+                                          
+                                          {step.preview && (
+                                            <div className="bg-white/5 rounded-lg p-3">
+                                              <div className="flex items-center gap-2 mb-2">
+                                                <FileText className="w-3 h-3 text-blue-400" />
+                                                <span className="text-xs text-gray-400 font-semibold">Content Preview</span>
+                                              </div>
+                                              <div className="text-sm text-gray-300 max-h-48 overflow-y-auto">
+                                                <p className="font-mono text-xs whitespace-pre-wrap leading-relaxed">
+                                                  {step.preview}
+                                                </p>
+                                              </div>
+                                            </div>
+                                          )}
+                                          
+                                          {step.output && (
+                                            <div className="bg-white/5 rounded-lg p-3">
+                                              <div className="flex items-center gap-2 mb-2">
+                                                <Database className="w-3 h-3 text-yellow-400" />
+                                                <span className="text-xs text-gray-400 font-semibold">Retrieved Output</span>
+                                              </div>
+                                              <div className="text-sm text-gray-300 max-h-64 overflow-y-auto">
+                                                <p className="font-mono text-xs whitespace-pre-wrap leading-relaxed">
+                                                  {step.output}
+                                                </p>
+                                              </div>
+                                            </div>
+                                          )}
+                                        </>
+                                      )}
+                                    </div>
+                                  </motion.div>
+                                )}
+                              </AnimatePresence>
                             </motion.div>
-                          ))}
-                        </div>
+                          );
+                        })}
                       </CardContent>
                     </Card>
                   </motion.div>
                 )}
               </AnimatePresence>
 
-              {/* Transition Animation */}
               <AnimatePresence>
                 {showTransition && (
                   <motion.div
@@ -299,8 +490,7 @@ export function MainContent({ userType, theme }) {
                 )}
               </AnimatePresence>
 
-              {/* Input Card (hidden when submitted) */}
-              {!isQuerySubmitted && (
+              {!response && !isQuerySubmitted && (
                 <motion.div
                   initial={{ opacity: 1 }}
                   animate={{ opacity: 1 }}
@@ -356,7 +546,7 @@ export function MainContent({ userType, theme }) {
                               size="sm"
                               className="border-white/20 text-gray-300 hover:text-white hover:bg-white/10"
                             >
-                              <ImageIcon className="w-4 h-4 mr-2" />
+                              <Image className="w-4 h-4 mr-2" />
                               Image
                             </Button>
                             <Button
@@ -388,7 +578,6 @@ export function MainContent({ userType, theme }) {
                 </motion.div>
               )}
 
-              {/* Response Display */}
               <AnimatePresence>
                 {response && response.paragraphs && response.paragraphs.length > 0 && (
                   <motion.div
@@ -401,79 +590,9 @@ export function MainContent({ userType, theme }) {
                   </motion.div>
                 )}
               </AnimatePresence>
-
-              {/* Reference Papers */}
-              {response && (
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.5 }}
-                >
-                  <Card className="bg-white/5 backdrop-blur-sm border-white/10">
-                    <CardHeader>
-                      <CardTitle className="text-white flex items-center gap-2">
-                        <ExternalLink className="w-5 h-5" />
-                        Reference Papers & Resources
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="grid gap-3">
-                        <a href="https://osdr.nasa.gov" target="_blank" rel="noopener noreferrer" 
-                           className="flex items-center gap-3 p-3 bg-white/5 hover:bg-white/10 rounded-lg border border-white/10 text-gray-300 hover:text-white transition-all">
-                          <FileText className="w-5 h-5" />
-                          <div>
-                            <p className="font-medium">NASA Open Science Data Repository</p>
-                            <p className="text-sm text-gray-400">Primary data and metadata from studies</p>
-                          </div>
-                        </a>
-                        <a href="https://lsda.jsc.nasa.gov" target="_blank" rel="noopener noreferrer"
-                           className="flex items-center gap-3 p-3 bg-white/5 hover:bg-white/10 rounded-lg border border-white/10 text-gray-300 hover:text-white transition-all">
-                          <FileText className="w-5 h-5" />
-                          <div>
-                            <p className="font-medium">NASA Space Life Sciences Library</p>
-                            <p className="text-sm text-gray-400">Additional relevant publications</p>
-                          </div>
-                        </a>
-                        <a href="https://taskbook.nasaprs.com" target="_blank" rel="noopener noreferrer"
-                           className="flex items-center gap-3 p-3 bg-white/5 hover:bg-white/10 rounded-lg border border-white/10 text-gray-300 hover:text-white transition-all">
-                          <FileText className="w-5 h-5" />
-                          <div>
-                            <p className="font-medium">NASA Task Book</p>
-                            <p className="text-sm text-gray-400">Grant information for studies</p>
-                          </div>
-                        </a>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </motion.div>
-              )}
             </div>
           </div>
         </div>
-
-        {/* Chat Button */}
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          onClick={() => setShowChat(!showChat)}
-          className={`fixed bottom-6 right-6 p-4 bg-gradient-to-r ${theme.primary} rounded-full shadow-lg z-20`}
-        >
-          <MessageCircle className="w-6 h-6 text-white" />
-        </motion.button>
-
-        {/* Chat Panel */}
-        <AnimatePresence>
-          {showChat && (
-            <motion.div
-              initial={{ opacity: 0, x: 400 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: 400 }}
-              className="fixed right-0 top-0 h-full w-96 z-30"
-            >
-              <ChatBot theme={theme} onClose={() => setShowChat(false)} />
-            </motion.div>
-          )}
-        </AnimatePresence>
       </div>
 
       <input
