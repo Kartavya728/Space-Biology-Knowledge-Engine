@@ -1,7 +1,0 @@
-Due to an oversight, the placeholder for the accession number for our microarray dataset was not updated in the published article. The correct text for the section “Accession Number” should read:
-Accession numbers
-All of our microarray data has been deposited in the Gene Expression Omnibus (http://www.ncbi.nlm.nih.gov/geo) with the accession number [GSE61484].
-The authors apologize for this oversight. This does not affect the scientific conclusions of the article in any way.
-Conflict of interest statement
-The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.
-Articles from Frontiers in Plant Science are provided here courtesy ofFrontiers Media SA
