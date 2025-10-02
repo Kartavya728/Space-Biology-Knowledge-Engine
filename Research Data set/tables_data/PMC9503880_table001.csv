@@ -1,0 +1,13 @@
+,,,,Wilcoxon,Type II Regression (MA),
+Media Target,Study,X,Y,Paireda,Unpaired,Intercept,Slope,R2,Mean log10 Difference
+Bacteria-specific,Food items,Agar,Easy Plate,,--,–0.36,1.05,0.94,−0.143
+,Food items,Agar,Petrifilm,--,--,0.01,0.99,0.94,−0.005
+,Food items,Easy Plate,Petrifilm,**,--,0.34,0.95,0.98,0.138
+,Built Environment,Agar,Easy Plate,**,--,−0.002,0.93,0.96,−0.186
+,Built Environment,Agar,Petrifilm,--,--,0.06,0.97,0.96,−0.018
+,Built Environment,Easy Plate,Petrifilm,**,--,0.07,1.04,0.97,0.169
+,ISS,Agar,Easy Plate,--,--,0.06,0.74,0.80,−0.044
+Fungal-specific,Built Environment,Agar,Easy Plate,--,--,0.01,0.77,0.72,−0.338
+,Built Environment,Agar,Petrifilm,--,--,0.05,0.75,0.73,−0.29
+,Built Environment,Easy Plate,Petrifilm,--,--,0.16,0.9,0.85,0.048
+,ISS,Agar,Easy Plate,*,--,0.12,1.06,0.73,−0.14

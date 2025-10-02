@@ -1,0 +1,12 @@
+,,GO term name
+Characteristics,Ontology,Transcript ID,Gene symbol,Gene description,GArg: GWFC (log2),FArg: GArgFC (log2)
+"Figure 3, Category I CORRECTED, 25 GENES",Cellular Component,plasma membrane GO:0005886,,
+cell periphery GO:0071944,,
+,At3g60270,,Cupredoxin superfamily protein,2.8,−3.2
+,At5g24970,,Protein kinase superfamily protein,−1.8,1.6
+,,At2g38330,,MATE efflux family protein,−1.9,1.7
+,,At3g07320,,O-Glycosyl hydrolases family 17 protein,−2.2,2.8
+,,At1g32950,,Subtilase family protein,−2.3,3.3
+,,membrane GO:0016020,,
+,,At2g36830,TIP1;1,gamma tonoplast intrinsic protein,−1.6,1.6
+,,At1g74680,,Exostosin family protein,−1.9,2.4

@@ -1,0 +1,7 @@
+Species and strain,NCBI accession no.,Isolation location,No. of scaffolds,Genome size (bp),N50(bp),Median coverage (×),G+C content (%),No. of filtered reads used for assembly (million)
+Naganishia adeliensisIF1SW-F1,JAAZPZ000000000.1,Port panel next to cupola,149,"19,403,212","506,784",134,53.37,14.71
+Naganishia albidaIF6SW-B1,JAAZPV000000000.1,PMM port 1a,128,"19,422,953","506,783",303,53.37,34.76
+Naganishiasp. IF7SW-B1,JAAZQA000000000.1,Lab overhead 3,123,"19,429,219","511,828",286,53.37,32.79
+Naganishia albidaIIF5SW-F1,JAAZPY000000000.1,Node 1 overhead 4,136,"19,428,531","506,790",258,53.37,30.81
+Papiliotrema laurentiiIF7SW-B5,JAAZPW000000000.1,Lab overhead 3,155,"19,200,339","389,502",234,56.19,27.19
+Papiliotrema laurentiiIF7SW-F4,JAAZPX000000000.1,Lab overhead 3,128,"19,020,389","484,400",270,56.22,30.21

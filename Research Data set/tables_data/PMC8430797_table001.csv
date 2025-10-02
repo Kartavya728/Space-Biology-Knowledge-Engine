@@ -1,0 +1,10 @@
+Dataset,Organism,Duration,Vehicle,Assay,Sex,Strain,Tissue,Age/Stage,Sample Size
+GLDS-104,M. musculus,37 d,ISS,RNAseq,F,C57BL/6J,Soleus,16 wks,N = 6 (GC); N = 6 (FLT)
+GLDS-99,M. musculus,37 d,ISS,RNAseq,F,C57BL/6J,EDL,16 wks,N = 6 (GC); N = 6 (FLT)
+GLDS-21,M. musculus,"11 d,19 h",STS-108,Microarray,F,C57BL/6J,Gastroc,9 wks,N = 4 (GC); N = 4 (FLT)
+GLDS-21,M. musculus,12 d,N/A (HU),Microarray,F,C57BL/6J,Gastroc,9 wks,N = 5 (VC); N = 5 (HU)
+GLDS-103,M. musculus,37 d,ISS,RNAseq,F,C57BL/6J,Quad,16 wks,N = 6 (GC); N = 6 (FLT)
+GLDS-370/GEOGSE24215,H. sapiens,10 d,N/A(Bedrest),Microarray,M,N/A,VL,24-27 yrs,N = 10 (Longitudinal)
+GLDS-3,D. melanogaster,"12 d,18.5 h",STS-121,Microarray,Mx,Tg,Whole organism,3rd instar larvae,N = 50/rep × 6 (GC);N = 50/rep × 6 (FLT)
+GLDS-3,D. melanogaster,"12 d,18.5 h",STS-121,Microarray,F,Tg,Whole organism,Adults,N = 20/rep × 3 (GC);N = 20/rep × 3 (FLT)
+GLDS-113,C. elegans,10 d,ISS,Microarray,H,N2,Whole organism,Mixed stage,N ≈ 10000/rep × 3 (GC); N ≈ 10000/rep × 3 (FLT)

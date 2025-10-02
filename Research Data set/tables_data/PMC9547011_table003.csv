@@ -1,0 +1,24 @@
+Group,Gene,"Log2fold-change (adj.p-value), % methylation difference (adj.p-value)",Differential methylation genomic context (gene body vs. promoter)
+7d HLU,Cdk14(cyclin dependant kinase),"− 0.24 (0.01), 2.81 (0.04)",Promoter
+Eef1a1(eukaryotic translation elongation factor),"− 0.23 (0.02), − 11.74 (0.03)",Promoter
+Fam222a(aggregatin),"0.30 (0.004), − 6.76 (0.03)",Gene body
+Pitpnm3(membrane-associated phosphatidylinositol transfer domain-containing),"0.20 (0.01), 9.90 (0.02)",Promoter
+Sipa1l3(signal induced proliferation associated),"0.20 (0.02), 15.44 (0.009)",Gene body
+Sox9(SRY-box transcription factor),"0.35 (0.004), − 5.74 (0.03)",Gene body
+7d IR,BC031181(cDNA sequence),"− 0.33 (0.04), 26.70 (0.03)",Promoter
+Crybb3(crystallin),"3.47 (0.03), 16.40 (0.006)",Promoter
+Dcp1b(decapping mRNA),"0.32 (0.03), − 11.22 (0.04)",Gene body
+Eef1a1(eukaryotic translation elongation factor),"− 0.25 (0.002), − 13.72 (0.0002)",Promoter
+Fgfr1(fibroblast growth factor receptor),"0.61 (0.02), − 0.65 (0.02)",Promoter
+Flnb(filamin),"0.38 (0.03), 11.11 (0.04)",Gene body
+Mbd6(methyl-CpG binding domain),"0.31 (0.005), 8.96 (0.002)",Promoter
+Ncor2(nuclear receptor corepressor),"0.29 (0.02), 20.20 (0.0003)",Gene body
+Plec(plectin),"0.36 (0.02), 11.95 (0.0008)",Gene body
+Ppm1a(protein phosphatase),"− 0.22 (0.02), 0.79 (0.04)",Promoter
+1m HLU + IR,B4galt6(membrane-bound glycoprotein),"0.36 (0.0004), − 3.89 (0.02)",Promoter
+Kcnip3 (potassium voltage-gated channel interacting),"0.35 (0.02), − 14.28 (0.04)",Promoter
+Lamp5(lysosomal associated membrane protein),"0.30 (0.03), 10.48 (0.03)",Promoter
+Nacad(NAC alpha domain containing),"0.31 (0.003), 20.22 (0.03)",Gene body
+Rundc3a (RUN domain containing),"0.29 (0.01), 23.99 (0.04)",Promoter
+"Sphkap (SPHK1 interactor, AKAP domain containing)","0.22 (0.02), 17.98 (0.04)",Promoter
+Tle3(transcriptional co-repressor),"0.36 (0.0002), 7.30 (0.05)",Gene body

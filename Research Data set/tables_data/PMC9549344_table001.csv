@@ -1,0 +1,8 @@
+Strain,Mutation,Protein Expression,Body Wall Muscle Structure,Swimming,Crawling,Force by NemaFlex,Body Diameter (pm),Pharyngeal Muscle
+wild type,,,,,,,73.5–78.3,
+syb797,HA tag at N–term. of giant isoforms,giant isoforms reduced by ∼50% reduced in pharynx,normal,faster,normal,reduced,62.1,defective posterior bulb
+e1460,nonsense mutation in alternatively spliced exon for Ig20–Ig26 [22],reduced levels of giant isoforms [12],moderate [12],slower,slower (severe),reduced (severe),57.3,defective posterior bulb
+syb797syb1257,HA tag added to N–term. of giant isoforms & in–frame deletion of IK,giant isoforms reduced by ∼50% reduced in pharynx,moderate–severe,slower,slower,reduced,55.7,defective posterior bulb
+su75,1 bp insertion in coding for Ig38 resulting in frameshift premature stop [12],"all giant isoforms missing small kinase isoforms present [3,12]",severe [12],slower (severe),slower (severe),reduced (severe),49.9,defective posterior & anterior bulbs
+tm752,out of frame deletion in IK [5],all kinase isoforms (giant & small) missing [5],mild [12],slower (severe),slower (severe),normal,75.9,normal
+ad539,Ala to Val change in KSP region but this may not be causative,giant isoforms normal by western none detectable in pharynx,normal,faster,faster,reduced,56.2,defective posterior & anterior bulbs

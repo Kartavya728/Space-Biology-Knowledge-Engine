@@ -1,0 +1,18 @@
+Strain,Location,Scientific name,Genome ID
+IF8SW-P5,ISS-Crew quarters,Microbacterium mcarthurae,JAROCE000000000
+F6_8S_P_2B,ISS-Crew quarters,Microbacterium meiriae,CP133984
+F6_3S_P_1C,ISS-ARED A,Paenibacillus vandeheii,JAROCD000000000
+IIF3SC_B10,ISS-ARED,Arthrobacter burdickii,JAROCG000000000
+F6_8S_P_1B,ISS-Crew quarters,Leifsonia williamsii,JAROCF000000000
+Spore-forming?,Number of genes,PGAP coverage,eggNOG coverage
+No,2977,81.9%,81.9%
+No,3310,80.9%,81.2%
+Yes,6223,81.3%,82.4%
+No,3557,80.3%,82.3%
+No,3649,79.5%,78.6%
+DeepFRI coverage,Closest Earth strain,Assembly ID,ANI (AAI)
+100%,Microbacteriumsp. ACCRU,GCF_022346945.1,98.9% (> 90%)
+99.9%,Microbacteriumsp. LTR1,GCF_026805445.1,98.3% (> 90%)
+100%,Paenibacillussp. MAEPY,GCA_000499205.1,96.0% (> 90%)
+99.9%,Arthrobacter agilis4041,GCF_002157505.1,93.8% (> 90%)
+100%,Leifsoniasp. ku-ls,GCA_003367665.1,84.5% (75.91%)

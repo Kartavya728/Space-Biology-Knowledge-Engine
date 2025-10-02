@@ -1,0 +1,10 @@
+Symbol,Entrez Gene Name,Exprp-Value,Expr Log Ratio,Location,Type(s)
+ARG1,arginase 1,0.037,3.742,Cytoplasm,enzyme
+CACNA2D1,calcium voltage-gated channel auxiliary subunit alpha2delta 1,0.024,2.244,Plasma Membrane,ion channel
+PPFIA3,PTPRF interacting protein alpha 3,0.025,2.189,Plasma Membrane,phosphatase
+PITPNA,phosphatidylinositol transfer protein alpha,0.010,1.328,Cytoplasm,transporter
+MYO5A,myosin VA,0.034,1.304,Cytoplasm,enzyme
+DYNLL2,dynein light chain LC8-type 2,0.040,1.152,Cytoplasm,other
+VPS35,"VPS35, retromer complex component",0.046,−1.164,Cytoplasm,transporter
+GAPDH,glyceraldehyde-3-phosphate dehydrogenase,0.015,−1.478,Cytoplasm,enzyme
+MBP,myelin basic protein,0.003,−2.536,Extracellular Space,other

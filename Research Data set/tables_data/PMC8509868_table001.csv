@@ -1,0 +1,9 @@
+Molecular Pathways,Selected Genes,Differentially Expressed Genes,HLU vs. Control (Fold Change),p-value
+Mesenchymal stem cell (MSC) fate determination and differentiation,"Abi3bp, Fabp4, Apod",,,
+Osteoblast function and differentiation,"Aspn, Alpl, Bmpr1a, Dkk1, Fzd4, Tgfb1-3, Runx2, Tob1, Opg, Spp1, Sp7, Sparc, Bglap, Myoc, Col1a1, Col1a2, Col3a1, Den, Serpinfl, Sfrp2, Sfrp4, Wnt16, Wnt9a, Wnt5a, Wnt4, Wisp2, Zfyve9, Snca, Bmp4",Fzd4Sfrp2Sfrp4Spp1Bmp4,1.61.71.71.51.4,0.030.050.0090.020.02
+Osteocyte function and differentiation,"Sost, Mef2C, Mepe, Postn, Phex, Npy",Npy,1.2,0.04
+Osteoclast function and differentiation,"Ctsk, Tnfsfl1(Rankl), Trap (Acp5)",,,
+Extracellular matrix proteases,"Mmp2, Mmp3, Mmp10, Mmp13, Mmp14, Mmp15",Mmp3Mmp13,1.81.6,0.0070.01
+Protease inhibitors,"Timp1, Timp2",Timp1,1.5,0.02
+"Cell cycle control, mitochondria, energy balance","Mss51, Scd1, Pfkfb3",Scd1Pfkfb3,2.01.8,0.010.004
+Housekeeping genes,"Actb, Abcf1, B2m, Gapdh, Pol42A, Sirt4",,,

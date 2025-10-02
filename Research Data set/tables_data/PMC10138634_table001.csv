@@ -1,0 +1,9 @@
+UV Flash Strength (log(cd/m2)),UV Flash Strength (log cd s/m2),Duration (ms),Delay (s),Number of Sweeps
+1.3,−1.7,1,1,5
+1.9,−1.1,1,1,5
+2.5,−0.5,1,1,5
+3.1,0.1,1,3,5
+3.7,0.7,1,5,5
+4.3,1.3,1,10,5
+4.9,1.9,1,20,5
+5.5,2.5,1,20,5

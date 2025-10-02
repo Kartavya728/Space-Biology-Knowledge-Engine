@@ -1,0 +1,32 @@
+ORFb,Protein,CAZy family,Description,LogFCa
+An16g02910,,GH92,α-Mannosidase,3.53
+An02g09050,GelG,GH72,"β-1,3-Glucanotransferase",2.99
+An14g04240,,GH92,"α-1,2-Mannosidase",2.25
+An07g08640,AgnB,GH71,"α-1,3-Glucanase",2.23
+An13g01260,,GH92,"α-1,2-Mannosidase",2.15
+An11g03340,AamA,GH13,Acid α-amylase,2.01
+An11g06080,,GH3,β-Glucosidase,1.68
+An06g01530,Scw4,GH17,β-Glucanase,1.6
+An01g11660,CbhB,GH7,"1,4-β-Glucan cellobiohydrolase",1.53
+An02g13180,BgxB,GH55,"β-1,3-Glucanase",1.48
+An07g03340,Hyp1,,Spore wall fungal hydrophobin,1.47
+An01g09290,TraB,GH37,Trehalase,1.27
+An09g05730,AlbA,,Polyketide synthase,1.24
+An08g11070,SucA,GH32,Invertase,1.23
+An08g08370,,GH92,α-Mannosidase,1.19
+An14g04190,GbeA,GH13,"1,4-α-Glucan branching enzyme",1.18
+An01g09960,XlnD,GH3,β-d-Xylosidase,1.06
+An14g05340,UrghB,GH105,Rhamnogalacturonyl hydrolase,−1
+An10g00400,GelA,GH72,"β-1,3-Glucanotransferase",−1.04
+An16g06800,EglB,GH5,Endoglucanase,−1.13
+An09g03100,AgtA,GH13,GPI-anchored α-glucanosyltransferasec,−1.2
+An04g06930,AmyC,GH13,α-Amylase,−1.22
+An18g03570,BglA,GH3,β-Glucosidase,−1.22
+An01g12150,LacA,GH35,β-Galactosidase,−1.4
+An02g00610,,GH2,β-Glucuronidase,−1.41
+An12g08280,InuE,GH32,Exoinulinase,−1.5
+An11g02100,,GH1,β-Glucosidase,−1.54
+An14g01770,,GH3,β-Glucosidase,−1.54
+An11g00200,,GH3,β-Glucosidase,−1.69
+An07g08950,EglC,GH5,Endoglucanase,−1.82
+An15g03550,,GH43,Endoarabinase,−1.91

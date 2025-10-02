@@ -1,0 +1,12 @@
+ORF,Protein,Relative protein abundance∗,P-value,Putative function/activity
+AFUA_1G14410,Rpl17,1.36,5.82E-03,60S ribosomal protein L17
+AFUA_3G13480,,1.22,3.30E-02,Translation initiation factor 2 alpha subunit
+AFUA_7G04520,DprC,1.21,5.74E-03,"Dehydrin-like protein, acts downstream of SakA to confer cold tolerance"
+AFUA_1G11130,,1.18,2.20E-02,60S ribosomal protein L6
+AFUA_1G14090,,1.15,5.56E-03,Histidine biosynthesis
+AFUA_4G11730,GldB,1.08,3.70E-02,Glycerol dehydrogenase
+AFUA_8G04890,,-1.21,4.06E-02,Role in response to salt stress
+AFUA_1G15450,,-1.31,4.62E-03,Adenylosuccinate synthase
+AFUA_1G04900,,-1.57,4.26E-03,Proliferating cell nuclear antigen (PCNA)
+AFUA_2G01040,,-2.67,8.06E-04,Formaldehyde dehydrogenase
+""

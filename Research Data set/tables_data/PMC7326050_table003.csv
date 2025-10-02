@@ -1,0 +1,5 @@
+Gene name,ATCC 1015 gene (ASPNIDRAFT2_),CBS 513.88 gene,JSC-093350089 variant,Mutation type,SMs regulated
+fum21,225717,An01g06900,Chr4.1_TAACTCTACATCGTAGACTATAATCTC1760977T,Intergenic INDEL (downstream),Pyranonigrin A and fumonisins
+gcnE,1149812,An01g08160,• Chr4.1_A2074326AT• Chr4.1_TC2075538T• Chr4.1_A2075689C,• Intergenic INDEL (downstream)• Intron INDEL• Intergenic SNP (upstream),Pestalamides and aurasperones
+flbA,1158125,An02g03160,• Chr10.1_CTTTTTT815881C• Chr10.1_TTTTTTTC815912T• Chr10.1_A815964ATTTTTTTTTTACCCAT• Chr10.1_C816876CT• Chr10.1_C818639CT• Chr10.1_TA819635T,• Promoter region INDEL• Promoter region INDEL• Promoter region INDEL• Splice region INDEL• Intergenic INDEL (downstream)• Intergenic INDEL (downstream),Pyranonigrin A and fumonisins via Fum21
+azaR,1079852,An09g01870,• Chr1.1_ATAC443324A• Chr1.1_T443371TATC• Chr1.1_T444140G• Chr1.1_T445465TC,• Intergenic INDEL (downstream)• Intergenic INDEL (downstream)• Synonymous SNP• Intergenic INDEL (upstream),Pestalamides

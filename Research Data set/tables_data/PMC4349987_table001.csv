@@ -1,0 +1,34 @@
+Spots,Accession number,Protein name,Unique peptides,Coverage (%),Abundance change by HS,Score
+Hormone biosynthesis,,,,,,
+2586,At2g46370,Jasmonate-amido synthetase,3,6.26,up,30.19
+3984,At1g62380,ACC oxidase 2,8,32.81,up,70.28
+4095,At3g44310,Nitrilase 1,9,37.28,down,100.28
+4125,At3g44310,Nitrilase 1,12,50,down,130.29
+4285,At3g44310,Nitrilase 1,6,25.72,down,70.27
+Protein translation,,,,,,
+3384,At1g57720,Translation elongation factor EF1B,5,12.35,up,50.23
+3394,At1g57720,Translation elongation factor EF1B,4,15.5,down,50.24
+3421,At1g57720,Translation elongation factor EF1B,10,26.63,up,170.29
+3415,At3g13920,Eukaryotic translation initiation factor 4A-1,7,28.16,up,100.31
+3424,At3g13920,Eukaryotic translation initiation factor 4A-1,8,34.22,down,120.32
+3804,At4g20360,GTP binding Elongation factor Tu family protein,9,27.73,up,80.31
+Calcium signaling,,,,,,
+4181,At1g35720,Annexin 1,2,6.308,up,40.24
+4191,At1g35720,Annexin 1,5,15.77,up,70.28
+Protein folding,,,,,,
+2371,At5g42020,Luminal binding protein (BIP2),3,4.8,up,30.19
+2407,At5g42020,Luminal binding protein (BIP2),6,11.98,up,50.24
+6119,At3g62030,Cyclophilin 20–3 (CYP20–3),5,24.52,up,50.25
+Metabolism,,,,,,
+1969,At1g08520,CHLD subunit of the Mg-chelatase enzyme,16,25.58,up,160.23
+3874,At1g73110,Nucleoside triphosphate hydrolase,14,40.05,up,170.27
+4097,At2g05830,5-methylthioribose-1-phosphate isomerase,7,25.67,up,80.24
+4113,At5g15650,AtRGP2,4,11.67,up,40.23
+4809,At2g34470,Urease accessory protein G (UREG),5,26.55,up,50.31
+5092,At4g30530,Gamma-glutamyl peptidase,3,17.60,up,30.26
+5128,At3g02780,Isopentenyl diphosphate isomerase 2,5,19.01,up,50.28
+5116,At3g11930,Adenine nucleotide alpha hydrolases like,2,11.5,up,20.19
+Others,,,,,,
+2060,At1g33790,Jacalin lectin family protein,4,11.69,up,40.17
+2062,At1g33790,Jacalin lectin family protein,14,36.85,up,120.31
+4734,At4g39090,Cysteine proteinases,3,9.24,down,30.22

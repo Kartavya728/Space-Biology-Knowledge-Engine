@@ -1,0 +1,12 @@
+Ref.,Environment,Experimental conditions animal/cellular model,DDR
+,"R, μG, R + μG",,Residual damage/DNA repair activity,Synergy*
+Bender et al.39,Gemini III mission,Cultured human lymphocytes were exposed to32Pb particles in space after reaching the microgravity condition,Chromosomes deletions,Yes
+Bender et al.40,Gemini XI mission,Cultured human lymphocytes were exposed to32Pb particles in space after reaching the microgravity condition,Chromosomes deletions,No
+Horneck et al.45,Spacelab mission IML-2,Frozen E. coliandB. subtilisbacteria and human fibroblasts were exposed to X-rays and UV before launch. Cells were thawed in space to allow repair in the microgravity environment.,Re-joining of DNA strand breaks,No
+Takahashi et al.43,US Space Shuttle mission (Discovery; STS-91),DNA substrate was damaged by restriction enzyme digestion in space,T4 DNA ligase activity,No
+Pross et al.47,Radiation exposure on Shuttle Atlantis flight STS-84,Temperature dependent repair mutant rad54–3 ofS. cerevisiaeyeast was irradiated with 63Ni β particles during flight and allowed repair at different temperatures.,Double strand breaks and survival,No
+Ohnishi et al.44,"US Space Shuttle mission (Discovery, STS-91)",Damaged template DNA induced with an alkylating agent (N-methyl-N-nitroso urea; MNU).,Mutation frequency,No
+Ishizaki49,US Space Shuttle mission (STS-95),Human colon cancer cells were treated with bleomycin in space.,Microsatellite mutation rates,No
+Wu et al.51,8-days Space Shuttle mission STS-103,Blood samples collected from an astronaut before and post the Shuttle mission were exposed to high doses of γ rays.,Chromosomal aberrations,No
+Greco et al.37,Missions of different durations on the MIR and ISS.,Blood samples collected before and post space missions were exposed to ground-based X-rays.,Chromosome aberration frequency,Yes
+Lu et al.50,ISS Expedition 39,Confluent human fibroblasts (G1 phase) were treated with bleomycin in space.,γ-H2AX and gene expression,No

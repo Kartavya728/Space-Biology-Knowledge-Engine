@@ -1,0 +1,5 @@
+Group,Gravity,Number of mice,ACF,Housing,Food,Euthanasia Date,Body Weight at Mission (g),Body Weight at Euthanasia (g)
+Flight (FLT),µg,20,ISS,RH,Bar,9/18/2017,25.6 +/− 0.5,26.6 +/− 0.5
+Flight Vivarium Control (FV),1 g,20,Vendor,VIV,Chow,9/22/2017,26.7 +/− 0.5,28.5 +/− 0.5
+Ground Control (GC),1 g,20,KSC,RH,Bar,6/18/2018,27.9 +/− 0.5,31.8 +/− 0.6
+Ground Vivarium Control (GV),1 g,20,Vendor,VIV,Chow,6/24/2018,26.1 +/− 0.6,30.0 +/− 0.3

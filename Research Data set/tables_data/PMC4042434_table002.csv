@@ -1,0 +1,33 @@
+,8-week-old,17-week-old,FDR-Adjusted P-value*
+Endpoint,Baseline,Control,9 Gy + BMT
+,,
+Total Femur,,,,
+Length (mm),14.5 ± 0.1,15.5 ± 0.1a,"15.1 ± 0.1a,b",0.0007
+,,,,
+Bone volume (mm3),15.7 ± 0.3,18.1 ± 0.5a,17.2 ± 0.3a,<0.0003
+Midshaft Femur(cortical bone),,,,
+Cross-sectional volume (mm3),0.37 ± 0.00,0.35 ± 0.01,0.34 ± 0.01a,0.0497
+Cortical volume (mm3),0.15 ± 0.00,0.17 ± 0.00a,0.17 ± 0.00a,0.0003
+Marrow volume (mm3),0.22 ± 0.00,0.18 ± 0.01a,0.17 ± 0.01a,<0.0003
+Cortical thickness (μm),167 ± 2,201 ± 4a,204 ± 2a,<0.0003
+IMax(mm4),0.21 ± 0.00,0.22 ± 0.01,0.21 ± 0.01,NS
+IMin(mm4),0.10 ± 0.00,0.10 ± 0.00,0.10 ± 0.00,NS
+Ipolar(mm4),0.31 ± 0.00,0.32 ± 0.01,0.31 ± 0.02,NS
+Distal Femur Metaphysis(cancellousbone),,,,
+Bone volume/Tissue volume (%),9.8 ± 0.6,3.8 ± 0.9a,2.7 ± 0.4a,<0.0003
+Connectivity density (mm−3),100 ± 9,17 ± 7a,10 ± 4a,<0.0003
+Trabecular number (mm−1),5.4 ± 0.1,3.8 ± 0.1a,"3.4 ± 0.1a,b",<0.0003
+Trabecular thickness (μm),38 ± 1,41 ± 2,44 ± 1a,0.0588
+Trabecular separation (μm),186 ± 3,273 ± 7a,"309 ± 6a,b",<0.0003
+Distal Femur Epiphysis(cancellous bone),,,,
+Bone volume/Tissue volume (%),27.1 ± 0.7,25.4 ± 1.2,23.8 ± 0.5a,0.0497
+Connectivity density (mm−3),207 ± 8,104 ± 9a,"78 ± 3a,b",<0.0003
+Trabecular number (mm−1),6.6 ± 0.2,5.4 ± 0.1a,5.2 ± 0.2a,0.0003
+Trabecular thickness (μm),55 ± 1,64 ± 2a,66 ± 1a,<0.0003
+Trabecular separation (μm),161 ± 4,202 ± 6a,199 ± 7a,<0.0003
+Lumbar Vertebra(cancellous bone),,,,
+Bone volume/Tissue volume (%),15.7 ± 0.7,15.2 ± 1.1,"10.8 ± 0.4a,b",0.0003
+Connectivity density (mm−3),203 ± 9,160 ± 29,"71 ± 4.8a,b",0.0028
+Trabecular number (mm−1),4.7 ± 0.1,3.9 ± 0.2a,3.4 ± 0.0a,0.0003
+Trabecular thickness (μm),41 ± 1,45 ± 1a,45 ± 1a,0.016
+Trabecular separation (μm),214 ± 5,265 ± 14a,294 ± 3a,0.0007

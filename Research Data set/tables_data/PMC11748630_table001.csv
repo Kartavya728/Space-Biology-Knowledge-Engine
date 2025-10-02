@@ -1,0 +1,5 @@
+Group,Description
+Basal,"Housed in standard vivarium cages on Earth, euthanized 1 day after launch"
+Vivarium,"Housed in standard vivarium cages on Earth, euthanized n days after launch"
+Ground,"Housed in ISS habitat cages on Earth, euthanized n days after launch"
+Flight,"Housed in ISS habitat cages on ISS, euthanized n days after launch"

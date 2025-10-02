@@ -1,0 +1,21 @@
+Protein name,Log fold change,Adjustedp-value,Phosphopeptide site; sequence,Protein function
+ALPK3; Alpha kinase 3,0.5840,2.15E-02,S1615; GSKSPSAGR,Hypertrophic cardiomyopathy; protein serine kinase
+DESM; desmin,−0.4916,1.94E-02,S45; AGFGTKGSSSSMTSR,Inter-connects the Z disks of sarcomeres
+GPAT3; Glycerol-3-phosphate acyltransferase 3,−0.4454,4.51E-02,S68; NSASVGIIQR,Enzymatic activity
+KTN1; Kinectin,−0.4739,4.03E-02,S124; QKPSLEEQVIK,ER protein; involved in kinesin-driven motility
+MTCH1; Mitochondrial carrier homolog 1,−0.5770,4.51E-02,S61; HPRPAAQPSAR,Mediates insertion of transmembrane proteins into the mitochondrial outer membrane
+JPH2; Junctophilin-2,−0.4402,1.20E-02,T621; QATLEPKPIVPK,Provides structural bridge between plasma membrane and SR; required for excitation-contraction coupling in cardiomyocytes
+MYH6; Myosin 6,−0.5386,3.44E-02,S1368; VLSKANSEVAQWR,Muscle contraction
+MYH7; Myosin 7,−0.5386,3.44E-02,S1366; VLSKANSEVAQWR,Muscle contraction
+LARP1; La-related protein 1,0.4357,1.29E-02,S743: SLPTTVPESPNYR,Regulates translation of specific mRNA downstream of mTORC1 complex
+"NACAM; Nascent polypeptide-associated complex subunit alpha, muscle-specific form",−0.4512,8.19E-03,S524; ESPSSQSASSLEVLSEDTVTK,Cardiac and muscle specific transcription factor
+NUCKS; Nuclear ubiquitous casein and cyclin-dependent kinase substrate 1,−0.5010,7.713E-03,S58; NSQEDSEDSEEKDVK,DNA repair by promoting homologous recombination
+NUCKS; Nuclear ubiquitous casein and cyclin-dependent kinase substrate 1,−0.5010,7.713E-03,S61; NSQEDSEDSEEKDVK,DNA repair by promoting homologous recombination
+OSB11; Oxysterol-binding protein-related protein 11,−0.4590,6.85E-03,S15; VSESEGKLEGLATAVTPNK,Regulates FABP4 levels in differentiating adipocytes
+PERM1; PGC-1 and ERR-induced regulator in muscle protein 1,−0.5430,1.09E-02,S247; EESGLDLSTPILITEQDQIRK,"Regulates expression of selective PPARGC1 A/B and ESRRA/B/G target genes in glucose and lipid metabolism, energy transfer, and contractile function"
+"PI5PA; Phosphatidylinositol 4,5 -bisphosphate 5-phopshatase A",−0.4498,4.51E-02,S885; SRSPGLAR,Modulates function of inositol and phosphatidylinositol polyphosphate-binding proteins that are present in membrane ruffles
+RRBP1; Ribosome-binding protein 1,−0.5006,2.74E-03,S191; ASSPATSSQGK,Mediates interaction between the ribosome and the ER membrane
+S12A4; Solute carrier family 12 member 4,−0.4770,1.34E-02,S958; DRHSALR,Mediates potassium-chloride cotransport
+AKTS1; AKT1 substrate 1,0.7830,3.44E-02,S184; SLPVSVPVWAFK,Subunit of mTORC1
+"SHIP1; Phosphatidylinositol 3, 4, 5-trisphosphate 5-phosphatase 1",0.4719,8.18E-03,S1038; KEQESPK,Key regulator of neutrophil migration
+MK14; Mitogen-activated protein 14,−0.6623,8.11E-03,T180; HTDDEMTGYVATR,Serine/threonine protein kinase

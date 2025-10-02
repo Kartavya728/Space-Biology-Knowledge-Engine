@@ -1,0 +1,15 @@
+Function,Activation z-score,Predicted Activation State,p-Value,# Genes
+Viral Infection,4.278,Increased,2.34E-06,335
+Clathrin-Mediated Endocytosis,3.125,Increased,1.70E-02,20
+Infection of Cells,2.838,Increased,5.61E-04,139
+Receptor-Mediated Endocytosis,2.775,Increased,2.21E-02,23
+Formation of Peroxisomes,2.191,Increased,6.78E-03,6
+Fusion of Late Endosomes,2.183,Increased,1.90E-02,6
+Activation of CD8+ T Lymphocyte,-2.000,Decreased,7.00E-03,5
+Senescence of Cells,-2.555,Decreased,2.96E-02,61
+Trends,,,,
+Oxidative Stress Response of Cells,-1.773,Decreased,8.88E-03,18
+Cell Death of Granulocytes,-1.794,Decreased,3.83E-02,26
+Metabolism of Reactive Oxygen Species,-1.796,Decreased,3.31E-02,106
+Stress Response of Cells,-1.948,Decreased,1.34E-03,33
+Synthesis of Reactive Oxygen Species,-1.984,Decreased,3.52E-02,104

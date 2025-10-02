@@ -1,0 +1,12 @@
+Ref.,Environment,Experimental conditions animal/cellular model,DDR
+,"R, μG, R + μG",,Residual damage/DNA repair activity,Synergy*
+Risin and Pellis18,Simulated microgravity RWV + radiation,Peripheral blood mononuclear cells were exposed to137Cs γ rays at a dose rate of 15 Gy/min.,Inhibition of radiation-induced apoptosis,Yes
+Mosesso et al.23,Clinostat + radiation,Human lymphocytes were exposed to 1.5 Gy X-ray.,Increased yield of chromosome aberrations,Yes
+Manti et al.24,Simulated microgravity RWV + radiation,"Human peripheral blood lymphocytes were exposed to 60 MeV protons or 250 kVp X-rays in the dose range 0–6 Gy, and allowed to repair DNA damage for 24 h.",No differences in radiation-induced chromosome aberrations,No
+Canova et al.25,Simulated microgravit γ RWV + radiation,Lymphoblastoid TK6 cells were irradiated with γ rays and incubated for 24 h. Radiation doses ranged from 1–4 Gy at dose rate of 1 Gy/min from60Co γ source.,Higher frequency of micronucleated cells and mutations. Significant reduction in apoptotic cells. Increased number of cells in G1-phase,Yes
+Dang et al.29,Simulated microgravity RWV + radiation,Human B lymphoblast cells were exposed to 300 MeV/u carbon ions.,Increased apoptosis and ROS,Yes
+Mognato et al.26,Simulated microgravity RWV + radiation,"Human lymphocytes were exposed to X-rays at 2.2 Gy/min or γ from60Co at 1 Gy/min and incubated for 24 h. Total doses were 1, 2 and 3 Gy.",Increased mutant frequency after radiation,Yes
+Mognato28,Simulated microgravity RWV + radiation,Human peripheral blood cells were exposed to137Cs γ rays. The total dose was 5 Gy and the dose rate was 3.1 Gy/min.,Significantly higher number of γ-H2AX foci per nucleus. The fraction of foci-positive cells decreased slower after irradiation,Yes
+Wang et al.22,Simulated microgravity 3D clinostat + radiation,"Embryonic stem cells were exposed to 8 Gy γ rays and incubated for 0, 1 and 2 h post irradiation.",Increased apoptosis. Population growth inhibited.,Yes
+Girardi et al.27,Reduced gravitational force RWV + radiation,Human peripheral lymphocytes were incubated for 4 and 24 h after 0.2 and 2 Gy γ irradiation.,Decreased number of miRNAs in response to radiation exposure,Yes
+Li et al.30,Tail suspension + radiation,Spermatogenic cells of male Swiss Webster mice were exposed whole body to 200 MeV/u carbon ions at an entrance dose rate of 0.5 Gy/min.,Increased DNA damage. Increased apoptotic rate and the expression levels of p53 and Bax,Yes

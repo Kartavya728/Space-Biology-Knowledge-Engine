@@ -1,0 +1,21 @@
+Cellular Response to Stimulus
+Network Measurements,LRD3,LRD4,LRD1,LRD2
+Spectral gap,0.3347,6.172,2.013,0.099
+Density,0.0489,0.0711,0.022,0.0037
+Diameter,1,1,1,1
+Conn. Comps.,3,2,3,28
+Cellular Response to Stress
+Spectral gap,0.7923,4.69,0.99,0.099
+Density,0.027,0.087,0.102,0.0104
+Diameter,2,1,1,1
+Conn. Comps.,9,1,5,17
+DNA Metabolic Process
+Spectral gap,0.858,1.202,0.99,0.4112
+Density,0.5714,0.038,0.166,0.0059
+Diameter,1,1,1,2
+Conn. Comps,6,2,3,69
+Cellular Response to DNA Damage Stimulus
+Spectral gap,0.068,5.74,0.99,0.1399
+Density,0.055,0.058,0.166,0.0074
+Diameter,1,1,1,2
+Conn. Comps.,7,1,3,55

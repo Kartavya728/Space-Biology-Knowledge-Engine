@@ -1,0 +1,10 @@
+,,,Relative protein abundance*,
+,,,,
+ORF,Protein,Putative function/activity,CEA10,ISSFT-021,IF1SW-F4,p-value
+""
+AFUA_4G14530,TpcF/GstC,Glutathione S-transferase involved in trypacidin biosynthesis,0.83,3.02,2.46,2.76E-06
+AFUA_3G00590,AspHS,Asp-hemolysin; hemolytic toxin,0.00,3.01,3.24,7.48E-09
+AFUA_4G14580,TpcA,Emodin O-methyltransferase involved in trypacidin biosynthesis,−0.14,2.95,3.06,6.77E-07
+AFUA_4G14470,TpcK,Dehydratase involved in trypacidin biosynthesis,0.27,2.58,2.17,3.04E-03
+AFUA_2G17580,Arp1,Scytalone dehydratase involved in conidial pigment biosynthesis,0.58,2.49,2.69,2.24E-07
+AFUA_4G00860,DprA,"Dehydrin-like protein / oxidative, osmotic and pH stress responses",−3.54,−5.64,−4.62,1.37E-07

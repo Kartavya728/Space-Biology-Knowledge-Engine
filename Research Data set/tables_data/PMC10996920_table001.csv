@@ -1,0 +1,5 @@
+Dataset,Strain,Individual or Pooled,Tissue,Age at Experiment Start (wk),Treatments,Original Publication
+Normal mouse,C57BL/6J,Pooled,Spleen,9–11,None,(19)
+CASIS,C57BL/6Tac,Individual,Spleen,35,Spaceflight,(5)
+TARDIS,C57BL/6J,Individual,Spleen and bone marrow,10,AOS and/or TT and/or CpG1826,Spleen (6)Bone marrow (7)
+Hypervaccination,C57BL/6J,Pooled,Spleen and bone marrow,10,Vaccinated three times with TT and CpG1826,Data not shown

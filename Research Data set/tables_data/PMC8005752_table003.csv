@@ -1,0 +1,21 @@
+Characteristic,1,2,3,4,5,6,7,8,9
+Growth temperature (°C),25-30*,18-42,20-30,20-30,20-30,10-37,18-37,20-37,10-40
+Growth pH,6.0-8.0,5.0-9.0,5.0-7.0,5.0-8.0,6.0-8.0,4.0-9.0,6.0-8.0,5.0-8.0,4.0-7.0
+Catalase,+,W,+,W,+,+,+,+,+
+Oxidase,+,+,−,−,+,+,+,−,+
+Reduction of nitrate to nitrite,−,w,w,w,w,−,−,+,W
+Starch hydrolysis,−,−,+,−,−,+,+,−,−
+Assimilation (API-20NE) of:,,,,,,,,,
+D-glucose,+,w,W,+,−,+,+,−,−
+L-arabinose,+,+,+,−,+,+,+,+,+
+D-mannose,+,−,W,−,−,+,+,−,−
+D-mannitol,+,−,+,−,−,-,+,−,−
+Maltose,+,−,+,−,−,−,−,−,−
+Potassium gluconate,+,+,+,−,+,−,−,−,−+
+Malic acid,+,+,−,+,−,+,+,−,w
+Trisodium citrate,+,+,−,−,−,+,+,−,w
+Phenyl acetic acid,−,.-,W,−,−,−,+,−,−
+Enzymatic activity (API-ZYM) of:,,,,,,,,,
+Esterase lipase,+,+,W,w,+,−,+,N.D.,+
+Cystine arylamidase,−,+,W,w,w,+,+,N.D.,−
+Trypsin,+,+,W,w,w,−,+,N.D.,−

@@ -1,0 +1,34 @@
+Strain or plasmid,"Genotype, phenotype, or description",Reference and/or sourcea
+Strain,,
+WN547,trpC2 pheA1 cat 6His-rpoC; Cmr,61
+WN624,trpC2 amyE::spc; Spcr,53
+WN758,trpC2 pheA1 rpoB-Q469Rcat 6His-rpoC; RifrCmr,7
+WN759,trpC2 pheA1 rpoB-H482Rcat 6His-rpoC; RifrCmr,7
+WN760,trpC2 pheA1 rpoB-H482Ycat 6His-rpoC; RifrCmr,7
+WN761,trpC2 pheA1 rpoB-S487Lcat 6His-rpoC; RifrCmr,7
+WN999,trpC2 pheA1 rpoB-S487Fcat 6His-rpoC; RifrCmr,13
+WN1000,trpC2 pheA1 rpoB-S487Ycat 6His-rpoC; RifrCmr,13
+WN1002,trpC2 pheA1 rpoB-H482Dcat 6His-rpoC; RifrCmr,13
+WN1004,trpC2 pheA1 rpoB-V135Fcat 6His-rpoC; RifrCmr,13
+WN1007,trpC2 pheA1 rpoB-Q469Kcat 6His-rpoC; RifrCmr,13
+WN1009,trpC2 pheA1 rpoB-H482Pcat 6His-rpoC; RifrCmr,13
+WN1011,trpC2 pheA1 rpoB-Q469Lcat 6His-rpoC; RifrCmr,13
+WN1191,trpC2 pheA1 rpoB-A478Dcat 6His-rpoC; RifrCmr,This study
+WN1261,trpC2 amyE::neo; Neor,62
+WN1624,trpC2 pheA1 rpoB-D472Vcat 6His-rpoC; RifrCmr,This study
+WN1625,trpC2 pheA1 rpoB-D472Ycat 6His-rpoC; RifrCmr,This study
+WN1626,trpC2 pheA1 rpoB-Δ(E479-H482)cat 6His-rpoC; RifrCmr,This study
+WN1637,trpC2 pheA1 rpoB-H482Ncat 6His-rpoC; RifrCmr,This study
+WN1647,trpC2 pheA1 rpoB-A478Vcat 6His-rpoC; RifrCmr,This study
+WN1651,trpC2 pheA1 amyE::spc cat 6His-rpoC; CmrSpcr,This study
+WN1653,"trpC2 pheA1 rpoB-A478D,I528Vcat 6His-rpoC; RifrCmr; reconstructed",This study
+WN1658,trpC2 rpoB-A478DamyE::neo; NeorRifr,This study
+WN1662,"trpC2 rpoB-A478D,I528VamyE::neo; NeorRifr",This study
+WN1663,"Isolate from LB culture no. 3 evolved from WN1191;rpoB-A478D,I528V; Rifr",This study
+Plasmids,,
+pDG1730,amyEspectinomycin integration vector,BGSC;63
+pJOE8999,CRISPR-Cas9 system,BGSC;51
+pWN1630,pJOE8999 + sgRpoB + 1409b,This study
+pWN1633,pWN1630 +rpoB-H482N homology template,This study
+pWN1641,pWN1630 + WTrpoBhomology template,This study
+pWN1645,pWN1630 +rpoB-A478V homology template,This study

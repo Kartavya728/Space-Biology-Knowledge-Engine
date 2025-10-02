@@ -1,0 +1,6 @@
+Antibody(Species),LM Dilution,EM Dilution,Reference/Source
+SABPα(Rabbit),1:2000 – 1:10000,1:25 - 1:200,L. Mirels(unpublished)
+PRP(Chicken),---,1:50,D.M. Carlson(unpublished)
+NGF(Rabbit),1:200 – 1:1000,1:10 – 1:100,Santa Cruz(sc-549)
+EGF(Rabbit),---,1:25,Sigma-Aldrich(E2635)
+SMGC(Rabbit),1:3000 – 1:10000,1:300 – 1:500,"Zinzen et al., 2004"

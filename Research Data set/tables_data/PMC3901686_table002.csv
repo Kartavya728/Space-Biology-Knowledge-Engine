@@ -1,0 +1,33 @@
+Catagories of genes with altered response
+,Symbol,Fold Change,,Symbol,Fold Change
+Stress Response (P value 1.59E-11),Response to Hypoxia (P value 1.07E-04)
+Heat shock protein 70Bc,Hsp70Bc,13.0,Heat shock protein 70Bc,Hsp70Bc,13.0
+"Heat shock protein 70Aa,Ab","Hsp70Aa,Ab",9.1,hairy,h,1.9
+Heat shock protein 22,Hsp22,5.4,"Heat shock protein 70Aa,Ab","Hsp70Aa,Ab",9.1
+Heat shock gene 67Bc,Hsp67Bc,3.4,Heat shock protein 70Ba,Hsp70Ba,11.4
+Heat shock protein 70Ba,Hsp70Ba,11.4,Heat shock protein 23,Hsp23,2.8
+Heat shock protein 26,Hsp26,3.3,IMP Metabolic Process (P value 8.24E-05)
+Heat shock protein 23,Hsp23,2.8,adenosine 3,ade3,1.6
+Heat shock protein 27,Hsp27,3.6,Dmel_CG11089,CG11089,1.6
+Heat shock gene 67Ba,Hsp67Ba,1.5,Phosphoribosylamidotransferase 2,Prat2,1.6
+Heat shock protein 68,Hsp68,5.0,adenosine 2,ade2,2.0
+Wing Disc Morphogenesis (P value 7.88E-04),Apoptosis (P value 3.86E-03)
+tolkin,tok,1.5,Protein kinase 61C,Pdk1,1.7
+pangolin,pan,1.9,Rep3,Drep-3,1.5
+Tissue inhibitor of metalloproteases,Timp,1.5,Strica,dream,1.6
+Star,S,1.6,MAP kinase-activating death domain protein,rab3-GEF,1.5
+LIM-kinase1,LIMK1,1.5,starvin,stv,2.1
+knot,kn,1.5,Death associated molecule related to Mch2,Damm,2.1
+schnurri,shn,1.5,Symporter Activity (P value 9.82E-03)
+lethal (2) giant discs 1,l(2)gd1,1.6,Dmel_CG8083,CG8083,−2.2
+downstream of receptor kinase,drk,1.5,Dmel_CG9826,CG9826,−2.2
+Suppressor of cytokine signaling at 36E,Socs36E,2.3,Sodium-dependent multivitamin transporter,Smvt,−1.9
+rhomboid,rho,1.9,lethal (2) 01810,dmGlut,−1.6
+Oxidation Reduction (P value 3.50E-02),Structural Molecule Activity (P value 3.18E-02)
+Dmel_CG3609,CG3609,−1.5,obstructor-B,obst-B,−1.6
+Ribonucleoside diphosphate reductase large subunit,RnrL,−1.5,mitochondrial ribosomal protein S28,mRpS28,−1.7
+lysyl oxidase-like 2,lox2,−1.6,Cuticular protein 92A,Cpr92A,−1.9
+Dmel_CG15629,CG15629,−1.5,mitochondrial ribosomal protein L21,mRpL21,−1.5
+prolyl-4-hydroxylase-alpha SG2,PH4alphaSG2,−1.5,Yolk protein 2,Yp2,−2.0
+Photoreceptor dehydrogenase,Pdh,−1.5,Cuticular protein 62Bb,Cpr62Bb,−1.6
+Dmel_CG12539,CG12539,−1.5,,,

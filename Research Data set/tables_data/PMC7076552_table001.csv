@@ -1,0 +1,60 @@
+Acronym/term,Name,Definition,Reference
+ABRS,Advanced Biological Research System,NASA on-orbit growth facility that provided LED lighting and sample photography,"(Paul et al., 2012;Paul et al., 2013b)"
+Affymetrix microarray,–,Microarray to monitor patterns of gene expression produced by Affymetrix Inc.,–
+AGI,Arabidopsis Gene Initiative,Consortium of researchers studying the genome ofArabidopsis thaliana,"(Kaul et al., 2000)"
+AGRIS AtTFD,AGRIS Arabidopsis Transcription Factor database,A searchable database of ~1770Arabidopsis thalianatranscription factors grouped into families by conserved domain structures. Maintained by The Arabidopsis Gene Regulatory Information Server (AGRIS).,"(Palaniswamy et al., 2006)"
+ATTED II,Arabidopsis thalianatrans-factor and cis-element prediction database,A database cataloging plant gene co-expression data,"(Obayashi et al., 2018)"
+BAM,Binary compressed sequence Alignment Map,A file containing information on the alignment of each read from a DNA sequencing machine to the genome of a target organism,–
+BRIC,Biological Research in Canister,Spaceflight hardware allowing for plant growth on orbit. Samples are sealed prior to launch. Lighting provided only in the BRIC-LED version,
+CATdb,–,A repository of transcriptome data forArabidopsis thalianaproduced by the Complete Arabidopsis Transcriptome Micro Array (CATMA) platform,"(Gagnot et al., 2008)"
+CATMA microarray,Complete Arabidopsis Transcript MicroArray,Microarray to monitor patterns of gene expression using technology developed by the European CATMA initiative.,"(Sclep et al., 2007;Gagnot et al., 2008)"
+CPM,counts per million reads mapped,"In RNAseq: the counts of number of reads per gene scaled to the number of fragments sequenced. Unlike FPKM (see below), this value is not normalized for the effects of gene length or amount of sequencing on count number per gene.",–
+CyVerse,–,A cloud computing infrastructure supported through the National Science Foundation's Directorate of Biological Sciences.,"(Goff et al., 2011;Merchant et al., 2016)"
+D3 JavaScript,–,A library of routines for the Javascript programming language that enables interactive data visualizations within a web browser.,–
+DESeq,–,An analysis tool for calculating differential gene expression.,"(Anders and Huber, 2010;Love et al., 2014)"
+EdgeR,Empirical analysis of Digital Gene Expression in R,An analysis tool calculating differential gene expression.,"(Robinson et al., 2009;Love et al., 2014)"
+eFP-Seq Browser,–,An RNA-seq data exploration and visualization tool.,"(Sullivan et al., 2019)"
+EMBL EBI Expression atlas,–,A database of patterns of gene expression under different conditions. Maintained by The European Molecular Biology Laboratory's (EMBL) European Bioinformatics Institute (EBI).,"(Papatheodorou et al., 2018)"
+EMCS,European Modular Cultivation System,"On-orbit growth hardware developed by the European Space Agency. Provides an on-board centrifuge, video and lighting, temperature and atmospheric control.","(Correll et al., 2013;Mazars et al., 2014;Vandenbrink et al., 2019)"
+Ensembl,–,"A database of genome-related information maintained by the European Bioinformatics Institute and the Wellcome Trust Sanger Institute,","(Kersey et al., 2018;Zerbino et al., 2018)"
+Entrez,–,The US National Center for Biotechnology Information (NCBI)'s database for gene-specific information,"(Maglott et al., 2011)"
+ePlant,–,A portal that provides access to multiple web services to download genome-level data on plant genes.,"(Waese et al., 2017)"
+Expression Angler,–,A tool that finds other genes with similar expression patterns to a gene of interest.,"(Austin et al., 2016)"
+FASTQ file,–,File containing the nucleotide sequences identified by next generation nucleotide sequencing machines,–
+FPKM,Fragments Per Kilobase of transcript per Million mapped reads,An estimation of gene expression based on RNA-sequencing data that is normalizing for gene length and the amount of sequencing (longer and more heavily sequenced genes will naturally produce more reads independent of their expression level).,–
+Gene Symbol,–,Commonly used gene name such as AOX1A to denote the Arabidopsis geneALTERNATIVE OXIDASE 1A,–
+GeneLab,–,A repository for spaceflight-related ‘omics-level data administered by the US National Aeronautics and Space Administration (NASA).,–
+Genemania,Gene Multiple Association Network Integration Algorithm,A tool that generates a single functional interaction network for a gene of interest drawing on multiple data sources.,"(Franz et al., 2018)"
+Genevisble,–,A search portal to curated expression data from the GENEVESTIGATOR database,"(Hruz et al., 2008)"
+GEO,Gene Expression Omnibus,A functional genomics data repository administered by US National Center for Biotechnology Information (NCBI).,–
+GLDS,GeneLab Dataset,"Unique identifier of a dataset (usually microarray, RNAseq or proteomics data) deposited in NASA's GeneLab data repository",–
+GO,Gene Ontology,Descriptive terms drawn from a standard set that classify genes dependent on their relationships to biological processes or functions or subcellular locales.,"(Ashburner et al., 2000;Carbon et al., 2019)"
+GO Enrichment analysis,Gene Ontology Enrichment analysis,"Statistical analysis of dataset as to whether there is an over-representation of genes associated with a particular biological process or function, or cellular locale relative to that expected from a random selection of the same number of genes.","(Ashburner et al., 2000;Carbon et al., 2019)"
+HZE,–,"High-charge, high-energy radiation.",–
+iDEP,integrated Differential Expression and Pathway analysis,Software package for the R programming language designed to process genetic data.,"(Ge et al., 2018)"
+KEGG,Kyoto Encyclopedia of Genes and Genomes,A widely used database that categorizes genes into the cellular pathways in which they are involved.,"(Kanehisa et al., 2017)"
+Metadata,–,Additional data about parameters and conditions that adds to the description of each experiment and provides context for interpreting results.,–
+microRNA annotation TAIR10,–,A database of microRNAs predicted in the genome ofArabidopsis thalianafrom the TAIR 10 genome annotation.,"(Lamesch et al., 2012)"
+NCBI,The National Center for Biotechnology Information,Part of the National Library of Medicine that is run by the US National Institutes of Health. This unit maintains a series of databases relevant to biological research,–
+NCBI PubMed,–,Online aggregator of scientific publications curated by NCBI,–
+OM,Orthologous Matrix,A table linking gene identifiers in one species to orthologous genes in a different species,
+Ortholog,–,Related genes between species that originated from a common ancestral gene prior to speciation,–
+P-value vs Q-value,–,"In transcriptomics: P-value is the statistical significance that a gene is differentially expressed when comparing between treatments; Q-value is an adjusted P-value, taking in to account the cumulative effect of making multiple comparisons (tests of significance) within a dataset, such as across many genes.",
+Promomer,–,A tool for identifying promoter elements,"(Toufighi et al., 2005)"
+Qlik,–,Database management software,–
+R,–,Programming language widely used in the statistical analysis of scientific data.,–
+R-Shiny,–,An R software package that allows for easy development of interactive web-based applications.,–
+R-studio,–,Commercially produced software that aids with the development of programs using R.,–
+Reactome,–,A curated and peer-reviewed molecular pathway database,"(Fabregat et al., 2018)"
+RMA,Robust Multi-array Average,An algorithm used to normalize microarray data between multiple microarray chips,"(Irizarry et al., 2003)"
+RNA-seq,–,High-throughput sequencing of RNA.,–
+ROS-wheel,–,A meta-analysis of many publicly available microarray experiments related to responses to reactive oxygen species (ROS) and oxidative stress.,"(Willems et al., 2016)"
+SIMBOX,Science In Microgravity BOX,An on-orbit experiment facility developed by the German Aerospace Center's (DLR) Space Administration. Contains an internal centrifuge and lighting and temperature control.,"(Preu and Braun, 2014)"
+STRING,–,A database and web tool for visualizing protein:protein interaction networks.,"(Szklarczyk et al., 2019)"
+SUBA4,The SUBcellular location database for Arabidopsis,Database of predicted subcellular locations for a given gene product.,"(Hooper et al., 2017)"
+TAIR,The Arabidopsis Information Resource,A database of genetic and molecular biology data focused onArabidopsis thaliana,"(Berardini et al., 2015)"
+TAIR9/TAIR10,The Arabidopsis Genome Annotation Version 9 or 10,Annotated versions of the sequenced Arabidopsis genome produced by TAIR. Each successive version has used newer information to improve the annotation of the entire genome.,–
+Thalemine,–,A data warehouse aggregating many genomic tools and datasets forArabidopsis thaliana.,"(Krishnakumar et al., 2016)"
+TOAST,Test Of Arabidopsis Space Transcriptome database,"A relational database that compares plant biology, spaceflight-related omics datasets and their associated metadata.",–
+Veggie,–,NASA's Vegetable Production System; an ISS-based growth hardware providing LED lighting.,"(Massa et al., 2017)"
+Volcano plot,,A scatter plot of data. For the microarray and RNAseq data in TOAST the volcano plot presents fold-change per gene ID plotted versus statistical significance for each data point.,

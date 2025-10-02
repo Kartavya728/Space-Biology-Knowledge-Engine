@@ -1,0 +1,8 @@
+Radiation Type,Coefficient,Standard Error of Coefficient,p-Value,Odds Ratio,95% CI for OR *
+Lower,Upper
+X-ray,Dose,1.906,0.136,2.12 × 10−44,6.727,5.150,8.789
+Gravity,0.491,0.132,2.04 × 10−4,1.635,1.261,2.118
+Constant,−4.826,0.171,3.30 × 10−174,,,
+C-ion,Dose,5.218,0.447,1.85 × 10−31,184.559,76.821,443.396
+Gravity,0.397,0.156,1.1 × 10−2,1.487,1.096,2.018
+Constant,−4.797,0.193,4.75 × 10−136,,,

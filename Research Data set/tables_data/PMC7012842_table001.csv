@@ -1,0 +1,6 @@
+Space Agency,Hardware,Maximum # of mice per chamber,Cameras,unique features,Reference
+Japanese Aerospace Exploration Agency (JAXA),MHU (Mouse Habitat Unit),12 cages per unit; each cage accommodates 1 mouse,Yes,"centrifuge compatible, smooth walls to limit ambulation, temperature sensor, crew can access animals on orbit","12,58–62"
+Italian Space Agency,MDS (Mouse Drawer System),6 individually (max) or in groups (4 pairs),Yes,"temperature, humidity, CO2and NH3control system, smooth walls to limit ambulation, crew can access animals on orbit","9,63–65"
+"Institute of Biomedical Problems (IBMP), Russian Academy of Sciences",Bion-M1 Block Obespecheniya Soderzhaniya (BOS),3,Yes,"temperature, humidity, CO2and O2controlled system, smooth walls to limit ambulation","17,66,67"
+National Aeronautics and Space Administration (NASA),AEM (Animal Enclosure Module),up to 10 mice or 5 rats,No,"no sensors for temperature and humidity, metal grid walls, layered filter system, interior lighting, crew can access animals on orbit","68,69"
+NASA,Rodent Habitat,up to 10 mice (5 per side); 5–6 rats,Yes,"metal grid walls, temperature and humidity sensors, long duration filter for improved odor containment, LED lighting (day), infrared lighting (night), crew can access animals on orbit","14,18–24"

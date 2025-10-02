@@ -1,0 +1,30 @@
+Technology,Type,Target,Resolution (nm),Year,Company,Plex
+FISSEQ,NGS,RNA,600,2014,FISSEQ,8742
+MIBI,Ab-based,"RNA, protein",350,2014,IonPath,40
+IMC,Ab-based,"RNA, protein",1000,2014,Fluidigm,37
+ChipCytometry,Ab-based,Protein,500,2019,Canopy,120
+MERFISH,mFISH,RNA,100,2015,Vizgen,"10,000"
+CyCIF,Ab-based,Protein,110,2015,Rarecyte,261
+seqFISH+a,mFISH,RNA,100,2016,Spatial Genomics,"10,000"
+STARmap,NGS,RNA,SR,2018,N/A,1020
+Phenocycler (CODEX),Ab-based,"RNA, protein",260,2018,Akoya,100
+osmFISH,mFISH,RNA,SR,2018,N/A,48
+Slide-seqV2b,NGS,RNA,"10,000",2020,N/A,WT
+HDST,NGS,RNA,2000,2019,N/A,WT
+Split-FISH,mFISH,RNA,SR,2020,N/A,317
+HybISS,mFISH,RNA,SR,2020,N/A,124
+DBiT-seq,NGS,"RNA, Protein","10,000",2020,AtlasXomics,WT
+Stereo-Seq,NGS,RNA,500,2021,BGI STOmics,WT
+ExSeq,NGS,RNA,1000,2021,N/A,WT
+Molecular Cartography,mFISH,RNA,200,2021,Resolve Biosciences,100
+Cell DIVE,Ab-based,Protein,SR,2021,Cytiva,60
+CosMxc,mFISH,"RNA, protein",50,2022,NanoString Technologies,960
+Xeniumc,mFISH,"RNA, protein",50,2022,10X Genomics,1000
+Visium HD,NGS,RNA,5000,2021,10X Genomics,WT
+Esper,mFISH,RNA,260,2021,Rebus Biosystems,30
+Seq-scope,NGS,RNA,600,2021,N/A,WT
+PIXEL-seqc,NGS,RNA,1000,2021,N/A,WT
+MOSAICA,mFISH,RNA,100,2022,N/A,60
+MICS,Ab-based,Protein,100,2022,Miltenyi Biotec,100
+EEL FISHc,mFISH,RNA,200,2022,Rebus Biosystems,440
+coppaFISHc,mFISH,RNA,SR,2022,N/A,72

@@ -1,0 +1,23 @@
+,,,Relative protein abundance*,
+,,,,
+ORF,Protein,Putative function/activity,CEA10,ISSFT-021,IF1SW-F4,p-value
+""
+AFUA_3G11070,PdcA,Pyruvate decarboxylase involved in ethanol fermentation pathway,1.95,3.42,3.43,9.50E-08
+AFUA_4G11540,,Glycerol kinase,1.52,3.18,2.94,5.99E-05
+AFUA_3G08470,,Glucose-6-phosphate 1- dehydrogenase,1.41,3.06,3.33,8.66E-07
+AFUA_4G11730,GldB,Glycerol dehydrogenase,1.29,2.83,3.70,5.34E-07
+AFUA_1G14710,,Beta-glucosidase,1.63,2.70,3.52,4.34E-05
+AFUA_5G10540,,"1,4-alpha-glucan branching enzyme activity, glycogen biosynthesis",0.91,2.23,3.06,1.39E-07
+AFUA_2G03290,ArtA,14–3-3 family protein,0.67,2.21,2.82,1.90E-07
+AFUA_6G03540,AcuE,Malate synthase,0.38,2.10,2.16,1.22E-07
+AFUA_1G02140,,Glycogen debranching enzyme,0.87,1.98,3.18,1.08E-03
+AFUA_3G00370,,Phosphoketolase,0.51,1.88,2.84,3.50E-05
+AFUA_4G04680,,FGGY-family carbohydrate kinase,0.81,1.82,2.61,1.73E-05
+AFUA_4G08880,,Glucose-6-phosphate 1-epimerase,−0.32,1.46,2.61,7.00E-05
+AFUA_7G01830,Ugp1,UTP-glucose-1 -phosphate uridylyltransferase,0.00,1.35,2.11,4.43E-05
+AFUA_2G05910,HxkA,Hexokinase,−0.01,1.20,2.12,8.68E-07
+AFUA_7G05450,Sun1,"Beta-1,3-glucan modifying enzyme",−0.61,−1.87,−2.15,4.13E-02
+AFUA_1G06910,,"Arabinogalactan endo-1,4-beta- galactosidase activity",−0.43,−1.53,−2.04,9.05E-06
+AFUA_6G05030,,Polysaccharide deacetylase,−0.09,−1.21,−1.23,1.53E-03
+AFUA_6G14490,Exg17,O-glycosyl hydrolase,−0.21,−1.41,−1.33,4.68E-05
+AFUA_1G03140,,Glycosyl hydrolase,−0.31,−1.31,−1.44,1.39E-06

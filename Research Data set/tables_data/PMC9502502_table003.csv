@@ -1,0 +1,6 @@
+Gravitational Regime,E. coliAMG1,E. coliAMG1 ∆rpoS
+Slope,Slope wrt 1 g,Slope,Slope wrt 1 g
+Simulated microgravity,0.048,117%,0.079,123%
+Simulated lunar,0.045,111%,0.078,120%
+Simulated Martian,0.048,117%,0.071,111%
+1 g,0.041,N/A,0.065,N/A

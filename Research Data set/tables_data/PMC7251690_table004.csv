@@ -1,0 +1,28 @@
+TAIR ID,Description,L2FC
+Protein
+AT1G66070,Translation initiation factor eIF3 subunit,−0.94
+AT4G24820,26S proteasome non-ATPase regulatory subunit 6 homolog,−0.76
+AT3G62870,60S ribosomal protein L7a-2,−0.66
+ATCG00830,"50S ribosomal protein L2, chloroplastic",−0.65
+AT1G18070,Translation elongation factor EF1A/initiation factor IF2gamma family protein,−0.52
+AT5G44320,Eukaryotic translation initiation factor 3 subunit 7 (eIF-3),−0.47
+AT4G02930,GTP binding elongation factor Tu family,−0.42
+AT5G43960,Nuclear transport factor 2 (NTF2) family protein with RNA binding domain,−0.40
+AT3G27830,"50S ribosomal protein L12–1, chloroplastic",−0.35
+AT1G09830,"Phosphoribosylamine--glycine ligase, chloroplastic",−0.33
+AT4G29040,26S proteasome regulatory subunit 4 homolog A,−0.32
+AT3G53020,60S ribosomal protein L24–2,−0.32
+AT3G53970,Probable proteasome inhibitor,−0.23
+AT1G73990,"Serine protease SPPA, chloroplastic",0.21
+AT5G39740,60S ribosomal protein L5–2,0.24
+AT3G25520,60S ribosomal protein L5–1,0.25
+AT1G26110,Protein decapping 5,0.32
+AT5G13650,elongation factor family protein,0.35
+AT2G27040,Protein argonaute 4,0.44
+AT1G02560,"ATP-dependent Clp protease proteolytic subunit 5, chloroplastic",0.56
+AT1G78880,Ubiquitin-specific protease family C19-related protein,0.81
+Phosphoproteome
+AT5G57870,Eukaryotic translation initiation factor isoform 4G-1,−0.47
+AT4G02930,GTP binding elongation factor Tu family,0.44
+AT1G30230,Elongation factor 1-delta 1,0.45
+AT5G55220,Trigger factor type chaperone family protein,0.65

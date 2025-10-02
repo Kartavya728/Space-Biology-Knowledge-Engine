@@ -1,0 +1,21 @@
+Protein ID,Protein Name,Protein Symbol,Mean L/H,Representative GO Term (Biological Processes),No. of TM Helices,Presence of signal peptide
+AT4G14320,Zinc-binding ribosomal protein family protein,RPL36AB,13.84,translation(GO:0006412),0,NO
+AT1G15520,ATP-BINDING CASSETTE G40,ABCG40/PDR12,10.93,abscisic acid transport(GO:0080168),12,NO
+AT1G80660,H(+)-ATPASE 9,AHA9,10.25,proton transmembrane transport(GO:1902600),10,NO
+AT3G56860,UBP1-ASSOCIATED PROTEIN 2A,UBA2A,8.33,abscisic acid-activated signaling pathway(GO:0009738),0,NO
+AT1G33680,KH domain-containing protein,ATKH3,7.77,regulation of gene expression(GO:0010468),0,NO
+AT5G42380,CALMODULIN LIKE 37,CML37,7.35,response to water deprivation(GO:0009414),0,NO
+AT1G20880,RNA-binding (RRM/RBD/RNP motifs) family protein,,7.10,biological_process_unknown(GO:0008150),0,NO
+AT1G78260,RNA-binding (RRM/RBD/RNP motifs) family protein,,7.07,plant epidermis development(GO:0090558),0,NO
+AT5G18150,Methyltransferase-related protein,,7.00,regulation of defense response(GO:0031347),0,NO
+AT3G13060,EVOLUTIONARILY CONSERVED C-TERMINAL REGION 5,ECT5,6.96,mRNA destabilization(GO:0061157),0,NO
+AT4G03110,RNA-BINDING PROTEIN-DEFENSE RELATED 1,RBP-DR1,6.78,plant-type hypersensitive response(GO:0009626),0,NO
+AT3G07660,flocculation protein (DUF1296),,6.37,biological_process_unknown(GO:0008150),0,NO
+AT5G56670,Ribosomal protein S30 family protein,RPS30C,5.57,translation(GO:0006412),0,NO
+AT4G36960,RNA-binding (RRM/RBD/RNP motifs) family protein,,5.46,organic cyclic compound catabolic process(GO:1901361),0,NO
+AT3G13222,GBF-INTERACTING PROTEIN 1,GIP1,5.31,positive regulation of DNA binding(GO:0043388),0,NO
+AT3G13460,EVOLUTIONARILY CONSERVED C-TERMINAL REGION 2,ECT2,5.27,mRNA destabilization(GO:0061157),0,NO
+AT1G29350,RNA polymerase II degradation factor-like protein (DUF1296),,5.11,regulation of nitrogen compound metabolic process(GO:0051171),0,NO
+AT2G38540,LIPID TRANSFER PROTEIN 1,ATLTP1,5.09,lipid transport(GO:0006869),0,YES
+AT4G22670,HSP70-INTERACTING PROTEIN 1,HIP1,4.98,chaperone cofactor-dependent protein refolding(GO:0051085),0,NO
+AT2G46780,RNA-binding (RRM/RBD/RNP motifs) family protein,,4.93,plant epidermis development(GO:0090558),0,NO

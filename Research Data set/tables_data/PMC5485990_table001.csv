@@ -1,0 +1,18 @@
+Cells/Organism,Type of Microgravity,Type of Analysis,Length of Exposure,Result,Author
+Cell Line
+Rat cardiac cells (H9c2),RWV,Western blot; ELISA on nuclear lysates,3 h,Increased NF-κB p65 DNA binding activity,Kwon et al. [25]
+Human lymphoblastoid cells (TK6),RWV,Microarray; PCR array on whole cell lysates,72 h,Differential expression profile of genes and miRNAs identifying activation of the NF-κB pathway,Mangala et al. [26]
+Activated human T cells,ISS,Microarray on whole cell lysates,1.5 h,Suppressed expression of cREL/NF-κB gene targets,Chang et al. [27]
+Activated human T cells,RPM,RT-PCR on whole cell lysates,4 h,Suppressed expression of NF-κB gene targets,Boonyaratnakornkit et al. [28]
+Human Jurkat T cells,RWV,Western blot on nuclear lysates,5 min,Decreased translocation of NF-κB p65 protein,Paulsen et al. [29]
+Human fibroblasts (AG1522),ISS,Microarray; PCR array on whole cell lysates,72 h,Differential expression profile of genes and miRNAs identifying activation of the NF-κB pathway,Zhang et al. [30]
+Human Thyroid cancer cells (FTC-133),RPM,Microarray; Western blot on whole cell lysates,24 h,Increased NF-κB p65 protein level,Grosse et al. [31]
+Human Study/Mouse Cells
+Human muscle tissue,Bed-rest,RT-PCR; Western blot on tissue sample,7 days,"Increased expression ofNFKB1, No change in total and phosphorylated NF-κB p65 protein level",Drummond et al. [32]
+Human PBMCs; Murine monocyte/macrophage cells (RAW264.7),RWV for RAW264.7 cells; Space Shuttle for PBMCs,Western blot and ELISA on nuclear lysates for RAW264.7 cells; Immunocytochemical method for PBMCs,24 h for RAW264.7 cells; 12–16 days for PBMCs,Increased NF-κB p65 DNA binding activity and increased p65 protein level in RAW264.7 cells; Increased NF-κB p65 protein level after spaceflight; Omega-3 fatty acids or eicosapentaenoic acid reduced NF-κB p65 protein level,Zwart et al. [33]
+Mouse Study
+Mouse Gastrocnemius (C57BL/6),STS-108; HU,Microarray; RT-PCR on tissue sample,11 days 19 h,Increased expression ofNfkbia/Iκbα,Allen et al. [34]
+Moue spleen (C57BL/6),STS-135,PCR array on tissue sample,13 days,Suppressed expression ofNfκb1,Gridley et al. [35]
+WT andNfkb1−/−orBcl-3−/−mouse gastrocnemius and plantaris muscles (B6129PF2/),HU,Microarray; RT-PCR on tissue sample,10 days,Reduced muscle atrophy inNfkb1−/−orBcl-3−/−mice; Increased expression of NF-κB gene targets in WT mice,Wu et al. [36]
+WT andNfkb1−/−mouse bone (C57BL/6),HU,µCT on tibias and femurs bone mass; Western blot on tissue sample,2 weeks,"Reduced bone loss inNfkb1−/−mice in comparison to WT, Increased NF-κB p50 protein level in WT HU group",Nakamura et al. [37]
+Mouse brain (BALB/c),HU,EMSA on nuclear lysates,7 days,Increased NF-κB DNA binding activity,Wise et al. [38]

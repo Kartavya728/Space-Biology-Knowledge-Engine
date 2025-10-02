@@ -1,0 +1,10 @@
+E.coliRNA,dnaK-FAM,rpoA-HEX,srlR-Cy5
+Singleplex,19.8 +/- 0.53,,
+Singleplex,,19.6 +/-0.40,
+Duplex,20.4 +/- 0.80,20.3 +/- 0.39,
+Triplex,19.6 +/- 0.91,20.3 +/- 0.47,26.8 +/- 0.78
+Mouse LiverRNA,gapdh-FAM,rpl19-HEX,fn1-Cy5
+Singleplex,21.5 +/- 0.24,,
+Singleplex,,21.2 +/- 0.19,
+Duplex,22.5 +/- 0.41,21.3 +/- 0.35,
+Triplex,23.9 +/- 0.43,23.1 +/- 0.36,25.8 +/- 0.44

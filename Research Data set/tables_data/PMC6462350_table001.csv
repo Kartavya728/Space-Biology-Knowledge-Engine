@@ -1,0 +1,52 @@
+Characteristics,Fish oil(n= 11),Placebo(n= 13),Pvalue*
+Age (y),69 ± 8,73 ± 7,0.14
+Male sex,11 (100%),13 (100%),1.0
+Caucasian,7 (63%),10 (77%),0.66
+BMI (kg/m2),29 ± 5,28 ± 5,0.56
+Waist-hip ratio,0.99 ± 0.05,1.02 ± 0.07,0.32
+History of smoking,10 (91%),13 (100%),0.46
+Pack y,43 ± 35,31 ± 18,0.28
+Omega-3 index (%),5.5 ± 2.1,5.7 ± 1.5,0.77
+Index ABI,0.60 ± 0.09,0.66 ± 0.09,0.11
+Rutherford,,,
+Mild claudication,3 (27%),5 (39%),0.86
+Moderate claudication,7 (64%),6 (46%),
+Severe claudication,1 (9%),2 (15%),
+History of revascularization,4 (36%),3 (23%),0.66
+Lower extremity bypass,2 (50%),1 (33%),0.86
+Lower extremity percutaneous,2 (50%),2 (67%),1.0
+Comorbidities,,,
+Hypertension,9 (82%),11 (85%),1.0
+Hyperlipidemia,8 (73%),12 (92%),0.30
+Type 2 diabetes mellitus,3 (27%),4 (31%),1.0
+Coronary artery disease,4 (36%),7 (54%),0.44
+Systolic blood pressure (mm Hg),149 ± 20,154 ± 22,0.52
+Diastolic blood pressure (mm Hg),78 ± 8,82 ± 12,0.35
+Medications,,,
+Aspirin,7 (64%),13 (100%),0.03
+ACE-inhibitor,5 (45%),6 (46%),1.0
+Beta-blocker,6 (55%),7 (54%),1.0
+Statin,11 (100%),12 (92%),1.0
+Laboratory studies,,,
+Total cholesterol (mg/dL),153 ± 38,171 ± 52,0.36
+LDL (mg/dL),87 ± 33,79 ± 18,0.53
+HDL (mg/dL),48 ± 11,54 ± 21,0.45
+Triglycerides (mg/dL),92 ± 42,145 ± 116,0.17
+"Serum Cr, mg/dL",0.91 ± 0.2,1.10 ± 0.3,0.08
+eGFR (mL/min),85 ± 20,71 ± 24,0.14
+Albumin (g/dL),4.1 ± 0.3,4.2 ± 0.3,0.35
+HbA1C (%),5.9 ± 0.7,5.9 ± 0.9,0.99
+Vitamin D (ng/mL),31 ± 10,29 ± 14,0.75
+Inflammation,,,
+hsCRP (mg/L),3.4 ± 2.4,3.8 ± 6.2,0.85
+IL-6 (pg/mL),1.4 ± 0.8,2.5 ± 3.4,0.35
+ICAM-1 (ng/mL),576 ± 204,535 ± 141,0.57
+Brachial artery FMD,,,
+Brachial FMD (%),8.0 ± 4.6,5.8 ± 4.5,0.25
+Patient-perceived walking performance,,,
+"Walking distance (score, from 0 to 100)",42 ± 32,42 ± 35,0.99
+"Walking speed (score, from 0 to 100)",38 ± 18,41 ± 30,0.77
+"Stairs climbing (score, from 0 to 100)",40 ± 34,49 ± 30,0.50
+6-min walk test,,,
+Time to claudication (s),113 ± 86,165 ± 99,0.30
+Distance to claudication (meters),119 ± 74,219 ± 125,0.07

@@ -1,0 +1,3 @@
+GeneLab dataset,# Enriched GO terms (NOM p < 0.01),# Enriched GO terms (NOM p < 0.01 & FDR<0.5),# Enriched GO terms (NOM p < 0.01 & FDR<0.25)
+GLDS-168,"71, 135","0, 132","0, 0"
+GLDS-245,"21, 24","2, 6","1, 0"

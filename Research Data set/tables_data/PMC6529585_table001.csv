@@ -1,0 +1,15 @@
+Strain number,Species identification,NCBI accession number,Isolation site,Significance
+IMV 00034∗,Cladosporium herbarum,,"Wall surface, unit-4, ChNPP",Exhibits radiotropism
+IMV 00045∗,Cladosporium sphaerospermum,MSJI00000000a,"Wall surface, unit-4, ChNPP",Exhibits radiotropism
+IMV 00236∗,Cladosporium cladosporioides,MSJH00000000a,"Wall surface, unit-4, ChNPP",Exhibits radiotropism
+IMV 00253∗,Acremonium murorum,,"Soil, 10-km ChEZ",Exhibits radiotropism
+IMV 00265,Beauveria bassiana,MSJG00000000a,"Wall surface, unit-4, ChNPP",Produces tenellin
+IMV 00293,Fusarium oxysporum,MSJJ00000000a,"Wall surface, unit-4, ChNPP",Produces dihydronaphthoquinone
+IMV 00454,Trichoderma virens,MSJK00000000a,"Soil, 10-km ChEZ",Exhibits auxin-dependent lateral root growth/mycoparasitism
+IMV 00738,Penicillium citreonigrum,,Soil in the ternapol region,European patent 2 333 088
+IMV 00882,Aureobasidium pullulans,MSJF00000000a,"Wall surface, unit-4, ChNPP",Produces diketopiperazine
+IMV 01167,Aspergillus terreus,MSJE00000000a,"Soil, Kirovograd region",Produces citreoviridin
+IMV 01221,Aspergillus sydowii,,"Wall surface, unit-4, ChNPP",Produces sesquiterpeonids
+IMV 01851,Apiospora montagnei,,"Wall surface, unit-4, ChNPP",Produces TMC-95A
+ISSFT-021,Aspergillus fumigatus,KT832787a,ISS HEPA filter,Opportunistic pathogen
+""

@@ -1,0 +1,8 @@
+Group,Treatment,TotalNnumber per group,Samples used for RT-qPCR,Samples used for Sequencing
+Flight,TT + CpG,5,5,3
+,Saline,5,5,3
+,CpG only,5,3,−
+Ground,TT + CpG,5,5,−
+,Saline,5,5,−
+,CpG only,5,3,−
+Total:n= 30,

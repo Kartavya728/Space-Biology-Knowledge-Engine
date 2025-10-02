@@ -1,0 +1,17 @@
+Biochemicals,FC,log2 (FC),p,−log10 (p)
+Reduced,,,,
+"4-Guanidinobutanoate1,*",0.377,−1.409,1.98 × 10−5,4.703
+Glycerophosphorylcholine *,0.282,−1.826,1.52 × 10−3,2.817
+3-Ureidopropionate,0.466,−1.102,3.83 × 10−2,1.417
+Increased,,,,
+3-hydroxybutyrate *,3.229,1.691,7.54 × 10−5,4.123
+Glutarate pentanedioate *,4.766,2.253,8.40 × 10−5,4.076
+Propionylcarnitine *,2.440,1.287,1.68 × 10−4,3.776
+3-methylglutarylcarnitine *,3.478,1.798,5.90 × 10−4,3.229
+Dimethylglycine *,2.195,1.134,1.87 × 10−3,2.728
+Hexadecanedioate *,2.189,1.131,2.07 × 10−3,2.684
+Ophthalmate,2.326,1.218,1.30 × 10−2,1.887
+Hydroxyisovaleroyl carnitine,2.567,1.360,1.37 × 10−2,1.862
+Putrescine,2.857,1.514,3.48 × 10−2,1.459
+Cholate,2.602,1.380,4.98 × 10−2,1.302
+Taurodeoxycholate,2.978,1.574,5.00 × 10−2,1.301

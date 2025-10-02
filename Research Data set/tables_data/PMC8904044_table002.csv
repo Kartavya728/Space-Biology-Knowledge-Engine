@@ -1,0 +1,15 @@
+Primer,Sequence (5′–3′),Purposed
+I-cluster-F,CGGAGTAGGCGACACAGATG,"Amplification of clusters I, II, and III for NGS"
+I-cluster-R,ATTCTGCCCGTTACCTTCCC,"Amplification of clusters I, II, and III for NGS"
+N-cluster-F,TTCAGTATGGACGACACCGC,Amplification of N cluster for NGS
+N-cluster-R,TTACGTGTGCGATCAATGCG,Amplification of N cluster for NGS
+Q5SDM_A478V_F,AACCCGCTTGTTGAATTAACGa,Site-directed mutagenesis forrpoB-A478V
+Q5SDM_A478V_R,CGTCTGATCCATGAATTG,Site-directed mutagenesis forrpoB-A478V
+rpoB+1409_sgRNA+,AAACcttgctgaattaacgcacaab,sgRNA oligonucleotide
+rpoB+1409_sgRNA-,TACGttgtgcgttaattcagcaagb,sgRNA oligonucleotide
+rpoB-903F_HT,AAGGCCAACGAGGCCggcgagctttttctttgccac,rpoBhomology template
+rpoC+181R_HT,AAGGCCTTATTGGCCtcgcttgtacttcccgcaatc,rpoBhomology template
+rpoB-24F,CGCATGATTTGAGGGG,N-cluster amplification and sequencing
+rpoB+737R,GGCGGCTCTCCAGG,N-cluster amplification
+rpoB+1319F,CGAATACAATTACGCCTCAGC,"Cluster I, II, and III amplification and sequencing"
+rpoB+2000R,CCTGATACGTATTCCATACC,"Cluster I, II, and III amplification"

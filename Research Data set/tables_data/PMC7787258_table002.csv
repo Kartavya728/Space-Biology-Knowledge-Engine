@@ -1,0 +1,20 @@
+Term,Dir.,Description,Count,Fold,FDR
+BP_GO:0006333,up,chromatin assembly or disassembly,23,5.8,<0.001
+BP_GO:0006508,up,proteolysis,74,2,<0.001
+BP_GO:0055114,up,oxidation-reduction process,62,2,<0.001
+BP_GO:0045087,up,innate immune response,25,3.2,0.001
+BP_GO:0006120,up,mitochondrial electron transport,13,4.6,0.017
+BP_GO:0005975,up,carbohydrate metabolic process,23,2.9,0.019
+MF_GO:0046982,up,protein heterodimerization activity,48,2.5,<0.001
+MF_GO:0003954,up,NADH dehydrogenase activity,13,4.9,0.007
+CC_GO:0005811,up,lipid particle,87,4,<0.001
+CC_GO:0000788,up,nuclear nucleosome,41,7.9,<0.001
+CC_GO:0005739,up,mitochondrion,66,1.8,0.0065
+BP_GO:0043161,dwn,proteasome-mediated Ub-dependent catabolism,37,4.4,<0.001
+BP_GO:0030497,dwn,fatty acid elongation,9,1.9,0.031
+BP_GO:0006974,dwn,cellular response to DNA damage stimulus,19,2.2,0.048
+MF_GO:0004298,dwn,threonine-type endopeptidase activity,12,1.4,<0.001
+MF_GO:0004175,dwn,endopeptidase activity,12,1.4,0.042
+CC_GO:0000502,dwn,proteosome complex,29,3.5,<0.001
+CC_GO:0005634,dwn,nucleus,159,19,0.002
+KEGG:dme03050,dwn,proteasome,28,3.3,<0.001

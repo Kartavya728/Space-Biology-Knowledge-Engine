@@ -1,0 +1,13 @@
+Tissues in which the target gene was knocked down,Experiment,Target gene,% knockdown efficiency of target gene in F1 progeny compared to wild-type (yw) controlsc,% knockdown efficiency of target gene in F1 progeny compared toUASconstruct (parental line 1)c,% knockdown efficiency of target gene in F1 progeny compared toGAL4construct (parental line 2)c,Average % knockdown efficiency of target gene in F1 progeny compared to control fliesd
+Wings (MS1096-GAL4),1,Uck2,81 ±2,66 ± 6,81 ± 7,76 ± 9
+1,san,77 ± 7,82 ± 22,86 ± 14,82 ± 5
+Body (MS1096-GAL4),1,Uck2,−26 ± 11,−8 ± 3,11 ± 2,−8 ± 19
+1,san,−41,17,20,−1 ± 34
+Whole heads (Gmr-GAL4),2,Uck2,86 ± 4,88 ± 5,89 ± 9,88 ± 2
+2,san,57 ± 2,85 ±7,81 ± 7,74 ±15
+Body (Gmr-GAL4),2,Uck2,23 ± 4,12 ± 3,8 ± 3,14 ± 8
+2,san,10 ± 0,25 ± 6,9 ± 3,15 ± 10
+Salivary glands (Fhk-GAL4),3,Uck2,92,97,96,95 ± 2
+3,san,93,96,82,90 ± 6
+Body (Fhk-GAL4),3,Uck2,16,32,36,28 ± 9
+3,san,18,22,30,23 ± 5

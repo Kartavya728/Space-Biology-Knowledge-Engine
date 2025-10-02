@@ -1,0 +1,15 @@
+"Gene array fold change, normal gravityvs.microgravity",Gene symbol,Gene title,Source
+23.24,EGR1,Early growth response 1,TarBase
+11.83,EGR3,Early growth response 3,TargetScan
+5.86,FASLG,"Fas ligand (TNF superfamily, member 6)",TarBase + TargetScan
+5.33,SPRY1,"Sprouty homolog 1,",TargetScan
+5.19,BTG2,"BTG family, member 2",TarBase + TargetScan
+4.63,MYC,v-Myc myelocytomatosis viral oncogene homolog,TarBase
+4.32,IRF4,Interferon regulatory factor 4,TarBase
+4.03,SPRY2,Sprouty homolog 2,TarBase + TargetScan
+3.78,TAGAP,T-cell Rho GTPase activating protein,TargetScan
+44.10,CD40LG,T-cell activation GTPase TNF superfamily,No miR-21 seed sequence
+2.91,CD83,CD83 molecule,TarBase
+2.84,REL,v-Rel,TarBase
+2.55,NT5E(CD73),"5′ Nucleotidase, ecto (CD73)",TarBase + TargetScan
+2.32,CD69,CD69 molecule,TargetScan

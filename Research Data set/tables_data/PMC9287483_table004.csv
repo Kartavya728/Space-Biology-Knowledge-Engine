@@ -1,0 +1,6 @@
+,Conditions,Organism,Fixation,Authors,GLDS
+Simbox,μgdark 5 days,Arabidpsis thaliana(Col-0),RNAlater (Simbox),Fengler et al.(2015),GLDS-213
+μgdark 324h,Oryza sativa(Rice),RNAlater (Simbox),"Jin et al., 2018",GLDS-284
+BRIC,μgdark 12 days parabolic flight simulated microgravity (2D clinorotation) simulated hypergravity (centrifuge),Arabidpsis thaliana(Col-0),RNAlater (PDFU),Paul et al. (2012);Zupanska et al.(2013),GLDS-17
+μgdark 10 days,"Arabidpsis thaliana(Col-0,arg1andhsfa2)",RNAlater (PDFU),"Zupanska et al. (2017):Zupanska et al., 2019",GLDS-147 GLDS-205
+"μglight (mid-deck) 1h, 8h and 20h",Ceratopteris richardiispores,Gaseous nitrogen freezer,Salmi and Roux (2008),NA

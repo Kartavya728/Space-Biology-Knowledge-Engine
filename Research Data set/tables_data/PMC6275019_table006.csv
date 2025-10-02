@@ -1,0 +1,6 @@
+Cellular Parameters,Nr. of Experiments Performed,Statistical Model,Dependent Variable,Multiple Testing
+0.8 Gy,2 Gy
+Apoptosis and DNA strand breaks,15,16,Mixed model regression. Random effects at sample level,2 sin−1√p where p is the proportion of cells undergoing apoptosis,FWER control to 5% (12 tests)
+--,6,Mixed model regression. Random effects at sample level.,equivalent dose (Gy),FWER control to 5% (9 tests)
+Gene expression,9,10,Mixed model regression. Random effects at PCR-plate level.,log2cycles normalized to average values of three housekeeping genes,FDR control to 5% (180 tests)
+Cytokines,10,10,Mixed model regression. Random effects at sample level.,log concentration,FDR control to 5% (0.8 Gy) control to 1% (2 Gy) (144 tests)

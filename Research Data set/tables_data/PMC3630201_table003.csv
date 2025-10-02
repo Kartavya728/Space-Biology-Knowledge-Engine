@@ -1,0 +1,82 @@
+Gene Symbol,Gene Name,P-value,Log2Fold Change
+Akt1,Thymoma viral proto-oncogene 1,0.32367,−1.164
+Akt2,Thymoma viral proto-oncogene 2,0.65125,1.048
+Akt3,Thymoma viral proto-oncogene 3 (PKB),0.00432,−1.324
+Anapc2,Anaphase promoting complex subunit 2,0.00037,1.419
+Bmp4,Bone morphogenetic protein 4,0.01240,−1.990
+Btg2,"B-cell translocation gene 2, anti-proliferative",0.00076,−1.498
+Ccnb2,Cyclin B2,0.02484,1.629
+Cdc25c,Cell division cycle 25 homolog C (S. pombe),0.00008,1.551
+Cdh11,Cadherin 11,0.02569,1.533
+Cdh4,Cadherin 4,0.00279,2.463
+Cdk2,Cyclin-dependent kinase 2,0.87024,−1.052
+Cdk4,Cyclin-dependent kinase 4,0.90747,1.038
+Cdkn1a,Cyclin-dependent kinase inhibitor 1A (p21),0.000003,3.307
+Cdkn1b,Cyclin-dependent kinase inhibitor 1B,0.39548,−1.121
+Cdkn2b,Cyclin-dependent kinase inhibitor 2B (p15),0.04005,1.409
+Col11a1,"Collagen, type XI, alpha 1",0.01885,1.752
+Col14a1,"Collagen, type XIV, alpha 1",0.01371,1.407
+Col1a2,"Collagen, type I, alpha 2",0.02999,1.642
+Col2a1,"Collagen, type II, alpha 1",0.02863,1.599
+Cradd,CASP2 and RIPK1 domain containing adaptor with death domain,0.00215,1.619
+Csf3,Colony stimulating factor 3 (granulocyte),0.02020,3.717
+Ctgf,Connective tissue growth factor,0.02194,1.412
+Cul3,Cullin 3,0.00346,1.412
+Dapk1,Death associated protein kinase 1,0.00696,1.525
+Egr1,Early growth response 1,0.00938,−2.296
+Eif4e,Eukaryotic translation initiation factor 4E,0.03265,−1.404
+Eif4ebp1,Eukaryotic translation initiation factor 4E binding protein 1,0.01475,1.547
+Fbxo3,F-box protein 3,0.00017,1.483
+Fbxo31,F-box protein 31,0.00004,1.739
+Fbxo4,F-box protein 4,0.00040,1.870
+Fgf1,Fibroblast growth factor 1,0.00262,1.528
+Fgf2,Fibroblast growth factor 2,0.37555,−1.098
+Fgf3,Fibroblast growth factor 3,0.00074,−1.699
+Fgfr1,Fibroblast growth factor receptor 1,0.01634,1.574
+Fgfr2,Fibroblast growth factor receptor 2,0.01981,1.502
+Fn1,Fibronectin 1,0.73376,1.037
+Fos,FBJ osteosarcoma oncogene,0.04676,−2.366
+Gdf10,Growth differentiation factor 10,0.00736,−1.425
+Hecw2,"HECT, C2 and WW domain containing E3 ubiquitin protein ligase 2",0.00098,2.246
+Icam1,Intercellular adhesion molecule 1,0.00001,−1.523
+Itgal,Integrin alpha L,0.00263,−1.445
+Kras,V-Ki-ras2 Kirsten rat sarcoma viral oncogene homolog,0.04753,−1.243
+Lama1,"Laminin, alpha 1",0.01601,−1.774
+Lama3,"Laminin, alpha 3",0.04620,1.582
+Lamb3,"Laminin, beta 3",0.01095,1.947
+Mapk10,Mitogen-activated protein kinase 10,0.00003,3.807
+Mapk11,Mitogen-activated protein kinase 11,0.02050,−1.541
+Mapk12,Mitogen-activated protein kinase 12,0.00129,−1.431
+Mdm2,Transformed mouse 3T3 cell double minute 2,0.00241,1.410
+Mmp10,Matrix metallopeptidase 10,0.00045,16.849
+Mmp1a,Matrix metallopeptidase 1a,0.00103,12.939
+Mmp3,Matrix metallopeptidase 3,0.00119,2.977
+Mos,Moloney sarcoma oncogene,0.00322,−4.178
+Mul1,Mitochondrial ubiquitin ligase activator of NFKB 1,0.00004,1.644
+Myod1,Myogenic differentiation 1,0.01556,−1.607
+Nf1,Neurofibromatosis 1,0.01834,−1.445
+Nfatc4,"Nuclear factor of activated T-cells, cytoplasmic, calcineurin-dependent 4",0.00017,−1.980
+NFκB1,"Nuclear factor of kappa light polypeptide gene enhancer in B-cells 1, p105",0.04514,−1.271
+NFκBIa,"Nuclear factor of kappa light polypeptide gene enhancer in B-cells inhibitor, alpha",0.00016,2.027
+Phex,Phosphate regulating gene with homologies to endopeptidases on the X chromosome,0.01638,1.435
+Pik3ca,"Phosphatidylinositol 3-kinase, catalytic, alpha polypeptide",0.00563,−1.386
+Pik3cg,"Phosphoinositide-3-kinase, catalytic, gamma polypeptide",0.59288,−1.071
+Pik3r1,"Phosphatidylinositol 3-kinase, regulatory subunit, polypeptide 1",0.31547,−1.220
+Pik3r2,"Phosphatidylinositol 3-kinase, regulatory subunit, polypeptide 2",0.87773,−1.123
+Rps6kb1,"Ribosomal protein S6 kinase, polypeptide 1",0.00023,−2.051
+Sos1,Son of sevenless homolog 1 (Drosophila),0.00007,−2.511
+Sox9,SRY-box containing gene 9,0.00262,−2.279
+Sparc,Secreted acidic cysteine rich glycoprotein,0.00694,1.562
+Stat1,Signal transducer and activator of transcription 1,0.00203,−1.565
+Tgfb2,"Transforming growth factor, beta 2",0.00330,−1.586
+Timp1,Tissue inhibitor of metalloproteinase 1,0.63317,1.073
+Timp2,Tissue inhibitor of metalloproteinase 2,0.45564,1.072
+Timp3,Tissue inhibitor of metalloproteinase 3,0.18863,−1.734
+Traf1,Tnf receptor-associated factor 1,0.00018,−2.482
+Trp53,Transformation related protein 53,0.00416,−1.535
+Trp73,Transformation related protein 73,0.19889,2.019
+Tuft1,Tuftelin 1,0.00816,1.486
+Twist1,Twist homolog 1 (Drosophila),0.00550,1.799
+Ube2e3,"Ubiquitin-conjugating enzyme E2E3, UBC4/5 homolog (yeast)",0.00025,1.847
+Vcam1,Vascular cell adhesion molecule 1,0.00876,1.568
+Vdr,Vitamin D receptor,0.00003,2.804

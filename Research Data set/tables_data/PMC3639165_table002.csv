@@ -1,0 +1,11 @@
+P. aeruginosa,Gravity,Viable cells(106CFU/membrane),Biomass(µm3/µm2),Mean thickness(µm),Void fraction,Structure
+Wild type,Normal gravity,0.8±0.6,3.7±0.1,5.4±0.5,0.26±0.05,Flat
+,Spaceflight,4.4±0.9,5.0±0.4,9.8±1.0,0.47±0.02,Column & canopy
+ΔmotABCD,Normal gravity,0.3±0.1,3.9±0.3,5.7±0.1,0.31±0.06,Flat
+,Spaceflight,3.1±1.4,4.2±0.4,6.1±0.5,0.30±0.01,Flat
+ΔpilB,Normal gravity,2.1±1.0,3.9±0.3,5.3±0.2,0.25±0.05,Flat
+,Spaceflight,5.6±1.1,4.9±0.4,9.2±1.1,0.47±0.04,Column & canopy
+Wild type (GE),Normal gravity,ND,6.4±0.2,8.7±0.7,0.25±0.04,Flat
+,Spaceflight,ND,6.2±0.1,8.7±0.3,0.28±0.02,Flat
+ΔmotABCD(GE),Normal gravity,ND,4.1±0.3,5.6±0.5,0.26±0.03,Flat
+,Spaceflight,ND,4.1±0.5,5.8±0.9,0.28±0.06,Flat

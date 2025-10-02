@@ -1,0 +1,44 @@
+,GO term name
+Ontology,Transcript ID,Gene symbol,Gene description,FArg: FWtFC (log2)
+Biological Process,transport GO:0006810,
+,establishment of localization GO:0051234,
+,At5g56230,PRA1.G2,prenylated RAB acceptor 1.G2,2.5
+,At1g80900,MRS2-10,magnesium transporter 1,2.4
+,At1g77210,STP14,sugar transporter 14,2.2
+,At2g43240,,Nucleotide-sugar transporter family protein,1.3
+,At4g37640,ACA2,calcium ATPase 2,−1.7
+,At2g01980,SOS1,"sodium proton exchanger, putative (NHX7) (SOS1)",−1.8
+,At5g49500,,"Signal recognition particle, SRP54 subunit protein",−1.8
+,At5g03280,PIR2,NRAMP metal ion transporter family protein,−1.8
+,At4g35410,,Clathrin adaptor complex small chain family protein,−2.1
+,At2g26900,BASS2,Sodium Bile acid symporter family,−2.9
+,At1g22710,SUT1,sucrose-proton symporter 2,−2.9
+,developmental process GO:0032502,
+,At2g16970,MEE15,Major facilitator superfamily protein,2.4
+,At4g01500,NGA4,AP2/B3-like transcriptional factor family protein,1.5
+,At3g48360,BT2,BTB and TAZ domain protein 2,1.1
+,At3g49780,PSK4,phytosulfokine 4 precursor,1.0
+,At5g66700,HB53,homeobox 53,−1.0
+,At4g37650,SHR,GRAS family transcription factor,−1.5
+,At2g46920,POL,Protein phosphatase 2C family protein,−2.4
+,xyloglucan metabolic process GO:0010411,
+,At1g68560,XYL1,alpha-xylosidase 1,−1.4
+,At4g03210,XTH9,xyloglucan endotransglucosylase/hydrolase 9,−1.4
+,At1g11545,XTH8,xyloglucan endotransglucosylase/hydrolase 8,−2.0
+,At2g06850,XTH4,xyloglucan endotransglucosylase/hydrolase 4,−2.0
+Molecular Function,transporter activity GO:0005215,
+,At1g78980,SRF5,STRUBBELIG-receptor family 5,2.6
+,At4g03210,XTH9,xyloglucan endotransglucosylase/hydrolase 9,−1.4
+,At1g32070,NSI,nuclear shuttle interacting,−1.4
+,At4g22530,,S-adenosyl-L-methionine-dependent methyltransferases superfamily protein,−1.4
+,At1g68020,TPS6,UDP-Glycosyltransferase / trehalose-phosphatase family protein,−1.6
+,At2g05990,MOD1,NAD(P)-binding Rossmann-fold superfamily protein,−2.0
+,At1g11545,XTH8,xyloglucan endotransglucosylase/hydrolase 8,−2.0
+,At2g06850,XTH4,xyloglucan endotransglucosylase/hydrolase 4,−2.0
+,At3g61990,OMTF3,S-adenosyl-L-methionine-dependent methyltransferases superfamily protein,−2.1
+,At3g20540,PolIB,polymerase gamma 1,−2.3
+,At1g22370,UGT85A5,UDP-glucosyl transferase 85A5,−2.3
+,At4g35150,,O-methyltransferase family protein,−2.3
+,At2g15090,KCS8,3-ketoacyl-CoA synthase 8,−2.5
+,At5g02410,ALG10,DIE2/ALG10 family,−3.0
+,At5g26780,SHM2,serine hydroxymethyltransferase 2,−3.0

@@ -1,0 +1,165 @@
+ONT,GO Term Name,
+,Transcript ID,Gene Symbol,Gene Description,GHsf: GWtFC log2,FHsf: FWtFC log2
+BP,response to stimulus GO:0050896defense response to other organism GO:0098542
+AT2G24570,WRKY17,WRKY DNA-binding protein 17,2.1,X
+AT2G44490,PEN2,Glycosyl hydrolase superfamily protein,1.7,X
+AT1G66760,,MATE efflux family protein,1.6,X
+AT1G72900,,Toll-Interleukin-Resistance (TIR) domain-containing protein,1.2,X
+AT1G64790,ILA,ILITYHIA,1.2,X
+AT2G43535,,Scorpion toxin-like knottin superfamily protein,1.1,X
+AT5G07010,ST2A,sulfotransferase 2A,1.1,X
+AT1G58360,NAT2,amino acid permease 1,1.0,X
+AT1G71140,,MATE efflux family protein,1.1,1.7
+AT1G19020,,,X,1.1
+AT1G50740,,Transmembrane proteins 14C,X,1.1
+AT3G49350,,Ypt/Rab-GAP domain of gyp1p superfamily protein,X,2.4
+AT3G60420,,Phosphoglycerate mutase family protein,X,1.5
+AT4G02380,SAG21,senescence-associated gene 21,X,1.2
+AT5G25930,,Protein kinase family protein with LRR domain,X,1.0
+AT5G48380,BIR1,BAK1-interacting receptor-like kinase 1,X,1.2
+response to water deprivation GO:0009414 (high salinity)
+AT3G05880,RCI2A,Low temperature and salt responsive protein family,1.5,X
+AT3G11020,DREB2B,DRE/CRT-binding protein 2B,1.1,X
+AT1G54410,,dehydrin family protein,1.3,X
+response to endoplasmic reticulum stress (ER stress) GO:0034976response to unfolded protein response (UPR) GO:0006986response to misfolded protein GO:0051788response to topologically incorrect protein GO:0035966
+At1g72280,AERO1,disulfide bond formation protein,2.9,X
+AT5G38900,,Thioredoxin superfamily protein,2.8,X
+AT1G77510,PDIL1-2,PDI-like 1-2 disulfide isomerase,2.0,X
+AT2G47470,PDIL2-1/UNE5,thioredoxin family protein,1.1,X
+AT2G29470,GSTU3,glutathione S-transferase tau 3,1.7,1.8
+AT2G29490,GSTU1,glutathione S-transferase TAU 1,1.4,1.5
+AT1G17170,GSTU24,glutathione S-transferase TAU 24,1.2,1.4
+At2g38470,WRKY33,WRKY-type DNA binding protein,1.2,1.2
+At3g49350,---,Ypt/Rab-GAP domain of gyp1p protein,X,2.4
+At2g32920,PDIL2-3,PDI-like 2-3 disulfide isomerase,X,1.5
+At4g02380,SAG21,senescence-associated gene 21,X,1.2
+At1g50740,---,Transmembrane proteins 14C,X,1.1
+At3g24050,AtGATA-1,GATA transcription factor 1 (AtGATA-1),X,1.1
+At1g19020,---,Expressed protein,X,1.1
+endoplasmic reticulum associated degradation (ERAD) GO:0036503
+AT1G18260,HRD3A,HCP-like superfamily protein,X,1.2
+protein localization GO:0008104establishment of protein localization GO:0045184protein transport GO:0015031vesicle-mediated transport GO:0016192
+AT1G29310,,SecY protein transport family protein,1.0,1.7
+AT3G44340,CEF,clone eighty-four,1.0,1.1
+AT1G18830,,Transducin/WD40 repeat-like superfamily protein,X,1.2
+AT1G29060,,Target SNARE coiled-coil domain protein,X,1.5
+AT1G50740,,Transmembrane proteins 14C,X,1.1
+AT1G70490,ATARFA1D,Ras-related small GTP-binding family protein,X,1.7
+AT3G15980,,"Coatomer, beta’ subunit",X,1.1
+AT3G49350,,Ypt/Rab-GAP domain of gyp1p superfamily protein,X,2.4
+AT4G02380,SAG21,senescence-associated gene 21,X,1.2
+AT5G25930,,Protein kinase family protein with LRR domain,X,1.0
+localization GO:0051179transport GO:0006810establishment of localization GO:0051234
+AT4G24120,YSL1,YELLOW STRIPE like 1,2.5,X
+AT2G44490,PEN2,Glycosyl hydrolase superfamily protein,1.7,X
+AT5G39040,TAP2,transporter assoc. with antigen processing protein 2,1.6,X
+AT1G66760,,MATE efflux family protein,1.6,X
+AT1G30400,MRP1,multidrug resistance-associated protein 1,1.5,X
+AT3G53480,PIS1,pleiotropic drug resistance 9,1.5,X
+AT2G15880,,Leucine-rich repeat (LRR) family protein,1.3,X
+AT3G48970,,Heavy metal transport/detoxification protein,1.3,X
+AT3G12520,SULTR4;2,sulfate transporter 4;2,1.2,X
+AT1G58360,NAT2,amino acid permease 1,1.0,X
+AT2G41700,AtABCA1,ATP-binding cassette A1,1.0,X
+AT5G27150,NHX1,Na+/H+ exchanger 1,1.0,X
+AT1G71330,NAP5,non-intrinsic ABC protein 5,1.5,1.2
+AT1G78570,ROL1,rhamnose biosynthesis 1,1.4,1.1
+AT1G71140,,MATE efflux family protein,1.1,1.7
+AT5G54860,,Major facilitator superfamily protein,1.1,1.5
+AT2G45180,,Bifunctional inhibitor/lipid-transfer protein,X,2.9
+AT4G27840,,SNARE-like superfamily protein,X,2.7
+AT5G19070,,SNARE associated Golgi protein family,X,2.7
+AT2G29940,PDR3,pleiotropic drug resistance 3,X,2.4
+AT5G47730,,Sec14p-like phosphatidylinositol transfer protein,X,2.0
+AT2G43240,,Nucleotide-sugar transporter family protein,X,1.6
+AT2G36300,,Integral membrane Yip1 family protein,X,1.2
+AT1G07030,,Mitochondrial substrate carrier family protein,X,1.2
+secondary metabolic process GO:0019748
+AT2G29470,GSTU3,glutathione S-transferase tau 3,1.7,1.8
+AT1G78570,ROL1,rhamnose biosynthesis 1,1.4,1.1
+AT2G29490,GSTU1,glutathione S-transferase TAU 1,1.4,1.5
+AT1G17170,GSTU24,glutathione S-transferase TAU 24,1.2,1.4
+AT2G38470,WRKY33,WRKY DNA-binding protein 33,1.2,1.2
+AT4G03070,AOP1.1,2-oxoglutarate (2OG) and Fe(II)-dependent oxygenase,X,3.7
+AT1G17180,GSTU25,glutathione S-transferase TAU 25,X,1.9
+AT5G48180,NSP5,nitrile specifier protein 5,X,1.4
+AT1G17020,SRG1,senescence-related gene 1,X,1.1
+CC,plasma membrane GO:0005886 (plasma membrane receptor kinases)
+AT1G78980,SRF5,STRUBBELIG-receptor family 5,X,2.2
+AT5G65240,,Leucine-rich repeat protein kinase family protein,X,1.9
+AT5G48380,BIR1,BAK1-interacting receptor-like kinase 1,X,1.2
+AT5G25930,,Protein kinase family protein with LRR domain,X,1.0
+BP,response to stimulus GO:0050896response to stress GO:0006950
+protein folding (chaperones)
+AT2G26150,HSFA2,heat shock transcription factor A2,−7.3,−6.8
+At3g08910,,DNAJ heat shock family protein,−3.2,X
+At4g26780,MGE2,MGE2 Co-chaperone GrpE family protein,−2.5,X
+At1g80030,,DnaJ protein,−1.4,X
+At5g37670,,low-molecular-weight heat shock protein,−1.2,X
+At4g28480,,DNAJ heat shock family protein,−1.1,X
+protein folding (non-chaperones)
+At1g44414,,unknown,−1.5,X
+At1g03070,,Bax inhibitor-1 family protein,−1.3,X
+At3g15180,,ARM repeat superfamily protein,−1.3,X
+At5g48580,FKBP15-2,peptidyl-prolyl cis-trans isomerase-like protein,−1.1,X
+At4g23493,,unknown,−1.1,X
+response to oxidative stress GO:0006979response to reactive oxygen species GO:0000302response to hydrogen peroxide GO:0042542
+AT5G19875,,,−3.0,X
+AT1G76080,CDSP32,chloroplastic drought-induced stress protein 32 kD,−2.3,X
+AT4G08920,OOP2,cryptochrome 1,−2.0,X
+AT3G16500,PAP1,phytochrome-associated protein 1,−1.9,X
+AT4G34020,DJ1C,Class I glutamine amidotransferase-like protein,−1.7,X
+AT4G35770,SEN1,Rhodanese/Cell cycle control phosphatase,−1.6,X
+AT2G47180,GolS1,galactinol synthase 1,−1.5,X
+AT3G20340,,,−1.4,X
+AT4G37530,,Peroxidase superfamily protein,−1.3,X
+AT4G27670,HSP21,heat shock protein 21,−1.3,X
+AT3G25530,GR1,glyoxylate reductase 1,−1.2,X
+AT5G61640,PMSR1,peptidemethionine sulfoxide reductase 1,−1.2,X
+AT2G14170,ALDH6B2,aldehyde dehydrogenase 6B2,−1.1,X
+AT3G53260,PAL2,phenylalanine ammonia-lyase 2,−1.1,X
+AT1G52760,LysoPL2,lysophospholipase 2,−1.0,X
+response to sucrose stimulus GO:0009744
+AT2G17880,,Chaperone DnaJ-domain superfamily protein,−3.0,X
+At3g61060,PP2-A13,phloem protein 2-A13,−2.1,X
+AT4G37220,,Cold acclimation protein WCOR413 family,−1.9,X
+At3g24190,,Protein kinase superfamily protein,−1.7,X
+AT3G06850,DIN3/LTA1,2-oxoacid dehydrogenases acyltransferase,−1.2,X
+cellular amino acid and derivative metabolic process GO:0006519
+At5g65010,ASN2,asparagine synthetase 2,−2.9,X
+At2g02400,,NAD(P)-binding Rossmann-fold superfamily protein,−1.6,X
+At3g07630,AtADT2,arogenate dehydratase 2,−1.4,X
+At5g24530,DMR6,2-oxoglutarate (2OG) and Fe(II)-dependent oxygenase,−1.4,X
+At1g73500,MKK9,MAP kinase kinase 9,−1.2,X
+At4g34030,MCCB,3-methylcrotonyl-CoA carboxylase,−1.1,X
+At5g48220,,Aldolase-type TIM barrel family protein,−1.1,X
+CC,cell wall GO:0005618external encapsulating structure GO:0030312
+AT1G15020,QSOX1,quiescin-sulfhydryl oxidase 1,X,−3.1
+AT1G76020,,Thioredoxin superfamily protein,X,−2.8
+At2g30010,TBL45,trichome birefringence-like 45,X,−2.4
+AT3G25140,QUA1/GAUT8,galacturanosyl transferase 8,X,−2.0
+AT2G06850,XTH4,xyloglucan endotransglucosylase/hydrolase 4,X,−2.0
+At4g07960,CSLC12,CSL12 Cellulose-synthase-like C12,X,−2.0
+At5g50030,,Plant invertase/pectin methylesterase inhibitor protein,X,−1.9
+At1g16530,ASL9,assymetric leaves 2 like 9,X,−1.7
+AT1G75830,PDF1.1,low-molecular-weight cysteine-rich 67,X,−1.1
+AT2G02100,PDF2.2,low-molecular-weight cysteine-rich 69,X,−1.1
+AT5G64260,EXL2,EXORDIUM like 2,X,−1.1
+plastid GO:0009536
+AT3G19120,,PIF / Ping-Pong family of plant transposases,X,−3.4
+AT5G04810,,pentatricopeptide (PPR) repeat-containing protein,X,−3.0
+AT5G16810,,Protein kinase superfamily protein,X,−2.6
+AT5G47870,RAD52-2B,,X,−2.4
+AT1G54350,ABCD2,ABC transporter family protein,X,−2.2
+AT1G32440,PKp3,plastidial pyruvate kinase 3,X,−2.2
+AT1G14410,WHY1,ssDNA-binding transcriptional regulator,X,−1.8
+AT3G52150,,RNA-binding (RRM/RBD/RNP motifs) family protein,X,−1.6
+AT3G20930,,RNA-binding (RRM/RBD/RNP motifs) family protein,X,−1.5
+AT2G20690,,lumazine-binding family protein,X,−1.0
+AT2G45990,,,X,−1.0
+energy reserve metabolic process GO:0006112 (starch biosynthetic process GO:0019252)
+AT3G47450,RIF1,P-loop containing nucleoside triphosphate hydrolase,X,−2.6
+AT5G58260,NdhN,oxidoreductase,X,−2.4
+At1g78050,PGM,phosphoglycerate/bisphosphoglyce,X,−2.2
+AT2G39930,ISA1,isoamylase 1,X,−1.7
+AT4G39550,,Galactose oxidase/kelch repeat superfamily protein,X,−1.3

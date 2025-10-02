@@ -1,0 +1,22 @@
+Gene Symbol,Gene Name,Fold Change
+Cat,Catalase,1.13
+Fancc,"Fanconi anemia, complementation group C",0.82
+Gpx1,Glutathione Peroxidase 1,0.78
+Gpx3,Glutathione Peroxidase 3,0.27
+Gsr,Glutathione reductase,1.00
+Gstp1,"Glutathione S-transferase, pi 1",0.83
+Ncf2,Neutrophil cytosolic factor 2,0.78
+Nox1,NADPH oxidase 1,0.65
+Nox4,NADPH oxidase 4,0.49
+Prdx1,Peroxiredoxin 1,1.06
+Prdx6,Peroxiredoxin 6,1.05
+Prnp,Prion protein,1.02
+Ptgs2,Prostaglandin-endoperoxide synthase 2,0.22
+Slc41a3,"Solute carrier family 41, member 3",1.62
+Sod1,Superoxide dismutase 1,0.87
+Sod2,Superoxide dismutase 2,1.05
+Sod3,Superoxide dismutase 3,0.78
+Tpo,Thyroid peroxidase,1.00
+Txnip,Thioredoxin interacting protein,0.88
+Txnrd3,Thioredoxin reductase 3,0.98
+Xpa,"Xeroderma pigmentosum, complementation group A",0.72

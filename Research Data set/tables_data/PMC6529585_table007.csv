@@ -1,0 +1,23 @@
+Accession,Relative protein abundance∗,P-value,EggNog,EggNog annotation
+BS090_010341,1.55,5.80E-03,ENOG410PJAB,Thioredoxin reductase
+BS090_002416,1.42,3.68E-03,ENOG41KOG1339,Aspartic
+BS090_010922,1.12,3.34E-03,ENOG410PX4S,OsmC-like protein
+BS090_011023,-1.01,1.52E-03,ENOG410PNQ9,Peptidyl prolyl cis-trans isomerase Cyclophilin
+BS090_008028,-1.12,4.88E-02,ENOG410PPYQ,Ubiquitin conjugating enzyme
+BS090_005834,-1.20,6.64E-04,ENOG410PJ50,26S proteasome non-ATPase regulatory subunit 11
+BS090_010452,-1.24,1.83E-02,ENOG410PQY3,Peptidyl-prolyl cis-trans isomerase
+BS090_010972,-1.28,3.67E-03,ENOG410PP80,Cupin domain protein
+BS090_011316,-1.32,7.31E-03,ENOG410PKHZ,Protein-L-isoaspartate O-methyltransferase
+BS090_005149,-1.33,2.63E-03,ENOG410PP3T,Subunit 3
+BS090_009030,-1.34,1.91E-03,ENOG410PP19,Peptidyl-prolyl cis-trans isomerase
+BS090_004399,-1.59,1.87E-03,ENOG410PPJH,Heat shock protein
+BS090_007304,-1.63,2.98E-03,ENOG410PHFF,Protease S8 tripeptidyl peptidase I
+BS090_009384,-1.63,1.01E-03,ENOG410PI5I,Tripeptidyl-peptidase
+BS090_008147,-1.81,3.06E-03,ENOG41KOG0541,Peroxiredoxin
+BS090_005718,-1.90,1.72E-04,ENOG410PGPE,Disulfide-isomerase
+BS090_010805,-2.03,1.03E-02,ENOG410PMR5,Component of the PAM complex
+BS090_010009,-2.07,3.52E-02,ENOG410PQV2,Prefoldin subunit 6
+BS090_008183,-2.19,1.69E-03,ENOG410PH8I,Aspartic endopeptidase
+BS090_009852,-2.47,6.17E-03,ENOG410PSDM,Glutaredoxin
+BS090_008141,-3.13,6.96E-03,ENOG410PRTR,Heat shock protein
+""

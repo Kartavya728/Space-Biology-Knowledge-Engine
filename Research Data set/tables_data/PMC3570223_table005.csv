@@ -1,0 +1,19 @@
+Fold change,p-Valuea,Coagulation components and regulatorsb
+−1.1,NS,"Factor II, Prothrombin: C"
+−1.8,0.04,"Factor III, Thromboplastin (Tissue Factor): E"
+1.8,NS,"Factor V, Labile factor (accelerator globulin, accelerin): C"
+−1.9,NS,"Factor VII, Serum (or tissue) prothrombin: E"
+−2.5,NS,"Factor VIII, Anti-hemophilic factor A: I"
+−2.7,0.04,"Factor IX, Christmas factor:"
+−1.5,NS,"Factor X, Stuart Power factor: C"
+1.5,NS,"Factor XI, Plasma thromboplastin antecedent (PTA): I"
+−4.6,NS,"Factor XII, Hageman factor (contact factor): I"
+−1.8,NS,"Factor XIII, Fibrin-stabilizing factor: C"
+−2.9,NS,Protein C: I and C
+−2.3,0.04,Protein S: I and C
+−2.1,NS,Thrombomodulin: I and C
+−5.0,0.04,Kallekrein B1: I
+−2.4,0.04,Tissue factor pathway inhibitor: E
+−6.5,0.04,Plasmin: F
+−1.5,NS,Von Willebrand factor: I and E
+−1.5,NS,"Plasminogen activator, urokinase: F"

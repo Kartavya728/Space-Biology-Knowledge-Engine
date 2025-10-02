@@ -1,0 +1,11 @@
+Parameter,,Animal facility,Biosatellite,Control experiment
+"Temperature, °C",m±sd,23.0±1.5,21.1±0.4,21.3±0.8
+,min-max,21.0–27.0,19.5–22.9,20.3–22.3
+"Relative humidity, %",m±sd,49±17,61±3,71±2
+,min-max,20–75,53–65,68–73
+"Ambient pressure, mmHg",m±sd,na,762±6,747±3
+,min-max,na,752–770,742–753
+"O2, %",m±sd,na,21.2±1.1,21.2±0.5
+,min-max,na,19.3–21.2,20.6–21.2
+"CO2, %",m±sd,na,0.002±0.005,0.0682±0.0718
+,min-max,na,0.000–0.015,0.0201–0.2096

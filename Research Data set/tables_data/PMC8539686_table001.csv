@@ -1,0 +1,6 @@
+GO ID,GO Term,Hit No.,Percentage,p-Value,FDR
+GO:0006355,"regulation of transcription, DNA-templated",20,17.7,7.8 × 10−5,0.0082
+GO:0009408,response to heat,9,8.0,1.8 × 10−5,0.0082
+GO:0009607,response to biotic stimulus,14,12.4,0.00046,0.017
+GO:0022622,root system development,8,7.1,0.00074,0.021
+GO:0071554,cell wall organization or biogenesis,17,15.0,0.002,0.044
