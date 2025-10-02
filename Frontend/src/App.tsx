@@ -1,56 +1,50 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "motion/react";
-import { LoginPage } from "./components/LoginPage";
+import LoginPage from "./components/LoginPage";
 import { Dashboard } from "./components/Dashboard";
 import { HomePage } from "./components/HomePage";
 import { FloatingButton } from "./components/FloatingButton";
-import { mockAuth } from "./utils/auth/mockAuth";
+import { useAuth } from "./auth/context/AuthContext";
 import { Toaster } from "./components/ui/sonner";
-import StarsCanvas from "./components/main/StarBackground"; // ✅ make sure this matches file name
+import StarsCanvas from "./components/main/StarBackground";
 
 export default function App() {
-  const [user, setUser] = useState<any>(null);
-  const [loading, setLoading] = useState(true);
+  console.log("🎨 App component rendering...");
+  
+  const { session, user, loading, signOut } = useAuth();
   const [userType, setUserType] = useState("scientist");
   const [showHome, setShowHome] = useState(true);
 
+  console.log("App state:", { 
+    hasSession: !!session, 
+    hasUser: !!user, 
+    loading, 
+    showHome,
+    userEmail: user?.email 
+  });
+
   useEffect(() => {
-    const checkSession = async () => {
-      const { data: { session } } = mockAuth.getSession();
-      if (session?.user) {
-        setUser(session.user);
-        setUserType(session.user.userType || "scientist");
-        setShowHome(false);
+    if (session?.user) {
+      console.log("✅ User logged in, hiding home page");
+      setShowHome(false);
+      // Fetch user type from user metadata or profiles table if needed
+      const metadata = session.user.user_metadata;
+      if (metadata?.user_type) {
+        setUserType(metadata.user_type);
       }
-      setLoading(false);
-    };
-
-    checkSession();
-
-    const { data: { subscription } } = mockAuth.onAuthStateChange(
-      (event, session) => {
-        if (event === "SIGNED_IN" && session?.user) {
-          setUser(session.user);
-          setUserType(session.user.userType || "scientist");
-          setShowHome(false);
-        } else if (event === "SIGNED_OUT") {
-          setUser(null);
-          setShowHome(true);
-        }
-        setLoading(false);
-      }
-    );
-
-    return () => subscription.unsubscribe();
-  }, []);
+    } else {
+      console.log("❌ No session, showing home page");
+    }
+  }, [session]);
 
   const handleSignOut = async () => {
-    await mockAuth.signOut();
-    setUser(null);
+    console.log("👋 Signing out...");
+    await signOut();
     setShowHome(true);
   };
 
   if (loading) {
+    console.log("⏳ Loading...");
     return (
       <>
         <StarsCanvas />
@@ -65,7 +59,8 @@ export default function App() {
     );
   }
 
-  if (showHome) {
+  if (showHome && !session) {
+    console.log("🏠 Showing home page");
     return (
       <>
         <StarsCanvas />
@@ -75,15 +70,18 @@ export default function App() {
     );
   }
 
-  if (!user) {
+  if (!session?.user) {
+    console.log("🔐 Showing login page");
     return (
       <>
         <StarsCanvas />
-        <LoginPage onUserTypeChange={setUserType} />
+        <LoginPage />
+        <Toaster />
       </>
     );
   }
 
+  console.log("📊 Showing dashboard");
   return (
     <>
       <StarsCanvas />
