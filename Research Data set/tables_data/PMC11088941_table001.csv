@@ -1,0 +1,19 @@
+Problem,Possible Cause,Solution
+Microbial contamination,Contaminated cells or reagents,Screen for contaminants; discard or treat contaminated cultures; use aliquots of reagents to prevent contamination of stocks
+,Improper aseptic technique,"Ensure you are maintaining sterility by working with live cultures in a biosafety cabinet; avoid cross-contamination between cultures (e.g., do not share Pasteur pipettes across cultures)"
+Dermal equivalents do not solidify within 20 min,Collagen concentration too low,"Ensure you are using a concentrated stock of collagen, 3 to 4 mg/ml at least"
+,"pH too low, acidic","Ensure neutral pH, phenol red indicator in the Hanks’ should indicate color change from yellow to reddish-pink upon addition of NaOH"
+,Temperature too low,Incubate at 37°C
+Fibroblasts do not elongate,Low starting viability,Only proceed with seeding dermal equivalents if fibroblast viability >90% by Trypan-blue exclusion
+,Loss of viability during prep,Handle and mix gently; ensure fibroblasts are added after neutralization of the collagen mix
+Rafts break during lifting,Handling too rough,Be gentle; slow smooth movements
+,Improper tools,Use microspatula or scoopula that are small enough to down edge of well without crushing the rafts
+Insufficient stratification,[CaCl2] too low,"Final [CaCl2] should be 1.88 mM, confirm appropriate amount supplemented, accounting for the CaCl2that already exists in the DMEM and F12 base media (~0.66 mM)"
+,Initial keratinocyte viability low,Only proceed with seeding basal keratinocytes if viability >90% by Trypan-blue exclusion
+,Improper histology embedding,"Ensure raft is bisected and embedded with ends stood up, so that perpendicular cross-sections are clearly visible"
+,Loss of upper layers,Handle rafts gently during harvest and processing to keep the stratified epithelia intact
+Low 3D A2EN cervical cell aggregate yields,Presence of air bubbles in the RWV bioreactor,Completely remove bubbles from bioreactor after each feeding and on days when feeding is not required
+,Insufficient A2EN cells seeded into RWV bioreactor or low live cell yield,Ensure the proper number of live A2EN cells (~1×107) are obtained prior to seeding the bioreactor
+,STLV bioreactor was incubated without rotation immediately after seeding with the A2EN cells and microcarrier beads,Ensure that the rotator power unit is powered on and set to 20 rpm immediately after seeding the STLV bioreactor with A2EN cells and microcarrier beads
+,Improper preparation of Cytodex-3 microcarrier beads,Ensure that beads are soaked in sterile D-PBS overnight and autoclaved for the time and temperature specified in the protocol. Allow beads to cool to room temperature prior to mixing with A2EN cells.
+3D A2EN cervical cells develop into large clumps,RWV rotating unit not powered back on to rotation during incubation or not set to the proper rpm,Ensure that the RWV rotation is powered back on when replenishing media and that the rotating unit is working properly and set at 20 rpm during incubation

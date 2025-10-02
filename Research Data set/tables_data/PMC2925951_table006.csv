@@ -1,0 +1,16 @@
+Magnesium transporter family:,,,
+Gene,Description,Log2 Time 45,Log2 Time 90,Log2 Time 180
+At1g80900,magnesium transporter (MRS2-10),,0.2182,0.2425
+At5g09690,magnesium transporter (MRS2-7),,,0.2772
+Sulfate transporter family,,,
+Gene,Description,Log2 Time 45,Log2 Time 90,Log2 Time 180
+At3g51895,sulfate transporter (SULTR3;1),,,−2.6591
+At5g13550,sulfate transporter (SULTR4;1),,,−0.5451
+At3g15990,sulfate transporter (SULTR3;4),,−0.7491,−0.8085
+Cation/proton antiporter families,,,
+Gene,Description,Log2 Time 45,Log2 Time 90,Log2 Time 180
+At2g38170,calcium exchanger (CAX1),−0.5676,−0.8702,−0.7321
+At3g13320,calcium exchanger (CAX2),,−0.2668,−0.2707
+At3g51860,cation exchanger (CAX3),,−1.1699,−1.1249
+At2g47600,magnesium/proton exchanger (MHX1),,0.3887,0.4055
+At3g53720,cation/hydrogen exchanger (CHX20),,0.4314,0.6706

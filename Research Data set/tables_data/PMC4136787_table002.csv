@@ -1,0 +1,21 @@
+CONTROL EXPERIMENT: key dates,Time relative to experiment Start (S) or End (E)
+Arrival of mice from the breeding facility,S-38d
+"RFID-chips implantation, ear marking",S-37d
+Telemetry probes implantation,S-36d
+"Weighing, examination",S-37d – S-2d
+Co-adaptation of mice in groups of three,S-29d – S-2d
+Adaptation of mice to paste diet,S-14d – S-2d
+Training/tests with mice designated for in vivo studies,S-21d – S-6d
+Transportation to IBMP,S-1d
+Transfer of mice to the habitats,S-1d
+Installation of habitat assemblies into the climate chamber,S-1d
+Monitoring of mice in habitats,S-1d-S0
+Control experiment start (2013/07/26 14:00),S0
+Ground control experiment – 30 days (2013/07/26-08/26)
+Control experiment end (2013/08/26 09:00),E0
+Dismounting of habitat assemblies,E+1h – E+2h
+Mice examination,E+1h – E+3h
+Transportation imitation,E+4h – E+8h
+Euthanasia and in vitro studies,E+8h – E+23h
+In vivo tests and recovery monitoring,E+0d – E+7d
+"Euthanasia of the recovery group, in vitro studies",E+7d

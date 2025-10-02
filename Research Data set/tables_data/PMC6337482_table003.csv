@@ -1,0 +1,24 @@
+Region,Categories,Diseases or Functions Annotation,p-Value,ActivationZ-Score
+White Matter,"Cell Morphology, Cellular Assembly and Organization, Cellular Function and Maintenance",formation of cellular protrusions,1.69 × 10−3,−1.982
+,Organismal Survival,organismal death,3.76 × 10−2,−1.156
+,"Cellular Assembly and Organization, Cellular Function and Maintenance",organization of cytoplasm,6.40 × 10−5,−1.154
+,"Cellular Assembly and Organization, Cellular Function and Maintenance",microtubule dynamics,9.47 × 10−5,−1.154
+,Tissue Morphology,quantity of cells,3.44 × 10−2,−0.44
+,Cell Death and Survival,apoptosis,4.26 × 10−2,0.003
+,Cell Death and Survival,necrosis,1.41 × 10−2,0.014
+,Cell Death and Survival,cell death of tumor cell lines,4.40 × 10−3,0.028
+,Cell Death and Survival,cell death,1.41 × 10−2,0.166
+,Cell Death and Survival,apoptosis of tumor cell lines,3.86 × 10−2,0.176
+,"Lipid Metabolism, Molecular Transport, Small Molecule Biochemistry",concentration of lipid,7.47 × 10−3,0.333
+Gray Matter,Organismal Survival,organismal death,1.22 × 10−3,−3.257
+,Organismal Injury and Abnormalities,organ degeneration,1.46 × 10−5,−2.186
+,Cellular Compromise,degeneration of cells,1.36 × 10−4,−1.982
+,Developmental Disorder,growth failure,1.45 × 10−2,−1.982
+,Neurological Disease,neurodegeneration,8.36 × 10−5,−1.981
+,Cell Death and Survival,necrosis,1.84 × 10−5,−1.6
+,Cell Death and Survival,apoptosis,5.78 × 10−3,−1.404
+,Cell Death and Survival,neuronal cell death,2.96 × 10−3,−0.958
+,Molecular Transport,transport of molecule,9.80 × 10−3,−0.722
+,Cell Death and Survival,cell viability,1.48 × 10−2,0.555
+,Infectious Diseases,infection by HIV-1,2.45 × 10−3,1.98
+,Infectious Diseases,Viral Infection,1.12 × 10−2,2.2

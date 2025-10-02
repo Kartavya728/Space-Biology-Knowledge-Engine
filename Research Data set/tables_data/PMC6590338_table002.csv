@@ -1,0 +1,67 @@
+No.,Broad designation,Gene name,Gene type,SM(s) produced
+1,AN0016,pes1,NRPS,
+2,AN0150,mdpG,NR-PKS,"Monodictyphenone,84emodin,143xanthones,40sanghaspirodins A and B144"
+3,AN0523,pkdA,NR-PKS,
+4,AN0607,sidC,NRPS,Ferricrocin145
+5,AN1034,afoE,NR-PKS,Asperfuranone44
+6,AN1036,afoG,HR-PKS,Asperfuranone44
+7,AN1242,nlsA,NRPS,Nidulanin A58
+8,AN1594,,TC,"ent-Pimara-8(14),15-diene25"
+9,AN1680,,NRPS-like,
+10,AN1784,sdgA(pkjA),HR-PKS,Asperniduglene A126
+11,AN2032,pkhA,NR-PKS,
+12,AN2035,pkhB,HR-PKS,
+13,AN2064,,NRPS-like,
+14,AN2545,easA,NRPS,Emericellamides43
+15,AN2547,easB,HR-PKS,Emericellamides43
+16,AN2621,acvA,NRPS,Penicillin146
+17,AN2924,,NRPS-like,
+18,AN3230,pkfA,NR-PKS,Aspernidine A28
+19,AN3273,,HR-PKS,
+20,AN3277,,TC,
+21,AN3386,pkiA,NR-PKS,"6-Hydroxy-7-methyl-3-nonylisoquinoline-5,8-dione29"
+22,AN3396,micA,NRPS-like,Microperfuranone30
+23,AN3495,inpA,NRPS,Fellutamide B37
+24,AN3496,inpB,NRPS,Fellutamide B37
+25,AN3612,,HR-PKS,
+26,AN4827,,NRPS-like,
+27,AN5318,,NRPS-like,
+28,AN5475,,NR-PKS,
+29,AN6000,aptA,NR-PKS,Asperthecin47
+30,AN6236,sidD,NRPS,
+31,AN6431,,HR-PKS,
+32,AN6448,pkbA,NR-PKS,"Cichorine,38aspercryptin48"
+33,AN6784,xptA,DMAT,
+34,AN6791,,HR-PKS,
+35,AN7071,pkgA,NR-PKS,"Alternariol, citreoisocoumarin and analogs29"
+36,AN7084,,PKS-like,
+37,AN7489,,PKS-like,
+38,AN7825,stcA(pksST),NR-PKS,Sterigmatocystin147
+39,AN7880,,PKS-like,
+40,AN7884,atnA,NRPS,Aspercryptin48
+41,AN7903,dbaI(pkeA),NR-PKS,Felinone A50
+42,AN7909,orsA,NR-PKS,"F9775 A and B,143sanghaspirodins A and B144"
+43,AN8105,,NRPS-like,
+44,AN8209,wA,NR-PKS,"YWA1, melanin148"
+45,AN8383,ausA,NR-PKS,"Austinol, dehydroaustinol41"
+46,AN8412,apdA,Hybrid,"Aspyridone A, B149"
+47,AN8513,tdiA,NRPS-like,Terrequinone A150
+48,AN8910,,HR-PKS,
+49,AN9005,,HR-PKS,
+50,AN9129,,NRPS-like,
+51,AN9226,asqK,NRPS,4′-Methoxyviridicatin55
+52,AN9243,,NRPS-like,
+53,AN9244,,NRPS,
+54,AN10289,,DMAT,
+55,AN10297,,NRPS-like,
+56,AN10430,,HR-PKS,
+57,AN10486,,NRPS-like,
+58,AN10576,ivoA,NRPS,"Grey-brown conidiophore pigment57,59"
+59,AN11080,,DMAT,
+60,AN11191,alnA,HR-PKS,(+)-Asperlin65
+61,AN11202,,DMAT,
+62,AN11820,,NRPS-like,
+63,AN12331,,PKS-like,
+64,AN12331,,PKS-like,
+65,AN12402,xptB,DMAT,
+66,AN12440,,NR-PKS,

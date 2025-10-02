@@ -1,0 +1,8 @@
+Species,Strain #,NCBI Accession #,Isolation location,No. of scaffolds/contigs,Genome size (bp),N50 (bp),Average Coverage,G + C Content(%),Filtered reads used for assembly,Coding sequences
+Arthrobacter burdickii,IIF3SC-B10T,JAROCG000000000,"Advanced resistive exercise device (ARED) foot platform, ISS",8,"3,949,978","3,120,482",1056,68.0,"23,248,163","3,688"
+Leifsonia virtsii,F6_8S_P_1AT,JAROCB000000000,"Port crew quarters, bump out exterior aft wall, ISS",10,"4,198,603","988,071",570,70.5,"15,053,671","3,858"
+Leifsonia williamsii,F6_8S_P_1BT,JAROCF000000000,"Port crew quarters, bump out exterior aft wall, ISS",2,"3,889,882","3,847,531",599,71.4,"15,606,332","3,444"
+Leifsonia williamsii,F6_8S_P_1C,JARUHI000000000,"Port crew quarters, bump out exterior aft wall, ISS",19,"3,883,459","550,775",504,71.4,"11,128,441","3,439"
+Paenibacillus vandeheii,F6_3S_P_1CT,JAROCD000000000,"Advanced resistive exercise device (ARED) foot platform, ISS",49,"7,035,527","437,229",353,46.1,"12,976,930","4,861"
+Sporosarcina highlanderae,F6_3S_P_2T,JAROCC000000000,"Advanced resistive exercise device (ARED) foot platform, ISS",33,"3,397,737","269,276",736,41.6,"10,980,322","2,166"
+Sporosarcina thermotolerans,CCUG 53480T,CP125968,Human blood,1,"3,659,279",N/A,100,41.3,"102,168","4,609"

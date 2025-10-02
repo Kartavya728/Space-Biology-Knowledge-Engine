@@ -1,0 +1,8 @@
+Gene,pvalue,Log2 fold Δ,Related molecule function
+NRGN,0.0413,−0.16,A Ca2+ dependent intracellular charge transducer.
+DLG4,0.00947,−0.279,Postsynaptic density protein associated with glutamatergic receptor signaling.
+NLGN2,0.042,−0.306,Postsynaptic cell adhesion molecule mediating inhibitory synapses.
+SIN3A,0.0142,−0.43,Involved in cortical neuron differentiation and callosal axon elongation.
+RELN,0.00583,−0.535,Regulates microtubule function in neurons and neuronal migration.
+SLC2A5,0.0132,−0.623,Fructose transporter found in Purkinje cells and the blood-brain barrier.
+KCND1,0.0117,−0.893,K+ voltage-gated channel involved in neurotransmitter release.

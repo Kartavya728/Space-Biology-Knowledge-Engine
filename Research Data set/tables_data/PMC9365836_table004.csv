@@ -1,0 +1,18 @@
+Gene,pvalue,Log2 fold Δ,Related molecular function
+H2-T23,0.00447,0.357,Immune regulation and protection through NK and T-cell suppression.
+SOX4,0.00304,0.314,Transcription factor regulating key genes in Thelper17 cells.
+CSK,0.0108,−0.236,Negative regulator of T-cell receptor signaling.
+IKBKG,0.0246,−0.27,Subunit of IKK complex with cardinal role in stimulating NF-κB regulation.
+MPEG1,0.0363,−0.292,Pore-forming bactericidal effector molecule of the innate immune system.
+MERTK,0.000256,−0.368,Signaling protein in innate immunity for a negative regulator of inflammation.
+OPTN,0.0000172,−0.435,Ubiquitin-binding protein important for bacterial autophagic clearance.
+TREM2,0.0359,−0.461,Inhibitor of neuroinflammation via suppression of NF-kB signaling.
+ST8SIA6,0.0272,−0.479,A sialyltransferase important for immune suppression and modulation.
+IRF8,0.0352,−0.51,Transcription factor for anti-viral dendritic cells and IFN-inducible genes.
+HPGDS,0.0282,−0.527,Enzymatic mediator of prostaglandin D2 creation.
+RIPK1,0.0389,−0.63,"Promotor of survival, apoptotic and inflammatory signaling pathways."
+CYP27A1,0.0132,−0.805,Cytochrome P450 enzyme important in the metabolism of cholestrol.
+C5AR1,0.0201,−0.852,"Receptor for the chemotactic and inflammatory anaphylatoxin, C5a."
+CD6,0.00978,−0.972,"Stimulatory molecule promoting T-cell activation, proliferation, and adhesion."
+CD74,0.00146,−1,Chaperone protein involved with MHC class II antigen presentation.
+IRF7,0.00544,−1.06,Transcriptional regulator of type I interferon dependent immune responses.

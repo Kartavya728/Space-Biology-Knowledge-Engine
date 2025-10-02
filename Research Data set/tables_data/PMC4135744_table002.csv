@@ -1,0 +1,13 @@
+Regulator(s),No. of genes:,Response
+Upregulated,Downregulated,Total
+SigB,86,2,88,Transcription of GSR genes
+Unknown,41,47,88,Unknown
+AbrB/Abh,42,16,58,Transition from growth to stationary phase
+CcpA,12,26,38,Carbon catabolite repression
+Fur,1,25,26,Regulation of iron homoeostasis
+ResD,22,0,22,Regulation of aerobic/anaerobic respiration
+CodY,19,1,20,Response to nutritional starvation
+Rok,13,1,14,Regulation of genetic competence
+Spo0A,13,0,13,Phosphorelay regulator of sporulation initiation
+SigH,11,1,12,Early-stationary-phase gene expression
+IolR,0,11,11,Regulation ofmyo-inositol catabolism

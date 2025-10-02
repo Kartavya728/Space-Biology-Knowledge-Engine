@@ -1,0 +1,1002 @@
+SUMMARY
+The evolutionary success of parasitoid wasps, a highly diverse group of
+insects widely used in biocontrol, depends on a variety of life history
+strategies in conflict with those of their hosts .Drosophila melanogasteris a natural host of parasitic wasps of the genusLeptopilina.
+Attack byL. boulardi(Lb), a specialist wasp
+to flies of the melanogaster group, activates NF-κB-mediated humoral and
+cellular immunity. Inflammatory blood cells mobilize and encapsulateLbeggs and embryos [2–5].L. heterotoma(Lh), a generalist wasp,
+kills larval blood cells and actively suppresses immune responses. Spiked
+virus-like particles (VLPs) in wasp venom have clearly been linked to its
+successful parasitism ofDrosophila, but VLP composition and their biotic
+nature have remained mysterious. Our proteomics studies reveal that VLPs lack
+viral coat proteins but possess a pharmacopoeia of (a) eukaryotic vesicular
+transport system, (b) immunity, and (c) previously unknown proteins. These novel
+proteins distinguishLhfromLbVLPs; notably,
+some proteins specific toLhVLPs possess sequence similarities
+with bacterial secretion system proteins. Structure-informed analyses of an
+abundantLhVLP surface/spike-tip protein, p40, reveal
+similarities to the needle-tip invasin proteins SipD/IpaD of Gram negative
+bacterial type 3 secretion systems that breach immune barriers and deliver
+virulence factors into mammalian cells. Our studies suggest thatLhVLPs represent a new class of extracellular organelles
+and share pathways for protein delivery with both eukaryotic microvesicles and
+bacterial surface secretion systems. Given their mixed prokaryotic/eukaryotic
+properties, we propose the term Mixed Strategy Extracellular Vesicles (MSEVs) to
+replace VLP.
+Keywords:Drosophila, immune suppression, hemocytes, parasitoid wasps, venom, virus-like particles, secretion systems, T3 secretion system, proteomics, mixed strategy extracellular vesicles
+Graphical abstract
+[Img001]
+RESULTS
+SisterLeptopilinaspecies produce different VLPs
+Larvae of parasitic wasps of theLeptopilinagenus feed
+onDrosophilalarval host tissues, and eclose into free-living
+adults (Fig 1 A). The VLP-producing
+generalist/specialistL. heterotoma(Lh)/L. boulardi(Lb)
+wasps differ greatly in their infection of their natural hostD.
+melanogaster, as seen in the anterior lobes of the fly larval lymph
+glands. Hematopoietic progenitors are housed in the gland’s medulla
+(marked byDome-Meso-GFP) and mature hemocytes, in the cortex
+(GFP-negative,Fig 1 B).Lb17 infection induces lamellocyte differentiation (Fig 1 C), whileLh14 attack
+causes cell loss in both the medulla and the cortex, and few cells survive
+(Fig 1 D). The differences in the
+virulence ofLhversusLbis attributed to
+differences in the VLPs produced by these wasps  and the mechanism ofLh-induced cell killing are not understood. VLPs fromLb17 andLh14 differ in morphology;Lb17 VLPs have fewer spikes and are somewhat larger thanLhVLPs (Fig 1 E, F)
+. A peripheral
+membrane lipid bilayer (~ 10 nm) surroundsLhVLPs,
+which lack the typical coat-like structure found in some viruses (Fig 1 G). Because of their key role in wasp parasitism
+ofDrosophilaspp. [4,5], we hypothesized
+that differences in the composition of spiked particles produced in the venom of
+both wasps underlie these contrasting infection strategies.
+Fig 1. Effects of wasp attack on host lymph glands and comparison of VLP
+morphologies.
+[Img002]
+(A)Infection by femaleLeptopilinaspp. parasitic
+wasps introduces not only wasp eggs into the body cavities and hemolymph of
+fruit fly larvae, but also venom gland products which includes spiked, 300-nm
+VLPs. VLP bioactivity is known to be necessary for the infective success ofL. heterotoma, rather than other venom constituents
+[6,9]. (B) Intact anterior lymph
+gland lobes from uninfected controlDome-MESO-GFPfly larvae.
+GFP marks the stem-like progenitors in the medulla. (C)Dome-MESO-GFPglands ofLb17-infected larvae
+show lamellocyte differentiation (white arrowhead) and lobe dispersal (white
+arrow).(D)Progenitors are depleted inDome-MESO-GFPanterior lobes infected withLh14.(B – D)White asterisks mark
+dorsal vessels.(E)Scanning EMs ofLb17 and(F)Lh14 VLPs.(G)CryoEM ofLh14
+VLPs: The external lipid bilayer is contiguous, extending from spike bases
+(black arrows) at the VLP core to spike tips (white arrowhead). The black
+arrowhead marks area in zoom, bottom right.
+To characterizeLhVLP proteomes and examine differences
+in VLP protein compositions fundamental toLh- versusLb-specific virulence, we identified a high-confidence
+proteomic dataset common to VLPs from two independently-isolated, isogenized
+strains (Lh14 andLhNY), whose fine
+structures and activities on host cells are indistinguishable [3,9]. Peptide sequences from each VLP proteome
+(Lh14 andLhNY wasps) were first aligned
+against RNA-SeqLh14 transcripts , translated to open reading frames
+(ORFs). We thus obtained a common set ofLhVLP proteins
+(present in both proteomes;Tables S1,S2) and verified these VLP protein sequences at >
+90% identity against twoLhexpressed sequence tags
+(ESTs; ~ 30 proteins or 20%  and ~ 70 proteins or 45%
+ of the common
+proteome). To identify candidate pathogenicity effectors, we compared the commonLhVLP dataset to abdominal transcripts ofLb17 and a distantly-related speciesGanaspis
+sp.1(G1) that lacks spiked VLPs [10,11,13] (Fig 2). A summary of our major findings follows.
+Fig 2.
+[Img003]
+LhVLP proteome​
+LhVLP proteins are arranged by known/predicted functions and
+annotations. Key provided in center of figure.(Layer 1, outer most
+layer)Signal peptide predictions are most commonly found in the
+categories of virulence, immunity, and novel proteins.(Layer 2)GO
+(gene ontology) terms for conserved cell biology proteins are abundant.(Layers 3, 4)The cytoskeletal/fibronectin proteins and the
+majority of novel sequences lack similarity to abdominal transcripts from both(Layer 3)Lb17 or(Layer 4)G1female wasps.(See alsoTables S1,S2;Data S1,
+S2.)
+LhVLPs are rich in eukaryotic microvesicular
+proteins
+No proteins with significant homology to structural proteins of any known
+virus, including polydnaviruses (PDVs) associated with ichneumonid and braconid
+wasps, which prey on Coleoptera, Hymenoptera and Lepidoptera , were found in theLhproteome. The 161 proteins common toLh14 andLhNY VLP proteomes were categorized as (1) conserved
+eukaryotic proteins with core biological function (42%, Class 1); (2)
+virulence/immunity-associated proteins (24%, Class 2); or (3) novel
+sequences (34%, Class 3) (Figs 2,3 A). Of the ~ 160 VLP
+proteins, 25% areLh-specific (i.e., they are not
+expressed byLb17 ) and most (27/41, 66%) of these proteins are
+novel (Class 3) (Fig 2). Class 1 sequences
+contain orthologs ofDrosophilaand mammalian extra- and
+intracellular vesicle (including microvesicle and exosome) components as well as
+membrane proteins (Fig 3 A – C).
+The presence of transmembrane (e.g., Na/K pump, SERCA calcium pump) and vesicle
+transport proteins (e.g., H+-ATPase, heat shock cognate 70,
+Rab proteins, and soluble NSF attachment protein receptor) (Figs 2,3 A –
+C) in the proteome suggest thatLhVLPs are not
+viral but instead share functional properties with eukaryotic extracellular
+organelles called microvesicles, produced by animals cells, and specialized to
+transfer proteins between different cell types .
+Fig 3.LhVLPs are enriched in microvesicular/exosomal and
+membrane-associated proteins.
+[Img004]
+(A)Select exampleLhVLP proteins, many of which
+are expected to be membrane-associated via integral or other biochemical
+mechanisms, are displayed by their proteomic Classes 1 – 3 (bulleted
+within descriptive subclasses). Example subclasses and individual proteins found
+in enrichment analyses(B, C)are shown in red. AGT =
+anterograde transport; RGT = retrograde transport.(B, C)Enrichments from Vesiclepedia: The organelle character ofLhVLPs based on GO Terms of predicted orthologs is(B)significant
+and(C)highly enriched.(B)Among VLP proteins with
+annotated orthologs, 71% are mitochondrial, of which 12% are
+localized to the mitochondrial inner membrane. Approximately 50% of
+conserved sequences in the proteome are common to microvesicles/exosomes.(C)Vesicular and mitochondrial, including that of the caspase
+complex, terms are the most over-represented. Furthermore, genes within the GO
+Term (GO:0008303) for pro-apoptotic caspase complexes were more than 200 times
+over-represented.(See alsoTables S1,S2.)
+Diverse pathogenicity mechanisms are housed in VLPs
+Candidate immune-modulating (Class 2) VLP proteins include two
+diedel-like proteins with high similarities to sequences from insect viruses (60
+and 62% similarity toNP_059254.1,Xestia c-nigrum
+granulovirus;Fig 2;Data S1). Interestingly,
+aDrosophiladiedel modulates the IMD/NF-κB-dependent
+antimicrobial cascade  and the VLP diedel proteins may similarly suppress host
+signaling. AnLhVLP enhancin-like protein shows similarity toYersiniaspp. enhancins (42% similarity toWP_012413443.1,Yersinia pseudotuberculosis;Fig 2;Data S1), although enhancins are also found in insect
+viruses . Additional
+Class 2 immunity and development proteins include: (1) imaginal disc growth
+factor 4-like sequence (Idgf4) (83% similarity toXP_008560038.1,Microplitis demolitor); (2) fire ant
+(Solenopsis)-derived venom allergen (62% similarity
+toXP_008560038.1,Nasonia vitripennis); and (3) B-cell
+receptor-associated protein 31 (89% similarity toXP_008554920.1,Microplitis demolitor) (Fig
+2;Data S1).
+Two VLP proteins may protect and regulate parasite development: an
+antimicrobial/antifungal-like knottin protein (46% similarity toXP_014233229.1,Trichogramma pretiosum) and a predicted
+hemolymph juvenile hormone binding protein (56% similarity toABV82429.1,Drosophila melanogaster) (Fig 2;Data S1) .
+In the Class 2 set, we also identified two families of invertebrate
+immunity proteins (Figs 2,3 A). At least 6LhRhoGAPs were
+found that, likeLbGAP ofLb, may inhibit parasite
+encapsulation. A group of 14 metalloendopeptidases (MEPs) were also identified
+in the proteome and, although they are structurally similar to proteins from
+diverse kingdoms, their virulence functions may be similar to those of MEPs from
+parasitic waspsVenturia canescens andNasonia vitripennis. The diversity
+of predicted activities of Class 2 proteins likely facilitatesLhsuccess across a broad range ofDrosophilaspp.
+The abundance of novel proteins in Class 3 of the proteome was
+intriguing. Domain identifications predict viral domains (Pox L5 (PF04872),
+Baculo_PEP_C (PF04513.10), and Baculo_11_kDa (PF06143.9)) in three VLP sequences
+[21,22]. One of these, Baculo_11_kDa VLP sequence
+also shows similarity to phage tail tape measure proteins (data not shown). In
+addition to the multiple gene families inLhVLPs that are
+common toLbandG1(e.g., RhoGAPs and MEPs;Figs 2,3
+A),Lh-specific gene families include fibronectin
+domain-containing sequences and a new family of GTPases (Figs 2,3 A;Data S2). Multiple
+members of gene families are expressed in wasp venoms [23–25], and identification of the gene families inLhVLPs suggests that gene duplications and
+neofunctionalization underlie the powerful virulence strategy ofLh.
+Novel endomembrane-active GTPases
+Because the novel GTPase peptides are of high abundance in theLhVLP proteomes and are absent from theLbabdominal transcriptome, we investigated their predicted
+structures and functions in detail. All of the three small (SmGTPase) and five
+large GTPase (LgGTPase) sequences have N-terminal signals for secretion as well
+as key residues for GTP hydrolysis (Fig 4 A
+– C;Data
+S2). Five of the 8 (small and large) GTPase family members possess
+prokaryotic domains present in eubacterial and/or archaeal (e.g., PF09488,Fig 4 A, A′) proteins. Beyond a few
+proteins from parasitic wasps (N. vitripennis, G1, andL. clavipes), the closest putative homologs of these
+GTPases are prokaryotic (Fig 4 B;Data S2).
+Fig 4. Structural characteristics of prokaryote-likeLhVLP GTPases
+and p40.
+[Img005]
+(A, A′)Domain architectures of representative SmGTPase01(A)and LgGTPase01(A′)based on Conserved
+Domains Database (CDD) and PFAM 26.0 (see Methods).(A,
+A′)SS = signal sequence. Starts/stops
+are labeled with residue number. The E-values based on CDD domain predictions
+are listed adjacent to domains. Black and red arrows mark overlapping domain
+predictions in SmGTPase01(A)and a highly helical region in
+LgGTPase0(A′), respectively.(B)A multi-sequence alignment (MSA) of Sm & LgGTPase01 (SmGTPase01 used as
+query) reveals that the most significantly similar sequences in the NCBI nr and
+TSA databases (LhESTs excluded) are both prokaryotic and
+eukaryotic (N =Nasonia; C =Candidatus). Four predicted active site G motifs are
+labeled below the conserved consensus residues (black boxes) in the MSA. Only
+the G4 consensus motif ((T/S)KVP) differs from the canonical Ras G4 motif (NKxD)
+. Asterisks mark
+100% conservation in the motifs. The coloring scheme is according to
+conventional physiochemical properties and sequence conservation. 100%
+and 99 – 50% conservation levels are indicated by white
+lettering and blue column boxes, respectively.(C)The predicted
+geometry of the G motifs in of SmGTPase01 active site (warm, orange tones)
+superimposed on that of HRas active site (1QRA; cool, blue tones). RMSD
+= 3.37 Å (calculation is based on the full-length structures and
+is normalized to 1QRA), TM-score = 0.74 [TM-Score > 0.5
+indicates the same fold]. Distances (Å) between functionally
+critical residues of SmGTPase01 and HRas are indicated by dotted lines.(D)p40 domain architecture. SS = signal sequence; TM
+= transmembrane domain. Black arrows mark intron insertion sites. Based
+on CDD prediction, the central domain shares sequence and structural similarity
+with IpaD superfamily proteins.(E)Structural superposition of
+IpaD (blue, 2J0; residues 39-284) and p40 model (red, residues 28-187). The
+N-termini are oriented to the top right corner. The predicted signal sequence
+and C-terminal transmembrane helix were omitted for modeling. RMSD =
+4.73 Å, TM-score = 0.56225.(F)Structural
+superposition of p40 model (red) to chicken spectrin (green, 1CUN; RMSD
+= 2.9 Å) and to human plectin (blue, 3PDY; RMSD = 3.0
+Å), using the DALI server.(See alsoFig S1,Data
+S2.)
+The predicted active site of a representative SmGTPase (SmGTPase01)
+coordinates GTP and the NTPase cofactor, Mg2+. Close
+alignment of the predicted SmGTPase01 active site with the active site structure
+of HRas, the canonical small GTPase, supports the domain analyses results (Fig 4 A, A′, & C). The large
+GTPases are predicted to fold into C-terminal coiled-coils (Fig 4 A′). These findings suggest a curious
+blend of prokaryotic and eukaryotic properties within this new family ofLhVLP proteins, which likely have GTPase enzymatic
+activity and are likely secreted from wasp cells for incorporation into
+vesicles.
+T3SS-like VLP proteins: Similarities between VLP p40 and bacterial
+SipD/IpaD
+Prokaryotic protein motifs were identified in nearly 10% of
+novel Class 3 sequences. Overlapping protein motifs,
+[BacillusPF05103; fungal PF15577]
+associated with cell division and microtubule binding, respectively, were
+identified in a single Class 3 protein. KEGG Mapper BlastKAOLA identified (a)
+Syd-like (SecY-interacting, Type 2 secretion systems) and (b) flgE-like
+(bacterial flagellar hook) proteins with low-to-mid scores. A sopE-like
+(bacterial GEF toxin) protein was also found. The presence of bacterial
+secretion system and flagellar proteins is especially interesting as these
+macromolecular assemblies are structurally and functionally related and the Type
+3 secretion system (T3SS) of the self-assembling bacterial flagella are thought
+to be ancestral to the ones found in the needle/injectisome of pathogens
+.
+Our previous antibody staining and inhibition studies uncovered an
+abundant 40 kDa surface protein ofLhVLPs
+(“p40”) which is necessary for lamellocyte lysis . Early in VLP biogenesis, p40 is
+associated with the membranes of canals that emanate from the cytoplasm of
+secretory cells of the venom gland, where it is synthesized. Once in the canal
+lumen, p40 is then associated with membranous vesicles that are released from
+secretory cells. The vesicles mature into spiked VLPs which carry p40 both on
+their surfaces and spikes [9,27]. The bacterial T3SS
+domain from IpaD/SipD/BipD (PRK15330, E = 7.60−05)
+proteins was found in residues 39-146 of p40 (Fig
+4 D). This assignment was made by peptide mapping, cloning and
+expressing polyhistidine-tagged p40 in bacteria. In western blot experiments,
+anti-p40 antibody recognized this bacterially-expressed protein (Fig S1 A). As expected,
+p40 is detected in wasp venom extracts (Fig S1 B). We were unable to identify a putativeLb17 or G1 p40 ortholog (Fig
+2) and, to our knowledge, p40 represents the first eukaryotic protein
+with an IpaD/SipD-like domain.
+IpaD-like proteins fromShigella/Salmonella/Burkholderiaspp. are tip proteins of
+T3SS injectisomes, mediating contact and regulated delivery of effectors into
+the host cytoplasm of non-phagocytic cells . IpaD expression in mammalian macrophages
+triggers apoptosis ,
+reminiscent of the TUNEL-positive death of fly macrophages uponLhinfection . Unlike the bacterial proteins, p40 is predicted to
+encode a C-terminal transmembrane helix in addition to an N-terminal secretion
+signal (Figs 4 D;S1 C). p40’s
+transmembrane domain (this study) and its extracellular localization in venom
+gland canals  suggest
+that p40 exits venom gland secretory cells in association with microvesicle-like
+structures. This interpretation is in agreement with the extracellular vesicular
+proteomic profile of VLPs (Fig 3).
+Given the unexpected parallels in their structures and surface/tip
+localizations, we hypothesized that, like IpaD/SipD on the T3SS injectisome, p40
+on VLP spikes facilitates invasive contact with the plasma membrane of
+non-phagocytic lamellocytes to deliver VLP contents. To test this idea, we
+carried outab initiomodeling of p40. The knowledge-based
+energetics of the p40 model are similar to crystal structures of similar length
+(ProSA Z-Score = −6.23). 82% of model residues are found
+in expected local environments (3D Verify). Superimposition of the p40 model
+against IpaD confirmed the T3SS protein-like fold in p40 (Figs 4 E;S1 C) .
+Surprisingly, high-scoring matches to this fold included the vertebrate
+actin-binding proteins spectrin and plectin (Fig 4
+F, superimposed with p40), further strengthening structural parallels
+between p40 and IpaD/SipD. Searches for the most similar structures within the
+N-terminal half of IpaD family proteins also returned actin-binding proteins
+(talin, vinculin, α-catenin) . These proteins are known to reprogram the actin
+cytoskeleton leading to the profuse membrane ruffling observed in non-phagocytic
+mammalian cell invasions bySalmonellaandShigella.
+DISCUSSION
+The composition ofLhVLPs is complex and interesting in
+multiple respects but the most conspicuous observations are an absence of viral
+structural proteins and the presence of conserved eukaryotic proteins with
+microvesicular signature. AbundantLh-unique proteins, including
+currently novel proteins, have an unexpected diversity of domains, especially those
+previously found exclusively in prokaryotic proteins. The mechanisms that
+contributed to the evolution of VLP proteins (horizontal gene transfer or others
+) remain unknown.
+LhVLPs lack the defined symmetry and external coat found
+in many true viruses including PDVs. Reminiscent of eukaryotic organelles,
+precursors and mature VLPs exhibit heterogeneity in their shapes, sizes, and spike
+numbers [9,33]. Moreover, it is noteworthy that, unlike PDVs
+which are fully formed in the cells of their origin and then released by lysis or
+budding ,LeptopilinaVLPs assume their final shape outside the cells in
+which at least some of their proteins and vesicular constituents are synthesized
+[9,27]. Also, there is currently no evidence for the
+presence of nucleic acids in VLPs, which further distinguishes them from
+DNA-containing PDVs.
+VLPs are unlike endosymbiotic bacteria ofLeptopilinawasps
+.
+Antibiotic-treatment ofL. victoriae(sister species ofLhthat make VLPs and carry
+cytoplasmic-incompatibility-inducingWolbachia) did not affect
+genomic amplification of p40 or SmGTPase01 genes. Furthermore, VLP gene loci were
+amplified not only from femaleLh14 genomes but also male wasp
+genomes, even though VLPs are not produced in males. BrdU incorporation studies did
+not support the possibility of DNA-based VLP replication in the venom gland (our
+unpublished results). The non-replicating nature of the particles, genomic encoding
+of VLP protein genes, and vesicular signature of their proteome strongly suggest
+thatLhVLPs are neither viruses nor endosymbiotic bacteria but
+instead represent a new class of genomically-encoded, microvesicle-like organelles.
+Extracellular vesicles are produced by prokaryotic and eukaryotic cells and VLPs
+carry a diversity of potential immune-suppressive proteins. We, thus, propose the
+alternative moniker, MSEV (Mixed Strategy Extracellular Vesicles), to replace the
+VLP term.
+Virulence factors of parasitic wasps have diversified in response to the
+variety and complexities of their hosts’ immune systems. With a broad host
+range ,Lhwasps parasitize manyDrosophilaspp. whose own distinct immune
+responses are supported by varying numbers and types of blood cells . This may explain, first, the
+diversity of putative virulence and cell death proteins with homologs across the
+biological kingdoms [viral (diedel), bacterial (p40, Syd-like), and
+eukaryotic (fire ant allergen, B-cell receptor-associated protein 31,
+etc.)], and second, the presence of MSEV paralogs
+[Lh-specific GTPase andLh-/Lb-common
+Rho GAP, MEPs, and diedel gene families] in the proteome. Multiple members
+presumably perform redundant or overlapping cell-specific functions for rapid and
+robust immune suppression, much like the IκB/Cactus-like ankyrin-repeat
+proteins of distantly-related bracoviral and ichnoviral PDV proteins that block
+NF-κB signaling [36,37].
+The parallels between the 3D-structure and locations of p40 with the
+well-characterized T3SS IpaD-like prokaryotic proteins are provocative and suggest
+that p40 likely contributes toLhMSEVs’ unique blood
+cell-killing activities. T3SS assemblies are widespread and are used by bacteria to
+infect plants and animals .Pseudomonas aeruginosause their own T3SS to
+rapidly infect and kill adult flies. While cytotoxic to macrophages,P.
+aeruginosainfection activates the NF-κB-dependent IMD
+antimicrobial pathway .
+It is thus possible that elements of the pathogenic bacterial systems have been
+co-opted by wasps to attack the fly’s cellular immune system. In this
+scenario, intracellular protein complexes within lamellocytes would be under direct
+selective pressure to respond to MSEV-based T3SS-like virulence.
+The presence of prokaryotic-like (particularly, T3SS/flagellar-like)
+proteins, hints at the possibility that either MSEV spikes evolved from primordial
+flagellar/needle-like structures or they share evolutionary history with such
+structures. These findings also support a hypothesis proposed by Martin and
+colleagues  that the
+eukaryotic endomembrane system may have arisen from bacterial outer membrane
+vesicles. In this regard, characterization of the prokaryotic protein motifs that
+comprise nearly 10% of the novel proteins outlined above will be especially
+revealing. The molecular mechanisms by which MSEV proteins deplete and destroy its
+well-characterized hosts’ immune system will suggest how virulence factors
+are acquired by insect parasites, how these factors evolve, and how insects might
+serve as reservoirs of disease. Answering these questions is likely to lead to new
+cost-effective therapies for treating emerging infections and opportunistic
+diseases.
+STAR METHODS
+CONTACT FOR REAGENT AND RESOURCE SHARING
+Further information and requests for resources and reagents should be
+directed to and will be fulfilled by the Lead Contact, Shubha Govind
+(sgovind@ccny.cuny.edu).
+EXPERIMENTAL MODEL AND SUBJECT DETAILS
+Fly strains
+All fly stocks were healthy and free of common laboratory
+infections. Genetically stable stocks with the desired, uniform genotypes
+were used for infections and crosses were not necessary. They
+wstrain ofD. melanogaster(used as wild
+type) andDome-MESO-GFP(gift from M. Crozatier
+) (seeKey Resource Table
+(KRT)) were used.Dome-MESO-GFP is a synthetic
+construct that replaceslacZwith GFP expression in
+P{dome-lacZ.MESO} (Fly Base FBtp0022619) and produces GFP marked regions ofdomeless(the fly JAK/STAT receptor) expression
+. Flies were
+raised on standard fly food [cornmeal (65 g/L), sucrose (140 g/L),
+agar (10 g/L), and yeast (35 g/L) with tegosept made in 95% ethanol
+(22.6 ml/L) and propionic acid (5 ml/L)] (seeKRT) medium and
+maintained long term at 18°C with inspection and flipping to new
+vials every three to four weeks. Prior to experimental work, fly stocks were
+moved to fresh food, shifted to 25°C, and maintained for at least
+two generations. Adults were used for 2 to 3 rounds of egglays to produce
+larvae for wasp infections. Mid to late second instar larvae (both male and
+female) were used for infections and sacrificed during dissection.
+Leptopilinaspp. parasitoid wasp strains
+All wasp stocks were healthy and free of common laboratory
+infections. The following wild type parasitoid wasp species and strains were
+used:Leptopilina heterotoma14 (Lh14)
+,L.
+heterotomaNY (LhNY) ,L. victoriae(Lv) , andL. boulardi17
+(Lb17) . (A detailed genotypic notation system has not been
+formalized forLeptopilinaspp. as mutant or transgenic
+wasps have not been produced to date.)Lh(strains 14 and
+NY) andL. victoriaeare sister species with VLPs that are
+indistinguishable from each other . Wasp stocks were maintained at 18°C
+long-term via infestation of healthy and infection-free mid to late second
+instary w D. melanogasterlarvae raised on the same fly
+food medium as the “fly-alone” cultures (see Fly Strain
+details, above, for husbandry and housing of flies). Adult wasps were moved
+to 25°C prior to experimental infections. Free-living, adult female
+wasps were collected with males at approximately one week post eclosion
+(PE). Mated females were used in experimental infections and were used for
+infections only once. For VLP purification, female wasps were sorted from
+males for dissection of venom gland apparatus (males do not possess venom
+glands).
+Bacteria
+E. coliBL21 cells (seeKRTfor genotype)
+were used for expression of the p40 central domain (CD).
+METHOD DETAILS
+Wasp infections, dissections, and imaging
+For experimental infections, cultures containing both male and
+female mid to late second instarD. melanogasterlarvae
+were exposed to 10 – 12 mated, 1 week PE,Lh14 orLb17 female wasps  for 12 hours at 25°C. Wasps
+were removed and larvae were allowed to recover in the medium for 5 hours at
+25°C. Infected larvae were scooped from the medium, scored for age,
+matched toy wcontrol wasp-infected larvae, washed in
+deionized water, washed in phosphate buffered saline (1X PBS, pH 7.2,
+25°C), and dissected to obtain larval lymph gland tissue. Infection
+was validated during dissection by the presence of wasp eggs (free floating
+or attached onto larval gut tissue) and uninfected hosts were discarded.
+Dissections and slide preparations were performed at 25°C.
+Tissue was dissected on untreated glass slides by bleeding larvae and
+pulling the cuticle bilaterally below the mouth hooks to leave the mouth
+parts, lymph gland, and dorsal vessel. After air drying, excess tissue was
+removed. Samples were fixed in 4% paraformaldehyde, washed,
+permeabilized (1X PBS with 0.3% Triton X-100), and washed again in
+1X PBS. Counterstains were applied (Rhodamine-tagged Phalloidin at 0.5 mg/ml
+and Hoechst 33258 at 0.02 mg/mL) and samples were washed and then mounted in
+VectaShield.
+Samples were imaged with a Zeiss 510 confocal at 40X. Laser settings
+were based on GFP negative and uninfected control tissue and all images were
+scanned using the same instrument settings. Images were processed with Zeiss
+LSM image browser. Figures were compiled in Adobe Photoshop v12.0.4 and CC
+2015.5 and Illustrator CC 2015.
+Results shown inFig 1were
+validated in dissections of at least twenty animals (n = 20 lymph
+glands) each, infected by either wasp. Results have also been validated by
+infections and dissection of at least three otherD.
+melanogastergenotypes with replicates of at least five animals
+(n = 5 lymph glands). All infection-related changes to lymph gland
+morphologies were included in our conclusions (no data were excluded). No
+strategies for randomization and/or stratification, blinding, or sample-size
+estimation were utilized, or found to be necessary, for this study.
+VLP purification
+Three hundred eachLh14  andLhNY
+ female wasps
+(see Wasp Strain section, above, for husbandry and housing details) of 1 to
+2 weeks PE were sacrificed by submerging in 70% ethanol and rinsed
+at least three times each in deionized water and 0.1X PBS (pH 7.2) at
+4°C. Venom gland complexes were dissected in PBS by grasping the
+ovipositor and gently pulling. Only intact, dissected venom gland complexes
+with a VLP long gland, reservoir, and ovipositor were used in the
+purification protocol; other body parts were discarded. Tissue was collected
+in 1X PBS (4°C), gently crushed with a sterile pestle in
+200μL of 1X PBS (4°C), shook vigorously in 300 μL 1X
+PBS (4°C), pulse agitated, and added to the top of a 4°C
+Nycodenz gradient. The gradient of 50 to 10% Nycodenz in 1X PBS (5
+bands of 900 μL, each) was prepared in a clean, RNA-free Beckman 9
+cm centrifuge tube and pre-chilled. Whole VLPs were separated from other
+tissues into a single band by ultracentrifugation (20,000 RPM, 7°C,
+80 mins). The VLP band was removed from the gradient, washed with 1X PBS
+(4°C), pelleted (11,700 RPM, 7°C, 35 mins), resuspended in a
+minimum of 1X PBS (4°C), and stored (4°C). Extraction of
+VLPs from ~ 300 long gland complexes has consistently yielded
+upwards of thousands of VLPs.
+Electron microscopy
+For cryo electron microscopy (EM), purified VLPs were pipetted onto
+a holey carbon coated grid. Excess fluid was blotted (Whatman #1)
+and the grid was plunge frozen (liquid ethane) and stored in liquid
+nitrogen. Samples were visualized with a Technai G2 (200kV) at the New York
+Structural Biology Center. Membrane surroundingLhVLPs
+(observed via cryo EM inFig 1) was
+present in all VLPs of more than two sample preparations and this result
+confirmed previously-published findings from transmission electron
+microscopy experiments [6,9].
+For scanning EM (SEM), purified VLPs (washed and re-suspended, PBS)
+were fixed in glutaraldehyde (3% in 0.085M sodium cacodylate buffer,
+overnight, 4°C), followed by cacodylate buffer (0.085M, 1 hr,
+4°C). After washing (glass distilled water) and fixing in osmium
+tetroxide (1% in 0.085M cacodylate buffer, 1 hr, 4°C), VLPs
+were filtered onto polycarbonate membranes (0.1 μm pores). Filtered
+samples were then dehydrated in serial ethanol washes (technical grade, to
+70%) and stored overnight. The membranes were washed (amyl acetate),
+dried, and mounted on pin stubs. Membranes were gold-palladium plated and
+stored at 60°C until imaged on a Ziess Supra 55 SEM. Parameters for
+SEM imaging ofLh,Lv, andLbVLPs were consistent for all samples and technical
+replicates; data presented are representative of many particles from at
+least two replicates per species’ VLP.
+MS/MS analysis ofLhVLP proteins
+Purified VLPs were separated on a 1-D SDS-PAGE gel as per standard
+protocols. Bands were excised, destained, reduced, alkylated, and trypsin
+digested. Peptides from combined additional lanes (L457) were also analyzed.
+Peptides were extracted (Applied Biosystems POROS 20 R2 beads), cleaned-up
+(C18 ZipTips), dried, and reconstituted in 2%
+acetonitrile/0.1% formic acid.Lh14 peptides were
+trapped (Waters Symmetry® C18trap column (180 μm
+× 100 mm, 5 μm particles)), washed, and separated on a
+Waters BEH130 C18column (1.7 μm particle size) (Waters
+NanoAcquity UPLC (Milford, MA)).LhNY peptides were
+separated on a Waters BEH130 C18column (75 μm ×
+150 mm). The MS analysis was performed on an LTQ-Orbitrap (ThermoFisher,
+CA).
+The instrument RAW files were analyzed using Proteome Discoverer
+(PD) 1.4.0.288 with a work template that contained a Target Decoy PSM
+Validator node (peptide spectrum matches) with both Sequest and Mascot
+algorithms. Mascot searches, independent of PD, were also conducted. Peptide
+mass tolerance was set to 10 ppm, and the fragment mass tolerance was 0.6
+Da. The enzyme was set to “trypsin” with two maximum missed
+cleavage sites and the search was against VLPSwiss_20140319.fasta (1332969
+entries). Carbamidomethylation of cysteine was specified as a fixed
+modification. Deamidation of asparagine and glutamine and oxidation of
+histidine, methionine and tryptophan were specified as variable
+modifications. Methylation at aspartic acid residues was specified only for
+Mascot analyses conducted without PD. The .msf output files were integrated
+into Scaffold (version Scaffold_4.7.3, Proteome Software Inc.) which was
+used to validate MS/MS based peptide and protein identifications.
+Identification ofLhVLP proteins
+VLP proteins (Tables S1,S2) reported here had at least two proteomic peptides,
+identified at 99% or greater probability by either PD or solo Mascot
+searches, that aligned to a target sequence. In addition, four proteins are
+included in the list where only one peptide aligned at 99% more
+probability (see below, Protein sequence annotations subsection).
+Full-length target protein sequences were translated from RNA-SeqLh14 (GAJC00000000.1) transcripts translated to ORFs
+.
+The number of aligned peptides varied slightly between PD and Mascot
+analyses conducted without PD. The PD results have been deposited to the
+ProteomeXchange Consortium via the PRIDE  partner repository (seeKRTfor link).
+In this report, VLP composition is based on the subset of proteins
+common to both theLh14 and NY strains. The common,
+full-length VLP protein ORFs (Tables S1,S2) were annotated via(A)primary
+sequence analyses, and(B)structure-based analyses and
+predictions for select proteins (described below). Note that theLh14 dataset is larger and selectLh14-unique sequences were preferentially included.
+Additional verification of protein sequences
+The VLP peptides were also searched against other proteomes (UniprotD. melanogaster,A. mellifera,H. sapiens, viral, prokaryotic and archaea databases
+). The
+full-length proteins identified from the RNA-Seq ORFs  were BLASTed againstLhESTs (NCBI LIBEST 028179 and 028205, [11,12]), providing an alternative method of ORF sequence
+verification. This step also identified the full, or near full, length VLP
+protein clones in ourLhEST collection (e.g.,LhVLP Sm & LgGTPas01). Roughly 20% and
+~ 45% of the common VLP proteins were identified in the
+Heavner et al. 2013  and the Colinet et al. 2013  studies. (See below, for methods of
+identification of absence/presence of expression of eachLhVLP protein inLb17 and G1 abdominal transcriptomes (Fig 2).)
+Protein sequence annotations
+The automated, pipe-line annotation algorithms of (1) BLAST2GO, E
+<= 10−5(v2.7.0) , (2) InterProScan (v5.3–46)
+, and (3)
+FastAnnotator 
+were used to characterize all (common set) VLP proteins identified from VLP
+peptide alignments toLhtranscriptome ORFs (See above).
+Multiple bioinformatic methods were used to avoid algorithm bias and
+increase accuracy. Two related criteria were used as measures of reliability
+of annotations: (a) E values (E <= 10−5);
+and (b) percent identity and percent similarity (applied only when at least
+75% of the query aligned to the hit).
+For manual annotations, BLASTs were conducted via NCBI
+ (nr and TSA
+databases, default parameters ). To identify potentialLhVLP
+protein homologs in microbiota, the unannotated full-length VLP proteins
+were pBLAST searched against a subset of all nr archaea, viruses, and
+prokaryotic genomes at higher sensitivity (GenBank, E <=
+10). To identifyLhVLP proteins expressed byLb17 andG1, all VLP sequences were
+tBLASTn searched with default parameters againstGAJA00000000.1(Lb 17) andGAIW00000000.1transcriptomes (Ganaspis sp1(G1)) . The Conserved Domains Database (CDD) [49,50] and PFAM  were used for domain identifications and
+architectures. Manual annotation results are reported in main text only if
+they were confirmed by a second method. Kyoto Encyclopedia of Genes and
+Genomes (KEGG) Orthology (KO) numbers were assigned using GhostKOALA
+. KO numbers
+were then used to obtain model ortholog annotations.
+For pairwise and multiple-sequence alignments, T-Coffee
+, Needleman
+,
+ClustalOmega ,
+and MUSCLE [56,57] (EBI webserver, default
+parameters) were used and ESPript 3.0  was used for visualizations. FunRich
+ was used for
+functional enrichment and over-representation analyses against two
+extracellular vesicle databases, Exocarta [60,61] and Vesiclepedia . Circos (v0.69) was used to visualize
+the proteome .
+The four proteins with only on a single aligned peptide (99%
+or greater peptide probability) (Fig 3;Tables S1,S2) passed the
+(1) manual inspections of their MS/MS spectra and fragments, (2) solo Mascot
+searches, and (3) Exocarta/Vesiclepedia enrichment analyses. Of these four
+proteins, one is classified as novel (Class 3;Figs 2,3 A), while the
+other three have sequence similarities with eukaryotic proteins (Class 1;Fig 2,3) of extracellular vesicles (Fig 3 B, C).
+In silicostructural predictions of SmGTPase01
+A high-quality structural model was created for SmGTPase01 using a
+hybrid approach. A MODELLER  model was created using three templates: GIMAP
+crystal structure 3V70 and twoab initiomodels
+. 3V70 was
+chosen using threading metaservers (LOMETS  and PHYRE2 ) and was evaluated in single-template
+MODELLER trials. Loop modeling and side-chain optimization were done using
+Loopy  and SCWRL4
+,
+respectively. The active site of this full-length model is presented inFig 4 C; the remaining details of
+the model will be published elsewhere.
+The SmGTPase01 co-factor, Mg2+, was placed in the active
+site based on COFACTOR  and was checked for positioning using WHAT IF
+. GTP was
+placed and checked for energy minimization in the SmGTPase01 active site
+with Autodock Vina . The cofactor and substrate placements were confirmed
+with predictions from COACH , BSP-SLIM , and 3D Ligand .
+The qualities and knowledge-based energy values of our models were
+assessed using ProSA-web  and Verify3D . TM-Align was used to compare crystal structures and
+ourin silicomodels . STRIDE  was used to define secondary
+structures from molecular coordinates. Crystal structure molecular files
+came from the Protein Data Bank (http://www.rcsb.org/pdb/home/home.do).
+Cloning and structural predictions of p40
+For p40-specific proteomics, peptides isolated and digested from an
+anti-p40 positive SDS-PAGE gel band were sequenced at the Harvard
+Microchemistry Facility by HPLC-MS/MS (Finnigan LCQ quadrupole ion trap) and
+then BLAST queried against NCBIGAJC00000000.1RNA-SeqLh14 database.
+For p40 cloning and expression, the p40 IpaD-like central domain
+(CD) was amplified from venom gland cDNA and cloned into pCR2.1-TOPO. Primer
+sequences are listed inKey Resource Table. The p40 central domain (amino acids 26
+– 240,Fig 4 D) was expressed
+from a pTrcHisA subclone by addition of IPTG (1 mM, ThermoFisher
+Scientific).E. coliBL21cells were lysed by freeze-thaw in
+lysis buffer (10% triton X, 150 mM NaCl, 1 mM EDTA and 50 mM Tris
+HCl, pH 6.8) with protease inhibitors (AEBSF-HCl 100 mM, aprotinin 80
+μM, bestatin 5 mM, E-64 1.5 mM, leupeptin 2 mM, pepstatin A 1 mM,
+Sigma or Fermentas). Protein concentrations in all assays were determined
+with Bradford reagent .
+For the verification of p40 identity via western analyses, bacterial
+proteins were separated (SDS-PAGE, 5% stacking and 12%
+resolving), transferred to membrane (nitrocellulose, HyBond, Amersham Life
+Science), and blocked (PBS, pH 7.4, 0.1 % Tween 20, 5%
+nonfat dry milk, 3% bovine serum albumin (1 hr, 25°C)).
+Primary antibodies used were anti-p40 (1:1000) or anti-6X-His (1:1000; 12
+hr, 4°C). Alkaline-phosphatase-linked anti-mouse secondary antibody
+(1:2,500; 1 hour, 25°C), 5-bromo-4-chloro-3′-indolyphosphate
+(BCIP, Amresco), and nitro-blue tetrazolium (NBT, Biotium) solutions in
+NaCl-Tris-MgCl2buffer (NTM, pH 9.5) were used for
+detection.
+For p40 structural predictions,ab initioand
+template fragment assembly methods   were used along with N-terminal predictions from
+MODELLER’s loop methods [81–83].
+Structural optimizations were generated using ModRefiner . The most N- and C-terminal
+residues of p40 are predicted to be a signal peptide and transmembrane helix
+and were not modeled (Fig
+S1 C). Crystal structures (http://www.rcsb.org/pdb/home/home.do) similar to ourin silicop40 model were identified using DaliLITE
+.
+Antibiotic treatment ofLv
+To cureLvadults of the strain of Gram negativeWolbachiaendosymbionts , three successive generations ofLvfemales were cultivated from infections ofy
+w D. melanogasteregglays on fly food medium containing
+rifampicin at 0.75 mg/g (see Fly and Wasp Strain sections, above, for
+husbandry and housing details). The next six generations ofLvwasps were cultivated on larvae raised on standard,
+antibiotic-free medium, to assure no direct drug effects. Isogenized control
+wasps did not receive antibiotic treatment and were otherwise reared the
+same way as experimental wasps. For PCR amplification of wasp genomic DNA,
+antibiotic-treated and control male and female wasps, no more than 1 week
+PE, were sorted into microfuge tubes and frozen at −20°C.
+Genomic DNA template was amplified for the absence or presence of (a)Lv-specificgatBandcoxAgenes ofWolbachia, and (b) VLP
+protein genes (p40 and Sm/LgGTPase01) (see Analyses of genomic sequences,
+below, andKRT).
+Results from all PCR amplification experiments supported the conclusions in
+this study.
+Analyses of genomic sequences
+Total genomic DNA fromLh, antibiotic-treatedLv, and control wasps was obtained using a Qiagen DNA
+Blood and Tissue kit. Primer sequences are listed inKRT; the following
+notation is used:
+y= pyrimidines;r= purines; andk= T and G.
+QUANTIFICATION AND STATISTICAL ANALYSIS
+Details regarding experimental replicates are provided with each Method.
+As indicated in the Wasp infections, dissections, and imaging subsection, n in
+this study refers to the whole lymph gland of an animal (i.e., two lobes). More
+than 35 lymph glands from larvae of different genotypes yielded consistent
+results after wasp infection. Similarly, examination of numerous VLPs in each
+sample, as well as repetition of different EM protocols providedsupporting informationregarding VLP morphologies. Confidence in proteomics results is based on peptide
+characterizations of purified VLP preparations from two independent strains ofLh. The criteria of agreement between multiple, independent
+methods for identification and annotation of VLP proteins (both novel and
+previously characterized) were met. Confidence in quantitative bioinformatics
+results (e.g., E values for BLAST results and domain predictions, RMSDs for
+protein model analyses, p-values for enrichments) is based on the algorithms
+intrinsic to these methods and is described in the corresponding primary
+references. Where possible, more than one computational approach (supported by
+different algorithms and metaservers) was used to strengthen interpretation by
+avoiding biases arising from a single computational methodology. No additional
+statistical analyses or methods to determine assumption credibility and/or
+sample size were conducted for this study.
+DATA AND SOFTWARE AVAILABILITY
+.mzid files for all VLP protein gel bands for bothL.
+heterotoma14 and NY (see MS/MS analysis ofLhVLP
+proteins methodology, above) were exported from Scaffold and submitted to PRIDE,
+a ProteomeXchange repository member (seeKRTfor links). .mzid files provide the data for VLP
+peptide identification in the mzIdentML proteomics format (Tables S1,S2), a HUPO Proteomics
+Standards Initiative (Proteomics Informatics Standards group) standard.
+Supplementary Material
+(A) Anti-p40 antibody reacts at the expected molecular weight (top bands) for the His-tagged
+p40 central domain (CD, residues 26-240) from bacterial extracts, and (B) with venom extracts
+(VGE) from L. heterotoma (Lh) and L. victoriae (Lv) female wasps. In panel A, S=supernatant;
+P=pellet. Uninduced and induced refer to bacterial extracts prepared without or with IPTG
+induction for p40 CD expression. p40's identity was also confirmed with anti-His antibody (not
+shown). The p40-positive bands at higher molecular weights (B) suggest higher-order protein
+associations and/or post-translational modifications. (C) Comparison of the Shigella flexneri
+IpaD (2J0O) structure and L. heterotoma p40 model (Figure 4 E): The residue numbers for the p40
+model do not include the predicted signal peptide. The first and last model residues are 26 and
+213 of the predicted full length protein, respectively. The p40 model lacks the short α-helix and
+β-hairpin at residues 208-251 in IpaD and the model's local quality drops in this region. 310helices are found in the p40 model, in addition to α-helices. 310and α-helices psi/phi angles are
+similar. These 310helices could render as α-helices, given slight conformational and energetic
+shifts in the model. Experimental methods are necessary to validate these p40 model predictions.
+A summary of proteomic data for proteins common toLh14 (Gel01) andLhNY (Gel02) VLPs
+purified on Nycodenz gradients is presented here. The data are organized by
+our in-house VLP_Swiss-Prot identifiers. The wasp strain (column 6) from
+which the greatest number of VLP protein peptides were detected is provided
+first (columns 2 – 5). Data shown include protein identification
+probability, peptide to protein alignment coverage, exclusive unique
+spectra, and exclusive unique peptides. The number of unique peptides
+detected from the secondLhstrain’s VLPs (column
+8) for each protein is given in column 7.
+This table provides additional information not presented in the
+peptide-to-ORF table (Table S1). The peptide sequences detected for each
+protein from bothLh14 (Gel01) andLhNY
+(Gel02) VLP preparations are provided along with post-translational
+modifications (columns 1, 2, and 11, respectively). The SDS-PAGE gel band of
+origin for each peptide can be found in column 23 (i.e., spectrum file ID).
+Any redundancies in protein identifications per peptide are provided in
+columns 21 and 22.
+Data S1: Select infection- and immunity-relatedLhVLP protein alignments (Related toFigs 2,3A)
+Seven(A–G)Class 2LhVLP
+proteins aligned with their most similar putative homologs from prokaryotic,
+viral, and eukaryotic species (emphasis on Hymenotpera and Diptera). If
+sequences were trimmed, the absolute residue range is given following the
+species of origin. The coloring scheme is based on physiochemical
+properties. ORF = open reading frame
+(A)Two diedel-likeLhVLP sequences
+with pfam13164 domains identified (E = 2.29e−12and 1.17e−07, diedel-like 1 and 2, respectively) are
+aligned with nine similar sequences (BLASTp nr, 25 – 53%
+identity; 7e−08<= E <=
+3e−01). Five of the putative homologs are fromDrosophilaspp. and are four from dsDNA insect viruses
+(granulovirus, ascovirus, and entomopoxvirus). Both sequences contain
+secretion signal motifs, and multiple predicted disulfide bridges. TheD. melanogasterdiedel, a putative homolog, is a
+negative regulator of the JAK-STAT pathway.
+(B)ALhVLP enhancin-like protein is
+aligned with similar prokaryotic sequences (BLAST2GO and Delta BLAST nr, 20
+– 42% identity; 5.33e−04<= E <= 9e−03). Multiple
+sequences fromYersinia, Listeria, and other pathogenic
+bacterial species were found in our BLASTs and, in a few cases, these
+sequences were annotated as M60 peptidases. The VLP sequence contains a
+putative secretion signal motif, but no known domains were identified. It is
+notable that enhancin homologs encoded in viral genomes were not uncovered
+in our searches.
+(C)ALhVLP GH18 chitinase-like
+superfamily (CDD cd02873 domain, E = 0) protein is aligned with five
+similar sequences (BLASTp nr, 50 – 75% identity; 0
+<= E <= 2 e−143) from
+other insects, including the yellow-fever mosquito, the Tobacco horn worm,
+and three parasitoid wasps (the Jewel and two Braconid wasps). The VLP
+protein sequence encodes a predicted secretion signal and is predicted to be
+an Imaginal disc growth factor (Idgf)-like protein, a superfamily that
+diverged from chitinase-like proteins.
+(D)TheLhVLP venom allergen-like
+(CDD domain cd05380, E = 1.95 e−42) protein is
+aligned with five similar sequences (BLASTp nr, 37 – 42%
+identity; 6 e−41<= E <= 6
+e−34) from other insects, including the red imported
+fire ant, the Panamanian leafcutter ant, and three parasitoid wasps (Jewel,
+a Braconid wasp, and a Chalcidoid egg parasite). A eukaryotic-specific SCP
+domain, best characterized in plant pathogenesis defense proteins, has been
+identified, as well as a putative secretion signal.
+(E)TheLhVLP Bap31-like (CDD domain
+cd05380, E = 1.95 e−42) protein is aligned with
+five similar sequences (BLASTp nr, 59 – 76% identity; 1
+e−126<= E <= 4
+e−83) from other insects, including two species of
+ant (Florida carpenter and red imported fire ant), wasp (a Braconid and the
+Jewel parasitoid), andDrosophila mojavensis. Canonical
+Bap31 proteins regulate ER-stress-mediated apoptosis. Similar to these
+proteins, theLhVLP protein is predicted to encode three
+transmembrane helices.
+(F)TheLhVLP knottin-like (pfam11410
+domain, E = 5.19 e−03) protein is aligned with
+five similar sequences (BLASTp nr, 33 – 52% identity; 3
+e−08<= E <= 2
+e−02), four from insect species and one from the
+eudicotyledon,Mesembryanthemum crystallinum. Among the
+most similar putative homologs are sequences from diverse insects:
+Hymenoptera (sawfly and wasp), Diptera, and Hemipteran species. The sequence
+contains a putative secretion signal motif and three predicted disulfide
+bridges. 40% of the VLP sequence shows notable conservation
+(54% identity) when compared to a secreted ion channel toxin from
+the spiderChilobrachys guangxiensis(Arachnida:
+Theraphosidae). Knottins are classified as a cystine-rich plant
+antimicrobial peptide family.
+(G)TheLhVLP hemolymph juvenile
+hormone binding protein (JHBP)-like (pfam06585 domain, E = 6.10
+e−17) protein is aligned with four similar sequences
+(BLASTp nr, 24 – 30% identity; 1 e−11<= E <= 6 e−03) from a
+wheat stem sawfly, the Panamanian leafcutter ant, the diamondback moth, andDrosophila melanogaster. No high identity homologs were
+found, but moderately similar homologs were found encoded by wasps, ants,
+and arthropods, in general. Homologs inDrosophilaspp.
+were found, but are not functionally well characterized. The regions of
+similarities are within 80 to 90% of the length of the VLP protein
+sequence, but largely only in comparisons to putative homologs from other
+hymenoptera.
+Data S2:LhVLP GTPase alignments (Related
+toFigs 2,3A, &4A –
+C)
+This document provides alignments of select small and large VLP
+GTPases (including SmGTPases01/LgGTPases01) with putative homologs/paralogs
+from(A)Lh;(B)prokaryotic and eukaryotic species;(C)Ganaspis sp.1(G1); and(D, E)Leptopilina clavipes(Lc). The far N-and
+C-termini show the most variation among the sequences and were trimmed. The
+residue range displayed is indicated after the species of origin. The
+coloring scheme is according to physiochemical properties. ORF =
+open reading frame.
+(A)EightLhVLP GTPases are presented
+here. Additional putative GTPase family members exist, but are not presented
+here. The first three sequences of ~ 300 residues, are SmGTPases,
+while the following five sequences of ~ 500 residues are LgGTPases.
+Among the eight family members shown here, the percent similarities within
+the N-terminal regions range from ~ 25 to 60% and average
+pairwise similarity over their full lengths is 45%. Only seven
+insertion/deletion sites exist in this 222 amino acid alignment and large
+blocks of identity (> 80% of the alignment length) are
+present. Highly similar secretion signal peptides are predicted at the
+N-termini of all GTPases (not shown).
+(B)The five most-similar ORFs found in the NCBI TSA
+transcriptome for G1 (GAIW00000000.1) are shown aligned withLhVLP Sm/LgGTPase01s. Like theLhVLP
+GTPases, several putative G1 GTPases have predicted secretion signal
+peptides (not shown). Potential G1 homologs demonstrate >=
+31% and 35% identity (E <=
+3e−03and 4e−59) toLhVLP SmGTPase01 and LgGTPase01, respectively (given
+75% alignment coverage).
+(C)The five most-similar ORFs found in the NCBI TSA
+transcriptome forLc(GAXY00000000.2) are shown aligned
+withLhVLP Sm/LgGTPase01s. Similar toLhand G1 GTPases, multipleLcGTPases have predicted signal
+sequence peptides. TheLctranscripts identified show
+similarity in the N-terminal G domain, but are generally much shorter than
+theLhVLP GTPases.LhVLP SmGTPase01
+shows <= 34% identity toLctranscripts (>= 75% alignment criterion, E
+>= 2e−34) and LgGTPase01 shows
+<= 44% identity (E >=
+3e−99), respectively.Lcalso
+parasitizesDrosophilaspp., but its comparative virulence
+and phylogenetic distance are poorly characterized in comparison toLhandLb.
+(D)The most similarLhandLcsequences have been extracted from(C)and are shown here.
+Acknowledgments
+We would like to thank E. Miller, J. Crissman, & J. Berriman, along with
+Govind and Singh lab members (M. Badri, H. Chiu, A. Hudgins, J. Morales, I.
+Paddibhatala, R. Rajwani, S. Shamburger, and B. Wey) for discussions, experimental
+assistance, and reagents. This work was supported by grants from NASA (NNX15AB42G),
+NSF (IOS-1121817), NIH (1F31GM111052-01A1 and 5G12MD007603-30).
+Footnotes
+Publisher's Disclaimer:This is a PDF file of an unedited manuscript
+that has been accepted for publication. As a service to our customers we are
+providing this early version of the manuscript. The manuscript will undergo
+copyediting, typesetting, and review of the resulting proof before it is
+published in its final citable form. Please note that during the production
+process errors may be discovered which could affect the content, and all legal
+disclaimers that apply to the journal pertain.
+AUTHOR CONTRIBUTIONS
+Conceptualization, M.H., J.R., S.S., S.G.; Validation, M.H., J.R., S.S., S.G.;
+Investigation (bench), M.H., J.R., G.G., G.D., R.W., S.G.; Investigation
+(bioinformatics), M.H., G.G., G.R., M.S., J.K., S.S., S.G.; Data Curation, M.H.,
+G.D., G.R., J.K., S.G., S.S., R.W.; Writing – original draft, M.H.,
+J.R., G.G., G.R., G.D., M.S., R.W., S.S., S.G.; Writing – review
+& editing, M.H., J.R., G.D., S.B., R.W., S.S., S.G.; Visualization,
+M.H., J.R., G.R., S.S., S.G.; Supervision, S.G., S.S., R.W.; Funding
+Acquisition, M.H., S.G., S.B.
+References
+Associated Data
+This section collects any data citations, data availability statements, or supplementary materials included in this article.
+Supplementary Materials
+(A) Anti-p40 antibody reacts at the expected molecular weight (top bands) for the His-tagged
+p40 central domain (CD, residues 26-240) from bacterial extracts, and (B) with venom extracts
+(VGE) from L. heterotoma (Lh) and L. victoriae (Lv) female wasps. In panel A, S=supernatant;
+P=pellet. Uninduced and induced refer to bacterial extracts prepared without or with IPTG
+induction for p40 CD expression. p40's identity was also confirmed with anti-His antibody (not
+shown). The p40-positive bands at higher molecular weights (B) suggest higher-order protein
+associations and/or post-translational modifications. (C) Comparison of the Shigella flexneri
+IpaD (2J0O) structure and L. heterotoma p40 model (Figure 4 E): The residue numbers for the p40
+model do not include the predicted signal peptide. The first and last model residues are 26 and
+213 of the predicted full length protein, respectively. The p40 model lacks the short α-helix and
+β-hairpin at residues 208-251 in IpaD and the model's local quality drops in this region. 310helices are found in the p40 model, in addition to α-helices. 310and α-helices psi/phi angles are
+similar. These 310helices could render as α-helices, given slight conformational and energetic
+shifts in the model. Experimental methods are necessary to validate these p40 model predictions.
+A summary of proteomic data for proteins common toLh14 (Gel01) andLhNY (Gel02) VLPs
+purified on Nycodenz gradients is presented here. The data are organized by
+our in-house VLP_Swiss-Prot identifiers. The wasp strain (column 6) from
+which the greatest number of VLP protein peptides were detected is provided
+first (columns 2 – 5). Data shown include protein identification
+probability, peptide to protein alignment coverage, exclusive unique
+spectra, and exclusive unique peptides. The number of unique peptides
+detected from the secondLhstrain’s VLPs (column
+8) for each protein is given in column 7.
+This table provides additional information not presented in the
+peptide-to-ORF table (Table S1). The peptide sequences detected for each
+protein from bothLh14 (Gel01) andLhNY
+(Gel02) VLP preparations are provided along with post-translational
+modifications (columns 1, 2, and 11, respectively). The SDS-PAGE gel band of
+origin for each peptide can be found in column 23 (i.e., spectrum file ID).
+Any redundancies in protein identifications per peptide are provided in
+columns 21 and 22.
+Data S1: Select infection- and immunity-relatedLhVLP protein alignments (Related toFigs 2,3A)
+Seven(A–G)Class 2LhVLP
+proteins aligned with their most similar putative homologs from prokaryotic,
+viral, and eukaryotic species (emphasis on Hymenotpera and Diptera). If
+sequences were trimmed, the absolute residue range is given following the
+species of origin. The coloring scheme is based on physiochemical
+properties. ORF = open reading frame
+(A)Two diedel-likeLhVLP sequences
+with pfam13164 domains identified (E = 2.29e−12and 1.17e−07, diedel-like 1 and 2, respectively) are
+aligned with nine similar sequences (BLASTp nr, 25 – 53%
+identity; 7e−08<= E <=
+3e−01). Five of the putative homologs are fromDrosophilaspp. and are four from dsDNA insect viruses
+(granulovirus, ascovirus, and entomopoxvirus). Both sequences contain
+secretion signal motifs, and multiple predicted disulfide bridges. TheD. melanogasterdiedel, a putative homolog, is a
+negative regulator of the JAK-STAT pathway.
+(B)ALhVLP enhancin-like protein is
+aligned with similar prokaryotic sequences (BLAST2GO and Delta BLAST nr, 20
+– 42% identity; 5.33e−04<= E <= 9e−03). Multiple
+sequences fromYersinia, Listeria, and other pathogenic
+bacterial species were found in our BLASTs and, in a few cases, these
+sequences were annotated as M60 peptidases. The VLP sequence contains a
+putative secretion signal motif, but no known domains were identified. It is
+notable that enhancin homologs encoded in viral genomes were not uncovered
+in our searches.
+(C)ALhVLP GH18 chitinase-like
+superfamily (CDD cd02873 domain, E = 0) protein is aligned with five
+similar sequences (BLASTp nr, 50 – 75% identity; 0
+<= E <= 2 e−143) from
+other insects, including the yellow-fever mosquito, the Tobacco horn worm,
+and three parasitoid wasps (the Jewel and two Braconid wasps). The VLP
+protein sequence encodes a predicted secretion signal and is predicted to be
+an Imaginal disc growth factor (Idgf)-like protein, a superfamily that
+diverged from chitinase-like proteins.
+(D)TheLhVLP venom allergen-like
+(CDD domain cd05380, E = 1.95 e−42) protein is
+aligned with five similar sequences (BLASTp nr, 37 – 42%
+identity; 6 e−41<= E <= 6
+e−34) from other insects, including the red imported
+fire ant, the Panamanian leafcutter ant, and three parasitoid wasps (Jewel,
+a Braconid wasp, and a Chalcidoid egg parasite). A eukaryotic-specific SCP
+domain, best characterized in plant pathogenesis defense proteins, has been
+identified, as well as a putative secretion signal.
+(E)TheLhVLP Bap31-like (CDD domain
+cd05380, E = 1.95 e−42) protein is aligned with
+five similar sequences (BLASTp nr, 59 – 76% identity; 1
+e−126<= E <= 4
+e−83) from other insects, including two species of
+ant (Florida carpenter and red imported fire ant), wasp (a Braconid and the
+Jewel parasitoid), andDrosophila mojavensis. Canonical
+Bap31 proteins regulate ER-stress-mediated apoptosis. Similar to these
+proteins, theLhVLP protein is predicted to encode three
+transmembrane helices.
+(F)TheLhVLP knottin-like (pfam11410
+domain, E = 5.19 e−03) protein is aligned with
+five similar sequences (BLASTp nr, 33 – 52% identity; 3
+e−08<= E <= 2
+e−02), four from insect species and one from the
+eudicotyledon,Mesembryanthemum crystallinum. Among the
+most similar putative homologs are sequences from diverse insects:
+Hymenoptera (sawfly and wasp), Diptera, and Hemipteran species. The sequence
+contains a putative secretion signal motif and three predicted disulfide
+bridges. 40% of the VLP sequence shows notable conservation
+(54% identity) when compared to a secreted ion channel toxin from
+the spiderChilobrachys guangxiensis(Arachnida:
+Theraphosidae). Knottins are classified as a cystine-rich plant
+antimicrobial peptide family.
+(G)TheLhVLP hemolymph juvenile
+hormone binding protein (JHBP)-like (pfam06585 domain, E = 6.10
+e−17) protein is aligned with four similar sequences
+(BLASTp nr, 24 – 30% identity; 1 e−11<= E <= 6 e−03) from a
+wheat stem sawfly, the Panamanian leafcutter ant, the diamondback moth, andDrosophila melanogaster. No high identity homologs were
+found, but moderately similar homologs were found encoded by wasps, ants,
+and arthropods, in general. Homologs inDrosophilaspp.
+were found, but are not functionally well characterized. The regions of
+similarities are within 80 to 90% of the length of the VLP protein
+sequence, but largely only in comparisons to putative homologs from other
+hymenoptera.
+Data S2:LhVLP GTPase alignments (Related
+toFigs 2,3A, &4A –
+C)
+This document provides alignments of select small and large VLP
+GTPases (including SmGTPases01/LgGTPases01) with putative homologs/paralogs
+from(A)Lh;(B)prokaryotic and eukaryotic species;(C)Ganaspis sp.1(G1); and(D, E)Leptopilina clavipes(Lc). The far N-and
+C-termini show the most variation among the sequences and were trimmed. The
+residue range displayed is indicated after the species of origin. The
+coloring scheme is according to physiochemical properties. ORF =
+open reading frame.
+(A)EightLhVLP GTPases are presented
+here. Additional putative GTPase family members exist, but are not presented
+here. The first three sequences of ~ 300 residues, are SmGTPases,
+while the following five sequences of ~ 500 residues are LgGTPases.
+Among the eight family members shown here, the percent similarities within
+the N-terminal regions range from ~ 25 to 60% and average
+pairwise similarity over their full lengths is 45%. Only seven
+insertion/deletion sites exist in this 222 amino acid alignment and large
+blocks of identity (> 80% of the alignment length) are
+present. Highly similar secretion signal peptides are predicted at the
+N-termini of all GTPases (not shown).
+(B)The five most-similar ORFs found in the NCBI TSA
+transcriptome for G1 (GAIW00000000.1) are shown aligned withLhVLP Sm/LgGTPase01s. Like theLhVLP
+GTPases, several putative G1 GTPases have predicted secretion signal
+peptides (not shown). Potential G1 homologs demonstrate >=
+31% and 35% identity (E <=
+3e−03and 4e−59) toLhVLP SmGTPase01 and LgGTPase01, respectively (given
+75% alignment coverage).
+(C)The five most-similar ORFs found in the NCBI TSA
+transcriptome forLc(GAXY00000000.2) are shown aligned
+withLhVLP Sm/LgGTPase01s. Similar toLhand G1 GTPases, multipleLcGTPases have predicted signal
+sequence peptides. TheLctranscripts identified show
+similarity in the N-terminal G domain, but are generally much shorter than
+theLhVLP GTPases.LhVLP SmGTPase01
+shows <= 34% identity toLctranscripts (>= 75% alignment criterion, E
+>= 2e−34) and LgGTPase01 shows
+<= 44% identity (E >=
+3e−99), respectively.Lcalso
+parasitizesDrosophilaspp., but its comparative virulence
+and phylogenetic distance are poorly characterized in comparison toLhandLb.
+(D)The most similarLhandLcsequences have been extracted from(C)and are shown here.

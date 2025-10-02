@@ -1,0 +1,30 @@
+,Gene symbol,Protein,Molecular function
+Up-regulated genes,,,
+,Elovl5,fatty acid elongase,"Affiliated tissues include brain, eye and spinal cord. Related phenotypes are slow eye movements and nystagmus."
+,Myoc,myocilin,Found in eye trabecular meshwork and the ciliary body. It regulates the pressure within the eye (intraocular pressure).
+,Ctgf,connective tissue growth factor,"CTGF has important roles in many biological processes, including cell adhesion, tissue growth factor migration, proliferation, angiogenesis and tissue wound repair."
+,"Nr4a1,4a3",retinoid receptor,Components of retinoic acid (RA) signaling pathway. Play important role in mediating eye development.
+,Egr1,zinc finger protein,"Binds to the promoter region of target genes. Regulates the response to growth factors DNA damage, ischemia, cell survival, proliferation, and cell death."
+,"Serpinf1, e2, h1, g1",serine protease Inhibitors,Pigment epithelium-derived factor (PEDF) also known as serpin F1 (SERPINF1). It influences development and differentiation of the neural retina.
+,krt12,epithelial keratins,Krt12 is a specific corneal epithelial differentiation marker. It is involved in adult corneal epithelial homeostasis and wound healing response.
+,Sox10,SOX10 protein,"SOX10 protein directs neural crest cells to become more specific cell types. In particular, the SOX10 protein is essential for the production of melanocytes."
+,Mlph,exophilin,"This protein tethers pigment-producing melanosomes to the actin cytoskeleton in melanocytes, and is required for visible pigmentation in the hair and skin."
+,Lyz2,lysozyme,Associates with the monocytemacrophase system and enhances the activity of immunoagents. Active against a range of Gram-positive and Gram-negative bacteria.
+,"Col1a1, 8a2, 12a1",alpha chains of type VIII and XII collagen,Major component of the basement membrane of the corneal endothelium.
+,Rnu2-10,small nuclear RNA,Mutation of Rnu2-8 causes ataxia and neurodegeneration.
+Down-regulated genes,,,
+,Amy1,amylase 1,Endohydrolysis of (1→4)-alpha-D-glucosidic linkages in oligosaccharides and polysaccharides.
+,"Krt1, Krt10",epithelial keratins,"Important constituent of nonkeratinized epithelia such as those covering the Cornea and conjunctiva, the ocular surface."
+,Slc31a2,solute carrier1,Involved in low-affinity copper uptake.
+,Sst,somatostatin,"Growth hormone-inhibiting hormone (GHIH), regulates the endocrine system and affects neurotransmission and cell proliferation via somatostatin receptors."
+,Wisp1,WNT1,Downstream regulator in the Wnt/Frizzled-signaling pathway. Associated with cell survival.
+,Azi2,5-azacytidine,Activates serine/threonine-protein kinase TBK1 and facilitates its oligomerization.
+,Zfand6,AN1-Type Zinc Finger Protein,Involved in regulation of TNF-alpha induced NF-kappa-B activation and apoptosis.
+,Ttc14,tetratricopeptide repeat domain 14,Maybe involved in ectoderm differentiation and neurulation.
+,Asprv1,Aspartic Protease,ASPRV1 associated diseases include retinitis pigmentosa and artrichia with papular lesions.
+,Wdr89,WD repeat domain 89,Plays an important role in the elongation step of protein synthesis.
+,Psca,WD,Cell membrane glycoprotein. May be involved in the regulation of cell proliferation.
+,Olfr613,olfactory receptor 613,G protein-coupled receptor activity
+,Sbsn,suprabasin,"Oncoprotein, upregulated in multiple cancers."
+,Adamts3,disintegrin,Major procollagen II N-propeptidase. A deficiency of this protein may be responsible for Dermatosparaxis
+,Zfp488,zinc finger protein,function involved in transcriptional regulation.

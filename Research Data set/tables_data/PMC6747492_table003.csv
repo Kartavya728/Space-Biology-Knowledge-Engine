@@ -1,0 +1,7 @@
+Pathway Name,Associated Mouse Genes,Mouse Pathway ID,Human Pathway ID
+Neuronal System,"Gria3, Cacnb3, Hcn1, Camkk2, Kcnh1, Kcnma1, Kcnn1, Stx1a, Kcnv1, Kcnh5, Grin2a, Slc17a7, Dlgap1, Homer1, Snap25, Nrgn, Kcnh7, Slitrk1",R-MMU-112316,R-HSA-112316
+Potassium Channels,"Kcnn1, Kcnh5, Kcnma1, Hcn1, Kcnh1, Kcnv1, Kcnh7",R-MMU-1296071,R-HSA-1296071
+Voltage Gated Potassium Channels,"Kcnv1, Kcnh1, Kcnh5, Kcnh7",R-MMU-1296072,R-HSA-1296072
+cGMP effects,Pde1a,R-MMU-418457,R-HSA-418457
+p75 NTR receptor-mediated signaling,"Rtn4r, Obscn, Lingo1, Kalrn",R-MMU-193704,R-HSA-193704
+Nitric oxide stimulates guanylate cyclase,Pde1a,R-MMU-392154,R-HSA-392154

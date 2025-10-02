@@ -1,0 +1,13 @@
+Location number,Location description,ISS module
+1,Port panel next to cupola,Node 3
+2,Waste and hygiene compartment,Node 3 “F4”
+3,Advanced resistive exercise device (ARED) foot platform,Node 3
+4,Dining table,Node 1
+5,Overhead 4,Node 1
+6,Permanent multipurpose module (PMM) Port 1,PMM
+7,Lab 3 overhead,LAB
+8,"Port crew quarters, bump out exterior aft wall",Node 2
+Environmental parameters,Flight 1 (F1),Flight 2 (F2),Flight3 (F3)
+Sampling date,March 4th 2015,May 15th 2015,May 6th 2016
+Vehicle (ascent/descent),SpX-5/TMA-14A,SpX-6/SpX-6,SpX-8/SpX-8
+Crewmember who performed sampling,T. Virts,T. Virts,J.Williams

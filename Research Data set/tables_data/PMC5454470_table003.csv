@@ -1,0 +1,18 @@
+,Present Study,Ross (2000)
+Animals,,
+Animal model,C57Bl/6J mice,Sprague-Dawley rats
+Age*,16 wk,Unspecified adults
+Sex,Female,Unspecified
+Body mass†,20.4,330–404
+Housing,Group,Single
+Methodology,,
+Primary experimental method,Immunohistochemistry,Transmission electron microscopy
+Specimen harvest,Postflight,"In-flight, postflight"
+Counting unit,"Pre- and postsynaptic pairs, CtBP2+ synaptic ribbons",synaptic ribbons
+Topographic region,"Striola, medial extrastriola",“Posterior”‡
+Statistics,Linear mixed model ANOVA with bootstrap resampling,ANOVA
+Outcomes,,
+Principal results,Synapse density decrease (medial extrastriola),Synaptic ribbon density increase for in-flight harvested specimens
+No change in total CtBP2 ribbon density; striolar ribbon densities nudged upward in microgravity,Variability in controls precluded similar conclusion for postflightday 0specimens
+Interpretation,Topography-dependent plasticity associated with dynamic response heterogeneity,Spaceflight-induced ribbon density changes stable to gravity transitions of earth-return
+Synaptic plasticity (density change in pre/postsynaptic components) unlikely to involve change in synaptic ribbon density,Increased ribbon density may not define increase in functional synapses

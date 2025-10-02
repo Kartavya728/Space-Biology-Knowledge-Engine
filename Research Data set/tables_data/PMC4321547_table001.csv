@@ -1,0 +1,21 @@
+Probe set ID,Locus ID,Lerover Cvi fold change,Log2expression level,Description
+,,,Ler,Cvi,
+260097_at,AT1G73220,72.7 down,3.7,9.9,Organic cation transporter (OCT1)
+264100_at,AT1G78970,48.5 down,1.9,7.5,Lupeol synthase (LUP1)
+245215_at,AT1G67830,6.0 down,5.9,8.5,α-Fucosidase (FXG1)
+245736_at,AT1G73330,5.1 down,10.9,13.3,Protease inhibitor (DR4)
+259941_s_at,AT1G71280,4.4 down,5.2,7.4,DEAD/DEAH box helicase
+260806_at,AT1G78260,2.9 down,9.4,11.0,RNA-binding protein
+260401_at,AT1G69840,2.5 down,8.9,10.2,Unknown protein
+264144_at,AT1G79320,2.2 down,7.4,8.5,Metacaspase (MC6)
+259705_at,AT1G77450,2.0 up,12.1,11.1,NAC transcription factor (NAC032)
+259977_at,AT1G76590,3.1 up,8.3,6.7,Zinc-binding protein
+261901_at,AT1G80920,3.4 up,12.4,10.6,DNA-J protein (J8)
+260411_at,AT1G69890,3.4 up,7.6,5.9,Unknown protein
+264957_at,AT1G77000,3.7 up,10.1,8.2,F-box protein (SKP2B)
+262362_at,AT1G72840,4.0 up,7.4,5.4,ATP-binding transmembrane receptor
+260207_at,AT1G70730,4.7 up,10.8,8.6,Phosphoglucomutase
+245731_at,AT1G73500,8.9 up,10.1,6.9,MAP kinase kinase (MKK9)
+260101_at,AT1G73260,12.2 up,12.6,9.0,Trypsin protease inhibitor
+259866_at,AT1G76640,14.3 up,7.4,3.6,Calmodulin-related protein
+264720_at,AT1G70080,20.8 up,10.3,5.9,Terpene synthase

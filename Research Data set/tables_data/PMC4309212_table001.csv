@@ -1,0 +1,9 @@
+Condition,Zygosity,Generations
+Ground,Homozygous,"7, 14, 21"
+Ground + 0.5 M NaCl,Homozygous,"7, 14, 21"
+Flight,Homozygous,"7, 14, 21"
+Flight + 0.5 M NaCl,Homozygous,"7, 14, 21"
+Ground,Heterozygous,"14, 21*"
+Ground + 0.5 M NaCl,Heterozygous,"7, 14, 21"
+Flight,Heterozygous,"14, 21*"
+Flight + 0.5 M NaCl,Heterozygous,"7, 14, 21"

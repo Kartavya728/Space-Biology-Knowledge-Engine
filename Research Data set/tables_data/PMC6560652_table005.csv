@@ -1,0 +1,15 @@
+Condition,Msn4 dependence,,Sfp1 dependence,,Study
+,SSA4,RPL34B,SSA4,RPL34B,
+"1g Static - Rich media, liquid",No,No,No,Yes,Coleman et al. (2008a)
+"Magnetic levitation - Rich media, liquid",Yes,Yes,Yes,Yes,Coleman et al. (2007)
+"Neutral buoyancy - Rich media, liquid",Yes,No,Yes,No,Coleman et al. (2008b)
+"Spaceflight - Rich media, liquid",Yes,Yes,No,No,Coleman et al. (2008a)
+"RWV - Rich media, liquid",Yes,Yes,Yes,No,Coleman et al. (2008b)
+"1g Static - Rich media, plated",No,No,Yes,Yes,this report
+"RPM - Rich media, plated",Yes,Yes,Yes,Yes,this report
+"RWV - Rich media, plated",Yes,Yes,Yes,No,this report
+"Spaceflight - Rich media, plated",No,Yes,Yes,Yes,this report
+"1g Static - Poor media, plated",Yes,No,Yes,Yes,this report
+"RPM - Poor media, plated",No,Yes,Yes,Yes,this report
+"RWV - Poor media, plated",Yes,Yes,No,Yes,this report
+"Spaceflight - Poor media, plated",Yes,Yes,Yes,Yes,this report

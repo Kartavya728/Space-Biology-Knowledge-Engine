@@ -1,0 +1,44 @@
+REAGENT or RESOURCE,SOURCE,IDENTIFIER
+Antibodies
+""
+GSK3β,Cell signaling,Cat# 9315; RRID:AB_490890
+GSK3β (Ser9 phosphorylated),Cell signaling,Cat# 9322; RRID:AB_2115196
+GSK3α,Cell signaling,Cat# 4818; RRID:AB_10831511
+GSK3α (Ser9 phosphorylated),Cell signaling,Cat# 9316; RRID:AB_659836
+PGC-1α,Millipore,Cat# ST1204; RRID:AB_10807905
+COXIV,Abcam,Cat# ab16056; RRID:AB_443304
+FNDC5,Abcam,Cat# ab131390
+MHCI,DHSB,Cat# BA-F8; RRID:AB_10572253
+MHC IIa,DHSB,Cat# SC-71; RRID:AB_2147165
+MHC IIx,DHSB,Cat# 6H1; RRID:AB_1157897
+MHC IIb,DHSB,Cat# BF-F3; RRID:AB_2266724
+Pax7,DHSB,Cat# APAX7; RRID:AB_2299243
+Myogenin,DHSB,Cat# Myog; RRID:AB_2722260
+Anti-mouse HRP,Cell Signaling,Cat# 7076; RRID:AB_330924
+Anti-rabbit HRP,Cell Signaling,Cat# 7074; RRID:AB_2099233
+Alexa Fluor 647 anti-rabbit,ThermoFisher,Cat#A27040; RRID:AB_2536101
+Alexa Fluor 350 anti-mouse,ThermoFisher,Cat# A-21140; RRID:AB_2535777
+Alexa Fluor 488 anti-mouse,ThermoFisher,Cat# A-21121; RRID:AB_2535764
+Alexa Fluor 555 anti-mouse,ThermoFisher,Cat# A-21426; RRID:AB_2535847
+""
+Biological samples
+""
+RR9 soleus and tibialis anterior,NASA Biospecimens Sharing Program,N/A
+RR1 soleus,NASA Biospecimens Sharing Program,N/A
+RR18 soleus,NASA Biospecimens Sharing Program,N/A
+BION-M1 soleus and extensor digitorum longus,"Dr. Fabrice Bertile (Strasbourg, France)",N/A
+""
+Experimental models: Organisms/strains
+""
+GSK3α/β floxed mice,Brock University,N/A
+ACTA-1 Cre mice,Jackson Laboratories and now housed at Brock University,N/A
+""
+Software and algorithms
+""
+Molecular Devices SoftMax Pro,Molecular Devices,https://www.moleculardevices.com/products/microplate-readers/acquisition-and-analysis-software/softmax-pro-software?cmp=7010g000000nNCH&utm_source=AdWords&utm_medium=cpc&utm_campaign=MPR-Brand_CANADA&utm_adgroup={adgroup}&utm_location=9000776&utm_keyword=molecular%20devices%20softmax%20pro&utm_device=c&utm_devicemodel=&utm_placement=&utm_adpostion=&utm_target=&utm_network=g&utm_creative=413034758091&gclid=CjwKCAjw0dKXBhBPEiwA2bmObfQYfxhI9dqx2kDoEaENs2bFYuBzCML-NluCxhjnZ3efLgFFif0rvhoCsnYQAvD_BwE
+ImageLab,BioRad,https://www.bio-rad.com/fr-ca/product/image-lab-software?ID=KRE6P5E8Z
+Graphpad Prism 8,Graphpad Prism,https://www.graphpad.com/scientific-software/prism/
+ImageJ,NIH,https://imagej.nih.gov/ij/download.html
+NRecon V.1.7.3.1 software,Bruker microCT,N/A
+Osteosys software for INSIGHT small animal DXA scanner,Scintica,https://www.scintica.com/wp-content/uploads/2022/03/FAQ-iNSiGHT-DXA_v0122-1.pdf
+Aurora Scientific 600A software,Aurora Scientific,https://aurorascientific.com/products/muscle-physiology/muscle-daq-software/600a-real-time-muscle-system/

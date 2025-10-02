@@ -1,0 +1,186 @@
+REAGENT or RESOURCE,SOURCE,IDENTIFIER
+""
+Antibodies
+""
+"anti-Alpha 7 Integrin Alexa Fluor 647, clone R2F2",ablab.ca,Cat# 67-0010-05
+Alexa Fluor 488-conjugated mouse anti-phospho-p38 MAPK threonine 180/tyrosine 182,BD Biosciences,Cat# 612594; RRID: AB_399877
+Alexa Fluor 488 Donkey anti-goat IgG,Thermo Fisher Scientific,Cat# A11055; RRID:AB_2534102
+Alexa Fluor 488 Goat anti-rabbit IgG,Thermo Fisher Scientific,Cat# A-11034; RRID: AB_2576217
+Alexa Fluor 488 Goat anti-mouse IgG,Thermo Fisher Scientific,Cat# A-11001; RRID: AB_2534069
+Alexa Fluor 555 Donkey anti-goat IgG,Thermo Fisher Scientific,Cat# A21432; RRID:AB_2535853
+Alexa Fluor 555 Donkey anti-rabbit IgG,Thermo Fisher Scientific,Cat# A31572; RRID:AB_162543
+Alexa Fluor 555 Goat anti-rabbit IgG,Thermo Fisher Scientific,Cat# A21428; RRID:AB_2535849
+Alexa Fluor 647-conjugated mouse anti-Ku86,Santa Cruz,Cat# sc-515736 AF645
+Alexa Fluor 647 Goat-anti-mouse IgG,Thermo Fisher Scientific,Cat# A-21235; RRID: AB_2535804
+Dylight 800-conjugated Goat-anti-rabbit IgG,Rockland,Cat# 611-145-122; RRID:AB_1057618
+Goat anti-mouse Vcam1,Fisher Scientific,Cat# PIPA547029
+Hamster anti-mouse Bcl2,BD Biosciences,Cat# 556537 RRID:AB_396457
+Ki67 antibody,abcam,Cat# ab15580; RRID:AB_443209
+Mouse anti-human CD11b,Thermo Fisher Scientific,Cat# 14-0118-82; RRID:AB_467120
+Mouse anti-human CD31,Thermo Fisher Scientific,Cat# 14-0319-82; RRID:AB_467204
+Mouse anti-human CD45,Thermo Fisher Scientific,Cat# 14-0459-82; RRID:AB_467274
+Mouse anti-human NCAM,Thermo Fisher Scientific,Cat# 17-0567-42; RRID:AB_10597454
+Mouse anti-Pax7,Santa Cruz,Cat# sc-81648; RRID:AB_2159836
+Mouse anti-phospho-SAPK/JNK threonine 183/tyrosine 185,Cell Signaling,Cat# 9255; RRID: AB_2307321
+Rabbit anti-53bp1,Novus Biologicals,Cat# NB100-304; RRID:AB_10003037
+Rabbit anti-Ku80,Proteintech,Cat# 16389-1-AP; RRID:AB_2257509
+Rabbit anti-phospho-Akt serine 473,Cell Signaling,Cat# 4058; RRID:AB_331168
+Rabbit anti-phospho-p65 serine 529,abcam,Cat# ab97726; RRID:AB_10681170
+Rabbit anti-phospho-p65 serine 536,abcam,Cat# ab86299; RRID:AB_1925243
+Rabbit anti-phospho-p65 serine 536,abcam,Cat# ab131109; RRID:AB_11160495
+Rabbit anti-phospho-p70 s6 kinase threonine 421/serine 424,Cell Signaling,Cat# 9204; RRID: AB_2265913
+"Rat anti-CD11b-biotin, clone M1/70",BD Biosciences,Cat# 553309; RRID:AB_394773
+Rat anti-CD31-biotin,Fisher Scientific,Cat# 13-0311-85; RRID:AB_466421
+"Rat anti-mouse CD34-BV421, Clone RAM34",BD Biosciences,Cat# 562608; RRID:AB_11154576
+Rat anti-CD45-biotin,BD Biosciences,Cat# 553078; RRID:AB_394608
+"Rat anti-Ly-6A/E-biotin (Sca1), clone E13-161.7",BD Biosciences,Cat# 553334; RRID:AB_394790
+""
+Biological samples
+""
+Primary human MuSCs,"From collaborator Tichy et al., 2017",N/A
+Human skeletal muscle paraffin sections,Obtained in-house and from US Biomax,N/A
+""
+"Chemicals, peptides, and recombinant proteins"
+""
+16% paraformaldehyde,Electron Microscopy Sciences,Cat# 15710
+2-Mercaptoethanol,Bio-Rad,Cat#1610710
+2-Methylbutane,Honeywell,Cat#M32631
+4% paraformaldehyde,Thermo Scientific,Cat# J19943-K2
+5-Ethynyl-2′-deoxyuridine (EdU),abcam,Cat# ab146186
+7-aminoactinomycin D (7-AAD),Fisher Scientific,Cat# A1310
+Accumax,Fisher Scientific,Cat# SCR006
+"Acetic Acid, glacial",Fisher Scientific,Cat# A38S
+Alcoholic Eosin,American MasterTech Scientific,Cat# STE0157
+Antibiotic-antimycotic,GIBCO,Cat# 15240-062
+Antigen unmasking solution,Vector Labs,Cat# H-3300
+Avidin/Biotin blocking solution,Vector Labs,Cat# SP2001
+Bluing,American MasterTech Scientific,Cat# HXB00242E
+Bouin’s solution,Sigma-Aldrich,Cat# HT10132
+Bovine Serum Albumin (Fraction V),Gemini Bio-Products,Cat# 700-100P
+Cenpb-Cy3,PNA Bio,Cat# F3002
+Collagen,Sigma-Aldrich,Cat# C8919
+Collagenase type 1A,Sigma-Aldrich,Cat# C9891
+Corn Oil,Millipore-Sigma,Cat# C8267
+Cytoseal-Xyl,Thermo Scientific,Cat# 8312-4
+DAPI,Sigma-Aldrich,Cat# D9542
+DRAQ5,Biolegend,Cat# 424101
+Dextran sulfate sodium salt,Sigma-Aldrich,Cat# D8906
+Dispase II,Roche,Cat# 04942078001
+DMEM high glucose,Corning,Cat# 10-017-CV
+DMEM/F-12,ThermoFisher Scientific,Cat#11330-032
+EDTA,Invitrogen,Cat#15575-020
+"Ethanol, 200 proof",Decon Labs,Cat# 2701
+ESGRO-2i,EMD Millipore,Cat# ESG1121
+Ethylene Carbonate,Sigma-Aldrich,Cat# E26258
+Fetal Bovine Serum,Corning,Cat# MT35-010-CV
+Fluoromount G plus DAPI,Southern Biotech,Cat# 0100-20
+"Formaldehyde solution, 37%",Sigma-Aldrich,Cat# F1635
+Formamide,Sigma-Aldrich,Cat# 47670
+Gill’s Hematoxylin,Cancer Diagnostics,Cat# CM5951
+Glutamax,GIBCO,Cat# 35050-061
+Igepal CA-630,Sigma-Aldrich,Cat# I8896
+Laminin,Sigma-Aldrich,Cat#11243217001
+"Luria Broth, Miller",Sigma-Aldrich,Cat# L3152
+Maleic acid,Sigma-Aldrich,Cat# M0375
+MEM Nonessential amino acids,GIBCO,Cat# 11140-050
+Methanol,Fisher Scientific,Cat# A412-4
+Magnesium chloride,Sigma-Aldrich,Cat# M8266
+Mouse on mouse kit,Vector Labs,Cat# BMK-2202
+Normal Goat Serum,ThermoFisher Scientific,Cat# 16210-072
+Notexin,Accurate Chemical/Latoxan,Cat# TXL8104-100
+OCT,Thermo Scientific,Cat# 6502G
+Phosphate buffered saline,Made in house,N/A
+Prolong gold plus DAPI,ThermoFisher Scientific,Cat#P36935
+Red cell lysis buffer,Invitrogen,Cat# 50-112-9751
+Ringers solution,Made in house,N/A
+RNase A,Fisher Scientific,Cat# AM9780
+"SSC buffer, 20X",Corning,Cat# 46-020-CM
+Streptavidin Alexa Fluor 488,Biolegend,Cat# 405235
+Streptavidin APC-Cy7,BD Biosciences,Cat# 554063
+Streptavidin PE-Cy7,Biolegend,Cat# 405206
+Tamoxifen,Sigma-Aldrich,Cat# T5648
+Taqman universal 2x master mix,Applied Biosystems,Cat# 4304437
+TelC-Alexa Fluor 647,PNA Bio,Cat# F1013
+TelC-Cy3,PNA Bio,Cat# F1002
+Telomere blocking buffer,Millipore-Sigma,Cat# 11096176001
+Triton X-100,Fisher Scientific,Cat# BP151
+Tris-Cl,Quality Biological,Cat#351-006-131
+Trypsin-EDTA,GIBCO,Cat# 25200-056
+Tween 20,Fisher Scientific,Cat# BP337
+Weigert’s Iron Hematoxylin A,Electron Microscopy Sciences,Cat# 26386-02
+Weigert’s Iron Hematoxylin B,Electron Microscopy Sciences,Cat# 26386-03
+Xylene,Fisher Scientific,Cat# X5-4
+""
+Critical commercial assays
+""
+Click-iT EdU Alexa Fluor 594 Imaging Kit,Life Technologies,Cat#C10339
+Creatine Kinase Assay,Sekisui Diagnostics,Cat# 326-10
+Protoscript II cDNA First Strand Synthesis Kit,New England Biolabs,Cat# E6560S
+Qiafilter Plasmid Midi Kit,QIAGEN,Cat# 12243
+Rneasy Plus Micro Kit,QIAGEN,Cat# 74034
+Trichrome Staining Kit,Sigma-Aldrich,Cat# HT15-1KT
+""
+Experimental models: Cell lines
+""
+"Human MuSCs, primary (NCAM+/CD31−/CD45−/CD11b−)","Collaborator: (Tichy et al., 2017)",N/A
+Mouse C2C12 Cells,ATCC,Cat# CRL-1772; RRID:CVCL_0188
+Mouse Embryonic Stem Cells (W4),University of Pennsylvania iPS cell core,RRID:CVCL_Y634
+""
+Experimental models: Organisms/strains
+""
+Mouse: C57BL/6J,Jackson Labs,Stock# 000664; RRID:IMSR_JAX:000664
+Mouse: IKK2CA: B6.Cg-Gt(ROSA)26Sortm4(Ikbkb)Rsky/J,Jackson Labs,Stock # 008242; RRID:IMSR_JAX:008242
+Mouse: Ku80+/−,"Collaborator: Zhu et al., 1996",N/A
+Mouse: mdx4cv: B6Ros.Cg-Dmdmdx-4Cv/J,Jackson Labs,Stock# 002378; RRID:IMSR_JAX:002378
+Mouse: NEMOKOFlox,"Described inSchmidt-Supprian et al., 2000",N/A
+Mouse: Pax7EGFP,"Generated In-houseTichy et al., 2018",N/A
+Mouse: Pax7ERT2Cre: B6.Cg-Pax7tm1(cre/ERT2)Gaka/J,Jackson Labs,Stock # 017763; RRID:IMSR_JAX:017763
+""
+Oligonucleotides
+""
+CHUK- FAM,Applied Biosystems,Assay ID# Mm00432529_m1
+Gapdh-VIC-MGB,ThermoFisher Scientific,Cat# 4352339e
+IKBKB -FAM,Applied Biosystems,Assay ID# Mm01222247_m1
+IKBKG-FAM,Applied Biosystems,Assay ID# Mm00494927_m1
+POT1B-FAM,Applied Biosystems,Assay ID# Mm01278790_m1
+TERF1-FAM,Applied Biosystems,Assay ID# Mm00436928_m1
+TERF2-FAM,Applied Biosystems,Assay ID# Mm01253555_m1
+TERF2IP-FAM,Applied Biosystems,Assay ID# Mm01243676_m1
+TERT-FAM,Applied Biosystems,Assay ID# Mm00436931_m1
+TINF2-FAM,Applied Biosystems,Assay ID# Mm00461166_g1
+TPP1-FAM,Applied Biosystems,Assay ID# Mm00487016_m1
+XRCC5-FAM,Applied Biosystems,Assay ID# Mm00550142_m1
+XRCC6-FAM,Applied Biosystems,Assay ID# Mm00487458_m1
+""
+Recombinant DNA
+""
+shEmpty (pLKO.1 puro),Addgene,RRID: Addgene_8453
+shXRCC5-1,Sigma-Aldrich,Cat#:SHCLNG-NM_00953; ID#: TRCN0000312925
+shXRCC5-2,Sigma-Aldrich,Cat#:SHCLNG-NM_00953; ID#: TRCN0000071044
+""
+Software and algorithms
+""
+Fiji,Open Source,https://imagej.net/Fiji
+Flowjo v. 10.7.1,Licensed Software,https://www.flowjo.com
+Graphpad Prism v. 6.0h,Licensed Software,https://www.graphpad.com
+ImageJ,Open Source,https://imagej.net/Welcome
+Image Studio,Licensed Software,https://www.licor.com/bio/image-studio/
+Lasagna,Open Source,https://biogrid-lasagna.engr.uconn.edu/lasagna_search/index.php
+Leica Application Suite X,Licensed Software,https://www.leica-microsystems.com/products/microscope-software/p/leica-las-x-ls/
+NIS-Elements,Licensed Software,https://www.microscope.healthcare.nikon.com/products/software/nis-elements
+"Odyssey Infared Imaging Software, v. 3.0.30",Licensed Software,https://www.licor.com
+Telometer ImageJ Plugin,Open Source,https://demarzolab.pathology.jhmi.edu/telometer/
+Zeiss Zen Imaging Software,Licensed Software,https://www.zeiss.com/microscopy/us/products/microscope-software/zen.html
+""
+Other
+""
+40 μm cell strainers,VWR,Cat# 10199-654
+70 μm cell strainers,Thermo Fisher Scientific,Cat# 08-771-2
+"96 well plate, black, optical flat bottom",Thermo Fisher Scientific,Cat# 4311971
+"96 well plate, v bottom",Greiner Bio-One,Cat# 651160
+C-tubes,Miltenyi,Cat# 130-096-334
+Falcon tube with cell strainer cap,Fisher Scientific,Cat# 0877123
+Insulin Syringe,Exel International,Cat# 26028
+Lipofectamine 3000,Thermo Fisher Scientific,Cat# L3000008
+Nunc Lab-Tek II 8-well chamber slides,Thermo Fisher Scientific,Cat# 125658
+Superfrost plus microscope slides,Thermo Fisher Scientific,Cat# 1255015

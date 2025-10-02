@@ -1,0 +1,10 @@
+Gene Set,Kidney Gene #,Liver Gene #,Kidney ES,Liver ES,Kidney NES,Liver NES,Kidney FWERp,Liver FWERp,Kidney Np,Liver Np,Kidney FDRq,Liver FDRq,Kidney Rank,Liver Rank
+T cell activation,29,29,−0.26,0.19,−1.37,0.67,0.338,1,0,0.933,0.186,1,6874,6586
+Positive regulation of T cell activation,18,18,−0.26,0.29,−1.09,0.94,0.882,1,0.281,0.559,0.393,0.972,6874,4085
+Regulation of Lymphocyte activation,26,26,−0.26,0.21,−1.44,0.75,0.208,1,0,0.869,0.163,1,6874,6695
+Positive regulation of Lymphocyte activation,20,20,−0.26,0.22,−1.25,0.74,0.574,1,0.091,0.854,0.19,1,6874,4085
+Regulation of T cell activation,21,21,−0.26,0.24,−1.26,0.8,0.535,1,0.071,0.786,0.206,0.997,6874,4085
+Calcium channel activity,20,20,−0.27,0.22,−1.36,0.73,0.341,1,0.111,0.857,0.141,1,5840,2858
+Extracellular matrix structural constituent,15,15,−0.24,0.35,−1.03,1.09,0.946,1,0.526,0.343,0.453,0.873,6985,4443
+Heart development,24,24,−0.3,0.23,−1.49,0.78,0.173,1,0,0.828,0.272,1,6497,4327
+Hormone metabolic process,16,16,−0.16,0.35,−0.65,1.1,0.999,1,0.919,0.336,0.97,0.835,7751,4932

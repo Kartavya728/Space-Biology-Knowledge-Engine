@@ -1,0 +1,38 @@
+Metabolite,Fold- increase/decrease (simulated microgravity/normal gravity),p-value (Welch’s two samplettest)
+Cellular (14 total)
+Serine,2.16,0.04
+O-acetylserine,2.64,0.02
+Phenylpyruvate,2.31,0.04
+4-Hydroxyphenylpyruvate,3.25,0.004
+4-Methyl-2-oxopentanoate,2.91,0.008
+3-Methyl-2-oxovalerate,2.95,0.006
+Argininosuccinate,4.21,0.01
+Pyruvate,2.42,0.05
+Alpha-ketoglutarate,2.95,0.04
+Acetoacetate,4.54,0.001
+4-Hydroxy-2-oxoglutaric acid,2.28,0.03
+Adenine,1.82,0.04
+Uridine monophosphate (5′ or 3′),2.49,0.04
+Uracil,3.76,0.001
+Supernatant (21 total)
+Glycine,0.63,0.003
+Alanine,0.76,0.02
+N-acetylalanine,0.56,<0.001
+Aspartate,0.75,0.01
+Pyroglutamine,0.67,0.003
+Citramalate,0.47,<0.001
+4-Guanidinobutanoate,1.43,0.006
+Gamma-glutamylvaline,1.39,0.02
+Alanylglycine,0.76,0.02
+Alanylisoleucine,1.17,0.03
+Asparagylisoleucine,0.66,0.02
+Cyclo(Leu-Pro),0.91,0.03
+Glycylphenylalanine,0.84,0.01
+Leucylglycine,0.84,0.03
+Threonylisoleucine,1.37,0.02
+Glucose,0.12,0.006
+Fructose,0.51,0.02
+Guanine,1.66,0.001
+Nicotinate,0.32,<0.001
+"3,4-Dihydroxybenzoate",1.59,0.01
+1-Kestose,1.49,0.001

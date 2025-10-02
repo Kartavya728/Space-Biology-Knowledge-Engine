@@ -1,0 +1,11 @@
+Name,Publication Year,Description and Relevant Features,References
+Parent Software
+LAMMPS(Large-Scale Atomic/Molecular Massively Parallel Simulator),1995,Classical molecular dynamics simulatorBrownian motionGravity,[34]
+LIGGGHTS®(LAMMPS Improved for General Granular and Granular Heat Transfer Simulations),2012,Enhanced support for larger granular particlesHeat and mass transfer,[33]
+OpenFOAM (Field Operation and Manipulation),1998,Computational fluid dynamics packageSingle reference frameHeat convection buoyant Boussinesq approximation,[35]
+CFDEM®Coupling,2012,Couples LIGGGHTS®and OpenFOAMScalar transportRobust coupling models [36],[32]
+Related Software
+SediFOAM,2017,Alternative solid–fluid coupling approach of LAMMPS and OpenFOAM,[37]
+NUFEB (Newcastle University Frontiers in Engineering Biology),2019,Agent-based biological extension of SediFOAMEnergy-based and diffusion-based Monod KineticsBiological growth,[31]
+ParScale (Particle Scale Models),2017,Intra-particle transport models coupled to LIGGGHTS®and CFDEM®CouplingSingle chemical reaction,[38]
+COMETS (Computation of Microbial Ecosystems in Time and Space),2021,Population-based flux balance analysis with spatial growth and diffusionEvolutionMultiple species/genotypes,[39]

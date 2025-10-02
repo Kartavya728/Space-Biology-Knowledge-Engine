@@ -1,0 +1,38 @@
+Feature,m/z,Retention Time,Calculated Mass,Errora,Ion,Annotation,Annotation Levelb,Category,Pairwise: Wild Type Versusadt3/4/5/6(NA),Pairwise: Wild Type Versusadt3/4/5/6(DA)
+,,,,,,,,,–logP10,Fold,Higher/Lower,–logP10,Fold,Higher/Lower
+,,min,,ppm,,,,,,,,,,
+M545T1236,545.2598,20.59,545.2598,0.07,[M+FA–H]–,sn2-O-(Di-nor-oxophytodienoyl)-monogalactosyl monoglyceride,2,Galactolipids,1.65,2.0,H,1.65,2.0,H
+M735T1343,735.3439,22.38,735.3439,0.07,[M+FA–H]–,sn1-O-(12-Oxophytodienoyl)-digalactosyl monoglyceride,2,Galactolipids,1.86,2.1,H,1.86,2.1,H
+M573T1455,573.2911,24.24,573.2911,0.14,[M+FA–H]–,sn1-O-(12-Oxophytodienoyl)-monogalactosyl monoglyceride,2,Galactolipids,1.79,2.3,H,1.79,2.3,H
+M755T575,755.2030,9.59,755.2035,0.62,[M–H]–,Quercetin-3-glucoside-2′′-rhamnoside-7-rhamnoside,1,Flavonoids,1.61,2.0,L,2.59,2.1,L
+M739T610,739.2084,10.16,739.2086,0.25,[M–H]–,Kaempferol-3-glucoside-2′′-rhamnoside-7-rhamnoside,1,Flavonoids,3.27,1.8,L,3.47,1.4,L
+M609T658,609.1455,10.97,609.1456,0.10,[M–H]–,Quercetin-3-glucoside-7-rhamnoside,1,Flavonoids,2.11,3.2,L,2.84,3.0,L
+M755T689,755.2033,11.49,755.2035,0.31,[M–H]–,Kaempferol-3-glucoside-2′′-glucoside-7-rhamnoside,2,Flavonoids,1.77,1.2,L,3.11,1.7,L
+M593T713,593.1506,11.89,593.1506,0.04,[M–H]–,Kaempferol-3-glucoside-7-rhamnoside,1,Flavonoids,3.96,2.5,L,4.68,1.9,L
+M577T777,577.1559,12.95,577.1557,0.22,[M–H]–,"Kaempferol-3,7-dirhamnoside",1,Flavonoids,3.65,1.4,L,4.44,1.3,L
+M387T485,387.1294,8.09,387.1291,0.60,[M+FA–H]–,Coniferin,1,Phenylpropanoids,4.28,2.8,L,2.41,2.9,L
+M385T589,385.1132,9.81,385.1135,0.71,[M–H]–,Sinapic acid glucoside,1,Phenylpropanoids,3.06,4.8,L,,,
+M325T669,325.0559,11.14,325.0560,0.26,[M–H]–,5-Hydroxyferuloyl malate,3,Phenylpropanoids,2.66,12.2,L,2.73,8.9,L
+M339T796,339.0718,13.27,339.0716,0.46,[M–H]–,Sinapic acid malate ester,2,Phenylpropanoids,2.61,1.3,L,,,
+M339T808,339.0717,13.47,339.0716,0.41,[M–H]–,Sinapoyl malate,1,Phenylpropanoids,1.42,1.3,L,2.34,1.3,L
+M591T907,591.1708,15.11,591.1714,0.90,[M–H]–,"1,2-Di-O-sinapoyl-β-d-Glc",3,Phenylpropanoids,3.40,5.1,L,2.23,6.2,L
+M583T596,583.2030,9.94,583.2037,0.51,[M+FA–H]–,Dimeric coniferyl alcohol hexoside,3,Lignan glucosides,3.60,2.1,L,5.14,2.4,L
+M681T654,681.2390,10.90,681.2395,0.71,[M–H]–,"Pinoresinol-4,4′-di-O-β-d-glucoside",1,Lignan glucosides,2.73,1.8,L,2.65,1.7,L
+M521T720,521.2021,11.99,521.2023,0.36,[M–H]–,Dimeric coniferyl alcohol hexoside,3,Lignan glucosides,5.78,3.3,L,3.65,2.3,L
+M521T765,521.2023,12.75,521.2023,0.12,[M–H]–,Dimeric coniferyl alcohol hexoside,3,Lignan glucosides,4.80,3.6,L,3.39,3.4,L
+M565T767,565.1921,12.78,565.1921,0.09,[M+FA–H]–,Dimeric coniferyl alcohol hexoside,3,Lignan glucosides,5.04,2.7,L,4.25,2.2,L
+M519T836,519.1867,13.93,519.1866,0.11,[M–H]–,Pinoresinol-4-O-β-d-glucoside,1,Lignan glucosides,4.94,3.1,L,5.33,2.8,L
+M285T462,285.0613,7.70,285.0610,0.79,[M–H]–,Dihydroxybenzoic acid-O-pentoside,3,Phenolic glucosides,1.95,1.3,L,2.54,1.6,L
+M299T502,299.0770,8.37,299.0767,0.97,[M–H]–,Hydroxybenzoic acid-4-O-β-d-glucopyranoside,3,Phenolic glucosides,1.77,2.0,L,1.45,2.4,L
+M285T513,285.0610,8.54,285.0610,0.23,[M–H]–,Dihydroxybenzoic acid-O-pentoside,3,Phenolic glucosides,1.42,3.0,L,1.81,2.8,L
+M422T137,422.0249,2.28,422.0249,0.13,[M–H]–,Glucoiberin,3,Glucosinolates,4.75,2.6,L,,,
+M436T221,436.0407,3.69,436.0406,0.21,[M–H]–,Glucoraphanin,1,Glucosinolates,3.69,2.2,L,1.39,1.8,L
+M450T275,450.0562,4.59,450.0562,0.07,[M–H]–,Glucoalyssin,2,Glucosinolates,1.65,1.9,L,1.65,1.5,L
+M464T335,464.0708,5.58,464.0719,2.35,[M–H]–,Glucohesperalin,2,Glucosinolates,2.16,2.3,L,2.32,2.5,L
+M478T418,478.0874,6.96,478.0875,0.32,[M–H]–,Glucoibarin,3,Glucosinolates,2.50,2.3,L,1.77,1.9,L
+M463T497,463.0477,8.29,463.0481,0.97,[M–H]–,4-Hydroxyglucobrassicin,3,Glucosinolates,,,,3.17,2.2,L
+M447T498,447.0533,8.31,447.0532,0.31,[M–H]–,Glucobrassicin,3,Glucosinolates,,,,1.83,1.4,L
+M492T520,492.1032,8.66,492.1032,0.09,[M–H]–,Glucohirsutin,2,Glucosinolates,2.58,2.6,L,,,
+M422T569,422.0578,9.48,422.0579,0.37,[M–H]–,Gluconasturtiin,1,Glucosinolates,4.84,4.5,L,2.84,4.2,L
+M402T662,402.0889,11.03,402.0892,0.91,[M–H]–,Hexyl glucosinolate,2,Glucosinolates,1.78,1.9,L,,,
+M477T728,477.0637,12.13,477.0638,0.19,[M–H]–,1-Methoxyglucobrassicin,1,Glucosinolates,,,,1.61,2.1,L

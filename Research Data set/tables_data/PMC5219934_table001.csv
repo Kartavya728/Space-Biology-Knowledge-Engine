@@ -1,0 +1,7 @@
+Strain,Relevant genotype,Source
+ES114 (WT),Wild-typeV. fischeri,"Boettcheret al., 1990"
+EVS102 (Δlux),ES114ΔluxCDABEG,"Boseet al., 2008"
+VCW3F6 (lysA),ES114lysA::,"Whistleret al., 2007"
+,EZ::TN <KAN>,
+MB06859 (waaL),ES114waaL::Tn5ermR,"Postet al., 2012"
+CAB1532 (Δmam7),ES114Δmam7,"Alturaet al., 2011"

@@ -1,0 +1,29 @@
+Drugs.,Disease Name,Link PredictionProbability
+MEMANTINE,Carcinoma,0.98
+CINNARIZINE,Carcinoma,0.97
+MEMANTINE,Heart Disease,0.97
+IXABEPILONE,"Complications Additionally, Ill-Defined Descriptions Of Heart Disease",0.96
+PREDNISOLONE,"Malignant Neoplasm of Other Additionally, Unspecified Urinary Organs",0.95
+CLINDAMYCIN,Artery Disease,0.93
+CLINDAMYCIN,Urinary System Disease,0.93
+LUCINACTANT,"Malignant Neoplasm of Other Additionally, Unspecified Major Salivary Glands",0.93
+CINNARIZINE,Cancer,0.93
+ETOPOSIDE,Artery Disease,0.93
+L-ORNITHINE,Carcinoma,0.92
+LUCINACTANT,Disorder Of Urinary System,0.92
+IMATINIB,Heart Conduction Disease,0.91
+L-ORNITHINE,Heart Disease,0.89
+NELARABINE,Heart Conduction Disease,0.88
+NIMODIPINE,"Abscess Of Lung Additionally, Mediastinum",0.87
+METHOTREXATE,Integumentary System Cancer,0.86
+PREDNISOLONE,In Situ Neoplasms,0.85
+MELATONIN,Cognitive Disorder,0.85
+TEMOZOLOMIDE,Other Disorders of Urinary System,0.84
+ANASTROZOLE,"Malignant Neoplasm of Other Endocrine Glands Additionally, Related Structures",0.82
+FLUOCINOLONE ACETONIDE,Other Diseases of Liver,0.79
+AGALSIDASE β,Carbohydrate Metabolism Disease,0.77
+CALCIUM ACETATE,Type 2 Diabetes Mellitus,0.75
+CYSTEAMINE,Other Disorders of Carbohydrate Metabolism,0.74
+VITAMIN C,Type 2 Diabetes Mellitus,0.74
+L-CARNITINE,Autosomal Dominant Disease,0.70
+IBUPROFEN,Cardiovascular System Disease,0.70

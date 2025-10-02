@@ -1,0 +1,22 @@
+Human Gene,D.melanogasterCandidate(s),Annotation Identifier,Flybase Identifier,Percentage Identity,Percentage Similarity,E-value,Query Coverage,Template(Software) used for modeling the candidate enzyme
+"PTGS1, PTGS2","CG4009, isoform B",CG4009,FBgn0038469,25%,41%,1e-10,49%,"Multiple: 4HHR, 3FAQ, 3Q9K, 1CXP, 2GJ1, and 1CVU (I-TASSER)"
+Peroxinectin-like (Pxt),CG7660,FBgn0261987,22%,39%,2e-09,59%
+Cardinal,CG6969,FBgn0263986,20%,36%,1e-05,61%
+PTGDS,Neural Lazarillo (Nlaz),CG33126,FBgn0053126,20%*,62%*,9e-13*,97%*,"2HZQ, 5WY9(I-TASSER, Modeller)"
+HPGDS,Glutathione S transferase S1 (GST S1),CG8938,FBgn0010226,36%,60%,3e-37,98%,¥1M0U (Modeller)
+PTGIS,CYP450-4D2,CG3466,FBgn0011576,23%26%*,44%72%*,0.0153e-70*,34%93%*,"3NXU, 4LXJ (I-TASSER, Modeller)"
+PTGES,"Microsomal glutathione S-transferase-like (MGST-like, isoform A)",CG1742,FBgn0025814,36%,54%,2e-24,97%,4AL0 (Modeller)
+PTGES2,Suppressor of Ref(2)p (SupRef(2)p),CG4086,FBgn0004465,42%,62%,3e-70,73%,1Z9H (Modeller)
+PTGES3,"CG16817, isoform A",CG16817,FBgn0037728,27%,45%,6e-12,83%,"2KMW, 1EFJ (Modeller; I-TASSER)"
+TBXAS1,CG3616,CG3616,FBgn0015040,31%,49%,6e-69,97%,"3NXU, 4LXJ (I-TASSER)"
+"AKR1A1, AKR1B1, AKR1C3","CG6084, isoform D",CG6084,FBgn0086254,49%,68%,5e-94,97%,1AH4 (Modeller)
+CBR1,"Carbonyl reductase (CBR, isoform B)",CG11200,FBgn0034500,30%,45%,8e-19,95%,"4NBV, 3BHJ (Modeller, I-TASSER)"
+"ALOX5, ALOX12, ALOX12B, ALOX15",None identified,N/A,N/A,,,,,
+ALOX5AP,CG33177,CG33177,FBgn0053177,33%*,82%*,6e-20*,88%*,"4AL0,2Q7M (Modeller, I-TASSER)"
+LTA4H,"CG10602, isoform C",CG10602,FBgn0032721,44%,62%,4e-179,99%,4GAA (Modeller)
+LTC4S,"CG33178, isoform A",CG33178,FBgn0053178,28%*,61%*,4e-4*,84%*,"4AL0, 2PNO (Modeller, I-TASSER)"
+GGT1,"Gamma-glutamyl transpeptidase (GGT, isoform A)",CG6461,FBgn0030932,45%,58%,4e-133,92%,2E0W(Modeller)
+DPEP1,"CG6154, isoform C",CG6154,FBgn0039420,49%,65%,3e-125,88%,1ITU (Modeller)
+HPGD,CG18814,CG18814,FBgn0042137,34%,53%,9e-35,76%,2GDZ (Modeller)
+GPX1,"PHGPx, isoform A",CG12013,FBgn0035438,35%,52%,6e-32,90%,2F8A (Modeller)
+CPA1,"CG18585, isoform A",CG18585,FBgn0031929,35%,55%,9e-82,98%,2V77 (Modeller)

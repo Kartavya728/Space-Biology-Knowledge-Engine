@@ -1,0 +1,27 @@
+REAGENT or RESOURCE,SOURCE,IDENTIFIER
+Biological samples
+""
+Mouse Liver,NASA Rodent Research-1 Mission,https://lsda.jsc.nasa.gov/Experiment/exper/13380
+Mouse quadriceps muscle,NASA Rodent Research-1 Mission,https://lsda.jsc.nasa.gov/Experiment/exper/13380
+""
+Deposited data
+""
+GLDS-103,NASA/GeneLab,https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-103/
+GLDS-168,NASA/GeneLab,https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-168/
+""
+Experimental models: Organisms/strains
+""
+Mouse: C57BL/6,Jackson Labs,"C57BL/6J (Stock No: 000,664)"
+""
+Software and algorithms
+""
+R Version 4.0.5,R Core Team (2021).,"https://www.r-project.org/, RRID:SCR_001905"
+DESeq2 Version Version 1.30.1,"Love et al., 2014","https://github.com/mikelove/DESeq2, RRID:SCR_01568"
+GSEA,"Sergushichev (2016);Subramanian et al., 2005","https://www.gsea-msigdb.org/gsea/index.jsp, RRID:SCR_003199"
+Cytoscape,"Shannon et al., 2003","https://cytoscape.org, RRID:SCR_003032"
+WebGestalt,Liao et al. (2019),http://www.webgestalt.org/
+miXomics Version 6.14.1,Rohart et al. (2017),http://mixomics.org
+""
+Other
+""
+GeneLab,NASA,https://genelab.nasa.gov/

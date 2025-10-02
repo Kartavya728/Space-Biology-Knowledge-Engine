@@ -1,0 +1,26 @@
+Sample ID,Description,Category
+CRV1-L1,Ladder platform just prior to the vehicle entrance,GSE
+CRV1-L2,Clean room floor near the ladder that leads up to the vehicle entrance,GSE
+CRV1-L3,Upper shelf in starboard side of the vehicle,Internal
+CRV1-L4,Lower shelf in starboard side of the vehicle,Internal
+CRV1-L5,Front panels in deck side of the vehicle,Internal
+CRV1-L6,Lower shelf in aft side of the vehicle,Internal
+CRV1-L7,Ladder steps that leads up to the platform near the vehicle entrance,GSE
+CRV1-FC,Control wipe exposed to the air for 30 s inside the vehicle,Control
+CRV2-L1,Right leg/side of ladder,GSE
+CRV2-L2,Left leg/side of ladder,GSE
+CRV2-L3,Left and right rail arms of the ladder above the platform,GSE
+CRV2-L4,Lower shelf in aft side of the vehicle,Internal
+CRV2-L5,Upper shelf in starboard side of the vehicle,Internal
+CRV2-L6,Upper shelf in aft side of the vehicle,Internal
+CRV2-L7,Locker panels in deck side of the vehicle,Internal
+CRV2-L8,Locker panels in deck side of the vehicle near the aft side,Internal
+CRV2-FC,Control wipe exposed to the air for 30 s inside the vehicle,Control
+CRV3-L1,Ladder platform just prior to the vehicle entrance,GSE
+CRV3-L2,Left rail arm of the ladder above the platform,GSE
+CRV3-L3,Right rail arm of the ladder above the platform,GSE
+CRV3-L4,Upper shelf in starboard side of the vehicle near the aft side,Internal
+CRV3-L5,Lower shelf in aft side of the vehicle,Internal
+CRV3-L6,Lower shelf in forward side of the vehicle,Internal
+CRV3-L7,Upper shelf in forward side of the vehicle,Internal
+CRV3-FC,Control wipe exposed to the air for 30 s inside the vehicle,Control

@@ -1,0 +1,13 @@
+Inhibitor,General role,Effect on root growth,Effect on actin (cell type),Effect on cell length (cell type),Effect on vacuole shape (cell type),References
+Actin inhibitors
+Jasplakinolide,Actin stabilization (turnover inhibition),None,,,Larger main vacuole (late meristem cells),"Mancuso et al., 2006Scheuring et al., 2016"
+Phalloidin,Actin stabilization (turnover inhibition),None,,,,"Mancuso et al., 2006"
+Latrunculin B,Actin depolymerization,Growth inhibition,"Disruption of longitudinal actin arrays (EZ, maize)",Inhibition of cell elongation*,Round and smaller main vacuole (late meristem cells),"Baluška et al., 1997,2001Baluška et al., 2001Mancuso et al., 2006Scheuring et al., 2016"
+Cytochalasin D,Actin depolymerization,Growth inhibition,,"Cell length inhibition (AEZ, maize cortex)",,"Mancuso et al., 2006Šamaj et al., 2000"
+"2,3 Butadione (BDM)",Inhibition of myosin ATPase,,Stabilization of AF – thicker bundles (maize*),"Cell length inhibition (TZ and AEZ, maize cortex)",,"Šamaj et al., 2000"
+Hormones
+Indole-3-Acetic-Acid (IAA),Native auxin,Growth inhibition,Increased AF density and unbundling TZ/EZ,Cell elongation inhibition*,,"Rahman et al., 2007Lanza et al., 2012Arieti and Staiger, 2020"
+1-Naphtalene-Acetic-Acid (NAA),Synthetic auxin,Growth inhibition,,Cell elongation inhibitor*,Increased vacuolar constriction (late meristem cells),"Rahman et al., 2007Scheuring et al., 2016"
+"2,4-Dichlorophenoxyacetic acid (2,4-D)",Auxin analogue,Growth inhibition,Actin depolymerization*,"Mild cell elongation inhibitor, cell proliferation inhibitor*",,"Rahman et al., 2007"
+24-epibrassinolide (eBL),Brassinosteroid,Root waving,"Finer, shorter, and more dynamic AF*",,,"Lanza et al., 2012"
+trans-zeatin (t-zeatin),Cytokinin,Growth inhibition,"Decreased AF density, increased AF bundling; disrupted vertical AF arrangement TZ/EZ",Cell elongation (TZ),,"Takatsuka et al., 2018Kushwah et al., 2011"

@@ -1,0 +1,27 @@
+Species and strain or plasmid,Comment(s)
+SalmonellaTyphimurium,
+χ3339,22
+χ3339 ΔydcI,This study
+χ3339 WTydcI::lacZ,This study
+χ3339 ΔydcI::lacZ,This study
+χ3339 WTydcI::lacZΔrpoS,This study
+χ3339 Cm::lacZ,This study
+χ3339 Cm::lacZΔrpoS,This study
+χ3339 WTydcI::lacZΔrpoS,
+STM2901::Cm,This study
+χ3339 WTydcI::lacZWTrpoS,
+STM2901::Cm,This study
+χ3339 ΔSPI-1,50
+Escherichia coliTOP10,Invitrogen
+SalmonellaTyphi Ty2,17
+Proteus mirabilisATCC 7002,American Type Culture Collection
+Serratia marcescensATCC 14041,American Type Culture Collection
+Klebsiella pneumoniaeATCC 13883,American Type Culture Collection
+Citrobacter koseriATCC 27156,American Type Culture Collection
+Plasmids,
+pKD3,12
+pCE36,13
+pCP20,12
+pBAD18,24
+pBAD18+ydcI,This study
+pBAD18+lacZ,"42, this study"

@@ -1,0 +1,31 @@
+T cell factor/pangolin
+−730,(+) 1.000 0.994 gcgtaTCAAAagcaca TCF
+−687,(−) 0.964 0.946 gcttagTTTGTtgtta TCF
+−611,(−) 0.928 0.919 gactgtTTTTAttgaa TCF
+−440,(−) 0.928 0.929 atacatTTTTAttaat TCF
+−430,(+) 0.928 0.922 attaaTGAAAtggtct TCF
+−408,(−) 0.957 0.938 aataaaTTTGCttacg TCF
+−395,(−) 0.964 0.948 acgaatTTTGTttgta TCF
+−383,(−) 0.928 0.922 tgtacaTTTCAtttga TCF
+−170,(+) 0.964 0.944 tgtaaACAAAttataa TCF
+Nkx 2.5/tinman
+−939,(−) 0.801 0.786 tgattgAAGTTggcaa NKX2.5
+−935,(+) 0.869 0.828 tgAAGTT NKX2.5
+−923,(−) 0.869 0.870 AACTTaa NKX2.5
+−896,(+) 1.000 0.859 cccgtCACTTgaatta NKX2.5
+−894,(+) 1.000 0.971 cgtCACTTga NKX2.5
+−891,(−) 1.000 1.000 CACTTga NKX2.5
+−795,(+) 0.844 0.805 taggcCACTCcaggat NKX2.5
+−780,(+) 0.800 0.819 tgcCAATTgc NKX2.5
+−761,(−) 0.869 0.823 AACTTac NKX2.5
+−711,(+) 1.000 0.741 gccgtCACTTatcaat NKX2.5
+−709,(+) 1.000 0.906 cgtCACTTat NKX2.5
+−706,(−) 1.000 0.939 CACTTat NKX2.5
+−677,(+) 0.801 0.732 ttgttAACTTgaattg NKX2.5
+−672,(−) 0.869 0.884 AACTTga NKX2.5
+−551,(+) 0.869 0.828 tgAAGTC NKX2.5
+−429,(−) 0.788 0.751 ttaatgAAATGgtctg NKX2.5
+−377,(+) 0.800 0.815 tttCATTTga NKX2.5
+−374,(−) 0.783 0.808 CATTTga NKX2.5
+−235,(+) 0.833 0.818 tgatcCACTAtacaat NKX2.5
+−145,(+) 0.869 0.823 atAAGTT NKX2.5

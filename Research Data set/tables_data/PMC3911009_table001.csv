@@ -1,0 +1,21 @@
+Strain,Relevant genotype and phenotype,Reference
+PS832,Trp+revertant of strain 168 (wild type),40
+PS283a,"ΔsspA, SASP-α−, Cmr",45
+PS338a,"ΔsspB, SASP-β−, Cmr",45
+PS483a,"ΔsspE, SASP-γ−, Cmr",38
+PS356b,"ΔsspAΔsspB, α−β−",22
+PS482a,"ΔsspAΔsspBΔsspE, α−β−γ−, Cmr",46
+PS1899a,ΔdacB::Cmr,22
+"PS2211a,b","ΔdacB::Cmr, α−β−",22
+"FB122c,d","ΔsleB::SpcrΔspoVF::Tetr, DPA−",39
+"PS3664a,b,c,d","ΔsleB::SpcrΔspoVF::Tetr, DPA−, α−β−",47
+PS2496a,ΔmrgA::Cmr,21
+"PS2507a,b","ΔmrgA::Cmr, α−β−",21
+PS2495a,ΔsodA::Cmr,21
+"PS2506a,b","ΔsodA::Cmr, α−β−",21
+PS2558a,ΔkatX::Cmr,21
+"PS2559a,b","ΔkatX::Cmr, α−β−",21
+"PERM454d,e",ΔexoA::TetrΔnfo::Neor,24
+"PERM450a,b,d,e","ΔexoA::TetrΔnfo::Neor, α−β−",24
+PS3722f,ΔykoVU::Ermr,25
+"PS3751a,b,f","ΔykoVU::Ermr, α−β−",25

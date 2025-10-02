@@ -1,0 +1,21 @@
+Gene,Disease Code,Link Prediction Probabilities,Disease Name
+EIF3H,ICD10:C22,0.92,Malignant neoplasm of liver and intrahepatic bile ducts
+SNF8,DOID:178,0.83,vascular disease
+RPS25,ICD10:G969,0.77,Disorder of central nervous system
+NDUFB2,DOID:0050589,0.79,inflammatory bowel disease
+MTCH2,DOID:10273,0.95,heart conduction disease
+FTO,DOID:1289,0.79,neurodegenerative disease
+NDUFS3,ICD10:I5,0.97,Non-ischemic myocardial injury (non-traumatic)
+MEF2A,ICD10:C25,0.79,Malignant neoplasm of the pancreas
+DDA1,DOID:8857,0.84,lupus erythematosus
+ATG3,ICD10:H8,0.8,disorder of vestibular function
+COG6,ICD10:N429,0.73,Disorder of prostate
+ELK4,DOID:6364,0.71,migraine
+MRPL4,DOID:2007,0.73,Pesticide residues in food
+ZFR,ICD10:N399,0.78,Disorder of urinary system
+ELK4,ICD10:G93,0.89,brain disorder
+COLGALT1,DOID:0050890,0.84,synucleinopathy
+RPL7A,ICD10:K0,0.81,Diseases of the oral cavity and salivary glands
+PRMT5,ICD10:N399,0.86,Disorder of urinary system
+MRPS21,DOID:0050687,0.89,cell type cancer
+SNW1,ICD10:C64,0.83,Malignant neoplasm of kidney

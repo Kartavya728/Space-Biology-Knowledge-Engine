@@ -1,0 +1,21 @@
+REAGENT or RESOURCE,SOURCE,IDENTIFIER
+Deposited Data
+Standard dataset (STANDARD) tandem mass spectra,GNPS,ftp://massive.ucsd.edu/MSV000079506;ftp://massive.ucsd.edu/MSV000079622
+Actinomycetes dataset (ACTI) tandem mass spectra,GNPS,ftp://massive.ucsd.edu/MSV000078839;ftp://massive.ucsd.edu/MSV000078604
+Bacillus dataset (BACIL) tandem mass spectra,GNPS,ftp://massive.ucsd.edu/MSV000078552
+Space station dataset (SPACE) tandem mass spectra,GNPS,ftp://massive.ucsd.edu/MSV000080102
+Sponge dataset (SPONGE) tandem mass spectra,GNPS,ftp://massive.ucsd.edu/MSV000078670
+Cyanobacteria dataset (CYANO) tandem mass spectra,GNPS,ftp://massive.ucsd.edu/MSV000078568
+Reference Human Microbiome isolates (HUMAN-iso) tandem mass spectra,GNPS,ftp://massive.ucsd.edu/MSV000078556
+Human Microbiome isolates from Cystic Fibrosis patients (HUMAN-CF) tandem mass spectra,GNPS,ftp://massive.ucsd.edu/MSV000080251
+Software and Algorithms
+MetaMiner,This paper,https://github.com/mohimanilab/MetaMiner
+antiSMASH,"(Medema et al., 2011;Weber et al., 2015)",https://antismash.secondarymetabolites.org/#!/download
+BOA,"(Morton et al., 2015)",https://github.com/idoerg/BOA
+SPAdes,"(Bankevich et al., 2012)",https://github.com/ablab/spades
+metaSPAdes,"(Nurk et al., 2017)",https://github.com/ablab/spades
+HMMER,"(Eddy, 2011)",http://hmmer.org/
+DFAST,"(Tanizawa et al., 2018)",https://dfast.nig.ac.jp/
+Dereplicator,"(Mohimani et al., 2017)",https://github.com/ablab/npdtools
+GNPS,"(Wang et al., 2016)",https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp
+Spectral network,"(Bandeira et al., 2007;Watrous et al., 2012)",https://ccms-ucsd.github.io/GNPSDocumentation/networking/

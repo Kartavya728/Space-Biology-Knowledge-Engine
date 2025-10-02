@@ -1,0 +1,42 @@
+Category,Symbol,Fold changeearth,P value earth,Fold changespace,P value space
+Antimicrobial proteins,,,,,
+Defensin,Def,186.4,0.00,156.1,0.00
+Drosocin,Dro,68.3,0.00,77.8,0.00
+Attacin-A,AttA,82.2,0.00,68.4,0.00
+Attacin-C,AttC,14.9,0.00,15.7,0.00
+Attacin-D,AttD,154.1,0.00,99.5,0.00
+Diptericin B,DptB,26.6,0.00,40.1,0.00
+Cecropin B,CecB,4.9,0.00,5.4,0.00
+Cecropin C,CecC,24.2,0.00,30.9,0.00
+Metchnikowin,Mtk,26.2,0.00,32.4,0.00
+Drosomycin,Drs,5.5,0.00,5.4,0.00
+Peptidoglycan recognition proteins,,,,,
+Peptidoglycan recognition protein LC,PGRP-LC,2.4,0.00,2.0,0.00
+Peptidoglycan-recognition protein SC2,PGRP-SC2,15.3,0.00,8.9,0.00
+Peptidoglycan recognition protein LB,PGRP-LB,8.6,0.00,8.9,0.00
+Peptidoglycan recognition protein LA,PGRP-LA,2.1,0.01,2.2,0.01
+Peptidoglycan recognition protein LF,PGRP-LF,5.6,0.00,3.8,0.00
+Peptidoglycan-recognition protein SB1,PGRP-SB1,10.0,0.00,13.1,0.00
+Stress inducible Turandot,,,,,
+Turandot M,TotM,20.6,0.00,27.9,0.00
+Turandot A,TotA,5.5,0.02,6.8,0.01
+Turandot X,TotX,2.2,0.21*,3.8,0.04
+Turandot C,TotC,28.0,0.00,58.2,0.00
+Immune induced molecules,,,,,
+Immune induced molecule 10,CG33470,3.7,0.00,2.2,0.04
+Immune induced molecule 23,IM23,3.8,0.01,3.1,0.02
+Immune induced molecule 1,IM1,3.4,0.00,3.1,0.00
+Immune induced molecule 2,IM2,2.0,0.00,1.8,0.01
+Immune induced molecule 4,IM4,3.1,0.01,2.9,0.01
+Immune induced molecule 10,IM10,3.5,0.00,2.8,0.01
+Thiolester containing proteins,,,,,
+Thiolester containing protein I,TepI,22.2,0.00,28.4,0.00
+Thiolester containing protein II,TepII,5.2,0.00,4.0,0.00
+Thiolester containing protein IV,TepIV,2.7,0.00,2.9,0.00
+Miscellaneous,,,,,
+insulin-stimulated eIF-4E binding protein,Thor,2.5,0.02,2.2,0.04
+eiger,egr,2.4,0.05,1.6,0.28*
+Relish,Rel,3.8,0.00,2.2,0.02
+Sterile alpha & TIR motif-containing protein 1,Ect4,1.7,0.06*,2.0,0.02
+Inhibitor of apoptosis 2,Iap2,1.8,0.02,1.9,0.01
+Hemolectin,Hml,3.3,0.00,2.6,0.00

@@ -1,0 +1,8 @@
+Isolate (Accession Number),Sample Type,Location,Collection Date,Expedition(Duration in days),Genome size (Mb),No. Unique Genes,MLST,Predicted Intact Phage,Plasmids,Pathogen Score(%)
+ISS_1 (CP046113),Air,United States LAB,7/15/2009,20 (137),2.65*,11,875**,No,No,84.4
+ISS_2 (CP046112),Surface,United States LAB,4/15/11,27 (70),2.93*,39,30,3,No,85.4
+ISS_3 (CP046111),Surface,United States LAB,4/15/11,27 (70),2.94*,39,30,3,No,85.4
+ISS_4 (CP0461108-10),Air,Node 3,10/23/13,37 (61),2.91*,25,40,1,2,85.4
+OG1RF‡,Oral,NA,≤ 1975,NA,2.74,61,1,No,No,81.6
+MMH594‡,Blood,NA,1985,NA,3.25,52,6,1,3,82.9
+V583‡,Blood,NA,1987,NA,3.36,20,6,1,3,82.9

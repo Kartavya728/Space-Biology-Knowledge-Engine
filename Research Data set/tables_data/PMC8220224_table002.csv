@@ -1,0 +1,22 @@
+Differentially expressed genes (DEGs)*,No. of Genes,PValue,Fold enrichment,Benjamini,FDR
+Secreted/extracellular region,47,3.46E-17,4.24,7.43E-15,4.38E-14
+Extracellular matrix,17,2.50E-12,1.12,2.69E-10,3.17E-09
+Insulin-like growth factor binding protein,5,9.99E-07,6.04,4.02E-04,1.39E-03
+Beta receptor signaling pathway,7,2.04E-05,1.24,7.21E-03,3.25E-02
+ECM-receptor interaction,8,1.48E-05,9.71,2.00E-03,1.74E-02
+Wound healing,7,7.36E-05,9.9,1.94E-02,1.17E-01
+Differentially methylated genes (DMGs)*,,,,,
+Cell junction,35,2.64E-05,2.2,9.94E-03,3.66E-02
+Synapse,17,3.46E-03,2.29,6.86E-02,4.50E+00
+Zinc-finger,69,1.54E-04,1.58,8.78E-03,2.04E-01
+Regulation of transcription/DNA binding,68,5.53E-03,1.37,4.52E-01,9.18E+00
+Developmental protein,36,1.27E-03,1.77,3.99E-02,1.68E+00
+Multicellular organism development,38,1.82E-03,1.7,3.01E-01,3.10E+00
+Cell differentiation,24,8.92E-03,1.79,1.06E-01,1.12E+01
+Extracellular matrix,17,1.34E-03,2.86,3.77E-02,1.76E+00
+Collagen,6,3.20E-02,3.39,2.68E-01,3.51E+01
+Tight junction,8,1.70E-03,4.63,3.99E-02,2.23E+00
+"Fibronectin, type III",14,5.74E-04,3.13,3.88E-01,8.85E-01
+Hippo signaling pathway,10,3.08E-03,3.31,1.05E-01,3.84E+00
+TGF beta signaling pathway,4,1.42E-02,7.34,8.28E-01,1.52E+01
+Positive regulation of epithelial to mesenchymal transition,6,7.74E-04,8.12,2.85E-01,1.33E+00

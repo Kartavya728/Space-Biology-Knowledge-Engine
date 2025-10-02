@@ -1,0 +1,34 @@
+Gene Name,Gene ID,p (corr) Value,Fold Change,GO Biological Process
+Agpat9,1-Acylglycerol-3-phosphate-o-acyltransferase 9,8.10 × 10−4,3.740,Lipid metabolic process
+Cdkn1a,Cyclin-dependent kinase inhibitor1A (P21),4.24 × 10−4,3.153,Regulation of cyclin-dependent protein serine
+Elovl3,Elongation of very long chain fatty acids-like3,3.76 × 10−3,3.055,Lipid metabolic process
+Pnpla2,Patatin-like phospholipase domain containing 2,1.17 × 10−3,2.645,Lipid metabolic process
+Pde4d,"Phosphodiesterase 4D, cAMP specific",7.68 × 10−4,2.161,cAMP catabolic process
+Pex11a,Peroxisomal biogenesis factor 11 alpha,1.34 × 10−3,2.066,Peroxisome organization
+Pex3,Peroxisomal biogenesis factor 3,8.82 × 10−3,2.037,Peroxisome organization
+Pex19,Peroxisomal biogenesis factor 19,3.23 × 10−3,1.953,Protein targeting to peroxisome
+Cirbp,Cold inducible RNA binding protein,1.15 × 10−2,1.895,Response to stress
+Pex16,Peroxisomal biogenesis factor 16,4.73 × 10−4,1.887,Protein targeting to peroxisome
+Acot8,Acyl-Coa-thioesterase 8,4.73 × 10−4,1.776,Peroxisome organization
+Atg2a,Autophagy related 2A,2.59 × 10−3,1.707,Autophagy
+Vwa8,Von willebrand factor A domain containing 8,1.94 × 10−3,1.651,ATP catabolic process
+Abcd3,"ATP-binding cassette, sub-familyD (ALD), member 3",1.94 × 10−3,1.651,ATP catabolic process
+Abcg8,"ATP-binding cassette, sub-family G (WHITE), member 8",2.08 × 10−2,1.628,ATP catabolic process
+Atp10d,"ATPase, class V, type 10D",7.48 × 10−3,1.614,ATP catabolic process
+Map1lc3b,Microtubule-associated protein 1 light chain 3 β,2.50 × 10−2,1.553,Autophagy
+Abcg5,ATP binding cassette subfamily G member 5,4.11 × 10−2,1.550,ATP catabolic process
+Ppara,peroxisome proliferator activated receptor α,2.10 × 10−3,1.550,Negative regulation of transcription
+Mtor,Mechanistic target of rapamycin,5.06 × 10−3,1.541,Positive regulation of protein phosphorylation
+Wipi1,"WD repeat domain, phosphoinositide interacting 1",3.81 × 10−2,1.537,Autophagic vacuole assembly
+Ppargc1b,PPARG coactivator 1 β,1.24 × 10−2,1.535,Transcription from mitochondrial promoter
+Atg14,Autophagy related 14,2.54 × 10−2,1.505,Autophagic vacuole assembly
+Pex1,Peroxisomal biogenesis factor 1,8.32 × 10−3,1.417,Protein targeting to peroxisome
+Pex11b,Peroxisomal biogenesis factor,2.49 × 10−2,1.365,Peroxisome organization
+Pex10,Peroxisomal biogenesis factor 10,3.85 × 10−2,1.357,Peroxisome organization
+Wipi2,"WD repeat domain, phosphoinositide interacting 2",1.67 × 10−2,1.277,Autophagic vacuole assembly
+Map1lc3a,Microtubule associated protein 1 light chain 3 α,1.30 × 10−2,1.256,Autophagic vacuole assembly
+Ampd2,Adenosine monophosphate deaminase 2,1.01 × 10−2,−1.608,AMP biosynthetic process
+Nfe2l2,"Nuclear factor, erythroid 2 like 2",5.80 × 10−3,−1.643,"Transcription, DNA-dependent"
+Cyp26a1,Cytochrome P450 family 26 subfamily A member 1,4.97 × 10−2,−2.015,Central nervous system development
+Hsp90aa1,Heat shock protein 90 α family class A member 1,7.68 × 10−4,−2.653,ATP catabolic process
+Hspb1,Heat shock protein family B (small) member 1,1.03 × 10−3,−5.755,Response to stress

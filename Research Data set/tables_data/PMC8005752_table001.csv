@@ -1,0 +1,5 @@
+Species/Strain,NCBI Accession no.,Isolation location,No. of scaffolds,Genome size (bp),N5o (bp),Average Coverage,G + C content (%),Filtered reads used for assembly (million),Coding sequences
+Methylobacterium ajmalii IF7SW-B2T,JACWCTOOOOOOOOO,Lab 3 overhead,192,"6,802,552","59,313",698,71.07,33.55,"6,255"
+Methylobacterium ajmaliiIIF1SW-B5,JACWCUOOOOOOOOO,Cupola,193,"6,593,618","50,984",754,71.03,36.29,"6,076"
+Methylobacterium ajmaliiIIF4SW-B5,JACWCVOOOOOOOOO,Dining table,966,"6,534,937","10,467",538,70.77,25.01,"6,538"
+Methylorubrum rhodesianumI1-R3,JACWCWOOOOOOOOO,HEPA filter,160,"6,159,250","98,200",302,68.96,13.07,"5,555"

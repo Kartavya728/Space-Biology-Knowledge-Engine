@@ -1,0 +1,44 @@
+‘Omics assay types,Phenotypic-physiological assay types
+"AmpliconSequencing (ITS, 18S, 16S) (31)",ATPase activity via Spectrophotometry (32)
+Whole Genome Bisulfite Sequencing,Rodent Gait (33)
+Reduced Representation Bisulfite Sequencing,Open Field (34)
+Whole Transcriptome Bisulfite Sequencing,Object in Place (35)
+Enzymatic Methylation Sequencing,Radial Arm Water Maze (36)
+"Whole Genome Sequencing (37,38), MINISEQE Guidelineshttps://www.fged.org/projects/minseqe/)",Unconstrained Cognitive Flexibility (39)
+Targeted DNA Sequencing,Novel Object Recognition (40)
+Whole Genome Shotgun Metagenomics Sequencing (41),"Elevated Plus Maze (42,43)"
+Metatranscriptomics Sequencing,"Attentional Set Shifting (44,45)"
+"NucleotideMicroarray(DNA, RNA, miRNA, SNP) (46)",Barnes Maze (47)
+Protein Microarray (46),3-Chamber Social Isolation (48)
+"Bulk RNA Sequencing (49), MINISEQE Guidelineshttps://www.fged.org/projects/minseqe/(49)",Drosophila Climbing Locomotion (50)
+Targeted RNA Sequencing,Drosophila in-Flight Behavior (51)
+Single Cell/Nuclei RNA Sequencing (52),Operant Response (53)
+microRNA Sequencing,Novel Object Location (54)
+Single Cell/Nuclei ATAC Sequencing,Balance Beam (55)
+Spatial Transcriptomics,Deacon Score (56)
+Nanopore DNA Sequencing,3pt/4pt/Torsion Mechanical Tests (57)
+Nanopore Targeted DNA Sequencing,Micro-computed Tomography (58)
+Nanopore Direct RNA Sequencing,Dual-Energy X-Ray Absorptiometry (59)
+Targeted Circular Consensus DNA Sequencing,Peripheral Quantitative Computed Tomography (60)
+Proteomic Mass Spectrometry (61),Calcium Uptake via Spectrofluorometry (62)
+Metabolomic Mass Spectrometry,Echocardiogram Ultrasound (63)
+Metabolite NMR Spectroscopy,Estrous Cycle Cytology (64)
+Chromatin Immunoprecipitation Sequencing,Flow Cytometry (65)
+Chromatin Immunocleavage Sequencing,Genome Wide Association Study (66)
+Methylated DNA Immunoprecipitation Sequencing,Histomorphometry (67)
+Enzyme-Linked ImmunoSorbent Assay (ELISA),Histology
+,Light Microscopy
+,Immunohistochemistry
+,Immunostaining
+,Fluorescence Microscopy
+,Confocal Microscopy
+,Transmission Electron Microscopy (68)
+,Scanning Electron Microscopy (69)
+,Morphometric Photography
+,Muscle Contractility (70)
+,Muscle Force via Force Plate (71)
+,Muscle Force via Force Transducer (72)
+,Ophthalmological Ultrasound (73)
+,Optical Coherence Tomography (74)
+,Western Blot (75)
+,"Magnetic Resonance Imaging (76,77)"

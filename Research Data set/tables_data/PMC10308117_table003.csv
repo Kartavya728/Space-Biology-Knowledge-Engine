@@ -1,0 +1,28 @@
+Characteristic,1,2,3,4,5
+Growth temperature (°C),15–37,15–45,10–40,10–45,4–45
+Growth pH,6.0–8.0,5.5–9.5,5.0–9.0,5.0–8.0,5.0–8.0
+Growth in the presence of 3% NaCl,+,+,–,+,+
+Endospore formation,+,–,+,+,+
+Motility,+,–,+,+,+
+Catalase,–,–,+,+,+
+Nitrate reduction,+,+,+,–,–
+Oxidase,w,w,+,–,–
+Dextrin,+,N.D.,N.D.,+,+
+Assimilation of:
+Alanine,+,–,–,+,N.D.
+Histidine,+,–,–,+,N.D.
+Serine,+,–,–,+,N.D.
+Sucrose,+,w,–,+,+
+L-Arabinose,+,w,+,–,N.D.
+Melibiose,+,w,+,—,N.D.
+D-Fructose,+,w,N.D.,+,+
+Inositol,+,+,—,N.D.,+
+Lactose,+,–,N.D.,+,+
+Acid production from:
+Maltose,+,–,N.D.,+,–
+Sucrose,+,–,N.D.,+,+
+D-fructose,+,+,N.D.,+,+
+D-ribose,+,+,N.D.,+,+
+N-acetyl glucosamine,+,+,N.D.,+,+
+Lactose,+,–,N.D.,+,+
+Trisodium citrate,–,+,N.D.,+,–

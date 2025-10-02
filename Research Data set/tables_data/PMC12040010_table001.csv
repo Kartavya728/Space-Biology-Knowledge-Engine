@@ -1,0 +1,9 @@
+Hospitalization days,Glucose,Chloride,Microalbumin,Color,Turbidity,Pandy test,Red blood cells,White blood cells,Neutrophil,Lymphocyte,Culture
+mmol/L,mmol/L,mg/L,/mm3,/mm3,%,%
+3/16,2.88,118.2,80,Colorless,Clear,Positive,0,106,22,78,
+3/21,2.32,123,95,Colorless,Slightly turbid,Positive,1000,339,64,36,
+3/22,2.09,114.4,133,Red,Turbid,Positive,"56,000",1196,46,54,C albidus
+3/30,2.22,129.1,59,Colorless,Slightly turbid,Slightly positive,0,104,25,75,
+4/03,4.07,130.2,50,Colorless,Clear,Positive,0,149,1,99,Negative
+4/19,3.99,127.6,46,Colorless,Clear,Negative,1000,136,2,98,Negative
+4/21,4.05,132.1,28,Colorless,Clear,Negative,0,26,4,96,Negative

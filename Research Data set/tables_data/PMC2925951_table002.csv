@@ -1,0 +1,5 @@
+GO category,Molecular function,Count,P-Value
+Over-represented,,,
+GO:0004650,Polygalacturonase activity,6,0.0176
+GO:0005509,Calcium ion binding,8,0.0176
+GO:0003700,Transcription factor activity,27,0.0443

@@ -1,0 +1,65 @@
+,GO term name
+Ontology,Transcript ID,Gene symbol,Gene description,FArg: GArgFC (log2)
+Cellular Component,cell periphery GO:0071944,
+,At1g32950,,Subtilase family protein,3.3
+,At1g11690,,,3.3
+,At1g03920,,Protein kinase family protein,2.9
+,At1g80510,,Transmembrane amino acid transporter family protein,2.8
+,At3g07320,,O-Glycosyl hydrolases family 17 protein,2.8
+,At4g12770,,Chaperone DnaJ-domain superfamily protein,2.4
+,At2g38330,,MATE efflux family protein,1.7
+,At5g24970,,Protein kinase superfamily protein,1.6
+,At1g63440,HMA5,heavy metal atpase 5,1.4
+,At3g14770,SWEET2,Nodulin MtN3 family protein,1.4
+,At5g20280,SPSA1,sucrose phosphate synthase 1F,1.2
+,At3g05030,NHX2,sodium hydrogen exchanger 2,1.2
+,At1g78820,,D-mannose binding lectin protein with Apple-like,1.2
+,At3g20410,CPK9,calmodulin-domain protein kinase 9,1.0
+,At3g13520,ATAGP12,arabinogalactan protein 12,−1.0
+,At1g60740,,Thioredoxin superfamily protein,−1.0
+,At4g08950,EXO,Phosphate-responsive 1 family protein,−1.1
+,At5g65390,AGP7,arabinogalactan protein 7,−1.2
+,At1g68560,XYL1,alpha-xylosidase 1,−1.2
+,At5g15350,ENODL17,early nodulin-like protein 17,−1.2
+,At5g12140,CYS1,cystatin-1,−1.3
+,At1g12950,RSH2,root hair specific 2,−1.5
+,At5g14920,,Gibberellin-regulated family protein,−1.6
+,At4g03210,XTH9,xyloglucan endotransglucosylase/hydrolase 9,−1.9
+,At2g06850,XTH4,xyloglucan endotransglucosylase/hydrolase 4,−1.9
+,At5g03280,PIR2,NRAMP metal ion transporter family protein,−2.1
+,At3g23810,SAHH2,S-adenosyl-L-homocysteine (SAH) hydrolase 2,−2.9
+,At3g60270,,Cupredoxin superfamily protein,−3.2
+,At1g22710,SUT1,sucrose-proton symporter 2,−3.3
+Biological Process,response to hormone GO:0009725,
+,response to lipid GO:0033993,
+,At2g39540,,Gibberellin-regulated family protein,2.7
+,At1g03060,SPI,"Beige/BEACH domain; WD domain, G-beta repeat protein",2.4
+,At1g29395,COR414-TM1,COLD REGULATED 314 INNER MEMBRANE 1,2.4
+,At4g37580,UNS2,Acyl-CoA N-acyltransferases (NAT) superfamily protein,2.3
+,At2g43010,SRL2,phytochrome interacting factor 4,2.0
+,At2g36830,TIP1;1,gamma tonoplast intrinsic protein,1.6
+,At4g08950,EXO,Phosphate-responsive 1 family protein,−1.1
+,At3g16570,RALF23,rapid alkalinization factor 23,−1.2
+,At3g10520,NSHB2,haemoglobin 2,−1.4
+,At1g69690,TCP15,TCP family transcription factor,−1.4
+,At1g12950,RSH2,root hair specific 2,−1.5
+,At5g14920,,Gibberellin-regulated family protein,−1.6
+,At5g03280,PIR2,NRAMP metal ion transporter family protein,−2.1
+,xyloglucan metabolic process GO:0010411,
+,At1g68560,XYL1,alpha-xylosidase 1,−1.2
+,At4g03210,XTH9,xyloglucan endotransglucosylase/hydrolase 9,−1.9
+,At2g06850,XTH4,xyloglucan endotransglucosylase/hydrolase 4,−1.9
+Molecular Function,transporter activity GO:0005215,
+,At1g80510,,Transmembrane amino acid transporter family protein,2.8
+,At2g38330,,MATE efflux family protein,1.7
+,At2g36830,TIP1;1,gamma tonoplast intrinsic protein,1.6
+,At5g66650,,Protein of unknown function (DUF607),1.6
+,At1g63440,HMA5,heavy metal atpase 5,1.4
+,At3g14770,SWEET2,Nodulin MtN3 family protein,1.4
+,At3g05030,NHX2,sodium hydrogen exchanger 2,1.2
+,At1g72700,,ATPase E1-E2 type family protein / haloacid dehalogenase-like hydrolase family protein,1.1
+,At3g10520,NSHB2,haemoglobin 2,−1.4
+,At1g12950,RSH2,root hair specific 2,−1.5
+,At5g03280,PIR2,NRAMP metal ion transporter family protein,−2.1
+,At2g26900,BASS2,Sodium Bile acid symporter family,−2.9
+,At1g22710,SUT1,sucrose-proton symporter 2,−3.3

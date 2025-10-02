@@ -1,0 +1,7 @@
+Isolate no.,ISS module,GenBank accession no.,Sequencing platform,No. of reads,Avg. read coverage (×),N50(Mb),No. of contigs
+ISSFR-3F,U.S.a,CP018931,PacBio,"116,418",202,5.2,2
+ISSFR-9F,U.S.,CP018933,PacBio,"15,939",42,5.2,2
+ISSFR-23F,U.S.,MSMO00000000,PacBio,"8,145",17,0.6,16
+JEM-2,Japanb,CP018935,PacBio,"40,305",80,5.2,2
+S1-R4H1-FB,Russian Federationc,NBNT00000000,Illumina,"4,275,902",242,0.1,329
+S2-R3J1-FB-BA1,Russian Federation,NBNR00000000,Illumina,"11,266,760",638,0.4,388

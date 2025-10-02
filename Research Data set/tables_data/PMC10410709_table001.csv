@@ -1,0 +1,16 @@
+,Gene target,Human Gene,Gene description,Required for positive effects of mtH2S?
+Life span,Health span
+H2S synthesis,mpst-1,MPST,Mitochondrial H2S synthesis,✓,✓
+cth-2,CTH,Mitochondria-translocating H2S synthesis,✓,✓
+cbs-1,CBSL,Cytosolic H2S synthesis,✓,✓
+kri-1,KRIT 1,H2S and ROS generation,✓,✓
+cysl-2,Cysteine synthase,Cytosolic H2S production,✓,✓
+H2S oxidation/redox,ethe-1,ETHE1,Dioxygenase required for H2S oxidation,✓,✓
+gsr-1,GSR,Glutathione reductase,✓,✓
+H2S + aging,daf-16,FoxO,H2S responsive FoxO transcription factor,✓,✓
+Nrf2 oxidative stress protection,skn-1,NRF2,Regulates oxidate stress response,✓,×
+gcs-1,GCLC,Glutathione synthesis under Nrf2 control,✓,×
+ikke-1,RELA,Regulates Nrf2 nuclear translocation,×,✓
+wdr-23,Keap1,Negative regulator of Nrf2,×,×
+H2S responsive,hif-1,HIF,H2S-responsive transcription factor,×,×
+hsp-6,Hsp70,H2S-responsive mitochondrial chaperone,×,×

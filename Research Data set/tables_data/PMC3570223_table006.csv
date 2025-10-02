@@ -1,0 +1,54 @@
+Gene symbol,Entrez gene ID,Gene name,p-Valuea,Fold change
+Insr,16337,Insulin receptor,0.044*,−2.01
+Cbl,12402,Casitas B-lineage lymphoma,0.008*,−1.90
+Rhoq,104215,"Ras homolog gene family, member Q",0.008,−1.35
+Tsc2,22084,tuberous sclerosis 2,0.044*,−2.50
+Rapgef1,107746,Rap guanine nucleotide exchange factor (GEF) 1,0.045*,−1.61
+Pten,19211,Phosphatase and tensin homolog,0.045*,−1.83
+Lipe,16890,"Lipase, hormone sensitive",0.041*,−3.61
+Nck1,17973,Non-catalytic region of tyrosine kinase adaptor protein 1,0.048*,−1.70
+Gab1,14388,Growth factor receptor bound protein 2-associated protein 1,0.048*,−2.53
+Ptpn11,19247,"Protein tyrosine phosphatase, non-receptor type 11",0.076,−1.44
+Foxo4,54601,Forkhead box O4,0.101,−3.22
+Sgk1,20393,Serum/glucocorticoid regulated kinase 1,0.127,−1.99
+Socs3,12702,Suppressor of cytokine signaling 3,0.138,2.41
+Stx4a,20909,Syntaxin 4A (placental),0.139,1.09
+Mtor,56717,Mechanistic target of rapamycin (serine/threonine kinase),0.155,−1.31
+Rptor,74370,"Regulatory associated protein of MTOR, complex 1",0.174,−1.66
+Eif4ebp1,13685,Eukaryotic translation initiation factor 4E binding protein 1,0.185,−1.25
+Raf1,110157,v-Raf-leukemia viral oncogene 1,0.191,1.67
+Irs1,16367,Insulin receptor substrate 1,0.198,−1.55
+Mapk8,26419,Mitogen-activated protein kinase 8,0.257,−1.47
+Ptpn1,19246,"Protein tyrosine phosphatase, non-receptor type 1",0.289,−1.26
+Foxo3,56484,Forkhead box O3,0.298,1.28
+Ptprf,19268,"Protein tyrosine phosphatase, receptor type, F",0.340,2.08
+Pde3b,18576,"Phosphodiesterase 3B, cGMP-inhibited",0.357,1.32
+Stxbp4,20913,Syntaxin binding protein 4,0.409,−1.59
+Slc2a4,20528,"Solute carrier family 2 (facilitated glucose transporter), member 4",0.445,1.81
+Vamp2,22318,Vesicle-associated membrane protein 2,0.450,1.24
+Tsc1,64930,Tuberous sclerosis 1,0.461,−1.43
+Pdpk1,18607,3-Phosphoinositide dependent protein kinase 1,0.520,−1.30
+Eif4e,13684,Eukaryotic translation initiation factor 4E,0.555,−1.33
+Bad,12015,BCL2-associated agonist of cell death,0.558,1.20
+Grb2,14784,Growth factor receptor bound protein 2,0.672,−1.10
+Fyn,14360,Fyn proto-oncogene,0.704,−1.13
+Shcl,20416,Src homology 2 domain-containing transforming protein C1,0.756,1.15
+Acly,104112,ATP citrate lyase,0.889,−1.04
+Grb10,14783,Growth factor receptor bound protein 10,0.917,−1.08
+Trip10,106628,Thyroid hormone receptor interactor 10,0.960,1.02
+Akt1,11651,Thymoma viral proto-oncogene 1,0.432,−1.64
+Mapk1,26413,Mitogen-activated protein kinase 1,0.422,−1.65
+Foxo1,56458,Forkhead box O1,0.381,−1.15
+Gsk3b,56637,Glycogen synthase kinase 3 beta,0.105,−1.57
+Gys1,14936,"Glycogen synthase 1, muscle",0.834,1.13
+Irs1,16367,Insulin receptor substrate 1,0.198,−1.54
+Jak1,16451,Janus kinase 1,0.075,−1.62
+Map2k1,26395,Mitogen-activated protein kinase kinase 1,0.236,−1.75
+Rps6kb1,72508,"Ribosomal protein S6 kinase, polypeptide 1",0.220,−1.72
+Pik3r1,18708,"Phosphatidylinositol 3-kinase, regulatory subunit, polypeptide 1 (p85 alpha)",0.051,−1.84
+Prkaca,18747,"Protein kinase, cAMP dependent, catalytic, alpha",0.657,1.05
+Prkcz,18762,"Protein kinase C, zeta",0.772,−1.22
+Ppp1cc,19047,"Protein phosphatase 1, catalytic subunit, gamma isoform",0.096,−1.15
+Rasa1,218397,RAS p21 protein activator 1,0.239,−1.57
+Inpp5d,16331,Inositol polyphosphate-5-phosphatase D,0.149,−1.27
+Kcnj8,16523,"Potassium inwardly-rectifying channel, subfamily J, member 8",0.298,1.36

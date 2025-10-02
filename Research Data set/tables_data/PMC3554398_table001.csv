@@ -1,0 +1,12 @@
+Sample ID,Sample typea,123-bp qPCR (16S rRNA copiesm−2),Total number of PhloChip-detected generab,Total number of bTEFAP-derived MOTUc
+SAF (during a spacecraft assembly):
+GI-36-4,Clean room floor,6.70 × 105,94,122
+GI-36-4(p),PMA-treated clean room floor,4.93 × 104,9,4
+GI-36-3,GSE,1.85 × 106,411,425
+GI-36-3(p),PMA-treated GSE,7.50 × 104,3,17
+,,,,
+Bldg 144 (no mission operation):
+GI-42-1,Clean room floor,4.46 × 107,199,447
+GI-42-1(p),PMA-treated clean room floor,9.25 × 106,106,108
+GI-42-2,GSE,2.68 × 107,236,571
+GI-42-2(p),PMA-treated GSE,1.86 × 106,75,42

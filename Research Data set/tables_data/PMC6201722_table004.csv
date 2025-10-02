@@ -1,0 +1,6 @@
+Comparison tested,Pvalue,t‐critical,t‐statistic,Degrees of freedom
+Control initial and salt initial,0.4261,2.1448,0.81974,14
+Control 0.25 h and salt 0.25 h,0.02669,2.1448,2.4756,14
+Control 1 h and salt 1 h,5.59E‐05,2.1448,5.6894,14
+Control 9 h and salt 9 h,8.97E‐08,2.1448,10.033,14
+Control 16 h and salt 16 h,1.37E‐07,2.1448,9.6934,14

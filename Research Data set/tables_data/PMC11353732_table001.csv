@@ -1,0 +1,126 @@
+DEGs,Log2 FC,padj,Gene Name
+Actg2,−2.15,0.0241,"Actin, γ 2, smooth muscle, enteric"
+Adhfe1,−0.53,0.0003,"Alcohol dehydrogenase, iron-containing, 1"
+Alox5ap,0.58,0.0454,Arachidonate 5-lipoxygenase activating protein
+Aplnr,−0.41,0.0457,Apelin receptor
+Aqp7,−0.77,0.0007,Aquaporin 7
+Arl11,0.79,0.0357,ADP-ribosylation factor-like GTPase 11
+Arntl,−1.92,1.77 × 10−12,Aryl hydrocarbon receptor nuclear translocator-like
+Asb2,−0.32,0.0002,Ankyrin repeat and SOCS box-containing 2
+Atp2a1,−0.77,0.0284,ATPase sarcoplasmic/endoplasmic reticulum Ca2+ transporting 1
+Atp4a,−1.69,0.0075,ATPase H+/K+ transporting subunit α
+Bcat2,−0.40,0.0038,Branched chain amino acid transaminase 2
+Bckdha,−0.40,0.0083,"Branched chain ketoacid dehydrogenase E1, α polypeptide"
+Bcl6b,−0.61,0.0055,"BCL6B, transcription repressor"
+C1qa,0.57,0.0483,Complement C1q A chain
+C1qb,0.74,0.0005,Complement C1q B chain
+C1qc,0.69,0.0007,Complement C1q C chain
+C5ar1,0.61,0.0483,Complement C5a receptor 1
+Car4,−1.15,0.0017,Carbonic anhydrase 4
+Cd14,0.67,0.0314,CD14 molecule
+Cd163,0.92,0.0004,CD163 molecule
+Cd44,0.33,0.0353,CD44 molecule
+Cd68,0.99,0.0059,CD68 molecule
+Cd93,−0.42,0.0065,CD93 molecule
+Cdkn1a,−0.75,0.0011,Cyclin-dependent kinase inhibitor 1A
+Cited4,−0.52,0.0296,"Cbp/p300-interacting transactivator, with Glu/Asp-rich carboxy-terminal domain, 4"
+Clec4a1,0.86,0.0121,"C-type lectin domain family 4, member A1"
+Clock,−0.44,0.0002,Clock circadian regulator
+Clu,0.44,0.0055,Clusterin
+Col5a3,−0.66,0.0280,Collagen type V α 3 chain
+Crispld2,−0.45,0.0234,Cysteine-rich secretory protein LCCL domain-containing 2
+Csf1r,0.51,0.0111,Colony stimulating factor 1 receptor
+Dkk3,−0.30,0.0351,Dickkopf WNT signaling pathway inhibitor 3
+Dot1l,−0.44,0.0190,DOT1-like histone lysine methyltransferase
+Ecrg4,−1.27,0.0299,ECRG4 augurin precursor
+Eepd1,−0.44,0.0007,Endonuclease/exonuclease/phosphatase family domain-containing 1
+Ephx1,0.84,0.0007,Epoxide hydrolase 1
+Exoc4,0.35,0.0073,Exocyst complex component 4
+F5,0.86,0.0345,Coagulation factor V
+Fabp3,−0.41,1.03 × 10−5,Fatty acid-binding protein 3
+Fam160a1,−0.51,0.0369,"Family with sequence similarity 160, member A1"
+Fam220a,−0.40,0.0010,"Family with sequence similarity 220, member A"
+Fam26e,−0.67,0.0235,Calcium homeostasis modulator family member 5
+Fcgr2b,0.98,0.0314,Fc fragment of IgG receptor IIb
+Fcna,0.63,0.0015,Ficolin A
+Fhl2,−0.51,0.0121,Four and a half LIM domains 2
+Gnb3,−0.47,0.0093,G protein subunit β 3
+Gng2,0.47,0.0457,G protein subunit γ 2
+Gpsm1,−0.42,0.0063,G-protein signaling modulator 1
+Grip2,−1.46,0.0022,Glutamate receptor interacting protein 2
+Gsn,−0.49,0.0008,Gelsolin
+Gstz1,−0.69,0.0006,Glutathione S-transferase zeta 1
+Hadh,−0.37,1.60 × 10−5,Hydroxyacyl-CoA dehydrogenase
+Heyl,−0.31,0.0105,Hairy/enhancer-of-split related with YRPW motif-like
+Hspa5,−0.34,0.0456,Heat shock protein family A member 5
+Inha,0.71,0.0345,Inhibin subunit α
+Ispd,−0.44,0.0190,Isoprenoid synthase domain-containing
+Itga6,−0.36,0.0011,Integrin subunit α 6
+Itgam,0.90,0.0061,Integrin subunit α M
+Itgb2,0.80,0.0108,Integrin subunit β 2
+Kank1,−0.39,0.0307,KN motif and ankyrin repeat domains 1
+Kcnma1,−2.16,0.0008,"Potassium large conductance calcium-activated channel, subfamily M, α member 1"
+Laptm5,0.50,0.0117,Lysosomal protein transmembrane 5
+Lbh,−0.38,0.0226,Limb bud and heart development
+Lcp1,0.42,0.0162,Lymphocyte cytosolic protein 1
+Leo1,−0.34,0.0295,"LEO1 homolog, Paf1/RNA polymerase II complex component"
+Lgals3,0.81,0.0077,Galectin 3
+Lilrb3l,0.82,0.0435,Leukocyte immunoglobulin-like receptor subfamily B member 3-like
+Limd1,−0.48,0.0015,LIM domain-containing 1
+Lingo4,−0.55,0.0142,Leucine-rich repeat and Ig domain-containing 4
+Map3k7cl,−0.66,0.0369,MAP3K7 C-terminal-like
+Mill1,−1.78,0.0007,MHC I-like leukocyte 1
+Mrc1,0.70,0.0105,"Mannose receptor, C type 1"
+Mtfp1,−0.33,0.0250,Mitochondrial fission process 1
+Mtus1,−0.30,0.0077,Mitochondrial tumor suppressor 1
+Mx2,−0.45,0.0004,MX dynamin-like GTPase 2
+Myh11,−1.46,0.0483,Myosin heavy chain 11
+Myo5b,−0.46,0.0261,Myosin Vb
+Myom2,−0.85,1.53 × 10−14,Myomesin 2
+Nckap1l,0.72,0.0091,NCK associated protein 1-like
+Npas2,−1.43,1.51 × 10−6,Neuronal PAS domain protein 2
+Nrp2,−0.31,0.0457,Neuropilin 2
+Ntsr1,1.01,0.0405,Neurotensin receptor 1
+Nudt4,0.37,0.0073,Nudix hydrolase 4
+P2rx4,0.42,0.0483,Purinergic receptor P2X 4
+Paqr6,−0.57,0.0250,Progestin and adipoQ receptor family member 6
+Per2,0.84,1.29 × 10−9,Period circadian regulator 2
+Per3,1.25,0.0226,Period circadian regulator 3
+Phlda1,−0.65,0.0420,"Pleckstrin homology-like domain, family A, member 1"
+Pi16,−0.58,0.0215,Peptidase inhibitor 16
+Pik3ip1,0.43,0.0043,Phosphoinositide-3-kinase interacting protein 1
+Ppp1r14c,−0.34,0.0405,"Protein phosphatase 1, regulatory (inhibitor) subunit 14c"
+Ppp1r3c,−0.41,0.0065,"Protein phosphatase 1, regulatory subunit 3C"
+Rapgef5,0.31,0.0451,Rap guanine nucleotide exchange factor (GEF) 5
+Rasd2,−0.77,0.0091,"RASD family, member 2"
+Rasl11b,−0.59,0.0105,RAS-like family 11 member B
+Rcan1,−0.63,0.0005,Regulator of calcineurin 1
+Rhobtb1,0.82,2.92 × 10−9,Rho-related BTB domain-containing 1
+Rhoj,−0.41,0.0210,Ras homolog family member J
+Rimbp2,−0.62,0.0025,RIMS-binding protein 2
+Rpl3,0.46,0.0120,Ribosomal protein L3
+Rpl3l,−0.62,0.0004,Ribosomal protein L3-like
+S100a10,0.37,0.0154,S100 calcium-binding protein A10
+S100a4,0.84,1.60 5,S100 calcium-binding protein A4
+Slc38a2,−0.31,0.0015,"Solute carrier family 38, member 2"
+Slc41a3,−0.87,5.13 × 10−7,"Solute carrier family 41, member 3"
+Slc8a2,−1.94,0.0454,Solute carrier family 8 member A2
+Smyd2,−0.38,0.0483,SET and MYND domain-containing 2
+Sparcl1,−0.40,0.0015,SPARC-like 1
+Srebf1,−0.32,0.0166,Sterol regulatory element-binding transcription factor 1
+Stxbp1,0.34,0.0038,Syntaxin-binding protein 1
+Tef,0.74,0.0002,"TEF, PAR bZIP transcription factor"
+Tf,0.64,0.0295,Transferrin
+Tfrc,−0.51,0.0142,Transferrin receptor
+Tgm1,1.11,0.0084,Transglutaminase 1
+Tlr8,1.06,0.0053,Toll-like receptor 8
+Tmem176b,0.31,0.0197,Transmembrane protein 176B
+Tmem179,−0.51,0.0091,Transmembrane protein 179
+Tp53i11,−0.42,0.0051,Tumor protein p53 inducible protein 11
+Tpsb2,−0.78,0.0339,Tryptase β 2
+Trim16,−0.36,0.0357,Tripartite motif-containing 16
+Tspan18,−0.57,0.0084,Tetraspanin 18
+Tut1,0.51,0.0277,"Terminal uridylyl transferase 1, U6 snRNA-specific"
+Tyrobp,0.50,0.0365,Transmembrane immune signaling adaptor Tyrobp
+Ucp3,−1.69,4.13 × 10−5,Uncoupling protein 3
+Wee1,0.47,0.0357,WEE1 G2 checkpoint kinase

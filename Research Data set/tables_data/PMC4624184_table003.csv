@@ -1,0 +1,15 @@
+,ISS HEPA total,ISS HEPA viable,ISS Debris total,ISS Debris viable,JPL-SAF total,JPL-SAF viable,JPL-103 total,JPL-103 viable
+Total number of sequences,"553,176","587,569","1,148,047","1,116,419","1,029,984","1,472,777","489,047","397,607"
+Percentage of sequences that belong to three dominant phyla,90.92,99.65,92.35,98.26,80.25,81.84,87.96,90.46
+Actinobacteria
+Percentage of sequences,63.28,95.28,40.52,66.54,28.76,25.25,23.79,21.46
+Number of genera,78,55,62,38,122,116,103,71
+Number of dominant genera (>100 sequences),16,7,28,16,71,76,28,24
+Firmicutes
+Percentage of sequences,24.83,3.97,45.67,28.48,7.70,11.05,6.60,0.98
+Number of genera,118,67,100,31,152,150,101,53
+Number of dominant genera (>100 sequences),50,17,65,18,53,69,15,7
+Proteobacteria
+Percentage of sequences,2.81,0.41,6.16,3.24,43.80,45.55,57.57,68.02
+Number of genera,95,65,89,30,189,191,143,92
+Number of dominant genera (>100 sequences),22,7,49,10,96,104,56,29

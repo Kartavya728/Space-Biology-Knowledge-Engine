@@ -1,0 +1,14 @@
+ASSEMBLY STATISTICS
+,,Male,Female,Joint
+Assembly,N50 (bp),"4,779","4,843",11906
+No. scaffolds,"147,558","147,549","83,487"
+Largest scaffold (bp),"306,667","176,371","375,275"
+Total length (bp),"474,383,205","472,302,230","462,564,754"
+GC%,27.54,27.28,27.84
+Coverage (%),87.7,86.8,91.1
+BUSCOs (Insecta),Complete,80.2%,81.3%,90.9%
+Single,69.4%,71.8%,89.2%
+Duplicated,10.8%,9.5%,1.7%
+Fragmented,15.9%,15.1%,6.5%
+Missing,3.9%,3.6%,2.6%
+n,1658,1658,1658

@@ -1,0 +1,13 @@
+Gene,Type,Relative Expression (Array results),Std. Error,P-value,Result
+Q-PCR results of gene expression in Col-0 treated for 180 min. vs Col-0 exposed to a control solution for 45 min. (RNA sources are the same as for the transcriptome analysis):
+At2g32170,REF,1,,,
+CAX1,TRG,0.57 (0.602),0.436–0.766,0,DOWN
+MRS2-10,TRG,1.035 (1.183),0.758–1.377,0.714,
+SULTR3;4,TRG,0.557 (0.541),0.462–0.691,0,DOWN
+NRAMP1,TRG,1.196 (1.317),0.886–1.515,0.107,
+Q-PCR results of gene expression in Col-0 treated for 180 min. vs Col-0 exposed to a control solution for 180 min. (diurnally controlled samples):
+At2g32170,REF,1,,,
+CAX1,TRG,0.641 (0.602),0.429–0.966,0.004,DOWN
+MRS2-10,TRG,1.017 (1.183),0.876–1.195,0.763,
+SULTR3;4,TRG,0.861 (0.541),0.695–1.059,0.049,DOWN
+NRAMP1,TRG,1.128 (1.317),0.970–1.381,0.156,

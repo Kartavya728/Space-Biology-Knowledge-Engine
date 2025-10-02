@@ -1,0 +1,65 @@
+Transcription Factors
+ExpressionPattern,Accession Number,Gene Symbol,DefenseRelated,RootDevelopment,"a,bTouchResponsive",cHypergResponsive,dParabolic Flight
+linear up,AT1G46480,WOX4,,+,,,
+AT1G69170,SPL6,+,,,,
+AT2G02820,MYB88,,+,,,
+AT5G23280,TCP7,,,↓,,
+AT5G50820,NAC97,,,↑,,
+AT5G65320,BHLH99,,,↓,,
+AT5G39660,CDF2,,,,,
+peak up,AT5G64170,LNK1,,,,,
+threshold up,AT1G71692,AGL12,,+,,,
+AT3G55370,OBP3,+,+,,,
+AT4G29930,BHLH27,,,,,
+AT5G03720,HSFA3,,,,,
+AT5G12840,NYFA1,,,,,
+AT5G65230,MYB53,,+,,,
+linear down,AT3G60630,HM2,,+,,,
+AT5G15210,ZFHD3,,,↓,,
+AT5G21120,EIL2,,,,,
+threshold down,AT1G26870,ANAC009,,+,,,
+AT2G36400,GRF3,+,+,↓,,
+AT4G32890,GATA9,,,↓,,
+Heat Shock Proteins
+ExpressionPattern,Accession Number,Gene Symbol,DefenseRelated,RootDevelopment,"a,bTouchResponsive",cHypergResponsive,dParabolic Flight
+linear up,AT1G76700,DNAJ (ATJ10),,,↑,,down
+AT4G29920,SMXL4,,,,,
+peak up,AT1G74310,HSP101,,,,,down
+threshold up,AT2G20560,DNAJ,,,,,
+AT3G12580,HSP70,,,,↑,down
+AT3G14200,Chaperone DNA J domain,,,↑,,down
+AT5G03720,HSFA3,,,↑,,
+AT5G52640,HSP90.1,,,,↑,down
+peak down,AT4G21870,HSP15.4,,,,,up
+Defense Related
+ExpressionPattern,Accession Number,Gene Symbol,DefenseRelated,RootDevelopment,"a,bTouchResponsive",cHypergResponsive,dParabolic Flight
+linear up,AT1G11960,OSCA1.3,+,,↑,,
+AT3G26450,Polyketide cyclase,+,,,,
+AT4G23570,SGT1A,+,,,,
+peak up,AT1G18870,ICS2,+,,,,
+AT3G17690,CNGC19,+,,,,
+AT4G23190,CRK11,+,,,,
+threshold up,AT1G29340,PUB17,+,,↑,,
+AT3G22600,LTPG5,+,,,,
+AT4G37410,CYP P450 81F4,+,,,,
+AT5G41180,LRR kinase,+,,,,
+peak down,AT4G14640,CML8,+,,,,
+threshold down,AT5G66590,CAP Antigen 5,+,,↑,,
+Cell Wall Related
+ExpressionPattern,AccessionNumber,Gene Symbol,DefenseRelated,RootDevelopment,"a,bTouchResponsive",cHypergResponsive,dParabolic Flight
+linear up,AT3G21190,MSR1,,,,,
+AT5G10230,ANN7,,,,,
+peak up,AT2G32990,GH9B8,,,,↑,
+AT4G36360,BGAL3,,,,↑,
+threshold up,AT1G70370,PGL3,,,,↑,
+AT5G22740,CSLA2,,,,,
+AT5G49340,TBL4,,,,,
+linear down,AT2G34070,TBL3,,,,,
+AT3G59850,Pectin lyase,,,,,
+peak down,AT1G23480,CSLA3,,,,,
+AT3G61490,Pectin lyase 3,,,,,
+AT4G19410,PAE7,,,,,
+AT5G67390,Glycosyl transferase like,,,,,
+AT1G65985,Transmembrane protein,,,,,
+threshold down,AT3G05910,PAE12,,,,,
+AT3G53520,UXS1,,,,,

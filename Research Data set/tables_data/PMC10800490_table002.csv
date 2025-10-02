@@ -1,0 +1,34 @@
+Genes upregulated in microgravity
+Biological Process
+GO Accession,Description,query item,background item,p-value,FDR
+GO:0016192,vesicle-mediated transport,52,397,1.30E-13,3.00E-10
+GO:0048193,Golgi vesicle transport,23,108,2.80E-10,1.10E-07
+GO:0006355,"regulation of transcription, DNA-templated",155,2443,1.80E-10,7.70E-08
+GO:0048367,shoot system development,64,896,1.70E-06,0.00019
+GO:0009734,auxin-activated signaling pathway,23,190,2.80E-06,0.00026
+GO:0009733,response to auxin,36,407,5.30E-06,0.00042
+Cellular Compartment
+GO:0044431,Golgi apparatus part,83,567,8.10E-24,6.90E-21
+GO:0005794,Golgi apparatus,123,1182,8.60E-23,3.60E-20
+GO:0012505,endomembrane system,175,2143,1.90E-21,5.40E-19
+GO:0005802,trans-Golgi network,45,256,5.20E-16,1.10E-13
+GO:0005634,nucleus,487,9924,1.80E-13,1.70E-11
+Genes downregulated in microgravity
+GO Accession,Description,query item,background item,p-value,FDR
+Biological Process
+GO:0006950,response to stress,340,3506,1.60E-34,4.10E-31
+GO:0006952,defense response,172,1566,7.80E-22,5.80E-19
+GO:0009607,response to biotic stimulus,116,1253,1.60E-10,3.80E-08
+GO:0023052,signaling,162,1997,3.90E-10,7.20E-08
+GO:0009414,response to water deprivation,49,347,3.70E-10,7.10E-08
+GO:0006970,response to osmotic stress,69,636,3.60E-09,5.20E-07
+GO:0009266,response to temperature stimulus,63,559,4.70E-09,6.30E-07
+GO:0009737,response to abscisic acid,62,578,3.30E-08,4.20E-06
+GO:0009651,response to salt stress,59,574,2.60E-07,2.90E-05
+GO:0009409,response to cold,45,384,2.70E-07,2.90E-05
+GO:0071554,cell wall organization or biogenesis,61,704,2.50E-05,0.0018
+Cellular Compartment
+GO:0009536,plastid,293,4213,1.80E-10,2.10E-08
+GO:0009507,chloroplast,289,4148,2.10E-10,2.10E-08
+GO:0009579,thylakoid,66,584,1.80E-09,1.50E-07
+GO:0005618,cell wall,68,706,3.00E-07,1.10E-05

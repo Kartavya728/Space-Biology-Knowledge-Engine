@@ -1,0 +1,7 @@
+Tissue Type,Radiation Type,Cell/Animal Models,Effect,Study
+Ovarian,0.439 Gy as a 290 MeV/u carbon-ion beam (LET 10 keV/micron),B6C3F1 mice,Induction of ovarian tumors,"Watanabe et al., 1998 [139]"
+0.426 Gy heavy ion irradiation of 290 MeV/u carbon-ion beam (LET 60–210 KeV/micron) at the dose rate of 0.4 +/− 0.2 Gy/min; 0.5 Gy of X-ray irradiation at 0.1 Gy/min or 5 Gy of X-ray irradiation at 1 Gy/min.,B6C3F1 mice,Tumorigenicity was lower for heavy ion than for 0.5 Gy and 5 Gy X-ray irradiation,"Watanabe et al., 1998 [140]"
+"high and low LET radiations.1.0 Gy monoenergetic neutrons (0.317, 0.525 and 1.026 MeV), 252Cf fission neutron (2.13 MeV) or 137Cs γ-rays",C57BL/6N mice,Higher effectiveness of neutrons than γ-rays to induce oocyte and pregranulosa cell apoptosis correlates with the inhibition of granulosa cell tumor development,"Nitta & Hoshi, 2003 [141]"
+HZE particles.50 cGy iron ions,C57BL/6J,Induction of ovarian tumors,"Mishra et al., 2018 [142]"
+Cervical,spaceflight(cells were flown on “Russian MIR” space station or on the Space Shuttle),HeLa human cervical cancer cells,Increased DNA damage,"Ohnishi, et al., 2002 [71]"
+Endometrial,Monoenergetic protons (1–10 Gy; LET 8.35 keV/μm and 4.86 MeV) and γ-rays (0.2–1.6 Gy),Human endometrial carcinoma cell lines (HEC1B and AN3CA cells),Decreased cell survival,"Palumbo et al., 2001 [158]"

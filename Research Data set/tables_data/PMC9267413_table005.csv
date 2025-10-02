@@ -1,0 +1,10 @@
+Tissue Type,Microgravity/Space Flight,Cell/Animal Models,Effect,Study
+Ovarian,simulated microgravity RWV,LN1 human ovarian tumor cells,LN1 cells grew as spheroids free in suspension,"Becker et al., 1993; Goodwin et al., 1997 [134,135]"
+spaceflight(cells were cultured on the ISS),LN1 human ovarian tumor cells,Cells showed reduced expression of VIM and EMA,"Hammond et al., 2005 [136]"
+simulated microgravity3D-C,SKOV-3 human ovarian cancer cells,"Cells showed reduced proliferation, migration, and higher sensitivity of cancer cells to the cisplatin","Przystupski et al., 2021 [137]"
+microgravity,set of systems-biology tools anddatabases,identified several cancer related signatures induced by microgravity,"Mukhopadhyay et al., 2016 [138]"
+Cervical,simulated microgravity RWV,Co-culture of HUVEC and tumor primary cells,"Co-culture presented tubular structures penetrating the tumor cell masses,","Chopra et al., 1997 [143]"
+simulated microgravity HFB and RCCS,HeLa human cervical cancer cells,HFB exposure increased CD133-positive cell growth,"Kelly et al., 2010 [144]"
+spaceflight(cells were flown on “Shen Zhou IV” space shuttle mission),Human cervical carcinoma CaSki cells,"Cells exhibited morphologic differences, characterized by rounder, smoother, decreased, smaller, and low adhesion cells. Furthermore, space-grown cells showed altered gene expression that generally corresponded to changes in genes regulating the cell cycle, cell morphology, apoptosis, and signal transduction","Zhang et al., 2011; Guo et al., 2012 [145,146]"
+Endometrial,simulated microgravity3D-C,human endometrial stromal cells (eSCs),Cells showed reduced proliferation and migration. This was accompanied by a simultaneous decrease in the phosphorylation of Akt and the level of matrix metalloproteinase (MMP)-2 and FOXO3a.,"Cho et al., 2019 [156]"
+simulated microgravity RCCS,Human tumor primary cells,3D model endometrial cancer cell culture was established,"Grun et al., 2009 [157]"

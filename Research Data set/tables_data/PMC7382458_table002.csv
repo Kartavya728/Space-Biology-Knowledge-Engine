@@ -1,0 +1,14 @@
+Category,Environment,Genera identified
+Flight samples,"10,000 ft Filter A",NA
+"10,000 ft Filter B",NA
+"20,000 ft Filter A","Bacillus zhangzhouensis5*,+,Bacillus pumilus1+"
+"20,000 ft Filter B",NA
+"30,000 ft Filter A","Bacillus zhangzhouensis2,Bacillusspp.2^"
+"30,000 ft Filter B",NA
+"40,000 ft Filter A",NA
+"40,000 ft Filter B","Streptococcussp.1^,Streptomycesspp.2^"
+Ground control,Pre-flight plane swab,"Bacillus subtilis4+,Bacillus pumilus3+,Bacillus megaterium3+,Bacillus zhangzhouensis1+,Bacillus safensis1+,Bacillusspp.8,Bacillus licheniformis3+,Bacillus halotolerans1+,Lysinibacillus sinduriesis1+,Methylorubrum zatmanii2^,Lysinibacillussp1.+"
+Post-flight plane swab,"Bacillusspp.2+,Bacillus zhangzhouensis6"
+Cabin control,Bench swab+,"Bacillus subtilis3,Bacillus safensis1,Bacillus maritimus1,Lysinibacillus sphaericus1,Lysinibacillus acetophenoni1"
+Witness R2A plate,"Pseudomonas syringae1+,Microvirga#,$1+,Methylorubrum populi$1+,Cellulomonas cellasea1+,Streptococcussp1^,Agromyces#sp1^,Planomicrobium glaciei$1+,Staphylococcus epidermidis2+,Bacillus licheniformis2^,Citrococcussp.1^,Bacillus paralicheniformis1^"
+Process control&,PBS elution fluid control,"Bacillus zhangzhouensis1,Bacillussp.1"

@@ -1,0 +1,9 @@
+GO Term,Number of Genes,P-value
+Lipid metabolic process,44,< 0.0001
+Organic acid metabolic process,41,< 0.0001
+Amino acid metabolic process,19,<0.01
+Organic acid biosynthetic process,23,< 0.0001
+Amino acid biosynthetic process,12,< 0.001
+Oxidation-reduction process,35,< 0.05
+Response to glucose stimulus,9,< 0.05
+Response to xenobiotic stimulus,6,< 0.05

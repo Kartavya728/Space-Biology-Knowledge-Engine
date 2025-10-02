@@ -1,0 +1,4 @@
+ArabidopsisRoot,ATG Number,Enriched Sene Set (Biological Process)
+Root growth spaceflight hub genes,ATMG00880 ATMG00840ATMG00660,Part of mitochondrion;Enables molecular function;Involved in biological process
+Root growth ground control hub genes,ATMG00720 ATMG01040ATMG01020 ATMG00580,Part of mitochondrion Enables molecular function;Involved in biological process;ATP synthesis coupled electron transport;Involved in oxidation-reduction process
+Shared hub genes for root growth in spaceflight and ground control,ATMG00860 ATMG00510 ATMG00750 ATMG00740 ATMG00720 ATMG00600ATMG00680 ATMG00820,Part of mitochondrion Enables molecular function;Involved in biological process;Enables NADH dehydrogenase activity;Part of mitochondrial respiratory chain complex 1;Involved in oxidation-reduction process;Enables NAD binding; quinone binding

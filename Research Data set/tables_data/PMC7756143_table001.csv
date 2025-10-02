@@ -1,0 +1,7 @@
+GLDS #,Tissue,Study Type,Preservation Method,Library Preparation,How the Dataset was Used in the Present Study,Relevant Figures & Tables
+GLDS-47,Liver,Spaceflight,Immediate,PolyA,To compare global gene expression in immediate versus carcass samples,Figure S1
+GLDS-48,Liver,Spaceflight,Immediate and Carcass,PolyA,To evaluate gene expression and RNA integrity differences in immediate versus carcass samples and in samples prepared via polyA-selection versus ribo-depletion,"Figures 1,2,3,4,S1,S2, andS3"
+GLDS-49,Liver,Ground,Immediate,PolyA,To compare global gene expression in immediate versus carcass samples,Figure S1
+GLDS-168,Liver,Spaceflight,Carcass,Ribodepletion,To evaluate gene expression and RNA integrity differences in samples prepared via polyA-selection vs. ribo-depletion,Figure 4
+GLDS-235,Liver,Ground,Immediate and Carcass,Ribodepletion,To determine a means of carcass preservation that is most consistent with standard laboratory practices in the context of gene expression and RNA integrity and to evaluate the effects of euthanasia and tissue storage methods on gene expression,"Figures 5A, 5B,S5A, S5C, S5E, and S5F,Tables 2,S3, andS4"
+GLDS-236,Quadriceps,Ground,Immediate and Carcass,Ribodepletion,To determine if the means of carcass preservation that is most consistent with standard laboratory practices in the context of gene expression and RNA integrity and if the effects of euthanasia on gene expression are tissue specific,"Figures 5C, 5D,S5B, and S5D,Tables 3,S5, andS6"

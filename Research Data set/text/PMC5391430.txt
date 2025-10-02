@@ -1,0 +1,27 @@
+ABSTRACT
+The whole-genome sequences of eight fungal strains that were selected for exposure to microgravity at the International Space Station are presented here. These baseline sequences will help to understand the observed production of novel bioactive compounds.
+GENOME ANNOUNCEMENT
+In a screening project of natural products, fungal strains isolated from environments associated with the Chernobyl nuclear power plant (ChNPP) accident (1) have been investigated. The radiation-tolerant microorganisms selected for exposure to microgravity at the International Space Station were known to produce valuable natural products; their genomic sequences coded for secondary metabolism pathways; or they displayed positive radiotropism.
+Aspergillus niger, an industrially important filamentous fungus, contains a sequence resembling the fumonisin gene cluster, which suggests that the fungus has the genetic potential to produce carcinogenic fumonisins (2).A. nigeralso produces an abundance of naphtho-gamma-pyrone secondary metabolites, which have been shown to have antibacterial, antifungal (3), antitumor (4), and cytotoxic (3,4) activity.
+Aspergillus terreusis used to produce organic acids, such as itaconic acid (5), or enzymes, such as xylanases (6,7). One of the most important secondary metabolites made byA. terreusis the cholesterol-lowering molecule lovastatin. Discovery of this potent compound revolutionized the treatment of hypercholesterolemia (8,9).
+Aureobasidium pullulansis an important producer of pullulan, a homopolysaccharide of glucose that is widely used in the food, pharmaceutical, and electronics industries (10,11). The whole-genome sequence ofA. pullulansrevealed significant biotechnological potential but also the presence of virulence factors that cannot be overlooked (12).
+Beauveria bassianais an entomopathogenic fungus used to produce biodegradable, nonpoisonous, and cost-efficient bioinsecticides (13). Genomic analysis ofB. bassianaexhibits its capacity to produce a plethora of secondary metabolites, such as oosporein, bassianin, beauvericin, or oxalic acid (14). Beauvericin possesses antimicrobial, antiviral, antifungal, and antitumor activity (15).
+Cladosporium cladosporioides, a ubiquitous organism, produces cladosporin and isocladosporin—secondary metabolites known to have antifungal activities. Its genome has not been sequenced yet (16,17).
+Cladosporium sphaerospermumis a plant endophyte but also an allergen to immunocompromised populations. It has the capacity to produce a variety of allergens, such as enolase, mannitol, dehydrogenase, and aldehyde dehydrogenase (18).
+Fusarium solaniis a plant pathogen that produces multiple phytotoxins, such as marticin, isomarticin, anhydrofusarubin, and javanicin, that cause sudden death syndrome of soybean (19), for example.
+Trichoderma virensis a common rhizosphere fungus beneficial to plants and reported to induce a defense response of cotton toRhizoctonia solani–incited seedling disease (20,21).
+The whole-genome sequences of these eight fungal strains were obtained by shotgun sequencing performed on an Illumina HiSeq2500 platform with a paired-end module. The NGS QC toolkit version 2.3 (22) was used to filter the data for high-quality vector- and adaptor-free reads for genome assembly (cutoff read length for high quality: 80%; cutoff quality score: 20). High-quality vector-filtered reads were used for assembly with the MaSuRCA genome assembler (k-mer size = 70) (23). Data from the final assembly of the strains, including number of scaffolds, total size,N50contig length, G+C content, and GenBank accession numbers, are given inTable 1.
+TABLE 1 .
+Statistical summary for the eight draft fungal genome sequences
+Strain, Strain designation, NCBI accession no., Isolation locationa, No. of contigs, Genome size (bp), N50(bp), G+C content (%)
+table001
+ISS, International Space Station; ChNPP, Chernobyl nuclear power plant; ChEZ, Chernobyl exclusion zone.
+Accession number(s).
+This whole-genome shotgun project has been deposited in DDBJ/ENA/GenBank under the accession numbers given inTable 1. The versions described in this paper are the second versions.
+ACKNOWLEDGMENTS
+We thank the implementation team of the Center for Advanced Study in Space and Duane Pierson, Johnson Space Center for providing theA. nigerstrain. The other fungal strains are maintained at Lawrence Berkeley National Laboratory.
+Part of the research described in this publication was carried out at the Jet Propulsion Laboratory (JPL), California Institute of Technology, under a contract with NASA. This research was supported by the JPL Advanced Concept Development fund awarded to K.V. that funded a student fellowship to A.B. Part of the research described in this publication was carried out at Lawrence Berkeley National Laboratory (T.T.) and the University of Southern California (C.W.), which funded a student fellowship to J.R.
+Footnotes
+CitationSingh NK, Blachowicz A, Romsdahl J, Wang C, Torok T, Venkateswaran K. 2017. Draft genome sequences of several fungal strains selected for exposure to microgravity at the International Space Station. Genome Announc 5:e01602-16.https://doi.org/10.1128/genomeA.01602-16.
+REFERENCES
+Articles from Genome Announcements are provided here courtesy ofAmerican Society for Microbiology (ASM)
