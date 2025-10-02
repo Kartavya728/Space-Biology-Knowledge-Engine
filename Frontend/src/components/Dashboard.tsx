@@ -4,6 +4,7 @@ import { Sidebar } from './Sidebar';
 import { MainContent } from './MainContent';
 import { HowItWorks } from './HowItWorks';
 import { AboutTeam } from './AboutTeam';
+import StarBackground from '../components/main/StarBackground'; // 👈 import your starfield
 
 export function Dashboard({ user, userType, onUserTypeChange, onSignOut }) {
   const [currentPage, setCurrentPage] = useState('main');
@@ -54,7 +55,13 @@ export function Dashboard({ user, userType, onUserTypeChange, onSignOut }) {
   };
 
   return (
-    <div className={`min-h-screen bg-gradient-to-br ${theme.background} relative overflow-hidden`}>
+    <div className={`min-h-screen relative overflow-hidden`}>
+      {/* 🌌 Star Background Layer */}
+      <div className="fixed inset-0 -z-10">
+        <StarBackground />
+      </div>
+
+      {/* Optional floating motion dots you already had */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {[...Array(15)].map((_, i) => (
           <motion.div
@@ -78,6 +85,7 @@ export function Dashboard({ user, userType, onUserTypeChange, onSignOut }) {
         ))}
       </div>
 
+      {/* Main layout */}
       <div className="flex h-screen relative z-10">
         <AnimatePresence mode="wait">
           {sidebarOpen && (

@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { Brain, TrendingUp, Map, Sparkles, Zap, Atom } from 'lucide-react';
 
+
 export function AIAgent3D({ userType, isThinking }) {
   const canvasRef = useRef(null);
 
