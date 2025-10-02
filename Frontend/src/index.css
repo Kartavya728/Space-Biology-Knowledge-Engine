@@ -2938,3 +2938,250 @@ html {
 .table-container tr:hover {
   background-color: rgba(255, 255, 255, 0.05);
 }
+/* Enhanced scroll animations and table styling */
+
+/* Smooth scrolling for the entire app */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Table styling for better readability with animations */
+.table-container table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.875rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.table-container th {
+  background: rgba(59, 130, 246, 0.1);
+  color: #93c5fd;
+  font-weight: 600;
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid rgba(59, 130, 246, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.table-container td {
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #d1d5db;
+  transition: background-color 0.2s ease;
+}
+
+.table-container tr:hover td {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.table-container tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Typewriter cursor animation */
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+.typewriter-cursor {
+  animation: blink 1s infinite;
+}
+
+/* Scroll reveal animations */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Parallax effect helper */
+.parallax-container {
+  will-change: transform;
+}
+
+/* Smooth transitions for all interactive elements */
+button, a, .card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Card hover effect enhancement */
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 
+              0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+/* Prevent layout shift during streaming */
+.streaming-container {
+  min-height: 100px;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Loading spinner enhancement */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-spinner {
+  animation: spin 1s linear infinite;
+}
+
+/* Gradient animation for active elements */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-gradient {
+  background-size: 200% 200%;
+  animation: gradientShift 3s ease infinite;
+}
+
+/* Responsive image containers */
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.image-container img {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.05);
+}
+
+/* Performance optimizations */
+.gpu-accelerated {
+  transform: translateZ(0);
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .scroll-reveal {
+    transform: translateY(20px);
+  }
+  
+  .card:hover {
+    transform: none;
+  }
+}
+
+/* Add these to your index.css file */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom properties for consistency, if you wish */
+:root {
+  --background-start: #0A0A1F; /* Dark blueish-black */
+  --background-end: #1A1A3A;   /* Slightly lighter blueish-black */
+}
+
+/* Ensure html and body always have the desired background */
+html, body {
+  min-height: 100vh; /* Make sure they take full viewport height */
+  margin: 0;
+  padding: 0;
+  /* Apply the gradient */
+  background: linear-gradient(to bottom, var(--background-start), var(--background-end));
+  background-attachment: fixed; /* Ensures background covers entire scrollable area */
+  color: white; /* Default text color for the app */
+  /* Prevent horizontal scroll issues if any */
+  overflow-x: hidden; 
+}
+
+/* You might need to adjust or remove default styles from your UI library or framework */
+/* For example, if some components have their own white backgrounds that aren't transparent */
+/* .some-component-class {
+  background-color: transparent !important;
+} */
+
+html, body, #__next {
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}

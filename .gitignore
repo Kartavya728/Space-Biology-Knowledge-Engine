@@ -1,2 +1,5 @@
 Model Tunning/.env
 acc.json
+Frontend/node_modules
+Frontend/.env.production
+Frontend/.env.devlopment

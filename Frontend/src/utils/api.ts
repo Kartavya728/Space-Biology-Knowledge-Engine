@@ -1,4 +1,4 @@
-// API service for connecting to the Django backend with SSE support
+// API service for connecting to the Django backend with optimized SSE support
 
 interface AnalysisRequest {
   query: string;
@@ -6,7 +6,7 @@ interface AnalysisRequest {
 }
 
 interface StreamEvent {
-  type: 'thinking' | 'thinking_detail' | 'title' | 'paragraph' | 'metadata' | 'error' | 'done';
+  type: 'thinking_step' | 'title' | 'paragraph' | 'metadata' | 'error' | 'done';
   content: any;
 }
 
@@ -14,8 +14,8 @@ const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000
 
 export const api = {
   /**
-   * Stream analysis response using Server-Sent Events
-   * Enhanced to handle title, thinking, and paragraph events with low latency
+   * Stream analysis response using Server-Sent Events with ZERO artificial delays
+   * Optimized for immediate token-by-token streaming with minimal latency
    */
   streamAnalysis: async (
     request: AnalysisRequest,
@@ -23,72 +23,114 @@ export const api = {
   ): Promise<void> => {
     try {
       const url = `${API_BASE_URL}/api/chat/`;
-      console.log('Sending request to:', url);
-      console.log('Request payload:', request);
+      console.log('[API] Sending request to:', url);
+      console.log('[API] Request payload:', request);
 
       const response = await fetch(url, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'text/event-stream',
         },
         body: JSON.stringify(request),
       });
 
-      console.log('Response status:', response.status);
+      console.log('[API] Response status:', response.status);
 
       if (!response.ok) {
         const errorText = await response.text();
         throw new Error(`HTTP error! status: ${response.status}, message: ${errorText}`);
       }
 
-      const reader = response.body?.getReader();
-      const decoder = new TextDecoder();
-
-      if (!reader) {
+      if (!response.body) {
         throw new Error('Response body is not readable');
       }
 
+      // Use ReadableStream with optimized chunk processing
+      const reader = response.body.getReader();
+      const decoder = new TextDecoder('utf-8');
       let buffer = '';
+      let messageCount = 0;
+
+      console.log('[API] Starting stream processing...');
 
       while (true) {
+        // Read chunks with minimal buffering for instant processing
         const { done, value } = await reader.read();
         
         if (done) {
-          console.log('Stream completed');
+          console.log('[API] Stream completed. Total messages:', messageCount);
           break;
         }
 
-        // Decode chunk immediately for low latency
-        buffer += decoder.decode(value, { stream: true });
+        // Decode immediately - no delays
+        const chunk = decoder.decode(value, { stream: true });
+        buffer += chunk;
         
-        // Process all complete messages in buffer
-        const messages = buffer.split('\n\n');
-        buffer = messages.pop() || ''; // Keep incomplete message in buffer
+        // Process all complete messages IMMEDIATELY
+        let newlineIndex;
+        while ((newlineIndex = buffer.indexOf('\n\n')) !== -1) {
+          const message = buffer.slice(0, newlineIndex);
+          buffer = buffer.slice(newlineIndex + 2);
 
-        for (const message of messages) {
           if (message.trim().startsWith('data: ')) {
             const jsonStr = message.replace('data: ', '').trim();
+            
             if (jsonStr) {
               try {
                 const event = JSON.parse(jsonStr);
-                console.log('Received event:', event.type, event.content ? `(${typeof event.content})` : '');
+                messageCount++;
                 
-                // Immediately dispatch event for real-time updates
+                // Log only key events to reduce console spam
+                if (event.type === 'title' || event.type === 'paragraph' || event.type === 'done') {
+                  console.log(`[API] Event ${messageCount}:`, event.type);
+                }
+                
+                // IMMEDIATE dispatch - zero artificial delays
                 onEvent(event);
-              } catch (e) {
-                console.error('Failed to parse SSE message:', jsonStr, e);
+                
+                // Use microtask to ensure non-blocking processing
+                await Promise.resolve();
+                
+              } catch (parseError) {
+                console.error('[API] Failed to parse SSE message:', jsonStr.slice(0, 100), parseError);
               }
             }
           }
         }
       }
+
+      console.log('[API] Stream processing finished');
+      
     } catch (error) {
-      console.error('Stream analysis error:', error);
+      console.error('[API] Stream analysis error:', error);
       onEvent({
         type: 'error',
         content: `Connection error: ${error instanceof Error ? error.message : 'Unknown error'}`
       });
       onEvent({ type: 'done', content: null });
     }
+  },
+
+  /**
+   * Legacy non-streaming endpoint (if needed for fallback)
+   */
+  analyzeQuery: async (request: AnalysisRequest): Promise<any> => {
+    const url = `${API_BASE_URL}/api/analyze/`;
+    
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(request),
+    });
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      throw new Error(`HTTP error! status: ${response.status}, message: ${errorText}`);
+    }
+
+    return response.json();
   }
 };

@@ -198,7 +198,6 @@ txt_files = [f for f in os.listdir(text_folder) if f.lower().endswith(".txt")]
 txt_files = sorted(txt_files)[:5]
 print(f"[INFO] Found {len(txt_files)} text files to process")
 
-# Process files one at a time to manage memory
 batch_size = 10
 global_chunk_id = 0
 

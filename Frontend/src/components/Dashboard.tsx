@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Sidebar } from './Sidebar';
 import { MainContent } from './MainContent';
 import { HowItWorks } from './HowItWorks';
@@ -9,19 +9,18 @@ export function Dashboard({ user, userType, onUserTypeChange, onSignOut }) {
   const [currentPage, setCurrentPage] = useState('main');
   const [sidebarOpen, setSidebarOpen] = useState(true);
 
-  // Theme colors based on user type
   const getThemeColors = () => {
     switch (userType) {
       case 'scientist':
         return {
           primary: 'from-blue-500 to-cyan-500',
-          background: 'from-slate-900 via-blue-800 to-slate-900',
+          background: 'from-slate-900 via-black-900 to-slate-900',
           accent: 'blue'
         };
       case 'investor':
         return {
           primary: 'from-green-500 to-emerald-500',
-          background: 'from-slate-900 via-green-300 to-slate-900',
+          background: 'from-slate-900 via-black-900 to-slate-900',
           accent: 'green'
         };
       case 'mission-architect':
@@ -56,7 +55,6 @@ export function Dashboard({ user, userType, onUserTypeChange, onSignOut }) {
 
   return (
     <div className={`min-h-screen bg-gradient-to-br ${theme.background} relative overflow-hidden`}>
-      {/* Animated background particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {[...Array(15)].map((_, i) => (
           <motion.div
