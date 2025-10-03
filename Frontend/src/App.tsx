@@ -4,23 +4,23 @@ import LoginPage from "./components/LoginPage";
 import { Dashboard } from "./components/Dashboard";
 import { HomePage } from "./components/HomePage";
 import { FloatingButton } from "./components/FloatingButton";
-import { useAuth } from "./auth/context/AuthContext";
+import { AuthContextProvider, useAuth } from "./auth/context/AuthContext";
 import { Toaster } from "./components/ui/sonner";
 import StarsCanvas from "./components/main/StarBackground";
 
-export default function App() {
+function App() {
   console.log("🎨 App component rendering...");
   
-  const { session, user, loading, signOut } = useAuth();
+  const { session, loading, signOut } = useAuth();
   const [userType, setUserType] = useState("scientist");
   const [showHome, setShowHome] = useState(true);
 
   console.log("App state:", { 
     hasSession: !!session, 
-    hasUser: !!user, 
+    hasUser: !!session?.user, 
     loading, 
     showHome,
-    userEmail: user?.email 
+    userEmail: session?.user?.email 
   });
 
   useEffect(() => {
@@ -86,12 +86,20 @@ export default function App() {
     <>
       <StarsCanvas />
       <Dashboard
-        user={user}
+        user={session?.user} // Pass session.user
         userType={userType}
         onUserTypeChange={setUserType}
         onSignOut={handleSignOut}
       />
       <Toaster />
     </>
+  );
+}
+
+export default function WrappedApp() {
+  return (
+    <AuthContextProvider>
+      <App />
+    </AuthContextProvider>
   );
 }
