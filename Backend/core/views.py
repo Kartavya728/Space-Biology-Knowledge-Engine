@@ -18,7 +18,7 @@ def home(request):
 def chat_api(request):
     """
     API endpoint for streaming chat responses
-    Handles POST requests with user_input and user_type
+    Handles POST requests with user_input, user_type, and deep_think
     """
     if request.method != "POST":
         return JsonResponse({"error": "Only POST method allowed"}, status=405)
@@ -28,7 +28,8 @@ def chat_api(request):
         body = json.loads(request.body.decode('utf-8'))
         user_input = body.get("query", "").strip()
         user_type = body.get("userType", "scientist").strip()
-        
+        deep_think = body.get("deepThink", False)  # <-- Add this line
+
         # Validate user_type
         valid_types = ['scientist', 'investor', 'mission-architect']
         if user_type not in valid_types:
@@ -50,11 +51,13 @@ def chat_api(request):
             return response
         
         # Log the request
-        logger.info(f"Processing query for {user_type}: {user_input[:100]}...")
-        
+        logger.info(f"Processing query for {user_type}: {user_input[:100]}... DeepThink: {deep_think}")
+        if deep_think:
+            print("DeepThink mode is ON")  # <-- Print to terminal
+
         # Create streaming response
         response = StreamingHttpResponse(
-            generate_text_with_gemini(user_input, user_type),
+            generate_text_with_gemini(user_input, user_type, deep_think),  # <-- Pass deep_think
             content_type="text/event-stream"
         )
         
