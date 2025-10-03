@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from './ui/button';
 import { Textarea } from './ui/textarea';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
+import { ImageParser } from '../utils/imageEdit';
+import { toast } from 'sonner';
 import Spline from '@splinetool/react-spline/next';
 import { 
   Send, 
@@ -63,6 +65,9 @@ export function MainContent({ userType, theme, initialResponse }: { userType: an
   const [streamSpeed, setStreamSpeed] = useState(5);
   const [isQuerySubmitted, setIsQuerySubmitted] = useState(false);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
+  const imageInputRef = useRef<HTMLInputElement | null>(null);
+  const [imageFile, setImageFile] = useState<File | null>(null);
+  const [imagePresent, setImagePresent] = useState(false);
 
   const analystOptions = {
     scientist: {
@@ -182,9 +187,25 @@ export function MainContent({ userType, theme, initialResponse }: { userType: an
     let collectedMetadata: any = null;
 
     try {
+      // prepare combinedQuery: include parsed image text if an image was provided
+      let combinedQuery = finalQuery;
+      if (imagePresent && imageFile) {
+        try {
+          const parsed = await ImageParser(imageFile, finalQuery);
+          console.log('Parsed image text:', parsed);
+          const parsedText = typeof parsed === 'string' ? parsed : (parsed?.toString ? parsed.toString() : '');
+          if (parsedText && parsedText.trim()) {
+            combinedQuery = `${finalQuery}\n\nImage Analysis:\n${parsedText}`;
+          }
+        } catch (imgErr) {
+          console.error('Image parsing failed:', imgErr);
+          toast.error('Failed to parse image. Proceeding with text only.');
+        }
+      }
+
       await api.streamAnalysis(
         {
-          query: finalQuery,
+          query: combinedQuery,
           userType,
         },
         (event) => {
@@ -251,6 +272,10 @@ export function MainContent({ userType, theme, initialResponse }: { userType: an
             setTimeout(() => {
               setIsLoading(false);
               setIsQuerySubmitted(false);
+              // reset image state after successful send
+              setImageFile(null);
+              setImagePresent(false);
+              if (imageInputRef.current) imageInputRef.current.value = '';
             }, 1000);
           }
         }
@@ -270,6 +295,23 @@ export function MainContent({ userType, theme, initialResponse }: { userType: an
       setQuery(`Analyze the uploaded file: ${file.name}`);
       alert(`File "${file.name}" uploaded successfully`);
     }
+  };
+
+  const handleImageSelect = async (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+
+    if (!file.type || !file.type.startsWith('image/')) {
+      toast.error('Not an image. Please upload an image file.');
+      if (imageInputRef.current) imageInputRef.current.value = '';
+      setImageFile(null);
+      setImagePresent(false);
+      return;
+    }
+
+    setImageFile(file);
+    setImagePresent(true);
+    toast.success(`Image "${file.name}" selected`);
   };
 
   const toggleStep = (index: number) => {
@@ -594,6 +636,7 @@ export function MainContent({ userType, theme, initialResponse }: { userType: an
                             <Button
                               variant="outline"
                               size="sm"
+                              onClick={() => imageInputRef.current?.click()}
                               className="border-white/20 text-gray-300 hover:text-white hover:bg-white/10"
                             >
                               <Image className="w-4 h-4 mr-2" />
@@ -650,6 +693,14 @@ export function MainContent({ userType, theme, initialResponse }: { userType: an
         type="file"
         accept=".pdf,.doc,.docx,.txt,.jpg,.png"
         onChange={handleFileUpload}
+        className="hidden"
+      />
+      {/* Hidden image input specifically for image uploads */}
+      <input
+        ref={imageInputRef}
+        type="file"
+        accept="image/*"
+        onChange={handleImageSelect}
         className="hidden"
       />
     </div>
