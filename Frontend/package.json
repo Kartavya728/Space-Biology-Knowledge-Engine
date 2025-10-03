@@ -5,6 +5,8 @@
       "dependencies": {
             "@google/genai": "^1.22.0",
             "@jsr/supabase__supabase-js": "^2.49.8",
+            "@langchain/core": "^0.3.78",
+            "@langchain/google-genai": "^0.0.13",
             "@radix-ui/react-accordion": "^1.2.3",
             "@radix-ui/react-alert-dialog": "^1.1.6",
             "@radix-ui/react-aspect-ratio": "^1.1.2",
@@ -42,6 +44,7 @@
             "framer-motion": "^12.23.22",
             "hono": "*",
             "input-otp": "^1.4.2",
+            "langchain": "^0.3.35",
             "lucide-react": "^0.487.0",
             "maath": "^0.10.8",
             "motion": "*",
