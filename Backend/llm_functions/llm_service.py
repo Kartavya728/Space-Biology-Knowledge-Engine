@@ -13,6 +13,8 @@ from langchain.tools import Tool
 from langchain.chat_models import init_chat_model
 from langchain.callbacks.base import BaseCallbackHandler
 from pydantic import BaseModel, Field
+from django.http import JsonResponse, StreamingHttpResponse
+from django.views.decorators.csrf import csrf_exempt
 
 load_dotenv()
 
@@ -304,7 +306,7 @@ def parse_to_streamable_structure(agent_response: str, media_references: Dict, u
 # MAIN GENERATOR WITH STREAMING
 # ============================================================================
 
-def generate_text_with_gemini(user_input: str, user_type: str = 'scientist') -> Generator[str, None, None]:
+def generate_text_with_gemini(user_input: str, user_type: str = 'scientist', deep_think: bool = False) -> Generator[str, None, None]:
     """Enhanced generator with detailed real-time streaming of agent thinking process"""
     
     api_key = os.getenv("GOOGLE_API_KEY")
@@ -550,9 +552,9 @@ IMPORTANT: Provide comprehensive analysis following the exact structure above. E
             "total_images": sorted(list(all_images)),
             "total_tables": sorted(list(all_tables)),
             "source_documents": context_result['total_documents'],
-            "user_type": user_type
+            "user_type": user_type,
+            "query": user_input  # <-- add query for frontend display/history
         }
-        
         yield stream_event('metadata', metadata)
         
         yield stream_event("thinking_step", {
@@ -573,3 +575,80 @@ IMPORTANT: Provide comprehensive analysis following the exact structure above. E
         })
         yield stream_event('error', f"Error: {str(e)}")
         yield stream_event("done", None)
+
+
+@csrf_exempt
+def chat_api(request):
+    """
+    API endpoint for streaming chat responses
+    Handles POST requests with user_input, user_type, and deep_think
+    """
+    if request.method != "POST":
+        return JsonResponse({"error": "Only POST method allowed"}, status=405)
+
+    try:
+        # Parse JSON body
+        body = json.loads(request.body.decode('utf-8'))
+        user_input = body.get("query", "").strip()
+        user_type = body.get("userType", "scientist").strip()
+        deep_think = body.get("deepThink", False)
+
+        # Validate user_type
+        valid_types = ['scientist', 'investor', 'mission-architect']
+        if user_type not in valid_types:
+            user_type = 'scientist'  # Default fallback
+
+        # Validate input
+        if not user_input:
+            def error_stream():
+                yield 'data: ' + json.dumps({"type": "error", "content": "Empty query received"}) + '\n\n'
+                yield 'data: ' + json.dumps({"type": "done"}) + '\n\n'
+
+            response = StreamingHttpResponse(
+                error_stream(),
+                content_type="text/event-stream"
+            )
+            response["Cache-Control"] = "no-cache"
+            response["X-Accel-Buffering"] = "no"
+            response["Access-Control-Allow-Origin"] = "*"
+            return response
+
+        # Log the request
+        logger.info(f"Processing query for {user_type}: {user_input[:100]}... DeepThink: {deep_think}")
+        if deep_think:
+            print("DeepThink mode is ON")  # <-- Print to terminal
+
+        # Create streaming response
+        response = StreamingHttpResponse(
+            generate_text_with_gemini(user_input, user_type),
+            content_type="text/event-stream"
+        )
+
+        # Set headers for SSE
+        response["Cache-Control"] = "no-cache"
+        response["X-Accel-Buffering"] = "no"
+        response["Access-Control-Allow-Origin"] = "*"
+        response["Access-Control-Allow-Methods"] = "POST, OPTIONS"
+        response["Access-Control-Allow-Headers"] = "Content-Type"
+
+        return response
+
+    except json.JSONDecodeError:
+        logger.error("Invalid JSON in request body")
+        return JsonResponse({"error": "Invalid JSON"}, status=400)
+
+    except Exception as e:
+        logger.error(f"Error in streaming response: {str(e)}")
+
+        def error_stream():
+            yield 'data: ' + json.dumps({"type": "error", "content": f"Server error: {str(e)}"}) + '\n\n'
+            yield 'data: ' + json.dumps({"type": "done"}) + '\n\n'
+
+        response = StreamingHttpResponse(
+            error_stream(),
+            content_type="text/event-stream"
+        )
+        response["Cache-Control"] = "no-cache"
+        response["X-Accel-Buffering"] = "no"
+        response["Access-Control-Allow-Origin"] = "*"
+        return response

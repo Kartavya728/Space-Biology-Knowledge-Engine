@@ -275,7 +275,8 @@ export function Sidebar({
                                     total_images: [],
                                     total_tables: [],
                                     source_documents: 0,
-                                    user_type: userType
+                                    user_type: userType,
+                                    query: session.query // <-- ensure query is stored for display
                                   },
                                   userType: userType,
                                   overallTitle: ''

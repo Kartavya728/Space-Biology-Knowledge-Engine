@@ -50,6 +50,12 @@ interface ResponseData {
   overallTitle: string;
 }
 
+interface AnalysisRequest {
+  query: string;
+  userType?: string;
+  deepThink?: boolean; // <-- add deepThink
+}
+
 export function MainContent({ userType, theme, initialResponse }: { userType: any; theme: any; initialResponse?: ResponseData | null }) {
   const [query, setQuery] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -62,7 +68,10 @@ export function MainContent({ userType, theme, initialResponse }: { userType: an
   const [streamedText, setStreamedText] = useState('');
   const [streamSpeed, setStreamSpeed] = useState(5);
   const [isQuerySubmitted, setIsQuerySubmitted] = useState(false);
+  const [deepThink, setDeepThink] = useState(false);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
+  const collectedParagraphsRef = useRef<Paragraph[]>([]);
+  const collectedMetadataRef = useRef<any>({});
 
   const analystOptions = {
     scientist: {
@@ -178,14 +187,12 @@ export function MainContent({ userType, theme, initialResponse }: { userType: an
     setStreamingStepIndex(null);
     setStreamedText('');
 
-    const collectedParagraphs: Paragraph[] = [];
-    let collectedMetadata: any = null;
-
     try {
       await api.streamAnalysis(
         {
           query: finalQuery,
           userType,
+          deepThink, // <-- send deepThink to backend
         },
         (event) => {
           if (event.type === 'thinking_step') {
@@ -213,18 +220,18 @@ export function MainContent({ userType, theme, initialResponse }: { userType: an
               images: [],
               tables: []
             };
-            collectedParagraphs.push(paragraph);
+            collectedParagraphsRef.current.push(paragraph);
             setResponse({
-              paragraphs: [...collectedParagraphs],
-              metadata: collectedMetadata,
+              paragraphs: [...collectedParagraphsRef.current],
+              metadata: collectedMetadataRef.current,
               userType,
               overallTitle
             });
           } 
           else if (event.type === 'metadata') {
-            collectedMetadata = event.content;
+            collectedMetadataRef.current = event.content;
             setResponse({
-              paragraphs: collectedParagraphs,
+              paragraphs: collectedParagraphsRef.current,
               metadata: event.content,
               userType,
               overallTitle
@@ -237,7 +244,7 @@ export function MainContent({ userType, theme, initialResponse }: { userType: an
           else if (event.type === 'done') {
             // Persist chat history to Supabase for the current user
             try {
-              const assistantReply = (collectedParagraphs || [])
+              const assistantReply = (collectedParagraphsRef.current || [])
                 .map(p => p.text)
                 .join('\n\n');
               if (assistantReply && finalQuery) {
@@ -294,36 +301,21 @@ export function MainContent({ userType, theme, initialResponse }: { userType: an
 
   return (
     <div className="h-full flex flex-col relative overflow-hidden">
-      <motion.div 
-        className="p-6 border-b border-white/10"
-        animate={{
-          y: isQuerySubmitted ? -100 : 0,
-          opacity: isQuerySubmitted ? 0 : 1,
-          height: isQuerySubmitted ? 0 : 'auto'
-        }}
-        transition={{ duration: 0.5 }}
-      >
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="flex items-center justify-between"
-        >
+      {/* Query always shown on top */}
+      <div className="p-6 border-b border-white/10">
+        <div className="flex items-center justify-between">
           <div>
             <h1 className="text-3xl font-bold text-white mb-2">
               NASA Research AI Agent
             </h1>
             <p className="text-gray-300">
-              Analyze research papers, generate insights, and explore space science
+              <span className="font-semibold">AtsroPedia:</span> Your gateway to NASA's research universe which provides instant insights and analysis on space biology and related topics.
             </p>
           </div>
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className={`p-4 bg-gradient-to-r ${theme.primary} rounded-xl`}
-          >
-            <Sparkles className="w-8 h-8 text-white" />
-          </motion.div>
-        </motion.div>
-      </motion.div>
+          {/* DeepThink Toggle */}
+
+        </div>
+      </div>
 
       <div className="flex-1 flex overflow-hidden">
         <div className="flex-1 flex flex-col">
@@ -572,6 +564,28 @@ export function MainContent({ userType, theme, initialResponse }: { userType: an
 
                   <Card className="bg-white/5 backdrop-blur-sm border-white/10 mt-6">
                     <CardContent className="p-6">
+                      {/* DeepThink Switch Toggle */}
+                      <div className="flex items-center mb-4">
+                        <span className="text-gray-300 text-sm font-medium mr-3">Deep Think   </span>
+                        <button
+                          type="button"
+                          aria-label="Toggle Deep Think"
+                          onClick={() => setDeepThink((v) => !v)}
+                          className={`relative inline-flex items-center h-6 rounded-full w-12 transition-colors duration-300 ${
+                            deepThink ? 'bg-blue-500' : 'bg-gray-400'
+                          }`}
+                          style={{ minWidth: 48 }}
+                        >
+                          <span
+                            className={`inline-block w-5 h-5 bg-white rounded-full shadow transform transition-transform duration-300 ${
+                              deepThink ? 'translate-x-6' : 'translate-x-1'
+                            }`}
+                          />
+                        </button>
+                        <span className={`ml-3 text-xs font-semibold ${deepThink ? 'text-blue-400' : 'text-gray-400'}`}>
+                          {deepThink ? '  👑best response' : ' ❇️quick response'}
+                        </span>
+                      </div>
                       <div className="space-y-4">
                         <Textarea
                           value={query}

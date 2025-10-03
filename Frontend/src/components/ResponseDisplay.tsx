@@ -14,7 +14,8 @@ import {
   Send,
   Loader2,
   Bot,
-  User
+  User,
+  Zap
 } from 'lucide-react';
 
 interface Paragraph {
@@ -173,8 +174,25 @@ export function ResponseDisplay({ response, theme }: ResponseDisplayProps) {
     }
   };
 
+  // Query always shown on top
+  const queryText = response?.metadata?.query || '';
+
   return (
     <div className="space-y-6">
+      {/* Query Display */}
+      {queryText && (
+        <Card className="bg-gradient-to-r from-purple-500/20 to-blue-500/20 backdrop-blur-sm border-white/20">
+          <CardContent className="p-4">
+            <div className="flex items-start gap-3">
+              <Zap className="w-5 h-5 text-yellow-400 mt-1 flex-shrink-0" />
+              <div className="flex-1">
+                <p className="text-white font-medium text-lg">{queryText}</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      )}
+
       {/* Title Section */}
       {response.overallTitle && (
         <AnimatedSection>
@@ -193,132 +211,39 @@ export function ResponseDisplay({ response, theme }: ResponseDisplayProps) {
      
 
       {/* Paragraphs Section */}
-      {response.paragraphs.map((paragraph, index) => (
-        <AnimatedSection key={index} delay={index * 0.05}>
-          <Card className="bg-white/5 backdrop-blur-sm border-white/10 overflow-hidden hover:border-white/20 transition-all">
-            {paragraph.title && (
-              <CardHeader className={`bg-gradient-to-r ${theme.primary} bg-opacity-20`}>
-                <CardTitle className="text-white text-xl flex items-center gap-2">
-                  <motion.div 
-                    className={`w-1 h-6 bg-gradient-to-b ${theme.primary} rounded-full`}
-                    animate={{ scaleY: [1, 1.2, 1] }}
-                    transition={{ duration: 2, repeat: Infinity }}
-                  />
-                  {paragraph.title}
-                </CardTitle>
-              </CardHeader>
+      {response.paragraphs.map((paragraph, idx) => (
+        <div key={idx} className="flex gap-6 items-start mb-6">
+          {/* Text on left, images/tables on right */}
+          <div className="flex-1">
+            <h3 className="font-semibold text-white mb-2">{paragraph.title}</h3>
+            <p className="text-gray-300 mb-2">{paragraph.text}</p>
+            {/* Tables */}
+            {paragraph.tables && paragraph.tables.length > 0 && (
+              <div className="space-y-2">
+                {paragraph.tables.map((tableId, tblIdx) => (
+                  <div key={tblIdx} className="bg-green-50 rounded-lg p-2 mb-2">
+                    <span className="font-semibold text-green-900">📊 Table:</span>
+                    <div dangerouslySetInnerHTML={{ __html: tableContents[tableId] || `<span class="text-gray-400">Table not found</span>` }} />
+                  </div>
+                ))}
+              </div>
             )}
-            
-            <CardContent className="p-6 space-y-6">
-              <motion.div 
-                className="text-gray-300 leading-relaxed whitespace-pre-wrap text-base"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.2 }}
-              >
-                {(() => {
-                  const t: any = (paragraph as any)?.text;
-                  if (typeof t === 'string') return t;
-                  if (Array.isArray(t)) {
-                    return t.map((x) => (typeof x === 'string' ? x : JSON.stringify(x))).join('\n\n');
-                  }
-                  if (t && typeof t === 'object') {
-                    if ('text' in t && typeof (t as any).text === 'string') return (t as any).text;
-                    return JSON.stringify(t);
-                  }
-                  return String(t ?? '');
-                })()}
-              </motion.div>
-
-              {/* Images */}
-              {paragraph.images && paragraph.images.length > 0 && (
-                <div className="space-y-4">
-                  {paragraph.images.map((imageId, imgIndex) => {
-                    const imageUrl = imageMap[imageId];
-                    return (
-                      <motion.div 
-                        key={imgIndex} 
-                        className="bg-white/5 rounded-lg p-4 border border-white/10 hover:border-white/20 transition-all"
-                        whileHover={{ scale: 1.02 }}
-                        transition={{ duration: 0.2 }}
-                      >
-                        {loadingImages ? (
-                          <div className="flex items-center justify-center h-64">
-                            <Loader2 className="animate-spin h-8 w-8 text-white" />
-                          </div>
-                        ) : imageUrl ? (
-                          <div>
-                            <motion.img 
-                              src={imageUrl} 
-                              alt={`Figure ${imageId}`}
-                              className="w-full h-auto rounded-lg mb-3 cursor-pointer"
-                              initial={{ opacity: 0, scale: 0.9 }}
-                              animate={{ opacity: 1, scale: 1 }}
-                              whileHover={{ scale: 1.05 }}
-                              transition={{ duration: 0.3 }}
-                              onError={(e) => {
-                                e.currentTarget.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300"%3E%3Crect fill="%23333" width="400" height="300"/%3E%3Ctext fill="%23666" x="50%25" y="50%25" text-anchor="middle" dy=".3em"%3EImage not found%3C/text%3E%3C/svg%3E';
-                              }}
-                            />
-                            <div className="flex items-center gap-2 text-sm">
-                              <Image className="w-4 h-4 text-blue-400" />
-                              <p className="text-gray-400 font-mono">{imageId}</p>
-                            </div>
-                          </div>
-                        ) : (
-                          <div className="flex flex-col items-center justify-center h-64 text-gray-500">
-                            <AlertCircle className="w-8 h-8 mb-2" />
-                            <p className="text-sm">{imageId}</p>
-                            <p className="text-xs text-gray-600">Image mapping not found</p>
-                          </div>
-                        )}
-                      </motion.div>
-                    );
-                  })}
-                </div>
-              )}
-
-              {/* Tables */}
-              {paragraph.tables && paragraph.tables.length > 0 && (
-                <div className="space-y-4">
-                  {paragraph.tables.map((tableId, tblIndex) => {
-                    const tableHtml = tableContents[tableId];
-                    return (
-                      <motion.div 
-                        key={tblIndex} 
-                        className="bg-white/5 rounded-lg p-4 border border-white/10 hover:border-white/20 transition-all"
-                        whileHover={{ scale: 1.01 }}
-                      >
-                        <div className="flex items-center gap-2 mb-3">
-                          <FileText className="w-4 h-4 text-green-400" />
-                          <p className="text-sm text-gray-400 font-mono">{tableId}</p>
-                        </div>
-                        {loadingTables ? (
-                          <div className="flex items-center justify-center h-32">
-                            <Loader2 className="animate-spin h-8 w-8 text-white" />
-                          </div>
-                        ) : tableHtml ? (
-                          <motion.div 
-                            className="overflow-x-auto text-gray-300 table-container"
-                            dangerouslySetInnerHTML={{ __html: tableHtml }}
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 0.2 }}
-                          />
-                        ) : (
-                          <div className="flex flex-col items-center justify-center h-32 text-gray-500">
-                            <AlertCircle className="w-8 h-8 mb-2" />
-                            <p className="text-sm">Table {tableId} not available</p>
-                          </div>
-                        )}
-                      </motion.div>
-                    );
-                  })}
-                </div>
-              )}
-            </CardContent>
-          </Card>
-        </AnimatedSection>
+          </div>
+          {/* Images on right */}
+          <div className="flex flex-col gap-2 items-end min-w-[120px] max-w-[180px]">
+            {paragraph.images && paragraph.images.length > 0 && (
+              paragraph.images.map((imageId, imgIdx) => (
+                <img
+                  key={imgIdx}
+                  src={imageMap[imageId]}
+                  alt={`Image ${imageId}`}
+                  className="rounded-lg shadow-md object-contain max-h-32 max-w-full"
+                  style={{ width: 'auto', height: '100px' }}
+                />
+              ))
+            )}
+          </div>
+        </div>
       ))}
 
       {/* Chat Interface Section */}
