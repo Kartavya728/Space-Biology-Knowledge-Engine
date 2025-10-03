@@ -1,0 +1,9 @@
+Erratum
+Following publication of the original article , the authors reported that the X-axis label was missing from Fig.4. The new Fig.4is attached.
+Fig. 4.
+[Img001]
+Microbial gene pathways observed in the whole metagenomes of ISS and SAF samples. Reads matching microbial gene targets above an identity threshold of 0.9 were assigned to KEGG orthologies. KO number was used to assign a gene function category, shown along thevertical axis. Read abundance is graphically represented on a square-root scale. Absolute read counts are shown adjacent to each correspondingcircle
+Footnotes
+The online version of the original article can be found under doi:10.1186/s40168-017-0292-4
+Reference
+Articles from Microbiome are provided here courtesy ofBMC

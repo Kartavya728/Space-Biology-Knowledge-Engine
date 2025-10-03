@@ -1,0 +1,46 @@
+,,,FGSC A4,LO1362,LO8158,CW12001
+Gene,Base mutation,Type of mutation,4d,7d,4d,7d,4d,7d,4d,7d
+""
+,ChrV_A3367369G,Missense,+,−,−,−,+,+,−,−
+,ChrV_C3367409T,Missense,+,−,−,+,−,−,−,−
+,ChrV_A3367453G,Missense,−,+,−,−,−,−,−,−
+,ChrV_C3367733T,Missense,−,−,−,+,−,−,−,−
+,ChrV_G3367916A,Missense,+,+,−,−,−,−,−,−
+,ChrV_T3367958C,Missense,−,−,−,−,+,+,−,−
+,ChrV_C3367973T,Missense,−,−,−,−,+,+,−,−
+AN5254,ChrV_C3368005T,Missense,−,−,−,−,+,+,+,+
+,ChrV_C3368023T,Stop gained,−,−,−,−,+,+,+,+
+,ChrV_T3368023C,Stop gained,−,+,−,−,−,−,−,−
+,ChrV_A3368024G,Missense,−,−,−,−,+,+,+,+
+,ChrV_G3368024A,Missense,−,+,−,−,−,−,−,−
+,ChrV_T3368096C,Missense,−,+,−,−,−,−,+,−
+,ChrV_T3368312C,Missense,−,−,+,+,−,−,−,−
+,ChrV_C3368312T,Missense,−,−,−,−,−,−,+,−
+""
+AN0807,ChrVIII_G2423110A,Stop lost,−,−,−,−,−,−,+,+
+""
+,ChrVIII_A3254138C,Missense,−,−,−,+,−,−,−,−
+AN0538,ChrVIII_T3254236C,Missense,−,−,+,−,−,−,−,−
+,ChrVIII_C3254236T,Missense,−,−,−,−,+,+,−,−
+""
+,ChrVIII_A3255566G,Missense,−,−,−,−,−,+,−,−
+,ChrVIII_C3255576T,Missense,−,−,−,−,−,−,+,−
+,ChrVIII_T3255576C,Missense,−,−,−,−,−,+,−,−
+,ChrVIII_G3255581A,Missense,−,−,−,−,−,−,+,−
+AN0537,ChrVIII_A3255581G,Missense,−,−,−,−,−,+,−,−
+,ChrVIII_T3255781C,Missense,+,+,−,+,−,+,−,−
+,ChrVIII_C3255975A,Splice region,−,−,−,−,−,−,+,+
+,ChrVIII_G3256068A,Missense,−,−,+,−,−,−,−,−
+,ChrVIII_A3256068G,Missense,−,−,−,−,−,+,−,−
+""
+AN0535,ChrVIII_A3259230G,Stop gained,−,+,+,+,−,−,−,−
+ChrVIII_A3259256G,Missense,−,+,+,+,−,−,−,−
+ChrVIII_C3259257T,Missense,−,+,+,+,−,−,−,−
+ChrVIII_T3259346C,Missense,−,−,−,−,+,−,−,−
+ChrVIII_C3259346T,Missense,+,+,−,−,−,−,−,−
+ChrVIII_G3259467C,Missense,−,−,+,−,+,+,−,−
+ChrVIII_G3259508C,Missense,−,−,−,−,+,+,−,−
+ChrVIII_C3259563T,Missense,−,−,−,−,−,−,−,+
+""
+AN0532,ChrV_C3267200T,Missense,−,−,−,−,−,−,−,+
+ChrV_T3267230C,Missense,−,−,+,+,+,+,−,−

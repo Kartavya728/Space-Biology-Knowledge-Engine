@@ -1,0 +1,13 @@
+MAG ID,K-mer size,Query ID,Mash distance,p-value,Matching hashes
+Bin_12,22,GCA_013036955.1_Rhodotorula_mucilaginosa_IF1SW-B1.fna,0.00485591,0,816/1000
+Bin_60,22,GCA_000710275.1_Penicillium_chrysogenum_ASM71027v1_genomic.fna,0.00662984,0,761/1000
+Bin_73,22,GCA_012922625.1_Papiliotrema_laurentii_IF7SW-B5.fna,0.00251085,0,898/1000
+Bin_7,22,JAAZPV010000089.1_Naganishia_tulchinskyi_strain_IF6SW-B1_scaffold1018_cov224.fna,0.00616116,0,775/1000
+Bin_7,22,JAAZPY010000044.1_Naganishia_tulchinskyi_strain_IIF5SW-F1_scaffold102_cov184.fna,0.00616116,0,775/1000
+Bin_7,22,JAAZQA010000042.1_Naganishia_tulchinskyi_IF7SW-B1_scaffold100_cov213.fna,0.00616116,0,775/1000
+Bin_7,22,JAAZPZ010000100.1_Naganishia_tulchinskyi_strain_IF1SW-F1_scaffold1012_cov89.fna,0.00626056,0,772/1000
+Bin_7,22,JACWFY010000001.1_Naganishia_liquefaciens_strain_I2-R1_I2-R1_contig_1.fna,0.00622737,0,773/1000
+Bin_7,22,BLZA01000001.1_Naganishia_liquefaciens_N6_DNA.fna,0.0123325,0,616/1000
+Bin_7,22,JABRPJ010000001.1_Naganishia_randhawae_strain_eABCC1_contig_1.fna,0.251066,1.2444e-07,2/1000
+Bin_7,22,LLJT01000001.1_Naganishia_albida_strain_NT2002_contig1.fna,0.251066,1.27629e-07,2/1000
+Bin_7,22,MU158391.1_Naganishia_vishniacii_ANT03-052_unplaced_genomic_scaffold_Nagvi1qcScaffold_1.fna,0.282528,0.000492662,1/1000

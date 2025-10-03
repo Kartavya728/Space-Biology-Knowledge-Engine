@@ -1,0 +1,4 @@
+Species/strain,NCBI accession no.,Isolation location,No. of scaffolds/ contigs,Genome size (bp),N50 (bp),Average coverage,G + C content (%),Filtered reads used for assembly,Coding sequences
+Cohnella hashimotonisF6_2S_P_1T,JAGRPV000000000,"Waste hygiene compartment, ISS",8,"9,059,145","8,667,868",368,58.37,"34,984,402 (Illumina), 312,000 (Nanopore)","7,569"
+Cohnella ginsengisoliDSM 18997T,JAPDHZ000000000,"Ginseng soil (Kim et al.,2010)",8,"7,220,644","2,121,708",57,59.06,"184,000 (Nanopore)","6,543"
+Cohnella rhizosphaeraeDSM 28161T,JAPDIA000000000,"Maize rhizosphere (Kampfer et al.,2014)",9,"8,497,463","2,277,727",55,59.48,"160,000 (Nanopore)","7,541"

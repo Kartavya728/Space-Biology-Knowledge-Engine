@@ -1,0 +1,21 @@
+Species,Pvalue (KW),Q value (KW),Pvalue (GLM),Q value (GLM)
+Thiobacillus thioparus,1.36E−04,2.11E−01,9.60E−09,1.17E−05
+Magnetospirillum magnetotacticum,2.31E−04,2.13E−01,1.98E−08,3.01E−05
+Yarrowia lipolytica,1.70E−04,2.09E−01,8.49E−07,4.04E−04
+Tetragenococcus halophilus,1.79E−04,2.11E−01,8.25E−07,7.28E−04
+Ralstonia pickettii,3.87E−04,2.20E−01,5.01E−06,1.31E−03
+Methyloversatilis universalis,7.02E−04,2.36E−01,1.81E−05,5.07E−03
+Acidovoraxsp.CF316,4.65E−04,2.25E−01,1.74E−05,5.47E−03
+Lactococcus raffinolactis,7.31E−03,4.10E−01,4.83E−05,1.22E−02
+Thiobacillus denitrificans,4.39E−04,2.22E−01,1.54E−04,1.43E−02
+Nevskia ramosa,2.04E−04,2.13E−01,1.14E−04,1.49E−02
+Leuconostoc lactis,8.67E−04,2.45E−01,1.26E−04,2.04E−02
+Sphingobiumsp.Ant17,8.20E−04,2.47E−01,3.02E−04,2.55E−02
+Leuconostoc mesenteroides,2.65E−03,3.25E−01,1.79E−04,2.60E−02
+Cellvibriosp.BR,1.04E−03,2.54E−01,5.15E−04,3.29E−02
+Bradyrhizobium japonicum,5.11E−03,3.85E−01,3.15E−04,3.53E−02
+Emiliania huxleyi,2.54E−03,3.12E−01,3.86E−04,4.08E−02
+Herbaspirillum huttiense,1.27E−03,2.64E−01,7.49E−04,4.27E−02
+Bacillus subtilis,1.85E−03,2.99E−01,7.69E−04,4.39E−02
+Pectobacterium carotovorum,4.04E−03,3.45E−01,4.60E−04,4.64E−02
+Chloroflexi bacterium JGI 0002000-F10,7.12E−04,2.36E−01,5.80E−04,4.79E−02

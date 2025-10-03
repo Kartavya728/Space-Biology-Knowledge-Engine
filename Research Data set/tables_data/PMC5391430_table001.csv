@@ -1,0 +1,9 @@
+Strain,Strain designation,NCBI accession no.,Isolation locationa,No. of contigs,Genome size (bp),N50(bp),G+C content (%)
+Aspergillus niger,JSC-093350089,MSJD00000000,ISS environmental surface,223,"36,080,355","543,773",49.46
+Aspergillus terreus,IMV 01167,MSJE00000000,"Soil, Kirovograd region",331,"31,580,414","482,632",52.24
+Aureobasidium pullulans,IMV 00882,MSJF00000000,"Wall surface, unit 4, ChNPP",879,"40,984,331","98,085",51.01
+Beauveria bassiana,IMV 00265,MSJG00000000,"Wall surface, unit 4, ChNPP",735,"35,190,057","138,299",51.72
+Cladosporium cladosporioides,IMV 00236,MSJH00000000,"Wall surface, unit 4, ChNPP",843,"47,573,060","186,555",42.89
+Cladosporium sphaerospermum,IMV 00045,MSJI00000000,"Wall surface, unit 4, ChNPP",959,"50,156,125","72,128",53.05
+Fusarium solani,IMV 00293,MSJJ00000000,"Wall surface, unit 4, ChNPP",876,"51,318,644","812,484",47.58
+Trichoderma virens,IMV 00454,MSJK00000000,"Soil, 10-km ChEZ",197,"42,025,033","1,319,489",48.44

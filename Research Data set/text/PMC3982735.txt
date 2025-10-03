@@ -1,0 +1,630 @@
+In the epidermis of Arabidopsis leaves, flavonols specifically accumulate in
+guard cells with enhanced synthesis in the presence of ethylene, where they lower
+the levels of reactive oxygen species and reduce the rate of stomatal
+closure.
+Abstract
+Guard cell swelling controls the aperture of stomata, pores that facilitate gas
+exchange and water loss from leaves. The hormone abscisic acid (ABA) has a central role in regulation of stomatal closure
+through synthesis of second messengers, which include reactive oxygen species (ROS).ROSaccumulation must be minimized by antioxidants to keep concentrations
+from reaching damaging levels within the cell. Flavonols are plant metabolites that
+have been implicated as antioxidants; however, their antioxidant activity in planta
+has been debated. Flavonols accumulate in guard cells ofArabidopsis
+thaliana,but not surrounding pavement cells, as visualized with a
+flavonol-specific dye. The expression of a reporter driven by the promoter ofCHALCONE SYNTHASE, a gene encoding a flavonol biosynthetic
+enzyme, in guard cells, but not pavement cells, suggests guard cell-specific
+flavonoid synthesis. Increased levels ofROSwere detected using a fluorescentROSsensor
+in guard cells oftransparent testa4-2, which has a null mutation inCHALCONE SYNTHASEand therefore synthesizes no flavonol
+antioxidants. Guard cells oftransparent testa4-2show more rapidABA-induced closure than the wild type,
+suggesting that flavonols may dampen theABA-dependentROSburst that drives
+stomatal closing. The levels of flavonols are positively regulated in guard cells by
+ethylene treatment in the wild type, but not in theethylene-insensitive2-5mutant. In addition, in bothethylene-overproducing1and ethylene-treated wild-type plants,
+elevated flavonols lead to decreasingROSand
+slowerABA-mediated stomatal closure. These
+results are consistent with flavonols suppressingROSaccumulation and decreasing the rate ofABA-dependent stomatal closure, with ethylene-induced increases
+in guard cell flavonols modulating these responses.
+Guard cells use an extensive signal transduction pathway to regulate the aperture of
+stomata, pores on the surface of leaves that facilitate gas exchange and water loss (Roelfsema and Hedrich, 2005;Joshi-Saha et al., 2011). CO2, a necessary reactant for
+photosynthesis, enters leaves through stomata, whereas water can leave through these same
+pores via transpiration. Excess water loss can lead to dehydration of the plant when there
+is excess heat or drought. Guard cells therefore must modulate the stomatal aperture in
+response to the changing environment (Hirayama and
+Shinozaki, 2007). In response to stimuli that close stomata, such as drought
+stress, the hormone abscisic acid (ABA) is
+increased in the cytosol of guard cells (Zeevaart,
+1980;Hirayama and Shinozaki (2007)).ABAinduces ion movements across the cell
+membrane expelling K+and Cl−ions through ion efflux
+channels. The decreased internal solute concentration drives water out of the cell via
+osmosis (Vahisalu et al., 2008). The loss of water
+from guard cells decreases the volume of the cell, with the resulting loss of turgor
+closing the stoma (Joshi-Saha et al., 2011).
+Additional understanding of this elegant signaling pathway will provide insight into how
+plant growth and development is modulated by changes in soil moisture, temperature, and
+light levels.
+Reactive oxygen species (ROS) are one important
+class of signaling molecules that has been implicated in guard cell signaling (Guan et al., 2000;Zhang et al., 2001;Jiang and Zhang,
+2002,2003). The well-documented role ofROSin causing oxidative stress is now joined
+with growing evidence thatROSmay play integral
+roles as secondary messengers in signal transduction pathways (Wood et al., 2003;Rhee,
+2006;Mittler et al., 2011;Munné-Bosch et al., 2013). At high
+concentrations,ROS, such as hydrogen peroxide
+(H2O2), can cause
+oxidative damage to DNA and proteins that are integral to normal cellular processes (Asada, 2006;Van
+Breusegem and Dat, 2006); however, at low levels,H2O2is an effective signaling molecule in guard
+cells that can induce stomatal closure (Pei et al.,
+2000;Murata et al., 2001;Zhang et al., 2001;Kwak et al., 2003). ElevatedABAin
+guard cells triggersH2O2production through activation of NADPH or respiratory burst oxidase enzymes located on the
+plasma membrane (Mustilli et al., 2002;Yoshida et al., 2002) and mutants inArabidopsis thaliana respiratory burst oxidase D(AtrbohD) andAtrbohF, show impairedABA-regulated stomatal closure (Kwak et al., 2003).
+The ability of signaling-regulated synthesis ofH2O2to alter the activity of specific target proteins
+has been shown in mammalian systems (Rhee, 2006).
+This oxidant, generated from superoxide O2.−molecules, can
+modulate the activity of phosphatases and kinases, causing dynamic changes in signal
+transduction pathways (Poole et al., 2004).
+Specifically,H2O2can
+interact with specific Cys residues, transforming the functional group of the Cys into
+sulfenic acid, altering formation of disulfide bonds between two separate proteins or
+between nearby Cys residues of the same protein, in a transient, reversible fashion (Poole et al., 2004;Poole and Nelson, 2008). In guard cells, thisROSburst is believed to target calcium channels to promote the influx of
+calcium across the plasma membrane and the release of calcium from internal stores (McAinsh et al., 1996;Allen et al., 2000;Cho et al.,
+2009). Increased cytosolic calcium levels induce activation of anion efflux
+channels located on the plasma membrane (Hedrich et al.,
+1990;Schroeder and Hagiwara, 1990;Chen et al., 2010;Wang et al., 2013), triggering stomatal closure. The mechanism behindROSactivation of Ca2+channels in
+mammalian systems has been well studied (Poole and
+Nelson, 2008); however, less is known about this mechanism in plants.
+When maintained at manageable levels,ROSare
+efficient and reversible signaling molecules employed by cells to regulate the activity of
+enzymes and transcription factors; however, if levels of these molecules become excessively
+elevated, they can cause oxidative stress (Hernández et al., 2009;Pollastri and
+Tattini, 2011). Therefore, mechanisms that keep their levels from becoming too
+high and allow their accumulation to be transient are important features ofROSsignaling.ROShomeostasis is tightly regulated in plants through the production of a
+variety of enzymatic and small molecule antioxidants (Mittler et al., 2004). Flavonols are plant metabolites that may function as
+antioxidants in plants and in animals that consume them (Hernández et al., 2009). Although their antioxidant activity in planta
+has been debated, previous studies have shown that the antioxidant capacity for flavonols
+in vitro is greater than that of vitamin C or E, two well-documented in planta antioxidants
+(Rice-Evans et al., 1997). Guard cells provide
+an elegant system to test the antioxidant ability of flavonols, owing to the
+well-documented function ofROSas a second
+messenger in this cell type (Pei et al., 2000;Murata et al., 2001;Kwak et al., 2003;Cho et al.,
+2009).
+This study examined the accumulation of flavonols in guard cells and the role of flavonol
+accumulation in controlling the levels ofROS. A
+flavonol-specific dye and a reporter construct driven by a promoter from a gene encoding a
+flavonol biosynthetic enzyme revealed the localized accumulation of flavonols and the
+expression of this gene that drives their synthesis in guard cells, but not in surrounding
+pavement cells. Mutants that make no flavonols are used to demonstrate the specificity of
+the flavonol-specific dye, and to show the effect of flavonols onROSstatus and stomatal aperture. Finally, the induction of flavonol
+synthesis in guard cells in response to ethylene was examined, as well as the effect of
+these regulated changes in flavonol concentration on stomatal aperture. These results
+indicate that flavonols suppressROSlevels within
+guard cell modulating stomatal aperture and with changing environmental conditions
+modulating flavonol synthesis and guard cell signaling.
+RESULTS
+Flavonols and Their Biosynthetic Machinery Are Found in Guard Cells
+To determine whether flavonols accumulate in guard cells, we used diphenylboric acid
+2-aminoethyl ester (DPBA) dye to detect
+flavonols. The specificity ofDPBAfluorescence was demonstrated in Arabidopsis (Arabidopsis thaliana)
+roots using mutants in flavonol synthesis, with no signal observed in thetransparent testa4-2(tt4-2) mutant that makes
+no flavonoids (Lewis et al., 2011) because
+of a mutation in the gene that encodes chalcone synthase (CHS), the first step in the flavonoid biosynthesis pathway. TheDPBAfluorescence of the surface of an
+Arabidopsis leaf, with and without a differential interference contrast (DIC) overlay of pavement cells, illustrated
+localized accumulation of flavonols in guard cells with no signal in surrounding
+pavement cells (Fig. 1, A and B). This pattern
+was observed in more than 50 leaves. We also asked whether the flavonol localization
+was restricted to guard cells as a result of flavonol biosynthesis in those cells.
+Epidermal leaf peels of transgenic plants with aCHSpromoter
+driving a GUS reporter were visualized by bright-field microscopy. GUS product
+accumulated in the epidermal guard cells (Fig.
+1C), with no GUS product accumulation in surrounding pavement cells. This
+reporter is expressed in additional cell layers in cross sections of whole leaves
+(Chory and Peto, 1990). These results
+were consistent with tissue-specific signals, including transcriptional controls of
+flavonol synthesis, restricting flavonol accumulation to guard cells.
+Figure 1.
+[Img001]
+Flavonols accumulate in guard cells. A, Confocal micrograph showed yellowDPBAfluorescence in guard cells, but not
+pavement cells. B,DICimage overlaid
+on a confocal micrograph of wild-type leaves showing the location of yellowDPBAfluorescence. C, Bright-field
+image showsCHS:GUSexpression in guard
+cells, but not pavement cells of wild-type plants. Bar = 15 μm.
+To more quantitatively and precisely imageDPBAin leaf tissue, we optimized laser scanning confocal microscope
+(LSCM) settings in order to spectrally
+separate total flavonol fluorescence from chlorophyll autofluorescence. Using the
+basal surface of a whole Arabidopsis leaf, confocal micrographs showed
+autofluorescence of chlorophyll in the blue channel andDPBAstaining in the yellow channel (Fig. 2). The absence of theDPBAsignal intt4-2guard cells confirmed the
+specificity of this staining in leaf tissues, complementing the previous studies in
+roots (Buer and Muday, 2004;Lewis et al., 2011). This image indicated that
+we can resolve these two fluorescent signals and that flavonols accumulated in the
+cytosol, but not the chloroplasts of guard cells. It was also evident thatDPBAfluorescence was greater in the regions of
+the guard cell that appeared to be nuclei, a cellular location that exhibited
+flavonoid accumulation in other plant cells types (Feucht et al., 2004;Saslowsky et al.,
+2005;Lewis et al., 2011).
+Verification of nuclear flavonol accumulation was completed by simultaneously imagingDPBAand Hoechst 33258, a nucleic acid
+stain (Supplemental Fig. S1). After imagingDPBAwith spectral separation, we imaged the same guard cells using
+single-channel microscopy to visualize Hoechst fluorescence and consistently observed
+that the region of brightDPBAstaining in
+the center of each guard cell also had nucleic acids, as detected by Hoechst,
+consistent with a nuclear accumulation of flavonols.
+Figure 2.
+[Img002]
+Flavonol accumulation is absent intt4guard cells and
+enhanced ineto1guard cells.DPBAbound to flavonols is shown in yellow and chlorophyll
+autofluorescence is shown in blue. Bar = 15 μm.
+The levels ofDPBAfluorescence in the
+cytosol and nucleus of the wild type andtt4-2were quantified in 90
+guard cells and are reported relative to the levels in the cytosol of ecotype
+Columbia 0 of Arabidopsis (Col-0;Fig. 3A).DPBAfluorescence was at background levels intt4-2,
+whereas wild-type plants had a robustDPBAfluorescent signal, with approximately 2-fold higher intensity in the nucleus than in
+the cytosol.
+Figure 3.
+[Img003]
+A, Subcellular flavonol accumulation in wild-type guard cells compared witheto1andtt4. Flavonol accumulation was
+measured using guard cellDPBAfluorescence intensity values and the average ±seis reported
+relative to the levels in the cytosol ofCol-0forn= 90 stomata. Asterisks indicate
+significant differences (P< 0.005) between the mutant and
+the wild type within cellular location. Number signs indicate significant
+differences (P< 0.02) between cytosol and nucleus within
+genotype. B,LC-MSanalysis of flavonol
+levels in whole leaves showed enhanced accumulation of quercetin and kaempferol
+ineto1leaves compared with the control (P< 0.003 andP< 0.06, respectively). No flavonols were
+detected intt4. Data represent results from three separate
+experiments each withn= 6. ND, Not detected because compound
+is either absent or below the level of threshold detection.
+Flavonol Accumulation in Guard Cells AffectsABA-Induced Stomatal Closure
+To analyze the functional significance of flavonol accumulation in guard cells, we
+comparedABA-dependent stomatal closure in
+wild-type andtt4-2guard cells. BecauseABAtriggers aROSburst
+in guard cells and flavonols reduceROSconcentrations, we expected flavonol concentrations in guard cells to be inversely
+proportional to the rates ofABA-induced
+stomatal closure. Leaves were excised and incubated with 20 μmABAfor 0, 45, 90, or 180 min. At the
+indicated times after treatment, epidermal peels were generated andDICimages were captured and used for
+measurement of stomatal aperture. Apertures were quantified in 30 stomata for three
+separate experiments (Fig. 4). Althoughtt4and the wild type showed similar aperture in opening
+solution, the initialABA-induced stomatal
+closure response was greater intt4guard cells than the control,
+with all aperture values significantly different than the wild type
+(P< 0.05). The apertures of stomata were also quantified in
+the absence ofABAunder identical conditions
+over the same time course in these two genotypes. The guard cells remained open under
+these conditions and there were no detectable differences between the wild type andtt4-2(Supplemental Fig. S2). We also examined the effect of 3 h ofABAtreatment onDPBAfluorescence in guard cells, mirroring the time course ofABAin the stomatal closure assays to ask
+ifABAaltered flavonol synthesis. TheDPBAsignal was not altered byABAduring this 3-h treatment (Supplemental Fig. S3). These results were consistent with the absence
+of an antioxidant intt4-2guard cells that leads to an increase in
+signaling viaROS.
+Figure 4.
+[Img004]
+Stomatal aperture ofCol-0andtt4in response toABA.ABAsensitivity is
+indirectly proportional to relative flavonol concentration. Guard cells were
+incubated under white light in a 20-μMABAsolution for 0, 45, 90, and 180 min. The average ±seof 90 stomata from three biological replicates are reported.
+Asterisks indicate significant differences (P< 0.05)
+between the mutant andCol-0at each
+time point as determined by the Student’sttest.
+Elevated Ethylene Levels through Exogenous Treatment or in theethylene-overproducing1Mutant Increase Flavonol
+Accumulation
+Because elevated ethylene levels were previously shown to increase flavonol
+accumulation in Arabidopsis roots (Lewis et al.,
+2011), we asked whether there is similar regulation in guard cells.DPBAfluorescence was examined in theethylene-overproducing1(eto1) mutant (Chae et al., 2003) and enhanced flavonol
+accumulation was observed in the guard cells (Fig.
+2). TheDPBAfluorescence intensity
+was quantified in 90 stomata and average fluorescence is reported relative to the
+values in the cytosol ofCol-0(Fig. 3). There is a >1.6-fold increase inDPBAfluorescence in the cytosol and a
+>1.5-fold increase in the nuclei ofeto1guard cells compared
+with the wild type (Fig. 3;P< 0.001).
+To further examine the effect of ethylene on flavonol synthesis in guard cells, we
+treated plants with exogenous ethylene. The wild type and theethylene-insensitive2-5(ein2-5) mutant, an
+ethylene signaling mutant with nearly complete ethylene insensitivity (Alonso et al., 1999), were treated with 5
+μL/L ethylene gas for 24 h, and thenDPBAfluorescence in the guard cells was imaged (Fig. 5). TheDPBAfluorescence was quantified in both the nucleus and cytosol, as described above, for
+30 stomata per treatment in three separate experiments, and the average signal
+relative to the signal in the cytosol of untreatedCol-0was calculated (Fig. 5).
+Similar toeto1,the guard cells of ethylene-treated wild-type
+plants had enhancedDPBAfluorescence in the
+cytosol and nuclei compared with an untreated control (P< 0.01).
+A similar magnitude increase inDPBAfluorescence was also evident after 3 h of ethylene treatment, as shown inSupplemental Figure S3A. Guard cells ofein2-5had
+significantly lowerDPBAfluorescence thanCol-0in both the cytosol and nucleus in
+the absence of treatment (P< 0.02) and showed no increase inDPBAfluorescence after ethylene treatment
+(Fig. 5).
+Figure 5.
+[Img005]
+Subcellular flavonol accumulation inCol-0andein2-5guard cells with and without
+ethylene treatment. Intact soil grown plants were incubated in ethylene gas at
+5 μL/L concentration for 24 h.DPBAfluorescence intensity values were quantified and are reported
+relative to the untreatedCol-0cytosol
+fluorescence intensity. Asterisks indicate significant differences
+(P< 0.02) between the mutant and the wild type within
+treatment. Number signs indicate significant differences between treated and
+untreated controls within a genotype as determined by the Student’sttest (P< 0.02). The average ±seof 90 stomata from three biological replicates are reported.
+We employed HPLC together with mass spectroscopy (LC-MS) to directly quantify concentrations of kaempferol and quercetin in
+whole leaves to examine the effect of elevated ethylene levels on flavonol
+concentration. Hydrolyzed flavonol samples extracted from 18 leaves of 4-week-oldCol-0,tt4-2,andeto1plants were analyzed to examine the total flavonol pools of
+each compound. The concentrations of flavonols were detected in three separate
+experiments, with a representative graph shown inFigure 3. Flavonol extractions from whole leaves showed 1.3- and 5-fold
+increased levels of accumulation of kaempferol and quercetin, respectively, ineto1compared with the wild type. This experimental approach
+could not demonstrate that ethylene-dependent increases in flavonols were localized
+specifically to guard cells, but it did illustrate that the increases in total
+flavonol concentrations mirror the fluorescence increases in guard cells observed
+withDPBAstaining.
+ROSAccumulate in Guard Cells and Are
+Affected by Flavonol Concentrations
+The concentrations ofROSare highly
+regulated in guard cells and are an essential feature of rapid stomatal closure in
+response toABA(Pei et al., 2000;Kwak et
+al., 2003).ROSconcentration
+within guard cells was examined to determine whether flavonols are acting as
+antioxidants in vivo. To visualizeROSaccumulation in Arabidopsis leaf tissue, we used 2',7'
+dihydrodichlorofluorescein diacetate (H2DCF-DA), a generalROSfluorescent sensor (Halliwell and Whiteman,
+2004). In the past, this fluorescent probe has been imaged with UV light to
+visualizeROSin guard cells (Kwak et al., 2003); however, we excited with a
+488-nm laser, a wavelength that is more frequently used when imaging this probe
+(Halliwell and Whiteman, 2004).H2DCF-DAis taken up by cells, in which
+internal cellular esterases cleave off the diacetate functional group, preventing
+2',7'-dichlorofluorescein (DCF) from diffusing outside of the cell.
+Upon oxidation byROS, DCF becomes
+fluorescent. To minimize any dye uptake difference or light-induced fluorescence
+increases that can occur with this dye (Murata et
+al., 2001), all incubation and imaging times and settings were carefully
+maintained within each experimental comparison.
+We used spectral separation through confocal microscopy to separate out chlorophyll
+autofluorescence from DCF fluorescence in guard cells in epidermal leaf peels of the
+wild type,tt4-2, andeto1(Fig. 6). In all three genotypes, DCF fluorescence was at very
+low levels in pavement cells, but accumulated in guard cells in both nuclei and the
+cytosol, with greater fluorescence in the nuclei, mirroring the tissue and
+subcellular accumulation of flavonols. The levels of DCF fluorescence in the cytosol
+and nucleus of the wild type,tt4, andeto1were
+quantified in 90 guard cells and values were normalized relative to the levels in the
+cytosol ofCol-0(Fig. 6B). In thett4mutant, which does not
+synthesize flavonols, DCF fluorescence intensity was greater in both the cytosol and
+the nucleus of guard cells compared with the wild type. Quantification of DCF
+fluorescence indicated that there is a 2- and 2.5-fold increase intt4-2in the cytosol and nucleus, respectively, compared with
+wild-type guard cells.
+Figure 6.
+[Img006]
+A, Confocal micrographs ofH2DCF-DA-stained guard cells of 4-week-oldCol-0,tt4, andeto1plants. DCF fluorescence is shown in green, and chlorophyll autofluorescence is
+shown in blue in separate channels and merged images captured under identical
+confocal settings. B, Quantification of subcellular DCF fluorescence in guard
+cells. Leaf peels of 3- to 4-week-old plants were stained with 2.5 μMH2DCF-DAfor 30 min and imaged
+using confocal microscopy. DCF intensity values in the cytosol and nucleus of
+guard cells were determined and are reported relative to the levels in the
+cytosol ofCol-0. The average ±seof 90 stomata from three biological replicates are reported. C,
+Quantification of subcellular DCF fluorescence in guard cells. Data from two
+experiments are combined and the average ±seof 60 stomata are
+reported. Asterisks indicate significant differences (P<
+0.005) between the mutant and the wild type within treatment. Number signs
+indicate significant differences (P< 0.05) between treated
+and untreated controls within a genotype as determined by the Student’sttest. Bar = 15 µm.
+There were also lower levels of DCF fluorescence ineto1than in the
+wild type with reduction to 60% of the values in the untreated wild type, consistent
+with the higher levels of antioxidants in the presence of elevated ethylene. Ethylene
+treatment for 24 h showed decreasedROSaccumulation in the wild type (Fig. 6), with
+similarROSdecreases observed after 3 h of
+ethylene treatment compared with untreated controls (Supplemental Fig, S2B). Intt4, there were increased
+levels ofROSdetected at 24 h, but not after
+3 h of ethylene treatment compared with untreatedtt4(Fig. 6). The 24-h ethylene treatment results
+mirrored a previous report that ethylene inducedROSaccumulation in guard cells through activation of NADPH oxidase
+AtRBOHF (Desikan et al., 2006). Together
+these images suggested an antioxidant activity of flavonols in guard cells, by
+illustrating an inverse relationship between flavonol concentration andROSlevels using both mutants to block flavonol
+synthesis and treatments and mutants to elevate ethylene levels and flavonol
+accumulation.
+Stomatal Closure Is Modulated by Ethylene Levels
+The effect of 24 h of ethylene treatment of the wild type andtt4and in the untreatedeto1mutant was examined using the same
+above-described stomatal closure assay. The closure at time 0, 45, and 90 min afterABAtreatment for 90 stomata from three
+experiments were quantified in these three genotypes (Fig. 7). After incubation in the opening solution for 3 h, all stomata
+were equivalently open and in the absence of addedABA, remained equivalently open (Supplemental Fig. S2). Ethylene-treated wild-type andeto1guard cells showed decreased closure in response toABA, whereas untreatedtt4shows the most stomatal closure at each time point. When wild-type plants were
+treated with ethylene for 3 h (Supplemental Fig. S3C), similar results were observed. We expected
+thattt4would show no response to ethylene treatment, if the only
+effect of ethylene is on flavonoid synthesis; however, we found that it does show a
+reduced stomatal closure in the presence of 24 h of ethylene treatment, but not 3 h.
+The stomatal aperture is still smaller intt4-2with ethylene
+treatment than in Col-0 with ethylene, consistent with a role for ethylene-mediated
+flavonol synthesis in reducing the rate of stomatal closure through modulation ofROSsignals. The difference in stomatal
+aperture intt4in the absence and presence of 24 h of ethylene
+treatment suggests the presence of a separate flavonol-independent pathway by which
+ethylene treatment facilitates stomatal closure. The absence of this effect at 3 h
+suggests that this may well be a secondary effect of extended ethylene
+treatments.
+Figure 7.
+[Img007]
+Stomatal aperture widths in response toABA.ABAsensitivity is
+indirectly proportional to relative flavonol concentration. Guard cells were
+incubated under white light in a 20-μMABAsolution for 0, 45, and 90 min. The average ±seof 90 stomata from three biological replicates are reported. Asterisks indicate
+significant differences between samples and untreatedCol-0using a Student’sttest
+(P< 0.05).
+DISCUSSION
+Guard cells control the aperture of stomatal pores in response to environmental
+fluctuations, including variations in light intensity, moisture, and carbon dioxide
+levels (Hetherington and Woodward, 2003). In
+response to environmental stress, the plant hormoneABAsignals stomatal closure (Zeevaart,
+1980;Hirayama and Shinozaki, 2007;Cho et al., 2009;Joshi-Saha et al., 2011). This signaling pathway employsH2O2as aROSsecond messenger (McAinsh et al., 1996;Murata et
+al., 2001;Zhang et al., 2001;Kwak et al., 2003). During signaling of stomatal
+closure,ROSmust reach a certain threshold to
+oxidize their targets (Kwak et al., 2003;Cho et al., 2009), but must not reach levels that
+will cause oxidative damage (Munné-Bosch et
+al., 2013). To prevent oxidative damage,ROSsignaling must be tightly regulated by small molecule and/or protein
+antioxidants (Conklin et al., 1996;Apel and Hirt, 2004), with antioxidants including
+glutathione and flavonoids. Recent reports demonstrated the altered redox state and
+altered stomatal aperture in mutants defective in glutathione synthesis (Okuma et al., 2011;Munemasa et al., 2013). In this study, we tested the hypothesis
+that flavonols act as antioxidants that reduceROSconcentrations in guard cells, thus modulating stomatal closure.
+We examined where and how flavonols accumulated in the epidermal layers of leaves in
+order to better understand their role in cell signaling. Flavonol accumulation was
+visualized through confocal microscopy, using a flavonol-specific fluorescent dye,DPBA. In the wild type,DPBAfluorescence was localized to guard cells but was absent in
+surrounding pavement cells, whereas it was not detected in any cell types in the
+flavonoid-deficienttt4-2mutant. Localized flavonol accumulation in
+guard cells could be a result of localized synthesis or selective import of these
+molecules into the cells. To examine whether flavonol biosynthetic enzymes are
+synthesized in guard cells in planta, aCHS:GUStransgenic line was utilized.CHSpromoter-driven GUS product
+accumulated specifically in guard cells and not in surrounding epidermal pavement cells,
+which suggests that production ofCHS, a key
+flavonol biosynthesis enzyme, is localized to Arabidopsis guard cells. This result is
+consistent with previous research that shows the presence of transcripts encoding
+enzymes of flavonol biosynthesis in guard cell protoplasts, including chalcone
+isomerase, flavanone 3-hydroxylase, flavonol synthase1, and flavonoid
+3′hydroxylase (Pandey et al., 2010).
+This result extends previous study in two ways. First, it minimized the damage to cells
+that is the result of creating protoplasts, which may increase the expression of
+flavonoid biosynthesis genes in cells where they are not normally produced (Dixon and Paiva, 1995;Winkel-Shirley, 2002). Second, the available microarray data do
+not have a pavement cell transcriptome for comparison (Pandey et al., 2010). Using very different experimental methods inVicia faba, flavonols were previously reported to accumulate in
+guard cells and surrounding epidermal cells (Schnabl
+et al., 1986;Takahama, 1988). Both
+reports used spectrophotometric imaging of epidermal peels, which limits the resolution
+of flavonols accumulation in individual cells. Using the highly localized accumulation
+ofDPBAfluorescence, our results demonstrate
+that there is a guard cell-specific flavonol accumulation profile in Arabidopsis.
+Because flavonols accumulate specifically in guard cells, we asked whether these
+molecules function as antioxidants to reduceROSconcentrations. Flavonols have been shown to have antioxidant activity in vitro;
+however, their antioxidant activity in planta has been debated (Rice-Evans et al., 1997;Hernández et al., 2009;Pollastri
+and Tattini, 2011). BecauseROShas
+been implicated as a second messenger in guard cell signaling (McAinsh et al., 1996;Murata et
+al., 2001;Zhang et al., 2001;Kwak et al., 2003), we asked whether the presence
+of flavonols affected theROSaccumulation in
+guard cells. To visualizeROSaccumulation, we
+usedDCFH-DA, a generalROSsensor, and utilized spectral separation to remove chlorophyll
+autofluorescence. DCF fluorescence was localized to guard cells, similar to theDPBAfluorescence pattern, indicating that both
+flavonols andROSaccumulate specifically in
+this cell type, but not in surrounding pavement cells. In addition, we saw increased DCF
+fluorescence intt4-2mutants that synthesize no flavonols, consistent
+with the absence of flavonols resulting in increasedROSconcentrations, which is also consistent with an antioxidant activity for
+flavonols in vitro.
+DPBAfluorescence were at higher levels in the
+nuclei than the cytosol in all genotypes and treatments. This observation is consistent
+with characteristics of other plant species that showed flavonoid andROSaccumulation in the nuclei (Feucht et al., 2004;Mazars et al., 2010;Lewis et
+al., 2011). Immunolocalization with antibodies againstCHSand chalcone isomerase suggests that the enzymes of flavonoid
+synthesis are localized to the nucleus in Arabidopsis roots (Saslowsky et al., 2005). The nuclear localization of flavonols is
+consistent with the notion thatROScan regulate
+gene expression through interaction with redox-sensitive transcription factors (TFs) in plants (Wu et al., 2012), such as the well-established redox-sensitiveTFdescribed in bacteria and mammals (Aslund et al., 1999;Biswas et al., 2006). Flavonols are a likely candidate to modulate
+the activity of redox-sensitiveTFs, because of
+their increased accumulation in the nuclei; however, it is unlikely that they are the
+only antioxidant present in this organelle. Flavonols have been shown to chelate metal
+ions, such as Fe3+, which catalyze the production of hydroxyl radicals fromH2O2(Hernández et al., 2009). Thus, flavonol
+accumulation in the nucleus would contribute to a decreased redox potential in the
+nucleus, potentially decreasing the number ofTFoxidation events. Combined with our data suggesting an in planta
+antioxidant ability of flavonols, we hypothesize that flavonol accumulation in the
+nuclei may modulate the activity of redox-sensitiveTFs that affect gene expression in addition to preventing oxidative damage to
+DNA, although the time scale of transcriptional effects may be beyond the rapid
+regulation of guard cell aperture.
+Because stomatal apertures are environmentally regulated, we hypothesized that
+regulation of flavonol synthesis may be a way for plants to modulate the physiology of
+guard cells. Previous studies have shown that ethylene increases flavonol accumulation
+in Arabidopsis roots (Buer et al., 2007;Lewis et al., 2011), and we asked whether this
+hormone may also increase flavonol accumulation in guard cells. Elevated levels of
+ethylene through endogenous overproduction in theeto1mutant and
+exogenous application of ethylene to wild-type leaves increased flavonol accumulation in
+this cell type, as visualized by localizedDPBAfluorescence. We observed robust increases inDPBAfluorescence at both 3 and 24 h after treatment with ethylene gas. This
+ethylene-enhanced flavonol accumulation pattern requires a functional ethylene signaling
+pathway, because the ethylene-inducedDPBAfluorescence increases were lost in theein2mutant. A previous study
+showed that ethylene-induced flavonoid increases detected byDPBAcan also be detected byLC-MS(Lewis et al., 2011). We
+therefore verified these flavonols increases in leaves usingLC-MSand detected approximately 5-fold increases in quercetin and
+a smaller, but still statistically significant, increase in kaempferol in whole leaves
+treated with ethylene under similar conditions.
+We also observed decreased DCF fluorescence in the wild type andtt4treated with ethylene for 3 or 24 h as well as ineto1guard cells
+compared with the wild type, suggesting that the increase in flavonols decreasesROSconcentrations. In addition, ethylene-treated
+wild-type guard cells andeto1exhibited a decreased rate ofABA-induced stomatal closure, a result that is
+consistent with flavonols acting as antioxidants reducing theH2O2burst that drives stomatal closure.
+Ethylene has been shown to promote both stomatal closure inArachis
+hypogaeaand Arabidopsis (Pallas and Kays,
+1982;Desikan et al., 2006) and
+stomatal opening inDianthus caryophyllus,Solanum
+lycopersicum,V. faba,and Arabidopsis (Madhavan et al., 1983;Levitt et al., 1987;Tanaka et
+al., 2005). Applied ethylene gas or its precursor,
+1-aminocyclopropane-1-carboxylic acid, was shown to induce stomatal closure through
+elevatedROSproduction generated by AtRBOHF, an
+NADPH oxidase (Desikan et al., 2006). In our
+study, a previously reportedROSburst that was
+observed upon ethylene treatment of wild-type guard cells (Desikan et al., 2006) was masked by increased flavonol
+accumulation, but we observed that a 24-h ethylene treatment oftt4led
+to elevatedROS(although this increase was not
+detected after 3 h of treatment), consistent with the absence of antioxidants. Other
+researchers report that treatment of wild-type plants with ethylene or
+1-aminocyclopropane-1-carboxylic acid or endogenous ethylene overproduction ineto1inhibit stomatal closure in the presence ofABAin Arabidopsis (Tanaka et al., 2005) and in wheat (Triticum
+durum;Chen et al., 2013). These
+findings are mirrored in our results, with decreasedROSand stomatal closure in response to ethylene treatment or theeto1mutation. We predicted that ethylene-treatedtt4might be insensitive to the effect of ethylene on stomatal
+aperture, because there will be no change in flavonoid antioxidants. We found that in
+both the wild type andtt4, ethylene reduced the rate of stomatal
+closure, consistent with a flavonoid- andROS-independent ethylene regulation of this process, although thett4mutant has a greater rate in both cases consistent with a secondROS-dependent mechanism. AROS-independent pathway forABA-induced stomatal closure was previously suggested (Kwak et al., 2003).ABAtreatment ofatrbohD/Fdouble mutant guard
+cells resulted in no change inROSconcentrations, although cytosolic Ca2+elevations were observed in nearly
+one-half of all guard cells (Kwak et al.,
+2003). We hypothesize that a 24-h ethylene treatment may inhibitROS-independent stomatal closure in the absence of
+flavonols, which would explain the delayed closure that is observed in ethylene-treatedtt4. Our results suggest that ethylene induces flavonol
+accumulation, which reduces both the concentration ofROSand the rate ofABA-induced
+stomatal closure.
+We have constructed a model to synthesize these data, which is shown inFigure 8. This model outlines theABAsignaling pathway in whichABAactivates respiratory burst oxidases increasing
+the levels ofROS, which act as signaling
+molecules to induce stomatal closure. Flavonoids act as antioxidants reducing the levels
+ofROS, which decrease the rate of stomatal
+closure. Elevated levels of ethylene, both through elevated synthesis ineto1or by treatment with exogenous ethylene, increase flavonol
+accumulation and decreaseROS, resulting in a
+reduced rate of stomatal closure. When a flavonoid-deficient mutant is treated with
+ethylene, we find thatROSlevels increase after
+24 h of treatment, but not after 3 h of treatment. These findings suggest that extended
+ethylene elevatedROSaccumulation (Fig. 8, dotted line), but that the elevated ethylene
+afterROStreatment in the wild type more than
+compensates by increasing levels of flavonol antioxidants. We predicted thattt4would be insensitive to the effect of ethylene on stomatal
+closure, whereas we found that this treatment leads to a reduced rate of closure, which
+is evident at 24 h, but not 3 h of ethylene treatment (Fig. 8, dotted line). We hypothesize that ethylene may enhance the synthesis
+of a second signaling molecule that may act to alter stomatal closure through a separate
+mechanism in the presence of extended ethylene treatment. Yet the absence of ethylene
+effects onROSand stomatal aperture after 3-h
+treatments suggests that the primary effects of ethylene are on synthesis of flavonol
+antioxidants that suppressROSlevels.
+Figure 8.
+[Img008]
+A proposed model of the effects of ethylene and flavonols on stomatal closure.ABAis released into the cytosol where
+it triggers respiratory burst oxidases, which induce a burst ofROS, which act as secondary messengers to
+signal stomatal closure. Ethylene induces flavonols accumulation in guard cells
+through EIN2. Flavonols act as antioxidants to scavengeROSand thereby inhibits stomatal closure. In the absence of
+flavonols, ethylene inducedROSaccumulation after 24 h, but not after 3 h of treatment. Similarly, 24 h of
+ethylene treatment affected stomatal aperture intt4, whereas 3 h
+of ethylene treatment did not. The effects of ethylene observed at 24 h are
+indicated with dashed lines. Arrows represent positive effects and bars represent
+negative effects.
+CONCLUSION
+Guard cell function is integral to plant adaptation to a changing environment. Much is
+known about the role ofROSas a second
+messenger in this cell type (Wang and Song,
+2008); however, the role of antioxidants in guard cells to modulateROSconcentrations has not been well studied. We
+observed flavonol andROSaccumulation in guard
+cells and showed that the concentrations of flavonols in planta are inversely
+proportional toROSlevels, consistent with in
+vitro studies of flavonols acting as antioxidants (Rice-Evans et al., 1997;Hernández
+et al., 2009). This study showed that flavonol levels are ethylene regulated
+in guard cells. Elevated levels of ethylene in response to exogenous treatment of the
+wild type and endogenous synthesis in theeto1mutant increase flavonol
+accumulation in guard cells, resulting in decreasedROSlevels and decreased rate of stomatal closure. Together these results
+indicate that flavonols suppressROSlevels in
+guard cells and thereby modulate the dynamics of stomatal aperture.
+MATERIALS AND METHODS
+Plant Growth and Ethylene Treatment
+Arabidopsis (Arabidopsis thaliana) plants were germinated on
+1× Murashige and Skoog medium, pH 5.6, Murashige and Skoog vitamins, and 0.8%
+(w/v) agar, buffered with 0.05% (w/v) MES and supplemented with 1% (w/v) Suc. After
+vernalization at 4°C for 48 h, plates were placed in a 12-h day growth chamber
+under 100µmol m−2s−2cool-white light. Seedlings were transferred to Metromix 360 soil 7 d after
+germination. All experiments were conducted on leaves of plants that were 3 to 4
+weeks after germination. This study utilized ecotype Columbia 0 of Arabidopsis (Col-0),tt4-2(Lewis et al., 2011),eto1(Chae et al., 2013),ein2-5(Alonso
+et al., 1999), and aCHS:GUSreporter (Chory and Peto, 1990).
+For ethylene treatments, 4-week-old wild-type,tt4-2, andein2-5plants were placed in a clear plastic container that was
+sealed with vacuum grease. Ethylene gas was added to achieve a 5 μL/L
+concentration of ethylene within the chamber. Control plants were placed in identical
+sealed containers without ethylene. After either 3 h or 24 h of incubation, leaves
+were excised and used for imagingDPBAor DCF
+fluorescence, or in stomatal closure assays.
+Flavonol Accumulation UsingDPBA
+Individual leaves were excised and submerged in an aqueous solution containing 0.01%
+(v/v) Triton X-100 and 2.52 mg/mL−1DPBAfor 2.5 h. Whole leaves were then washed
+in deionized water for 1 min and mounted in deionized water between two coverslips. A
+Zeiss 710LSCMwas used to excite the leaf
+surfaces with 100% maximum laser power at 488 nm and a pinhole yielding a 4-μm
+cross section. We optimizedLSCMsettings to
+spectrally separate the fluorescence of flavonol-DPBAand chlorophyll by capturing the emission spectrum for each compound
+in which there is no overlap.DPBAfluorescence emission was collected between 475 and 619 nm (Lewis et al., 2011). The gain settings were selected to
+maximize the total flavonol signal while preventing oversaturation. All micrographs
+within each figure were acquired using identical offset, gain, and pinhole settings
+using the same detectors. Postimage quantification ofDPBAfluorescence intensities was done by placing a region of
+interest (ROI) around the nuclei of each
+guard cell and around an area in the cytosol with no chloroplasts present. The
+average intensity values within eachROIwere recorded and averaged.
+Histochemical Staining and Imaging ofCHS:GUSActivity
+Whole leaves from theCHS:GUStransgenic line were
+excised and submerged in a GUS staining solution (80 mmsodium phosphate
+buffer, 0.4 mmpotassium ferricyanide, 0.04 mmpotassium
+ferrocyanide, 0.05% [v/v] Triton X-100, 0.8 mg/mL
+5-bromo-4-chloro-3-indolyl-β-d-glucuronide, pH 7) at 37°C
+for 18 h. Leaves were removed from staining solution and washed with 75% (v/v)
+ethanol for 5 min. Epidermal strips were prepared by spraying a microscope slide with
+a silicone-based medical adhesive (Hollister stock #7730). After 5 min, the basal
+epidermis of the leaf was gently pressed into the dried adhesive coat, and the leaf
+was gently scraped with a pipette tip until only the fixed epidermis remained (Young et al., 2006). Epidermal peels were
+imaged usingDICimaging with a Zeiss Auxio
+Observer D1 microscope with an AxioCam HRc color camera.
+Quantification of Flavonols byLC-MS
+Samples were run on a Thermo LTQ Orbitrap XL with an electrospray ionization source,
+coupled to a Thermo Accela 1250 pump and autosampler (Thermo Fisher), using a
+Security Guard column in line with a Luna 150 × 3 C18 column, both from
+Phenomenex. For flavonol analysis, 10 µl of each sample was injected with a
+solvent of water:acetonitrile, both containing 0.1% (v/v) formic acid in the
+following gradients: 95% to 40% (v/v) water from 0 to 5 min, 40% to 20% (v/v) water
+from 5 to 20 min, and 20% to 95% (v/v) water from 20 to 23 min to recondition the
+column. MS2fragmentation spectra of flavonols were induced using 30-kV
+collision-induced dissociation. Spectra of samples were compared to those of
+standards and those listed on the MassBank database (www.massbank.jp). Data were
+analyzed by quantifying peak areas using Thermo Xcalibur software, and with
+normalization to the internal standard formononetin (Indofine Chemicals). Absolute
+quantities of metabolites were found by comparing peak area data to standard curves
+created using pure standards of quercetin and kaempferol (Indofine Chemicals).
+DCF and Hoechst Staining and Quantification
+H2DCF-DAwas dissolved in dimethyl sulfoxide
+to yield a 50-μmstock. This was diluted in deionized water to yield
+a final concentration of 2.5 µM with 2% (v/v) dimethyl sulfoxide. The
+epidermis was stained for 15 min with two drops of H2DCF-DA stain and washed with
+deionized water. A Zeiss 710LSCMwas used to
+excite the leaf surfaces with 1% maximum laser power at 488 nm with a 3.5 digital
+gain. Settings were optimized to spectrally separate the fluorescence of DCF -ROSand chlorophyll by capturing the emission
+spectrum for each compound in which there is no overlap. The DCF signal was collected
+between 495 to 527 nm with a pinhole yielding a 4-μm cross section, making
+sure to limit excess exposure to the laser that inducesROS. The gain settings were selected to maximize the total DCF
+signal while preventing oversaturation. All micrographs within each figure were
+acquired using identical offset, gain, and pinhole settings using the same detectors.
+DCF fluorescence intensities were measured by placing anROIaround the nuclei of each guard cell and around an area in
+the cytosol with no chloroplasts present. The average intensity values within eachROIwas recorded and averaged.
+Hoechst imaging was performed on whole leaves that were previously stained withDPBA. After 2.5 h ofDPBAstaining, leaves were washed in deionized water for 1 min
+and transferred to an aqueous solution containing Hoechst at a 1 µg/mL
+concentration. The leaf surface was excited with 10% laser power at 405 nm and a
+pinhole yielding a 4 μm cross section. We optimizedLSCMsettings to spectrally separate the fluorescence of the
+Hoechst stain with cell wall autofluorescence by capturing the emission spectrum for
+each compound in which there is no overlap. Hoechst fluorescence emission was
+collected between 420 to 546 nm. The gain settings were selected to maximize the
+total Hoechst signal while preventing oversaturation.
+Stomatal Closure Assay
+ABA-induced stomatal closure assays were
+performed with plants 3 to 4 weeks after germination. Leaves from untreated plants or
+plants treated with ethylene gas for 24 h were excised and submerged in an aqueous
+opening solution (5 mM KCl, 50 µM CaCl2, 10 mM MES buffer, pH 5.6)
+and incubated under cool-white light for 3 h. To induce stomatal closure, leaves were
+transferred to a similar opening solution with 20 µMABAadded to induce closure (Jammes et al., 2009). After incubation in theABAsolution under white light (100 µmol
+m−2s−2) for 0, 45, 90, and 180 min, leaf
+peels were prepared and imaged usingDICimaging with a Zeiss Axio Observer D1 microscope with a Hamamatsu 1394 ORCA-ERA
+monochromatic camera (Jammes et al., 2009).
+Apertures were measured using ImageJ software.
+Sequence data from this article can be found in the GenBank/EMBL data libraries under
+accession numbers. CHS (AT5G13930),ETO1(AT3G51770), andEIN2(AT5G03280)
+Supplemental Data
+The following materials are available in the online version of this article.
+Supplemental Figure S1.Confocal imaging ofCol-0guard cells showsDPBAfluorescence in the nuclei of guard
+cells.
+Supplemental Figure S2.Stomatal aperture widths in
+opening solution withoutABAfor 90
+min.
+Supplemental Figure S3.Three-h ethylene treatment
+induces flavonols accumulation and decreasesROSconcentrations and the rate of stomatal closure.
+Supplemental Figure S4.Subcellular flavonol
+accumulation in wild-type guard cells compared witheto1after
+treatment with 20 μMABA.
+Supplementary Material
+Acknowledgments
+We thank Sarah Assmann and Greg Maloney for their insight, experimental advice, and
+editorial comments; Greg Maloney and Marcus Wright for Orbitrap operation assistance and
+advice; and Anita McCauley, Glenn Mars, and Daniel Lewis for microscopy assistance.
+Glossary
+abscisic acid
+reactive oxygen species
+hydrogen peroxide
+diphenylboric acid 2-aminoethyl ester
+chalcone synthase
+differential interference contrast
+laser scanning confocal microscope
+ecotype Columbia 0 of Arabidopsis
+HPLC-mass spectrometry
+2',7'-dichlorofluorescein-diacetate
+transcription factor
+region of interest
+Footnotes
+This work was supported by the U.S. Department of Agriculture National Institute of
+Food and Agriculture program (grant no. 2009–65116–20436 to G.K.M.) and
+the National Aeronautics and Space Administration (grant no. NNX09AK82G to G.K.M.).
+Grants from the National Science Foundation Major Research Instrumentation Program
+supported the purchase of the stereomicroscope and laser scanning confocal
+microscopes used in these experiments (grant nos. NSF–DBI 0500702,
+MRI–0722926, and MRI–1039755) and the purchase of an Orbitrap Mass
+spectrometer (NSF award no. 947028).
+The online version of this article contains Web-only data.
+Articles can be viewed online without a subscription.
+References
+Associated Data
+This section collects any data citations, data availability statements, or supplementary materials included in this article.
+Supplementary Materials
+Articles from Plant Physiology are provided here courtesy ofOxford University Press

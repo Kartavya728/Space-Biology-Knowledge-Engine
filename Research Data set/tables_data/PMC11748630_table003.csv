@@ -1,0 +1,7 @@
+Sample,Gnai3,Apoh,…,env,oro_thresh
+Mmus_FLT_I_boxcox,− 0.012137,− 0.011788,…,polyA:boxcox,1
+Mmus_FLT_I_clr,0.969207,3.344341,…,polyA:clr,1
+Mmus_FLT_I_log,− 0.011233,2.079650,…,polyA:log,1
+Mmus_FLT_I_norm,0.969207,3.344341,…,polyA:norm,1
+Mmus_FLT_I_sqrt,0.388949,5.967345,…,polyA:sqrt,1
+Mmus_FLT_I_identity,− 0.011230,2.079653,…,polyA:identity,1

@@ -1,0 +1,92 @@
+,,GO term name
+Characteristics,Ontology,Transcript ID,Gene symbol,Gene description,,FArg: FWtFC (log2)
+"Figure 4B, Category II, III, 82 genes NOT DIFFERENTIAL IN THE SPACEFLIGHT ADAPTATION IN ARG1 KO CELLS AND DIFFERENTIAL BETWEEN GENOTYPES WITHIN THE SPACEFLIGHT ENVIRONMENT",Cellular Component,extracellular region GO:0005576,,
+cell wall GO:0005618,,
+,Vexternal encapsulating structure GO:0030312,,
+,cell periphery GO:0071944,,
+,plasma membrane GO:0005886,,
+,AT1G03260,,SNARE associated Golgi protein family,,2.9
+,AT1G78980,SRF5,STRUBBELIG-receptor family 5,,2.6
+,At5g08440,,,,1.4
+,AT1G68630,,PLAC8 family protein,,1.3
+,At1g03080,,kinase interacting (KIP1-like) family protein,,1.3
+,AT2G28790,,Pathogenesis-related thaumatin,,−1.0
+,,AT2G03830,RGF8,,,−1.6
+,,AT1G11545,XTH8,xyloglucan endotransglucosylase/hydrolase 8,,−2.0
+,,AT2G46920,POL,Protein phosphatase 2C family protein,,−2.4
+,,AT5G19070,,SNARE associated Golgi protein family,,−3.2
+,,AT1G01900,SBTI1.1,subtilase family protein,,−3.3
+,,endomembrane system GO:0012505,,
+,,endoplasmic reticulum GO:0005783,,
+,,Golgi apparatus GO:0005794,,
+,,AT5G56230,PRA1.G2,prenylated RAB acceptor 1.G2,,2.5
+,,AT3G44480,RPP1,Disease resistance protein (TIR-NBS-LRR class),,1.6
+,,AT2G43240,,Nucleotide-sugar transporter family protein,,1.3
+,,AT3G49780,PSK4,phytosulfokine 4 precursor,,1.0
+,,AT2G46180,GC4,golgin candidate 4,,1.0
+,,AT4G37650,SHR,GRAS family transcription factor,,−1.5
+,,AT4G37640,ACA2,calcium ATPase 2,,−1.7
+,,AT3G61990,OMTF3,S-adenosyl-L-Met-dependent methyltransferase,,−2.1
+,,AT4G35410,,Clathrin adaptor complex small chain,,−2.1
+,,AT2G15090,KCS8,3-ketoacyl-CoA synthase 8,,−2.5
+,,plastid GO:0009536,,
+,,chloroplast GO:0009507,,
+,,AT2G26850,,F-box family protein,,3.9
+,,AT3G01670,SEOa,,,2.6
+,,AT4G24930,,"thylakoid lumenal 17.9 kDa protein, chloroplast",,1.6
+,,AT3G53130,LUT1,Cytochrome P450 superfamily protein,,1.4
+,,At4g35770,SEN1,Rhodanese/Cell cycle control phosphatase,,1.4
+,,AT2G03800,GEK1,D-aminoacyl-tRNA deacylases,,1.2
+,,AT1G33265,,Transmembrane proteins 14C,,−1.2
+,,AT1G32070,NSI,nuclear shuttle interacting,,−1.4
+,,AT1G22240,PUM8,pumilio 8,,−1.6
+,,AT1G78620,,"DUF92, transmembrane",,−1.8
+,,AT3G56430,,,,−2.2
+,,AT1G22370,UGT85A5,UDP-glucosyl transferase 85A5,,−2.3
+,,AT3G20540,PolIB,polymerase gamma 1,,−2.3
+,,AT1G70200,,RNA-binding (RRM/RBD/RNP motifs),,−2.4
+,,intracellular membrane-bounded organelle GO:0043231,,
+,,AT2G35530,bZIP16,basic region/leucine zipper transcription factor 16,,3.0
+,,AT3G16800,,Protein phosphatase 2C family protein,,2.5
+,,AT5G20450,,,,2.4
+,,AT3G50340,,,,1.9
+,,AT2G17900,SDG37,SET domain group 37,,1.6
+,,AT4G01500,NGA4,AP2/B3-like transcriptional factor,,1.5
+,,At1g08630,THA1,threonine aldolase 1,,1.4
+,,AT2G18780,,F-box and associated interaction domains,,1.4
+,,AT5G11090,,serine-rich protein-related,,1.3
+,,AT2G14210,ANR1,AGAMOUS-like 44,,1.2
+,,AT2G40020,,Nucleolar histone methyltransferase-related,,1.1
+,,AT3G48360,BT2,BTB and TAZ domain protein 2,,1.1
+,,AT2G42660,,Homeodomain-like superfamily protein,,−1.0
+,,AT5G66700,HB53,homeobox 53,,−1.0
+,,AT4G22530,,S-adenosyl-L-Met-dependent methyltransferases,,−1.4
+,,AT1G09700,HYL1,dsRNA-binding domain-like superfamily protein,,−2.9
+,Biological Process,cellular aromatic compound metabolic process GO:0006725,,
+,response to auxin GO:0009733,,
+,,AT2G35530,bZIP16,basic region/leucine zipper transcription factor 16,,3.0
+,,AT4G01500,NGA4,AP2/B3-like transcriptional factor,,1.5
+,,At4g35770,SEN1,Rhodanese/Cell cycle control phosphatase,,1.4
+,,AT2G14210,ANR1,AGAMOUS-like 44,,1.2
+,,AT3G48360,BT2,BTB and TAZ domain protein 2,,1.1
+,,AT2G42660,,Homeodomain-like superfamily protein,,−1.0
+,,AT5G66700,HB53,homeobox 53,,−1.0
+,,AT1G32070,NSI,nuclear shuttle interacting,,−1.4
+,,AT4G37650,SHR,GRAS family transcription factor,,−1.5
+,,AT3G20540,PolIB,polymerase gamma 1,,−2.3
+,,AT2G46920,POL,Protein phosphatase 2C family protein,,−2.4
+,,AT1G09700,HYL1,dsRNA-binding domain-like protein,,−2.9
+,,localization GO:0051179,,
+,,establishment of localization GO:0051234,,
+,,transport GO:0006810,,
+,,transmembrane transport GO:0055085,,
+,,ion transmembrane transport GO:0034220,,
+,,AT5G56230,PRA1.G2,prenylated RAB acceptor 1.G2,,2.5
+,,At1g80900,MRS2-10,magnesium transporter 1,,2.4
+,,At2g16970,MEE15,Major facilitator superfamily protein,,2.4
+,,At1g77210,STP14,sugar transporter 14,,2.2
+,,AT2G43240,,Nucleotide-sugar transporter family protein,,1.3
+,,AT4G37640,ACA2,calcium ATPase 2,,−1.7
+,,At2g01980,SOS1,"sodium proton exchanger, putative (NHX7)",,−1.8
+,,AT5G49500,,"Signal recognition particle, SRP54 subunit",,−1.8
+,,AT4G35410,,Clathrin adaptor complex small chain,,−2.1

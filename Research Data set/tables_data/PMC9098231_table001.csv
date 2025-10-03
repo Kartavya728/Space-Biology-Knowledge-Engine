@@ -1,0 +1,16 @@
+Strain ID,FGSC A4,LO1362,LO8158,CW12001
+""
+No. of SNPs,129,137,108,106
+Intergenic,111,116,84,88
+Missense,10,11,15,9
+Synonymous,4,3,6,3
+Intron,0,4,2,2
+UTR,1,2,0,2
+Stop gained,2,1,1,1
+Stop lost,0,0,0,1
+""
+No. of INDELs,36,38,41,31
+Intergenic,36,34,37,29
+Frameshift,0,2,1,1
+UTR,0,2,3,1
+Stop gained,0,1,1,0

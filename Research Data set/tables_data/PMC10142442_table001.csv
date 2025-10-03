@@ -1,0 +1,8 @@
+Compounds,IC50(µg/mL),SEM (µg/mL),Lower 95% Conf. Limit (µg/mL),Upper 95% Conf. Limit (µg/mL)
+PpFucCS,3.6,0.3,3.0,4.2
+HdPpFucCS,37.8,4.7,27.7,47.9
+Fraction1,15.7,5.4,4.2,27.3
+Fraction2,83.1,39.9,0,166.7
+Fraction3,ND,ND,ND,ND
+Fraction4,ND,ND,ND,ND
+UFH,0.9,1.946,0,4.9

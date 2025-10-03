@@ -1,0 +1,18 @@
+N315 ORF,Gene name,Fold change,Protein product,"Upregulated in anhfqmutanta,b","Binds Hfqb,c",Predicted regulatory consensus sequenced,Position from start codone
+SA1986,,2.71,Hypothetical protein,x,x,GTTTAAGAAAAAAACTGATGGGTAC,−92
+SA1985,,2.65,Hypothetical protein,x,x,GTTTAAGAAAAAAACTGATGGGTAC,ORF 2c
+SA1984,asp23,2.26,Alkaline shock protein,x,x,GTTTAAGAAAAAAACTGATGGGTAC,ORF 3c
+SA0218,pflB,4.19,Formate acetyltransferase,,,ATGTGAAAAAAATCACAA,−96
+SA0219,pflA,3.84,Formate acetyltransferase activating enzyme,,x,ATGTGAAAAAAATCACAA,ORF 2c
+SA1012,argF,2.35,Ornithine carbamoyltransferase,,,,
+SA1013,arcC,2.43,Carbamate kinase,,,,
+SA1532,usp,3.19,Probable universal stress protein,,,,
+SA0455,,2.17,Probable TdcF protein,x,x,GTTTAAAGCCCATGTAAAAGGGGTAT,−179
+SA2336,clpL,2.81,ATP-dependent Clp proteinase chain ClpL,x,x,GTTTTATCACCTATTATTAGTGGAAA,−115
+SA2312,ddh,2.31,d-Lactate dehydrogenase,,,TTGTGATATTTTTCACAA,−39
+SA0562,adh1,2.27,Alcohol dehydrogenase,,x,TTGTGAATTAATTCACAT,−306
+SA2410,nrdD,2.09,Anaerobic ribonucleoside triphosphate reductase,x,,,
+SA0102,,2.14,Myosin-cross-reactive antigen,,,ATTTACAATTCACAAAGGGGTAT,−61
+SA0570,,2.14,Hypothetical protein,x,x,,
+SA0752,,2.07,Hypothetical protein,,x,GTTTAAAAGATAATGTGACGGGGTAA,−67
+SA2268,,4.45,Hypothetical protein,,,TTGTGAAATACATCACAA,−129

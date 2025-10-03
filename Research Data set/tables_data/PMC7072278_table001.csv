@@ -1,0 +1,33 @@
+GLDS,Condition,Dose (mGy),Radiation Type *,Species,Tissue/Cell Culture,Ref.
+63,Spaceflight,1.04,LEO,Rat,Mammary,"[25,26,27]"
+52,Spaceflight,1.54,LEO,Human,Endothelial cells (HUVEC),"[28,29]"
+114,Spaceflight,1.83,LEO,Human,Fibroblast cells (AG01522),[30]
+21,Spaceflight,2.19,LEO,Mouse (C57BL/6),Skeletal muscle,"[31,32,33]"
+4,Spaceflight,3.25,LEO,Mouse (C57BL/6),Thymus,"[32,34]"
+47,Spaceflight,4.62,LEO,Mouse (C57BL/6),Liver,[35]
+25,Spaceflight,4.66,LEO,Mouse (C57BL/6),Liver,"[32,33,36,37,38,39,40,41,42]"
+98,Spaceflight,7.78,LEO,Mouse (C57BL/6),Adrenal gland,[32]
+99,Spaceflight,7.78,LEO,Mouse (C57BL/6),Muscle (extensor digitorum longus),[32]
+100,Spaceflight,7.78,LEO,Mouse (C57BL/6),Eye,[43]
+101,Spaceflight,7.78,LEO,Mouse (C57BL/6),Muscle (gastrocnemius),[32]
+102,Spaceflight,7.78,LEO,Mouse (C57BL/6),Kidney,[32]
+103,Spaceflight,7.78,LEO,Mouse (C57BL/6),Muscle (quadriceps),[32]
+104,Spaceflight,7.78,LEO,Mouse (C57BL/6),Muscle (soleus),[32]
+105,Spaceflight,7.78,LEO,Mouse (C57BL/6),Muscle (tibialis anterior),[32]
+168,Spaceflight,7.78,LEO,Mouse (C57BL/6),Liver,"[42,44]"
+242,Spaceflight,8.03,LEO,Mouse (C57BL/6),Liver,[45]
+161,Spaceflight,9.20,LEO,Mouse (BALB/C),Adrenal gland,[46]
+162,Spaceflight,9.20,LEO,Mouse (BALB/C),Eye,[47]
+163,Spaceflight,9.20,LEO,Mouse (BALB/C),Kidney,[48]
+168,Spaceflight,9.20,LEO,Mouse (BALB/C),Liver,"[42,44]"
+61,Spaceflight,28.80,LEO,Mouse (C57BL/6),Skin,"[32,49]"
+111,Spaceflight,29.90,LEO,Mouse (C57BL/6),Muscle (extensor digitorum longus),"[5,32,33]"
+111,Spaceflight,29.90,LEO,Mouse (C57BL/6),Muscle (soleus),"[5,32,33]"
+80,Ground,100,Silicon,Mouse (BALB/C),Mammary tissue,[50]
+109,Ground,150,Iron,Mouse (C57BL/6),Cardiomyocytes,"[29,51]"
+80,Ground,300,Silicon,Mouse (BALB/C),Mammary tissue,[50]
+73,Ground,500,Iron,Human,Bronchial epithelial cells,[52]
+73,Ground,500,Silicon,Human,Bronchial epithelial cells,[52]
+117,Ground,900,Proton,Mouse (C57BL/6),Cardiomyocytes,"[29,51]"
+73,Ground,1000,Iron,Human,Bronchial epithelial cells,[52]
+73,Ground,1000,Silicon,Human,Bronchial epithelial cells,[52]

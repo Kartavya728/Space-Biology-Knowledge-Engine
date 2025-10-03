@@ -1,0 +1,22 @@
+Accession,Relative protein abundance∗,P-value,EggNog,EggNog annotation
+BS090_001053,1.45,2.24E-03,ENOG410PGVS,Oxidoreductase
+BS090_001715,1.25,3.00E-03,ENOG410PGTG,NADH flavin oxidoreductase NADH oxidase family protein
+BS090_001881,1.23,8.71E-03,ENOG410PGND,Isocitrate lyase
+BS090_000071,1.16,1.95E-03,ENOG410PFIA,Component of the ubiquinol-cytochrome c reductase complex
+BS090_007434,1.04,1.25E-03,ENOG410PI78,Phosphoenolpyruvate carboxykinase
+BS090_000939,1.03,1.87E-02,ENOG410PFHR,Isocitrate dehydrogenase NADP
+BS090_000792,-1.02,1.27E-02,ENOG410PN6K,Mitochondrial membrane ATP synthase [F(1)F(0) ATP synthase or complex V]
+BS090_004086,-1.11,4.06E-02,ENOG410PFM5,Inorganic pyrophosphatase
+BS090_011745,-1.14,4.04E-02,ENOG410PNH4,Conserved hypothetical protein
+BS090_003155,-1.19,5.65E-03,ENOG410PNBT,Regulatory protein SUAPRGA1
+BS090_010935,-1.23,1.25E-02,ENOG410PFFW,Electron transfer flavoprotein
+BS090_011347,-1.26,1.29E-03,ENOG410PNPT,Cytochrome c oxidase polypeptide VIa
+BS090_003274,-1.27,8.98E-05,ENOG410PFBB,Stomatin family
+BS090_005666,-1.28,4.59E-03,ENOG410PH2F,Mitochondrial membrane ATP synthase [F(1)F(0) ATP synthase or Complex V]
+BS090_006999,-1.33,2.00E-03,ENOG410PFI6,Electron transfer flavoprotein
+BS090_004112,-1.51,1.16E-02,ENOG410PUCE,Nitrate reductase
+BS090_011473,-1.53,5.63E-03,ENOG410PJA9,Vacuolar ATP synthase subunit e
+BS090_008223,-1.59,8.26E-03,ENOG410PNQY,Iron sulfur cluster assembly protein
+BS090_008509,-2.04,2.62E-03,ENOG410PS16,Mitochondrial ATP synthase epsilon chain domain-containing protein
+BS090_005644,-2.40,4.70E-03,ENOG41KOG1758,ATP synthase
+""

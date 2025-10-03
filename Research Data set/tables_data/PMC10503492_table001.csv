@@ -1,0 +1,51 @@
+REAGENT or RESOURCE,SOURCE,IDENTIFIER
+Antibodies
+Anti-Elav,Developmental Studies Hybridoma Bank,Catalog # 7E8A10
+Anti-Cc3,Cell signaling Technology,Catalog # 9661
+Anti-8-oxo-dG,R&D systems,Catalog # 4354-MC050
+Anti-Repo,Developmental Studies Hybridoma Bank,Catalog # 8D12
+Anti-TH,EMD Millipore,Catalog # AB152
+Alexa fluor 568 goat anti-mouse,Invitrogen,Catalog # A-11031
+Alexa fluor 488 goat anti-rabbit,Invitrogen,Catalog # A-11034
+Alexa fluor 633 goat anti-rat,Invitrogen,Catalog # A21094
+Experimental models: Organisms/strains
+w1118,Bloomington Stock Center,Stock # 3605
+"Chemicals, peptides, and recombinant proteins"
+Phosphate Buffer Saline,Fisher Scientific,Catalog #BP243820
+Triton X-100,Thermo-Fisher Scientific,Catalog # A160460F
+Normal Goat Serum,Sigma,Catalog # 566380
+Vector Shield,Vector Labs,Catalog # H-1000-10
+Endoproteinase Lys-C,Wako,Catalog # 125-05061
+Trypsin,Promega,Catalog # V5111
+C18Sep-Pak cartridges,Waters,Catalog # WAT020515
+Zorbax 300Extend-C18 column,Agilent,Catalog # 763750902
+Acetonitrile,Fisher,Catalog # A9555
+Formic Acid,EMD,Catalog # 1.00264
+10mM ammonium bicarbonate,Sigma,Catalog # A6141
+Critical commercial assays
+Total RNA was extracted using RNA/Protein Purification plus,Norgen,Catalog# 48200
+Bicinchoninic acid assay,Thermo-Fisher Scientific,Catalog # 23275
+Thermo-Fisher’s TMT 10-plex isobaric label kit,Thermo-Fisher Scientific,Catalog # 90061
+Deposited data
+Transcriptomics and Proteomics,NASA/GeneLab,GLDS-514https://genelabdata.ndc.nasa.gov/genelab/accession/GLDS-514/
+Inflight behavior analysis,Zenodo,DOI:10.5281/zenodo.6686815
+Software and algorithms
+Matlab,"Matlab 2018 (MathWorks, Inc., Natick, MA)",MATLAB; RRID:SCR_001622
+Image J v1.52g,"U. S. National Institutes of Health, Bethesda, Maryland, USA",ImageJ; RRID:SCR_003070
+ggplot2 v3.3.1,"(Wickham, 2016)",https://ggplot2.tidyverse.org; RRID:SCR_014601
+Trim Galore! v0.6.2,N/A,"https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/, RRID:SCR_011847"
+STAR v2.7.1a,"Dobin et al., 2013","https://github.com/alexdobin/STAR, RRID: SCR_015899"
+RSEM v1.3.1,"Dobin et al., 2013","https://deweylab.github.io/RSEM/, RRID: SCR_013027"
+DESeq2 v1.22.2,"Love et al., 2014","https://github.com/mikelove/DESeq2, RRID: SCR_01568"
+pheatmap v1.0.12,Kolde; 2015,https://github.com/raivokolde/pheatmap; RRID:SCR_016418
+R package v3.6.1 and v4.0.1,R Core Team (2020),https://www.rproject.org/RRID:SCR_001905
+Proteome Discoverer v2.1,Thermo Fisher Scientific,Proteome Discoverer; RRID:SCR_014477
+Limma v3.44.3,"Ritchie et al., 2015","https://www.bioconductor.org/packages/release/bioc/html/limma.html, RRID: SCR_010943"
+ClusterProfiler v 3.18.0,"Yu et al., 2012",clusterProfiler; RRID:SCR_016884
+Venny 2.1,N/A,http://bioinfogp.cnb.csic.es/tools/venny/; RRID:SCR_016561
+Other
+Illumina Novaseq 6000,"Illumina, San Diego, CA",https://www.illumina.com
+Ultimate 3000 HPLC,Thermo Scientific,https://www.thermofisher.com
+Dionex Ultimate 3000,Thermo Scientific,https://www.thermofisher.com
+UltiMate 3000 RSLCnano system,Thermo Scientific,https://www.thermofisher.com
+Orbitrap Fusion mass spectrometer,Thermo Scientific,https://www.thermofisher.com

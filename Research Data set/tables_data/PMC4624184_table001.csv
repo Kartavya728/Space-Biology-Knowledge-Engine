@@ -1,0 +1,5 @@
+Sample name,Replicates,Location,Cleanroom classification,Source,Air/surface,Specifications,Usage time,Model,Mission activities
+ISS HEPA,1,ISS,None,Filter element particles,Air,"HEPA rated, retains 99.97 % particles 0.3 μm; 20-mesh inlet screen has 841 μm sieve openings",40 months,"Part no. SV810010-1, Serial no. 0049; HEPA media supplied by Flanders Filters, Inc.; Nomex inlet screen",Returned aboard STS-134/ULF6 in May 2011
+ISS Debris,2,ISS,None,vacuum cleaner bag dust,Surface,Vacuum bag retains particles >6 μm; HEPA-rated filter retains particles >0.3 μm,1 day,ISS vacuum cleaner,Expedition 31; returned aboard Soyuz flight 29S in July 2012
+JPL-SAF Debris,2,JPL-SAF,10 K,Vacuum bag dust,Surface,Retains 99.7 % particles >3 μm,70 days,"Nilfisk GM80, 81620000",No major mission
+JPL-103 Debris,1,JPL-103,1 K,Vacuum bag dust,Surface,Retains 99.7 % particles >3 μm,>180 days,"Nilfisk GM80, 81620000",No major mission

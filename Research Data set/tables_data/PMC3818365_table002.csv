@@ -1,0 +1,8 @@
+IRElα interactors,Function of IRElα interators,"Observed phenotype of induction , overexpression, or inhibition",Reference
+Traf2,Tumor necrosis factor,Decreased JNK activation by expression of dominant-negative TRAF2,72
+Jik,JNK inhibitory kinase,Increased JNK activation by overexpression of JIK,68
+Hsp90,Heat shock protein,Decreased IRE1α protein stability by treatment of HSP90 inhibitors,71
+Usp14,Ubiquitin specific peptidase,Increase activity of ERAD by small interfering RNA silencing of Usp14,74
+SYVN1,E3 ubiquitin ligase/anti-apoptotic factor,Increased IRE1 ubiquitination and degradation by coexpression of IRE1 and SYVN1,73
+Hsp72,Heat shock protein,IncreasedXbp-1splicing/ decreased cell death by induction of HSP72,70
+Rack1,Scaffold protein for activated protein kinase,Decreased IRE1 a phosphorylation by overexpression of RACK1,75

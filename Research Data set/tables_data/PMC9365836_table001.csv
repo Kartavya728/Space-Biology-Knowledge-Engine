@@ -1,0 +1,55 @@
+Gene name (mRNA),Functions,Log2 fold Δ,LC limit (log2),UC limit (log2),pvalue
+Optn,"Autophagy, cell cycle, microglia function",−0.435,−0.547,−0.324,1.72E−05
+Mertk,"Autophagy, microglia function",−0.368,−0.499,−0.237,0.000256
+Cd74,"Adaptive immune response, inflammatory signaling",−1,−1.45,−0.548,0.00146
+Plp1,Oligodendrocyte function,−0.363,−0.54,−0.187,0.00238
+Sox4,"Microglia function, Wnt",0.314,0.156,0.473,0.00304
+H2-T23,"Adaptive immune response, astrocyte function, inflammatory signaling, innate immune response, matrix remodeling",0.357,0.165,0.548,0.00447
+Irf7,"Apoptosis, inflammatory signaling, innate immune response",−1.06,−1.63,−0.487,0.00544
+Reln,"Growth factor signaling, matrix remodeling",−0.535,−0.836,−0.235,0.00583
+Prkar2b,"Apoptosis, cell cycle, growth factor signaling",−0.32,−0.503,−0.137,0.00641
+Agt,Astrocyte function,0.432,0.184,0.679,0.00657
+Aldh1l1,Astrocyte function,−0.345,−0.542,−0.147,0.00659
+Brd2,Epigenetic regulation,−0.182,−0.286,−0.0773,0.00667
+Ccng2,"Cell cycle, DNA damage",0.292,0.119,0.465,0.00785
+Hspb1,"Angiogenesis, astrocyte function, cellular stress, growth factor",0.706,0.284,1.13,0.00825
+Dlg4,"Adaptive immune response, angiogenesis, cytokine signaling, growth factor signaling, neurons and neurotransmission",−0.279,−0.45,−0.108,0.00947
+Cd6,Matrix remodeling,−0.972,−1.56,−0.388,0.00978
+Csk,"Adaptive immune response, angiogenesis, growth factor",−0.236,−0.384,−0.0878,0.0108
+F3,Microglia function,−0.304,−0.496,−0.113,0.011
+Csf1r,"Cytokine signaling, growth factor signaling, microglia function",−0.209,−0.341,−0.0771,0.0111
+Uty,Epigenetic regulation,0.308,0.113,0.502,0.0112
+Kcnd1,"Microglia function, neurons and neurotransmission",−0.893,−1.45,−0.337,0.0117
+Cyp27a1,Inflammatory signaling,−0.805,−1.32,−0.292,0.0132
+Slc2a5,Microglia function,−0.623,−1.02,−0.226,0.0132
+Sin3a,Epigenetic regulation,−0.43,−0.715,−0.146,0.0142
+E2f1,"Apoptosis, cell cycle, cellular stress, notch",−0.709,−1.17,−0.25,0.0143
+Egfr,"Adaptive immune response, angiogenesis, astrocyte function",−0.509,−0.841,−0.177,0.0149
+Tmem206,Microglia function,−0.239,−0.407,−0.0701,0.0196
+C5ar1,"Inflammatory signaling, neurons and neurotransmission",−0.851,−1.44,−0.259,0.0201
+Opalin,Oligodendrocyte function,−0.546,−0.935,−0.157,0.0205
+Ncf1,"Adaptive immune response, angiogenesis, cellular stress",−0.539,−0.918,−0.159,0.0214
+Mre11a,DNA damage,−0.383,−0.665,−0.1,0.0241
+Ikbkg,"Adaptive immune response, apoptosis, inflammatory signaling",−0.27,−0.47,−0.0697,0.0246
+Prkaca,"Adaptive immune response, angiogenesis, apoptosis, Wnt",−0.144,−0.251,−0.0371,0.0248
+Apoe,"Astrocyte function, cellular stress, lipid metabolism, microglia",0.296,0.072,0.521,0.027
+St8sia6,Microglia function,−0.479,−0.835,−0.123,0.0272
+Gpr62,Oligodendrocyte function,−0.418,−0.736,−0.1,0.0276
+Hpgds,Lipid metabolism,−0.527,−0.922,−0.132,0.0282
+Sesn1,DNA damage,0.226,0.0509,0.4,0.0298
+Cdc25a,"Cell cycle, DNA damage",0.218,0.0481,0.389,0.0307
+Lmna,"Apoptosis, cell cycle, microglia function",−0.284,−0.507,−0.0596,0.0324
+Map2k4,"Adaptive immune response, apoptosis, cellular stress",−0.2,−0.359,−0.041,0.0334
+Irf8,"Inflammatory signaling, microglia function",−0.51,−0.914,−0.106,0.0352
+Trem2,"Adaptive immune response, inflammatory signaling, microglia",−0.461,−0.833,−0.088,0.0359
+Mpeg1,Inflammatory signaling,−0.292,−0.528,−0.0551,0.0363
+Rhoa,"Angiogenesis, autophagy, growth factor signaling, Wnt",0.196,0.0351,0.357,0.0381
+Tarbp2,Epigenetic regulation,0.195,0.0346,0.355,0.0384
+Ripk1,"Apoptosis, innate immune response, NF-kB",−0.63,−1.14,−0.119,0.0389
+Gadd45g,"Cell cycle, DNA damage, growth factor signaling",0.392,0.0686,0.716,0.0389
+Brd3,Epigenetic regulation,−0.305,−0.557,−0.0526,0.0394
+Nrgn,Neurons and neurotransmission,−0.16,−0.295,−0.0261,0.0413
+Nlgn2,"Matrix remodeling, neurons and neurotransmission",−0.306,−0.562,−0.0486,0.042
+Bbc3,"Apoptosis, DNA damage",−0.538,−0.987,−0.0897,0.0432
+Rgl1,"Growth factor signaling, microglia function",0.105,0.0146,0.196,0.0462
+Creb1,"Adaptive immune response, carbohydrate metabolism, DNA damage, innate immune response, notch",0.235,0.0291,0.44,0.0493

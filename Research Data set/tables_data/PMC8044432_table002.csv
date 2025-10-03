@@ -1,0 +1,5 @@
+Norm. expr. (sample A),Log2fc (comparison A),P value (comparison A),Adj p value (comparison A),Mean (all samples),Stdev (all samples),LRT p value,Mean (group A),Stdev (group A)
+263.864,−0.078,0.648,0.848,198.735,31.756,0.484,225.550,36.759
+200.493,0.341,0.033,0.198,147.061,19.197,0.740,174.839,24.073
+19.040,0.691,0.137,NA,11.035,3.121,NA,15.706,2.889
+644.811,0.126,0.366,0.655,669.586,68.327,1.000,688.123,76.969

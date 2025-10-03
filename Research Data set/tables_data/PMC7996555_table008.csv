@@ -1,0 +1,15 @@
+Dataset,Spectral Gap,Average Clustering Coefficient,Average Shortest Path Length(Distance),Diameter(Maximum Eccentricity),Authority Genes (Outdegree)
+AT root spaceflight,39.228,0.00897,1.452,3,95
+AT root ground,59.96,0.00315,1.2017,3,166
+AT WS spaceflight light,72.9,0.01272,1.89,6,1237.04
+AT WS ground light,0.45,0.01788,1.11,2,45.63
+AT WS spaceflight dark,3.99,0.01996,1.069,2,50.41
+AT WS ground dark,2.32,0.02011,1.069,3,43.36
+ATphyDspaceflight light,0.79,0.01000,1.036,2,35
+ATphyDground light,0.22,0.01996,1.069,2,50.41
+ATphyDspaceflight dark,0.001,0.01219,1.146,2,38.24
+ATphyDground dark,3.15,0.0219,1.125,2,53.29
+AT Col-0 spaceflight light,0.13,0.0212,1.107,2,40.26
+AT Col-0 ground light,4.00,0.0146,1.113,2,44.28
+AT Col-0 spaceflight dark,0.20,0.0224,1.066,1,29.09
+AT Col-0 ground dark,2.67,0.0187,1.076,1,33.42

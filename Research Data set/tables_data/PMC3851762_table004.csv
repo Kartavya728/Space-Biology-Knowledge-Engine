@@ -1,0 +1,7 @@
+Gene,Category,Fold-change microarray,Fold-change qRT-PCR
+ALS1,Biofilm,2.25**,1.83*
+CAP1,Transcriptional regulator,2.18**,3.39**
+ERG6,Antifungal drug resistance,0.48**,0.46
+YTH1,Filamentation,2.63**,8.16**
+HSP31,Stress resistance,2.92**,10.18*
+GPX2,Stress resistance,2.17**,1.28

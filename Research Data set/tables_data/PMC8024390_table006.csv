@@ -1,0 +1,9 @@
+,,GO term name
+Characteristics,Ontology,Transcript ID,Gene symbol,Gene description,GArg: GWtFC (log2),FWt: GWtFC (log2)
+"Figure 3, Category II REQUIRED 12 GENES",Cellular Component,extracellular region GO:0005576,,
+At1g30600,,Subtilase family protein,2.1,2.5
+,At1g10740,,lipase,2.0,1.9
+,At1g13080,CYP71B2,"cytochrome P450, family 71, subfamily B, polyp. 2",1.7,2.6
+,,At1g07380,,ceramidase activity,1.6,1.5
+,Biological Process,defense response by callose deposition in cell wall GO:0052544,,
+,At2g44490,PEN2,Glycosyl hydrolase superfamily protein,1.4,1.4

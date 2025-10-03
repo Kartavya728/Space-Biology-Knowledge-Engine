@@ -1,0 +1,8 @@
+Comparison (Treatment vs. Control),Total DEG,Upregulated,Downregulated
+Q1B vs. Q1A,1,1,0
+Q1C vs. Q1A,4,2,2
+Q1D vs. Q1A,16,4,12
+Q1C vs. Q1B,7,3,4
+Q1D vs. Q1B,94,22,72
+Q1D vs. Q1C,17,6,11
+Average,23,6,17

@@ -1,0 +1,6 @@
+Sample,Cutivable bacterial population (CFU/g) that are:,qPCR-based bacterial population (16S rRNA copies/g),Viable bacterial population (B/A ×100),ATP-based microbial population (RLU/g):,Viable microbial population (D/C ×100)
+,Bacteria,Fungi,Untreated (A),PMA-treated (B),Total ATP (C),Intracellular ATP (D)
+ISS HEPA,8.17 × 105,2.34 × 103,1.7 × 109,2.91 × 107,1.7,2.06 × 107,3.54 × 105,1.7
+ISS Debris,1.34 × 106,5.02 × 104,4.5 × 108,1.21 × 107,2.7,3.50 × 107,2.65 × 107,75.7
+JPL-SAF Debris,1.28 × 105,5.05 × 104,3.1 × 108,2.07 × 108,66.8,1.91 × 107,2.10 × 106,11.0
+JPL-103 Debris,1.40 × 104,3.30 × 103,4.3 × 108,1.90 × 107,4.5,2.60 × 106,1.20 × 106,46.2

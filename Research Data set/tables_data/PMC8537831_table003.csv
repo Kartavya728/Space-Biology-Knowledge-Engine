@@ -1,0 +1,31 @@
+Bacteria,Swab,Wick,Substrate,Leaf,Root
+Achromobacter,,,,"E (WG, M), F (WG)",
+Acidovorax,,F,,,
+Amphibacillus,,,D,D (Ol),
+Bacillus,D,D,D,,
+Brevundimonas,,F,F,,
+Burkholderia,,"D, E, F","D, F",F (GL),"D, F"
+Chryseobacterium,"E, F",,D,,
+Clavibacter,,,D,,
+Cupriavidis,,,F,,
+Curtobacterium,,F,,"E (WG), F (OL)",
+Enterobacter,D,,,,
+Fictibacillus,F,,,,
+Flavomonas,,D,D,,D
+Gardinella,D,,,,
+Gordonia,,,D,,
+Klebsiella,,"D, F",,"D (OL, WG)",
+Kocura,,,,D (WG),
+Leifsonia,,"D, E, F","D, E, F",,D
+Methylobacterium,,D,D,,D
+Microbacterium,"D, E, F","E, F","D, E, F","E (WGL), F (OL)","D, E, F"
+Micrococcus,,,D,E (M),
+Nocardioidaceae,F,,,,
+Novosphingobium,"E, F",,,,
+Paenibacillus,"E, F","E, F",,"E (M, OL), F (OL)",
+Pantoea,"D, F",F,,D (WG),
+Paracoccus,,F,,,
+Pectobacterium,,,,D (OL),
+Pseudomonas,"D, E, F",D,,"D (M, WG, OL)E (WG), F (OL)",
+Rhizobium,,"D, E",,,"D, E"
+Staphylococcus,"D, E, F","D, F",,"D (WG, M), E (M) F (WG)",

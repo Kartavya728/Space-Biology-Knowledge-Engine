@@ -1,0 +1,12 @@
+""
+,,Cont,ALS,% DifferenceALS vs. Cont,p-valueALS vs. Cont
+""
+Femur,Bending Stiffness [N•mm2],1440 ± 66,1050 ± 53,−27.0,0.0002
+Effective Modulus [MPa],5600 ± 200,5070 ± 270,−9.4,0.14
+Failure Moment [N•mm],25.9 ± 3.1,15.2 ± 1.8,−41.1,0.007
+Maximum Moment [N•mm],48.1 ± 2.6,37.0 ±1.9,−23.0,0.003
+""
+Tibia,TID [μm],36.6±1.4,34.3±1.2,−6.3,0.22
+IDI [μm],5.97±0.4,5.42±0.3,−9.1,0.30
+CID [μm],1.06±0.1,1.01±0.03,−4.8,0.40
+""

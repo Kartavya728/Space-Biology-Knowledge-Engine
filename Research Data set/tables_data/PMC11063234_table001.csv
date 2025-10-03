@@ -1,0 +1,21 @@
+Protein name,Log fold change,p-value,Protein description,Function
+MYH7,0.7489,7.99E-08,Myosin heavy chain 7,Actin filament binding; calmodulin binding
+JCAD,0.4211,1.72E-05,Junctional protein associated with coronary artery disease (JCAD),Cell adhesin; cell-cell junctions
+UCP1,0.6401,2.40E-03,Mitochondrial brown fat uncoupling protein 1,Adaptive thermogenesis; mitochondrial protein
+ADNP,1.4620,2.18E-02,Activity-dependent neuroprotector homeobox protein,Activation of protein kinase activity
+HM13,−0.5936,4.96E-02,Minor histocompatibility antigen H13,Membrane protein proteolysis involved in retrograde protein transport
+HVM51,−0.3970,1.11E-02,Ig heavy chain V region AC38 205.12,"Complement activation, innate immune response"
+CD151,−0.5773,8.84E-03,CD151 antigen (GP27),Cell migration; positive regulation of cell migration; T cell proliferation
+KV3A3,−1.0194,3.52E-02,Ig kappa chain V-III region MOPC 70,Adaptive immune response; immune response
+RTRAF,−0.4375,1.39E-14,"RNA transcription, translation, and transport factor protein",Negative regulation of protein kinase activity
+PTMA,−0.5383,3.36E-12,Prothymosin alpha,Histone exchange; negative regulation of apoptosis
+CALM2,−0.4734,7.44E-16,Calmodulin-2,Activation of adenylate cyclase activity
+COXM1,−0.4160,2.56E-04,COX assembly mitochondrial protein,Mitochondrion
+TNNC1,−0.8406,5.20E-27,"Troponin C, slow skeletal and cardiac muscles",Cardiac muscle contraction
+ATP5J,−0.6049,1.53E-28,"ATP synthase-coupling factor 6, mitochondrial",ATP metabolic process
+FRIH,−0.4268,7.79E-11,Ferritin heavy chain,Immune response; intracellular sequestering of iron ion
+S10A9,−0.6228,1.13E-03,Protein S100-A9,Actin cytoskeleton reorganization
+PP14A,−0.4267,1.10E-03,Protein phosphatase 1 regulatory subunit 14A,Regulation of phosphorylation
+S10A6,−0.4436,2.24E-03,Protein S100-A6,Calcium-dependent protein binding
+MYL4,−0.4648,8.34E-03,Myosin light chain 4,Cardiac muscle contraction
+MYL1,−0.4847,9.36E-05,Myosin light chain 1/3,Cardiac muscle contraction

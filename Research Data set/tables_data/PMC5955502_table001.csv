@@ -1,0 +1,21 @@
+Gene,"Primer sequence, forward/reverse (5'…3')","Product size, bp"
+Actb(beta-actin),gctgcgttttacaccctttc/ gtttgctccaaccaactgct,218
+Actg(gamma-actin),ctggtggatctctgtgagca/ tcaggagggaagaaaccaga,184
+"Arpc3(actin-related protein 2/3 complex, subunit 3)",acaggaggatgaaacgatgc/ tcacaaagcaagtccaccac,125
+Svil(supervillin),tcggaaaccaagacgctatc/ accactggcaattctgaacc,132
+Lcp1(L-plastin),gaagggatcgtcaaacttgc/ tatggttctgaggggattgg,130
+Actn1(alpha-actinin 1),ggtcagcagcaacctcctc/ tctttctccaccttctctcca,167
+Actn4(alpha-actinin 4),accctgaacagactcccttg/ gatcgacaagcctccatctc,168
+Des(desmin),gtgaagatggccttggatgt/ cgggtctcaatggtcttgat,182
+Tubb2b(beta-tubulin 2B),ggcagcaagaagctaacgag/ cgaacacgaagttgtctggc,302
+"Cct5(chaperonin containing Tcp-1, subunit 5—epsilon)",caaacgggctggataagatg/ tcctgggatttggacagttc,136
+"Cct7(chaperonin containing Tcp-1, subunit 7—eta)",tgtgaccgtgaagaagcaag/ gcatcatcacagcatcaacc,137
+Cycs(cytochromec),ccaaatctccacggtctgtt/ tctgccctttctcccttctt,190
+Gapdh(glyceraldehyde 3-phosphate dehydrogenase),acccagaagactgtggatgg/ acacattgggggtaggaaca,172
+Dnmt1(S-phase methylation),ccggaaactcacttggacga/ tttggcagctggatctctgg,90
+Dnmt3A(de novomethylation),agagcgctttgactccacat/ ggaccaggaaaaacaaacga,150
+Tet1(cytosine demethylase),gtgtgggtcgatggctctat/ cttattcccaccaccgctaa,208
+Tet2(cytosine demethylase),gttctcaacgagcaggaagg/ tgagatgcggtactctgcac,185
+Tet3(cytosine demethylase),ttctatccgggaactcatgg/ ccaggccaggatcaagataa,226
+Hat1(histone aminotransferase 1),agagtgccgtggagaagaaa/ tttcatcatccccaaagagc,150
+"Hdac1(histone deacetylase 1,2,3,4,6,9)",ccatgaagcctcaccgaat/ caaacaccggacagtcctca,226

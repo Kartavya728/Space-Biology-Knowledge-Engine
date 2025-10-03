@@ -1,0 +1,24 @@
+Novel Species (strain number),Nearest species,WGS Accession #,ANI (%),dDDH (%),gyrB(%),16S Accession #,16S (%)
+Arthrobacter burdickii(IIF3SC-B10T),Arthrobacter ruber,GCF_002954225.1,84.6,27.2,88.6,JX949648,99.6
+Arthrobacter cheniae,GCF_003602275.1,83.7,25.9,85.9,JX949321,99.9
+Arthrobacter bussei,GCF_009377195.2,83.4,25.2,87.4,MN080869,99.9
+Arthrobacter antioxidans,GCF_023100725.1,84.1,26.9,88.7,OL471353,99.8
+Arthrobacter agilis,GCF_900631605.1,82.9,24.5,87.5,X80748,99.7
+Leifsonia virtsii(F6_8S_P_1AT),Leifsonia williamsiisp. nov,JAROCF000000000,84.3,24.7,91.7,OQ836672,99.2
+Leifsonia soli,GCF_013408745.1,86.3,28.3,90.8,EU912483,98.9
+Leifsonia shinshuensis,GCF_013410375.1,84.1,24.7,90.6,MH281744,98.9
+Leifsonia aquatica,GCF_014190775.1,84.1,25.0,89.4,X77450,97.9
+Leifsonia naganoensis,GCF_013410615.1,83.9,24.3,89.6,AB028941,98.0
+Leifsonia williamsii(F6_8S_P_1BT),Leifsonia virtsiisp. nov,JAROCB000000000,84.3,24.7,91.6,OQ836671,99.2
+Leifsonia aquatica,GCF_014190775.1,84.5,24.7,90.3,X77450,97.9
+Leifsonia shinshuensis,GCF_013410375.1,84.3,25.0,91.1,MH281744,98.9
+Leifsonia naganoensis,GCF_013410615.1,84.3,24.7,90.3,AB028941,98.3
+Leifsonia soli,GCF_013408745.1,83.9,24.2,91.4,EU912483,98.8
+Paenibacillus vandeheii(F6_3S_P_1CT),Paenibacillus xylanivorans,GCF_001280595.1,92.8,49.3,92.8,KT461879,99.1
+Paenibacillus tundrae,GCF_026941245.1,91.0,42.5,95.5,EU558284,98.3
+Paenibacillus taichungensis,GCF_013359905.1,90.7,41.5,95.2,EU179327,99.2
+Paenibacillus pabuli,GCF_001514495.1,88.4,34.6,94.9,AB045094,99.5
+Paenibacillus xylanilyticus,GCF_013359935.1,84.1,26.2,88.5,AY427832,98.3
+Sporosarcina highlanderae(F6_3S_P_2T),Sporosarcina thermotolerans,CP125968,85.3,29.8,87.0,FN298445,99.8
+Sporosarcina luteola,GCF_007991495.1,80.5,22.4,81.8,AB473560,99.5
+Sporosarcina koreensis,GCF_000826145.2,< 77,20.1,NM,DQ073393,98.8

@@ -1,0 +1,46 @@
+Protein group and name,Function [reference(s)],Relative fold change in expression in:a
+ΔrpoSmutant vs wild type,Wild type + Gm vs wild type w/o Gm,ΔrpoSmutant + Gm vs ΔrpoSmutant w/o Gm,ΔrpoSmutant + Gm vs wild type + Gm
+Antioxidative and other antistress proteins,,,,,
+Hydroperoxidase HPII (catalase) (KatE),Decomposes H2O2(48),−2.39,1.27,1.78,−1.70
+Superoxide dismutase A and B,Converts superoxide into oxygen and hydrogen peroxide (48),−2.0,1.42,−1.11,−3.14
+Starvation protein Dps (PexB),Protects DNA against oxidative stress (87),1.44,−1.08,−1.46,1.06
+Dihydrolipoamide dehydrogenase (DLD),"L protein of glycine cleavage system; glycine can cause lipid oxidative damage (88,89)",1.65,2.15,−1.51,−1.96
+Glycine cleavage system protein H (GcvH),"Along with dihydrolipoamide dehydrogenase (DLD) cleaves glycine (89,90)",40.76,4.39,2.45,−79.95
+Alkyl hydroperoxide reductase subunit C (AhpC),"Reduces organic peroxides (91,92)",−1.65,1.44,−1.06,−2.52
+dITP/XTP pyrophosphatase (RdgB),Removes the toxic nucleotides resulting from oxidative stress (93),1.19,1.41,−1.14,−1.35
+Bacterioferritin (Bfr),Iron-storage proteins; prevents Fenton reaction (94),1.98,−1.83,−1.32,2.75
+Ferritin-1 (FtnA),"Iron storage proteins; prevents Fenton reaction (94,95)",−1.61,−1.34,3.34,2.79
+"Molybdopterin biosynthesis, protein B (MoaB)","Synthesizes antioxidant molybdopterin (96,97)",−4.69,1.59,1.16,−6.41
+Osmotically induced protein (OsmC),Reduce peroxides (98),−6.86,1.45,1.14,−8.77
+Serine kinase family protein (HipA),"Oxidative response proteins; likely signals oxidative stress (99,100)",−8.44,−2.58,2.73,−4.90
+Glutamate decarboxylase α (Gad),Required for oxidative and acidic stress tolerance (101),−21.86,2.16,2.93,−16.12
+Tryptophanase (TnaA),Synthesizes the antioxidant indole (102),1.65,2.52,-0.52,0.70
+Phage shock protein (PspA),Counter cell membrane damage from oxidative and other stresses (103),1.91,−1.04,−2.03,−1.02
+Universal stress protein G (UspG),Protects against oxidative and other stresses (104),1.12,1.47,2.13,1.62
+Universal stress protein F (UspF),Protects against oxidative and other stresses (104),1.69,−1.26,−1.53,0.16
+Transketolase (TktB),PPP enzyme: convertsd-xylulose-5-P +d-ribose-5-P into sedoheptulose-7-P + glyceraldehyde-3-P (48),−34.34,3.35,−6.72,−74.76
+Transaldolase A (TalA),PPP enzyme: converts sedoheptulose 7-phosphate + glyceraldehyde 3-phosphate into erythrose 4-phosphate + fructose 6-phosphate (48),−92.89,−0.11,1.71,−33.38
+UTP-glucose-1-phosphate uridylyltransferase (GalU),Catalyzes UDP-glucose formation for stress adaptation (105),−2.61,−1.09,−1.45,−3.45
+"Class II aldolase, tagatose bisphosphate family (KbaY/GatY)",Acid stress response protein (106),4.8,1.44,−1.03,3.24
+"d-Tagatose 1,6-bisphosphate aldolase 2 (KbaY/GatY)",Acid stress response protein (106),2.76,−1.44,−1.31,3.04
+Two-component system response regulator (PhoQ),Component of PhoP/PhoQ system; controls stress responses and virulence (107),−1.22,−1.43,1.09,1.28
+Acyl carrier protein (AcpP),"Likely involved in SpoT-dependent stress response (108,109)",−1.93,1.21,1.53,−1.53
+"Chain A, Apo acyl carrier protein (AcpP)","Likely involved in SpoT-dependent stress response (108,109)",−1.59,1.63,1.1,−2.36
+Other proteins,,,,,
+Pyruvate dehydrogenase (PDH),Converts pyruvate into acetyl-CoA (48),−21.14,0.05,-1.61,−35.62
+Chain A Pyruvate Dehydrogenase (PDH),Converts pyruvate into acetyl-CoA (48),1.06,−1.45,1.26,1.27
+Fumarate reductase flavoprotein subunit (FrdA),Krebs cycle enzyme: catalyzes fumarate and succinate interconversion (48),−2.25,1.15,−1.52,−3.93
+Malate dehydrogenase (Mdh),Krebs cycle enzyme: catalyzes oxidation of malate to oxaloacetate (48),1.64,1.69,−1.17,1.64
+Histidinol dehydrogenase (HisD),Generatesl-histidine froml-histidinol (48),1.19,1.36,−1.76,−2.02
+Erythronate-4-phosphate dehydrogenase (PdxB),De novosynthesis of vitamin B6 (110),−1.59,−1.49,1.00,−1.06
+Soluble pyridine nucleotide transhydrogenase (STH),Catalyzes hydride transfer between NAD(H) and NADP(H) (111),1.11,1.25,−1.63,−1.84
+Methionyl-tRNA synthetase (MetG),Protein synthesis (48),1.2,1.55,−1.23,−1.59
+Translation elongation factor EF-Tu (EF-Tu),Protein synthesis (48),−2.03,1.43,1.26,−2.31
+"Chain K, Ternary Complex-boundE. Coli70s Ribosome",Protein synthesis (48),−2.71,1.61,−1.07,−4.69
+Ribosomal protein S6 (RpsF),Protein synthesis (48),1.44,1.48,−1.06,−1.09
+UDP-galactopyranose mutase (UDP-Galf),"Generates UDP-d-galactofuranose (105,112)",1.78,1.63,1.36,1.48
+Predicted enzyme,"Unknown (113,114)",1.69,1.34,−2.2,−1.74
+Conserved hypothetical protein,"Unknown (113,114)",−2.19,1.15,−1.44,−3.63
+"Chain A, Molybdate transport protein (ModA)","Molybdate transport (113,114)",−5.18,−1.03,1.43,−3.53
+"Predicted enzyme, YhbW","Unknown (113,114)",1.69,1.34,−2.2,−1.74
+"Stress-induced protein, ATP-binding protein (UspF)","Unknown (113,114)",1.69,−1.26,−1.53,1.39

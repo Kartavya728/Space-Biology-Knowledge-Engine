@@ -1,0 +1,9 @@
+Sample,Flight-Generation Time (min),Ground-Generation Time (min)
+FPA-Early Low (Micro-6),155,159
+FPA-Early High (Micro-6),303,303
+FPA-Late Low (Micro-6),163,163
+FPA-Late High (Micro-6),300,310
+FPA-Low (Micro-14/FPA),113,129
+FPA-High (Micro-14/FPA),127,126
+FEP-Large (Micro-14/FEP),95,99
+FEP-Small (Micro-14/FEP),113,118

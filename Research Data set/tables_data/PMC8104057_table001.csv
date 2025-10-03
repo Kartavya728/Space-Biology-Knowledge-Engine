@@ -1,0 +1,31 @@
+Straina,Species identified based on ITS gene,Species identified based on calmodulin gene,Species identified based on β-tubulin gene,GenBank accession no.,SRA accession no.,Isolation locationb,No. of scaffolds,Genome size (bp),N50(bp),Median coverage (×),G+C content (%),No. of filtered reads used for assembly (million)
+F3-1F3-F,Aspergillus niger,Aspergillus niger,Aspergillus niger,JADBHA000000000,SRR12819683,Cupola,75,"35,865,776","1,033,225",55,49.46,22.16
+F3-4F1-F,Aspergillus niger,Aspergillus welwitschiae,Aspergillus welwitschiae,JADBHC000000000,SRR12819679,Dining table,342,"37,533,732","885,952",64,49.25,25.45
+F3-4F2-F,Aspergillus niger,Aspergillus welwitschiae,Aspergillus welwitschiae,JADBHD000000000,SRR12819678,Dining table,361,"37,317,966","948,069",51,49.41,21.20
+IIF6SW-F2,Aspergillus unguis,Aspergillus unguis,Aspergillus unguis,JADBGV000000000,SRR12819688,PMM,20,"25,892,012","2,741,393",93,50.3,26.47
+IF2SW-F1,Penicillium camemberti,Penicillium biforme,Penicillium biforme,JACSPF000000000,SRR12825356,WHC,834,"35,011,981","266,841",56,47.69,23.59
+IIF8SW-F2,Penicillium camemberti,Penicillium biforme,Penicillium biforme,JACSOP000000000,SRR12825359,Crew quarters,846,"35,011,981","262,211",55,47.7,22.46
+IIF8SW-F3,Penicillium camemberti,Penicillium biforme,Penicillium biforme,JACSOO000000000,SRR12825358,Crew quarters,828,"35,011,981","256,141",53,47.69,22.37
+F3-3F1-F,Penicillium camemberti,Penicillium biforme,Penicillium biforme,JADBHB000000000,SRR12819682,ARED,"1,098","36,854,083","303,871",56,47.69,22.97
+IF1SG-B2,Penicillium chrysogenum,Penicillium chrysogenum,Penicillium tardochrysogenum,JADBGS000000000,SRR12819681,Outside CRV capsule,676,"33,342,700","1,054,379",71,48.81,26.71
+IF1SW-F3,Penicillium chrysogenum,Penicillium chrysogenum,Penicillium tardochrysogenum,JACSPG000000000,SRR12825368,Cupola,764,"32,524,241","638,283",57,48.92,21.32
+IF2SG-B2,Penicillium chrysogenum,Penicillium chrysogenum,Penicillium tardochrysogenum,JADBGT000000000,SRR12819680,Outside CRV capsule,648,"33,347,836","931,557",93,48.81,34.88
+IF2SW-F4,Penicillium chrysogenum,Penicillium chrysogenum,Penicillium tardochrysogenum,JACSPE000000000,SRR12825355,WHC,"1,277","32,524,241","640,412",41,48.76,16.80
+IF2SW-F5,Penicillium chrysogenum,Penicillium chrysogenum,Penicillium tardochrysogenum,JACSPD000000000,SRR12825354,WHC,445,"32,524,241","718,663",82,48.96,28.82
+IF3SW-F3,Penicillium chrysogenum,Penicillium chrysogenum,Penicillium tardochrysogenum,JACSPB000000000,SRR12825352,ARED,843,"32,524,241","497,770",42,48.94,15.73
+IF4SG-B1,Penicillium chrysogenum,Penicillium chrysogenum,Penicillium tardochrysogenum,JADBGU000000000,SRR12819689,Inside CRV capsule,651,"33,345,064","939,642",76,48.81,28.76
+IF4SW-F1,Penicillium chrysogenum,Penicillium chrysogenum,Penicillium tardochrysogenum,JACSPA000000000,SRR12825351,Dining table,481,"32,524,241","947,115",54,48.96,18.77
+IF7SW-F1,Penicillium chrysogenum,Penicillium chrysogenum,Penicillium tardochrysogenum,JACSOZ000000000,SRR12825350,LAB,485,"32,524,241","782,807",72,48.96,25.44
+IIF2*SW-F2,Penicillium chrysogenum,Penicillium chrysogenum,Penicillium harmonense,JADBGW000000000,SRR12819687,WHC,460,"32,073,134","709,694",64,48.99,22.76
+IIF3SW-F2,Penicillium chrysogenum,Penicillium chrysogenum,Penicillium tardochrysogenum,JACSOU000000000,SRR12825364,ARED,"1,276","32,524,241","643,620",48,48.76,19.83
+IIF8SW-F4,Penicillium chrysogenum,Penicillium chrysogenum,Penicillium tardochrysogenum,JACSON000000000,SRR12825357,Crew quarters,434,"32,524,241","1,028,283",74,48.96,26.01
+F3-2F3-F,Penicillium chrysogenum,Penicillium chrysogenum,Penicillium harmonense,JADBGX000000000,SRR12819686,WHC,353,"31,592,617","579,954",77,48.84,26.27
+F3-2F4-F,Penicillium chrysogenum,Penicillium chrysogenum,Penicillium tardochrysogenum,JADBGY000000000,SRR12819685,WHC,568,"32,430,262","701,540",99,48.94,34.71
+F3-2F5-F,Penicillium chrysogenum,Penicillium chrysogenum,Penicillium tardochrysogenum,JADBGZ000000000,SRR12819684,WHC,486,"32,607,577","1,028,360",66,48.84,23.62
+IF7SW-F3,Penicillium dipodomyicola,Penicillium chrysogenum,Penicillium tardochrysogenum,JACSOY000000000,SRR12825349,LAB,"1,372","32,524,241","578,872",45,48.81,17.99
+IIF7SW-F2,Penicillium dipodomyicola,Penicillium chrysogenum,Penicillium harmonense,JACSOR000000000,SRR12825361,LAB,431,"32,524,241","842,068",76,48.99,27.38
+IIF7SW-F4,Penicillium dipodomyicola,Penicillium chrysogenum,Penicillium harmonense,JACSOQ000000000,SRR12825360,LAB,455,"32,524,241","585,026",71,48.99,25.46
+IF3SW-F1,Penicillium griseoroseum,Penicillium chrysogenum,Penicillium harmonense,JACSPC000000000,SRR12825353,ARED,559,"32,524,241","577,257",61,48.99,24.14
+IF7SW-F5,Penicillium griseoroseum,Penicillium chrysogenum,Penicillium harmonense,JACSOW000000000,SRR12825366,LAB,361,"32,524,241","492,361",39,48.85,17.39
+IIF4SW-F4,Penicillium griseoroseum,Penicillium chrysogenum,Penicillium harmonense,JACSOT000000000,SRR12825362,Dining table,348,"32,524,241","481,150",80,48.85,28.75
+IIF1SW-F3,Penicillium polonicum,,Penicillium tardochrysogenum,JACSOV000000000,SRR12825365,Cupola,464,"32,524,241","1,262,860",72,48.96,25.30

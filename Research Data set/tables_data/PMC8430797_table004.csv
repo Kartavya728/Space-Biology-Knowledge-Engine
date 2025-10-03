@@ -1,0 +1,16 @@
+Genes,AdultD. melanogaster,Soleus
+Both upregulated
+Mylip,0.7,0.41
+Ppm1l,0.69,0.46
+Mcm2,0.69,0.38
+Cbs,0.42,2.09
+Jarid2,0.89,0.39
+Both downregulated
+Nup37,−0.33,−0.39
+Polr2e,−0.36,−0.47
+Dnajb4,−0.33,−0.41
+Opposite regulation
+Gnmt,0.72,−0.6
+Inpp5a,0.44,−0.86
+Fjx1,0.41,−0.54
+Mcm6,0.37,−0.79

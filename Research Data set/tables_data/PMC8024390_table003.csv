@@ -1,0 +1,53 @@
+,GO term name
+Ontology,Transcript ID,Gene symbol,Gene description,GArg: GWtFC (log2)
+Cellular Component,plasma membrane GO:0005886,
+,At3g24840,,Sec14p-like phosphatidylinositol transfer,3.1
+,At3g60270,,Cupredoxin superfamily protein,2.8
+,At1g55200,,Protein kinase protein with adenine,2.7
+,At5g17980,,C2 calcium/lipid-binding plant,2.0
+,At4g11850,PLDGAMMA1,phospholipase D gamma 1,1.1
+,At2g02170,,Remorin family protein,−1.2
+,At5g52440,HCF106,Bacterial sec-independent translocation,−1.2
+,At1g03590,,Protein phosphatase 2C family protein,−1.3
+,At5g24970,,Protein kinase superfamily protein,−1.8
+,At2g38330,,MATE efflux family protein,−1.9
+,At3g07320,,O-Glycosyl hydrolases family 17 protein,−2.2
+,At1g73740,,UDP-Glycosyltransferase superfamily protein,−2.3
+,At1g51540,,Galactose oxidase/kelch repeat superfamily,−2.4
+,At2g31010,,Protein kinase superfamily protein,−2.7
+,At5g66490,,unknown,−2.8
+,membrane GO:0016020,
+,At4g21490,NDB3,NAD(P)H dehydrogenase B3,2.9
+,At4g40070,,RING/U-box superfamily protein,2.4
+,At1g13080,CYP71B2,"cytochrome P450, family 71, subfamily B, polypeptide 2",1.7
+,At2g44490,PEN2,Glycosyl hydrolase superfamily protein,1.4
+,At5g57030,LUT2,Lycopene beta/epsilon cyclase protein,1.1
+,At5g39500,GNL1,GNOM-like 1,−1.3
+,At4g30660,,Low temperature and salt responsive,−1.5
+,At2g36830,TIP1;1,gamma tonoplast intrinsic protein,−1.6
+,At1g74680,,Exostosin family protein,−1.9
+,At3g26830,PAD3,"PHYTOALEXIN DEFICIENT 3, Cytochrome P450 superfamily protein",−2.6
+,At5g04660,CYP77A4,"cytochrome P450, family 77, subfamily A, polypeptide 4",−2.8
+,cell periphery GO:0071944,
+,At1g30600,,Subtilase family protein,2.1
+,At1g32950,,Subtilase family protein,−2.3
+Biological Process,heterocycle metabolic process GO:0046483,
+,At3g61970,NGA2,AP2/B3-like transcriptional factor family,2.3
+,At1g66550,WRKY67,WRKY DNA-binding protein 67,2.3
+,At2g44490,PEN2,Glycosyl hydrolase superfamily protein,1.4
+,At2g43500,,Plant regulator RWP-RK family protein,−1.0
+,At2g22540,SVP,K-box region and MADS-box transcription,−1.4
+,At5g43810,ZLL,Stabilizer of iron transporter SufD /,−1.5
+,At3g57040,ATRR4,response regulator 9,−1.5
+,At4g17610,,tRNA/rRNA methyltransferase (SpoU) family,−1.7
+,At2g43010,SRL2,phytochrome interacting factor 4,−1.8
+,At1g73740,,UDP-Glycosyltransferase superfamily protein,−2.3
+,At3g26830,PAD3,Cytochrome P450 superfamily protein,−2.6
+,At1g66730,LIG6,DNA LIGASE 6,−2.9
+,organelle organization GO:0006996,
+,At2g21800,EME1A,essential meiotic endonuclease 1A,2.4
+,At5g39500,GNL1,GNOM-like 1,−1.3
+,At4g02060,PRL,Minichromosome maintenance (MCM2/3/5),−2.3
+,At5g48600,SMC3,structural maintenance of chromosome 3,−2.5
+,At1g54230,,Winged helix-turn-helix transcription,−3.1
+,At5g63700,,zinc ion binding; DNA binding,−3.6

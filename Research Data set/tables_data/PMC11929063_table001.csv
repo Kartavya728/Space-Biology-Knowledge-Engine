@@ -1,0 +1,23 @@
+Product,Sponsor,AAV serotype,Transgene product,Expression cassette,No. of CpGs,"GC content, %",Production platform
+TAK-754,Takeda,AAV8,BDD-hFVIII-SQa,liver-specific TTR enhancer/promoter,17,55.94,HEK293
+codon-optimizedBDD-hF8-SQ
+synthetic poly(A)
+Valoctocogene roxaparvovec,Biomarin,AAV5,BDD-hFVIII-SQ,liver-specific ApoE/A1AT promoter,3b,57.70b,Sf9/baculovirus
+codon-optimizedBDD-hF8-SQ
+synthetic poly(A)
+Dirloctocogene samoparvovec (SPK8011),Spark Therapeutics,LK03,BDD-hFVIII-SQ,liver-specific TTRm enhancer/promoter with mutated HNF3 binding site,0c,52.47c,HEK293
+synthetic intron
+codon-optimizedBDD-hF8-SQ
+synthetic poly(A)
+Giroctocogene fitelparvovec (PF-07055480/SB-525),Pfizer/Sangamo,AAV6,BDD-hFVIII-SQ,liver-specific synthetic promoter,40d,56.56e,Sf9/baculovirus
+codon-optimizedBDD-hF8-SQ
+synthetic poly(A)
+Peboctocogene camaparvovec (BAY 2599023/DTX-201),Bayer/Ultragenyx,AAVhu37,BDD-hFVIII-SQ,liver-specific E03-TTR enhancer/promoter,185f,56.05f,HeLa
+codon-optimizedBDD-hF8-SQ
+synthetic poly(A)
+GO-8,UCL/St. Jude,AAV8,BDD-hFVIII-V3g,liver-specific HLP promoter,3b,58.34b,HEK293T
+codon-optimizedBDD-hF8-V3
+synthetic poly(A)
+ASC618,ASC Therapeutics,AAV8,ET3e,liver-specific synthetic HCB promoter,0h,50.8h,HEK293
+codon optimizedET3
+synthetic poly(A)

@@ -1,0 +1,38 @@
+Classification,Disease,FDR,No. of DEGs
+CVD,Libman–Sacks disease (nonbacterial thrombotic endocarditis),0.0059,4
+CVD,Coronary restenosis (is_implicated_in),0.0150,2
+CVD,Abdominal aortic aneurysm (is_marker_for),0.0208,2
+CVD,Myocardial infarction (is_implicated_in),0.0208,4
+CVD,Posterior choroidal artery infarction,0.0218,2
+CVD,Peripheral arterial disease,0.0330,3
+CVD,Hypertension (is_implicated_in),0.0336,4
+Immune disorder,C1q deficiency,4.50 × 10−5,3
+Immune disorder,"Lupus erythematosus, systemic",0.0013,5
+Immune disorder,Complement deficiency disease,0.0125,3
+Immune disorder,Systemic lupus erythematosus (implicated_via_orthology),0.0200,3
+Metabolic disease,Obesity,2.83 × 10−9,13
+Metabolic disease,Endogenous hyperinsulinism,0.0007,4
+Metabolic disease,Exogenous hyperinsulinism,0.0007,4
+Metabolic disease,Compensatory hyperinsulinemia,0.0007,4
+Metabolic disease,Insulin resistance,0.0007,5
+Metabolic disease,Insulin sensitivity,0.0007,5
+Metabolic disease,Hyperinsulinism,0.0007,4
+Metabolic disease,Metabolic syndrome,0.0330,5
+Neurovascular disease,"Stroke, ischemic",0.0078,2
+Neurovascular disease,Ischemic stroke,0.0078,2
+Neurovascular disease,Brain ischemia (biomarker_via_orthology),0.0218,4
+Neurovascular disease,"Cerebral infarction, left hemisphere",0.0218,2
+Neurovascular disease,Anterior choroidal artery infarction,0.0218,2
+Neurovascular disease,"Cerebral infarction, right hemisphere",0.0218,2
+Neurovascular disease,Subcortical infarction,0.0218,2
+Neurovascular disease,Cerebral infarction,0.0218,2
+"Cancer, hematological","Myeloid leukemia, chronic",0.0008,4
+"Cancer, hematological","Acute myeloid leukemia, m1",0.0014,6
+"Cancer, hematological",Acute myeloid leukemia (aml-m2),0.0014,6
+"Cancer, hematological","Leukemia, myelocytic, acute",0.0057,6
+"Cancer, hematological",Adult t-cell leukemia/lymphoma (is_marker_for),0.0181,2
+"Cancer, hematological",Acute promyelocytic leukemia,0.0218,3
+"Cancer, hematological",Hematologic neoplasms,0.0258,2
+Sleeping disorder,Seasonal affective disorder,0.0002,4
+Sleeping disorder,"Advanced sleep phase syndrome, familial",0.0042,2
+Sleeping disorder,Advanced sleep phase syndrome (is_implicated_in),0.0059,2

@@ -1,0 +1,44 @@
+Gene ID,Function,RNA-Seqa,Proteomicsa,Secretomicsa
+,Type VII secretion system,,,
+SAR0279,6 kDa early secretory antigenic target ESAT-6 (EsxA),4.61,1.61,7.50
+SAR0280,Type VII secretion protein EsaA,3.01,2.03,
+SAR0283,Type VII secretion protein EssB,4.28,2.55,
+SAR0284,Type VII secretion system protein EssC,4.73,1.71,
+,Agr-regulated,,,
+SAR2126,Response regulator transcription factor AgrA,14.30,3.96,
+SAR1021,Cysteine protease precursor; SspB,,2.55,13.07
+SAR1022,Glutamyl endopeptidase precursor; V8 Protease; SspA,,3.48,6.95
+SAR2716,Zinc metalloproteinase aureolysin; Aur,,3.27,2.19
+,Copper-associated,,,
+SAR2637,Copper-exporting P-type ATPase A (CopA),2.91,2.55,
+SAR2639,CopZ putative heavy-metal-associated protein,,3.11,18.19
+SAR0720,Copper-translocating P-type ATPase,2.19,2.55,
+SAR0721,Multicopper oxidase protein,,1.93,4.08
+,Arginine and Urea Metabolism,,,
+SAR2714,Arginine deiminase,,2.05,3.04
+SAR2374,Urease alpha subunit,4.91,2.28,1.82
+SAR2373,Urease beta subunit,5.02,2.15,4.35
+SAR2375,Urease accessory protein UreE,4.66,1.91,
+SAR2376,Urease accessory protein UreF,4.37,2.37,
+SAR2377,Urease accessory protein UreG,4.37,1.85,4.37
+SAR2378,Urease accessory protein UreD,4.12,2.53,
+,Misc. cell processes,,,
+SAR2611,"L-serine dehydratase, beta subunit",2.76,2.10,
+SAR2610,"L-serine dehydratase, alpha subunit",2.19,1.63,
+SAR1425,2-oxoglutarate dehydrogenase E1 component,2.03,1.55,
+SAR1870,Methionine adenosyltransferase,,1.63,1.61
+SAR1851,Riboflavin biosynthesis protein RibBA; GTP cyclohydrolase II,2.02,1.73,
+SAR2775,2-oxoglutarate/malate translocator-like protein,2.05,1.94,
+SAR1984,Bacterial non-heme ferritin,2.13,,1.58
+SAR0278,Secreted antigen precursor; staphyloxanthin biosynthesis,3.00,2.71,
+SAR1347,GMP reductase (predicted),−2.07,−1.66,
+SAR0155,Capsular polysaccharide synthesis enzyme,2.15,,−2.56
+SAR2359,Putative molybdenum cofactor biosynthesis protein B,,−1.91,2.91
+SAR1127,"Hypothetical protein, similarity with fibrinogen-binding protein Efb",3.78,,−2.36
+SAR2506,Phosphoglycerate mutase,2.55,,−1.56
+SAR1797,30 S ribosomal protein S4,,−2.10,1.69
+,Hypothetical,,,
+SAR0007,ADP-dependent (S)-NAD(P)H-hydrate dehydratase,2.46,,1.80
+SAR0345,Conserved hypothetical protein,,1.52,2.94
+SAR2028,Aminotransferase class I/II-fold pyridoxal phosphate-dependent enzyme,,1.55,2.03
+SAR2054,Hypothetical phage protein,,−1.55,−1.53

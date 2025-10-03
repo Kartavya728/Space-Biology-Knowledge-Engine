@@ -1,0 +1,1 @@
+lnmicrobial_feature_abundance+minval~β0+β1Time×Nasal+1∣Crew.ID+ϵi,3

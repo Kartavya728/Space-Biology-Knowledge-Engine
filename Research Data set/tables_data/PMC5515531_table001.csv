@@ -1,0 +1,104 @@
+Gene name,Function,RFC at 40 h,RFC at 4 days ~35 h
+ltp1_1,Cell wall and cell processes,2.2,1.9
+mmpL3,,0.63,0.67
+MMAR_0493-1,,1.5,1.6
+MMAR_1554-1,,1.7,1.5
+MMAR_2268-1,,0.46,0.50
+cydD,,2.2,1.9
+MMAR_3568-1,,3.4,2.4
+MMAR_3658-1,,8.1,9.1
+lsr2,,0.48,0.57
+fbpA,,0.54,0.63
+,,,
+MMAR_0119-1,Conserved hypotheticals,1.9,1.7
+MMAR_0519-1,,0.39,0.35
+MMAR_0853-1,,9.1,9.0
+MMAR_0982-1,,0.46,0.51
+MMAR_2771-1,,1.7,2.2
+MMAR_3007-1,,1.7,1.6
+MMAR_3010-1,,1.8,1.9
+MMAR_3070-1,,2.2,1.8
+MMAR_3088-1,,1.8,1.5
+MMAR_3549-1,,0.24,0.29
+MMAR_4248-1,,3.8,2.2
+MMAR_4306-1,,8.9,4.9
+MMAR_4498-1,,3.5,5.1
+MMAR_4609-1,,2.1,2.4
+MMAR_4647-1,,3.0,1.5
+MMAR_5103-1,,0.39,0.42
+MMAR_5106-1,,0.43,0.58
+MMAR_5437-1,,1.5,1.8
+MMAR_5455-1,,1.8,1.5
+,,,
+rpsR1,Information pathway,0.55,0.57
+rplA,,0.58,0.65
+rplJ,,0.48,0.57
+rplC,,0.49,0.55
+rplB,,0.52,0.63
+rplV,,0.46,0.63
+rpmC,,0.61,0.64
+rpsN,,0.67,0.62
+rpsE,,0.51,0.63
+infA,,0.64,0.66
+rpsD,,0.65,0.64
+rpoA,,0.50,0.59
+rplQ,,0.52,0.57
+rplM,,0.61,0.60
+rpsI,,0.63,0.60
+sigH,,1.5,1.5
+nrdE,,1.8,2.2
+hupB,,0.42,0.66
+rpsP,,0.66,0.66
+tsf,,0.61,0.66
+rplY,,0.55,0.64
+rnpA,,0.57,0.58
+celA,Intermediary metabolism,0.53,0.47
+nirB,and respiration,0.39,0.48
+hemC,,0.48,0.48
+mrsA,,0.60,0.62
+sdhB,,0.59,0.81
+sdhD,,0.55,0.67
+MMAR_1644-1,,1.8,1.5
+amiC,,0.63,0.64
+csd,,0.49,0.50
+MMAR_2557-1,,1.7,1.9
+MMAR_2844-1,,0.46,0.58
+folE_1,,1.6,1.9
+glnA2,,0.57,0.62
+MMAR_3558-1,intermediary metabolism and respiration,0.23,0.07
+mobA,,0.33,0.52
+porB,,0.33,0.53
+porA,,0.31,0.46
+putA,,4.0,2.6
+pth,,0.49,0.61
+MMAR_4497-1,,3.3,5.0
+panD,,0.47,0.54
+panC,,0.56,0.58
+,,,
+desA3_2,Lipid metabolism,3.9,3.6
+desA3,,2.2,1.8
+fadE23,,1.6,1.9
+pks15/1,,0.53,0.66
+fabG3_1,,2.1,1.7
+fabD,,0.32,0.48
+kasA,,0.28,0.37
+kasB,,0.28,0.37
+accD6,,0.29,0.36
+accA2,,0.63,0.58
+fadB,,0.57,0.59
+pks13,,0.38,0.57
+fadD32,,0.33,0.55
+,,,
+MMAR_0641-1,PE/PPE,2.5,2.8
+MMAR_4562-1,,1.9,2.3
+MMAR_4899-1,,2.6,2.0
+,,,
+hspR,Regulatory protein,2.6,4.4
+whiB3,,0.16,0.38
+whiB7,,0.65,2.6
+MMAR_2281-1,,0.49,0.60
+MMAR_3703-1,,3.1,2.7
+MMAR_5069-1,,0.64,0.46
+,,,
+hsp,"Virulence, adaptation",5.7,40.8
+dnaK,detoxification,3.5,5.38

@@ -1,0 +1,57 @@
+REAGENT or RESOURCE,SOURCE,IDENTIFIER
+Antibodies
+""
+rabbit anti-phospho-histone H3 antibody,Millipore Sigma,Catalog # 06-570
+mouse anti-p40 antibody,"Chiu et al., 20069",PMID: 16432035
+""
+"Chemicals, peptides, and recombinant proteins"
+""
+5-bromo 4-chloro 3-indoyl phosphate (BCIP),Promega,Catalog #S381C
+nitroblue tetrazolium (NBT),Promega,Catalog #S380C
+paraformaldehyde (crystalline),Sigma,Catalog #P6148
+rhodamine-labeled phalloidin,Life Technologies,Catalog #R415
+vectashield mounting medium,Vector Labs,Catalog #H100
+Hoechst 33258 pentahydrate,Invitrogen,Catalog # H-1398
+"4% glutaraldehyde in 0.1M sodium cacodylate buffer, pH 7.4",Electron Microscopy Sciences,Catalog # 16539-06
+2% osmium tetroxide,Electron Microscopy Sciences,Catalog # 19150
+""
+Biological samples
+""
+G0 and S0 adulty wandhopTum-lflies (genotypes below),This study,N/A
+G0 and S0y wandhopTum-llarvae,This study,N/A
+G1 and S1y wandhopTum-llarvae,This study,N/A
+G0 and S0Leptopilina boulardi 17adult wasps,This study,N/A
+G0 and S0Leptopilina heterotoma 14adult wasps,This study,N/A
+""
+Critical commercial assays
+""
+RNA extraction RNA/Protein Purification plus kit,Norgen,Catalog # 48200
+Non-stranded NEBNext Ultra RNA Library Prep Kit for RNA-Seq sequencing libraries,New England Biolabs,Catalog #E7775
+""
+Deposited data
+""
+DrosophilaRNA-Seq data,NASA Open Science Data Repository,GeneLab ID: GLDS-583; OSDR ID: OSD-588;https://osdr.nasa.gov/bio/repo/data/studies/OSD-588;https://doi.org/10.26030/v9rh-5a70
+Leptopilina boulardiRNA-Seq data,NASA Open Science Data Repository,GeneLab ID: GLDS-587; OSDR ID: OSD-610;https://osdr.nasa.gov/bio/repo/data/studies/OSD-610;https://doi.org/10.26030/9ee4-6s36
+Leptopilina heterotomaRNA-Seq data,NASA Open Science Data Repository,GeneLab ID: GLDS-586; OSDR ID: OSD-609;https://osdr.nasa.gov/bio/repo/data/studies/OSD-609;https://doi.org/10.26030/5rjq-a347
+""
+Experimental models: Organisms/strains
+""
+y1w1,Bloomington Stock Center,BDSC:1495
+y w hopTum-lmsn-Gal4; UAS-mCD8-GFP(hopTum-lmsn > GFP,"Panettieri et al., 201929",PMID: 31562189
+L. boulardistrain 17 (Lb17),"Schlenke et al., 20078",PMID: 34051038
+L. heterotomastrain 14 (Lh14),"Schlenke et al., 20078",PMID: 34051038
+Wing color mutant:L. heterotoma14 aurum1,This study,Lh14 aurum1
+Wing shape and ovipositor mutant:L. heterotoma14 kona1,This study,Lh14 kona1
+""
+Software and algorithms
+""
+Adobe Photoshop Creative Cloud v20-v24,Adobe,https://www.adobe.com/
+Pipeline forDrosophilaRNA-Seq data,NASA GeneLab: Open Science for Life in Space,GL-DPPD-7101-D;https://github.com/nasa/GeneLab_Data_Processing/blob/master/RNAseq/Pipeline_GL-DPPD-7101_Versions/GL-DPPD-7101-D.md
+Slurm and R scripts to process and analyzeLeptopilina boulardiRNA-Seq data andLeptopilina heterotomaRNA-Seq data,"This study, supplement",Data S1
+""
+Other
+""
+25 mm polycarbonate Whatman membrane filter (0.1 μm pore size),Whatman,Catalog # 110605
+SEM specimen mount stubs,Electron Microscopy Sciences,Catalog # 75110
+Illumina HiSeq 4000 (Genewiz),"Illumina, San Diego",https://www.Illumina.com
+Illumina NovaSeq 6000 sequencer using S1 Reagent Kit v1.5 (GeneLab),"Illumina, San Diego",https://www.Illumina.com

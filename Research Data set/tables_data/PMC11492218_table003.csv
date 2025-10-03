@@ -1,0 +1,6 @@
+Characteristics,Sensitive,Insensitive,Pvalue
+Number of patients,19,149,
+Age (±SD),43.47 ± 12.34,42.70 ± 12.54,.785
+Males (%),9 (47.4),65 (43.6),.758
+Hypertension or cardiovascular history (%),3 (15.8),20 (13.4),.778
+Taking antihypertensive medications (%),1 (5.3),7 (4.7),.914

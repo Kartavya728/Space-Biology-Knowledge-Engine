@@ -1,0 +1,5 @@
+Dose (cGy),Dose-Rate (cGy/Min),Irradiation Time (Min)
+10,132.52,0.08
+50,132.52,0.38
+100,132.52,0.75
+200,132.52,1.51

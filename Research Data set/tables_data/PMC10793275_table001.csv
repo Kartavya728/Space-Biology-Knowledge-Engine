@@ -1,0 +1,17 @@
+Variable,Data
+Genus and species,Sphingomonas paucimobilis
+Strain,Sph5
+NCBI accession no.,JAMRJL000000000
+Country,The Netherlands
+Source,Biofilm on Nadir MP005 microfiltration membrane
+Feed water source,Tap water from the city of Leeuwarden
+Genome size (bp),4680620
+N50(bp),4016723
+Scaffold reference,ASM1602843v1
+"Scaffolds ≥50,000 bp","29, 4"
+Mean coverage,"1,089×"
+G + C content (%),65.30
+No. of annotated CDS,"3,342"
+No. of raw reads,"19,032,602"
+No. of reads used for assembly,"19,032,602"
+No. of coding sequences,"4,321"

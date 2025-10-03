@@ -1,0 +1,24 @@
+Strain/plasmid,Relevant characteristicsa,Reference
+Strains,,
+χ7122 background,,
+χ7122,"APEC O78∶K80∶H9,gyrANalr, Strr, Sxtr",[79]
+χ7145,"χ7122 (χ289:hisG-zee),rfbdeleted by replacement withE. coliK-12 region at 45 min","[10],[80]"
+χ7167,"χ7179rfb+(O111) prototroph by P1χ2963 lysate χ6206 Strain H30, O26∶H11, SLT-1",[80]
+χ7193,"χ7179rfb+(O1), prototroph by P1χ7112 lysate","[10],[80]"
+χ7367,"pChi7122-3, Nalr",[12]
+χ7368,"ΔpChi7122-1, Δ pChi7122-2, ΔpChi7122-3, Nalr",[12]
+χ7394,"pChi7122-1, Nalr",[12]
+χ7392,"pChi7122-2, Nalr, Strr, Sxtr",[12]
+χ7561,"pAPEC-1, pAPEC-2, Nalr, Strr, Sxtr",[12]
+χ7562,"pChi7122-1, pChi7122-3, Nalr",[12]
+χ7274,"pChi7122-2, pChi7122-3, Nalr, Strr, Sxtr",[90]
+E. coliK-12 background,,
+χ6092,"E. coliK-12, Lac−F−Tcr",[19]
+χ7346,"χ6092 pChi7122-1, Tcr",[19]
+χ7347,"χ6092 pChi7122-2, Tcr, Strr, Sxtr",[12]
+χ7348,"χ6092 pChi7122-3, Tcr",[12]
+Plasmids,,
+pChi7122-1,"103,275 pb plasmid of APEC χ7122","[19],[90]"
+pChi7122-2,"82,676 pb plasmid of APEC χ7122",[19]
+pChi7122-3,"56,676 pb plasmid of APEC χ7122",[19]
+pChi7122-4,"4,300 pb plasmid of APEC χ7122",This study

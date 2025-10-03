@@ -1,0 +1,19 @@
+"Genomes (N= 313,A. pittii)"
+Source,Count,Source type,Reference
+"MT1, flight 2",5,Environmental,Checinska Sielaff et al. 2016 [12]
+"MT1, environmental metagenomes",2,Environmental,Checinska Sielaff et al. 2016 [12]
+"MT2, flight 8",15,Environmental,Simpson et al. 2021 [13]
+Non-human/environmental,29,Other,https://www.ncbi.nlm.nih.gov/genome/browse#!/prokaryotes/2516/
+Human,199,Host-associated,https://www.ncbi.nlm.nih.gov/genome/browse#!/prokaryotes/2516/
+Unknown,63,Other,https://www.ncbi.nlm.nih.gov/genome/browse#!/prokaryotes/2516/
+Metagenomes (N= 402)
+Source,Count,Source type,Reference
+MT1 environmental swabs,42,Environmental,https://www.ncbi.nlm.nih.gov/sra/?term=PRJNA438545)
+MT2 environmental swabs,60,Environmental,https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-252/
+"MT2 crew, ear",30,Host-associated,Morrison et al. 2021 [5]
+"MT2 crew, mouth",31,Host-associated,Morrison et al. 2021 [5]
+"MT2 crew, nasal",30,Host-associated,Morrison et al. 2021 [5]
+"MT2 crew, pooled samples",31,Host-associated,Morrison et al. 2021 [5]
+"MT2 crew, saliva",124,Host-associated,Morrison et al. 2021 [5]
+"NASA Twins Study, Gut",22,Host-associated,Garrett-Bakelman et al. 2019 [14]
+"NASA Twins Study, Saliva",32,Host-associated,Garrett-Bakelman et al. 2019 [14]

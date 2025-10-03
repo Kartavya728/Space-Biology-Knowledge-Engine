@@ -1,0 +1,14 @@
+Sample Source,Sample,Genome size (bp),Contigs,Total Genes,GC %,Best Match NCBI,ANI
+NCBI,Burkholderia contaminansSK875 10922,"8,596,045",3,"7,784",66.1,Burkholderia contaminansLMG 23361,100
+UPA95,3.1.,"8,652,817",20,"8,026",66.2,Burkholderia contaminansSK875 10922,95.6
+UPA95,3.2.,"8,726,360",3,"7,932",66.3,Burkholderia contaminansSK875 10922,99.9
+UPA115,4.2.,"8,625,377",6,"7,996",66.2,Burkholderia contaminansSK875 10922,95.6
+UPA115,4.3.,"8,680,200",5,"7,876",66.3,Burkholderia contaminansSK875 10922,99.9
+UPA115,4.5.,"8,773,879",7,"7,974",66.2,Burkholderia contaminansSK875 10922,99.9
+NCBI,Burkholderia fungorumATCC BAA-463,"9,058,983",3,"8,190",62,Paraburkholderia fungorumNBRC 102489,98.6
+UPA95,3.3.,"9,564,261",5,"8,799",61.6,Burkholderia fungorumATCC BAA-463,98.6
+UPA115,4.1.,"9,745,290",6,"8,950",61.6,Burkholderia fungorumATCC BAA-463,98.6
+NCBI,Cellulomonas fimiATCC 484,"4,266,344",1,"3,851",75.0,Cellulomonas fimiATCC 484,100
+UPA115,4.4.,"3,862,723",9,"3,608",73.2,Cellulomonas fimiATCC 484,80.1
+NCBI,Leifsoniasp. PS1209,"4,091,164",1,"3,916",69.7,Leifsonia aquaticaATCC 14665,84.0
+UPA115,5.2.,"5,084,807",3,"4,961",69.5,Leifsoniasp. PS1209,81.0

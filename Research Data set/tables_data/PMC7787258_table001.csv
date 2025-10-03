@@ -1,0 +1,13 @@
+Term,Dir.,Description,Count,Fold,FDR
+BP_GO: 0043161,up,proteasome-mediated Ub-dependent catabolism,37,4.4,<0.001
+BP_GO: 0030497,up,fatty acid elongation,9,1.9,0.031
+BP_GO: 0006974,up,cellular response to DNA damage stimulus,19,2.2,0.048
+MF_GO: 0004298,up,threonine-type endopeptidase activity,12,1.4,<0.001
+MF_GO: 0004175,up,endopeptidase activity,12,1.43,0.042
+CC_GO: 0000502,up,proteosome complex,29,3.5,<0.001
+CC_GO: 0005634,up,nucleus,159,18.9,0.002
+KEGG: dme03050,up,proteasome,28,3.3,<0.001
+BP_GO: 0006598,dwn,proteolysis,41,2.3,0.001
+BP_GO: 0005975,dwn,carbohydrate metabolic process,15,3.8,0.05
+CC_GO: 0005616,dwn,extracellular space,48,2.2,<0.001
+CC_GO: 0005887,dwn,integral component of plasma membrane,38,2.1,0.03

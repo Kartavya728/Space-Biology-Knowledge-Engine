@@ -1,0 +1,19 @@
+Accession,Relative protein abundance∗,P-value,EggNog,EggNog annotation
+BS090_000406,1.44,2.67E-03,ENOG410PN3M,40S ribosomal protein S12
+BS090_001853,1.13,1.89E-03,ENOG410PG8Y,Ribosomal protein L15
+BS090_003273,-1.03,1.19E-02,ENOG410PN86,La domain
+BS090_000015,-1.12,3.60E-03,ENOG410PMV6,40s ribosomal protein S17
+BS090_011340,-1.16,5.27E-03,ENOG410PNPS,Translation initiation factor
+BS090_009099,-1.18,3.88E-02,ENOG410PGC2,Eukaryotic translation initiation factor 5
+BS090_002173,-1.23,7.84E-03,ENOG410PP8V,60S ribosomal protein L31
+BS090_005915,-1.24,6.15E-03,ENOG410PHV2,Prolyl-tRNA synthetase
+BS090_006863,-1.35,2.19E-04,ENOG410PPAS,60s ribosomal protein
+BS090_002466,-1.35,3.65E-03,ENOG410PQS0,Processing of the 20S rRNA-precursor to mature 18S rRNA
+BS090_003537,-1.35,7.24E-03,ENOG410PI34,Component of the eukaryotic translation initiation factor 3 (eIF-3) complex
+BS090_000480,-1.48,1.36E-02,ENOG410PFEB,Seryl-tRNA synthetase
+BS090_001464,-1.53,1.78E-03,ENOG410PRUB,60S acidic ribosomal protein P2
+BS090_006330,-1.65,3.30E-03,ENOG410PQ50,Ribosome biogenesis protein Nhp2
+BS090_009967,-1.81,1.19E-02,ENOG410PRWG,60S acidic ribosomal protein P1
+BS090_006228,-2.13,5.69E-03,ENOG410PP4P,L-PSP endoribonuclease family protein (Hmf1)
+BS090_007862,-2.52,1.56E-03,ENOG410PQSK,60S ribosomal protein L22
+""

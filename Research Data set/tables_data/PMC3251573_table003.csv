@@ -1,0 +1,7 @@
+L-idonic acid-like catabolism pathway of pChi7122-2rspA pChiOTDR,L-idonic acid catabolism pathway GntII ofE. coliK-12idnK idnDOTR
+GI-Numbers,Gene symbols,Gene product,DNA homology,% AA identity/%positive,Expect,Gene (Accession no.)
+MM2_107,pChiA,Starvation sensing protein,NSH,-,-,
+MM2_108,pChiO,Gluconate 5-dehydrogenase,NSH,48%/64%,1e-70,idnO(AAC77203.1)
+MM2_109,pChiT,The major facilitator superfamily protein,NSH,23%/46%,0.033,idnT(AA77222.1)
+MM2_110,pChiD,L-idonate 5-dehydrogenase,NSH,46%/69%,1e-97,idnD(NP_418688.1)
+MM2_111,pChiR,Regulatory protein GntR,NSH,None,None,idnR(NP_418685.1)

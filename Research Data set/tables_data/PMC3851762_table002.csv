@@ -1,0 +1,457 @@
+Column ID,Ratio (FLT vs. GRD),Gene name,Gene function,P-value
+UPREGULATED GENES
+orf19.2462_800,12.36,PRN3,RNA pol II transcription cofactor,1.52E-05
+orf19.1976_183,11.82,TRX1,thioredoxin II,7.22E-06
+orf19.4654_100,9.18,,hypothetical protein,3.73E-07
+orf19.2428.2*,7.91,POL,RNA-directed DNA polymerase,3.18E-06
+orf19.4873_58,7.67,,hypothetical protein,6.42E-07
+orf19.4653_226,7.51,,hypothetical protein,8.89E-08
+orf19.4784_2733,6.18,CRD1,copper-transporting P1-type ATPase,5.94E-06
+orf19.3643_1045,5.98,,hypothetical protein,1.14E-03
+orf19.2369.1,5.78,ATX1,antioxidant and copper/iron homeostasis protein,2.21E-04
+orf19.633_479,5.73,,putative methyltransferase,1.45E-04
+orf19.3722_1630,5.72,FAP1,FKBP12-associated protein | transcription factor homolog,1.85E-06
+orf19.2989_630,5.52,,glycerate/formate- dehydrogenase,1.12E-03
+orf19.3114_112,5.37,PUS5,pseudouridylate synthase,7.35E-05
+orf19.3902_108,5.37,,hypothetical protein,1.93E-02
+orf19.3115_540,5.23,,hypothetical protein,7.27E-07
+orf19.5735.3,5.12,,polyprotein of Tca5 retrotransposon,8.32E-06
+orf19.4274_526,5.00,PUT1,proline oxidase,1.47E-05
+orf19.207_3938,4.95,,extremely serine rich protein,8.36E-05
+orf19.3721_54,4.87,,hypothetical protein,3.34E-04
+orf19.1277_1084,4.76,,hypothetical protein,1.49E-04
+orf19.2157_168,4.76,NAG2,N-acetylglucosamine-6-phosphate deacetylase,8.79E-05
+orf19.3120_767,4.72,,"highly conserved hypothetical protein, possible ABC transporter",3.15E-02
+orf19.3668_781,4.56,HGT2,hexose transporter,9.20E-05
+orf19.7283_265,4.48,,hypothetical protein,1.17E-04
+orf19.265_519,4.46,,hypothetical protein,1.33E-03
+orf19.4779_1348,4.34,,multidrug-resistance transporter,1.61E-05
+orf19.716_12,4.22,,similar to pore-forming bacterial Septicolysin,4.75E-05
+orf19.7042_467,4.11,,hypothetical protein,2.13E-03
+orf19.7098_396,4.07,,transcription factor,8.01E-04
+orf19.4526_520,3.96,HSP30,plasma membrane heat shock protein,4.22E-05
+orf19.4045_129,3.93,EST1,EST1-like bcy1 Suppressor,3.18E-04
+orf19.5180_89,3.89,PRX1,regulation of redox homeostasis,6.51E-03
+orf19.101_672,3.84,RIM9,low similarity to a regulator of sporulation,5.22E-04
+orf19.7300_80,3.71,,hypothetical protein,1.89E-04
+orf19.2121_1518,3.68,ALS4,agglutinin like protein 4,8.37E-03
+orf19.3441_684,3.67,FUN34,putative transporter,3.79E-03
+orf19.1979_601,3.65,GIT3,glycerophosphoinositol permease,2.31E-03
+orf19.6781_783,3.63,,possible zinc-finger protein,1.23E-02
+orf19.1097_5491,3.62,ALS4,agglutinin like protein 4,4.31E-03
+orf19.6408_532,3.59,YDJ2,mitochondrial and ER import protein | dnaJ homolog,2.71E-04
+orf19.2498_920,3.55,SAN1,mating-type transcriptional regulator,1.39E-04
+orf19.2048_203,3.55,,hypothetical protein,2.35E-05
+orf19.5551_1357,3.52,MIF2,required for normal chromosome segregation and spindle integrity,7.79E-06
+orf19.4590_2958,3.49,RFX1,similar to DNA-binding protein but may be missing DNA-binding domain,3.84E-05
+orf19.6124_1633,3.46,ACE2,transcription activating factor,2.04E-04
+orf19.3707_699,3.43,YHB1,flavohemoglobin | dihydropteridine reductase,4.88E-05
+orf19.7085_1192,3.42,,hypothetical protein,9.96E-05
+orf19.2414_412,3.39,MPM1,mitochondrial membrane protein,7.62E-07
+orf19.3113_326,3.38,,conserved hypothetical protein,9.72E-04
+orf19.7111.1,3.32,SOD3,superoxide dismutase,8.24E-05
+orf19.4438_1074,3.31,RME1,zinc-finger transcription factor,1.98E-04
+orf19.2655_652,3.31,BUB3,cell cycle arrest protein,7.43E-04
+orf19.100_761,3.29,LIP11,triacylglycerol lipase,4.64E-04
+orf19.3656_1108,3.29,COX15,cytochrome oxidase assembly factor,1.80E-02
+orf19.6843_89,3.27,,hypothetical coiled-coil protein; possible histone binding,9.82E-06
+orf19.5079_3533,3.22,CDR4,ABC transporter,5.63E-06
+orf19.4843_1702,3.20,,conserved hypothetical protein,2.50E-03
+orf19.5681_259,3.18,,hypothetical protein,3.73E-03
+orf19.5305_391,3.18,RHD3,conserved protein reressed in hyphal development,3.11E-04
+orf19.4527_200,3.17,HGT1,hexose transporter,1.64E-02
+orf19.3192_1315,3.15,STI1,heat shock protein | chaperone,5.09E-07
+orf19.3122_510,3.14,ARR3,involved in arsenite transport,6.81E-05
+orf19.6321_46,3.13,,hypothetical protein,1.27E-06
+orf19.5140_1865,3.12,,hypothetical gene family,2.69E-05
+orf19.3675_419,3.11,GAL7,galactose-1-phosphate uridyl transferase,9.72E-03
+orf19.5961_345,3.07,NAS6,ankyrin repeat protein that interacts with the 19S regulatory particle of the 26S proteasome,2.74E-06
+orf19.431_1916,3.07,,potential fungal Zn(2)-Cys(6) binuclear cluster domain,1.35E-02
+orf19.4372_1447,3.06,,probable membrane transport protein,6.28E-05
+orf19.3742_407,3.06,,hypothetical protein,5.91E-06
+orf19.79_1486*,3.05,ALS,cell surface agglutinin,7.74E-03
+orf19.3670_890,3.03,GAL1,galactokinase,1.22E-05
+orf19.6447_211,3.02,ARF1,ADP-ribosylation factor | GTP-binding protein of the ARF family,1.49E-05
+orf19.742_863,3.02,ALD6,mitochondrial aldehyde dehydrogenase,2.01E-04
+orf19.419_1605,3.01,,hypothetical protein,1.84E-06
+orf19.211_442,2.99,,probable zinc finger similar to bacterial Ada DNA-protein-cysteine methyltransferase,1.27E-06
+orf19.4046_148,2.96,,conserved hypothetical protein,2.60E-04
+orf19.2074_219,2.93,,hypothetical protein,2.95E-03
+orf19.3664_132,2.92,HSP31,membrane heat shock protein,1.27E-02
+orf19.6997_643,2.90,FRP4,FUN34-related protein | glyoxylate pathway regulator,2.66E-04
+orf19.1932_1919,2.88,FRE5,ferric reductase,2.91E-03
+orf19.6489_10,2.88,,conserved hypothetical protein,2.38E-03
+orf19.3412_983,2.87,ATG15,lipase involved in autophagy,2.68E-04
+orf19.2749_1380,2.86,,conserved hypothetical protein,4.17E-03
+orf19.2067_9,2.86,NFU1,nitrogen fixing protein,7.27E-05
+orf19.5307_1102,2.85,JEN2,carboxylic acid transporter,5.01E-03
+orf19.2125_288,2.82,,hypothetical protein,1.28E-06
+orf19.6594_1226,2.80,PLB3,phospholipase B,8.20E-05
+orf19.85_18,2.79,GPX1,glutathione peroxidase,1.98E-04
+orf19.944_973,2.79,IFG3,"DAO, FAD dependent oxidoreductase | d-amino acid oxidase",8.21E-05
+orf19.460_984,2.78,CEK2,serine/threonine protein kinase of MAP kinase family | Required for mating,1.41E-02
+orf19.5876_56,2.76,,hypothetical protein,1.62E-05
+orf19.2427_4289**,2.74,POL,RNA-directed DNA polymerase,8.71E-05
+orf19.2397.3,2.73,,conserved hypothetical protein,1.32E-04
+orf19.6964_214*,2.73,MRS107,hypothetical protein,3.28E-02
+orf19.5682_213,2.68,SRP1,karyopherin-alpha or importin,7.00E-03
+orf19.4970_1436,2.68,,hypothetical protein,2.60E-04
+orf19.847_572,2.67,YIM1,mitochondrial inner membrane protease,1.46E-04
+orf19.3021_543,2.67,,hypothetical protein,2.14E-03
+orf19.1363_1056,2.66,,conserved hypothetical protein,1.46E-04
+orf19.6881_80,2.63,YTH1,cleavage and polyadenylation specificity factor,2.17E-05
+orf19.7405_611,2.62,,hypothetical protein,7.96E-04
+orf19.4665_12,2.61,,hypothetical protein,9.18E-05
+orf19.4055_244,2.61,,hypothetical protein,8.71E-05
+orf19.1763_305,2.61,IFR1,putative reductase/dehydrogenase,8.08E-04
+orf19.5672_1334,2.60,MEP2,ammonia permease,4.36E-02
+orf19.1331_526,2.60,HSM3,MutS family (putative) | mismatch repair,3.02E-07
+orf19.1867_739,2.58,,permease of major facilitator superfamily,7.08E-04
+orf19.5339_165,2.58,,hypothetical protein,1.89E-04
+orf19.3639_10,2.56,MAG1,3-methyladenine DNA glycosylase,1.63E-03
+orf19.6301_92*,2.56,,hypothetical protein,8.57E-06
+orf19.5751_218,2.54,ORM1,involved in response to unfolded proteins,4.17E-05
+orf19.1606_681,2.54,,hypothetical protein,1.05E-03
+orf19.6248_247,2.53,,hypothetical protein,3.11E-04
+orf19.2218_258,2.53,,hypothetical protein (merged with orf.1861),1.20E-03
+orf19.4411_744,2.53,HOS1,histone deacetylase,6.14E-03
+orf19.733_312,2.53,,conserved hypothetical protein,5.56E-03
+orf19.4982_1561,2.53,TGL3,triglyceride lipase-cholesterol esterase,2.13E-03
+orf19.4413_13,2.53,CMD1,calmodulin,2.12E-03
+orf19.5569_1850,2.51,SRC1,Spliced mRNA and Cell cycle regulated gene,4.92E-04
+orf19.5457_12,2.51,,conserved hypothetical protein,6.55E-03
+orf19.2467_688,2.50,PRN1,RNA pol II transcription cofactor,6.20E-05
+orf19.7091_262,2.49,,conserved hypothetical protein,1.79E-05
+orf19.6747_221,2.48,,conserved hypothetical protein,3.21E-04
+orf19.31_168,2.48,CIS35,potential cell wall protein | member of a group of C.albicans orfs that are weakly similar to Sc CIS3/PIR3/PIR1,2.92E-03
+orf19.2367_180,2.48,,conserved hypothetical protein,4.99E-03
+orf19.5525_242,2.48,,conserved hypothetical protein,4.18E-04
+orf19.2398_149,2.46,,hypothetical protein,1.37E-03
+orf19.1815_514,2.46,TIF6,translation initiation factor 6 (eIF6),1.49E-05
+orf19.2046_508,2.46,POT13,"acetyl-CoA C-acyltransferase, peroxisomal | fatty acid beta-oxidation",1.10E-02
+orf19.4035_387,2.46,GAS1,GPI anchored surface protein,6.75E-04
+orf19.7115_873,2.45,SAC7,GTPase activating protein (GAP) for RHO,1.89E-04
+orf19.3407_554,2.45,RAD18,DNA repair protein and ATPase,2.50E-02
+orf19.3586_0,2.45,,conserved hypothetical protein,4.31E-03
+orf19.1617_181,2.45,,conserved hypothetical protein,3.97E-02
+orf19.4337_1791,2.44,ESBP6,monocarboxylate permease,6.88E-04
+orf19.3672_1902,2.44,GAL10,UDP glucose-4-epimerase,8.25E-04
+orf19.3845_47,2.43,,zinc finger protein,3.40E-04
+orf19.22_458,2.43,,MPV17 homolog | hypothetical protein,2.14E-03
+orf19.7436_1378,2.43,ADF1,adhesion and aggregation mediating surface antigen,6.18E-07
+orf19.6963_221*,2.42,MRS107,hypothetical protein,2.40E-04
+orf19.449_1117,2.42,,predicted phosphatidyl synthase,1.68E-04
+orf19.6324_477,2.42,VID27,vacuole import and degradation,2.10E-03
+orf19.2942_1260,2.42,DIP52,dicarboxylic amino acid permease,2.38E-04
+orf19.6957.3*,2.42,,hypothetical protein with homology to part of Isocitrate dehydrogenase (NAD+) subunit 1,2.01E-02
+orf19.5956_24,2.40,PIN3,SH3 domain protein,2.25E-04
+orf19.7227_89,2.40,,conserved hypothetical protein,2.34E-02
+orf19.5159_598,2.40,,conserved hypothetical protein,8.31E-04
+orf19.4783_1356,2.40,,conserved hypothetical protein,1.40E-02
+orf19.1911_237,2.39,TOS2,Target of SBF,4.12E-03
+orf19.3526_1269,2.39,ITR2,myo-inositol transporter,6.80E-03
+orf19.2463_694,2.38,PRN2,RNA pol II transcription cofactor,1.59E-03
+orf19.4048_532,2.38,DES1,probable fatty acid desaturase,3.37E-05
+orf19.7325_169,2.38,SCO1,inner mitochondrial membrane protein,1.07E-03
+orf19.5749_1,2.37,SBA1,HSP90 associated co-chaperone,6.40E-04
+orf19.1048_733,2.37,IFD1,conserved aryl-alcohol dehydrogenase,1.26E-04
+orf19.874_202,2.37,,conserved hypothetical protein,2.32E-02
+orf19.5911_81,2.36,CMK1,Ca2+/calmodulin-dependent protein kinase,7.81E-04
+orf19.4720_41,2.35,CTR2,copper transpport protein,2.83E-03
+orf19.814_1972,2.34,SSY1.5,transcriptional regulator of multiple amino acid permeases,3.03E-06
+orf19.7003_265*,2.34,,hypothetical protein,2.98E-03
+orf19.6113_244,2.34,,hypothetical protein,2.56E-03
+orf19.5069_154,2.34,,conserved hypothetical protein,4.53E-05
+orf19.2803_82,2.33,HEM13,coprophyrinogen oxidase | heme biosynthesis,1.60E-03
+orf19.7450_648,2.33,BNI5,may localize to mother-bud neck in a septin-dependent manner | similar to mammalian homer porteins,2.15E-03
+orf19.5170_877,2.32,ENA2,P-type ATPase involved in Na+ efflux,2.51E-02
+orf19.1861_65,2.32,,SH3 domains protein (merged with orf19.2218),2.91E-03
+orf19.393_61,2.32,APS3,AP-3 complex subunit functioning in gogi-to-vacuole protein transport,1.92E-07
+orf19.878_54,2.31,YNG2,NuA4 histone acetyltransferase complex component,3.77E-03
+orf19.4155.12*,2.30,,similar to protion of isocitrate dehydrogenase 1 alpha-4-beta-4 subunit,1.26E-02
+orf19.6487_337,2.30,,hypothetical protein,8.18E-04
+orf19.2568_179,2.29,WWM1,involvd in response to dessication,5.60E-06
+orf19.5459_51,2.29,PBP1,poly(A)-binding protein binding protein,6.49E-03
+orf19.5686_374,2.29,,hypothetical protein,1.56E-04
+orf19.3674_835,2.29,GAL102,UDP-glucose 4-epimerase,5.70E-03
+orf19.882_1800,2.28,HSP78,heat shock protein of clpb family of ATP-dependent proteases,1.73E-06
+orf19.2610_159,2.27,ARC2,protein with specific affinity for G4 quadruplex nucleic acids,1.97E-04
+orf19.2832_1864,2.25,,conserved hypothetical protein,1.55E-02
+orf19.2580_668,2.25,HST2,similar to Hst1p and Sir2p putative histone deacetylases,1.68E-02
+orf19.5741_2774,2.25,ALS1-1,agglutinin like protein 1,6.79E-03
+orf19.2863.1,2.24,ERV1,sulfhydryl oxidase,7.34E-05
+orf19.3923_505,2.24,,conserved hypothetical protein,5.69E-04
+orf19.3858_286,2.24,,hypothetical protein,1.07E-03
+orf19.1607_2114,2.24,ALR1,putative divalent cation transporter,3.52E-05
+orf19.5920_253,2.24,,hypothetical protein,8.91E-05
+orf19.7078_113,2.24,,conserved hypothetical protein,9.69E-07
+orf19.7267_27,2.23,,conserved hypothetical protein,3.16E-05
+orf19.3499_423,2.23,,hypothetical protein,4.67E-03
+orf19.4555_246,2.22,ALS4,agglutinin-like protein 4,2.32E-02
+orf19.5394.1,2.22,PET191,mitochondrial regulator,2.68E-02
+orf19.5291_552,2.22,SCS3,inositol phospolipid biosynthesis,3.94E-04
+orf19.413.1,2.21,RPS27A,ribosomal protein S27A,2.91E-04
+orf19.4622_305,2.21,,hypothetical protein,1.39E-02
+orf19.6070_963,2.21,ENA5,Na+ ATPase,4.87E-02
+orf19.6451_235**,2.21,POL99,pol polyprotein,3.80E-03
+orf19.1488_22,2.21,,hypothetical protein,4.06E-03
+orf19.6102_612,2.21,CST6,ATF/CREB activator,5.39E-03
+orf19.2006.1,2.21,COX17,cytochrome c oxidase copper chaperone,2.56E-04
+orf19.4869_1197,2.21,SFU1,GATA type transcriptional activator of nitrogen-regulated genes,4.74E-05
+orf19.5640_1494,2.21,PEX5,peroxisomal protein receptor,1.76E-03
+orf19.4546_1146,2.21,HOL4,member of major facilitator superfamily multidrug-resistance protein,2.55E-02
+orf19.7544_44,2.20,CTA2,transcriptional activation,1.31E-03
+orf19.6614_3186,2.20,,DEAD/DEAH box helicase,2.70E-02
+orf19.2303_508,2.20,,conserved hypothetical protein,2.32E-02
+orf19.7250_305,2.20,,conserved hypothetical protein,9.47E-05
+orf19.4177_401,2.19,HIS5,histidinol-phosphate aminotransferase,3.98E-03
+orf19.1407_952,2.19,,conserved hypothetical membrane protein,3.58E-02
+orf19.6048_184,2.19,PMT3,mannosyltransferase,3.71E-03
+orf19.1187_1941,2.19,CPH2,bHLH DNA-binding protein that promotes hyphal development,8.92E-07
+orf19.3713_466,2.18,,hypothetical protein,6.50E-03
+orf19.6554_180,2.18,,conserved hypothetical protein,4.36E-04
+orf19.171_1445,2.18,DBP2,DEAD box RNA helicase,5.61E-03
+orf19.1623_867,2.18,CAP1,transcriptional activator involved in oxidative stress response,2.64E-05
+orf19.42_308*,2.18,,transport protein,5.16E-03
+orf19.4436_35,2.17,GPX2,glutathione peroxidase,7.12E-04
+orf19.7676_924,2.17,SOR1,sorbitol dehydrogenase,1.82E-04
+orf19.1416_0,2.17,COX11,cytochrome-c oxidase assembly protein,1.42E-03
+orf19.5463_771,2.16,SEC6,exocyst complex subunit,3.31E-02
+orf19.4031_1433,2.16,,conserved hypothetical protein,4.37E-04
+orf19.5823_188,2.16,SGT2,small glutamine-rich tetratricopeptide repeat containing protein | similarity to protein phosphatases,9.41E-03
+orf19.2030_124,2.16,,hypothetical protein,9.32E-03
+orf19.2049_624,2.16,,hypothetical protein,4.69E-05
+orf19.1925_42,2.15,CTA2-10,transcription factor,4.66E-03
+orf19.1034_94,2.15,ATM2,putative steroid binding,7.96E-03
+orf19.409_86,2.14,,conserved hypothetical protein,1.43E-04
+orf19.3342_1665,2.14,,hypothetical protein,7.13E-04
+orf19.1453_1564,2.14,SPT5,transcription elongation factor,8.99E-03
+orf19.3004_764,2.14,,conserved hypothetical protein,3.84E-03
+orf19.3471_112,2.13,,hypothetical protein,1.45E-03
+orf19.2105_550,2.13,CWC24,zinc finger protein,5.79E-04
+orf19.5094_1885,2.12,BUL3,ubiquitin-mediated protein degradation,5.01E-04
+orf19.2342_545,2.12,SFT2,similar to mammalian syntaxin 5,1.98E-06
+orf19.2848_1810,2.12,APG13,involved in autophagy,1.08E-04
+orf19.1486_190,2.12,,hypothetical protein,2.73E-06
+orf19.699_279,2.11,,hypothetical protein,1.56E-03
+orf19.3323_686,2.11,,hypothetical protein,4.58E-05
+orf19.5785_401,2.11,,hypothetical protein,4.93E-03
+orf19.3618_1190,2.11,YWP1,putative cell wall protein,3.68E-04
+orf19.4054_25,2.10,CTA2,transcriptional regulation,1.87E-04
+orf19.2179_1006,2.10,ARN1,iron-siderophore transporter,5.94E-03
+orf19.2107.1,2.10,STF2,ATP synthase regulatory factor,5.61E-07
+orf19.3874_1600,2.10,,hypothetical protein,5.03E-04
+orf19.203_1031,2.09,STB3,Sin3p binding protein,2.14E-03
+orf19.6674_771,2.08,BTS1,geranylgeranyl diphosphate synthase,5.81E-05
+orf19.7644_196,2.08,APC11,ubiquitin-protein ligase; Anaphase Promoting Complex,8.42E-04
+orf19.4740_167,2.08,PRH1,peptidyl-tRNA hydrolase,7.94E-03
+orf19.5192_1*,2.08,,conserved hypothetical protein,2.86E-02
+orf19.5133_2470,2.08,,hypothetical DNA binding protein,3.58E-03
+orf19.7519_168,2.08,,hypothetical protein,1.63E-03
+orf19.5165_1045,2.07,,conserved hypothetical protein,2.82E-03
+orf19.5337_449,2.07,UBC15,E2 ubiquitin conjugating enzyme,1.69E-03
+orf19.6387_2494,2.06,HSP104,heat shock protein 104,5.04E-03
+orf19.1014_291*,2.06,,probable 26S proteasome regulatory subunit,5.05E-04
+orf19.2616_4105,2.06,ATG26,UDP-glucose:sterol glucosyltransferase,1.32E-02
+orf19.6993_1316,2.06,GAP2,general amino acid permease,2.13E-03
+orf19.5775.3*,2.05,,isocitrate dehydrogenase (NAD+) subunit 1,5.95E-03
+orf19.5752_1052,2.05,,conserved hypothetical protein,1.33E-04
+orf19.2098_693,2.05,ARO8,aromatic amino acid aminotransferase,7.53E-04
+orf19.675_241,2.05,,hypothetical protein,2.98E-03
+orf19.3089_329,2.05,,possibly involved in intramitochondrial sorting,1.04E-03
+orf19.6139_1376,2.05,FRE7,ferric reductase,1.05E-04
+orf19.6191_51,2.04,CTA2,transcriptional activator,2.99E-02
+orf19.250_750,2.04,SLC1,fatty acyltransferase,3.02E-02
+orf19.3073_270,2.04,,hypothetical protein,1.48E-03
+orf19.7125_731,2.04,,hypothetical protein,3.09E-02
+orf19.3124_254,2.04,MAP1,methionine aminopeptidase,1.57E-03
+orf19.1744_726,2.04,HEM4,uroporphyrinogen III synthase | heme biosynthesis,1.67E-02
+orf19.6811_133,2.03,ISA2,mitochondrial protein required for iron metabolism,9.97E-05
+orf19.399_1354,2.03,YPK2,ser/thr protein kinase,3.07E-04
+orf19.2607_135,2.03,PMU2,phosphomutase homolog,5.16E-03
+orf19.6112_54,2.03,CTA2,putative transcriptional activator,2.34E-03
+orf19.3475_329,2.02,,Gag protein,1.50E-06
+orf19.183_177,2.02,HIS3,imidazoleglycerol-phosphate dehydratase,1.28E-02
+orf19.6180_79,2.02,,conserved hypothetical protein,1.33E-02
+orf19.4706_128,2.02,,low similarity to prion protein,1.29E-02
+orf19.1281_356,2.01,,conserved hypothetical protein,7.32E-04
+orf19.5114_59,2.01,GRD19,retrieval from vacuole to Golgi,2.15E-02
+orf19.441_313,2.01,RPT1,26S protease subunit component | ATPase | Required for degradation of ubiquitinated substrates and for anaphase chromosome separation,4.70E-03
+orf19.4943_1228,2.01,PSA2,mannose-1-phosphate guanyltransferase,2.79E-03
+orf19.2333_1339,2.01,,highly conserved oxidoreductase,1.93E-02
+orf19.5251_2284,2.00,,potential fungal Zn(2)-Cys(6) binuclear cluster domain,5.28E-02
+DOWNREGULATED GENES
+orf19.6821_2288,0.50,APC2,subunit of the Anaphase Promoting Complex,3.79E-03
+orf19.3247_6372,0.50,,highly conserved hypothetical protein,7.61E-04
+orf19.4591_1781,0.50,CAT2,carnitine acetyltransferase,1.63E-04
+orf19.5943_1094,0.50,,conserved hypothetical protein,1.03E-02
+orf19.4594_512,0.50,CLC1,clathrin light chain,1.05E-05
+orf19.2896_599,0.50,SOU1,"peroxisomal 2,4- dienoyl-CoA reductase, and sorbitol utilization protein",4.59E-04
+orf19.7354_747,0.49,LAC2,longevity-assurance protein,1.06E-02
+orf19.479.2,0.49,SEC22,ER to Golgi protein transport synaptobrevin (V-SNARE),6.77E-05
+orf19.6796_414,0.49,YSA1,sugar-nucleotide hydrolase,7.54E-03
+orf19.5968_133,0.49,RDI1,Rho GDP dissociation inhibitor,2.05E-06
+orf19.3577.1,0.49,,conserved hypothetical protein,3.73E-02
+orf19.4675_1643,0.49,,conserved hypothetical protein,1.61E-02
+orf19.6689_654,0.49,ARG4,argininosuccinate lyase,1.54E-03
+orf19.2533.1,0.49,SBH1,"Sec61p-Sss1p-Sbh1p complex component, involved in protein translocation into the endoplasmic reticulum",1.37E-05
+orf19.1797_497,0.49,,conserved hypothetical protein,1.11E-03
+orf19.1598_1274,0.49,ERG24,sterol C-14 reductase,1.68E-04
+orf19.2021_492,0.49,HXT5,hexose transporter,1.27E-03
+orf19.3063_215,0.49,DPB3,"DNA-directed DNA polymerase epsilon, subunit C",2.87E-04
+orf19.5065_999,0.49,ERD1,required for retention of luminal ER proteins,2.09E-02
+orf19.2298_1199,0.49,WBP1,oligosaccharyl transferase beta subunit precursor,8.83E-05
+orf19.3649_652,0.48,FES1,adenyl-nucleotide exchange factor activity,9.66E-04
+orf19.868_1341,0.48,,putative adenosine deaminase | transcriptional regulation,7.86E-08
+orf19.5648_471,0.48,,putative nuclear export factor,2.35E-03
+orf19.2341_145,0.48,HNT1,"similarity to protein kinase C inhibitor-I, histidine triad nucleotide-binding proteins",4.48E-04
+orf19.4733_749,0.48,YMC3,mitochondrial carrier protein,8.89E-04
+orf19.1492_1874,0.48,PRP39,pre-mRNA splicing factor | U1 snRNP protein,6.13E-03
+orf19.2446_359,0.48,,highly conserved hypothetical protein,6.79E-04
+orf19.1278_139,0.48,,conserved hypothetical protein,9.74E-04
+orf19.3607_1112,0.48,,alpha/beta hydrolase,1.48E-03
+orf19.1960_1314,0.48,CLN3,G1 cyclin,4.17E-03
+orf19.6769_1990,0.48,,conserved hypothetical protein,5.70E-04
+orf19.254_859,0.48,,hypothetical protein,1.67E-04
+orf19.3669_1723,0.48,SKS1,serine/threonine protein kinase,8.40E-04
+orf19.6968_2365,0.48,,conserved hypothetical protein,8.21E-04
+orf19.1631_945,0.47,ERG6,S-adenosyl-methionine delta-24- sterol-c-methyltransferase,1.39E-03
+orf19.6893_888,0.47,RUD3.3,relieves uso1-1 transport defect | golgin-160 related protein,8.58E-03
+orf19.873_83,0.47,,hypothetical protein,4.35E-03
+orf19.3633_410,0.47,,transthyretin precursor (Prealbumin),1.51E-02
+orf19.7593_1317,0.47,ASP1,L-asparaginase,9.54E-05
+orf19.6864_63,0.47,,conserved hypothetical protein,9.27E-03
+orf19.2836_392,0.47,,conserved hypothetical protein,1.64E-02
+orf19.6624_1111,0.47,,TBC domain protein,3.28E-02
+orf19.1390_1043,0.47,PMI1,mannose-6-phosphate isomerase,4.31E-03
+orf19.3394_506,0.46,,hypothetical protein,6.69E-03
+orf19.7409_568,0.46,ERV25,component of COPII coat of ER- derived vesicles | p24 protein family,6.24E-05
+orf19.3417_2120,0.46,ACF2,"endo-1,3-beta- glucanase, and involved in actin polymerization",4.43E-02
+orf19.4197_756,0.46,YHM2,DNA binding protein | mtDNA stabilizing protein | mitochondrial inner membrane protein,1.38E-02
+orf19.568_915,0.46,SPE2,S-adenosylmethionine decarboxylase,1.73E-05
+orf19.2636_205,0.46,,conserved hypothetical protein,1.27E-02
+orf19.7016_1640,0.46,,vacuolar endopolyphosphatase,2.10E-02
+orf19.1190_2478,0.46,VPH3,vacuolar ATPase V0 domain subunit a,4.38E-05
+orf19.5112_1741,0.46,TKL1,transketolase 1,2.31E-04
+orf19.6286_512,0.46,,conserved hypothetical protein,1.53E-03
+orf19.3839_587,0.45,SAP10,secretory aspartyl proteinase,1.31E-02
+orf19.2087_989,0.45,SAS2,zinc finger protein involved in silencing HMR,1.62E-03
+orf19.3221_3206,0.45,CPA2,"carbamoyl phosphate synthetase large subunit, arginine biosynthesis",9.53E-05
+orf19.4825_149,0.45,FMC1,formation of mitochondrial complexes | assembly factor of ATP synthase in heat stress | Formation of Mitochondrial Cytochromes,5.79E-03
+orf19.2842_1951,0.45,GZF3,transcriptional repressor similar to zinc finger Dal80,2.79E-04
+orf19.6134_2330,0.45,,conserved hypothetical protein,1.17E-05
+orf19.4900_2286,0.45,MNN13,mannosyltransferase,1.31E-03
+orf19.6291_2766,0.45,FUN30,helicase of the Snf2/Rad54 family,5.87E-04
+orf19.92_2412,0.45,,conserved hypothetical protein,2.71E-03
+orf19.4870_1388,0.45,DBP3,ATP-dependent RNA helicase CA3 of the DEAD/DEAH box family,1.14E-02
+orf19.4624_1202,0.45,HRT2,Ty3 transposition effector,4.07E-03
+orf19.4229_107,0.45,DDP1,polyphosphate phosphohydrolase,1.77E-04
+orf19.7321_1583,0.45,,conserved hypothetical protein,1.96E-02
+orf19.6318_217,0.45,,conserved hypothetical protein,3.05E-07
+orf19.3065_712,0.44,DAO1,D-amino acid oxidase,8.58E-04
+orf19.4056_988,0.44,,GATA-family DNA binding proteins,1.87E-02
+orf19.2170_2566,0.44,,membrane transporter,4.56E-04
+orf19.1670_2527,0.44,BRO1,involved in integral membrane protein trafficking,4.23E-03
+orf19.5628_801,0.44,DIC1,mitochondrial dicarboxylate transport protein,6.50E-04
+orf19.290_4218,0.44,KRE5,UDPglucose- glycoprotein glucose phosphotransferase,9.55E-05
+orf19.5231.2,0.44,ATP19,subunit K of mitochondrial ATP Synthase,1.43E-05
+orf19.4699_1941,0.44,,conserved hypothetical membrane protein,9.75E-05
+orf19.2846_312,0.44,,hypothetical protein,4.16E-04
+orf19.1107_119,0.44,,conserved hypothetical protein,7.24E-05
+orf19.4236_1587,0.43,RET2,coatomer (COPI) complex delta subunit,1.06E-04
+orf19.5437_488,0.43,GPP1,DL-glycerol-3-phosphatase,4.47E-04
+orf19.1761_264,0.43,OST2,oligosaccharyltransferase epsilon subunit,2.92E-05
+orf19.5171_2330,0.43,PMT1,mannosyltransferase,5.99E-05
+orf19.6627_482,0.43,,retrovirus-related like polyprotein,5.63E-04
+orf19.6699_755,0.43,HIS2,histidinolphosphatase,2.16E-02
+orf19.1092_1475,0.43,RHK1,dol-p-man dependent alpha(1-3) mannosyltransferase,1.54E-03
+orf19.4600.1,0.43,DPM3,dolichol-phosphate-mannose synthase,5.96E-07
+orf19.7479_2570,0.43,NTH1,"neutral trehalase (alpha,alpha-trehalase)",2.62E-04
+orf19.1427_1347,0.43,,conserved hypothetical transporter,4.04E-04
+orf19.5851_2414,0.43,STE13,dipeptidyl aminopeptidase,4.49E-04
+orf19.1306_742,0.42,,conserved oxidase,1.01E-03
+orf19.1963_1144,0.42,GDS1,involved in nuclear control of mitochondria,1.21E-02
+orf19.4000_1818,0.42,PHO2,"homeobox transcription factor, positive regulator of PHO5 and other genes",5.36E-03
+orf19.2671_1046,0.42,NDI1,NADH dehydrogenase,4.67E-02
+orf19.4099_2254,0.42,ECM17,extracellular sulfite reductase,7.30E-04
+orf19.3873_1029,0.42,ARC40,component of the ARP2-3 complex,9.84E-06
+orf19.4755_2734,0.42,KEX2,Kexin protease | late Golgi endoprotease that processes of alpha-factor,2.10E-03
+orf19.732_60,0.42,SPS22,carbonyl reductase similar to SOU1 and SOU2,2.87E-02
+orf19.2822_41,0.42,,hypothetical protein,4.35E-03
+orf19.3547_1916,0.42,PUF6,member of the PUF protein family,5.97E-04
+orf19.4477_551,0.41,IFD4,aryl-alcohol dehydrogenase,5.60E-03
+orf19.3133_1848,0.41,GUT2,mitochondrial glycerol-3-phosphate dehydrogenase,5.69E-05
+orf19.3836_405,0.41,,conserved hypothetical protein,1.71E-04
+orf19.4440_2241,0.41,COG3,Conserved Oligomeric Golgi complex 3 secretion (golgi retention) deficient | required for vesicle tethering to the yeast Golgi apparatus,1.26E-02
+orf19.6008_2496,0.41,,conserved hypothetical protein,2.31E-03
+orf19.7328_2563,0.41,CAP100,Candida albicans p100 homolog,9.47E-04
+orf19.6818_3344,0.41,,RNA helicase,2.00E-03
+orf19.2805_2280,0.41,PEX99,putative peroxisomal protein,1.33E-03
+orf19.4445_1331,0.40,,hypothetical protein,1.27E-02
+orf19.1012_357,0.40,APS1,AP-1 clathrin associated protein complex subunit,1.84E-06
+orf19.3740_692,0.40,,hypothetical protein,9.11E-03
+orf19.3181.1,0.40,NCE11,involved in non-classical protein export pathway,8.11E-06
+orf19.5438_160,0.40,,hypothetical protein,3.79E-05
+orf19.4479_1735,0.40,,conserved hypothetical protein,1.99E-03
+orf19.4579_799,0.39,ERV29,ER-Golgi transport vesicle protein,4.04E-03
+orf19.5025_1446,0.39,MET3,"ATP sulfurylase, Amino acid metabolism",6.42E-05
+orf19.1985_249,0.39,,conserved hypothetical protein (merged with orf19.3488),1.10E-04
+orf19.3335_444,0.39,,hypothetical protein,2.30E-03
+orf19.3459_1014,0.39,MCK1,serine/threonine/tyrosine protein kinase involved in chromosome segregation,1.05E-02
+orf19.2724_1039,0.39,,hypothetical protein,2.82E-03
+orf19.5753_1345,0.39,STL1,sugar transporter,2.32E-04
+orf19.3573_3084,0.39,PEX6,peroxisomal assembly protein | AAA ATPase,2.17E-03
+orf19.3507_322,0.39,MCR1,cytochrome b5 reductase,6.16E-05
+orf19.5462_410,0.39,,hypothetical protein,4.70E-03
+orf19.1719_1613,0.39,SGA1,glucoamylase,1.15E-02
+orf19.5777_544,0.38,,"involved in pseudohyphal growth, resistance to NaCl and H2O2",1.26E-05
+orf19.1203.1,0.38,,conserved hypothetical protein,9.57E-05
+orf19.3226_19,0.38,NPC2,vacuolar protein and homolog of Niemann Pick type C protein,2.74E-03
+orf19.2837_903,0.38,ALG5,UDP-glucose:dolichyl-phosphate glucosyltransferase,1.25E-02
+orf19.398_236,0.38,,hypothetical protein,3.18E-03
+orf19.6985_2614,0.37,TEA1,transcription factor with fungal Zn(2)- Cys(6) binuclear cluster domain | TY1 enhancer activator,2.07E-02
+orf19.889_1175,0.37,THI20,thiamine biosynthesis | phosphomethylpyrimidine kinase,5.51E-03
+orf19.2416.1,0.37,MLC1,myosin light chain,3.28E-05
+orf19.10_1251,0.37,ALK8,cytochrome p450,4.49E-03
+orf19.6527_3245,0.37,PRM10,pheromone-regulated membrane,7.68E-03
+orf19.1344_53,0.36,,hypothetical protein,2.65E-02
+orf19.3041_1842,0.36,,conserved hypothetical protein with similarity to ROD1,4.46E-04
+orf19.6196_170,0.36,,hypothetical protein,1.71E-04
+orf19.1495_650,0.36,UTR4,hydrolase,1.72E-02
+orf19.4886_253,0.35,,hypothetical protein,1.33E-04
+orf19.1066_75,0.35,,conserved hypothetical protein,1.12E-04
+orf19.2897_637,0.35,SOU2,"peroxisomal 2,4- dienoyl-CoA reductase and sorbitol utilization protein",4.59E-02
+orf19.677_658,0.35,CHO1,phosphatidylserine synthase,2.68E-05
+orf19.3969_1973,0.35,HSR1,heat-shock related protein,1.92E-05
+orf19.3994_956,0.35,OST3,oligosaccharyltransferase gamma subunit,1.64E-02
+orf19.7330_45,0.35,PET18,transcriptional regulator,6.36E-04
+orf19.3782_1583,0.35,,acetyl-coenzyme A transporter,8.09E-03
+orf19.946_272,0.35,MET14,adenylylsulfate kinase,7.23E-04
+orf19.5295_1010,0.34,,conserved hypothetical protein,6.58E-03
+orf19.94_365,0.34,,hypothetical protein,1.47E-03
+orf19.4264_681,0.33,,hypothetical protein,2.05E-05
+orf19.535_248,0.33,,hypothetical serine-rich protein,3.69E-06
+orf19.6988_922,0.33,OST1,oligosaccharyltransferase | involved in glycosylation in the ER lumen,1.01E-07
+orf19.3469_1051,0.33,,hypothetical protein,2.99E-04
+orf19.3520_80,0.33,,hypothetical protein,4.36E-03
+orf19.4903_968,0.33,GPI12,N-acetylglucosaminylphosphatidylinositol de-N-acetylase,2.33E-02
+orf19.4076_3165,0.33,MET10,sulfite reductase flavin-binding subunit,4.11E-06
+orf19.1946_664,0.32,,conserved hypothetical protein,1.02E-04
+orf19.334_252,0.32,,hypothetical protein,1.01E-05
+orf19.3016_346,0.32,,conserved hypothetical protein,5.25E-03
+orf19.3374_455,0.31,ECE1,secreted cell elongation protein,3.44E-03
+orf19.1120_153,0.30,,hypothetical protein,3.84E-03
+orf19.2269_481,0.30,,3-phosphoserine phosphatase,2.48E-02
+orf19.3488_677,0.30,,hypothetical protein (merged with orf19.1985),2.97E-02
+orf19.691_1048,0.29,GPD1,glycerol-3-phosphate dehydrogenase,4.31E-04
+orf19.5517_879,0.29,ADH6,alcohol dehydrogenase,4.12E-04
+orf19.3419_687,0.29,MAE1,mitochondrial malate dehydrogenase,3.16E-04
+orf19.242.2,0.27,YSY6,secretory pathway protein,2.89E-06
+orf19.7411_204,0.26,OAC1,mitochondrial oxaloacetate transport protein,2.83E-03
+orf19.1112_2071,0.26,BUD7,involved in bud-site selection,3.32E-06
+orf19.7324_806,0.25,THI13,pyrimidine precursor biosynthesis enzyme,6.80E-05
+orf19.5557_2117,0.24,MNN43,transfer mannosylphosphate to oligosaccharides,3.37E-03
+orf19.5992_1255,0.22,,zinc finger transcription factor,3.07E-04
+orf19.5210_1072,0.21,XBP1,transcription factor,1.18E-03
+orf19.2552_2609,0.20,PMR2,Ca2+ ATPase,2.20E-08
+orf19.2038_882,0.19,,hypothetical protein,6.33E-04

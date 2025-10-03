@@ -1,0 +1,25 @@
+clone,average static,average flight,average RWV,average RPM,ANOVA,Tukey Static vs. Flight,Tukey Static vs. RWV,Tukey Static vs. RPM,Tukey Flight vs. RWV,Tukey Flight vs. RPM,Tukey RWV vs. RPM
+YE media - High PI uptake
+no del,3.6 ± 0.9,2.9 ± 0.5,0.7 ± 0.1,0.7 ± 0.1,0.01,ns,0.04,0.04,ns,ns,ns
+Sfp Δ,4.0 ± 0.5,26.7 ± 1.6,2.5 ± 0.1,2.0 ± 0.1,0.00001,0.0001,ns,ns,0.0001,0.0001,ns
+Msn4 Δ,4.0 ± 0.7,24.2 ± 2.0,4.3 ± 0.5,3.3 ± 0.2,0.00001,0.0002,ns,ns,0.0002,0.0002,ns
+YE media - Low PI Uptake
+no del,23 ± 3,8 ± 2,16 ± 1,23 ± 2,0.0004,0.0001,ns,ns,ns,0.002,ns
+Sfp1 Δ,44 ± 5,31 ± 1,76 ± 1,74 ± 2,0.00001,ns,0.0002,0.0002,0.0002,0.0002,ns
+Msn4 Δ,46 ± 5,35 ± 2,72 ± 2,68 ± 2,0.00001,ns,0.0002,0.0009,0.0002,0.0002,ns
+YE media - Apoptosis
+DHE,1286 ± 299,2056 ± 100,621 ± 55,680 ± 38,0.02,ns,ns,ns,ns,ns,
+caspase,594 ± 17,668 ± 35,617 ± 11,787 ± 11,0.00003,ns,ns,0.0002,ns,0.01,0.0006
+annexin,141 ± 8,221 ± 12,158 ± 5,164 ± 4,0.00004,0.0002,ns,ns,0.001,0.003,ns
+YPD media - High PI uptake
+no del,1.8 ± 0.5,1.2 ± 0.2,2.6 ± 0.5,1.6 ± 0.2,ns,ns,ns,ns,ns,ns,ns
+Sfp1 Δ,1.8 ± 0.2,2.3 ± 0.1,0.9 ± 0.1,1.5 ± 0.1,0.00007,ns,0.0005,0.477,0.0002,0.02,0.07
+Msn4 Δ,2.3 ± 0.4,3.5 ± 0.5,0.4 ± 0.1,0.7 ± 0.1,0.00002,ns,0.003,0.01,0.0002,0.0002,ns
+YPD media - Low PI Uptake
+no del,72 ± 8,90 ± 1,87 ± 1.,89 ± 2,ns,ns,ns,ns,ns,ns,ns
+Sfp1 Δ,49 ± 4,24 ± 1,41 ± 2,84 ± 1,0.00001,0.0001,ns,0.0001,0.003,0.0001,0.0001
+Msn4 Δ,30 ± 2,17 ± 1,25 ± 2,62 ± 3,0.00001,0.0002,ns,0.0002,0.02,0.0001,0.0001
+YPD media - Apoptosis
+DHE,3109 ± 570,8778 ± 406,1398 ± 42,1459 ± 51,0.00001,0.0002,ns,ns,0.0002,0.0002,ns
+caspase,1047 ± 59,1403 ± 74,1059 ± 39,1133 ± 46,0.01,0.008,ns,ns,0.02,ns,ns
+annexin,389 ± 31,373 ± 5,525 ± 17,493 ± 14,0.006,ns,0,ns,0.03,ns,ns

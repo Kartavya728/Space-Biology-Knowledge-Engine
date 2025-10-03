@@ -1,0 +1,11 @@
+Strain or plasmid,Genotype or phenotype,Source or referencea
+B. subtilisstrains,,
+BSM151,trpC2SPβ::ctc-lacZCmrErmr,Uwe Völker (35)
+PB344,trpC2 sigBΔ3::spcSpcr,Chet Price (34)
+WN624,"trpC2 amyE::spcSpcr, wild type, congenic with WN628",66
+WN628,"trpC2 amyE::catCmr, wild type, congenic with WN624",66
+WN1261,trpC2 amyE::neoNeor,pECE73 → WN628 NeorCms
+WN1392,trpC2 amyE::neo sigBΔ3::spcNeorSpcr,PB344 → WN1261 Spcr
+WN1400,trpC2 amyE::neoSPβ::ctc-lacZNeorCmrErmr,BSM151 → WN1261 CmrErmr
+WN1407,trpC2 amyE::neo sigBΔ3::spcSPβ::ctc-lacZNeorSpcrCmrErmr,BSM151 → WN1392 CmrErmr
+Plasmid pECE73,pCm::Neo antibiotic switching cassette,BGSC (67)

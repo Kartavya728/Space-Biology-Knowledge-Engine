@@ -1,0 +1,19 @@
+Gene,Description,Log2
+At1g02400,"gibberellin 2-oxidase, putative",0.6555
+At1g18740,expressed protein,0.706
+At1g19180,expressed protein,0.8927
+At1g73540,MutT/nudix family protein,0.7802
+At1g74450,expressed protein,1.1068
+At2g27080,harpin-induced protein-related,0.5201
+At2g30040,protein kinase family protein,0.9232
+At2g34930,disease resistance family protein,1.3017
+At2g41410,"calmodulin, putative",−0.78
+At2g46600,"calcium-binding protein, putative",−1.0632
+At3g10300,calcium-binding EF hand family protein,1.1562
+At3g16720,zinc finger (C3HC4-type RING finger) family protein,−0.4137
+At4g24570,mitochondrial substrate carrier family protein,1.1447
+At4g27652,expressed protein,0.8255
+At4g29780,expressed protein,1.4961
+At4g35985,senescence/dehydration-associated protein-related,0.6918
+At5g12010,expressed protein,0.6498
+At5g16830,syntaxin 21 (SYP21)/PEP12 homolog,0.3345

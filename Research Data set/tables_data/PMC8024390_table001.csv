@@ -1,0 +1,43 @@
+,GO term name
+Ontology,Transcript ID,Gene symbol,Gene description,FWt: GWtFC (log2)
+Cellular Component,endomembrane system GO:0012505,
+,Golgi apparatus GO:0005794,
+,At3g18260,,Reticulon family protein,3.1
+,At4g07960,CSLC12,Cellulose-synthase-like C12,1.9
+,At1g77510,PDIL1-2,PDI-like 1-2 protein disulfide isomerase-like 1-2,1.2
+,At2g03760,ST1,sulphotransferase 12,1.1
+,At3g49780,PSK4,phytosulfokine 4 precursor,−1.2
+,At2g32720,CB5-B,cytochrome B5 isoform B,−1.5
+,At4g36640,,Sec14p-like phosphatidylinositol transfer family protein,−1.8
+,At5g44130,FLA13,FASCICLIN-like arabinogalactan protein 13 precursor,−2.1
+,At2g22900,,Galactosyl transferase GMA12/MNN10 family protein,−2.4
+,plant-type cell wall GO:0009505,
+,AT1G30600,,Subtilase family protein,2.5
+,AT1G78860,,D-mannose binding lectin protein,1.3
+,AT5G44130,FLA13,FASCICLIN-like arabinogalactan protein 13 precursor,−2.1
+Biological Process,defense response to other organism GO:0098542,
+,AT5G38980,,unknown,3.3
+,AT3G43250,,Family of unknown function (DUF572),2.6
+,AT4G02460,PMS1,"DNA mismatch repair protein, putative",2.2
+,AT2G44490,PEN2,Glycosyl hydrolase superfamily protein,1.4
+,AT1G77510,PDIL1-2,PDI-like 1-2,1.2
+,AT2G03760,ST1,sulphotransferase 12,1.1
+,AT3G60740,TTN1,ARM repeat superfamily protein,−2.2
+,regulation of biological process GO:0050789,
+,regulation of metabolic process GO:0019222,
+,regulation of cellular metabolic process GO:0031323,
+,response to stimulus GO:0050896,
+,AT3G62080,,SNF7 family protein,2.6
+,AT5G48560,,basic helix-loop-helix (bHLH) DNA-binding,2.4
+,AT5G01920,STN8,Protein kinase superfamily protein,2.4
+,AT2G46225,ABIL1,ABI-1-like 1,2.2
+,AT5G56270,WRKY2,WRKY DNA-binding protein 2,1.9
+,AT1G27370,SPL10,squamosa promoter binding protein-like 10,1.7
+,AT5G62710,,Leucine-rich repeat protein kinase family protein,1.4
+,AT5G05130,,DNA/RNA helicase protein,1.1
+,AT1G78080,WIND1,related to AP2 4,−1.2
+,AT4G36530,,alpha/beta-Hydrolases superfamily protein,−1.2
+,AT1G78980,SRF5,STRUBBELIG-receptor family 5,−2.4
+,AT2G35530,bZIP16,basic region/leucine zipper transcription factor 16,−2.7
+,AT4G21380,RK3,receptor kinase 3,−2.9
+,AT5G07580,,Integrase-type DNA-binding superfamily protein,−3.3

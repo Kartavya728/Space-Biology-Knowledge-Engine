@@ -1,0 +1,128 @@
+Proteinaccession No.a,Putative Protein function,Protein relative abundance*,p-value
+Carbohydrate and lipid metabolic process
+Wild type,,,
+CF317_003648-T1,GP-PDE domain-containing protein,1.1133,4.79E-02
+CF317_002955-T1,Phospholipase A2,1.1032,3.26E-01
+CF317_005767-T1,Alcohol dehydrogenase 1,0.8542,9.37E-02
+CF317_006579-T1,Alpha/beta-glucosidase agdC,0.8177,6.11E-03
+CF317_009031-T1,Carboxylic ester hydrolase,0.8024,4.22E-02
+CF317_000532-T1,Uncharacterized protein,0.775,3.78E-01
+CF317_007434-T1,Serine/threonine-protein kinase ppk6,0.6797,1.44E-01
+CF317_004579-T1,Acyl-CoA desaturase,0.6334,1.95E-05
+CF317_0002308-T1,Carboxylic ester hydrolase,−0.6053,1.47E-02
+CF317_0009683-T1,"Endo-1,3(4)-beta-glucanase",−0.6918,2.10E-02
+CF317_007618-T1,Carboxylic ester hydrolase,−0.7365,4.22E-02
+CF317_009779-T1,Extracellular cell wall glucanase Crf1/allergen Asp F9,−0.8811,2.70E-01
+CF317_009003-T1,Serine/threonine-protein kinase TOR,−0.9558,9.75E-02
+CF317_007621-T1,Cutinase,−1.0366,7.69E-04
+Mutant
+CF317_009031-T1,Carboxylic ester hydrolase,1.1163,4.22E-02
+CF317_007501-T1,Glutamine synthetase,0.9516,2.84E-01
+CF317_006213-T1,Inositol-3-phosphate synthase,0.8851,2.34E-01
+CF317_004579-T1,Acyl-CoA desaturase,0.8258,1.95E-05
+CF317_000532-T1,Uncharacterized protein,0.7363,3.78E-01
+CF317_007133-T1,Protein FYV10,0.6298,1.26E-02
+CF317_002086-T1,AB hydrolase-1 domain-containing protein,−0.6016,1.98E-01
+CF317_009017-T1,NodB homology domain-containing protein,−0.6135,5.38E-02
+CF317_005813-T1,4HBT domain-containing protein,−0.6213,7.10E-02
+CF317_001523-T1,Glucose-6-phosphate 1-epimerase,−0.6226,6.42E-02
+CF317_000932-T1,"3,2-trans-enoyl-CoA isomerase",−0.6255,1.20E-02
+CF317_009683-T1,"Endo-1,3(4)-beta-glucanase",−1.0502,2.10E-02
+Transport
+Wild type
+CF317_004246-T1,Phosphate transporter,1.3345,4.85E-01
+CF317_007988-T1,VPS37 C-terminal domain-containing protein,0.8635,5.08E-01
+CF317_0005675-T1,Mitochondrial thiamine pyrophosphate carrier 1,0.7750,8.05E-03
+CF317_001330-T1,Phosphate transporter,0.7548,1.35E-01
+CF317_001709-T1,WD_REPEATS_REGION domain-containing protein,0.7277,5.37E-01
+CF317_003773-T1,Zinc-regulated transporter 1,0.6633,1.42E-02
+CF317_009191-T1,Choline transport protein,0.6590,9.34E-03
+CF317_007500-T1,Ammonium transporter,0.6548,2.80E-01
+CF317_008807-T1,HemS domain-containing protein,0.5860,2.75E-01
+CF317_0006744-T1,Ribosomal protein L37e,−0.6649,1.96E-01
+CF317_0001542-T1,POT family proton-dependent oligopeptide transporter,−0.6830,8.37E-03
+CF317_0009683-T1,"Endo-1,3(4)-beta-glucanase",−0.6918,2.10E-02
+CF317_001911-T1,"MFS transporter, SP family, major inositol transporter",−0.8427,1.84E-02
+Mutant
+CF317_007500-T1,Ammonium transporter,1.6152,2.80E-01
+CF317_009191-T1,Choline transport protein,1.2684,9.34E-03
+CF317_005369-T1,AA_permease domain-containing protein,0.9504,4.30E-01
+CF317_003222-T1,CNT family concentrative nucleoside transporter,0.7381,4.62E-01
+CF317_008807-T1,HemS domain-containing protein,0.7308,2.75E-01
+CF317_002497-T1,SEC7 domain-containing protein,0.7191,7.38E-02
+CF317_009070-T1,Stress response protein NST1,0.6604,1.86E-01
+CF317_002132-T1,AA_permease domain-containing protein,0.6505,4.55E-02
+CF317_001911-T1,"MFS transporter, SP family, major inositol transporter",−0.7301,1.84E-02
+CF317_001542-T1,POT family proton-dependent oligopeptide transporter,−0.8932,8.37E-03
+CF317_009683-T1,"Endo-1,3(4)-beta-glucanase",−1.0502,2.10E-02
+"Transcription, RNA and cellular amino acid metabolic processes"
+Wild type
+CF317_004755-T1,Glutamate dehydrogenase,1.7627,3.54E-01
+CF317_004246-T1,Phosphate transporter,1.3345,4.85E-01
+CF317_008227-T1,Alkaline phosphatase,1.2107,4.76E-01
+CF317_003892-T1,Alkaline phosphatase,1.0475,4.25E-01
+CF317_005207-T1,Ribonuclease T1,0.9813,3.38E-01
+CF317_005767-T1,Alcohol dehydrogenase 1,0.8542,9.37E-02
+CF317_004551-T1,Carboxypeptidase,0.6315,5.66E-01
+CF317_009661-T1,Fungal_transdomain-containing protein,−0.5936,4.26E-01
+CF317_009392-T1,Fungal_transdomain-containing protein,−0.6382,1.93E-01
+CF317_0006744-T1,Ribosomal protein L37e,−0.6649,1.96E-01
+CF317_000112-T1,60S ribosomal protein L34-B,−0.7009,9.84E-02
+CF317_000184-T1,Large subunit ribosomal protein L24e,−0.7218,2.77E-01
+CF317_003175-T1,Poly(A) polymerase,−0.7450,9.79E-03
+CF317_006402-T1,4-hydroxyphenylpyruvate dioxygenase,−0.7730,4.57E-04
+CF317_009779-T1,Extracellular cell wall glucanase Crf1/allergen Asp F9,−0.8811,2.70E-01
+CF317_009003-T1,Serine/threonine-protein kinase TOR,−0.9558,9.75E-02
+CF317_002178-T1,"Indoleamine 2,3-dioxygenase",−1.1838,5.88E-04
+Mutant
+CF317_004755-T1,Glutamate dehydrogenase,1.9810,3.54E-01
+CF317_007501-T1,Glutamine synthetase,0.9516,2.84E-01
+CF317_001165-T1,Malic enzyme,0.6220,4.41E-01
+CF317_004816-T1,D-3-phosphoglycerate dehydrogenase,0.6044,5.51E-03
+CF317_002693-T1,Ornithine transcarbamylase,−0.5899,2.51E-02
+CF317_000519-T1,Arginase,−0.6439,1.12E-02
+CF317_006712-T1,Histidinol dehydrogenase,−0.6459,2.39E-02
+CF317_008030-T1,D-amino-acid oxidase domain-containing protein,−0.6799,2.92E-02
+CF317_008924-T1,"Homogentisate 1,2-dioxygenase",−0.6970,5.01E-01
+CF317_007970-T1,Multifunctional fusion protein,−0.7153,4.07E-01
+CF317_000649-T1,"Delta(3,5)-Delta(2,4)-dienoyl-CoA isomerase, mitochondrial",−0.7416,1.03E-02
+CF317_007412-T1,Histidinol-phosphate aminotransferase,−0.7514,5.09E-02
+CF317_003892-T1,Alkaline phosphatase,−0.8825,4.25E-01
+CF317_007070-T1,Multifunctional fusion protein,−0.9090,6.03E-02
+CF317_003175-T1,Poly(A) polymerase,−0.9882,9.79E-03
+CF317_006402-T1,4-hydroxyphenylpyruvate dioxygenase,−1.1274,4.57E-04
+CF317_002178-T1,"Indoleamine 2,3-dioxygenase",−1.4328,5.88E-04
+Response to stress and chemical
+Wild type
+CF317_004755-T1,Glutamate dehydrogenase,1.7627,3.54E-01
+CF317_006388-T1,Nitric oxide dioxygenase,0.9459,3.16E-01
+CF317_005767-T1,Alcohol dehydrogenase 1,0.8542,9.37E-02
+CF317_003242-T1,Catalase,−0.6330,7.85E-02
+CF317_009003-T1,Serine/threonine-protein kinase TOR,−0.9558,9.75E-02
+CF317_007018-T1,3-phytase,−0.9947,4.67E-04
+CF317_000687-T1,Catalase,−1.1410,6.34E-02
+Mutant
+CF317_004755-T1,Glutamate dehydrogenase,1.9810,3.54E-01
+CF317_006388-T1,Nitric oxide dioxygenase,0.7290,3.16E-01
+CF317_004909-T1,Adenylosuccinate synthetase,−0.6917,8.11E-02
+CF317_007970-T1,Multifunctional fusion protein,−0.7153,4.07E-01
+CF317_008612-T1,Aldedh domain-containing protein,−0.7312,2.05E-01
+CF317_007412-T1,Histidinol-phosphate aminotransferase,−0.7514,5.09E-02
+CF317_008426-T1,Glutathione reductase,−0.7680,8.19E-02
+CF317_007018-T1,3-phytase,−0.8087,4.67E-04
+CF317_000687-T1,Catalase,−0.8987,6.34E-02
+CF317_008773-T1,Catalase-peroxidase,−0.9459,3.42E-02
+Proteolysis
+Wild type
+CF317_008840-T1,Carboxypeptidase,1.0950,6.46E-01
+CF317_004157-T1,Peptidase_M14 domain-containing protein,0.8180,2.52E-01
+CF317_008998-T1,Putative fumarylacetoacetate hydrolase,0.7082,7.54E-02
+CF317_000103-T1,Zinc carboxypeptidase,0.6512,1.88E-01
+CF317_004551-T1,Carboxypeptidase,0.6315,5.66E-01
+Cytoskeleton and organelle organization
+Wild type
+CF317_009683-T1,"Endo-1,3(4)-beta-glucanase",−0.6918,2.10E-02
+CF317_009003-T1,Serine/threonine-protein kinase TOR,−0.9558,9.75E-02
+Mutant
+CF317_008503-T1,Thiamine thiazole synthase,0.8255,2.30E-01
+CF317_007856-T1,WD_REPEATS_REGION domain-containing protein,0.7141,1.88E-02

@@ -1,0 +1,15 @@
+Protein family,Contribution to root/root zone growth,Molecular function,References
+Monomeric actin
+ACTINACTIN7ACTIN2 and 8,Main effect on primary root growth and waving. Main actin involved in second rapid cell elongation (TZ-EZ boundary).Mild effect in primary root growth. Secondary role in cell elongation,"Change of actin organization (e.g., bundling)Maintenance of vacuolar constriction in late meristem cells","Nishimura et al., 2003Kandasamy et al., 2009Kato et al., 2010Scheuring et al., 2016Takatsuka et al., 2018"
+Actin nucleators and actin crosslinking/bundling proteins
+ARP2/3 and SCAR/WAVE complex,Root growth promotion. Regulation of speed cell expansion at the EZ meristem cell division,Regulation of actin organization and cell wall material delivery,"Dyachok et al., 2008,2011Takatsuka et al., 2018"
+FORMINSClass IFH1FH4FH5FH8Class IIRMD,"Regulation of root growth.Unknown, only expression data availableRegulation of root growthRegulation of root growthPromotion of root growth. Regulation of root waving. EZ cell length control.",Developmentally regulated subcellular localization.Increase in actin dynamics and maintenance of low bundling. Maintenance of endomembrane dynamicsRole in cell division (cytokinesis)Role in cell division (phragmoplast localization)Actin bundling and orientation,"Deeks et al., 2005Rosero et al., 2013Oulehlová et al., 2019Ingouff et al., 2005Xue et al., 2011Li et al., 2014"
+Actin capping/severing proteins
+"VILLINSVLN2, VLN3, VLN4",Root directional growth,Facilitation of actin turnover and bundling,"van der Honing et al., 2012Zou et al., 2019"
+ADF/COFILINSD-typeADF1ADF2,Root growth containment,Preventing actin bundling,"Dong et al., 2001bClément et al., 2009"
+AIP1,Root growth promotion,"Decrease of actin bundling, increase of actin dynamics important for trafficking","Ketelaar et al., 2004Dhonukshe et al., 2008"
+PROFILINSVegetativePRF1PRF3,Root growth promotionRoot growth inhibition,,"Ramachandran et al., 2000Fan et al., 2013"
+Actin-membrane binding proteins
+NETNET1A/B(Actin-PM)NET4A(Actin-Tonoplast),Root growth promotionRoot growth inhibition through vacuolar constriction in the MZ-TZ region,,"Deeks et al., 2012Kaiser et al., 2019"
+Motor proteins
+"MYOSINSMyosins XI-1, XI-2, and XI-K",Root growth promotion. EZ cell length control.,"Increase of actin organization, density, and dynamics. Maintenance of vacuolar constriction in late meristem cells.","Šamaj et al., 2000Peremyslov et al., 2010Scheuring et al., 2016"
