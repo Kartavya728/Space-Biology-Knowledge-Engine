@@ -216,7 +216,18 @@ export function ResponseDisplay({ response, theme }: ResponseDisplayProps) {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}
               >
-                {paragraph.text}
+                {(() => {
+                  const t: any = (paragraph as any)?.text;
+                  if (typeof t === 'string') return t;
+                  if (Array.isArray(t)) {
+                    return t.map((x) => (typeof x === 'string' ? x : JSON.stringify(x))).join('\n\n');
+                  }
+                  if (t && typeof t === 'object') {
+                    if ('text' in t && typeof (t as any).text === 'string') return (t as any).text;
+                    return JSON.stringify(t);
+                  }
+                  return String(t ?? '');
+                })()}
               </motion.div>
 
               {/* Images */}

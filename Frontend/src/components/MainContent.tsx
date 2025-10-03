@@ -25,6 +25,7 @@ import {
 import { AIAgent3D } from './AIAgent3D';
 import { ResponseDisplay } from './ResponseDisplay';
 import { api } from '../utils/api';
+import { useHistoryManager } from '../auth/context/historyManager';
 
 interface ThinkingStep {
   step: string;
@@ -35,10 +36,24 @@ interface ThinkingStep {
   timestamp: number;
 }
 
-export function MainContent({ userType, theme }) {
+interface Paragraph {
+  title: string;
+  text: string;
+  images: string[];
+  tables: string[];
+}
+
+interface ResponseData {
+  paragraphs: Paragraph[];
+  metadata: any;
+  userType: string;
+  overallTitle: string;
+}
+
+export function MainContent({ userType, theme, initialResponse }: { userType: any; theme: any; initialResponse?: ResponseData | null }) {
   const [query, setQuery] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [response, setResponse] = useState(null);
+  const [response, setResponse] = useState<ResponseData | null>(null);
   const [overallTitle, setOverallTitle] = useState('');
   const [thinkingHistory, setThinkingHistory] = useState<ThinkingStep[]>([]);
   const [showTransition, setShowTransition] = useState(false);
@@ -47,7 +62,7 @@ export function MainContent({ userType, theme }) {
   const [streamedText, setStreamedText] = useState('');
   const [streamSpeed, setStreamSpeed] = useState(5);
   const [isQuerySubmitted, setIsQuerySubmitted] = useState(false);
-  const fileInputRef = useRef(null);
+  const fileInputRef = useRef<HTMLInputElement | null>(null);
 
   const analystOptions = {
     scientist: {
@@ -87,6 +102,15 @@ export function MainContent({ userType, theme }) {
       ]
     }
   };
+
+  const { createHistory } = useHistoryManager();
+
+  useEffect(() => {
+    if (initialResponse) {
+      setResponse(initialResponse);
+      setIsQuerySubmitted(false);
+    }
+  }, [initialResponse]);
 
   useEffect(() => {
     if (streamingStepIndex === null || !isLoading) return;
@@ -154,8 +178,8 @@ export function MainContent({ userType, theme }) {
     setStreamingStepIndex(null);
     setStreamedText('');
 
-    const collectedParagraphs = [];
-    let collectedMetadata = null;
+    const collectedParagraphs: Paragraph[] = [];
+    let collectedMetadata: any = null;
 
     try {
       await api.streamAnalysis(
@@ -176,7 +200,20 @@ export function MainContent({ userType, theme }) {
             setOverallTitle(event.content);
           } 
           else if (event.type === 'paragraph') {
-            collectedParagraphs.push(event.content);
+            const paragraphText = typeof event.content === 'string'
+              ? event.content
+              : Array.isArray(event.content)
+                ? event.content.map((c: any) => (typeof c === 'string' ? c : JSON.stringify(c))).join('\n\n')
+                : (event.content && typeof event.content === 'object' && 'text' in event.content && typeof event.content.text === 'string')
+                  ? event.content.text
+                  : JSON.stringify(event.content);
+            const paragraph: Paragraph = {
+              title: '',
+              text: paragraphText,
+              images: [],
+              tables: []
+            };
+            collectedParagraphs.push(paragraph);
             setResponse({
               paragraphs: [...collectedParagraphs],
               metadata: collectedMetadata,
@@ -198,6 +235,18 @@ export function MainContent({ userType, theme }) {
             alert(`Error: ${event.content}`);
           } 
           else if (event.type === 'done') {
+            // Persist chat history to Supabase for the current user
+            try {
+              const assistantReply = (collectedParagraphs || [])
+                .map(p => p.text)
+                .join('\n\n');
+              if (assistantReply && finalQuery) {
+                createHistory(finalQuery, assistantReply);
+                console.log('Chat history Stored');
+              }
+            } catch (persistError) {
+              console.error('Failed to persist chat history:', persistError);
+            }
             setShowTransition(true);
             setTimeout(() => {
               setIsLoading(false);
@@ -212,6 +261,7 @@ export function MainContent({ userType, theme }) {
       setIsLoading(false);
       setIsQuerySubmitted(false);
     }
+
   };
 
   const handleFileUpload = (event) => {

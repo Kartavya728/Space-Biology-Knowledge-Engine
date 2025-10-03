@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { Button } from './ui/button';
 import { Avatar, AvatarFallback } from './ui/avatar';
@@ -16,6 +16,7 @@ import {
   Map,
   Rocket
 } from 'lucide-react';
+import { useHistoryManager } from '../auth/context/historyManager';
 
 export function Sidebar({ 
   user, 
@@ -25,8 +26,40 @@ export function Sidebar({
   onUserTypeChange, 
   onSignOut, 
   theme,
-  onToggle 
+  onToggle,
+  onSelectHistory
 }) {
+  const { getHistory, session, loading } = useHistoryManager();
+  const [historyOpen, setHistoryOpen] = useState(false);
+  const [historySessions, setHistorySessions] = useState<any[]>([]);
+
+  const handleHistoryClick = async () => {
+    try {
+      if (loading) {
+        console.log('History fetch skipped: auth loading');
+        return;
+      }
+      if (!session?.user?.id) {
+        console.warn('No user session found. Please sign in.');
+        return;
+      }
+      const result = await getHistory();
+      if (result?.success) {
+        console.log('User history sessions:', result.data);
+        const rows = Array.isArray(result.data) ? result.data : [];
+        const sessions = rows.map((r) => ({
+          query: r.query || '',
+          response: r.response || ''
+        }));
+        setHistorySessions(sessions);
+        setHistoryOpen((prev) => !prev || sessions.length > 0);
+      } else {
+        console.error('Failed to get history:', result?.error || 'Unknown error');
+      }
+    } catch (err) {
+      console.error('Error getting history:', err);
+    }
+  };
   const getUserTypeIcon = () => {
     switch (userType) {
       case 'scientist':
@@ -69,7 +102,7 @@ export function Sidebar({
   
   return (
     <motion.div 
-      className="w-80 h-full bg-black/20 backdrop-blur-sm border-r border-white/10 flex flex-col"
+      className="w-80 h-full bg-black/20 backdrop-blur-sm border-r border-white/10 flex flex-col relative z-50"
       initial={{ x: -300 }}
       animate={{ x: 0 }}
       transition={{ duration: 0.3 }}
@@ -187,11 +220,64 @@ export function Sidebar({
       <div className="p-4 border-t border-white/10 space-y-2">
         <Button
           variant="ghost"
-          className="w-full justify-start gap-3 text-gray-300 hover:text-white hover:bg-white/10"
+          type="button"
+          onClick= {handleHistoryClick}
+          className="w-full justify-start gap-3 text-gray-300 hover:text-white hover:bg-white/10 relative z-50"
         >
           <History className="w-5 h-5" />
           History
         </Button>
+        {historyOpen && historySessions.length > 0 && (
+          <div className="mt-2 max-h-64 overflow-auto space-y-2 p-2 bg-white/5 rounded border border-white/10">
+            {historySessions.map((item, idx) => (
+              <Button
+                key={idx}
+                variant="ghost"
+                type="button"
+                onClick={() => {
+                  let text: string = '';
+                  const resp = item.response;
+                  if (typeof resp === 'string') {
+                    text = resp;
+                  } else if (Array.isArray(resp)) {
+                    // If array of objects with text fields, join them; else stringify
+                    const parts = resp.map((r) => {
+                      if (r && typeof r === 'object' && 'text' in r && typeof r.text === 'string') {
+                        return r.text;
+                      }
+                      return JSON.stringify(r);
+                    });
+                    text = parts.join('\n\n');
+                  } else if (resp && typeof resp === 'object') {
+                    if (Array.isArray(resp.paragraphs)) {
+                      const parts = resp.paragraphs.map((p: any) => (typeof p?.text === 'string' ? p.text : JSON.stringify(p)));
+                      text = parts.join('\n\n');
+                    } else {
+                      text = JSON.stringify(resp);
+                    }
+                  } else {
+                    text = String(resp ?? '');
+                  }
+                  const responseData = {
+                    paragraphs: [
+                      { title: '', text, images: [], tables: [] }
+                    ],
+                    metadata: { total_paragraphs: 1, total_images: [], total_tables: [], source_documents: 0, user_type: userType },
+                    userType: userType,
+                    overallTitle: ''
+                  };
+                  if (onSelectHistory) {
+                    onSelectHistory(responseData);
+                  }
+                }}
+                className="w-full justify-start text-sm text-gray-300 hover:text-white hover:bg-white/10 truncate"
+                title={item.query}
+              >
+                {String(item.query || '').slice(0, 50)}{String(item.query || '').length > 50 ? '…' : ''}
+              </Button>
+            ))}
+          </div>
+        )}
         <Button
           variant="ghost"
           className="w-full justify-start gap-3 text-gray-300 hover:text-white hover:bg-white/10"
