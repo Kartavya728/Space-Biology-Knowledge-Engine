@@ -53,10 +53,10 @@ export default function LoginPage(props) {
   const teamMembers = [
     { name: 'Kartavya', role: 'RAG System and Frontend', avatar: '🚀' },
     { name: 'Surya Shrivastav', role: 'Knowldge Graph builder', avatar: '🛰' },
+    { name: 'Saksham Sethia', role: 'Backend', avatar: '✨' },
     { name: 'Yash Sharma', role: 'Data Scientist', avatar: '📊' },
     { name: 'Sapphire ..', role: 'Knowledge Graph', avatar: '🎨' },
-    { name: 'Sanvi ..', role: 'UI/UX Designer', avatar: '🎨' },
-    { name: 'Saksham Sethia', role: 'Backend', avatar: '🎨' }
+    { name: 'Sanvi ..', role: 'UI/UX Designer', avatar: '🎨' }
   ];
 
   const handleAuth = async () => {
