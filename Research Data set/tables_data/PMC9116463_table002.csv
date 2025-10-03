@@ -1,0 +1,15 @@
+,,,Relative protein abundance*,
+,,,,
+ORF,Protein,Putative function/activity,CEA10,ISSFT-021,IF1SW-F4,p-value
+""
+AFUA_3G08470,,Glucose-6-phosphate 1- dehydrogenaseGlutathione S-transferase,1.41,3.06,3.33,8.66E-07
+AFUA_4G14530,TpcF/GstC,involved in trypacidin biosynthesis,0.83,3.02,2.46,2.76E-06
+AFUA_4G11730,GldB,Glycerol dehydrogenase,1.29,2.83,3.70,5.34E-07
+AFUA_5G11430,,Quinone oxidoreductase,0.95,2.55,2.51,1.45E-09
+AFUA_2G03290,ArtA,14–3-3 family protein,0.67,2.21,2.82,1.90E-07
+AFUA_1G02820,Pst2,NADH-quinone oxidoreductase,−0.37,2.10,2.55,9.33E-06
+AFUA_2G15980,,3’ exoribonuclease family protein; pre-miRNA processing,0.02,1.24,2.20,4.73E-03
+AFUA_1G05850,,Erythromycin esterase,−0.16,1.22,2.48,6.61E-03
+AFUA_1G17370,Scf1,Heat shock protein,−2.95,−5.23,−4.26,4.25E-07
+AFUA_6G12450,Awh11,Heat shock protein,−4.05,−5.81,−5.12,5.46E-05
+AFUA_4G00860,DprA,"Dehydrin-like protein / oxidative, osmotic and pH stress responses",−3.54,−5.64,−4.62,1.37E-07

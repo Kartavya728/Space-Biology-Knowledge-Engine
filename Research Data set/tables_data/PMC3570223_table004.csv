@@ -1,0 +1,34 @@
+Gene symbol,Entrez gene ID,Gene name,p-Valuea,Fold change
+Csf1r,12978,Colony stimulating factor 1 receptor,0.04*,−1.6
+Hras1,15461,Harvey rat sarcoma virus oncogene 1,0.24,−1.3
+Ets1,23871,"E26 avian leukemia oncogene 1,5′ domain",0.59,1.3
+Ets2,23872,"E26 avian leukemia oncogene 2,3′ domain",0.79,1.1
+Etv3,27049,"ETS-domain transcriptional repressor, METS, Pe1",0.32,−2.0
+Ddx20,53975,"DEAD (Asp-Glu-Ala-Asp) box polypeptide 20, Dp103.",0.83,−1.1
+Jun,16476,Jun oncogene,0.62,1.3
+Fos,14281,FBJ osteosarcoma oncogene,0.14,−1.9
+Sin3,20467,"Transcriptional regulator, SIN3B (yeast)",0.89,−1.0
+Hdac2,15182,Histone deacetylase 2,0.92,1.0
+Ncord2,20602,Nuclear receptor co-repressor 2,0.37,−1.2
+E2f4,104394,E2F transcription factor 4,0.04*,−1.6
+Rbl-1,19650,Retinoblastoma-like 1 (p107),0.02*,-4.4
+Rbl-2,19651,Retinoblastoma-like 2,0.35,−1.4
+Hoxb7,15415,Homeobox B7,0.08,1.1
+Egr1,13653,Early growth response 1,0.03,2.1
+Irf1,16362,Interferon regulatory factor 1,0.79,−1.0
+Chrac1,93696,Chromatin accessibility complex 1,0.50,−1.1
+Hoxb4,15412,Homeobox B4,0.01,1.7
+Hoxb3,15410,homeobox B3,0.03,1.2
+Cebpa,12606,"CCAAT/enhancer binding protein (C/EBP), alpha",0.10,−1.0
+Cebpb,12608,"CCAAT/enhancer binding protein (C/EBP), beta",0.09,1.1
+Cebpg,12611,"CCAAT/enhancer binding protein (C/EBP), gamma",0.69,−1.1
+Gata1,14460,GATA binding protein 1,0.37,−1.5
+Gata2,14461,GATA binding protein 2,0.04*,−2.1
+Scly,50880,Selenocysteine lyase,0.38,1.1
+Myb,17863,Myeloblastosis oncogene,0.19,1.8
+Myc,17869,Myelocytomatosis oncogene,0.05,−1.7
+Runx1,12394,Runt re1ated transcription factor 1,0.04*,−1.6
+Tnf,21926,Tumor necrosis factor,0.66,−1.1
+Stat3,20848,signal transducer and activator of transcription 3,0.64,−1.1
+Sfpi1,20375,SFFV proviral integration 1,0.56,1.1
+Zbtb16,235320,Zinc finger and BTB domain containing 16,0.21,1.2

@@ -1,0 +1,9 @@
+Cancer Type,Microgravity Model,Model,Effect,Study
+Breast cancer,6 min of r-µg *; PF ** maneuvers,MCF-7 cell line,"Rearrangement of F-actin and tubulin, appearance of filopodia- and lamellipodia-like structures; PF-induced differential regulation ofKRT8,RDX,TIMP1,CXCL8(up),VCL, andCDH1(down) genes","Nassef et al., 2019 [56]"
+Breast cancer,Exposure to an RPM##,MCF-7 cell line,"Cells formed multicellular spheroids resembling epithelial ducts; microgravity-induced differential regulation ofIL8,VEGFA,FLT1,ESR1(up),ACTB,TUBB,FN1,CASP9,CASP3, andPGR1(down) genes","Kopp et al., 2016 [57]"
+Breast cancer,PF ** maneuvers; incubator RPM##,MDA-MB-231 cells,"Differential regulation ofICAM1,CD44,ERK1,NFKB1,FAK1(up),ANXA2, andBAX(down) genes","Nassef et al., 2019 [58]"
+Glioma,Exposure to an RPM##,U251 cells,Induction of apoptosis; reduced FAK/RhoA/Rock and FAK/Nek2 signaling events,"Deng et al., 2019 [59]"
+Lung cancer (non small cell),Exposure to an RPM##,NCI-H1703 (CRL-5889) cells,"Formation of multicellular spheroids; spherical rearrangement of actin filaments in the outer region of cytoplasm; increased apoptosis, upregulation ofTP53,CDKN2A,RB1,PTEN, andSOX2in stimulated adherent cells","Dietz et al., 2019 [60]"
+Melanoma,Exposure to a 3-D Clinostat#,A375 cells,"Decreased cell viability; increase in caspase 3/7 activity; reduced cell proliferation; change in cell morphology (presence of membrane blebbing lamellipodia, and stress fibers, absence of filopodia)","Przystupski et al., 2021 [61]"
+Thyroid cancer,Exposure to an RPM##,FTC-133 cells,"Cells formed multicellular spheroids; differential regulation ofERK1,EGF(up),CTGF, andCAV(down) genes in multicellular spheroids","Warnke et al., 2014 [62]"
+Thyroid cancer,10 day of r-µg *,FTC-133 cells,"Differential expression of IL6, IL7, IL8, VEGF, TIMP1, MMP3, CCL4, and B2M (up) proteins","Riwaldt et al., 2015 [63]"

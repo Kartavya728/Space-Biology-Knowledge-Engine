@@ -1,0 +1,18 @@
+“Hematopoiesis” array,“Osteoporosis” and “osteogenesis” array,“Adipogenesis” array
+,,
+Differentially expressed intransplant recipients(n = 6/84 genes),Differentially expressed intransplant recipients(n = 12/148 genes)a,Differentially expressed intransplant recipients(n = 4/84 genes)
+,,
+Symbol,Fold change,P<,Symbol,Fold change,P<,Symbol,Fold change,P<
+""
+Angpt1,−1.4,0.004,Bmpr1a,−2.2,0.010,Cdkn1a,−1.2,0.014
+Hdac4,1.3,0.004,Col14a1,−1.8,0.045,Fgf1,−1.2,0.025
+Hdac9,−1.6,0.034,Col4a1,1.4,0.030,Irs1,−1.8,0.012
+Il1a,−1.6,0.007,Fn1,1.6,0.003,Sfrp1,1.4,0.024
+Mmp9,1.4,0.037,Il15,−1.4,0.041,,,
+StatS,1.2,0.032,Itga2,−1.6,0.007,,,
+,,,Lrp1,1.4,0.042,,,
+,,,Lrp5,1.2,0.043,,,
+,,,Mmp9,1.3,0.037,,,
+,,,Tnfrsf1b,1.2,0.048,,,
+,,,Vegfa,−1.2,0.017,,,
+,,,Wnt10b,−2.1,0.032,,,

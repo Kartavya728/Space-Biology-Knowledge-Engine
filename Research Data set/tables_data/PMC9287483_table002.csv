@@ -1,0 +1,10 @@
+,Conditions,Ecotype,Fixation,Tissue,Authors,GLDS
+ABRS,μglight 12 days,"Adh:GFP, DR5r:GFP,35s:GFP",RNAlater,Root Leaf Hypocotyl,Paul et al. (2013),GLDS-7
+CARA,μgdark/ambient light 11 days,"WS, Col-0,phyD",RNAlater,Root tips,Paul et al. (2017),GLDS-120
+SJ-10,"1g 3 days 16h light μg 2,5 days 16h light",Col-0,RNAlater,Seedlings,Xu et al. (2018),GLDS-220
+μgshort-day long-day 48 days,"Col-0,pHSP:FT,pHSP:GF",RNAlater,Rosette leaves,Xie et al. (2022),NA
+VPS,Μgconstant light 4/8 days,"WS, Col-0",RNAlater,Root,Beisel et al. (2019),GLDS-218
+μg constant light 11 days,WS,RNAlater,Root Leaf,Zhou et al.(2019),GLDS-217
+Μgconstant light 4/8 days,"Col-0,spr1, WS,sku5",RNAlater,Root,Califar et al. (2020),GLDS-218
+Μgconstant light 11 days,"Col-0,met1-7,elp2-5",RNAlater,Root Leaf,Paul et al. (2021),GLDS-416 GLDS-427
+TG-2,μgshort-day long-day 27 days,"Col0,pFT:GFP,ft-10",RNAlater,Rosette leaves,"Wang et al., 2022",NA

@@ -1,0 +1,13 @@
+Gene Set,Kidney Gene #,Liver Gene #,Kidney ES,Liver ES,Kidney NES,Liver NES,Kidney FWERp,Liver FWERp,Kidney Np,Liver Np,Kidney FDRq,Liver FDRq,Kidney Rank,Liver Rank
+Amine receptor activity,23,23,0.24,−0.21,0.79,−1.01,1,0.983,0.8,0.55,1,0.964,2860,7304
+Amino acid catabolic process,19,19,0.22,−0.17,0.68,−0.79,1,1,0.917,0.964,1,0.836,3122,6652
+Blood coagulation,35,35,0.24,−0.19,0.82,−1.1,1,0.94,0.81,0.4,1,0.833,6444,6951
+Coagulation,35,35,0.24,−0.19,0.82,−0.98,1,0.991,0.79,0.75,1,0.684,6444,6951
+Cell division,18,18,0.19,−0.33,0.59,−1.3,1,0.548,0.968,0.158,0.998,0.326,4143,6233
+DNA packaging,23,23,0.3,−0.21,0.97,−0.98,1,0.991,0.532,0.577,1,0.782,5378,7345
+Cytokinesis,16,16,0.2,−0.34,0.6,−1.46,1,0.229,0.964,0.02,1,0.159,448,6088
+ER Golgi intermediatecompartment,16,16,0.35,−0.22,1.06,−0.94,1,0.994,0.39,0.566,0.923,0.712,5924,7226
+Neuropeptide binding,17,17,0.29,−0.2,0.89,−0.93,1,0.994,0.67,0.679,1,0.648,4808,6250
+Neuropeptide receptorActivity,17,17,0.29,−0.2,0.89,−0.77,1,1,0.638,0.853,1,0.792,4808,6250
+Peptide receptor activity,38,38,0.29,−0.15,1.01,−1,1,0.988,0.477,0.5,0.99,0.84,4920,6917
+Rhodopsin like receptor activity,80,80,0.23,−0.15,0.86,,1,0,0.834,,1,1,5403,7907

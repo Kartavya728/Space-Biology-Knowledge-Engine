@@ -1,0 +1,80 @@
+REAGENT or RESOURCE,SOURCE,IDENTIFIER
+Antibodies
+""
+Alexa Fluor 488 Donkey anti-goat IgG; 1/300 dilution,Thermo Fisher Scientific,Cat# A11055; RRID:AB_2534102
+Goat anti-mouse Vcam1; stock made at 1 mg/mL; 1/100 dilution,Fisher Scientific,Cat# PIPA547029; RRID:AB_2609027
+"Rat anti-CD11b-biotin, clone M1/70; 1/200 dilution",BD Biosciences,Cat# 553309; RRID:AB_394773
+Rat anti-CD31-biotin; 1/200 dilution,Fisher Scientific,Cat# 13-0311-85; RRID:AB_466421
+"Rat anti-mouse CD34-BV421, CloneRAM34; 1/20 dilution",BD Biosciences,Cat# 562608; RRID:AB_11154576
+Rat anti-CD45-biotin; 1/500 dilution,BD Biosciences,Cat# 553078; RRID:AB_394608
+"Rat anti-Ly-6A/E-biotin (Sca1), clone E13–161.7; 1/200 dilution",BD Biosciences,Cat# 553334; RRID:AB_394790
+"anti-Alpha 7 Integrin Alexa Fluor 647, cloneR2F2; 1/25 dilution",Ablab.ca,Cat# 67-0010-05;RRID:AB_2890939
+Biotinylated mouse anti-human CD31; 1/50 dilution,Thermo Fisher Scientific,Cat# 13-0319-82;RRID:AB_466423
+""
+"Chemicals, peptides, and recombinant proteins"
+""
+4% paraformaldehyde,Thermo Scientific,Cat# J19943-K2
+Antigen unmasking solution (Commercial citrate buffer),Vector Labs,Cat# H-3300
+Bovine Serum Albumin (Fraction V),Gemini Bio-Products,Cat# 700-100P
+Cenpb-Cy3,PNA Bio,Cat# F3002
+Dextran sulfate sodium salt,Sigma-Aldrich,Cat# D8906
+EDTA,Invitrogen,Cat#15575-020
+"Ethanol, 200 proof",Decon Labs,Cat# 2701
+Ethylene Carbonate,Sigma-Aldrich,Cat# E26258
+Formamide,Sigma-Aldrich,Cat# 47670
+"Immersion oil, type A",Nikon,Cat# MXA20233
+OCT,Thermo Scientific,Cat# 6502G
+Potassium chloride,Sigma Aldrich,Cat# P9541
+"Potassium phosphate, monobasic",Sigma Aldrich,Cat# P9791
+Prolong gold plus DAPI,Thermo Scientific,Cat#P36935
+RNAse A,Fisher Scientific,Cat# AM9780
+Sodium Chloride,Sigma Aldrich,Cat# S6191
+"Sodium Phosphate, dibasic, dihydrate",Sigma Aldrich,Cat# S3264
+"SSC buffer, 20×",Corning,Cat# 46-020-CM
+Streptavidin PE-Cy7,BioLegend,Cat# 405206
+Streptavidin Cy3,Thermo Scientific,Cat# SA1010
+Sucrose,Sigma-Aldrich,Cat#S0389
+TelC-Alexa Fluor 647,PNA Bio,Cat# F1013
+Tris-Cl,Quality Biological,Cat#351-006-131
+Triton X-100,Fisher Scientific,Cat# BP151
+Tween 20,Fisher Scientific,Cat# BP337
+""
+Experimental models: organisms/strains
+""
+"Mouse: C57Bl/6J, 2-5-month-old males",Jackson Laboratory,Stock# 000664; RRID:IMSR_JAX:000664
+"Mouse: IKK2CA: B6.Cg-Gt(ROSA)26Sortm4(Ikbkb)/Rsky/J, 2–5-month-old males",Jackson Laboratory,Stock# 008242; RRID:IMSR_JAX:008242
+"Mouse: Pax7ERT2Cre: B6.Cg-Pax7tm1(cre/ERT2)Gaka/J, 2–5-month-old males",Jackson Laboratory,Stock# 017763; RRID:IMSR_Jax:017763
+"Mouse: mdx/mTR: B6.Cg-Terctm1RdpDmdmdx-4Cv/BlauJ, 7-month-old males",Jackson Laboratory,Stock# 023535;RRID: IMSR_Jax:023535
+"Rat: Sprague Dawley, male, 14-month-old male",Charles River,Stock# 001;RRID: MGI:5651135
+""
+Biological samples
+""
+"Human skeletal muscle samples, 10–15-year-old male",Obtained in house,N/A
+""
+Software and algorithms
+""
+Graphpad Prism v. 9.1.2,Licensed Software,https://www.graphpad.com
+Image J,Open Source,https://imagej.nih.gov/ij/
+Java SE 11,Open Source,https://www.oracle.com/java/technologies/javase-downloads.html
+Microsoft Excel,Licensed Software,https://www.office.com
+NIS-Elements,Licensed Software,https://www.nikon.com/products/microscope-solutions/lineup/img_soft/nis-elements/
+Telometer ImageJ Plugin,Open Source,https://demarzolab.pathology.jhmi.edu/telometer/
+""
+Other
+""
+Coplin Staining Jar,Thermo Fisher Scientific,Cat# S17495A
+Slide Tray for Immuno-Staining with Black Cover,RPI corp.,Cat# 195801
+6 well plates,VWR,Cat#10062-892
+1.5 mL microcentrifuge tubes,VWR,Cat# 10025-724
+15 mL centrifuge tubes,VWR,Cat# 10025-692
+50 mL centrifuge tubes,VWR,Cat# 10025-702
+Superfrost plus microscope slides,Thermo Fisher Scientific,Cat# 1255015
+"Super HT PAP Pen, mini",RPI corp.,Cat# 195506
+"Tissue Path disposable base molds, 15×15×5 mm",Thermo Fisher Scientific,Cat# 22-363-553
+"VWR VistaVision Cover Glass, No. 1",VWR,Cat# 16004-096
+Compact Digital Rocker,Thermo Scientific,Cat# 88880020
+Isotemp Water Bath,Fisher Scientific,Model# 2320
+Steamer,Hamilton Beach,Model# VS02
+Thermobrite Slide Warmer,Leica,Model# S500-12
+Thermomixer,Fisher Scientific,Cat# 05-412-500
+Widefield Microscope,Nikon,Model# NiU

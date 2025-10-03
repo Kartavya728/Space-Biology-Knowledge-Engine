@@ -1,0 +1,6 @@
+Parameter,Ground Control,Spaceflight,P-value,% Difference
+"Total Volume (TV), mm3",3.3±0.4,3.1±0.5,0.515,
+"Bone Volume (BV), mm3",2.3±0.3,2.3±0.3,0.095,
+"Bone Volume Fraction (BV/TV), %",77.7±0.9,72.8±4*,0.005,−6.29
+"Average Bone Thickness, mm",0.15±0.008,0.13±0.01*,0.002,−11.91
+Linear Attenuation Coefficient,5.1E−2±2.7E−3,5.1E−2±1.5E−3,0.751,

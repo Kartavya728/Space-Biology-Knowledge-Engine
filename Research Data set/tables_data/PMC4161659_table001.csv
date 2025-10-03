@@ -1,0 +1,34 @@
+End Point,WT,ob/ob,ob/ob(pair-fed),ANOVA P*
+Dual Energy X-ray Absorptiometry
+Total Femur
+BMC (g),0.023 ± 0.000,0.019 ± 0.000a,"0.017 ± 0.000a,b",0.0001
+Bone area (cm2),0.43 ± 0.01,0.40 ± 0.00a,"0.37 ± 0.01a,b",0.0001
+BMD (g/cm2),0.053 ± 0.001,0.048 ± 0.000a,0.047 ± 0.000a,0.0003
+Microcomputed Tomography
+Total Femur
+Length (mm),14.9 ± 0.1,14.2 ± 0.1a,"13.4 ± 0.1a,b",<0.0001
+Bone volume (mm3),18.5 ± 0.3,16.8 ± 0.3a,"15.0 ± 0.3a,b",<0.0001
+Midshaft Femur(cortical bone)
+Cross-sectional volume (mm3),0.41 ± 0.01,0.40 ± 0.01,0.42 ± 0.01,0.4220
+Cortical volume (mm3),0.20 ± 0.00,0.18 ± 0.00a,"0.17 ± 0.00a,b",0.0008
+Marrow volume (mm3),0.22 ± 0.00,0.23 ± 0.00,"0.25 ± 0.01a,b",0.0012
+Cortical thickness (μm),195 ± 3,176 ± 3a,"159 ± 2a,b",0.0001
+Polar moment of inertia (mm4),0.36 ± 0.01,0.33 ± 0.01,0.33 ± 0.01,0.4220
+Distal Femur Metaphysis(cancellous bone)
+Bone volume/tissue volume (%),11.2 ± 0.8,13.2 ± 0.5a,"18.1 ± 0.5a,b",0.0004
+Connectivity density (1/mm3),106 ± 9,173 ± 7a,190 ± 8a,<0.0001
+Trabecular thickness (μm),44 ± 1,41 ± 1,45 ± 0b,0.0365
+Trabecular number (mm−1),4.8 ± 0.1,5.2 ± 0.1a,"5.7 ± 0.1a,b",0.0001
+Trabecular separation (μm),210 ± 4,191 ± 4a,"173 ± 4a,b",0.0013
+Distal Femur Epiphysis(cancellous bone)
+Bone volume/tissue volume (%),31.2 ± 0.6,36.1 ± 0.6a,36.6 ± 0.9a,0.0013
+Connectivity density (1/mm3),155 ± 4,254 ± 8a,261 ± 7a,<0.0001
+Trabecular thickness (μm),64 ± 1,60 ± 1a,58 ± 1a,0.0001
+Trabecular number (mm−1),5.5 ± 0.1,6.7 ± 0.1a,6.7 ± 0.1a,0.0004
+Trabecular separation (μm),179 ± 2,138 ± 3a,138 ± 3a,<0.0001
+Lumbar Vertebra(cancellous bone)
+Bone volume/tissue volume (%),21.8 ± 1.0,31.5 ± 0.8a,"34.2 ± 0.5a,b*",<0.0001
+Connectivity density (1/mm3),198 ± 10,364 ± 15a,191 ± 5b,<0.0001
+Trabecular thickness (μm),49 ± 1,50 ± 0.5,"54 ± 0.4a,b",0.0010
+Trabecular number (mm−1),4.6 ± 0.1,6.0 ± 0.1a,5.8 ± 0.1a,0.0004
+Trabecular separation (μm),215 ± 5,160 ± 3a,163 ± 3a,0.0005

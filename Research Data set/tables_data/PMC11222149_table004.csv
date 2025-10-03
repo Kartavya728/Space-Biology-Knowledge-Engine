@@ -1,0 +1,1 @@
+lnmicrobial_feature_abundance+minval~β0+β1Time×Armpit+β2Time×ToeWeb+β3Time×NapeOfNeck+β4Time×Postauricular+β5Time×Forehead+β6Time×BellyButton+β7Time×GlutealCrease+β8Time×TZone+1∣Crew.ID+ϵi,4

@@ -1,0 +1,4 @@
+Plasmids,Size (bp),Inc group,GC%,N° ORFs,Starting codons,Gene function,virulence factors-encoded,ATB
+pChi7122-2,"82,676",IncFII,52.8,115,ATG (78.26%) GTG (14.78%) TTG (6.08%),18.26% (known and putative virulence genes) 41.74% (involved in plasmid functions) 4.35% (ISs) 19.13% (CHP) 16.52% (HP),EitABCD,"Strr, Sxtr"
+pChi7122-3,"56,676",IncI2,42.7,86,ATG (86.04%) GTG (6.8%) TTG (5.81%),26.74% (known and putative virulence genes) 31.39% (involved in plasmid functions) 2.32% (ISs) 8.14% (CHP) 31.39% (HP),Type IV Pil fimbriae,-
+pChi7122-4,"4,300",ColE2-like,49.3,3,ATG (100%),66.66% (involved in plasmid functions) 33.34% (CHP),None,-

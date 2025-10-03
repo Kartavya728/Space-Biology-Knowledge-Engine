@@ -1,0 +1,4 @@
+Comparison,# DEG (adj. p < 0.05),# DEG (adj. p < 0.05 & |Log2 FC| > 1.5),# Enriched GO Terms (NOM p < 0.01),# Enriched GO Terms (FDR <0.5 & NOM p < 0.01),# Enriched GO Terms (FDR <0.25 & NOM p < 0.01)
+Euth_C_DI (n = 6) vs. Euth_I_LN2 (n = 6),2,0,"15, 17","0, 0","0, 0"
+Euth_C_LN2 (n = 6) vs. Euth_I_LN2 (n = 6),36,24,"24, 24","0, 22","0, 11 (26 with p < 0.05)"
+Euth_C_RL (n = 6) vs. Euth_I_LN2 (n = 6),2,2,"30, 9","1, 2","0, 0"

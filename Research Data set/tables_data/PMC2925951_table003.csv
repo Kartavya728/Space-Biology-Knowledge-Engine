@@ -1,0 +1,36 @@
+Transporters:,,
+Gene,Description,Log2
+At2g38170,calcium exchanger (CAX1),−0.5676
+At4g13420,potassium transporter (HAK5),1.5548
+At5g43350,inorganic phosphate transporter (PHT1) (PT1),0.3541
+At4g37640,calcium-transporting ATPase 2 (ACA2) PM-type,0.3525
+At3g17690,cyclic nucleotide-binding transporter 2 (CNGC19),0.9209
+At5g53130,cyclic nucleotide-regulated ion channel (CNGC1),−0.3754
+Transcription factors:,,
+Gene name,Description,Log2
+At3g46090,zinc finger (C2H2 type) family protein (ZAT7),0.9947
+At3g56400,WRKY family transcription factor (WRKY 70),−0.9454
+Kinases:,,
+Gene name,Description,Log2
+At1g01140,CBL-interacting protein kinase 9 (CIPK9),1.7794
+phytohormone associated:,,
+Gene name,Description,Log2
+At1g78390,9-cis-epoxycarotenoid dioxygenase,2.554
+At5g65800,1-aminocyclopropane-1-carboxylate synthase,1.8605
+At1g72520,lipoxygenase,1.3473
+Cell wall related:,,
+Gene name,Description,Log2
+At2g23130,arabinogalactan-protein (AGP17),−1.149
+At2g23130,arabinogalactan-protein (AGP17),−0.7107
+At1g55330,arabinogalactan-protein (AGP21),−1.0069
+At5g10430,arabinogalactan-protein (AGP4),−0.4932
+At5g65390,arabinogalactan-protein (AGP7),−0.7772
+At4g12730,fasciclin-like arabinogalactan-protein (FLA2),−0.3949
+At1g03870,fasciclin-like arabinogalactan-protein (FLA9),−0.501
+At1g64440,UDP-glucose 4-epimerase (RHD1),−0.5767
+At4g03210,xyloglucan endotransglycosylase (XTH9),−0.4144
+At2g20750,beta-expansin (EXPB1),−1.0351
+At1g20190,alpha-expansin (EXP11),0.7098
+At3g15370,alpha-expansin (EXP12),3.2099
+At4g01630,alpha-expansin (EXP17),2.4955
+At5g02260,alpha-expansin (EXP9),0.793

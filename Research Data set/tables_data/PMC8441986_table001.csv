@@ -1,0 +1,111 @@
+REAGENT or RESOURCE,SOURCE,IDENTIFIER
+Biological Samples,,
+Human PBMCs,Consented Donors,N/A
+NASA Twin Study Unsorted PBMCs,Consented Donors,N/A
+NASA Twin Study Lymphocyte Depleted Cells,Consented Donors,N/A
+"NASA Twin Study CD8 CD4, CD14 and CD19 Cells",Consented Donors,N/A
+Mouse Blood,C57BL/6J Wtfemale,N/A
+Mouse Plasma,C57BL/6J Wtfemale,N/A
+Mouse Liver,C57BL/6J Wtfemale,N/A
+Mouse Heart,C57BL/6J Wtfemale,N/A
+"Chemicals, Peptides, and Recombinant Proteins",,
+RLT+ Buffer,QIAGEN,Cat# 1053393
+Triton X-100,Sigma,Cat# X100
+TRIzol,ThermoFisher,Cat# 15596026
+Ficoll-Paque,VWR,Cat# 95038-168
+1x Phosphate Buffered Saline (pH 7.4),Thermofisher Scientific,Cat# 10010023
+EGM-2 Endothelial Cell Growth Medium-2 Bullet-Kit,Lonza,Cat# CC-3162
+EGM Endothelial Cell Growth Medium Bullet-Kit,Lonza,Cat# CC-3124
+Rat tail Collagen Type 1,BD Biosciences,Cat# 354236
+Matrigel Matrix,BD Biosciences,Cat# 356230
+Phorbol-12-myristate-13-acetate: PMA,Millipore,Cat# 524400
+"5-(4,6-Dichlorotriazinyl) Aminofluorescein (DTAF)",Thermofisher Scientific,Cat# D-16
+MP Biomedicals Trypsin-EDTA Solution,Thermofisher Scientific,Cat# ICN1689149
+Critical Commercial Assays,,
+miRNeasy serum/plasma kit,QIAGEN,Cat# 217184
+miRNeasy mini kit,QIAGEN,Cat# 217004
+Allprep kit,QIAGEN,Cat# 80204
+miRCURY LNA RT kit,QIAGEN,Cat# 339340
+QX200 ddPCR Evagreen Supermix,BioRad,Cat# 1864034
+miRNA primers,QIAGEN,Listed under “Oligonucleotides”
+NEBNext® Multiplex Small RNA Library Prep Set for Illumina®,NEB,NEB# E7560
+NEBNext® Multiplex Oligos for Illumina® Dual Index Primers,NEB,"NEB# E7600, NEB# E7780"
+Index primers,NEB,NEB# E7560
+iSCRIPT™ cDNA synthesis kit,Bio-Rad,Cat# 1708890
+iQ™ SYBR® Green Supermix,Bio-Rad,Cat# 170-8880
+TruSeq Small RNA Sample Prep Kits,Illumina,RS-200-0012
+Rhapsody AbSeq reagent pack,BD Biosciences,Cat# 633771
+Rhapsody Human Immune Response panel,BD Biosciences,Cat# 633750
+Rhapsody custom gene panel (SeeTable S3),BD Biosciences,Cat# 633743
+Human Single cell multiplexing kit,BD Biosciences,Cat# 633781
+SureCell ATAC-seq Library Prep Kit,Bio-Rad,Cat# 17004620
+SureCell ddSEQ Index Kit,Bio-Rad,Cat# 12009360
+Deposited Data,,
+MirGeneDB sequences,"(Fromm et al., 2020)",https://mirgenedb.org/
+miRNA-seq for mice data,NASA GeneLab (https://genelab.nasa.gov/),"GLDS-334, GLDS-335, GLDS-336, GLDS-337"
+NASA Twin Study miRNA-seq results,This paper,N/A
+miRNA ddPCR raw data,This paper,LSDA (NASA)
+NASA Twin Study BD Rhapsody Data,This paper and Getz et al. (2020),N/A
+NASA Twin Study scATAC Data,This paper,N/A
+Experimental Models: Cell Lines,,
+Human: HUVECs,Lonza,Cat# CC-2519
+Experimental Models: Organisms/Strains,,
+Mouse: C57BL/6J,"Jackson Labs, Sacramento, CA","(IMSR Cat# JAX:000664, RRID:IMSR_JAX:000664)"
+Mouse: C57BL/6J,"Jackson Laboratory Maine,","(IMSR Cat# JAX:000664, RRID:IMSR_JAX:000664)"
+Rat: Wistar,"Charles River Laboratories, Wilmington, MA","(RGD Cat# 2312511, RRID:RGD_2312511)"
+Mouse: BALB/cAnNTac,Taconic,"(IMSR Cat# TAC:balb, RRID:IMSR_TAC:balb)"
+Oligonucleotides,,
+hsa-miR-17-5p miRCURY LNA miRNA PCR Assay: MIMAT0000070: 5′CAAAGUGCUUACAGUGCAGGUAG,QIAGEN,Cat# YP02119304
+hsa-miR-146a-5p miRCURY LNA miRNA PCR Assay: MIMAT0000449: 5′UGAGAACUGAAUUCCAUGGGUU,QIAGEN,Cat# YP00204688
+hsa-miR-223-3p miRCURY LNA miRNA PCR Assay: MIMAT0000280: 5′UGUCAGUUUGUCAAAUACCCCA,QIAGEN,Cat# YP00205986
+hsa-let-7a-5p miRCURY LNA miRNA PCR Assay: MIMAT0000062: 5′UGAGGUAGUAGGUUGUAUAGUU,QIAGEN,Cat# YP00205727
+hsa-mir-92a-3p miRCURY LNA miRNA PCR Assay: MIMAT0000092: 5′UAUUGCACUUGUCCCGGCCUGU,QIAGEN,Cat# YP00204258
+hsa-miR-24-3p miRCURY LNA miRNA PCR Assay: MIMAT0000080: 5′UGGCUCAGUUCAGCAGGAACAG,QIAGEN,Cat# YP00204260
+hsa-miR-125b-5p miRCURY LNA miRNA PCR Assay: MIMAT0000423: 5′UCCCUGAGACCCUAACUUGUGA,QIAGEN,Cat# YP00205713
+hsa-miR-16-5p miRCURY LNA miRNA PCR Assay: MIMAT0000069: 5′UAGCAGCACGUAAAUAUUGGCG,QIAGEN,Cat# YP00205702
+hsa-miR-26a-5p miRCURY LNA miRNA PCR Assay: MIMAT0000082: 5′UUCAAGUAAUCCAGGAUAGGCU,QIAGEN,Cat# YP00206023
+hsa-miR-145-5p miRCURY LNA miRNA PCR Assay: MIMAT0000437: 5′GUCCAGUUUUCCCAGGAAUCCCU,QIAGEN,Cat# YP00204483
+mmu-miR-217-5p miRCURY LNA miRNA PCR Assay: MIMAT0000679: 5′UACUGCAUCAGGAACUGACUGGA,QIAGEN,Cat# YP00205070
+hsa-miR-34a-5p miRCURY LNA miRNA PCR Assay: MIMAT0000255: 5′UGGCAGUGUCUUAGCUGGUUGU,QIAGEN,Cat# YP00204486
+hsa-miR-21-5p miRCURY LNA miRNA PCR Assay: MIMAT0000076: 5′UAGCUUAUCAGACUGAUGUUGA,QIAGEN,Cat# YP00204230
+mmu-miR-25-5p miRCURY LNA miRNA PCR Assay: MIMAT0017049: 5′AGGCGGAGACUUGGGCAAUUGC,QIAGEN,Cat# YP02118413
+hsa-let-7c-5p miRCURY LNA miRNA PCR Assay: MIMAT0000064: 5′UGAGGUAGUAGGUUGUAUGGUU,QIAGEN,Cat# YP00204767
+Software and Algorithms,,
+miRTrace,"(Kang et al., 2018)",https://github.com/friedlanderlab/mirtrace
+miRDeep2,"(Friedländer et al., 2012)",https://www.mdc-berlin.de/content/mirdeep2-documentation; RRID:SCR_010829
+Cytoscape,"(Shannon et al., 2003)",https://cytoscape.org; RRID:SCR_003032
+ClueGo/CluePedia,"(Bindea et al., 2013)",http://www.ici.upmc.fr/cluego/; RRID:SCR_005748
+DIANA microT-CDS tool,"(Paraskevopoulou et al., 2013;Reczko et al., 2012)",http://carolina.imis.athena-innovation.gr/dianatools/web/index.php; RRID:SCR_016510
+miRNet 2.0,"(Chang et al., 2020)",https://www.mirnet.ca/
+Rtsne v0.15,"(van der Maaten and Hinton, 2008)",https://github.com/jkrijthe/Rtsne; RRID:SCR_016342
+corrplot v0.84,n/a,https://github.com/taiyun/corrplot
+ggplot2 v3.3.1,"(Wickham, 2016)",https://ggplot2.tidyverse.org; RRID:SCR_014601
+pheatmap V1.0.12,Kolde Rpheatmap: Pretty heatmaps software; 2015,https://cran.r-project.org/web/packages/pheatmap/index.html; RRID:SCR_016418
+ACGT101-miR,LC Sciences,N/A
+miRBase 22.0,"(Kozomara et al., 2019)",http://www.mirbase.org/; RRID:SCR_003152
+RBiomirGS V0.2.12 R package,"(Zhang and Storey, 2018)",https://github.com/jzhangc/git_RBiomirGS
+GO Mouse Genome Informatics (MGI),"(Smith and Eppig, 2009)",http://www.informatics.jax.org/; RRID:SCR_006489
+R package version 3.6.1,,https://www.r-project.org/; RRID:SCR_001905
+QuantaSoft V1.7.4.0917,Bio-Rad Laboratories,https://www.bio-rad.com/webroot/web/pdf/lsr/literature/10047467.pdf
+OriginPro 2015,OriginLab Corporation,https://www.originlab.com; RRID:SCR_014212
+R package version 4.0.2 (for single cell analysis),,https://www.r-project.org/; RRID:SCR_001905
+Seurat 3.2.0,"(Stuart et al., 2019)",https://github.com/satijalab/seurat; RRID:SCR_007322
+MAST,"(Finak et al., 2015)",https://www.bioconductor.org/packages/release/bioc/html/MAST.html; RRID:SCR_016340
+multiMiR,"(Ru et al., 2014)",https://www.bioconductor.org/packages/release/bioc/html/multiMiR.html
+SnapTools 1.4.1,"(Fang et al., 2020)",https://github.com/r3fang/SnapTools; RRID:SCR_018097
+SnapATAC,"(Fang et al., 2020)",https://github.com/r3fang/SnapATAC
+Rmagic 2.0.3,"(van Dijk et al., 2018)",https://github.com/KrishnaswamyLab/MAGIC
+Patchwork 1.0.1,,https://github.com/thomasp85/patchwork; RRID:SCR_000072
+Other,,
+QX200 Automated Droplet Generator,BioRad,Cat# 1864101
+QX200 Droplet Reader,BioRad,Cat# 1864003
+Illumina Hiseq 2500,LC Sciences,N/A
+ABI 7500 Real-Time PCR,Applied Biosystems,N/A
+NovaSeq 6000,Illumina,N/A
+BD Rhapsody,BD Biosciences,Cat# 633701
+ddSEQ Single-Cell Isolator,Bio-Rad,Cat# 12004366
+BioAnalyzer,Agilent,Cat# D1000 HS
+"Simplified 5-ion GCR Simulation: Protons at 1000 MeV,28Si at 600 MeV/n,4He at 250 MeV/n,16O at 350 MeV/n,56Fe at 600 MeV/n, and protons at 250 MeV",Brookhaven National Lab - NSRL,N/A
+Simulated SPE: Protons at 50MeV to 150MeV,Brookhaven National Lab - NSRL,N/A
+Gamma:137Cs source (5 Gy),Brookhaven National Lab – NSRL,N/A
+56Fe Irradiation: 600 MeV/n,Brookhaven National Lab – NSRL,N/A

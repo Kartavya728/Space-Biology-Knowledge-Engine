@@ -1,0 +1,33 @@
+,,GO term name
+Characteristics,Ontology,Transcript ID,Gene symbol,Gene description,GArg: GWtFC (log2)
+"Figure 3, Category III, 53 GENES",Cellular Component,plasma membrane GO:0005886,
+At3g24840,,Sec14p-like phosphatidylinositol transfer,3.1
+,At1g55200,,Protein kinase,2.7
+,,At5g17980,,C2 calcium/lipid-binding,2.0
+,,At4g11850,PLDGAMMA1,phospholipase D gamma 1,1.1
+,,At2g02170,,Remorin family protein,−1.2
+,,At5g52440,HCF106,Bacterial sec-independent translocation,−1.2
+,,At1g03590,,Protein phosphatase 2C family protein,−1.3
+,,At1g73740,,UDP-Glycosyltransferase superfamily protein,−2.3
+,,At1g51540,,Galactose oxidase/kelch repeat,−2.4
+,,At2g31010,,Protein kinase superfamily protein,−2.7
+,,At5g66490,,unknown,−2.8
+,,membrane GO:0016020,
+,,At4g21490,NDB3,NAD(P)H dehydrogenase B3,2.9
+,,At4g40070,,RING/U-box superfamily protein,2.4
+,,At5g57030,LUT2,Lycopene beta/epsilon cyclase protein,1.1
+,,At5g39500,GNL1,GNOM-like 1,−1.3
+,,At4g30660,,Low temperature and salt responsive,−1.5
+,,At3g26830,PAD3,Cytochrome P450 superfamily protein,−2.6
+,,At5g04660,CYP77A4,cytochrome P450,−2.8
+,Biological Process,heterocycle metabolic process GO:0046483,
+,At1g66550,WRKY67,WRKY DNA-binding protein 67,2.3
+,,At5g43810,ZLL,Stabilizer of iron transporter SufD,−1.5
+,,At3g57040,ATRR4,response regulator 9,−1.5
+,,At4g17610,,tRNA/rRNA methyltransferase (SpoU),−1.7
+,,At1g66730,LIG6,DNA LIGASE 6,−2.9
+,,single organism reproductive process GO:0044702,
+,,At3g61970,NGA2,AP2/B3-like transcriptional factor,2.3
+,,At2g22540,SVP,K-box region and MADS-box transcription factor,−1.4
+,,At1g49320,USPL1,unknown seed protein like 1,−3.1
+,,At1g65010,,Plant protein of unknown function (DUF827),−3.1

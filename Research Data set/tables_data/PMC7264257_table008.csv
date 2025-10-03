@@ -1,0 +1,7 @@
+,,Average,Average,Edible fresh,Time normalized,Edible fresh
+,,cultivation,fruit per,weight per,edible fresh weight,weight per
+,Cycles for,cycle,cycle per,cultivation,per cultivation,cultivation
+Crop name,evaluation,length (d),tray,area (kg/m2),area (kg/m2/d),volume (kg/m3)
+Tomato F1 3689B,2,286.0,994,13.06 ± 0.00 (13.06–13.07),0.046 ± 0.000 (0.046–0.046),11.82–11.83
+Tomato F1 1202,2,286.0,1372,14.90 ± 1.84 (13.06–16.78),0.052 ± 0.006 (0.046–0.059),11.82–15.19
+Cucumber Picowell,4,161.0,208,50.88 ± 4.38 (41.70–59.98),0.321 ± 0.041 (0.241–0.403),18.45–26.54

@@ -1,0 +1,18 @@
+Symbol,Entrez Gene Name,Exprp-Value,Expr Log Ratio,Location,Type(s)
+QDPR,quinoid dihydropteridine reductase,0.0229,2.458,Cytoplasm,enzyme
+DNM3,dynamin 3,0.00186,1.781,Cytoplasm,enzyme
+ACAT1,acetyl-CoA acetyltransferase 1,0.0000214,1.637,Cytoplasm,enzyme
+DNAJC5,DnaJ heat shock protein family (Hsp40) member C5,0.00702,1.501,Plasma Membrane,other
+SH3GL2,"SH3 domain containing GRB2-like 2, endophilin A1",0.0136,1.377,Plasma Membrane,enzyme
+RAP1GDS1,Rap1 GTPase-GDP dissociation stimulator 1,0.0284,1.363,Cytoplasm,other
+DNM1L,dynamin 1-like,0.0069,1.284,Cytoplasm,enzyme
+CNP,"2′,3′-cyclic nucleotide 3′ phosphodiesterase",0.000816,1.261,Cytoplasm,enzyme
+YWHAE,tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein epsilon,0.00989,1.261,Cytoplasm,other
+ACTN1,actinin alpha 1,0.0308,1.254,Cytoplasm,transcription regulator
+ATP6V0A1,ATPase H+ transporting V0 subunit a1,0.00028,1.191,Cytoplasm,transporter
+IMMT,inner membrane mitochondrial protein,0.00436,1.154,Cytoplasm,other
+NEFL,neurofilament light,0.00557,1.153,Cytoplasm,other
+ENO2,enolase 2,0.0281,1.123,Cytoplasm,enzyme
+STX1A,syntaxin 1A,0.00859,1.074,Cytoplasm,transporter
+UQCRB,ubiquinol-cytochrome c reductase binding protein,0.0447,−1.059,Cytoplasm,enzyme
+SEC22B,"SEC22 homolog B, vesicle trafficking protein (gene/pseudogene)",0.00601,−2.709,Cytoplasm,other

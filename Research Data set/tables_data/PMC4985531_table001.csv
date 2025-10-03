@@ -1,0 +1,7 @@
+,ob/obMice,ANOVA FDR adjustedP
+Untreated (n= 6),rAAV-GFP (n= 7),rAAV-Lep (n= 8),Pair-fed (n= 6)
+Body weight (g),70 ± 2,68 ± 2,29 ± 3a–c,63 ± 2,<0.001*
+Bone area/tissue area (%),8.3 ± 1.1,7.2 ± 0.9,5.3 ± 1.0,5.7 ± 0.7,0.225
+Trabecular thickness (μm),35 ± 2,34 ± 1,"26 ± 2a,b",31 ± 2,0.009
+Trabecular number (mm−1),2.3 ± 0.2,2.1 ± 0.2,2.0 ± 0.2,1.8 ± 0.2,0.645
+Trabecular spacing (μm),416 ± 42,470 ± 38,542 ± 71,547 ± 73,0.588

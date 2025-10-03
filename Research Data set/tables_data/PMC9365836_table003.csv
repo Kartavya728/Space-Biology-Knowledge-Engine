@@ -1,0 +1,8 @@
+Gene,pvalue,Log2 fold Δ,Related molecule function
+CSF1R,0.0111,−0.209,"Cell-surface receptor regulating development, proliferation and differentiation."
+PLP1,0.00283,−0.363,Major myelin protein in the CNS.
+MERTK,0.000256,−0.368,Signaling protein in innate immune cells mediating engulfment of apoptotic cells.
+TREM2,0.0359,−0.461,Regulates microglial chemotaxis and phagocytosis of apoptotic neurons.
+NCF1,0.0214,−0.539,Subunit of NADPH oxidase required for superoxidase production.
+OPALIN,0.0205,−0.546,Regulator of oligodendrocyte cytoskeletal remolding and morphology.
+SLC2A5,0.0132,−0.623,Fructose transporter found in microglial cells.

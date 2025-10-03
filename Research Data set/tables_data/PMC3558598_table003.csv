@@ -1,0 +1,9 @@
+Tissues in which the target gene was knocked down,Tissue assayedb,Target Gene,% knockdown efficiency of target gene in F1 progeny compared to wild-type (yw) controlsc,% knockdown efficiency of target gene in F1 progeny compared toUASconstruct (parental line 1)c,% knockdown efficiency of target gene in F1 progeny compared toGAL4construct (parental line 2)c,Average % knockdown efficiency of target gene in F1 progeny compared to control fliesd
+Ubiquitous (arm-Gal4),Whole adult body,Uck2,86 ± 4,90 ± 5,89 ± 9,88 ± 2
+Whole adult body,san,86 ± 2,86 ±5,78 ± 4,83 ± 5
+Hemocytes (Hml-Gal4),Whole adult body,Uck2,76 ± 8,85 ± 5,73 ± 3,79 ± 6
+Whole adult body,san,61 ± 0,59 ± 2,66 ± 1,62 ± 4
+Fat Body (YP1-Gal4),Whole adult body,Uck2,55 ± 1,26 ± 9,23 ± 1,35 ±18
+Whole adult body,san,46 ± 2,28 ± 4,52 ± 3,42 ± 12
+Fat body (YP1-Gal4),"Fat body, 3rd instar larvae",Uck2,75,85,70,77 ± 8
+Fat body (YP1-Gal4),"Fat body, 3rd instar larvae",san,79,57,62,66 ± 12

@@ -1,0 +1,29 @@
+,#a,"R2, %","STDEV,%",Comparisons (all genes)
+,23,94.8,1.9,KSC static no-MFvs.KSC static HGMF
+17,90.8,2.7,Lab Clino HGMFvs.KSC Clino HGMF
+28,82.6,7.5,Lab Clino no-MFvs.Lab Clino HGMF
+1,80.2,7.2,Flight-no MFvs.Flight-HGMF
+15,80.0,3.3,KSC static HGMFvs.KSC Clino HGMF
+18,78.8,3.7,Lab Clino no-MFvs.KSC Clino HGMF
+16,76.6,3.3,KSC static no-MFvs.KSC Clino HGMF
+25,76.3,2.6,Lab Clino no-MFvs.KSC static HGMF
+27,75.6,4.7,Lab Clino no-MFvs.KSC static no-MF
+24,73.1,5.2,Lab Clino HGMFvs.KSC static HGMF
+19,72.8,7.0,KSC static HGMFvs.KSC Clino no-MF
+26,70.7,5.5,Lab Clino HGMFvs.KSC static no-MF
+20,70.4,6.7,KSC static no-MFvs.KSC Clino no-MF
+14,60.6,7.7,KSC Clino no-MFvs.KSC Clino HGMF
+13,59.2,11.1,Lab Clino no-MFvs.Flight-no MF
+22,56.9,6.2,Lab Clino no-MFvs.KSC Clino no-MF
+21,56.2,7.3,Lab Clino HGMFvs.KSC Clino no-MF
+7,56.1,11.2,Lab Clino no-MFvs.Flight-HGMF
+12,53.6,7.0,Lab Clino HGMFvs.Flight-no MF
+9,52.3,10.0,KSC Clino no-MFvs.Flight-no MF
+10,51.0,8.2,KSC static HGMFvs.Flight-no MF
+11,50.7,8.4,KSC static no-MFvs.Flight-no MF
+6,49.9,7.5,Lab Clino HGMFvs.Flight-HGMF
+8,46.0,7.1,KSC Clino HGMFvs.Flight-no MF
+2,40.6,6.7,KSC Clino HGMFvs.Flight-HGMF
+5,38.0,7.4,KSC static no-MFvs.Flight-HGMF
+3,37.4,10.6,KSC Clino no-MFvs.Flight-HGMF
+4,37.4,10.6,KSC static HGMFvs.Flight-HGMF

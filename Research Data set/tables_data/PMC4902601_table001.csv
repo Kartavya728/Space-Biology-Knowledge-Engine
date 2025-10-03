@@ -1,0 +1,18 @@
+Arabidopsis line,Organ/process to which C is partitioned,Partitioning coefficients
+Early vegetative growth phase,Late vegetative growth phase,Reproductive growth phase
+Col-0,Inflorescence growth,0.00,0.02,0.30
+Root growth,0.06,0.13,0.12
+LMA,0.17,0.10,0.10
+Leaf area growth,0.77,0.75,0.48
+cgr2com,Inflorescence growth,0.00,0.03,0.40
+Root growth,0.03,0.12,0.12
+LMA,0.19,0.10,0.10
+Leaf area growth,0.78,0.75,0.38
+CGR2OX,Inflorescence growth,0.00,0.03,0.30
+Root growth,0.04,0.15,0.15
+LMA,0.16,0.11,0.10
+Leaf area growth,0.80,0.71,0.45
+cgr2/3,Inflorescence growth,0.00,0.00,0.10
+Root growth,0.10,0.25,0.25
+LMA,0.24,0.18,0.10
+Leaf area growth,0.66,0.57,0.55

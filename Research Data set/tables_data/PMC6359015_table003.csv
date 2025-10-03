@@ -1,0 +1,36 @@
+Category,Transcript ID,Gene Symbol,Gene Description,Functional Annotation,FWt: GWTFC log2,FHsf: GHsfFC log2,GHsf: GWtFC log2,FHsf: FHsfFC log2
+Required,At1g02980,CUL2,cullin 2,proteolytic turnover,2.5,X,3.0,X
+At3g18260,---,Reticulon family protein,ER,3.1,X,3.7,X
+At1g77510,ATPDIL1-2,PDI-like 1-2,"ER stress, UPR",1.2,X,2.0,X
+At1g30600,,Subtilase family protein,cell wall,2.5,X,2.7,X
+At2g44490,PEN2,"Penetration 2, BGLU26 Beta Glucosidase 26","defense response, response to wounding",1.4,X,1.7,X
+Corrected,At5g40470,,RNI-like superfamily protein,"response to wounding, mechanical stress",X,2.1,−2.1,X
+At1g44350,ILL6,ILL6 IAA-leucine resistant (ILR)-like gene 6,"response to wounding, mechanical stress",X,1.9,−2.0,X
+At2g17430,MLO7,Seven transmembrane MLO family protein,"response to wounding, mechanical stress",X,1.9,−1.7,X
+At3g61060,AtPP2-A13,PP2-A13 phloem protein 2-A13,"response to wounding, mechanical stress",X,1.5,−2.1,X
+At4g38550,,phospholipase-like protein (PEARLI 4) family,"response to wounding, mechanical stress",X,1.4,−1.3,X
+At1g61340,,FBS1 F-box stress induced 1,"response to wounding, mechanical stress",X,1.0,−1.8,X
+At2g02400,,NAD(P)-binding Rossmann-fold superfamily protein,cell wall,X,2.0,−1.6,X
+At1g53840,ATPME1,PME1 pectin methylesterase 1,cell wall,X,1.1,−1.4,X
+At5g15350,ENODL17,early nodulin-like protein 17,cell wall,X,−1.7,1.0,X
+At2g36830,GAMMA-TIP,GAMMA-TIP gamma tonoplast intrinsic protein,transmembrane transporter genes,X,3.1,−3.5,X
+At1g50400,,porin family protein,transmembrane transporter genes,X,2.2,−2.0,X
+At2g40090,ATATH9,ABC2 homolog 9,transmembrane transporter genes,X,1.1,−1.0,X
+At5g14570,ATNRT2.7,NRT2.7 high affinity nitrate transporter,nitrate transporters genes,X,2.4,−2.6,X
+At4g40080,,ENTH/ANTH/VHS superfamily protein,nitrate transporters genes,X,2.1,−2.3,X
+At3g06850,DIN3,"DIN3 dark inducible 3, BCE2","valine, leucine and isoleucine degradation",X,1.2,−1.2,X
+At2g14170,ALDH6B2,ALDH6B2 aldehyde dehydrogenase 6B2,"valine, leucine and isoleucine degradation",X,1.2,−1.1,X
+At4g34030,MCCB,MCCB 3-methylcrotonyl-CoA carboxylase,"valine, leucine and isoleucine degradation",X,1.1,−1.1,X
+HsfA2-Dependent WT genotypic adaptation,At4g07960,ATCSLC12,Cellulose-synthase-like C12,cell wall,1.9,X,X,−2.0
+At1g78980,SRF5,SRF5 STRUBBELIG-receptor family 5,plasma membrane receptor kinase,−2.4,X,X,2.2
+At5g19070,---,SNARE associated Golgi protein family,vesicle-mediated transport,−2.6,X,X,2.7
+At2g43240,---,Nucleotide-sugar transporter family protein,transport,−1.3,X,X,1.6
+Compensated HSFA2 KO genotypic adaptation,At2g32920,ATPDIL2-3,PDI-like 2-3,"ER stress, UPR",X,1.0,X,1.5
+At1g17180,ATGSTU25,glutathione S-transferase TAU 25,UPR,X,1.7,X,1.9
+At3g15980,---,"Coatomer, beta’ subunit",vesicle-mediated transport,X,1.7,X,1.7
+At1g29060,---,Target SNARE coiled-coil domain protein,vesicle-mediated transport,X,1.3,X,1.5
+At2g36300,---,Integral membrane Yip1 family protein,vesicle-mediated transport,X,1.0,X,1.2
+At3g12180,---,Cornichon family protein,intra-Golgi vesicle-mediated transport,X,−2.7,X,−2.0
+At5g66160,RMR1,"receptor homology, transmembrane domain ring H2",intra-Golgi vesicle-mediated transport,X,−1.6,X,−1.7
+At3g21180,ACA9,autoinhibited Ca(2+)-ATPase 9,calcium pump,X,−2.7,X,−2.6
+At4g37640,ACA2,calcium ATPase 2,calcium pump,X,−2.2,X,−1.7

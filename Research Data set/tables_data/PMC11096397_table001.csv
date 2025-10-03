@@ -1,0 +1,20 @@
+Species,Cluster,Representative Phage,Genomes in Cluster,Size (kb),Family,Query Identitya
+NCBI Virus,IMG Virus,NCBI Bacteria
+A. pittii,2,IIF1SW-P2 sequence:120779-155538,13,34.8,Caudoviricetes,0%,65%,59%
+3,IIF1SW-P4 sequence:16202-50961,8,34.8,Caudoviricetes,0%,65%,59%
+B. amyloliquefaciens,6,IIF7SW-B4 sequence:76-30790,2,30.7,Caudoviricetes,0%,55%,21%
+E. bugandensis,12,IFACSW-P1 sequence:830462-877738,7,47.3,Caudoviricetes,11%,52%,47%
+17,IF2SW-F2 sequence:448858-496167,2,47.3,Caudoviricetes,11%,51%,47%
+K. quasipneumoniae,24,IIIF3SW-P1 sequence:1181253-1232366,2,51.1,Unclassified,4%,37%,20%
+P. fulva,52,F8_8S_9P sequence:173154-179665,1,6.5,Caudoviricetes,0%,56%,33%
+P. polymyxa,26,IIF5SW-B4 sequence:979867-1033318,5,53.5,Caudoviricetes,0%,56%,33%
+28,IIF2*SW-P4 sequence:600724-654175,2,53.5,Caudoviricetes,0%,66%,29%
+S. epidermidis,34,IF4SW-P4 sequence:652269-693911,2,41.6,Caudoviricetes,20%,58%,55%
+38,s34 sequence:116777-162391,2,45.6,Caudoviricetes,16%,68%,41%
+62,s51 sequence:616-49418,1,48.8,Caudoviricetes,11%,65%,54%
+69,s17 sequence:35-44746,1,44.7,Unclassified,29%,40%,39%
+74,F6_3S_P_7 sequence:72993-118974,1,46,Caudoviricetes,14%,48%,45%
+S. saprophyticus,41,F6_7S_P_5 sequence:592884-635056,2,42.2,Caudoviricetes,43%,63%,25%
+42,F5_7S_P5C sequence:174-42331,5,42.2,Caudoviricetes,43%,63%,25%
+70,s43 sequence:757637-811609,1,54,Unclassified,5%,32%,12%
+71,F5_7S_P11B sequence:38923-82523,1,43.6,Caudoviricetes,50%,61%,24%

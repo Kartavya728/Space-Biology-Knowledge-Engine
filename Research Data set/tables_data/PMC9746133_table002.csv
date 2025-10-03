@@ -1,0 +1,39 @@
+,GeoMx,HPA,HCA,HCA,Tabula sapiens
+,Coverage,Project counts,Est. cell counts,Cell counts
+Lung,N,Y,18,"6,200,000","35,682"
+Kidney,Y,Y,9,"4,900,000",9641
+Liver,N,Y,10,"5,400,000",5007
+Brain,Y,Y,14,"9,700,000",N/A
+Skin,N,Y,12,"1,500,000",9424
+Colon (large intestine),Y,Y,4,"1,100,000",N/A
+Rectum (large intestine),N,Y,2,"372,300",N/A
+Small intestine,N,Y,3,"986,700","12,467"
+Stomach,N,Y,3,"4,600,000",N/A
+Lymph node,Y,Y,3,"536,700","53,275"
+Prostate,N,Y,3,"798,900","16,375"
+Ovary,N,Y,3,"525,100",N/A
+Uterus,N,Y,3,"1,000,000",7124
+Heart,N,Y,8,"6,200,000","11,505"
+Esophagus,N,Y,4,"914,600",N/A
+Bone marrow,N,Y,3,"571,700","12,297"
+Bone (skeletal muscle),N,Y,2,"212,600",N/A
+Adipose (fat),N,Y,4,"1,000,000","20,263"
+Bladder,N,Y,2,"486,700","21,517"
+Eye,N,Y,7,"4,900,000","10,650"
+Testis,N,Y,2,"30,200",N/A
+Spleen,N,N,5,"4,800,000","34,004"
+Appendix (large intestine),N,Y,N/A,N/A,N/A
+Bile duct,N,N,1,"84,375",N/A
+Pancreas,Y,Y,16,"5,100,000","13,497"
+Smooth muscle,N,Y,N/A,N/A,"30,746"
+Nasal cavity,N,N,3,"114,800",N/A
+Peritoneum,N,N,N/A,N/A,N/A
+Blood,N,N,28,"3,000,000","50,115"
+Breast,N,Y,2,"709,100",N/A
+Large intestine,N,Y,2,"482,300","13,680"
+Mammary gland,N,N,1,N/A,"11,375"
+Salivary gland,N,Y,1,N/A,"27,199"
+Thymus,N,Y,3,"4,800,000","33,664"
+Tongue,N,N,1,N/A,"15,020"
+Trachea,N,N,3,"564,700",9522
+Vasculature,N,N,1,N/A,"17,071"

@@ -1,0 +1,7 @@
+Transformation,Description,Reference
+Log scale,Scales values to their log base 2,Quinn et al.25
+Square root,Scales values to their square roots,Zhang et al.26
+Median of ratios,"Scales values to account for sequencing depth, gene length, and outliers",Robinson et al.27
+Centered log ratio,Transforms data to eliminate over-dispersion,Anders et al.28
+Box-Cox,Transforms non-normal data into a normal shape,Sun et al.29
+Z-score,Scales values to their number of standard deviations from the mean,Zwiener et al.30

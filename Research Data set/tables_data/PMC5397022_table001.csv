@@ -1,0 +1,8 @@
+Fraction,Post-translational modification,Total peptides identified with modification (#),Peptides differentially modified*
+#,% of total
+Soluble,Phosphorylation,29,5,17.24
+,Oxidation,7060,449,6.36
+,Deamidation,6001,726,12.10
+Membrane,Phosphorylation,79,18,22.78
+,Oxidation,3934,301,7.65
+,Deamidation,4035,318,7.88

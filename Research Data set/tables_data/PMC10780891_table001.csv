@@ -1,0 +1,17 @@
+Parameters,ExperimentalConditions,Arithmetic Mean ± Standard Deviation,Significant Differences between Samples (t-Test),"The Coefficient of Variation, %"
+"Weight of kernel, g",Lada ISS,0.0362 ± 0.0044,Confirmed,12
+Lada Earth,0.0376 ± 0.0046,12
+"Kernel area, mm2",Lada ISS,11.64 ± 1.22,Confirmed,11
+Lada Earth,13.30 ± 1.42,11
+"Kernel perimeter, mm",Lada ISS,19.92 ± 3.17,No differences identified,16
+Lada Earth,20.49 ± 2.20,11
+"Kernel length, mm",Lada ISS,4.42 ± 0.38,Confirmed,9
+Lada Earth,4.87 ± 0.38,8
+"Kernel width, mm",Lada ISS,3.36 ± 0.19,Confirmed,6
+Lada Earth,3.47 ± 0.20,6
+Kernel roundness,Lada ISS,0.39 ± 0.10,No differences identified,26
+Control,0.40 ± 0.09,23
+"Kernel depth, mm",Lada ISS,3.38 ± 0.22,No differences identified,7
+Lada Earth,3.42 ± 0.24,7
+"Recess kernel depth, mm",Lada ISS,0.88 ± 0.23,No differences identified,26
+Lada Earth,0.93 ± 0.31,34

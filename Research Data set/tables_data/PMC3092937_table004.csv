@@ -1,0 +1,10 @@
+Genotype,Sex,Number of hemocytes (±95% confidence interval)
+Average for embryonic origin,Average for lymph gland origin,Total cells
+Wild type,Male,3380 (±753),4610 (±942),7990 (±1237)
+Female,5413 (±1492),6956 (±1505),12369 (±2109)
+"P, male vs. female",<0.01,<0.001,<0.01
+dplda,Male,6455 (±1128),6675 (±1268),13130 (±1716)
+Female,8628 (±1879),8987 (±1374),17615 (±3013)
+"P, male vs. female",<0.05,<0.01,<0.01
+Wild type vs.dplda,"P, male vs. male",<0.001,<0.01,<0.001
+"P, female vs. female",<0.01,<0.05,<0.01

@@ -1,0 +1,20 @@
+Model Organism,Scenario,Particle/s,Total Primary Dose Delivered (cGy),Dose Rate (cGy/min),Shielding,Total Dose Seeds Exposed (cGy)
+ImbibedArabidopsisseeds,Proton Particles,250 MeV/n H1+,20,Acute,N/A,20
+40,Acute,N/A,40
+39.5,0.166,N/A,39.5
+ImbibedArabidopsisseeds,Titanium Ions,300 MeV/n Ti48+,20,Acute,N/A,20
+40,Acute,N/A,40
+39.5,0.166,N/A,39.5
+ImbibedArabidopsisseeds,GCR1: Galactic cosmic ray (GCR) simulation,44% 344 MeV/n H1+19% 344 MeV/n He4+24% 450 MeV/n O16+13% 950 MeV/n Fe56+,40,Acute,20 g/cm2Aluminum and high density polyethylene 10.345 g/cm2,29
+0.166
+80,Acute,58
+0.166
+DryArabidopsisseeds and Mizuna seeds,GCR2: Simplified GCR simulation,35% 1000 MeV/n H1+39% 250 MeV/n H1+18% 250 MeV/n He4+6% 350 MeV/n O16+1% 600 MeV/n Si+1% 600 MeV/n Fe56+,40,Acute,N/A,40
+0.333
+80,Acute,80
+0.333
+ImbibedArabidopsisseeds and Mizuna seeds,SPE: 1972 simulation,50–150 MeV/n H1+,40,Acute,N/A,40
+0.444
+80,Acute,80
+0.444
+200,Acute,200

@@ -1,0 +1,127 @@
+REAGENT or RESOURCE,SOURCE,IDENTIFIER
+Code
+WGCNA code (Method S1),This paper,N/A
+Biological Samples
+Human Blood,NASA Twin Study,http://www.nasa.gov/twins-study/
+Human T Cells,ISS Expedition 14,https://www.nasa.gov/mission_pages/station/expeditions/expedition14/
+Human Hair Follicles,ISS Expeditions from July 2009 to February 2013,https://www.nasa.gov/mission_pages/station/expeditions/past.html
+Mouse adrenal gland,NASA Rodent Research-1 Mission,https://lsdajsc.nasa.gov/Experiment/exper/13380
+Mouse extensor digitorum longus muscle,NASA Rodent Research-1 Mission,https://lsda.lsc.nasa.gov/Experiment/exper/13380
+Mouse eye,NASA Rodent Research-1 Mission,https://lsda.isc.nasa.gov/Experiment/exper/13380
+Mouse gastrocnemius muscle,NASA Rodent Research-1 Mission,https://lsda.jsc.nasa.gov/Experiment/exper/13380
+Mouse kidney,NASA Rodent Research-1 Mission,https://lsda.jsc.nasa.gov/Experiment/exper/13380
+Mouse Liver,NASA Rodent Research-1 Mission,https://lsda.jsc.nasa.gov/Experiment/exper/13380
+Mouse quadriceps muscle,NASA Rodent Research-1 Mission,https://lsda.isc.nasa.gov/Experiment/exper/13380
+Mouse soleus muscle,NASA Rodent Research-1 Mission,https://lsda.jsc.nasa.gov/Experiment/exper/13380
+Mouse tibialis anterior muscle,NASA Rodent Research-1 Mission,https://lsdaisc.nasa.gov/Experiment/exper/13380
+Mouse adrenal gland,NASA Rodent Research-3 Mission,https://lsdajsc.nasa.gov/Experiment/exper/13961
+Mouse eye,NASA Rodent Research-3 Mission,https://lsda.jsc.nasa.gov/Experiment/exper/13961
+Mouse kidney,NASA Rodent Research-3 Mission,https://lsda.jsc.nasa.gov/Experiment/exper/13961
+Mouse Liver,NASA Rodent Research-3 Mission,https://lsdaisc.nasa.gov/Experiment/exper/13961
+Mouse gastrocnemius muscle,NASA Rodent Research-9 Mission,https://lsdajsc.nasa.gov/Experiment/exper/13964
+Mouse quadriceps muscle,NASA Rodent Research-9 Mission,https://lsdajsc.nasa.gov/Experiment/exper/13964
+"Chemicals. Peptides, and Recombinant Proteins"
+D-Pantothenic acid acid hemicalcium salt,Sigma Aldrich,P2250
+D-Malic acid,Sigma Aldrich,46940-U
+a-D-Glucose,Sigma Aldrich,158968-25G
+D-Fructose-6-phosphate disodium salt hydrate,Sigma Aldrich,F3627
+Citric Acid,Sigma Aldrich,C1857
+L-Carnitine hydrochloride,Sigma Aldrich,C0283
+L-Arginine,Sigma Aldrich,A5006
+Tetradecanoylcamitine (myristoyl-L-carnitine),Sigma Aldrich,91582
+4-Nitrobenzoic acid,Sigma Aldrich,72910
+Debrisoquine sulfate,Sigma Aldrich,D1306
+Chlorpropamide,Sigma Aldrich,C1290
+Acetaminophen,Sigma Aldrich,103-90-2
+Sulfaguanidine,Sigma Aldrich,57-67-0
+Sulfadimethoxine,Sigma Aldrich,122-11-2
+Val-Tyr-Val,Sigma Aldrich,17355-22-5
+Terfenadine,Sigma Aldrich,50679-08-8
+Leu-Enk acetate salt hydrate,Sigma Aldrich,58822-25-6
+Critical Commercial Assays
+micro BCA protein assay,Thermo Scientifc,23235
+Deposited Data
+GLDS-98,NASA/GeneLab,https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-98/
+GLDS-99,NASA/GeneLab,https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-99/
+GLDS-100,NASA/GeneLab,https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-100/
+GLDS-101,NASA/GeneLab,https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-101/
+GLDS-102,NASA/GeneLab,https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-102/
+GLDS-103,NASA/GeneLab,https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-103/
+GLDS-104,NASA/GeneLab,https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-104/
+GLDS-105,NASA/GeneLab,https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-105/
+GLDS-161,NASA/GeneLab,https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-161/
+GLDS-162,NASA/GeneLab,https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-162/
+GLDS-163,NASA/GeneLab,https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-163/
+GLDS-168,NASA/GeneLab,https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-168/
+GLDS-13,NASA/GeneLab,https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-13/
+GLDS-52,NASA/GeneLab,https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-52/
+GLDS-54,NASA/GeneLab,https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-54/
+GLDS-114,NASA/GeneLab,https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-114/
+GLDS-118,NASA/GeneLab,https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-118/
+GLDS-174,NASA/GeneLab,https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-174/
+GLDS-47,NASA/GeneLab,https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-47/
+GLDS-48,NASA/GeneLab,https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-48/
+GLDS-343,NASA/GeneLab,https://doi.org/10.26030/h968-2m75
+Experimental Models: Cell Lines
+Fibroblasts AG01522,Coriell Institute,"https://www.coriell.org/0/Sections/Search/Sample_Detail.aspx?Ref=AG01522, RRID: CVCL_H759"
+HUVEC,ATCC,"HUV-EC-C [HUVEC] (ATCC CRL-1730), RRID: CVCL_2959"
+HMVEC-dBL,LONZA,Catalog Number: CC-2543
+Experimental Models: Organisms/Strains
+Mouse: C57BL/6,Jackson Labs,C57BL/6J (Stock No: 000664)
+Mouse: BALB/c,Jackson Labs,BALB/c (Stock No: 000651)
+Oligonucleotides
+Primer.MT-RNR1:Forward - ATGCAGCTCAAAACGCTTAGC,This paper,N/A
+PrimerMT-RNR1:Reverse - GCTGGCACGAAATTGACCAA,This paper,N/A
+PrimerMT-RNR2:Forward - CCCTGTACGAAAGGACAAGAGAAAT,This paper,N/A
+PrimerMT-RNR2:Reverse - TCTTGGGTGGGTGTGGGTATAAT,This paper,N/A
+Primer:MT-COI:Forward - CAGCAGTCCTACTTCTCCTATCTCT,This paper,N/A
+PrimerMT-C01:Reverse - GGGTCGAAGAAGGTGGTGTT,This paper,N/A
+PrimerMT-C02:Forward - GCCCTTTTCCTAACACTCACAACAA,This paper,N/A
+PrimerMT-C02:Reverse - GTAAAGGATGCGTAGGGATGGG,This paper,N/A
+PrimerMT-ND1:Forward - CCCTAAAACCCGCCACATCT,This paper,N/A
+PrimerMT-ND1:Reverse - GGCTAGAATAAATAGGAGGCCTAGGT,This paper,N/A
+Primer:18S rRNA:Forward - GGCCCTGTAATTGGAATGAGTC,This paper,N/A
+Primer:18S rRNAReverse - CCAAGATCCAACTACGAGCTT,This paper,N/A
+PrimerGAPDH:Forward - AAGGTGAAGGTCGGAGTCAAC,This paper,N/A
+PrimerGAPDH:Reverse - GGGGTCATTGATGGCAACAATA,This paper,N/A
+Software and Algorithms
+FASTQC version 0.11.8,N/A,"https://www.bioinformatics.babraham.ac.uk/projects/fastqc/, RRID: SCR_014583"
+Trim Galore! Version 0.50,N/A,"https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/, RRID: SCR_011847"
+STAR version STAR_2.6.1a_08-27,"Dobin et al., 2013","https://github.com/alexdobin/STAR, RRID: SCR_015899"
+mice genome version mm 10-GRCm38,N/A,https://www.ncbi.nlm.nih.gov/assembly/GCF_000001635.20/
+RSEM version 1.3.1,"Dobin et al., 2013","https://deweylab.github.io/RSEM/, RRID: SCR_013027"
+R Version 3.5.1 and 4.0.2,R Core Team (2020).,"https://www.r-project.org/, RRID: SCR_001905"
+DESeq2 Version 1.22.2,"Love et al., 2014","https://github.com/mlkelove/DESeq2, RRID: SCR_01568"
+Picard MarkDuplicates v2.10.10-SNAPSHOT,N/A,"https://broadinstitute.grthub.io/picard/, RRID: SCR_00652"
+MethylDackel mbias,N/A,https://github.com/dpryan79/MethylDackel
+methylKit,"Akalin et al., 2012","https://www.bioconductor.org/packages/release/bioc/html/methylKit.html, RRID: SCR_005177"
+LIMMA,"Ritchie et al., 2015","https://www.bioconductor.org/packages/release/bioc/html/limma.html, RRID: SCR_010943"
+GSEA,"Sergushichev, 2016;Subramanian et al., 2005","https://www.gsea-msigdb.arg/gsea/lindex.jsp, RRID: SCR_003199"
+MaxQuant (1.6.2.3),"Tyanova et al., 2016a","https://www.maxquarst.org/, RRID: SCR_014485"
+Uniprot (downloaded on 20180104),"Tyanova et al., 2016a","https://www.unipfot.org/, RRID: SCR_002380"
+PTXQC,"Bielow et al., 2016",https://github.com/cbielow/PTXQC
+Perseus (1.6.2.2),"Tyanova et al., 2016b","https://maxquant.net/perseus/, RRID: SCR_015753"
+NCI DAVID,"Huang et al., 2009","https://david.ncifcrf.gov/, RRID: SCR_00188"
+EnhancedVolcano package (Bioconductor),"Ritchie et al., 2015","http://bioconductor.org/packages/release/bioc/html/EnhancedVolcano.html, RRID: SCR_018931"
+Cytoscape,"Shannon et al., 2003","https://cytoscape.org, RRID: SCR_003032"
+ClueGo,"Bindea et al., 2009","http://apps.cytoscape.org/apps/cluego, RRID: SCR_005748"
+EnrichmentMap,"Merico et al., 2010","http://apps.cytoscape.org/apps/enrichmentmap, RRID: SCR_016052"
+Progenesis QI,N/A,"http://www.nonlinear.com/progenesis/qi/, RRID: SCR_018923"
+MetaboLyzer,"Mak et al., 2014",https://sites.google.com/a/georgetown.edu/fornace-lab-informatics/home/metabotyzer
+Gene Expression Dynamics Inspector (GEDI),"Eichler et al., 2003",RRID: SCR_008530
+MetaboAnalyst,"Chong et al., 2018","https://www.metaboanatyst.ca/, RRID: SCR_015539"
+Python version 3.7.6 and version 3.8.3,"Van Rossum and Drake, 1995","https://www.python.org/downloads/release/python-376/https://www.python.org/downloads/release/python-383/, RRID: SCR_008394"
+COBRApy version 0.19.0 (using Python 3.8.3),"Ebrahim et al., 2013","https://pypi.org/project/cobra/, RRID: SCR_01209"
+Corda version 0.4.2 (for COBRApy),"Schultz and Qutub, 2016",https://github.com/qutubiab/CORDA
+imm1415 metabolic model from BiGG (for COBRApy),"Sigurdsson et al., 2010",https://www.ebi.ac.uk/biomodels/MODEL1507180055
+Gurobi Optimizer version 8.1.0 LP (for COBRApy),Gurobi Optimization. L. L. C. (2020).,https://www.gurobi.com/
+Numpy python package v 1.18.1 (with Python 3.7.6),"Harris et al., 2020","https://njmpy.org/, RRID: SCR_008633"
+Escher version 1.7.3 (with Python 3.7.6),"King et al., 2015",http://escher.github.io/#/
+pandas 1.0.1 (with Python 3.7.6),N/A,"https://pancas.pydata.org/, RRID: SCR_018214"
+ipython version 7.12.0 (with Python 3.7.6),"Perez and Granger, 2007","https://ipython.org/, RRID: SCR_001658"
+Jupyter Notebook 6.0.3 (with Python 3.7.6),"Kluyver et al., (2016).","https://jupyter.org/, RRID: SCR_018315"
+pheatmap R package version 1.0.12,Kolde (2015).,"https://github.com/raivokolde/pheatmap, RRID: SCR_016418"
+bwa-meth version 0.2.2,"Pedersen et al., 2014",https://github.com/brentp/bwa-meth
+Kallisto,"Bray et al., 2016","https://pachterlab.github.io/kallito/, RRID: SCR_016582"
+Other
+GeneLab,NASA,https://genelab.nasa.gov/

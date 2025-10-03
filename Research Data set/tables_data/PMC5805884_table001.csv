@@ -1,0 +1,5 @@
+Strain,GenBankaccession no.,No. ofcontigs,Genomesize (bp),N50size (bp),Largestcontigsize (bp),GCcontent(%),No. ofrRNAs,No. of protein-coding genes,Coverage(×),No. offilteredreads
+B. horneckiae1P01SCT,PISD00000000,104,"5,500,894","93,836","456,652",37.48,"1 (16S), 1 (23S)","5,708",326,"11,967,132"
+B. nealsoniiFO-92T,PISE00000000,92,"4,699,376","104,758","307,322",34.67,"6 (5S), 2 (16S),3 (23S)","4,712",563,"17,642,747"
+A. radioresistens50v1,PISK00000000,125,"3,174,402","65,829","186,990",41.59,"4 (16S), 3 (23S)","2,930",428,"9,077,106"
+A. proteolyticus2P01AA,PISJ00000000,36,"4,328,804","316,343","447,298",41.10,"1 (5S), 1 (16S),1 (23S)","4,040",575,"16,609,733"

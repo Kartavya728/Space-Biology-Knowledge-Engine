@@ -1,0 +1,6 @@
+Cortical bone parameter,CD3 + Sham,CD3 + IR,DP + Sham,DP + IR,p value
+Bone Area (mm2),0.766 + 0.0750,0.731 + 0.0351,0.763 + 0.0612,0.764 + 0.0542,n.s.
+Bone Perimeter (mm),7.06 + 0.438,6.91 + 0.208,7.07 + 0.346,7.05 + 0.240,n.s.
+Cortical Thickness (mm),0.260 + 0.0141,0.252 + 0.00745,0.260 + 0.0155,0.260 + 0.0133,n.s.
+Mean Polar Moment of Inertia (mm4),0.222 + 0.0454,0.201 + 0.0192,0.220 + 0.0374,0.220 + 0.0301,n.s.
+Tissue Mineral Density (mg/cm3),929 + 3.67,923 + 11.7,926 + 10.8,926 + 7.74,n.s.

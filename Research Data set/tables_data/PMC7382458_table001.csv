@@ -1,0 +1,27 @@
+Altitude (ft),"June 20, 2018","June 21, 2018"
+Genus,Relative abundance (%),Genus,Relative abundance (%)
+0,Eimeria,93.29,Prevotella,26.46
+0,Delftia,1.81,Alicycliphilus,22.63
+0,Penicillium,0.99,Achromobacter,19.53
+0,Solirubrobacter,0.88,Streptococcus,19.20
+0,Escherichia,0.77,Acidovorax,10.11
+"10,000",Mycobacterium,30.37,Achromobacter,53.37
+"10,000",Tetrahymena,26.16,Prevotella,22.52
+"10,000",Veillonella,17.60,Escherichia,6.46
+"10,000",Bradyrhizobium,12.22,Streptococcus,5.51
+"10,000",Orpinomyces,8.98,Porphyromonas,4.14
+"20,000",Stenotrophomonas,73.11,Achromobacter,55.71
+"20,000",Lachnoanaerobaculum,24.22,Prevotella,21.63
+"20,000",Achromobacter,2.39,Delftia,8.40
+"20,000",Chryseobacterium,0.22,Aspergillus,5.80
+"20,000",Astrammina,0.01,Helicobacter,5.74
+"30,000",Delftia,82.72,Pseudoperonospora,76.50
+"30,000",Paenibacillus,10.87,Streptococcus,14.24
+"30,000",Streptococcus,4.88,Pseudomonas,6.31
+"30,000",Chryseobacterium,0.30,Delftia,2.25
+"30,000",Prevotella,0.30,Stenotrophomonas,0.34
+"40,000",Alcaligenes,97.92,Penicillium,82.48
+"40,000",Pseudomonas,1.93,Achromobacter,17.43
+"40,000",Meiothermus,0.12,Sclerotinia,0.06
+"40,000",Bradyrhizobium,0.02,Escherichia,0.01
+"40,000",Corynebacterium,0.004,Bacteroides,0.004

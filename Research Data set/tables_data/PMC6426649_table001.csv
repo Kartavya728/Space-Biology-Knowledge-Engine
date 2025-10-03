@@ -1,0 +1,3 @@
+Isolate,Read count(million),k-mer size,N50(bp),No. of scaffolds(total),No. of scaffoldsover 1 kb,Max scaffoldlength (Mb),Genomesize (Mb),GC content (%),Coverage (×)
+ISS-F3,48,86,"923,684","6,166",736,3.24,53.6,47.05,90
+ISS-F4,42,86,"940,233","7,066",948,2.23,53.8,46.88,80

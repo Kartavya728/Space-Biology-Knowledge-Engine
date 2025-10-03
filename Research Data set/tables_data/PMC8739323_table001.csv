@@ -1,0 +1,8 @@
+Condition,Planetary body
+Mars,Moon,Asteroids,Earth
+Gravity,0.38×g,0.16×g,Micro to centigravity,1×g
+Ionizing radiations,"~ 20 µGy/hour (GCR, SEP)","~ 13.2 µGy/hour (GCR, SEP)","(GCR, SEP)",0.034–0.114 µGy/hour (Baumstark-Khan and Facius2002)
+Atmosphere composition,"95% CO2, 2.8% N2, 2.1% Ar, trace gases",Negligible,Absent,"78% N2, 20.9% O2, 0.9% Ar, 0.04% CO2, trace gases"
+Pressure,6.1 mbar,3 × 10–15bar,Vacuum,1 bar (at sea level)
+Temperature,− 153 °C to + 20 °C,− 178 °C to + 124 °C,Depends on the asteroid. Generally < − 20 °C,− 89.2 °C (Turner et al.2009) to + 56.7 °C (El Fadli et al.2013)
+Rock composition,"Basalt containing plagiocase, pyroxene, olivine and sulphate minerals","Basalt, anorthosite and breccia. Minerals include plagioclase, pyroxene, olivine, ilmenite, spinel and others. KREEP rocks","Depending on the type. Can contain water, volatiles, rich elements (PGE), common metals, organic compounds","Primarily basalt and granite, a vast diversity of igneous sedimentary and metamorphic rocks"

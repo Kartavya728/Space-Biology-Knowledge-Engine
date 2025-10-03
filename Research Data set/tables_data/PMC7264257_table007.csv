@@ -1,0 +1,7 @@
+,,Average,Edible fresh,Time normalized,Edible fresh
+,,cultivation,weight per,edible fresh weight,weight per
+,Cycles for,cycle,cultivation,per cultivation,cultivation
+Crop name,evaluation,length (d),area (kg/m2),area (kg/m2/d),volume (kg/m3)
+Basil,2,121.0,7.30 ± 0.93 (6.37–8.22),0.060 ± 0.008 (0.052–0.069),11.48–14.81
+Chives,1,266.0,13.97,0.053,25.17
+Parsley,1,266.0,16.46,0.062,29.66

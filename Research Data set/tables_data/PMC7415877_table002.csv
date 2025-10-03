@@ -1,0 +1,17 @@
+Duration,Temperature profile,Outcome
+8 Days,20°C,"Not viable, ran out of food"
+7 Days,20°C,"Viable, no Dauer larvae"
+1 Day,12°C,Viable
++6.5 Days,20°C
+8 Days,12°C,Some tests ran out of food around day 5.5 at 20°C
++6.5 Days,20°C
+3 Days,12°C,Viable
++6 Days,20°C
+8 Days,12°C,"Viable, food close to exhaustion"
++6 Days,20°C
+8 Days,NASA 12°C phase change,Ran out of food around day 5 at 20°C
++6 Days,20°C
+8 Days,NASA 10°C phase change,Viable
++6 Days,20°C
+5 Days,NASA 10°C phase change,Viable
++6 Days,20°C

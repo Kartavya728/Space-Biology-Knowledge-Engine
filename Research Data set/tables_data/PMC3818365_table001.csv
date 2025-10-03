@@ -1,0 +1,11 @@
+IRElα interactors,Function of IRElα interactors,Observed phenotype of loss-of-function mutations,Reference
+PARP16,Poly ADP-ribose polymerase,DecreasedXbp-1splicing / increased cell death,59
+Bi-1,Anti-apoptotic protein,IncreasedXbp-1splicing/ increased cell death,60
+Aip-1,Transducer of apoptotic signaling,DecreasedXbp-1splicing / decreased cell death,61
+Ptp-lb,Protein tyrosine phosphatase 1B,DecreasedXbp-1splicing / decreased cell death,62
+NMHCIIB,Myosin cytoskeleton,DecreasedXbp-1splicing/ compromised IRElα foci formation,63
+Bax/Bak,Pro-apoptotic protein,DecreasedXbp-1splicing/ impaired IRElα oligomerization,67
+Bim/Puma,Pro-apoptotic protein,DecreasedXbp-1splicing and UPR target genes activation,76
+Jabl,Apoptosis-related protein,DecreasedXbp-1splicing and UPR target genes activation,64
+Nckl,SH2/SH3 domain containing adaptor,Decreased cell death,65
+Askl,Apoptosis signal-regulated kinase,Decreased cell death/altered JNK activation,66

@@ -1,0 +1,21 @@
+Cell/Tissue Type,Key Effects of Microgravity,Source,Reference
+Macrophages,Imbalance between M1 and M2 polarization,Human,"[1,2,58]"
+Dendritic Cells,↓Antigen presentation,HumanMouse,"[1,58]"
+Neutrophils,↑Numbers but with ↓functionality,Human,"[2,3,61]"
+B Lymphocytes,↓Proliferation and increased apoptosis,HumanMouse,"[1,59,61]"
+NK Cells,↓Cytotoxic activity,Human,"[1,59,70]"
+T Cells,↓Activation and proliferation,HumanMouse,"[1,59,62]"
+Key Molecular Pathways,"Dysfunction in RAS, ERK, and NF-κB pathways",Human,"[1,4,59]"
+Cancer Stem Cells,↑Apoptosis,Cell culture of the following:Breast cancerLung CancerGastrointestinal Cancer,"[5,6,8]"
+Thyroid Cancer Cells,Low proliferation and growth,HumanMouse,"[29,54]"
+Microvascular Endothelial Cells,Inhibition of proliferation,Human,"[9,10,23]"
+Hepatic Cells,↑Lipid accumulation (lipotoxicity),Rhesus MacaquesRodents,[34]
+Intestinal Cells,Dysbiosis,Human,"[34,36]"
+Bone Cells,Increased bone mass loss,Human,[41]
+Kidney Cells,"↓Oxidative phosphorylation and fatty acid metabolism genes (↓mitochondrial respiration, metabolic shift)",Human,[46]
+Reproductive Cells,↓Egg quality,MouseIn Vitro Human Oocytes,"[39,47,49]"
+Cardiomyocytes,↑Maturation and functionality,Human,"[50,51,52]"
+Stem Cells,Temporary deactivation of the Hippo pathway (increased proliferation and tissue repair response),MouseHuman,"[53,54,55]"
+Hematopoietic Cells,↑Differentiation,HumanMouse,"[55,56]"
+Cell Proliferation and Regenerative Therapy,↑Cell proliferation,Cell culture of the following:Pancreatic isletsNeural crest stem cells,"[63,66]"
+Pathogens,↑Virulence,Salmonella entericaSalmonella Typhimurium(in mice)Escherichia coli,"[15,16,68,69]"

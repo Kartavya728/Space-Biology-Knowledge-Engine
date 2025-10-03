@@ -1,0 +1,10 @@
+Standard name,Systematic name,Description,Reason for selection
+ATO3,YDR384C,Putative ammonium transporter,Upregulated in the upper cells of giant yeast colonies
+INO1,YJL153C,Inositol-3-phosphate synthase,Upregulated in the lower cells of giant yeast colonies
+TRR1,YDR353W,ThioRedoxin Reductase,Key control enzyme in redox which is altered in spaceflight
+BEM1,YBR200W,Involved in budding,Bud scarring is altered in spaceflight in liquid cultures
+EDC3,YEL015W,Enhancer of mRNA DeCapping,Constitutive control
+RPL34B,YIL052C,Stress response gene,Upregulated in the lower cells of giant yeast colonies; Dependence on Msn4 and Sfp1 is altered in microgravity in liquid cultures
+SSA4,YER103W,Stress response gene,Upregulated in the lower cells of giant yeast colonies; dependence on Msn4 and Sfp1 is altered in microgravity in liquid cultures
+Sfp1,YLR403W,Stress-responsive transcriptional regulator,Differential effect on SSA4 and RPL34B in microgravity vs ground-based liquid cultures
+Msn4,YKL062W,Stress-responsive transcriptional regulator,Differential effect on SSA4 and RPL34B in microgravity ground-based liquid cultures

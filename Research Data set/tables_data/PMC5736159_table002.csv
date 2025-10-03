@@ -1,0 +1,11 @@
+,Cells,Tissue,Size Selected
+Total Reads,23.9 M,25.9 M,21.5 M
+Post Cleaning,18.7 M,20.3 M,12M
+IgH Mapped,278318,313194,327015
+VH Mapped,12851,26559,42375
+Igκ Mapped,261037,273562,264938
+Vκ Mapped,20776,35719,57493
+Heavy Chain Productive,2036,4991,8939
+Heavy Chain Unknown,6139,11374,14047
+Light Chain Productive,3439,6799,24812
+Light Chain Unknown,6894,10462,45530

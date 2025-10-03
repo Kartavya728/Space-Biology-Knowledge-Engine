@@ -1,0 +1,30 @@
+Category,Gene,A. burdickii,L. virtsii,L. williamsiiF6_8S_P_1BT,L. williamsiiF6_8S_P_1CT,P. vandeheii,S. highlanderae
+Antibiotics,"Multidrug resistance transporter, Bcr/CflA family",+,+,+,+,+,
+Antibiotics,"Multi antimicrobial extrusion protein (Na( +)/drug antiporter), MATE family of MDR efflux pumps",,,+,+,+,
+Antibiotics,Acriflavin resistance protein,,,+,+,+,+
+Antibiotics,"Streptothricin acetyltransferase, Streptomyces lavendulae type",,,,,+,+
+Antibiotics,"Ribosome protection-type tetracycline resistance related proteins, group 2",,,,,+,+
+Antibiotics,Fosfomycin resistance protein FosB,,,,,+,+
+Antibiotics,"Transcription regulator of multidrug efflux pump operon, TetR (AcrR) family",,,,,+,+
+Antibiotics,"Multidrug-efflux transporter, major facilitator superfamily (MFS) (TC 2.A.1)",,,,,+,
+Antioxidant,"PF00070 family, FAD-dependent NAD(P)-disulphide oxidoreductase",+,+,+,+,,
+β-lactamase,Metal-dependent hydrolases of the β-lactamase superfamily III,+,,,,+,
+Bile salt,Choloylglycine hydrolase (EC 3.5.1.24),,,,,+,+
+Cadmium,Cadmium-transporting ATPase (EC 3.6.3.3),,,,,+,+
+Cadmium,Cadmium efflux system accessory protein,,,,,+,+
+Cadmium,Cadmium-transporting ATPase (EC 3.6.3.3),,,,,+,+
+Chromate,Chromate transport protein ChrA,,,,,+,+
+Co-Zn-Cad,Cobalt-zinc-cadmium resistance protein CzcD,,,,,+,+
+Copper,Copper resistance protein CopC,+,+,+,+,+,+
+Copper,Copper resistance protein D,+,+,+,+,+,
+Copper,Copper-translocating P-type ATPase (EC 3.6.3.4),+,+,+,+,,
+Copper,Multicopper oxidase,+,+,,,+,
+Copper,Copper chaperone,,+,+,+,,+
+Copper,Cytoplasmic copper homeostasis protein CutC,,+,+,+,,
+Copper,Copper-translocating P-type ATPase (EC 3.6.3.4),,,,,+,
+Heavy metal,DNA-binding heavy metal response regulator,+,,,,,+
+Mercury,Mercuric ion reductase (EC 1.16.1.1),,+,,,,
+Mercury,Organomercurial lyase (EC 4.99.1.2),,+,,,,+
+Mercury,Mercuric resistance operon regulatory protein,,+,,,,+
+Mg and Cobalt,Magnesium and cobalt efflux protein CorC,,+,+,+,,+
+Zinc,Response regulator of zinc sigma-54-dependent two-component system,,,,,+,

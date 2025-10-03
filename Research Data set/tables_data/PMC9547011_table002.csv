@@ -1,0 +1,47 @@
+Category,GO ID,GO biological process,Adjustedp-value
+Exposure
+HLU,GO:0099118,Microtubule-based protein transport,8.54E−04
+GO:0048872,Homeostasis of number of cells,1.49E−03
+GO:0005996,Monosaccharide metabolic process,3.03E−03
+GO:0030308,Negative regulation of cell growth,4.99E−03
+GO:1901653,Cellular response to peptide,9.58E−03
+IR,GO:0000209,Protein polyubiquitination,1.20E−05
+GO:0042147,"Retrograde transport, endosome to Golgi",4.33E−04
+GO:0065004,Protein-DNA complex assembly,1.02E−03
+GO:0002067,Glandular epithelial cell differentiation,2.77E−03
+GO:0034340,Response to type I interferon,9.65E−03
+GO:0098801,Regulation of renal system process,1.56E−02
+HLU + IR,GO:0099084,Postsynaptic specialization organization,7.60E−05
+GO:2000311,Regulation of AMPA receptor activity,1.09E−04
+GO:0099565,"Chemical synaptic transmission, postsynaptic",2.05E−04
+Timepoint
+7d,GO:0030879,Mammary gland development,7.12E−07
+GO:0022406,Membrane docking,2.05E−06
+GO:0061136,Regulation of proteasomal protein catabolic process,5.82E−06
+GO:0090174,Organelle membrane fusion,1.42E−04
+GO:0070972,Protein localization to endoplasmic reticulum,6.69E−04
+GO:0045747,Positive regulation of Notch signaling pathway,1.10E−03
+GO:0044706,Multi-multicellular organism process,1.63E−02
+GO:0045576,Mast cell activation,2.07E−02
+1m,GO:0042391,Regulation of membrane potential,2.72E−21
+GO:0034765,"Regulation of ion transmembrane 
+transport",6.64E−17
+GO:0007626,Locomotory behavior,3.25E−12
+GO:0050806,Positive regulation of synaptic transmission,1.09E−10
+GO:0050770,Regulation of axonogenesis,2.84E−09
+GO:0006402,mRNA catabolic process,9.05E−08
+GO:0019233,Sensory perception of pain,1.61E−07
+GO:0048588,Developmental cell growth,3.42E−06
+GO:0010770,Positive regulation of cell morphogenesis involved in differentiation,7.78E−06
+GO:0043087,Regulation of GTPase activity,7.00E−05
+GO:0043279,Response to alkaloid,1.77E−04
+GO:1901214,Regulation of neuron death,2.30E−04
+GO:0002244,Hematopoietic progenitor cell differentiation,3.36E−03
+GO:0008037,Cell recognition,7.00E−03
+4m,GO:1905521,Regulation of macrophage migration,1.81E−05
+GO:0043473,Pigmentation,2.35E−05
+GO:0046486,Glycerolipid metabolic process,3.66E−05
+GO:0031669,Cellular response to nutrient levels,7.95E−05
+GO:0050873,Brown fat cell differentiation,8.04E−04
+GO:1902229,Regulation of intrinsic apoptotic signaling pathway in response to DNA damage,6.45E−03
+GO:0055076,Transition metal ion homeostasis,6.67E−03

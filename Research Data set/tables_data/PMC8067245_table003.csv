@@ -1,0 +1,10 @@
+Outcome Measure,FPA (Micro-6),FPA (Micro-14),FEP (Micro-14)
+Cell Growth,F > T *,Trend F > T,F > T
+Cell Density,Low,Intermediate,High
+Filamentation,"Low, no change F vs. T","Low, no change F vs. T","Very low, no change F vs. T"
+Colony Morphology,No change,No change,No change
+Colony Size,No change,F > T,F > T
+AmB Resistance,F > T,F > T,F > T
+CAS Resistance,NA,NA,F = T
+Biofilm,None,Trend T > F,NA
+Freeze Stress Resistance,NA,T > F,T > F

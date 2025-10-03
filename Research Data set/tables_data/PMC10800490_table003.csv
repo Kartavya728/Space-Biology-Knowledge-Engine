@@ -1,0 +1,39 @@
+Gene ID,Log2 Fold Change,padj,Symbol,Description
+AT1G70940,0.4567,1.46E-03,PIN3,Auxin efflux regulator
+AT3G26810,0.2620,7.66E-03,AFB2,Auxin F-box protein
+AT2G33310,0.4547,3.04E-04,IAA13,Auxin induced protein
+AT1G12820,0.3672,3.25E-03,AFB3,Auxin signaling F-box protein
+AT1G31880,0.7857,5.47E-03,BRX,BRX family protein
+AT5G47750,0.2417,2.70E-03,D6PKL2,D6PK family protein kinase
+AT1G16510,1.5668,6.93E-08,SAUR41,Clade III SAUR gene
+AT3G62150,0.6457,2.42E-03,ABCB21,ATP-binding cassette transporter
+AT5G60450,0.4424,9.39E-03,ARF4,Auxin response factor
+AT1G59750,0.3375,8.86E-05,ARF1,Auxin response factor
+AT1G30330,0.8869,6.11E-06,ARF6,Auxin response factor
+AT1G15750,0.2680,6.81E-05,TPL,WUS-interacting protein
+AT2G01420,0.5521,1.34E-04,PIN4,Auxin efflux carrier
+AT5G59430,0.4832,2.88E-03,TRP1,Telomere repeat binding protein
+AT1G77850,0.5913,9.30E-07,ARF17,Auxin response factor
+AT3G62980,0.3926,2.95E-04,TIR1,Auxin receptor
+AT1G19220,0.4469,9.25E-03,ARF19,Auxin response factor
+AT3G59900,0.7563,9.71E-04,ARGOS,Auxin-Regulated Gene Involved in Organ Size
+AT5G47370,1.8362,5.23E-13,HAT2,Homeobox-leucine zipper
+AT4G32280,2.6829,2.07E-08,IAA29,Auxin induced protein
+AT4G37580,1.2138,1.91E-04,HLS1,Putative N-acetyltransferase
+AT4G30080,0.6009,2.40E-04,ARF16,Auxin response factor
+AT4G38850,1.6286,2.91E-04,SAUR15,SAUR-like auxin-responsive protein
+AT3G16500,1.0398,2.51E-10,PAP1,Phytochrome-associated protein
+AT5G24520,0.3512,1.89E-03,TTG1,WD40 repeat containing protein
+AT5G12050,1.0703,4.08E-06,BG1,Rho GTPase-activating protein
+AT2G45210,1.2634,1.12E-04,SAUR36,SAUR-like auxin-responsive protein
+AT4G34770,0.9559,5.70E-03,SAUR1,SAUR-like auxin-responsive protein
+AT4G38825,2.1098,3.04E-05,SAUR13,SAUR-like auxin-responsive protein
+AT4G38840,0.8468,3.04E-05,SAUR14,SAUR-like auxin-responsive protein
+AT4G38860,1.3374,3.72E-09,SAUR16,SAUR-like auxin-responsive protein
+AT1G75580,1.5290,7.84E-06,SAUR51,SAUR-like auxin-responsive protein
+AT3G60690,1.0297,3.73E-03,SAUR59,SAUR-like auxin-responsive protein
+AT5G20820,3.1398,9.25E-04,SAUR76,SAUR-like auxin-responsive protein
+AT4G36110,1.7236,2.51E-04,SAUR9,SAUR-like auxin-responsive protein
+AT1G69160,0.8261,4.53E-03,BGL1,BIG GRAIN like protein
+AT2G42620,0.6706,2.67E-05,MAX2,F-box leucine-rich repeat family protein
+AT5G08560,0.2504,5.05E-03,WDR26,WD40 repeat containing protein

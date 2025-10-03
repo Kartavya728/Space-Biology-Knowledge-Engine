@@ -1,0 +1,8 @@
+Name,FDR,No. of DEGs,Gene Symbol
+"CD molecules, C-type lectin domain family",1.99 × 10−8,15,"Mrc1,Pi16,Itga6,Itgam,Itgb2,Tlr8,Cd163,Tfrc,Cd93,Csf1r,Cd14,Fcgr2b,Cd44,Cd68,C5ar1"
+"CD molecules, complement system, LY6/PLAUR domain-containing",4.69 × 10−7,6,"Itgam,Itgb2,C1qa,C1qb,C1qc,C5ar1"
+Scavenger receptors,0.0002,4,"Mrc1,Cd163,Cd14,Cd68"
+Basic helix–loop–helix proteins,0.0026,5,"Srebf1,Clock,Heyl,Bmal1,Npas2"
+"CD molecules, protein phosphatase 1 regulatory subunits, integrin α subunits",0.0407,2,"Itga6,Itgam"
+Rho family GTPases,0.0407,2,"Rhoj,Rhobtb1"
+"S100 calcium-binding proteins, EF-hand domain-containing",0.0407,2,"S100a4,S100a10"

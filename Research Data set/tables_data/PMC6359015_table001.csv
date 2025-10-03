@@ -1,0 +1,86 @@
+ONT,GO Term Name,
+,Transcript ID,Gene Symbol,Gene Description,FWt: GWTFC log2,FHsf: GHsfFC log2
+BP,defense response to other organism GO:0098542
+AT2G03760,ST1,sulphotransferase 12,1.1,1.0
+AT5G38980,,unknown,3.3,X
+At3g43250,,unknown in wounding,2.6,X
+AT4G02460,PMS1,"DNA mismatch repair protein, putative",2.2,
+AT2G44490,PEN2,Glycosyl hydrolase superfamily protein,1.4,X
+AT1G59124,,Disease resistance protein (CC-NBS-LRR class),X,2.4
+AT2G17430,NTA,Seven transmembrane MLO family protein,X,1.9
+AT4G35770,SEN1,Rhodanese/Cell cycle control phosphatase,X,1.8
+AT3G61060,PP2-A13,phloem protein 2-A13,X,1.5
+AT3G09940,MDHAR,monodehydroascorbate reductase,X,1.4
+CC,plant-type cell wall GO:0009505
+AT1G30600,,Subtilase family protein,2.5,X
+At4g30500,,unknown in cellulose biosynthetic process,2.4,X
+AT2G44490,PEN2,Glycosyl hydrolase superfamily protein,1.4,X
+AT1G78860,,curculin-like (mannose-binding) lectin,1.3,X
+AT5G44130,FLA13,FASCICLIN-like arabinogalactan protein 13 precursor,−2.1,X
+AT2G06850,XTH4,xyloglucan endotransglucosylase/hydrolase 4,X,−2.4
+AT5G51550,EXL3,EXORDIUM like 3,X,−2.1
+AT5G13980,,Glycosyl hydrolase family 38 protein,X,−1.6
+AT3G45970,EXPL1,expansin-like A1,X,−1.4
+AT1G15390,PDF1A,peptide deformylase 1A,X,−1.4
+AT1G75750,GASA1,GAST1 protein homolog 1,X,−1.4
+AT4G08950,EXO,"EXO Exordium, Phosphate-responsive 1 protein",X,−1.1
+AT1G73590,PIN1,Auxin efflux carrier family protein,X,−1.0
+BP,regulation of biological process GO:0050789regulation of metabolic process GO:0019222regulation of cellular metabolic process GO:0031323
+AT3G62080,,SNF7 family protein,2.6,X
+AT5G48560,,basic helix-loop-helix (bHLH) DNA-binding,2.4,X
+AT5G01920,STN8,Protein kinase superfamily protein,2.4,X
+AT2G46225,ABIL1,ABI-1-like 1,2.2,X
+AT5G56270,WRKY2,WRKY DNA-binding protein 2,1.9,X
+AT1G27370,SPL10,squamosa promoter binding protein-like 10,1.7,X
+AT5G62710,,Leucine-rich repeat protein kinase family protein,1.4,X
+AT5G05130,,DNA/RNA helicase protein,1.1,X
+AT5G07580,,Integrase-type DNA-binding superfamily protein,−3.3,X
+AT4G21380,RK3,receptor kinase 3,−2.9,X
+AT2G35530,bZIP16,basic region/leucine zipper transcription factor 16,−2.7,X
+AT1G78980,SRF5,STRUBBELIG-receptor family 5,−2.4,X
+AT1G78080,WIND1,related to AP2 4,−1.2,X
+AT4G36530,,alpha/beta-Hydrolases superfamily protein,−1.2,X
+CC,endomembrane system GO:0012505Golgi apparatus GO:0005794
+At3g18260,,Reticulon family protein,3.1,X
+At1g77510,PDIL1-2,PDI-like 1-2 protein disulfide isomerase-like 1-2,1.2,X
+At2g03760,ST1,sulphotransferase 12,1.1,X
+AT5G19070,,SNARE associated Golgi protein family,−2.6,X
+At2g22900,,Galactosyl transferase GMA12/MNN10,−2.4,X
+At4g36640,,Sec14p-like phosphatidylinositol transferprotein,−1.8,X
+At2g32720,CB5-B,cytochrome B5 isoform B,−1.5,X
+AT1G19970,,ER lumen protein retaining receptor protein,−1.4,X
+AT2G43240,,Nucleotide-sugar transporter family protein,−1.3,X
+BP,cellular response to sucrose starvation GO:0043617
+AT3G06850,DIN3,2-oxoacid dehydrogenases acyltransferases,X,1.2
+AT3G13450,DIN4,branched chain alpha-keto acid dehydrogenase E1 beta,X,1.3
+AT1G21400,E1α,Thiamin diphosphate-binding fold (THDP-binding),X,1.6
+"Valine, leucine and isoleucine degradation GO:0009083"
+AT3G06850,DIN3,2-oxoacid dehydrogenases acyltransferase family protein,X,1.2
+AT3G13450,DIN4,branched chain alpha-keto acid dehydrogenase E1 beta,X,1.3
+AT1G21400,E1α,Thiamin diphosphate-binding fold (THDP-binding),X,1.6
+AT2G14170,ALDH6B2,aldehyde dehydrogenase 6B2,X,1.2
+At4g34030,MCCB,subunit β of methylcrotonyl-CoA carboxylase (MCCB),X,1.1
+CC,plasma membrane GO:0005886
+AT5G67130,,PLC-like phosphodiesterases superfamily,X,−2.7
+AT3G21180,ATACA9,autoinhibited Ca(2+)-ATPase 9,X,−2.7
+AT5G65440,,,X,−1.9
+AT5G15350,ENODL17,early nodulin-like protein 17,X,−1.7
+AT5G13980,,Glycosyl hydrolase family 38 protein,X,−1.6
+AT3G54920,PMR6,Pectin lyase-like superfamily protein,X,−1.5
+AT1G17620,,Late embryogenesis abundant (LEA),X,−1.2
+AT5G03700,,D-mannose binding lectin protein,X,−1.1
+AT1G73590,PIN1,Auxin efflux carrier family protein,X,−1.0
+BP,developmental process GO:0032502anatomical structure morphogenesis GO:0009653
+AT2G35340,MEE29,helicase domain-containing protein,X,−3.2
+AT3G63290,,2-oxoglutarate (2OG) and Fe(II)-dependent oxygenase,X,−3.1
+AT5G65930,ZWI,kinesin-like calmodulin-binding protein (ZWICHEL),X,−3.0
+AT4G02460,PMS1,"DNA mismatch repair protein, putative",X,−2.9
+AT3G47450,RIF1,P-loop containing nucleoside triphosphate hydrolase,X,−2.8
+AT3G21180,ATACA9,autoinhibited Ca2+-ATPase 9,X,−2.7
+AT2G06850,XTH4,xyloglucan endotransglucosylase/hydrolase 4,X,−2.4
+AT4G15570,MAA3,P-loop containing nucleoside triphosphate hydrolase,X,−1.8
+AT3G54220,SCR,SCR Scarecrow alias SGR1 Shoot Gravitropism,X,−1.7
+AT3G45970,EXPL1,expansin-like A1,X,−1.4
+AT1G75750,GASA1,GAST1 protein homolog 1,X,−1.4
+AT4G03190,GRH1,GRR1-like protein 1,X,−1.1
+AT1G73590,PIN1,Auxin efflux carrier family protein,X,−1.0

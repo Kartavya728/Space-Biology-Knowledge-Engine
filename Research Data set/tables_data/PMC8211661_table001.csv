@@ -1,0 +1,21 @@
+,L93,L96,L101
+Statistics for metatranscriptome sequences
+Mean read length (bp),378.9,526.4,423.7
+Read length N50 (bp),417,616,512
+Mean read quality (Q-score),8,8.5,7
+Percentage of reads >Q-score 5,86.20%,93.30%,81.80%
+Total bases (bp),"2,637,799,078","6,649,786,942","4,424,479,269"
+Total number of reads,"6,961,982","12,631,723","10,442,395"
+Total reads after trimming and QCa(min length > 100 bp),"4,061,653","10,661,802","7,361,100"
+Filtered out host readsb,22.70%,28.24%,8.94%
+Removed rRNA reads,63.10%,93.75%,69.34%
+Metatranscriptome mapping and annotation results
+Reads used in taxonomy (16S and 18S),"521,345","2,453,876","1,315,470"
+Reads in non-rRNA analysis,"1,158,293","481,186","2,055,342"
+Total Uniprot-annotated readsc(e-value cutoff 0.05),"57,315","104,111","88,850"
+Uniprot other eukaryotic,9510,"10,032","11,525"
+Uniprot bacteria and Archaea,2543,1238,4936
+Uniprot fungi,780,346,1343
+Uniprot viruses,253,108,538
+Bacteria with KO annotation,2247,1075,4276
+Fungi KO annotation,442,208,711

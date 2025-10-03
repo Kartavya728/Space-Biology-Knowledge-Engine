@@ -1,0 +1,12 @@
+Plate,Well,Growth Inhibitor,AUC,Pvalue
+FL,GC
+11C,B12,Lomefloxacin,"3,222 ± 776","4,509 ± 135",0.0470
+11C,E08,Enoxacin,"2,508 ± 627",44 ± 58,0.0025
+11C,E11,Nalidixic Acid,"2,496 ± 200","3,437 ± 105",0.0019
+12B,B06,Penimepicycline,"3,738 ± 269","4,400 ± 160",0.0216
+13B,C02,6-Mercaptopurine,"3,722 ± 894","1,835 ± 11",0.0216
+13B,D09,Rolitetracycline,"4,556 ± 53","4,998 ± 167",0.0120
+13B,F03,Cesium chloride,"3,219 ± 68","3,642 ± 112",0.0051
+13B,F04,Cesium chloride,"2,467 ± 91","3,139 ± 100",0.0010
+13B,G07,Manganese(II) chloride,"5,391 ± 120","5,713 ± 133",0.0352
+13B,G10,Trifluoperazine,"3,659 ± 749","2,018 ± 628",0.0437

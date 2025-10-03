@@ -1,0 +1,9 @@
+Level 1,Level 2,Ratio,P> Chi square
+Space 1,PBS Sham,21.517,<0.0001
+Space 2,PBS Sham,15.661,<0.0001
+Ground 1,PBS Sham,21.565,<0.0001
+Ground 2,PBS Sham,17.671,<0.0001
+Space 1,Ground 1,0.997,0.995
+Space 1,Ground 2,1.803,0.337
+Space 2,Ground 1,0.7262,0.5223
+Space 2,Ground 2,2.0402,0.1131

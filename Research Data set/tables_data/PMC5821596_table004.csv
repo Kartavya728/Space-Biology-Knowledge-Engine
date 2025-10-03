@@ -1,0 +1,4 @@
+Team,BRIC identifier,Ecotype,Tissue,Sowing pattern,Medium base,Medium additives,No. of seeds,Facility,Normalization
+BRIC-16-Cyt,"E, F, H",Ler-0,Shoot of seedling,1 Central row,1.2% AGM,"MS salts, 1% sucrose",39–42,ICBR,RMA
+BRIC-16-Reg,"C, D, H",Col-0,Entire seedling,Several rows,1.2% AGM,"MS salts, 1% sucrose",150–200,Noble,RMA
+BRIC-16-DNA,"A, B, G",Col-0,Entire seedling,Grid pattern,0.5% Phytagel,MS salts,75,ICBR,MAS5

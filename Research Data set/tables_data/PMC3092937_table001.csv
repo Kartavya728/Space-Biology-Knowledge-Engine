@@ -1,0 +1,6 @@
+Cell type,Gal4; UAS,Percentage (n) of adultsawith melanotic nodules,TotalN
+Negative controlb,Positive controlc,Rescue testd
+Blood cells,hemese-Gal4; UAS-dpldline 1,0% (352),87.5% (32),5% (121),505
+hemese-Gal4; UAS-dpldline 3a,0% (526),94.1% (43),7.5% (105),674
+hemese-Gal4; UAS-dpldline 9b,0% (353),93% (17),5.7% (106),476
+Control,sgs3-Gal4; UAS-dplde,0% (514),89.3% (75),81.6% (103),692

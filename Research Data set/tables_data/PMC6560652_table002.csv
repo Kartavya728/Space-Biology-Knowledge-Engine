@@ -1,0 +1,16 @@
+Clone,average,average,average,average,ANOVA,Tukey Static,Tukey Static,Tukey Static,Tukey Flight,Tukey Flight,Tukey RWV
+,static,Flight,RWV,RPM,,vs. Flight,vs. RWV,vs. RPM,vs. RWV,vs. RPM,vs. RPM
+YE media
+Ssa4,208 ± 22,314 ± 11,218 ± 4,128 ± 1,0.0001,0.004,ns,0.03,ns,0.0002,0.04
+Sfp1Δ Ssa4,492 ± 51,255 ± 7,240 ± 19,365 ± 22,0.0004,0.003,0.001,ns,ns,ns,ns
+Msn4Δ Ssa4,139 ± 5,171 ± 0,120 ± 1,133 ± 2,0.0001,0.001,0.04,ns,0.0002,0.0009,0.33
+YIL052c,178 ± 23,254 ± 7,164 ± 6,197 ± 7,0.04,0.05,ns,ns,0.04,ns,ns
+Sfp1Δ RPL34B,357 ± 31,218 ± 9,299 ± 15,376 ± 14,0.002,0.004,ns,ns,ns,0.005,ns
+Msn4Δ RPL34B,143 ± 5,177 ± 12,123v2,138v1,0.0002,0.004,ns,ns,0.0002,0.004,ns
+YPD media
+Ssa4,222 ± 23,350 ± 3,330 ± 8,312 ± 24,0.002,0.003,0.01,0.04,ns,ns,ns
+Sfp1Δ Ssa4,502 ± 7,498 ± 6,535 ± 11,592 ± 11,0.00002,ns,ns,0.0002,ns,0.0003,0.02
+Msn4Δ Ssa4,230 ± 21,301 ± 3,161 ± 4,219 ± 4,0.0004,0.03,0.04,ns,0.003,0.03,ns
+YIL052c,268 ± 12,269 ± 3,285 ± 5,26 ± 11,ns,ns,ns,ns,ns,ns,ns
+Sfp1Δ RPL34B,347 ± 16,378 ± 4,317 ± 4,378 ± 8,0.03,ns,ns,ns,0.04,ns,0.05
+Msn4 Δ RPL34B,236 ±23,314 ± 3,158 ± 4,202 ± 3,0.0002,0.03,0.03,ns,0.0003,0.006,ns

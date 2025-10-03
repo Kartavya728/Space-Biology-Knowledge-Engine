@@ -1,0 +1,6 @@
+,,GO term name
+Characteristics,Ontology,Transcript ID,Gene symbol,Gene description,FArg: GArgFC (log2),FArg: FWtFC (log2)
+"Figure 4B, Category I, 25 genes DIFFERENTIAL IN THE SPACEFLIGHT ADAPTATION IN ARG1 KO CELLS AND DIFFERENTIAL BETWEEN GENOTYPES WITHIN THE SPACEFLIGHT ENVIRONMENT",Biological Process,xyloglucan metabolic process GO:0010411,,
+AT1G68560,XYL1,alpha-xylosidase 1,−1.2,−1.4
+,AT4G03210,XTH9,xyloglucan endotransglucosylase/hydrolase 9,−1.9,−1.4
+,AT2G06850,XTH4,xyloglucan endotransglucosylase/hydrolase 4,−1.9,−2.0

@@ -1,0 +1,19 @@
+,DMP,DEG
+Total DMP,Hypomethylated DMP,Hypermethylated DMP,TotalDEG,Upregulated DEG,Downregulated DEG
+Radiation vs. Control,137 promoters,118 promoters,19 promoters,Gm28900,Gm28900,Rps13
+Gm43809,Gm43809,Gm10357
+Gm49345,Gm49345,
+Rps13,,
+Gm10357,,
+Unloading vs. Control,71 promoters,62 promoters,Gm35801,Ephb3,Ephb3,Gm12918
+Gm13066,Kcnc2,Kcnc2,Gm4149
+Cnpy1,Cdh11,Cdh11,Hist1h2bc
+Cbfa2t2-ps1,Gal3st3,Gal3st3,Htr1b
+Gm15700,Gm12918,,Sh2d5
+Gm27679,Gm4149,,Rps13
+Hbq1a,Hist1h2bc,,Rpl36a-ps2
+1700019N19Rik,Htr1b,,
+Gm6024,Sh2d5,,
+,Rps13,,
+Rpl36a-ps2,,
+Combined vs. Control,170 promoters,119 promoters,51 promoters,270 genes,132 genes,138 genes

@@ -1,0 +1,11 @@
+Parental Background,Strain,Genetic background,Reference
+Af293,Af293.1,pyrG1,[67]
+,TJW55.2,"pyrG1,A.parasiticus pyrG",[68]
+,TFYL81.5,"pyrG1,argB1,ΔakuA::mluc,A.fumigatus pyrG,A.fumigatus argB",[30]
+,TBK1.1,"pyrG1,gpdA::YFP::A.fumigatus pyrG",[21]
+,TFYL44.1,"pyrG1,argB1,ΔakuA",[30]
+,TBK4.1,"pyrG1,argB1,ΔakuA,A.fumigatus argB",This study
+,TBK5.1,"pyrG1,argB1,ΔakuA,A.fumigatus argB,gpdA::mCherry::A.fumigatus pyrG",This study
+CEA10,CEA17,pyrG1,[69]
+,CEA17 KU80Δ,"pyrG1,ΔakuB::A.fumigatus pyrG",[70]
+,TFYL49.1,"pyrG1,ΔakuB::pyrG; gpdA(p)::fmqB::eGFP::A.fumigatus pyrG",[71]

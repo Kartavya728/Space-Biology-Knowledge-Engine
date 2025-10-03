@@ -1,0 +1,7 @@
+MSEV GENES FOUND IN GENOME ANALYSIS
+,MSEV BLASTn scaffold results,AUGUSTUS prediction results
+Found,Percentage,Found,Percentage
+Female,278,68.3,169,41.5
+Male,275,67.6,166,40.8
+Shared in M+F,265,,159,
+Joint Assembly,375,92.1%,325,79.9%

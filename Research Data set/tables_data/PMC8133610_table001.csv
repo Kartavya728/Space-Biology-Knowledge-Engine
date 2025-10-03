@@ -1,0 +1,12 @@
+Organism,Stimulus,Signal,Speed,Number of 50-µm cells/s,Reference
+Venus flytrap,Touch,AP,54–115 mm/s,"1,080–2,300","(Sibaoka, 1966)"
+M. pudica(rachilla),Touch,AP,3–7 mm/s,60–140,"(Sibaoka, 1966)"
+M. pudica(petiole),Touch,AP,6–44 mm/s,120–880,"(Sibaoka, 1966)"
+M. pudica(petiole),Wound,VP,1–4 mm/s,20–80,"(Houwink, 1935)"
+Arabidopsis,Wound,VP vasculature,1–2 mm/s,20–40,"(Mousavi et al., 2013;Nguyen et al., 2018)"
+,,VP mesophyll,0.4 mm/s,8,"(Mousavi et al., 2013)"
+,,Ca2+wave vasculature,1–2 mm/s,20–40,"(Nguyen et al., 2018;Toyota et al., 2018)"
+,,Ca2+wave mesophyll,0.4 mm/s,8,"(Toyota et al., 2018)"
+,,ROS wave vasculature,∼1 mm/s,20,"(Miller et al., 2009;Lew et al., 2020)"
+,,ROS wave mesophyll,0.4 mm/s,8,"(Lew et al., 2020)"
+Arabidopsis,NaCl,Ca2+wave root,0.4 mm/s,8,"(Choi et al., 2014)"

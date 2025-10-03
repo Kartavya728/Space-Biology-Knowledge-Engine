@@ -1,0 +1,10 @@
+,,,Edible fresh,Time normalized,Edible fresh
+,,Average,weight per,edible fresh weight,weight per cultivation
+,Cycles for,cultivation,cultivation area,per cultivation area,volume
+Crop name,evaluation,cycle length (d),(kg/m2),(kg/m2/d),(kg/m3)
+"Arugula (initial light intensity, 330 μmol/(m2*s) at 16 cm height)",9,24.2,3.05 ± 0.27 (1.87–4.34),0.111 ± 0.007 (0.078–0.140),3.37–7.82
+"Arugula (higher light intensity, 600 μmol/(m2*s) at 16 cm height)",8,29.0,5.49 ± 0.40 (4.13–6.90),0.188 ± 0.011 (0.153–0.222),7.44–12.43
+Swiss Chard,3,90.0,9.26 ± 1.13 (7.35–11.28),0.102 ± 0.010 (0.088–0.121),13.24–20.32
+Red Giant,3,82.7,10.78 ± 0.52 (8.73–11.96),0.130 ± 0.004 (0.106–0.145),15.72–21.54
+Frizzy Lizzy,3,82.7,8.93 ± 0.48 (7.11–10.37),0.107 ± 0.005 (0.086–0.125),12.80–18.70
+Mizuna,1,119.0,23.11,0.194,41.64

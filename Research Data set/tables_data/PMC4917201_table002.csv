@@ -1,0 +1,7 @@
+Endpoint,Baseline,rAAV-GFP,rAAV-Leptin,FDR-adjusted p-value
+Lumbar Vertebra (cancellous bone)
+Bone volume/tissue volume (%),36.5 ± 1.9,28.9 ± 2.05a*,32.7 ± 1.8,0.087
+Connectivity density (1/mm3),50.4 ± 2.7,52.1 ± 3.1,56.0 ± 4.8,0.625
+Trabecular number (1/mm),4.1 ± 0.1,3.6 ± 0.13a*,3.9 ± 0.1,0.090
+Trabecular thickness (μm),87 ± 2,79 ± 2,82 ± 3,0.182
+Trabecular spacing (μm),236 ± 9,273 ± 11a*,252 ± 8,0.087

@@ -1,0 +1,41 @@
+No.,Af293 gene,A1163 gene,Gene name,Gene type,SM(s) produced
+1,Afu1g01010,No homolog,,HR-PKS,
+2,Afu1g10380,AFUB_009800,pesB(pes1),NRPS,Fumigaclavine C151
+3,Afu1g17200,AFUB_016590,sidC,NRPS,"Ferricrocin, hydroxyferricrocin152,153"
+4,Afu1g17740,AFUB_045790,,Hybrid,
+5,Afu2g01290,AFUB_018370,,HR-PKS,
+6,Afu2g05760,AFUB_022790,,PKS-like,
+7,Afu2g17600,AFUB_033290,alb1(pksP),NR-PKS,"YWA1, conidial pigment154"
+8,Afu2g17990,AFUB_033680,fgaPT1,DMAT,Fumigaclavine C155
+9,Afu3g01410,AFUB_046990,,HR-PKS,
+10,Afu3g02530,No homolog,,PKS-like,
+11,Afu3g02570,No homolog,,NR-PKS,
+12,Afu3g02670,AFUB_045610,,NRPS-like,
+13,Afu3g03350,AFUB_044900,sidE,NRPS,
+14,Afu3g03420,AFUB_044830,sidD,NRPS,"Fusarinine C, triacetylfusarinine C152,153"
+15,Afu3g12920,AFUB_036270,hasD(pesF),NRPS,Hexadehydroastechrome73
+16,Afu3g12930,AFUB_036260,hasE,DMAT,Hexadehydroastechrome73
+17,Afu3g13730,AFUB_035460,pesG,NRPS,
+18,Afu3g14700,AFUB_034520,,HR-PKS,
+19,Afu3g15270,AFUB_033950,pesH,NRPS,
+20,Afu4g00210,AFUB_100730,encA,NR-PKS,Endocrocin81
+21,Afu4g14560,AFUB_071800a,tpcC,NR-PKS,"Trypacidin, endocrocin82"
+22,Afu4g14770,AFUB_072030,helA,TC,Helvolic acid100
+23,Afu5g10120,AFUB_057720,,NRPS-like,
+24,Afu5g12730,AFUB_060400,pesI,NRPS,
+25,Afu6g03480,AFUB_094810,fmpE,NRPS-like,Fumipyrrole103
+26,Afu6g08560,AFUB_074520,,NRPS-like,
+27,Afu6g09610,AFUB_075660,pesJ,NRPS,
+28,Afu6g09660,AFUB_075710,gliP,NRPS,Gliotoxin156
+29,Afu6g12050,AFUB_078040,fqzC(pesL),NRPS,"Fumigaclavine C,157fumiquinazolines158"
+30,Afu6g12080,AFUB_078070,,NRPS,fumiquinazolines159
+31,Afu6g13930,AFUB_000820,pyr2,HR-PKS,Pyripyropene A160
+32,Afu7g00160,AFUB_086700,nscA(fccA),NR-PKS,"Neosartoricin,105fumicyclines106"
+33,Afu8g00170,AFUB_086360,ftmA,NRPS,Fumitremorgins161
+34,Afu8g00370,AFUB_086200,fma-PKS,HR-PKS,Fumagillin113
+35,Afu8g00540,AFUB_086030,psoA,Hybrid,Pseurotin A162
+36,Afu8g00620,AFUB_085950,cdpNPT,DMAT,
+37,Afu8g01640,AFUB_084950,,NRPS-like,
+38,Afu8g02350,AFUB_084240,,NR-PKS,
+39,No homolog,AFUB_079710,,PKS,
+40,No homolog,AFUB_045640,,PKS,

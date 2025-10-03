@@ -1,0 +1,8 @@
+Pyranonigrin A biosynthesis gene,Gene name,P. thymicolahomolog JGI protein ID,Identity (%),Putative function
+pyrD,An18g00470,180933,148/256 (58%),Hydrolase
+,An18g00480,104760,386/554 (70%),Cyclohexamide resistance protein
+pyrC,An18g00490,104735,190/269 (71%),FAD binding monooxygenase
+pyrB,An18g00500,104701,296/453 (65%),Cytochrome P450
+pyrE,An18g00510,168730,326/454 (72%),FAD binding oxidoreductase
+pyrA,An18g00520,168734,2371/3881 (61%),PKS-NRPS hybrid
+,An18g00530,,,Hypothetical protein
