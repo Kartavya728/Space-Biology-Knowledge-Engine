@@ -9,6 +9,7 @@ import StarBackground from '../components/main/StarBackground'; // 👈 import y
 export function Dashboard({ user, userType, onUserTypeChange, onSignOut }) {
   const [currentPage, setCurrentPage] = useState('main');
   const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [selectedResponse, setSelectedResponse] = useState<any | null>(null);
 
   const getThemeColors = () => {
     switch (userType) {
@@ -44,13 +45,13 @@ export function Dashboard({ user, userType, onUserTypeChange, onSignOut }) {
   const renderPage = () => {
     switch (currentPage) {
       case 'main':
-        return <MainContent userType={userType} theme={theme} />;
+        return <MainContent userType={userType} theme={theme} initialResponse={selectedResponse} />;
       case 'how-it-works':
         return <HowItWorks theme={theme} />;
       case 'about':
         return <AboutTeam theme={theme} />;
       default:
-        return <MainContent userType={userType} theme={theme} />;
+        return <MainContent userType={userType} theme={theme} initialResponse={selectedResponse} />;
     }
   };
 
@@ -105,6 +106,10 @@ export function Dashboard({ user, userType, onUserTypeChange, onSignOut }) {
                 onSignOut={onSignOut}
                 theme={theme}
                 onToggle={() => setSidebarOpen(false)}
+                onSelectHistory={(resp) => {
+                  setSelectedResponse(resp);
+                  setCurrentPage('main');
+                }}
               />
             </motion.div>
           )}
