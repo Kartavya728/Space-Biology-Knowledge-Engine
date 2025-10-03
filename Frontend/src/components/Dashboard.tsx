@@ -4,7 +4,8 @@ import { Sidebar } from './Sidebar';
 import { MainContent } from './MainContent';
 import { HowItWorks } from './HowItWorks';
 import { AboutTeam } from './AboutTeam';
-import StarBackground from '../components/main/StarBackground'; // 👈 import your starfield
+import StarBackground from '../components/main/StarBackground';
+import { DataGallery } from './DataGallery';
 
 export function Dashboard({ user, userType, onUserTypeChange, onSignOut }) {
   const [currentPage, setCurrentPage] = useState('main');
@@ -41,19 +42,21 @@ export function Dashboard({ user, userType, onUserTypeChange, onSignOut }) {
   };
 
   const theme = getThemeColors();
+const renderPage = () => {
+  switch (currentPage) {
+    case 'main':
+      return <MainContent userType={userType} theme={theme} initialResponse={selectedResponse} />;
+    case 'how-it-works':
+      return <HowItWorks theme={theme} />;
+    case 'about':
+      return <AboutTeam theme={theme} />;
+    case 'data-gallery': // 👈 NEW PAGE
+      return <DataGallery userType={userType} theme={theme} user={user} />;
+    default:
+      return <MainContent userType={userType} theme={theme} initialResponse={selectedResponse} />;
+  }
+};
 
-  const renderPage = () => {
-    switch (currentPage) {
-      case 'main':
-        return <MainContent userType={userType} theme={theme} initialResponse={selectedResponse} />;
-      case 'how-it-works':
-        return <HowItWorks theme={theme} />;
-      case 'about':
-        return <AboutTeam theme={theme} />;
-      default:
-        return <MainContent userType={userType} theme={theme} initialResponse={selectedResponse} />;
-    }
-  };
 
   return (
     <div className={`min-h-screen relative overflow-hidden`}>
