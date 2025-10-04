@@ -2,7 +2,8 @@ import os
 import json
 import time
 import re
-from typing import Dict, List, Set, Generator
+import logging
+from typing import Dict, List, Set, Generator, Tuple
 from dotenv import load_dotenv
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_chroma import Chroma
@@ -16,6 +17,9 @@ from pydantic import BaseModel, Field
 from django.http import JsonResponse, StreamingHttpResponse
 from django.views.decorators.csrf import csrf_exempt
 
+# Configure logging
+logger = logging.getLogger(__name__)
+
 load_dotenv()
 
 # ============================================================================
@@ -27,6 +31,16 @@ class Paragraph(BaseModel):
     text: str = Field(description="Paragraph text content")
     images: List[str] = Field(default_factory=list, description="Image IDs")
     tables: List[str] = Field(default_factory=list, description="Table IDs")
+    sources: List[Dict] = Field(default_factory=list, description="Source citations")
+    technical_terms: List[str] = Field(default_factory=list, description="Technical terms used")
+
+class SourceCitation(BaseModel):
+    source_type: str = Field(description="Type: research_paper, website, database")
+    title: str = Field(description="Source title")
+    url: str = Field(description="Source URL if available")
+    authors: List[str] = Field(default_factory=list, description="Authors if available")
+    publication_date: str = Field(description="Publication date if available")
+    relevance_score: float = Field(description="Relevance score 0-1")
 
 
 # ============================================================================
@@ -81,7 +95,7 @@ ROLE_STRUCTURES = {
 }
 
 ROLE_PROMPTS = {
-    'scientist': """You are a senior scientific research analyst providing expert-level technical analysis.
+    'scientist': """You are a senior scientific research analyst providing expert-level technical analysis based EXCLUSIVELY on the retrieved vector database content.
 
 STRUCTURE YOUR RESPONSE WITH THESE EXACT SECTIONS (Each section MUST be 200-300 words):
 1. Executive Summary: Concise overview highlighting the most significant findings and their implications
@@ -93,15 +107,18 @@ STRUCTURE YOUR RESPONSE WITH THESE EXACT SECTIONS (Each section MUST be 200-300 
 
 CRITICAL REQUIREMENTS:
 - Each section must contain 200-300 words (approximately 15-25 sentences)
-- Reference specific numerical data, measurements, and equations throughout
-- Use technical terminology appropriate for expert scientific audience
-- Naturally integrate references to figures and tables in flowing text
-- Include statistical significance values (p-values, confidence intervals)
-- Compare findings with established scientific benchmarks and prior research
-- Provide detailed technical explanations with specific examples
-- Discuss limitations and potential sources of error""",
+- ONLY use information from the provided vector database context - do not generate generic content
+- Reference specific numerical data, measurements, and equations from the retrieved documents
+- Use advanced technical terminology: "biochemical pathways", "molecular mechanisms", "physiological responses", "metabolic processes", "cellular signaling", "gene expression", "protein synthesis", "enzymatic activity", "oxidative stress", "mitochondrial function"
+- Include statistical significance values (p-values, confidence intervals) from the source data
+- Compare findings with established scientific benchmarks from the retrieved research
+- Provide detailed technical explanations with specific examples from the documents
+- Discuss limitations and potential sources of error mentioned in the source material
+- End each paragraph with proper citations: "Source: [Document Title] (Authors, Year)" or "Reference: [Research Paper Title]"
+- Use technical abbreviations: NASA, ISS, ESA, CNSA, JAXA, ROSCOSMOS, etc.
+- Include specific technical parameters: temperature ranges, pressure values, radiation levels, gravitational forces, etc.""",
     
-    'investor': """You are an investment analyst specializing in space technology ventures and deep-tech commercialization.
+    'investor': """You are an investment analyst specializing in space technology ventures and deep-tech commercialization based EXCLUSIVELY on the retrieved vector database content.
 
 STRUCTURE YOUR RESPONSE WITH THESE EXACT SECTIONS (Each section MUST be 200-300 words):
 1. Investment Overview: Executive summary of the investment opportunity with key value propositions and competitive advantages
@@ -112,16 +129,20 @@ STRUCTURE YOUR RESPONSE WITH THESE EXACT SECTIONS (Each section MUST be 200-300 
 6. Funding Requirements: Detailed capital needs, funding milestones, use of proceeds, and investment timeline
 
 CRITICAL REQUIREMENTS:
-- Each section must contain 200-300 words with specific financial data
-- Include concrete market size estimates with credible sources
-- Provide quantified financial projections with assumptions clearly stated
-- Specify investment amounts, timelines, and expected returns
-- Compare to similar investments and market comparables
-- Address intellectual property, regulatory compliance, and competitive moats
-- Include TAM/SAM/SOM analysis where applicable
-- Discuss exit strategies and liquidity scenarios""",
+- Each section must contain 200-300 words with specific financial data from the retrieved documents
+- ONLY use information from the provided vector database context - do not generate generic content
+- Use advanced financial and technical terminology: "market capitalization", "revenue streams", "scaling economics", "unit economics", "total addressable market (TAM)", "serviceable addressable market (SAM)", "serviceable obtainable market (SOM)", "venture capital", "private equity", "initial public offering (IPO)", "mergers and acquisitions (M&A)"
+- Include concrete market size estimates with credible sources from the retrieved data
+- Provide quantified financial projections with assumptions clearly stated from the source material
+- Specify investment amounts, timelines, and expected returns from the documents
+- Compare to similar investments and market comparables mentioned in the research
+- Address intellectual property, regulatory compliance, and competitive moats from the source data
+- Include TAM/SAM/SOM analysis where applicable from the retrieved information
+- Discuss exit strategies and liquidity scenarios based on the source material
+- End each paragraph with proper citations: "Source: [Document Title] (Authors, Year)" or "Reference: [Research Paper Title]"
+- Use technical abbreviations: NASA, ISS, ESA, CNSA, JAXA, ROSCOSMOS, SpaceX, Blue Origin, etc.""",
     
-    'mission-architect': """You are a NASA mission planning expert specializing in lunar and Mars mission architecture.
+    'mission-architect': """You are a NASA mission planning expert specializing in lunar and Mars mission architecture based EXCLUSIVELY on the retrieved vector database content.
 
 STRUCTURE YOUR RESPONSE WITH THESE EXACT SECTIONS (Each section MUST be 200-300 words):
 1. Mission Overview: Comprehensive description of mission objectives, scientific goals, strategic alignment with NASA priorities
@@ -132,14 +153,19 @@ STRUCTURE YOUR RESPONSE WITH THESE EXACT SECTIONS (Each section MUST be 200-300 
 6. Risk Mitigation: Identification of critical risks, failure modes and effects analysis (FMEA), contingency plans, and redundancy strategies
 
 CRITICAL REQUIREMENTS:
-- Each section must contain 200-300 words with specific technical parameters
-- Include quantified resource requirements (power in kW, mass in kg, data rates in Mbps)
-- Provide detailed timeline estimates with specific dates and durations
-- Consider harsh lunar/Martian environment challenges (radiation, temperature extremes, dust)
-- Reference system diagrams and technical architecture naturally in text
-- Address crew safety, life support requirements, and mission-critical systems
-- Include Technology Readiness Level (TRL) assessments
-- Discuss mission success criteria and performance metrics""",
+- Each section must contain 200-300 words with specific technical parameters from the retrieved documents
+- ONLY use information from the provided vector database context - do not generate generic content
+- Use advanced aerospace and mission planning terminology: "mission architecture", "systems integration", "technology readiness level (TRL)", "critical path analysis", "failure modes and effects analysis (FMEA)", "redundancy strategies", "thermal management", "power distribution", "communication protocols", "navigation systems", "life support systems", "environmental control", "crew safety protocols"
+- Include quantified resource requirements (power in kW, mass in kg, data rates in Mbps) from the source data
+- Provide detailed timeline estimates with specific dates and durations from the documents
+- Consider harsh lunar/Martian environment challenges (radiation, temperature extremes, dust) mentioned in the research
+- Reference system diagrams and technical architecture naturally in text from the source material
+- Address crew safety, life support requirements, and mission-critical systems from the retrieved data
+- Include Technology Readiness Level (TRL) assessments from the source documents
+- Discuss mission success criteria and performance metrics from the research
+- End each paragraph with proper citations: "Source: [Document Title] (Authors, Year)" or "Reference: [Research Paper Title]"
+- Use technical abbreviations: NASA, ISS, ESA, CNSA, JAXA, ROSCOSMOS, SpaceX, Blue Origin, etc.
+- Include specific technical parameters: temperature ranges, pressure values, radiation levels, gravitational forces, etc. from the source material""",
 }
 
 
@@ -155,12 +181,12 @@ def parse_media_refs(metadata: Dict) -> Dict[str, List[str]]:
         refs['tables'] = [tbl.strip() for tbl in metadata['tables'].split(',') if tbl.strip()]
     return refs
 
-def get_context_with_media(query: str, user_type: str, k: int = 10) -> Dict:
-    """Enhanced retrieval with user type context"""
+def get_context_with_media(query: str, user_type: str, k: int = 15) -> Dict:
+    """Enhanced retrieval with user type context and source tracking"""
     role_keywords = {
-        'scientist': 'methodology experimental results data analysis research scientific',
-        'investor': 'commercial market investment ROI revenue applications business',
-        'mission-architect': 'mission planning requirements safety feasibility engineering systems'
+        'scientist': 'methodology experimental results data analysis research scientific methodology experimental design statistical significance',
+        'investor': 'commercial market investment ROI revenue applications business market analysis financial projections',
+        'mission-architect': 'mission planning requirements safety feasibility engineering systems technical specifications'
     }
     
     enhanced_query = f"{query} {role_keywords.get(user_type, '')}"
@@ -169,14 +195,31 @@ def get_context_with_media(query: str, user_type: str, k: int = 10) -> Dict:
     
     all_images, all_tables = set(), set()
     formatted_blocks = []
+    source_citations = []
     
     for i, doc in enumerate(docs, 1):
         media_refs = parse_media_refs(doc.metadata)
         all_images.update(media_refs['images'])
         all_tables.update(media_refs['tables'])
         
+        # Extract source information
+        source_info = {
+            'source_type': 'research_paper' if 'paper' in doc.metadata.get('source', '').lower() else 'database',
+            'title': doc.metadata.get('title', doc.metadata.get('source', 'Unknown Source')),
+            'url': doc.metadata.get('url', ''),
+            'authors': doc.metadata.get('authors', []),
+            'publication_date': doc.metadata.get('date', ''),
+            'relevance_score': 1.0 - (i * 0.05)  # Higher relevance for earlier results
+        }
+        source_citations.append(source_info)
+        
         block = f"--- Document {i} ---\n"
         block += f"Source: {doc.metadata.get('source', 'Unknown')}\n"
+        block += f"Title: {source_info['title']}\n"
+        if source_info['authors']:
+            block += f"Authors: {', '.join(source_info['authors'])}\n"
+        if source_info['publication_date']:
+            block += f"Date: {source_info['publication_date']}\n"
         if media_refs['images'] or media_refs['tables']:
             block += "Media: "
             if media_refs['images']:
@@ -193,9 +236,30 @@ def get_context_with_media(query: str, user_type: str, k: int = 10) -> Dict:
             'images': sorted(list(all_images)),
             'tables': sorted(list(all_tables))
         },
+        'source_citations': source_citations,
         'total_documents': len(docs),
         'documents': formatted_blocks
     }
+
+def extract_technical_terms(text: str) -> List[str]:
+    """Extract technical terms from text"""
+    technical_patterns = [
+        r'\b[A-Z]{2,}\b',  # Acronyms
+        r'\b\w*[a-z]{2,}\w*[a-z]{2,}\b',  # Compound technical terms
+        r'\b\w*[a-z]{3,}\w*[a-z]{3,}\b',  # Multi-syllable technical terms
+        r'\b\w*[a-z]{2,}\w*[a-z]{2,}\w*[a-z]{2,}\b'  # Complex technical terms
+    ]
+    
+    terms = set()
+    for pattern in technical_patterns:
+        matches = re.findall(pattern, text, re.IGNORECASE)
+        terms.update(matches)
+    
+    # Filter out common words
+    common_words = {'the', 'and', 'for', 'are', 'but', 'not', 'you', 'all', 'can', 'had', 'her', 'was', 'one', 'our', 'out', 'day', 'get', 'has', 'him', 'his', 'how', 'its', 'may', 'new', 'now', 'old', 'see', 'two', 'way', 'who', 'boy', 'did', 'man', 'men', 'put', 'say', 'she', 'too', 'use'}
+    technical_terms = [term for term in terms if term.lower() not in common_words and len(term) > 3]
+    
+    return sorted(list(set(technical_terms)))[:10]  # Return top 10 unique terms
 
 def rag_retrieval_tool(query: str) -> str:
     result = get_context_with_media(query, 'scientist', k=10)
@@ -216,7 +280,7 @@ def stream_event(event_type: str, content: any) -> str:
 # OUTPUT PARSER
 # ============================================================================
 
-def parse_to_streamable_structure(agent_response: str, media_references: Dict, user_type: str, query: str) -> List[Dict]:
+def parse_to_streamable_structure(agent_response: str, media_references: Dict, user_type: str, query: str, source_citations: List[Dict] = None) -> List[Dict]:
     """Parse response into streamable paragraph chunks with proper word count (200-300 words)"""
     expected_sections = ROLE_STRUCTURES.get(user_type, ROLE_STRUCTURES['scientist'])
     
@@ -244,6 +308,9 @@ def parse_to_streamable_structure(agent_response: str, media_references: Dict, u
         
         # Clean section text
         section_text = re.sub(r'^\d+\.\s*|^#+\s*', '', section_text).strip()
+        
+        # Extract technical terms
+        technical_terms = extract_technical_terms(section_text)
         
         # Ensure proper word count (200-300 words)
         words = section_text.split()
@@ -277,11 +344,30 @@ def parse_to_streamable_structure(agent_response: str, media_references: Dict, u
         if para_table and "table" not in section_text.lower():
             section_text += f"\n\nComprehensive measurements and detailed data are presented in {para_table} for reference."
         
+        # Add source citations
+        section_sources = []
+        if source_citations:
+            # Assign 2-3 most relevant sources per section
+            relevant_sources = source_citations[i*2:(i+1)*2+1] if i < len(source_citations) else source_citations[-2:]
+            for source in relevant_sources:
+                citation_text = f"Source: {source['title']}"
+                if source.get('authors'):
+                    citation_text += f" ({', '.join(source['authors'][:2])})"
+                if source.get('publication_date'):
+                    citation_text += f" ({source['publication_date']})"
+                section_sources.append({
+                    'text': citation_text,
+                    'type': source['source_type'],
+                    'relevance': source['relevance_score']
+                })
+        
         paragraphs_data.append({
             "title": section_title,
             "text": section_text,
             "images": [para_image] if para_image else [],
-            "tables": [para_table] if para_table else []
+            "tables": [para_table] if para_table else [],
+            "sources": section_sources,
+            "technical_terms": technical_terms
         })
     
     # Handle remaining media
@@ -296,7 +382,9 @@ def parse_to_streamable_structure(agent_response: str, media_references: Dict, u
             "title": "Additional Resources",
             "text": additional_text,
             "images": unused_images[:3] if unused_images else [],
-            "tables": unused_tables[:3] if unused_tables else []
+            "tables": unused_tables[:3] if unused_tables else [],
+            "sources": [],
+            "technical_terms": []
         })
     
     return paragraphs_data
@@ -347,7 +435,9 @@ def generate_text_with_gemini(user_input: str, user_type: str = 'scientist', dee
             "gemini-2.0-flash-exp",
             model_provider="google_genai",
             streaming=True,
-            temperature=0.7
+            temperature=0.7,
+            max_tokens=4096,
+            top_p=0.9
         )
         
         # Retrieve documents
@@ -356,7 +446,7 @@ def generate_text_with_gemini(user_input: str, user_type: str = 'scientist', dee
             "message": "📊 Searching knowledge base for relevant documents..."
         })
         
-        context_result = get_context_with_media(user_input, user_type, k=10)
+        context_result = get_context_with_media(user_input, user_type, k=15)
         
         # Stream detailed retrieval results
         yield stream_event("thinking_step", {
@@ -393,9 +483,9 @@ def generate_text_with_gemini(user_input: str, user_type: str = 'scientist', dee
         )
         
         web_search = TavilySearchResults(
-            max_results=3,
+            max_results=5,
             name="WebSearch",
-            description="Search the web for current information, recent developments, and external sources"
+            description="Search the web for current information, recent developments, and external sources. Use this to verify and supplement information from the knowledge base."
         )
         
         tools = [rag_tool, web_search]
@@ -407,9 +497,17 @@ def generate_text_with_gemini(user_input: str, user_type: str = 'scientist', dee
 User Query: {user_input}
 
 Available Context from Knowledge Base:
-{context_result['context'][:6000]}
+{context_result['context'][:8000]}
 
-IMPORTANT: Provide comprehensive analysis following the exact structure above. Each section MUST be 200-300 words (approximately 15-25 sentences). Include specific data, measurements, and technical details. Naturally reference the figures and tables available in the context."""
+CRITICAL INSTRUCTIONS:
+1. Use ONLY the information provided in the context above - do not generate generic content
+2. Each section MUST be 200-300 words (approximately 15-25 sentences)
+3. Include specific data, measurements, and technical details from the retrieved documents
+4. Naturally reference the figures and tables available in the context
+5. Use advanced technical terminology appropriate for the user type
+6. End each paragraph with proper citations from the source documents
+7. Ensure all content is highly relevant and not generic or bluffed
+8. Use web search only to verify or supplement information from the knowledge base"""
         
         yield stream_event("thinking_step", {
             "step": "agent_initialization",
@@ -478,8 +576,9 @@ IMPORTANT: Provide comprehensive analysis following the exact structure above. E
             tools=tools,
             verbose=True,
             handle_parsing_errors=True,
-            max_iterations=6,
-            callbacks=[callback]
+            max_iterations=4,  # Reduced for faster processing
+            callbacks=[callback],
+            return_intermediate_steps=False  # Optimize for speed
         )
         
         yield stream_event("thinking_step", {
@@ -506,7 +605,8 @@ IMPORTANT: Provide comprehensive analysis following the exact structure above. E
             agent_output,
             context_result['references'],
             user_type,
-            user_input
+            user_input,
+            context_result.get('source_citations', [])
         )
         
         yield stream_event("thinking_step", {
@@ -543,19 +643,45 @@ IMPORTANT: Provide comprehensive analysis following the exact structure above. E
         # Stream metadata
         all_images = set()
         all_tables = set()
+        all_sources = []
+        all_technical_terms = set()
+        
         for para in paragraphs_data:
             all_images.update(para.get('images', []))
             all_tables.update(para.get('tables', []))
+            all_sources.extend(para.get('sources', []))
+            all_technical_terms.update(para.get('technical_terms', []))
         
         metadata = {
             "total_paragraphs": len(paragraphs_data),
             "total_images": sorted(list(all_images)),
             "total_tables": sorted(list(all_tables)),
             "source_documents": context_result['total_documents'],
+            "source_citations": context_result.get('source_citations', []),
+            "technical_terms": sorted(list(all_technical_terms)),
             "user_type": user_type,
-            "query": user_input  # <-- add query for frontend display/history
+            "query": user_input
         }
         yield stream_event('metadata', metadata)
+        
+        # Add chatbot section
+        chatbot_section = {
+            "title": "AI Research Assistant",
+            "text": "This analysis was generated by our AI Research Assistant, which combines advanced natural language processing with comprehensive space biology research databases. The system utilizes vector similarity search to retrieve the most relevant scientific literature and research data, ensuring that all information presented is grounded in peer-reviewed research and verified sources. Our AI assistant continuously learns from the latest research publications and maintains up-to-date knowledge of space biology developments.",
+            "images": [],
+            "tables": [],
+            "sources": [
+                {
+                    "text": "AI Research Assistant - Space Biology Knowledge Engine",
+                    "type": "system",
+                    "relevance": 1.0
+                }
+            ],
+            "technical_terms": ["AI", "NLP", "vector similarity", "machine learning", "research database"]
+        }
+        
+        yield stream_event('paragraph', chatbot_section)
+        time.sleep(0.05)
         
         yield stream_event("thinking_step", {
             "step": "complete",

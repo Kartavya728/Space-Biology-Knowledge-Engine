@@ -6,7 +6,7 @@ interface AnalysisRequest {
 }
 
 interface StreamEvent {
-  type: 'thinking_step' | 'title' | 'paragraph' | 'metadata' | 'error' | 'done';
+  type: 'thinking_step' | 'title' | 'paragraph' | 'metadata' | 'document' | 'error' | 'done';
   content: any;
 }
 

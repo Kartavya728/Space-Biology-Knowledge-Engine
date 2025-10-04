@@ -15,8 +15,10 @@ import {
   Loader2,
   Bot,
   User,
-  Zap
+  Zap,
+  X
 } from 'lucide-react';
+import { api } from '../utils/api';
 
 interface Paragraph {
   title: string;
@@ -74,6 +76,7 @@ export function ResponseDisplay({ response, theme }: ResponseDisplayProps) {
   const [chatMessages, setChatMessages] = useState<ChatMessage[]>([]);
   const [chatInput, setChatInput] = useState('');
   const [isChatLoading, setIsChatLoading] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const chatEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -131,19 +134,63 @@ export function ResponseDisplay({ response, theme }: ResponseDisplayProps) {
     };
 
     setChatMessages(prev => [...prev, userMessage]);
+    const currentInput = chatInput;
     setChatInput('');
     setIsChatLoading(true);
 
-    // Simulate AI response (replace with actual API call)
-    setTimeout(() => {
+    try {
+      // Create context from the current response
+      const contextText = response.paragraphs.map(p => `${p.title}: ${p.text}`).join('\n\n');
+      
+      // Create a streaming AI response
+      let aiResponse = '';
       const aiMessage: ChatMessage = {
         role: 'assistant',
-        content: `Based on the analysis provided, I can help clarify that aspect. The research findings suggest that ${chatInput.toLowerCase()} is an important consideration in this context. Would you like me to elaborate on any specific part of the analysis?`,
+        content: '',
         timestamp: Date.now()
       };
+      
       setChatMessages(prev => [...prev, aiMessage]);
+
+      await api.streamChat(
+        {
+          question: currentInput,
+          context: contextText,
+          userType: response.userType || 'scientist'
+        },
+        (event) => {
+          if (event.type === 'text' && event.content) {
+            aiResponse += event.content;
+            setChatMessages(prev => 
+              prev.map((msg, idx) => 
+                idx === prev.length - 1 
+                  ? { ...msg, content: aiResponse.trim() }
+                  : msg
+              )
+            );
+          } else if (event.type === 'error') {
+            setChatMessages(prev => 
+              prev.map((msg, idx) => 
+                idx === prev.length - 1 
+                  ? { ...msg, content: `Sorry, I encountered an error: ${event.content}` }
+                  : msg
+              )
+            );
+          } else if (event.type === 'done') {
+            setIsChatLoading(false);
+          }
+        }
+      );
+    } catch (error) {
+      console.error('Chat API error:', error);
+      const errorMessage: ChatMessage = {
+        role: 'assistant',
+        content: `Sorry, I couldn't process your question. Please try again.`,
+        timestamp: Date.now()
+      };
+      setChatMessages(prev => [...prev, errorMessage]);
       setIsChatLoading(false);
-    }, 1500);
+    }
   };
 
   if (!response || !response.paragraphs || response.paragraphs.length === 0) {
@@ -175,7 +222,7 @@ export function ResponseDisplay({ response, theme }: ResponseDisplayProps) {
   };
 
   // Query always shown on top
-  const queryText = response?.metadata?.query || '';
+  const queryText = (response?.metadata as any)?.query || '';
 
   return (
     <div className="space-y-6">
@@ -230,15 +277,20 @@ export function ResponseDisplay({ response, theme }: ResponseDisplayProps) {
             )}
           </div>
           {/* Images on right */}
-          <div className="flex flex-col gap-2 items-end min-w-[380px] max-w-[580px]">
+          <div className="flex flex-col gap-3 items-end min-w-[400px] max-w-[600px]">
             {paragraph.images && paragraph.images.length > 0 && (
               paragraph.images.map((imageId, imgIdx) => (
                 <img
                   key={imgIdx}
                   src={imageMap[imageId]}
                   alt={`Image ${imageId}`}
-                  className="rounded-lg shadow-md object-contain max-h-32 max-w-full"
-                  style={{ width: 'auto', height: '100px' }}
+                  className="rounded-lg shadow-lg object-contain cursor-pointer hover:shadow-xl transition-all duration-300 hover:scale-105"
+                  style={{ 
+                    width: 'auto', 
+                    height: '200px',
+                    maxWidth: '100%'
+                  }}
+                  onClick={() => setSelectedImage(imageMap[imageId])}
                 />
               ))
             )}
@@ -358,6 +410,37 @@ export function ResponseDisplay({ response, theme }: ResponseDisplayProps) {
           </CardContent>
         </Card>
       </AnimatedSection>
+
+      {/* Image Modal */}
+      {selectedImage && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm"
+          onClick={() => setSelectedImage(null)}
+        >
+          <motion.div
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.8, opacity: 0 }}
+            className="relative max-w-[90vw] max-h-[90vh] bg-white rounded-lg shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setSelectedImage(null)}
+              className="absolute -top-3 -right-3 z-10 bg-red-500 hover:bg-red-600 text-white rounded-full p-2 shadow-lg transition-colors duration-200"
+            >
+              <X className="w-5 h-5" />
+            </button>
+            <img
+              src={selectedImage}
+              alt="Full size image"
+              className="max-w-full max-h-full object-contain rounded-lg"
+            />
+          </motion.div>
+        </motion.div>
+      )}
     </div>
   );
 }

@@ -93,9 +93,71 @@ def chat_api(request):
 
 @csrf_exempt
 def chat_options(request):
-    """Handle OPTIONS requests for CORS"""
-    response = JsonResponse({"status": "ok"})
-    response["Access-Control-Allow-Origin"] = "*"
-    response["Access-Control-Allow-Methods"] = "POST, OPTIONS"
-    response["Access-Control-Allow-Headers"] = "Content-Type"
-    return response
+    """Handle simple chat questions about the analysis"""
+    if request.method != "POST":
+        return JsonResponse({"error": "Only POST method allowed"}, status=405)
+    
+    try:
+        # Parse JSON body
+        body = json.loads(request.body.decode('utf-8'))
+        question = body.get("question", "").strip()
+        context = body.get("context", "").strip()
+        user_type = body.get("userType", "scientist").strip()
+        
+        # Validate input
+        if not question:
+            return JsonResponse({"error": "Question is required"}, status=400)
+        
+        # Create a simple, direct query for the chat
+        simple_question = f"""You are a helpful assistant. Based on the following analysis context, please provide a clear and direct answer to this question: {question}
+
+Analysis Context:
+{context}
+
+Please give a direct, conversational answer without any special formatting or structure."""
+        
+        # Simple streaming response
+        def simple_chat_stream():
+            try:
+                # Import the LLM directly for simple responses
+                from langchain.chat_models import init_chat_model
+                import os
+                
+                llm = init_chat_model(
+                    "gemini-2.0-flash-exp",
+                    model_provider="google_genai",
+                    streaming=True,
+                    temperature=0.7
+                )
+                
+                # Stream the response directly
+                for chunk in llm.stream(simple_question):
+                    if hasattr(chunk, 'content') and chunk.content:
+                        yield 'data: ' + json.dumps({"type": "text", "content": chunk.content}) + '\n\n'
+                
+                yield 'data: ' + json.dumps({"type": "done"}) + '\n\n'
+                
+            except Exception as e:
+                yield 'data: ' + json.dumps({"type": "error", "content": f"Error processing question: {str(e)}"}) + '\n\n'
+                yield 'data: ' + json.dumps({"type": "done"}) + '\n\n'
+        
+        response = StreamingHttpResponse(
+            simple_chat_stream(),
+            content_type="text/event-stream"
+        )
+        
+        # Set headers for SSE
+        response["Cache-Control"] = "no-cache"
+        response["X-Accel-Buffering"] = "no"
+        response["Access-Control-Allow-Origin"] = "*"
+        response["Access-Control-Allow-Methods"] = "POST, OPTIONS"
+        response["Access-Control-Allow-Headers"] = "Content-Type"
+        
+        return response
+        
+    except json.JSONDecodeError:
+        return JsonResponse({"error": "Invalid JSON"}, status=400)
+    
+    except Exception as e:
+        logger.error(f"Error in chat options: {str(e)}")
+        return JsonResponse({"error": f"Server error: {str(e)}"}, status=500)

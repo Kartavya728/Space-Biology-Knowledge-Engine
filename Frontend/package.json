@@ -4,6 +4,8 @@
       "private": true,
       "dependencies": {
             "@jsr/supabase__supabase-js": "^2.49.8",
+            "@langchain/core": "^0.3.78",
+            "@langchain/google-genai": "^0.2.18",
             "@radix-ui/react-accordion": "^1.2.3",
             "@radix-ui/react-alert-dialog": "^1.1.6",
             "@radix-ui/react-aspect-ratio": "^1.1.2",
@@ -49,6 +51,7 @@
             "react-day-picker": "^8.10.1",
             "react-dom": "^18.3.1",
             "react-hook-form": "^7.55.0",
+            "react-hot-toast": "^2.6.0",
             "react-resizable-panels": "^2.1.7",
             "react-router-dom": "^7.9.3",
             "recharts": "^2.15.2",
