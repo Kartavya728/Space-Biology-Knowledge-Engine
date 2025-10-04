@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from './ui/button';
 import { Textarea } from './ui/textarea';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
+import { ImageParser } from '../utils/imageEdit';
+import { toast } from 'sonner';
 import Spline from '@splinetool/react-spline/next';
 import { 
   Send, 
@@ -50,12 +52,6 @@ interface ResponseData {
   overallTitle: string;
 }
 
-interface AnalysisRequest {
-  query: string;
-  userType?: string;
-  deepThink?: boolean; // <-- add deepThink
-}
-
 export function MainContent({ userType, theme, initialResponse }: { userType: any; theme: any; initialResponse?: ResponseData | null }) {
   const [query, setQuery] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -68,10 +64,16 @@ export function MainContent({ userType, theme, initialResponse }: { userType: an
   const [streamedText, setStreamedText] = useState('');
   const [streamSpeed, setStreamSpeed] = useState(5);
   const [isQuerySubmitted, setIsQuerySubmitted] = useState(false);
-  const [deepThink, setDeepThink] = useState(false);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
+  const imageInputRef = useRef<HTMLInputElement | null>(null);
+  const [imageFile, setImageFile] = useState<File | null>(null);
+  const [imagePresent, setImagePresent] = useState(false);
+  
+  // Critical: Use refs to maintain data across callback invocations
   const collectedParagraphsRef = useRef<Paragraph[]>([]);
-  const collectedMetadataRef = useRef<any>({});
+  const collectedMetadataRef = useRef<any>(null);
+  const currentTitleRef = useRef<string>('');
+  const retrievedDocumentsRef = useRef<string[]>([]);
 
   const analystOptions = {
     scientist: {
@@ -173,10 +175,11 @@ export function MainContent({ userType, theme, initialResponse }: { userType: an
   const handleSubmit = async (customPrompt = null) => {
     const finalQuery = customPrompt || query;
     if (!finalQuery.trim()) {
-      alert('Please enter a query or upload a file');
+      toast.error('Please enter a query or upload a file');
       return;
     }
 
+    // Reset all state
     setIsLoading(true);
     setIsQuerySubmitted(true);
     setResponse(null);
@@ -186,13 +189,33 @@ export function MainContent({ userType, theme, initialResponse }: { userType: an
     setShowTransition(false);
     setStreamingStepIndex(null);
     setStreamedText('');
+    
+    // Reset refs - CRITICAL
+    collectedParagraphsRef.current = [];
+    collectedMetadataRef.current = null;
+    currentTitleRef.current = '';
 
     try {
+      // Prepare combined query with image if present
+      let combinedQuery = finalQuery;
+      if (imagePresent && imageFile) {
+        try {
+          const parsed = await ImageParser(imageFile, finalQuery);
+          console.log('Parsed image text:', parsed);
+          const parsedText = typeof parsed === 'string' ? parsed : (parsed?.toString ? parsed.toString() : '');
+          if (parsedText && parsedText.trim()) {
+            combinedQuery = `${finalQuery}\n\nImage Analysis:\n${parsedText}`;
+          }
+        } catch (imgErr) {
+          console.error('Image parsing failed:', imgErr);
+          toast.error('Failed to parse image. Proceeding with text only.');
+        }
+      }
+
       await api.streamAnalysis(
         {
-          query: finalQuery,
+          query: combinedQuery,
           userType,
-          deepThink, // <-- send deepThink to backend
         },
         (event) => {
           if (event.type === 'thinking_step') {
@@ -200,83 +223,169 @@ export function MainContent({ userType, theme, initialResponse }: { userType: an
               ...event.content,
               timestamp: Date.now()
             };
-            
             setThinkingHistory(prev => [...prev, newStep]);
-          } 
+          }
+          else if (event.type === 'document') {
+            // Handle streaming retrieved documents
+            retrievedDocumentsRef.current = [...retrievedDocumentsRef.current, event.content];
+            
+            // Update thinking history to show retrieved documents
+            setThinkingHistory(prev => [
+              ...prev,
+              {
+                step: 'Retrieved Document',
+                message: `Retrieved document: ${event.content.title || event.content.name || 'Document'}`,
+                details: event.content,
+                timestamp: Date.now()
+              }
+            ]);
+            
+            console.log('[MainContent] Retrieved document:', event.content);
+          }
           else if (event.type === 'title') {
+            currentTitleRef.current = event.content;
             setOverallTitle(event.content);
           } 
           else if (event.type === 'paragraph') {
-            const paragraphText = typeof event.content === 'string'
-              ? event.content
-              : Array.isArray(event.content)
-                ? event.content.map((c: any) => (typeof c === 'string' ? c : JSON.stringify(c))).join('\n\n')
-                : (event.content && typeof event.content === 'object' && 'text' in event.content && typeof event.content.text === 'string')
-                  ? event.content.text
-                  : JSON.stringify(event.content);
-            const paragraph: Paragraph = {
-              title: '',
-              text: paragraphText,
-              images: [],
-              tables: []
-            };
+            // Parse paragraph data properly
+            let paragraph: Paragraph;
+            
+            if (typeof event.content === 'string') {
+              paragraph = {
+                title: '',
+                text: event.content,
+                images: [],
+                tables: []
+              };
+            } else if (event.content && typeof event.content === 'object') {
+              paragraph = {
+                title: event.content.title || '',
+                text: event.content.text || (typeof event.content === 'string' ? event.content : JSON.stringify(event.content)),
+                images: event.content.images || [],
+                tables: event.content.tables || []
+              };
+            } else {
+              paragraph = {
+                title: '',
+                text: JSON.stringify(event.content),
+                images: [],
+                tables: []
+              };
+            }
+            
+            // Add to ref
             collectedParagraphsRef.current.push(paragraph);
+            
+            // Update response state with accumulated data
             setResponse({
               paragraphs: [...collectedParagraphsRef.current],
-              metadata: collectedMetadataRef.current,
+              metadata: collectedMetadataRef.current || {
+                total_paragraphs: collectedParagraphsRef.current.length,
+                total_images: [],
+                total_tables: [],
+                source_documents: 0,
+                user_type: userType
+              },
               userType,
-              overallTitle
+              overallTitle: currentTitleRef.current || 'Analysis Results'
             });
           } 
           else if (event.type === 'metadata') {
-            collectedMetadataRef.current = event.content;
-            setResponse({
-              paragraphs: collectedParagraphsRef.current,
+            // Add retrieved documents to metadata
+            const enhancedMetadata = {
+              ...event.content,
+              retrievedDocuments: retrievedDocumentsRef.current || []
+            };
+            
+            collectedMetadataRef.current = enhancedMetadata;
+            
+            // Update response with metadata
+            setResponse(prev => prev ? {
+              ...prev,
+              metadata: enhancedMetadata
+            } : {
+              paragraphs: [...collectedParagraphsRef.current],
               metadata: event.content,
               userType,
-              overallTitle
+              overallTitle: currentTitleRef.current || 'Analysis Results'
             });
           } 
           else if (event.type === 'error') {
             console.error('Analysis error:', event.content);
-            alert(`Error: ${event.content}`);
+            toast.error(`Error: ${event.content}`);
           } 
           else if (event.type === 'done') {
-            // Persist chat history to Supabase for the current user
+            // Final update with complete data
+            setResponse({
+              paragraphs: [...collectedParagraphsRef.current],
+              metadata: collectedMetadataRef.current || {
+                total_paragraphs: collectedParagraphsRef.current.length,
+                total_images: [],
+                total_tables: [],
+                source_documents: 0,
+                user_type: userType
+              },
+              userType,
+              overallTitle: currentTitleRef.current || 'Analysis Results'
+            });
+            
+            // Persist chat history
             try {
-              const assistantReply = (collectedParagraphsRef.current || [])
+              const assistantReply = collectedParagraphsRef.current
                 .map(p => p.text)
+                .filter(Boolean)
                 .join('\n\n');
+              
               if (assistantReply && finalQuery) {
                 createHistory(finalQuery, assistantReply);
-                console.log('Chat history Stored');
+                console.log('Chat history stored');
               }
             } catch (persistError) {
               console.error('Failed to persist chat history:', persistError);
             }
+            
             setShowTransition(true);
             setTimeout(() => {
               setIsLoading(false);
               setIsQuerySubmitted(false);
+              setImageFile(null);
+              setImagePresent(false);
+              if (imageInputRef.current) imageInputRef.current.value = '';
             }, 1000);
           }
         }
       );
     } catch (error) {
       console.error('Analysis error:', error);
-      alert('Failed to analyze content. Please try again.');
+      toast.error('Failed to analyze content. Please try again.');
       setIsLoading(false);
       setIsQuerySubmitted(false);
     }
-
   };
 
   const handleFileUpload = (event) => {
     const file = event.target.files[0];
     if (file) {
       setQuery(`Analyze the uploaded file: ${file.name}`);
-      alert(`File "${file.name}" uploaded successfully`);
+      toast.success(`File "${file.name}" uploaded successfully`);
     }
+  };
+
+  const handleImageSelect = async (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+
+    if (!file.type || !file.type.startsWith('image/')) {
+      toast.error('Not an image. Please upload an image file.');
+      if (imageInputRef.current) imageInputRef.current.value = '';
+      setImageFile(null);
+      setImagePresent(false);
+      return;
+    }
+
+    setImageFile(file);
+    setImagePresent(true);
+    toast.success(`Image "${file.name}" selected`);
   };
 
   const toggleStep = (index: number) => {
@@ -301,21 +410,36 @@ export function MainContent({ userType, theme, initialResponse }: { userType: an
 
   return (
     <div className="h-full flex flex-col relative overflow-hidden">
-      {/* Query always shown on top */}
-      <div className="p-6 border-b border-white/10">
-        <div className="flex items-center justify-between">
+      <motion.div 
+        className="p-6 border-b border-white/10"
+        animate={{
+          y: isQuerySubmitted ? -100 : 0,
+          opacity: isQuerySubmitted ? 0 : 1,
+          height: isQuerySubmitted ? 0 : 'auto'
+        }}
+        transition={{ duration: 0.5 }}
+      >
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="flex items-center justify-between"
+        >
           <div>
             <h1 className="text-3xl font-bold text-white mb-2">
               NASA Research AI Agent
             </h1>
             <p className="text-gray-300">
-              <span className="font-semibold">AtsroPedia:</span> Your gateway to NASA's research universe which provides instant insights and analysis on space biology and related topics.
+              Analyze research papers, generate insights, and explore space science
             </p>
           </div>
-          {/* DeepThink Toggle */}
-
-        </div>
-      </div>
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            className={`p-4 bg-gradient-to-r ${theme.primary} rounded-xl`}
+          >
+            <Sparkles className="w-8 h-8 text-white" />
+          </motion.div>
+        </motion.div>
+      </motion.div>
 
       <div className="flex-1 flex overflow-hidden">
         <div className="flex-1 flex flex-col">
@@ -564,28 +688,6 @@ export function MainContent({ userType, theme, initialResponse }: { userType: an
 
                   <Card className="bg-white/5 backdrop-blur-sm border-white/10 mt-6">
                     <CardContent className="p-6">
-                      {/* DeepThink Switch Toggle */}
-                      <div className="flex items-center mb-4">
-                        <span className="text-gray-300 text-sm font-medium mr-3">Deep Think   </span>
-                        <button
-                          type="button"
-                          aria-label="Toggle Deep Think"
-                          onClick={() => setDeepThink((v) => !v)}
-                          className={`relative inline-flex items-center h-6 rounded-full w-12 transition-colors duration-300 ${
-                            deepThink ? 'bg-blue-500' : 'bg-gray-400'
-                          }`}
-                          style={{ minWidth: 48 }}
-                        >
-                          <span
-                            className={`inline-block w-5 h-5 bg-white rounded-full shadow transform transition-transform duration-300 ${
-                              deepThink ? 'translate-x-6' : 'translate-x-1'
-                            }`}
-                          />
-                        </button>
-                        <span className={`ml-3 text-xs font-semibold ${deepThink ? 'text-blue-400' : 'text-gray-400'}`}>
-                          {deepThink ? '  👑best response' : ' ❇️quick response'}
-                        </span>
-                      </div>
                       <div className="space-y-4">
                         <Textarea
                           value={query}
@@ -608,6 +710,7 @@ export function MainContent({ userType, theme, initialResponse }: { userType: an
                             <Button
                               variant="outline"
                               size="sm"
+                              onClick={() => imageInputRef.current?.click()}
                               className="border-white/20 text-gray-300 hover:text-white hover:bg-white/10"
                             >
                               <Image className="w-4 h-4 mr-2" />
@@ -664,6 +767,13 @@ export function MainContent({ userType, theme, initialResponse }: { userType: an
         type="file"
         accept=".pdf,.doc,.docx,.txt,.jpg,.png"
         onChange={handleFileUpload}
+        className="hidden"
+      />
+      <input
+        ref={imageInputRef}
+        type="file"
+        accept="image/*"
+        onChange={handleImageSelect}
         className="hidden"
       />
     </div>
