@@ -230,7 +230,7 @@ export function ResponseDisplay({ response, theme }: ResponseDisplayProps) {
             )}
           </div>
           {/* Images on right */}
-          <div className="flex flex-col gap-2 items-end min-w-[120px] max-w-[180px]">
+          <div className="flex flex-col gap-2 items-end min-w-[380px] max-w-[580px]">
             {paragraph.images && paragraph.images.length > 0 && (
               paragraph.images.map((imageId, imgIdx) => (
                 <img

@@ -2,39 +2,44 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from './ui/button';
 import { Input } from './ui/input';
-import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
+import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
 import { LoadingAnimation } from './LoadingAnimation';
-import { DocBox, PaperProps } from './DocBox'; // Import DocBox and its PaperProps
-import { 
-  Search, 
-  Filter, 
-  Star, 
-  Download, 
-  Eye, 
+import { DocBox, PaperProps } from './DocBox';
+import toast, { Toaster } from 'react-hot-toast'; // Import toast and Toaster
+
+import {
+  Search,
+  Filter,
+  Star,
+  Download,
+  Eye,
   Calendar,
   Users,
   Sparkles,
   ExternalLink,
   FileText,
   Database,
-  Clock, // For recently published
-  Tag // For topic-based
+  Clock,
+  Tag,
+  BellRing // New icon for notification
 } from 'lucide-react';
 import { projectId, publicAnonKey } from '../utils/supabase/info';
+import papersData from '../utils/papers.json'; // Import all papers from a JSON file
 
 export function DataGallery({ userType, theme, user }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [papers, setPapers] = useState<PaperProps[]>([]);
   const [recommendations, setRecommendations] = useState<PaperProps[]>([]);
   const [recentlyPublished, setRecentlyPublished] = useState<PaperProps[]>([]);
-  const [topicBasedPapers, setTopicBasedPapers] = useState<PaperProps[]>([]); // New state for topic papers
+  const [topicBasedPapers, setTopicBasedPapers] = useState<PaperProps[]>([]);
   const [loading, setLoading] = useState(false);
   const [hasSearched, setHasSearched] = useState(false);
   const [selectedPaper, setSelectedPaper] = useState<PaperProps | null>(null);
   const [activeTab, setActiveTab] = useState('search');
+  const [isNotifying, setIsNotifying] = useState(false);
 
   // Filters for topic-based research
   const [topicFilters, setTopicFilters] = useState({
@@ -51,139 +56,6 @@ export function DataGallery({ userType, theme, user }) {
   });
 
   // Mock Data for demonstration
-  const mockPapers: PaperProps[] = [
-    {
-      id: 'mock_paper_1',
-      title: 'Effects of Microgravity on Human Cardiovascular System',
-      authors: ['Dr. Sarah Chen', 'Dr. Michael Rodriguez'],
-      institution: 'NASA Johnson Space Center',
-      publicationYear: 2024,
-      abstract: 'This study investigates the cardiovascular adaptations that occur in astronauts during long-duration space missions, analyzing heart rate variability, blood pressure changes, and cardiac output under microgravity conditions. Key findings suggest significant transient adaptations that normalize post-flight.',
-      tags: ['cardiovascular', 'microgravity', 'space medicine', 'human physiology'],
-      citationCount: 127,
-      relevanceScore: 0.95,
-      downloadUrl: 'https://example.com/papers/mock_paper_1.pdf',
-      externalUrl: 'https://nasa.gov/papers/mock_paper_1',
-    },
-    {
-      id: 'mock_paper_2',
-      title: 'Advanced Life Support Systems for Lunar Habitats',
-      authors: ['Dr. Emily White', 'Dr. David Brown'],
-      institution: 'Kennedy Space Center',
-      publicationYear: 2023,
-      abstract: 'Development and testing of closed-loop life support systems for sustainable lunar outposts. Focus on water recycling, atmospheric regeneration, and waste management to minimize resupply needs.',
-      tags: ['life support', 'lunar mission', 'engineering', 'sustainability'],
-      citationCount: 88,
-      relevanceScore: 0.88,
-      downloadUrl: 'https://example.com/papers/mock_paper_2.pdf',
-      externalUrl: 'https://nasa.gov/papers/mock_paper_2',
-    },
-    {
-      id: 'mock_paper_3',
-      title: 'Plant Growth in Martian Regolith Simulant',
-      authors: ['Dr. Kenji Tanaka', 'Dr. Lena Schmidt'],
-      institution: 'Jet Propulsion Laboratory',
-      publicationYear: 2024,
-      abstract: 'Experimental investigation into the viability of growing various plant species in simulated Martian soil, focusing on nutrient uptake, biomass production, and genetic expression under low atmospheric pressure.',
-      tags: ['astrobiology', 'plants', 'mars', 'agriculture', 'regolith'],
-      citationCount: 65,
-      relevanceScore: 0.92,
-      downloadUrl: 'https://example.com/papers/mock_paper_3.pdf',
-      externalUrl: 'https://nasa.gov/papers/mock_paper_3',
-    },
-    {
-      id: 'mock_paper_4',
-      title: 'Immunological Responses to Long-Duration Spaceflight',
-      authors: ['Dr. Olivia Green', 'Dr. Noah Black'],
-      institution: 'Baylor College of Medicine',
-      publicationYear: 2023,
-      abstract: 'A comprehensive review of immunological changes observed in astronauts during extended periods in space, including altered cytokine profiles, T-cell function, and viral reactivation risks.',
-      tags: ['immunology', 'space medicine', 'human health', 'microbiology'],
-      citationCount: 72,
-      relevanceScore: 0.87,
-      downloadUrl: 'https://example.com/papers/mock_paper_4.pdf',
-      externalUrl: 'https://nasa.gov/papers/mock_paper_4',
-    },
-    {
-      id: 'mock_paper_5',
-      title: 'Development of Advanced Radiation Shielding Materials',
-      authors: ['Dr. Anya Sharma', 'Dr. Ben Carter'],
-      institution: 'University of Texas at Austin',
-      publicationYear: 2024,
-      abstract: 'Research into novel composite materials for enhanced radiation protection in spacecraft and habitats, evaluating their effectiveness against galactic cosmic rays and solar particle events.',
-      tags: ['radiation protection', 'materials science', 'engineering', 'spacecraft design'],
-      citationCount: 91,
-      relevanceScore: 0.90,
-      downloadUrl: 'https://example.com/papers/mock_paper_5.pdf',
-      externalUrl: 'https://nasa.gov/papers/mock_paper_5',
-    },
-    {
-      id: 'mock_paper_6',
-      title: 'Behavioral Health and Performance in Isolated Environments',
-      authors: ['Dr. Lena Kovacs', 'Dr. Mark Johnson'],
-      institution: 'University of Pennsylvania',
-      publicationYear: 2022,
-      abstract: 'Psychological and cognitive performance studies in analogues for long-duration space missions, examining the impact of isolation, confinement, and stress on crew cohesion and mission success.',
-      tags: ['psychology', 'behavioral health', 'analog missions', 'human factors'],
-      citationCount: 55,
-      relevanceScore: 0.80,
-      downloadUrl: 'https://example.com/papers/mock_paper_6.pdf',
-      externalUrl: 'https://nasa.gov/papers/mock_paper_6',
-    },
-    {
-      id: 'mock_paper_7',
-      title: 'Algae-Based Bioregenerative Life Support Systems',
-      authors: ['Dr. Kai Wong', 'Dr. Susan Davis'],
-      institution: 'Georgia Tech',
-      publicationYear: 2024,
-      abstract: 'Exploring the use of various microalgae species for oxygen production, CO2 scrubbing, and wastewater treatment in bioregenerative life support systems for space habitats.',
-      tags: ['bioregenerative life support', 'algae', 'wastewater treatment', 'biology'],
-      citationCount: 45,
-      relevanceScore: 0.85,
-      downloadUrl: 'https://example.com/papers/mock_paper_7.pdf',
-      externalUrl: 'https://nasa.gov/papers/mock_paper_7',
-    },
-    {
-      id: 'mock_paper_8',
-      title: 'Robotic Assistance for Extravehicular Activities (EVAs)',
-      authors: ['Dr. Hiroshi Sato', 'Dr. Mia Chang'],
-      institution: 'Carnegie Mellon University',
-      publicationYear: 2023,
-      abstract: 'Design and validation of robotic systems to assist astronauts with complex tasks during EVAs, aiming to reduce astronaut workload and enhance safety in harsh space environments.',
-      tags: ['robotics', 'EVA', 'space engineering', 'automation'],
-      citationCount: 78,
-      relevanceScore: 0.89,
-      downloadUrl: 'https://example.com/papers/mock_paper_8.pdf',
-      externalUrl: 'https://nasa.gov/papers/mock_paper_8',
-    },
-    {
-      id: 'mock_paper_9',
-      title: 'Impact of Space Dust on Optical Instruments',
-      authors: ['Dr. John Smith', 'Dr. Lena Mueller'],
-      institution: 'University of Colorado Boulder',
-      publicationYear: 2024,
-      abstract: 'Analysis of how lunar and Martian dust affects the performance and longevity of optical instruments, with strategies for mitigation and self-cleaning mechanisms.',
-      tags: ['space dust', 'optics', 'instrumentation', 'lunar exploration'],
-      citationCount: 30,
-      relevanceScore: 0.78,
-      downloadUrl: 'https://example.com/papers/mock_paper_9.pdf',
-      externalUrl: 'https://nasa.gov/papers/mock_paper_9',
-    },
-    {
-      id: 'mock_paper_10',
-      title: 'Gut Microbiome Dynamics in Simulated Spaceflight',
-      authors: ['Dr. Wei Li', 'Dr. Karen Evans'],
-      institution: 'University of California, Davis',
-      publicationYear: 2023,
-      abstract: 'Investigating the changes in the human gut microbiome composition and function under simulated spaceflight conditions, and its implications for astronaut health and nutrition.',
-      tags: ['microbiome', 'gastrointestinal', 'human health', 'nutrition'],
-      citationCount: 60,
-      relevanceScore: 0.84,
-      downloadUrl: 'https://example.com/papers/mock_paper_10.pdf',
-      externalUrl: 'https://nasa.gov/papers/mock_paper_10',
-    },
-  ];
-
   const mockRecommendations: PaperProps[] = [
     {
       id: 'rec_1',
@@ -234,6 +106,8 @@ export function DataGallery({ userType, theme, user }) {
 
   useEffect(() => {
     testServerConnection();
+    // Initially load all papers into the search results tab
+    setPapers(papersData.papers.map(p => ({ ...p, type: 'search' })));
     loadRecentlyPublished();
     if (user?.id) {
       loadRecommendations();
@@ -244,8 +118,8 @@ export function DataGallery({ userType, theme, user }) {
   const loadRecentlyPublished = async () => {
     setLoading(true);
     try {
-      // Mock recently published data (e.g., last 3 papers from mockPapers)
-      const recent = mockPapers.filter(p => p.publicationYear === 2024).slice(0, 3).map(p => ({...p, type: 'recentlyPublished'}));
+      // Get recently published papers (2024) from papersData
+      const recent = papersData.papers.filter(p => p.publicationYear === 2024).map(p => ({ ...p, type: 'recentlyPublished' }));
       setRecentlyPublished(recent);
 
       // In a real scenario, you'd fetch this from your backend
@@ -277,7 +151,7 @@ export function DataGallery({ userType, theme, user }) {
       if (response.ok) {
         const data = await response.json();
         if (data.recommendations?.length > 0) {
-          setRecommendations(data.recommendations.map((p: PaperProps) => ({...p, type: 'recommended'})));
+          setRecommendations(data.recommendations.map((p: PaperProps) => ({ ...p, type: 'recommended' })));
         }
       }
     } catch (error) {
@@ -288,13 +162,13 @@ export function DataGallery({ userType, theme, user }) {
   const loadTopicBasedPapers = async (filters = topicFilters) => {
     setLoading(true);
     try {
-      // Filter mockPapers based on topicFilters
-      const filtered = mockPapers.filter(paper => {
-        const matchesCategory = filters.category ? paper.tags.some(tag => tag.toLowerCase().includes(filters.category.toLowerCase())) : true;
-        const matchesExperimentType = filters.experimentType ? paper.tags.some(tag => tag.toLowerCase().includes(filters.experimentType.toLowerCase())) : true;
-        const matchesDataFile = filters.dataFile ? paper.tags.some(tag => tag.toLowerCase().includes(filters.dataFile.toLowerCase())) : true;
+      // Filter papersData based on topicFilters
+      const filtered = papersData.filter(paper => {
+        const matchesCategory = filters.category && filters.category !== 'all_categories' ? paper.tags.some(tag => tag.toLowerCase().includes(filters.category.toLowerCase())) : true;
+        const matchesExperimentType = filters.experimentType && filters.experimentType !== 'all_experiment_types' ? paper.tags.some(tag => tag.toLowerCase().includes(filters.experimentType.toLowerCase())) : true;
+        const matchesDataFile = filters.dataFile && filters.dataFile !== 'all_data_files' ? paper.tags.some(tag => tag.toLowerCase().includes(filters.dataFile.toLowerCase())) : true;
         return matchesCategory && matchesExperimentType && matchesDataFile;
-      }).map(p => ({...p, type: 'topicBased'}));
+      }).map(p => ({ ...p, type: 'topicBased' }));
 
       await new Promise(resolve => setTimeout(resolve, 500)); // Simulate API call delay
       setTopicBasedPapers(filtered);
@@ -323,27 +197,35 @@ export function DataGallery({ userType, theme, user }) {
 
 
   const searchPapers = async () => {
-    if (!searchQuery.trim()) return;
+    if (!searchQuery.trim() && !Object.values(searchFilters).some(filter => filter !== '' && filter !== 'all_years' && filter !== 'all_institutions' && filter !== 'all_topics')) {
+      // If no query and no filters, show all papers
+      setPapers(papersData.papers.map(p => ({ ...p, type: 'search' })));
+      setHasSearched(false); // Reset hasSearched if just showing all
+      return;
+    }
+
     setLoading(true);
     setHasSearched(true);
 
     try {
       // Filter mock papers based on search query and searchFilters
-      const filteredSearchPapers = mockPapers.filter(paper => {
-        const queryMatch = paper.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      const filteredSearchPapers = papersData.filter(paper => {
+        const queryMatch = searchQuery.trim() === '' ||
+                           paper.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
                            paper.abstract.toLowerCase().includes(searchQuery.toLowerCase()) ||
                            paper.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()));
-        
-        const yearMatch = searchFilters.year ? paper.publicationYear === parseInt(searchFilters.year) : true;
-        const institutionMatch = searchFilters.institution ? paper.institution.toLowerCase().includes(searchFilters.institution.toLowerCase()) : true;
-        const topicMatch = searchFilters.topic ? paper.tags.some(tag => tag.toLowerCase().includes(searchFilters.topic.toLowerCase())) : true;
+
+        const yearMatch = searchFilters.year && searchFilters.year !== 'all_years' ? paper.publicationYear === parseInt(searchFilters.year) : true;
+        const institutionMatch = searchFilters.institution && searchFilters.institution !== 'all_institutions' ? paper.institution.toLowerCase().includes(searchFilters.institution.toLowerCase()) : true;
+        const topicMatch = searchFilters.topic && searchFilters.topic !== 'all_topics' ? paper.tags.some(tag => tag.toLowerCase().includes(searchFilters.topic.toLowerCase())) : true;
         const minCitationsMatch = searchFilters.minCitations ? paper.citationCount >= parseInt(searchFilters.minCitations) : true;
 
         return queryMatch && yearMatch && institutionMatch && topicMatch && minCitationsMatch;
       });
 
       await new Promise(resolve => setTimeout(resolve, 1000));
-      setPapers(filteredSearchPapers.map(p => ({...p, type: 'search'})));
+      setPapers(filteredSearchPapers.map(p => ({ ...p, type: 'search' })));
+      setActiveTab('search'); // Switch to search results tab
 
       // Real API call (if available)
       // const url = `https://${projectId}.supabase.co/functions/v1/make-server-0a8c168d/search-papers`;
@@ -405,11 +287,32 @@ export function DataGallery({ userType, theme, user }) {
   };
 
   const clearSearchFilters = () => {
+    setSearchQuery(''); // Clear search query as well
     setSearchFilters({ year: '', institution: '', topic: '', minCitations: '' });
+    setHasSearched(false); // Reset hasSearched
+    setPapers(papersData.papers.map(p => ({ ...p, type: 'search' }))); // Show all papers again
   };
 
   const clearTopicFilters = () => {
     setTopicFilters({ category: '', experimentType: '', dataFile: '' });
+  };
+
+  const handleNotifyMe = () => {
+    setIsNotifying(true);
+    toast.success("You'll be notified of new research! ✨", {
+      position: "top-right",
+      style: {
+        background: '#333',
+        color: '#fff',
+      },
+      iconTheme: {
+        primary: theme.primaryColor,
+        secondary: '#fff',
+      },
+    });
+    setTimeout(() => {
+      setIsNotifying(false);
+    }, 2000); // Reset animation state
   };
 
   const EmptyState = ({ type }: { type: 'search' | 'results' | 'recommendations' | 'recent' | 'topic' }) => {
@@ -418,7 +321,7 @@ export function DataGallery({ userType, theme, user }) {
         icon: Search,
         title: "Discover Research Papers",
         description: "Use semantic search to find relevant NASA research papers and space life sciences studies.",
-        action: "Start by typing your research query above"
+        action: "Start by typing your research query or using the filters above"
       },
       results: {
         icon: FileText,
@@ -466,23 +369,55 @@ export function DataGallery({ userType, theme, user }) {
   };
 
   return (
-    <div className="h-full overflow-auto custom-scrollbar">
-      <div className="max-w-7xl mx-auto p-6">
+    <div className="h-full overflow-auto custom-scrollbar relative">
+      <Toaster /> {/* Toaster for notifications */}
+      <div className="max-w-7xl mx-auto p-6 relative z-10"> {/* Ensure content is above modal */}
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           className="mb-8"
         >
-          <div className="flex items-center gap-3 mb-4">
-            <div className={`p-3 rounded-full bg-gradient-to-r ${theme.primary}`}>
-              <Database className="w-6 h-6 text-white" />
+          <div className="flex items-center justify-between mb-4">
+            <div className="flex items-center gap-3">
+              <div className={`p-3 rounded-full bg-gradient-to-r ${theme.primary}`}>
+                <Database className="w-6 h-6 text-white" />
+              </div>
+              <div>
+                <h1 className="text-3xl text-white">Data Gallery</h1>
+                <p className="text-gray-400">Search and explore NASA research papers and space life sciences data</p>
+              </div>
             </div>
-            <div>
-              <h1 className="text-3xl text-white">Data Gallery</h1>
-              <p className="text-gray-400">Search and explore NASA research papers and space life sciences data</p>
-              {/* <p className="text-xs text-gray-500 mt-1">Debug: User ID = {user?.id || 'No user'}</p> */}
-            </div>
+            <Button
+              onClick={handleNotifyMe}
+              className={`bg-gradient-to-r ${theme.primary} hover:opacity-90 px-6 relative overflow-hidden`}
+              disabled={isNotifying}
+            >
+              <AnimatePresence>
+                {isNotifying ? (
+                  <motion.div
+                    initial={{ scale: 0.5, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    exit={{ scale: 0.5, opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="flex items-center"
+                  >
+                    <BellRing className="w-4 h-4 mr-2" />
+                    Notifying...
+                  </motion.div>
+                ) : (
+                  <motion.div
+                    initial={{ scale: 1, opacity: 1 }}
+                    exit={{ scale: 0.5, opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="flex items-center"
+                  >
+                    <BellRing className="w-4 h-4 mr-2" />
+                    Get Notified
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </Button>
           </div>
         </motion.div>
 
@@ -490,11 +425,11 @@ export function DataGallery({ userType, theme, user }) {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mb-8"
+          className="mb-8 z-20 relative" // Ensure search is above other content
         >
           <Card className="bg-white/5 backdrop-blur-sm border-white/10">
             <CardContent className="p-6">
-              <div className="flex gap-4 mb-4">
+              <div className="flex flex-col sm:flex-row gap-4 mb-4">
                 <div className="flex-1">
                   <Input
                     placeholder="Search research papers using semantic search..."
@@ -506,7 +441,7 @@ export function DataGallery({ userType, theme, user }) {
                 </div>
                 <Button
                   onClick={searchPapers}
-                  disabled={loading || !searchQuery.trim()}
+                  disabled={loading}
                   className={`bg-gradient-to-r ${theme.primary} hover:opacity-90 px-8`}
                 >
                   {loading ? (
@@ -525,14 +460,13 @@ export function DataGallery({ userType, theme, user }) {
               </div>
 
               {/* Filters for Search */}
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-                <Select value={searchFilters.year} onValueChange={(value) => setSearchFilters({...searchFilters, year: value})}>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
+                <Select value={searchFilters.year} onValueChange={(value) => setSearchFilters({ ...searchFilters, year: value })}>
                   <SelectTrigger className="bg-white/10 border-white/20 text-white">
                     <SelectValue placeholder="Publication Year" />
                   </SelectTrigger>
                   <SelectContent className="bg-slate-800 border-slate-700 text-white">
-                    {/* Remove value="" from SelectItem, use undefined instead */}
-                    <SelectItem value={undefined}>All Years</SelectItem>
+                    <SelectItem value="all_years">All Years</SelectItem>
                     <SelectItem value="2024">2024</SelectItem>
                     <SelectItem value="2023">2023</SelectItem>
                     <SelectItem value="2022">2022</SelectItem>
@@ -541,35 +475,46 @@ export function DataGallery({ userType, theme, user }) {
                   </SelectContent>
                 </Select>
 
-                <Select value={searchFilters.institution} onValueChange={(value) => setSearchFilters({...searchFilters, institution: value})}>
+                <Select value={searchFilters.institution} onValueChange={(value) => setSearchFilters({ ...searchFilters, institution: value })}>
                   <SelectTrigger className="bg-white/10 border-white/20 text-white">
                     <SelectValue placeholder="Institution" />
                   </SelectTrigger>
                   <SelectContent className="bg-slate-800 border-slate-700 text-white">
-                    <SelectItem value={undefined}>All Institutions</SelectItem>
-                    <SelectItem value="nasa">NASA</SelectItem>
-                    <SelectItem value="esa">ESA</SelectItem>
-                    <SelectItem value="mit">MIT</SelectItem>
-                    <SelectItem value="stanford">Stanford</SelectItem>
-                    <SelectItem value="harvard">Harvard</SelectItem>
+                    <SelectItem value="all_institutions">All Institutions</SelectItem>
+                    <SelectItem value="nasa_johnson">NASA Johnson Space Center</SelectItem>
+                    <SelectItem value="kennedy_space_center">Kennedy Space Center</SelectItem>
+                    <SelectItem value="jpl">Jet Propulsion Laboratory</SelectItem>
+                    <SelectItem value="baylor_medicine">Baylor College of Medicine</SelectItem>
+                    <SelectItem value="ut_austin">University of Texas at Austin</SelectItem>
+                    <SelectItem value="upenn">University of Pennsylvania</SelectItem>
+                    <SelectItem value="georgia_tech">Georgia Tech</SelectItem>
+                    <SelectItem value="cmu">Carnegie Mellon University</SelectItem>
+                    <SelectItem value="uc_boulder">University of Colorado Boulder</SelectItem>
+                    <SelectItem value="uc_davis">University of California, Davis</SelectItem>
+                    <SelectItem value="nasa_ames">NASA Ames Research Center</SelectItem>
+                    <SelectItem value="stanford">Stanford University</SelectItem>
                   </SelectContent>
                 </Select>
 
-                <Select value={searchFilters.topic} onValueChange={(value) => setSearchFilters({...searchFilters, topic: value})}>
+                <Select value={searchFilters.topic} onValueChange={(value) => setSearchFilters({ ...searchFilters, topic: value })}>
                   <SelectTrigger className="bg-white/10 border-white/20 text-white">
                     <SelectValue placeholder="Research Topic" />
                   </SelectTrigger>
                   <SelectContent className="bg-slate-800 border-slate-700 text-white">
-                    <SelectItem value={undefined}>All Topics</SelectItem>
+                    <SelectItem value="all_topics">All Topics</SelectItem>
                     <SelectItem value="microgravity">Microgravity</SelectItem>
-                    <SelectItem value="space-medicine">Space Medicine</SelectItem>
+                    <SelectItem value="space medicine">Space Medicine</SelectItem>
                     <SelectItem value="astrobiology">Astrobiology</SelectItem>
-                    <SelectItem value="life-support">Life Support</SelectItem>
+                    <SelectItem value="life support">Life Support</SelectItem>
                     <SelectItem value="radiation">Radiation</SelectItem>
                     <SelectItem value="plants">Plants</SelectItem>
                     <SelectItem value="animals">Animals</SelectItem>
                     <SelectItem value="biology">Biology</SelectItem>
                     <SelectItem value="engineering">Engineering</SelectItem>
+                    <SelectItem value="immunology">Immunology</SelectItem>
+                    <SelectItem value="robotics">Robotics</SelectItem>
+                    <SelectItem value="materials science">Materials Science</SelectItem>
+                    <SelectItem value="behavioral health">Behavioral Health</SelectItem>
                   </SelectContent>
                 </Select>
 
@@ -578,13 +523,14 @@ export function DataGallery({ userType, theme, user }) {
                     type="number"
                     placeholder="Min Citations"
                     value={searchFilters.minCitations}
-                    onChange={(e) => setSearchFilters({...searchFilters, minCitations: e.target.value})}
+                    onChange={(e) => setSearchFilters({ ...searchFilters, minCitations: e.target.value })}
                     className="bg-white/10 border-white/20 text-white placeholder-gray-400"
                   />
                   <Button
                     variant="ghost"
                     onClick={clearSearchFilters}
                     className="text-gray-400 hover:text-white px-3"
+                    title="Clear Search Filters"
                   >
                     <Filter className="w-4 h-4" />
                   </Button>
@@ -646,12 +592,12 @@ export function DataGallery({ userType, theme, user }) {
           <Card className="bg-white/5 backdrop-blur-sm border-white/10 mb-6">
             <CardContent className="p-6">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <Select value={topicFilters.category} onValueChange={(value) => setTopicFilters({...topicFilters, category: value})}>
+                <Select value={topicFilters.category} onValueChange={(value) => setTopicFilters({ ...topicFilters, category: value })}>
                   <SelectTrigger className="bg-white/10 border-white/20 text-white">
                     <SelectValue placeholder="Category" />
                   </SelectTrigger>
                   <SelectContent className="bg-slate-800 border-slate-700 text-white">
-                    <SelectItem value={undefined}>All Categories</SelectItem>
+                    <SelectItem value="all_categories">All Categories</SelectItem>
                     <SelectItem value="biology">Biological</SelectItem>
                     <SelectItem value="engineering">Engineering</SelectItem>
                     <SelectItem value="medicine">Space Medicine</SelectItem>
@@ -659,12 +605,12 @@ export function DataGallery({ userType, theme, user }) {
                   </SelectContent>
                 </Select>
 
-                <Select value={topicFilters.experimentType} onValueChange={(value) => setTopicFilters({...topicFilters, experimentType: value})}>
+                <Select value={topicFilters.experimentType} onValueChange={(value) => setTopicFilters({ ...topicFilters, experimentType: value })}>
                   <SelectTrigger className="bg-white/10 border-white/20 text-white">
                     <SelectValue placeholder="Experiment Type" />
                   </SelectTrigger>
                   <SelectContent className="bg-slate-800 border-slate-700 text-white">
-                    <SelectItem value={undefined}>All Experiment Types</SelectItem>
+                    <SelectItem value="all_experiment_types">All Experiment Types</SelectItem>
                     <SelectItem value="plants">Plants Research</SelectItem>
                     <SelectItem value="animals">Animals Research</SelectItem>
                     <SelectItem value="human">Human Studies</SelectItem>
@@ -673,12 +619,12 @@ export function DataGallery({ userType, theme, user }) {
                 </Select>
 
                 <div className="flex gap-2">
-                  <Select value={topicFilters.dataFile} onValueChange={(value) => setTopicFilters({...topicFilters, dataFile: value})}>
+                  <Select value={topicFilters.dataFile} onValueChange={(value) => setTopicFilters({ ...topicFilters, dataFile: value })}>
                     <SelectTrigger className="bg-white/10 border-white/20 text-white">
                       <SelectValue placeholder="Data Filter" />
                     </SelectTrigger>
                     <SelectContent className="bg-slate-800 border-slate-700 text-white">
-                      <SelectItem value={undefined}>All Data Files</SelectItem>
+                      <SelectItem value="all_data_files">All Data Files</SelectItem>
                       <SelectItem value="genomics">Genomics Data</SelectItem>
                       <SelectItem value="proteomics">Proteomics Data</SelectItem>
                       <SelectItem value="imaging">Imaging Data</SelectItem>
@@ -689,6 +635,7 @@ export function DataGallery({ userType, theme, user }) {
                     variant="ghost"
                     onClick={clearTopicFilters}
                     className="text-gray-400 hover:text-white px-3"
+                    title="Clear Topic Filters"
                   >
                     <Filter className="w-4 h-4" />
                   </Button>
@@ -735,164 +682,162 @@ export function DataGallery({ userType, theme, user }) {
           </TabsList>
 
           <TabsContent value="search" className="mt-6">
-            {loading && hasSearched && papers.length === 0 ? ( // Only show loading if actively searching
+            {loading && hasSearched && papers.length === 0 ? (
               <div className="py-16">
                 <LoadingAnimation userType={userType} theme={theme} />
               </div>
-            ) : hasSearched && papers.length === 0 ? (
+            ) : papers.length === 0 ? (
               <EmptyState type="results" />
-            ) : hasSearched ? (
+            ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <AnimatePresence>
-                  {papers.map((paper) => (
-                    <DocBox key={paper.id} paper={paper} theme={theme} onPaperClick={handlePaperClick} onDownload={handleDownload} />
-                  ))}
-                </AnimatePresence>
-              </div>
-            ) : (
-              <EmptyState type="search" />
-            )}
-          </TabsContent>
+              {papers.map((paper) => (
+                <DocBox key={paper.id} paper={paper} theme={theme} onPaperClick={handlePaperClick} onDownload={handleDownload} />
+              ))}
+            </AnimatePresence>
+          </div>
+        )}
+      </TabsContent>
 
-          <TabsContent value="recommendations" className="mt-6">
-            {recommendations.length > 0 ? (
-              <div className="space-y-6">
-                <div className="text-center mb-6">
-                  <h3 className="text-xl text-white mb-2">Personalized for You</h3>
-                  <p className="text-gray-400">Based on your search history and research interests</p>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  <AnimatePresence>
-                    {recommendations.map((paper) => (
-                      <DocBox key={paper.id} paper={paper} theme={theme} onPaperClick={handlePaperClick} onDownload={handleDownload} />
-                    ))}
-                  </AnimatePresence>
-                </div>
-              </div>
-            ) : (
-              <EmptyState type="recommendations" />
-            )}
-          </TabsContent>
-        </Tabs>
+      <TabsContent value="recommendations" className="mt-6">
+        {recommendations.length > 0 ? (
+          <div className="space-y-6">
+            <div className="text-center mb-6">
+              <h3 className="text-xl text-white mb-2">Personalized for You</h3>
+              <p className="text-gray-400">Based on your search history and research interests</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <AnimatePresence>
+                {recommendations.map((paper) => (
+                  <DocBox key={paper.id} paper={paper} theme={theme} onPaperClick={handlePaperClick} onDownload={handleDownload} />
+                ))}
+              </AnimatePresence>
+            </div>
+          </div>
+        ) : (
+          <EmptyState type="recommendations" />
+        )}
+      </TabsContent>
+    </Tabs>
 
-        {/* Paper Detail Modal */}
-        <AnimatePresence>
-          {selectedPaper && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4"
-              onClick={() => setSelectedPaper(null)}
-            >
-              <motion.div
-                initial={{ scale: 0.9, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                exit={{ scale: 0.9, opacity: 0 }}
-                className="bg-slate-900 border border-white/20 rounded-lg p-6 max-w-4xl w-full max-h-[90vh] overflow-auto custom-scrollbar"
-                onClick={(e) => e.stopPropagation()}
+    {/* Paper Detail Modal */}
+    <AnimatePresence>
+      {selectedPaper && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+          onClick={() => setSelectedPaper(null)}
+        >
+          <motion.div
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.9, opacity: 0 }}
+            className="bg-slate-900 border border-white/20 rounded-lg p-6 max-w-4xl w-full max-h-[90vh] overflow-auto custom-scrollbar"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-start justify-between mb-6">
+              <h2 className="text-2xl text-white pr-8">{selectedPaper.title}</h2>
+              <Button
+                variant="ghost"
+                onClick={() => setSelectedPaper(null)}
+                className="text-gray-400 hover:text-white"
               >
-                <div className="flex items-start justify-between mb-6">
-                  <h2 className="text-2xl text-white pr-8">{selectedPaper.title}</h2>
-                  <Button
-                    variant="ghost"
-                    onClick={() => setSelectedPaper(null)}
-                    className="text-gray-400 hover:text-white"
-                  >
-                    ×
-                  </Button>
+                ×
+              </Button>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="md:col-span-2">
+                <div className="mb-6">
+                  <h3 className="text-lg text-white mb-2">Abstract</h3>
+                  <p className="text-gray-300">{selectedPaper.abstract}</p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div className="md:col-span-2">
-                    <div className="mb-6">
-                      <h3 className="text-lg text-white mb-2">Abstract</h3>
-                      <p className="text-gray-300">{selectedPaper.abstract}</p>
-                    </div>
+                {/* Assuming Key Findings and NASA Datasets could be part of PaperProps or extended */}
+                {/* For now, just showing general info. If these are always present, add to PaperProps */}
+                {selectedPaper.id === 'mock_paper_1' && ( // Example conditional rendering
+                  <div className="mb-6">
+                    <h3 className="text-lg text-white mb-2">Key Findings</h3>
+                    <ul className="space-y-2">
+                      <li className="text-gray-300 flex items-start gap-2">
+                        <span className="text-blue-400 mt-1">•</span>
+                        Cardiac output decreased by 15% after 30 days in microgravity
+                      </li>
+                      <li className="text-gray-300 flex items-start gap-2">
+                        <span className="text-blue-400 mt-1">•</span>
+                        Blood pressure regulation mechanisms adapted within 60 days
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </div>
 
-                    {/* Assuming Key Findings and NASA Datasets could be part of PaperProps or extended */}
-                    {/* For now, just showing general info. If these are always present, add to PaperProps */}
-                    {selectedPaper.id === 'mock_paper_1' && ( // Example conditional rendering
-                      <div className="mb-6">
-                        <h3 className="text-lg text-white mb-2">Key Findings</h3>
-                        <ul className="space-y-2">
-                          <li className="text-gray-300 flex items-start gap-2">
-                            <span className="text-blue-400 mt-1">•</span>
-                            Cardiac output decreased by 15% after 30 days in microgravity
-                          </li>
-                          <li className="text-gray-300 flex items-start gap-2">
-                            <span className="text-blue-400 mt-1">•</span>
-                            Blood pressure regulation mechanisms adapted within 60 days
-                          </li>
-                        </ul>
-                      </div>
-                    )}
+              <div>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="text-white mb-2">Authors</h4>
+                    <p className="text-gray-300 text-sm">{selectedPaper.authors?.join(', ')}</p>
                   </div>
 
                   <div>
-                    <div className="space-y-4">
-                      <div>
-                        <h4 className="text-white mb-2">Authors</h4>
-                        <p className="text-gray-300 text-sm">{selectedPaper.authors?.join(', ')}</p>
-                      </div>
+                    <h4 className="text-white mb-2">Publication Year</h4>
+                    <p className="text-gray-300 text-sm">{selectedPaper.publicationYear}</p>
+                  </div>
 
-                      <div>
-                        <h4 className="text-white mb-2">Publication Year</h4>
-                        <p className="text-gray-300 text-sm">{selectedPaper.publicationYear}</p>
-                      </div>
+                  <div>
+                    <h4 className="text-white mb-2">Institution</h4>
+                    <p className="text-gray-300 text-sm">{selectedPaper.institution}</p>
+                  </div>
 
-                      <div>
-                        <h4 className="text-white mb-2">Institution</h4>
-                        <p className="text-gray-300 text-sm">{selectedPaper.institution}</p>
-                      </div>
+                  <div>
+                    <h4 className="text-white mb-2">Citations</h4>
+                    <p className="text-gray-300 text-sm">{selectedPaper.citationCount}</p>
+                  </div>
 
-                      <div>
-                        <h4 className="text-white mb-2">Citations</h4>
-                        <p className="text-gray-300 text-sm">{selectedPaper.citationCount}</p>
-                      </div>
-
-                      {selectedPaper.tags && (
-                        <div>
-                          <h4 className="text-white mb-2">Tags</h4>
-                          <div className="flex flex-wrap gap-2">
-                            {selectedPaper.tags.map((tag, index) => (
-                              <Badge key={index} variant="outline" className="text-xs border-white/20 text-gray-300">
-                                {tag}
-                              </Badge>
-                            ))}
-                          </div>
-                        </div>
-                      )}
-
-                      <div className="pt-4 space-y-2">
-                        {selectedPaper.downloadUrl && (
-                          <Button
-                            onClick={() => handleDownload(selectedPaper)}
-                            className={`w-full bg-gradient-to-r ${theme.primary}`}
-                          >
-                            <Download className="w-4 h-4 mr-2" />
-                            Download PDF
-                          </Button>
-                        )}
-                        {selectedPaper.externalUrl && (
-                          <Button
-                            variant="outline"
-                            onClick={() => window.open(selectedPaper.externalUrl, '_blank')}
-                            className="w-full border-white/20 text-white"
-                          >
-                            <ExternalLink className="w-4 h-4 mr-2" />
-                            View Online
-                          </Button>
-                        )}
+                  {selectedPaper.tags && (
+                    <div>
+                      <h4 className="text-white mb-2">Tags</h4>
+                      <div className="flex flex-wrap gap-2">
+                        {selectedPaper.tags.map((tag, index) => (
+                          <Badge key={index} variant="outline" className="text-xs border-white/20 text-gray-300">
+                            {tag}
+                          </Badge>
+                        ))}
                       </div>
                     </div>
+                  )}
+
+                  <div className="pt-4 space-y-2">
+                    {selectedPaper.downloadUrl && (
+                      <Button
+                        onClick={() => handleDownload(selectedPaper)}
+                        className={`w-full bg-gradient-to-r ${theme.primary}`}
+                      >
+                        <Download className="w-4 h-4 mr-2" />
+                        Download PDF
+                      </Button>
+                    )}
+                    {selectedPaper.externalUrl && (
+                      <Button
+                        variant="outline"
+                        onClick={() => window.open(selectedPaper.externalUrl, '_blank')}
+                        className="w-full border-white/20 text-white"
+                      >
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        View Online
+                      </Button>
+                    )}
                   </div>
                 </div>
-              </motion.div>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </div>
-    </div>
-  );
+              </div>
+            </div>
+          </motion.div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  </div>
+</div>
+);
 }
