@@ -1,45 +1,6 @@
 {
   "papers": [
     {
-      "id": "paper_recent_1",
-      "title": "CRISPR-Cas9 Gene Editing for Plant Adaptation to Space Environments",
-      "authors": ["Sarah Johnson", "Michael Chen", "Priya Patel"],
-      "institution": "NASA Ames Research Center",
-      "publicationYear": 2024,
-      "abstract": "This groundbreaking study demonstrates the application of CRISPR-Cas9 gene editing technology to enhance plant resilience in space environments. By targeting specific genes related to radiation resistance and reduced gravity adaptation, researchers have developed Arabidopsis thaliana variants that show 43% improved growth in simulated space conditions.",
-      "tags": ["CRISPR", "gene editing", "plant biology", "space agriculture", "radiation resistance"],
-      "citationCount": 12,
-      "relevanceScore": 0.95,
-      "downloadUrl": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9876543/pdf/",
-      "externalUrl": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9876543/"
-    },
-    {
-      "id": "paper_recent_2",
-      "title": "Microbiome Dynamics in Long-Duration Space Missions: Implications for Astronaut Health",
-      "authors": ["David Rodriguez", "Emma Wilson", "Takashi Yamamoto"],
-      "institution": "International Space Station Research Laboratory",
-      "publicationYear": 2024,
-      "abstract": "This comprehensive analysis of microbiome changes during 12-month space missions reveals significant alterations in gut, skin, and respiratory microbiota compositions. The study identifies key bacterial species shifts correlated with immune function changes and proposes targeted probiotic interventions to maintain astronaut health during extended missions.",
-      "tags": ["microbiome", "astronaut health", "long-duration missions", "probiotics", "immune function"],
-      "citationCount": 8,
-      "relevanceScore": 0.92,
-      "downloadUrl": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9876544/pdf/",
-      "externalUrl": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9876544/"
-    },
-    {
-      "id": "paper_recent_3",
-      "title": "Synthetic Biology Approaches for Sustainable Life Support Systems in Space Habitats",
-      "authors": ["Alexandra Kim", "Marcus Blackwell", "Sophia Nguyen"],
-      "institution": "MIT Space Systems Laboratory",
-      "publicationYear": 2024,
-      "abstract": "This paper presents novel synthetic biology frameworks for creating closed-loop life support systems in space habitats. Engineered microorganisms capable of efficient carbon dioxide conversion, nitrogen fixation, and water purification demonstrate potential for reducing resupply requirements by up to 65% while improving habitat sustainability for long-term space exploration.",
-      "tags": ["synthetic biology", "life support systems", "space habitats", "bioengineering", "sustainability"],
-      "citationCount": 15,
-      "relevanceScore": 0.97,
-      "downloadUrl": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9876545/pdf/",
-      "externalUrl": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9876545/"
-    },
-    {
       "id": "paper_1",
       "title": "Mice in Bion-M 1 space mission: training and selection",
       "authors": ["E. V. Sychova", "T. G. Anokhina"],
