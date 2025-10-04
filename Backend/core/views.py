@@ -4,7 +4,7 @@ from django.views.decorators.csrf import csrf_exempt
 import json
 import logging
 
-from llm_functions.llm_service import generate_text_with_gemini
+from llm_functions.llm_service import generate_text_with_gemini, generate_chat_response
 
 logger = logging.getLogger(__name__)
 
@@ -89,6 +89,46 @@ def chat_api(request):
 
 
 @csrf_exempt
+def chat_message_api(request):
+    """
+    API endpoint for chat responses using Langchain
+    Handles POST requests with message and context
+    """
+    if request.method != "POST":
+        return JsonResponse({"error": "Only POST method allowed"}, status=405)
+    
+    try:
+        # Parse JSON body
+        body = json.loads(request.body.decode('utf-8'))
+        message = body.get("message", "").strip()
+        context = body.get("context", "").strip()
+        
+        # Validate input
+        if not message:
+            return JsonResponse({"error": "Empty message received"}, status=400)
+        
+        # Log the request
+        logger.info(f"Processing chat message: {message[:100]}...")
+        
+        # Generate response using Langchain
+        response_text = generate_chat_response(message, context)
+        
+        # Return response
+        return JsonResponse({
+            "response": response_text,
+            "status": "success"
+        })
+        
+    except json.JSONDecodeError:
+        logger.error("Invalid JSON in request body")
+        return JsonResponse({"error": "Invalid JSON"}, status=400)
+    
+    except Exception as e:
+        logger.error(f"Error in chat response: {str(e)}")
+        return JsonResponse({"error": f"Server error: {str(e)}"}, status=500)
+
+
+@csrf_exempt
 def chat_options(request):
     """Handle OPTIONS requests for CORS"""
     response = JsonResponse({"status": "ok"})
@@ -96,3 +136,43 @@ def chat_options(request):
     response["Access-Control-Allow-Methods"] = "POST, OPTIONS"
     response["Access-Control-Allow-Headers"] = "Content-Type"
     return response
+
+
+@csrf_exempt
+def chat_message_api(request):
+    """
+    API endpoint for non-streaming chat responses using Langchain
+    Handles POST requests with message and context
+    """
+    if request.method != "POST":
+        return JsonResponse({"error": "Only POST method allowed"}, status=405)
+    
+    try:
+        # Parse JSON body
+        body = json.loads(request.body.decode('utf-8'))
+        message = body.get("message", "").strip()
+        context = body.get("context", "").strip()
+        
+        # Validate input
+        if not message:
+            return JsonResponse({"error": "Empty message received"}, status=400)
+        
+        # Log the request
+        logger.info(f"Processing chat message: {message[:100]}...")
+        
+        # Generate response using Langchain
+        response_text = generate_chat_response(message, context)
+        
+        # Return the response
+        return JsonResponse({
+            "response": response_text,
+            "status": "success"
+        })
+        
+    except json.JSONDecodeError:
+        logger.error("Invalid JSON in request body")
+        return JsonResponse({"error": "Invalid JSON"}, status=400)
+    
+    except Exception as e:
+        logger.error(f"Error in chat response: {str(e)}")
+        return JsonResponse({"error": f"Server error: {str(e)}"}, status=500)

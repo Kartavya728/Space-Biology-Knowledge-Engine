@@ -68,6 +68,11 @@ export function MainContent({ userType, theme, initialResponse }: { userType: an
   const imageInputRef = useRef<HTMLInputElement | null>(null);
   const [imageFile, setImageFile] = useState<File | null>(null);
   const [imagePresent, setImagePresent] = useState(false);
+  
+  // Critical: Use refs to maintain data across callback invocations
+  const collectedParagraphsRef = useRef<Paragraph[]>([]);
+  const collectedMetadataRef = useRef<any>(null);
+  const currentTitleRef = useRef<string>('');
 
   const analystOptions = {
     scientist: {
@@ -169,10 +174,11 @@ export function MainContent({ userType, theme, initialResponse }: { userType: an
   const handleSubmit = async (customPrompt = null) => {
     const finalQuery = customPrompt || query;
     if (!finalQuery.trim()) {
-      alert('Please enter a query or upload a file');
+      toast.error('Please enter a query or upload a file');
       return;
     }
 
+    // Reset all state
     setIsLoading(true);
     setIsQuerySubmitted(true);
     setResponse(null);
@@ -182,12 +188,14 @@ export function MainContent({ userType, theme, initialResponse }: { userType: an
     setShowTransition(false);
     setStreamingStepIndex(null);
     setStreamedText('');
-
-    const collectedParagraphs: Paragraph[] = [];
-    let collectedMetadata: any = null;
+    
+    // Reset refs - CRITICAL
+    collectedParagraphsRef.current = [];
+    collectedMetadataRef.current = null;
+    currentTitleRef.current = '';
 
     try {
-      // prepare combinedQuery: include parsed image text if an image was provided
+      // Prepare combined query with image if present
       let combinedQuery = finalQuery;
       if (imagePresent && imageFile) {
         try {
@@ -214,65 +222,108 @@ export function MainContent({ userType, theme, initialResponse }: { userType: an
               ...event.content,
               timestamp: Date.now()
             };
-            
             setThinkingHistory(prev => [...prev, newStep]);
           } 
           else if (event.type === 'title') {
+            currentTitleRef.current = event.content;
             setOverallTitle(event.content);
           } 
           else if (event.type === 'paragraph') {
-            const paragraphText = typeof event.content === 'string'
-              ? event.content
-              : Array.isArray(event.content)
-                ? event.content.map((c: any) => (typeof c === 'string' ? c : JSON.stringify(c))).join('\n\n')
-                : (event.content && typeof event.content === 'object' && 'text' in event.content && typeof event.content.text === 'string')
-                  ? event.content.text
-                  : JSON.stringify(event.content);
-            const paragraph: Paragraph = {
-              title: '',
-              text: paragraphText,
-              images: [],
-              tables: []
-            };
-            collectedParagraphs.push(paragraph);
+            // Parse paragraph data properly
+            let paragraph: Paragraph;
+            
+            if (typeof event.content === 'string') {
+              paragraph = {
+                title: '',
+                text: event.content,
+                images: [],
+                tables: []
+              };
+            } else if (event.content && typeof event.content === 'object') {
+              paragraph = {
+                title: event.content.title || '',
+                text: event.content.text || (typeof event.content === 'string' ? event.content : JSON.stringify(event.content)),
+                images: event.content.images || [],
+                tables: event.content.tables || []
+              };
+            } else {
+              paragraph = {
+                title: '',
+                text: JSON.stringify(event.content),
+                images: [],
+                tables: []
+              };
+            }
+            
+            // Add to ref
+            collectedParagraphsRef.current.push(paragraph);
+            
+            // Update response state with accumulated data
             setResponse({
-              paragraphs: [...collectedParagraphs],
-              metadata: collectedMetadata,
+              paragraphs: [...collectedParagraphsRef.current],
+              metadata: collectedMetadataRef.current || {
+                total_paragraphs: collectedParagraphsRef.current.length,
+                total_images: [],
+                total_tables: [],
+                source_documents: 0,
+                user_type: userType
+              },
               userType,
-              overallTitle
+              overallTitle: currentTitleRef.current || 'Analysis Results'
             });
           } 
           else if (event.type === 'metadata') {
-            collectedMetadata = event.content;
-            setResponse({
-              paragraphs: collectedParagraphs,
+            collectedMetadataRef.current = event.content;
+            
+            // Update response with metadata
+            setResponse(prev => prev ? {
+              ...prev,
+              metadata: event.content
+            } : {
+              paragraphs: [...collectedParagraphsRef.current],
               metadata: event.content,
               userType,
-              overallTitle
+              overallTitle: currentTitleRef.current || 'Analysis Results'
             });
           } 
           else if (event.type === 'error') {
             console.error('Analysis error:', event.content);
-            alert(`Error: ${event.content}`);
+            toast.error(`Error: ${event.content}`);
           } 
           else if (event.type === 'done') {
-            // Persist chat history to Supabase for the current user
+            // Final update with complete data
+            setResponse({
+              paragraphs: [...collectedParagraphsRef.current],
+              metadata: collectedMetadataRef.current || {
+                total_paragraphs: collectedParagraphsRef.current.length,
+                total_images: [],
+                total_tables: [],
+                source_documents: 0,
+                user_type: userType
+              },
+              userType,
+              overallTitle: currentTitleRef.current || 'Analysis Results'
+            });
+            
+            // Persist chat history
             try {
-              const assistantReply = (collectedParagraphs || [])
+              const assistantReply = collectedParagraphsRef.current
                 .map(p => p.text)
+                .filter(Boolean)
                 .join('\n\n');
+              
               if (assistantReply && finalQuery) {
                 createHistory(finalQuery, assistantReply);
-                console.log('Chat history Stored');
+                console.log('Chat history stored');
               }
             } catch (persistError) {
               console.error('Failed to persist chat history:', persistError);
             }
+            
             setShowTransition(true);
             setTimeout(() => {
               setIsLoading(false);
               setIsQuerySubmitted(false);
-              // reset image state after successful send
               setImageFile(null);
               setImagePresent(false);
               if (imageInputRef.current) imageInputRef.current.value = '';
@@ -282,18 +333,17 @@ export function MainContent({ userType, theme, initialResponse }: { userType: an
       );
     } catch (error) {
       console.error('Analysis error:', error);
-      alert('Failed to analyze content. Please try again.');
+      toast.error('Failed to analyze content. Please try again.');
       setIsLoading(false);
       setIsQuerySubmitted(false);
     }
-
   };
 
   const handleFileUpload = (event) => {
     const file = event.target.files[0];
     if (file) {
       setQuery(`Analyze the uploaded file: ${file.name}`);
-      alert(`File "${file.name}" uploaded successfully`);
+      toast.success(`File "${file.name}" uploaded successfully`);
     }
   };
 
@@ -695,7 +745,6 @@ export function MainContent({ userType, theme, initialResponse }: { userType: an
         onChange={handleFileUpload}
         className="hidden"
       />
-      {/* Hidden image input specifically for image uploads */}
       <input
         ref={imageInputRef}
         type="file"

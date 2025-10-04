@@ -14,6 +14,37 @@ const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000
 
 export const api = {
   /**
+   * Send chat message to backend for Langchain processing
+   */
+  sendChatMessage: async (message: string, context: string): Promise<any> => {
+    try {
+      const url = `${API_BASE_URL}/api/chat_message/`;
+      console.log('[API] Sending chat message to:', url);
+      
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          message,
+          context
+        }),
+      });
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        throw new Error(`HTTP error! status: ${response.status}, message: ${errorText}`);
+      }
+
+      return response.json();
+    } catch (error) {
+      console.error('[API] Chat message error:', error);
+      throw error;
+    }
+  },
+
+  /**
    * Stream analysis response using Server-Sent Events with ZERO artificial delays
    * Optimized for immediate token-by-token streaming with minimal latency
    */

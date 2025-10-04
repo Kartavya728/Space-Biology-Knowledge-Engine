@@ -91,7 +91,7 @@ export  function HomePage() {
       icon: Brain,
     },
     {
-      name: "Surya Shrivastav",
+      name: "Surya Srivastava",
       role: "Knowledge Graph Architect",
       avatar: "🛰️",
       description: "Designs and builds sophisticated knowledge graphs, turning unstructured data into semantic, queryable intelligence.",
@@ -99,7 +99,7 @@ export  function HomePage() {
       icon: Database,
     },
     {
-      name: "Saksham Sethia",
+      name: "Saksham Setia",
       role: "Backend & Infrastructure",
       avatar: "⚙️",
       description: "Develops robust backend APIs, data pipelines, and manages scalable cloud infrastructure for core services.",

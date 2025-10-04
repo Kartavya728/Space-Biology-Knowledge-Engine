@@ -16,6 +16,7 @@ import {
   Bot,
   User
 } from 'lucide-react';
+import { api } from '@/utils/api';
 
 interface Paragraph {
   title: string;
@@ -133,23 +134,52 @@ export function ResponseDisplay({ response, theme }: ResponseDisplayProps) {
     setChatInput('');
     setIsChatLoading(true);
 
-    // Simulate AI response (replace with actual API call)
-    setTimeout(() => {
+    try {
+      // Create context from the current response
+      const context = response.paragraphs
+        .map(p => `${p.title ? `${p.title}: ` : ''}${p.text}`)
+        .join('\n\n');
+      
+      // Send to real API
+      const result = await api.sendChatMessage(chatInput, context);
+      
       const aiMessage: ChatMessage = {
         role: 'assistant',
-        content: `Based on the analysis provided, I can help clarify that aspect. The research findings suggest that ${chatInput.toLowerCase()} is an important consideration in this context. Would you like me to elaborate on any specific part of the analysis?`,
+        content: result.response || "I'm sorry, I couldn't process that request.",
         timestamp: Date.now()
       };
+      
       setChatMessages(prev => [...prev, aiMessage]);
+    } catch (error) {
+      console.error('Chat API error:', error);
+      
+      // Fallback message on error
+      const errorMessage: ChatMessage = {
+        role: 'assistant',
+        content: "I'm sorry, I encountered an error processing your request. Please try again.",
+        timestamp: Date.now()
+      };
+      
+      setChatMessages(prev => [...prev, errorMessage]);
+    } finally {
       setIsChatLoading(false);
-    }, 1500);
+    }
   };
 
-  if (!response || !response.paragraphs || response.paragraphs.length === 0) {
+  // Validation - check if response has valid data
+  if (!response || 
+      !response.paragraphs || 
+      !Array.isArray(response.paragraphs) ||
+      response.paragraphs.length === 0
+  ) {
+    console.log('Invalid or empty response data:', response);
     return (
       <Card className="bg-white/5 backdrop-blur-sm border-white/10">
         <CardContent className="p-6">
-          <p className="text-gray-400 text-center">No response data available</p>
+          <div className="flex items-center justify-center gap-2 text-gray-400">
+            <Loader2 className="w-5 h-5 animate-spin" />
+            <p>Loading response...</p>
+          </div>
         </CardContent>
       </Card>
     );
@@ -190,132 +220,95 @@ export function ResponseDisplay({ response, theme }: ResponseDisplayProps) {
         </AnimatedSection>
       )}
 
-     
-
       {/* Paragraphs Section */}
-      {response.paragraphs.map((paragraph, index) => (
-        <AnimatedSection key={index} delay={index * 0.05}>
-          <Card className="bg-white/5 backdrop-blur-sm border-white/10 overflow-hidden hover:border-white/20 transition-all">
+      {response.paragraphs.filter(p => p && (p.text || (p.images && p.images.length) || (p.tables && p.tables.length))).map((paragraph, idx) => (
+        <AnimatedSection key={idx} delay={idx * 0.1}>
+          <Card className="bg-white/5 backdrop-blur-sm border-white/10 overflow-hidden">
+            {/* Title */}
             {paragraph.title && (
               <CardHeader className={`bg-gradient-to-r ${theme.primary} bg-opacity-20`}>
-                <CardTitle className="text-white text-xl flex items-center gap-2">
-                  <motion.div 
-                    className={`w-1 h-6 bg-gradient-to-b ${theme.primary} rounded-full`}
-                    animate={{ scaleY: [1, 1.2, 1] }}
-                    transition={{ duration: 2, repeat: Infinity }}
-                  />
+                <CardTitle className="text-white text-center text-xl font-bold">
                   {paragraph.title}
                 </CardTitle>
               </CardHeader>
             )}
             
-            <CardContent className="p-6 space-y-6">
-              <motion.div 
-                className="text-gray-300 leading-relaxed whitespace-pre-wrap text-base"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.2 }}
-              >
-                {(() => {
-                  const t: any = (paragraph as any)?.text;
-                  if (typeof t === 'string') return t;
-                  if (Array.isArray(t)) {
-                    return t.map((x) => (typeof x === 'string' ? x : JSON.stringify(x))).join('\n\n');
-                  }
-                  if (t && typeof t === 'object') {
-                    if ('text' in t && typeof (t as any).text === 'string') return (t as any).text;
-                    return JSON.stringify(t);
-                  }
-                  return String(t ?? '');
-                })()}
-              </motion.div>
-
-              {/* Images */}
-              {paragraph.images && paragraph.images.length > 0 && (
-                <div className="space-y-4">
-                  {paragraph.images.map((imageId, imgIndex) => {
-                    const imageUrl = imageMap[imageId];
-                    return (
-                      <motion.div 
-                        key={imgIndex} 
-                        className="bg-white/5 rounded-lg p-4 border border-white/10 hover:border-white/20 transition-all"
-                        whileHover={{ scale: 1.02 }}
-                        transition={{ duration: 0.2 }}
-                      >
-                        {loadingImages ? (
-                          <div className="flex items-center justify-center h-64">
-                            <Loader2 className="animate-spin h-8 w-8 text-white" />
-                          </div>
-                        ) : imageUrl ? (
-                          <div>
-                            <motion.img 
-                              src={imageUrl} 
-                              alt={`Figure ${imageId}`}
-                              className="w-full h-auto rounded-lg mb-3 cursor-pointer"
-                              initial={{ opacity: 0, scale: 0.9 }}
-                              animate={{ opacity: 1, scale: 1 }}
-                              whileHover={{ scale: 1.05 }}
-                              transition={{ duration: 0.3 }}
-                              onError={(e) => {
-                                e.currentTarget.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300"%3E%3Crect fill="%23333" width="400" height="300"/%3E%3Ctext fill="%23666" x="50%25" y="50%25" text-anchor="middle" dy=".3em"%3EImage not found%3C/text%3E%3C/svg%3E';
-                              }}
-                            />
-                            <div className="flex items-center gap-2 text-sm">
-                              <Image className="w-4 h-4 text-blue-400" />
-                              <p className="text-gray-400 font-mono">{imageId}</p>
-                            </div>
-                          </div>
-                        ) : (
-                          <div className="flex flex-col items-center justify-center h-64 text-gray-500">
-                            <AlertCircle className="w-8 h-8 mb-2" />
-                            <p className="text-sm">{imageId}</p>
-                            <p className="text-xs text-gray-600">Image mapping not found</p>
-                          </div>
-                        )}
-                      </motion.div>
-                    );
-                  })}
-                </div>
-              )}
-
-              {/* Tables */}
+            <CardContent className="p-0">
+              {/* Tables First (if exists) */}
               {paragraph.tables && paragraph.tables.length > 0 && (
-                <div className="space-y-4">
-                  {paragraph.tables.map((tableId, tblIndex) => {
-                    const tableHtml = tableContents[tableId];
-                    return (
-                      <motion.div 
-                        key={tblIndex} 
-                        className="bg-white/5 rounded-lg p-4 border border-white/10 hover:border-white/20 transition-all"
-                        whileHover={{ scale: 1.01 }}
-                      >
-                        <div className="flex items-center gap-2 mb-3">
-                          <FileText className="w-4 h-4 text-green-400" />
-                          <p className="text-sm text-gray-400 font-mono">{tableId}</p>
+                <div className="p-6 bg-green-50/10 border-b border-white/10">
+                  {paragraph.tables.map((tableId, tblIdx) => (
+                    <div key={tblIdx} className="overflow-x-auto mb-4 last:mb-0">
+                      <div className="flex items-center gap-2 mb-3">
+                        <span className="text-sm font-semibold text-green-400">Table {tableId}</span>
+                      </div>
+                      {loadingTables ? (
+                        <div className="flex items-center gap-2 text-gray-400">
+                          <Loader2 className="w-4 h-4 animate-spin" />
+                          <span className="text-sm">Loading table...</span>
                         </div>
-                        {loadingTables ? (
-                          <div className="flex items-center justify-center h-32">
-                            <Loader2 className="animate-spin h-8 w-8 text-white" />
-                          </div>
-                        ) : tableHtml ? (
-                          <motion.div 
-                            className="overflow-x-auto text-gray-300 table-container"
-                            dangerouslySetInnerHTML={{ __html: tableHtml }}
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 0.2 }}
-                          />
-                        ) : (
-                          <div className="flex flex-col items-center justify-center h-32 text-gray-500">
-                            <AlertCircle className="w-8 h-8 mb-2" />
-                            <p className="text-sm">Table {tableId} not available</p>
-                          </div>
-                        )}
-                      </motion.div>
-                    );
-                  })}
+                      ) : (
+                        <div 
+                          className="prose prose-invert max-w-none prose-table:border-collapse prose-th:border prose-th:border-white/20 prose-td:border prose-td:border-white/20 prose-th:bg-white/10 prose-th:p-2 prose-td:p-2"
+                          dangerouslySetInnerHTML={{ 
+                            __html: tableContents[tableId] || `<span class="text-gray-400">Table not found</span>` 
+                          }} 
+                        />
+                      )}
+                    </div>
+                  ))}
                 </div>
               )}
+              
+              {/* Content Row: Text Left, Image Right */}
+              <div className="flex flex-col md:flex-row gap-6 p-6">
+                {/* Text Content - Left Side */}
+                {paragraph.text && (
+                  <div className="flex-1">
+                    <p className="text-gray-300 leading-relaxed whitespace-pre-wrap">
+                      {paragraph.text}
+                    </p>
+                  </div>
+                )}
+                
+                {/* Images - Right Side */}
+                {paragraph.images && paragraph.images.length > 0 && (
+                  <div className="flex-shrink-0 w-full md:w-64">
+                    <div className="space-y-4">
+                      {paragraph.images.map((imageId, imgIdx) => imageId && (
+                        <motion.div
+                          key={imgIdx}
+                          initial={{ opacity: 0, scale: 0.9 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          transition={{ delay: 0.2 + (imgIdx * 0.1) }}
+                          className="md:sticky md:top-4"
+                        >
+                          {loadingImages ? (
+                            <div className="flex items-center justify-center h-48 bg-white/5 rounded-lg">
+                              <Loader2 className="w-6 h-6 animate-spin text-gray-400" />
+                            </div>
+                          ) : (
+                            <>
+                              <img
+                                src={imageMap[imageId] || '/placeholder-image.jpg'}
+                                alt={`Illustration for ${paragraph.title || 'content'}`}
+                                className="rounded-lg shadow-lg w-full h-auto object-cover border border-white/20"
+                                style={{ maxHeight: '300px' }}
+                                onError={(e) => {
+                                  e.currentTarget.src = '/placeholder-image.jpg';
+                                }}
+                              />
+                              <p className="text-xs text-gray-400 mt-2 text-center">
+                                Figure: {imageId}
+                              </p>
+                            </>
+                          )}
+                        </motion.div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
             </CardContent>
           </Card>
         </AnimatedSection>
@@ -358,7 +351,7 @@ export function ResponseDisplay({ response, theme }: ResponseDisplayProps) {
                         ? 'bg-blue-500/20 text-white' 
                         : 'bg-white/10 text-gray-300'
                     }`}>
-                      <p className="text-sm leading-relaxed">{msg.content}</p>
+                      <p className="text-sm leading-relaxed whitespace-pre-wrap">{msg.content}</p>
                     </div>
                     {msg.role === 'user' && (
                       <div className="p-2 bg-blue-500/20 rounded-full h-8 w-8 flex items-center justify-center flex-shrink-0">
@@ -415,6 +408,7 @@ export function ResponseDisplay({ response, theme }: ResponseDisplayProps) {
                   }}
                   placeholder="Ask a follow-up question..."
                   className="min-h-[60px] bg-white/5 border-white/20 text-white placeholder:text-gray-400 resize-none flex-1"
+                  disabled={isChatLoading}
                 />
                 <Button
                   onClick={handleChatSubmit}

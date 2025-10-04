@@ -28,6 +28,45 @@ class Paragraph(BaseModel):
 
 
 # ============================================================================
+# CHAT FUNCTIONS
+# ============================================================================
+
+def generate_chat_response(message: str, context: str = "") -> str:
+    """
+    Generate a chat response using Gemini model
+    
+    Args:
+        message: The user's message
+        context: Optional context from previous conversation
+        
+    Returns:
+        The generated response as a string
+    """
+    try:
+        # Initialize the chat model
+        model = init_chat_model(
+            "gemini-2.0-flash-exp",
+            model_provider="google_genai",
+            streaming=False
+        )
+        
+        # Prepare the prompt with context if available
+        prompt = f"Context: {context}\n\nUser: {message}\n\nAssistant:"
+        if not context:
+            prompt = f"User: {message}\n\nAssistant:"
+            
+        # Generate the response
+        response = model.invoke(prompt)
+        
+        # Return the response content
+        return response.content
+        
+    except Exception as e:
+        print(f"Error generating chat response: {e}")
+        return f"I'm sorry, I encountered an error: {str(e)}"
+
+
+# ============================================================================
 # VECTOR STORE
 # ============================================================================
 
@@ -215,22 +254,25 @@ def stream_event(event_type: str, content: any) -> str:
 # ============================================================================
 
 def parse_to_streamable_structure(agent_response: str, media_references: Dict, user_type: str, query: str) -> List[Dict]:
-    """Parse response into streamable paragraph chunks with proper word count (200-300 words)"""
+    """Parse response into streamable paragraph chunks with proper word count and key concepts"""
     expected_sections = ROLE_STRUCTURES.get(user_type, ROLE_STRUCTURES['scientist'])
     
     paragraphs_data = []
     unused_images = list(media_references.get('images', []))
     unused_tables = list(media_references.get('tables', []))
     
+    # Extract key concepts from query for section titles
+    query_keywords = extract_key_concepts(query)
+    
     # Split response by sections
     sections = re.split(r'\n(?=\d+\.|\#{1,3}\s)', agent_response)
     
-    for i, section_title in enumerate(expected_sections):
+    for i, base_section_title in enumerate(expected_sections):
         section_text = ""
         
         # Find matching content
         for section in sections:
-            if section_title.lower() in section.lower()[:100]:
+            if base_section_title.lower() in section.lower()[:100]:
                 section_text = section
                 break
         
@@ -238,42 +280,37 @@ def parse_to_streamable_structure(agent_response: str, media_references: Dict, u
             section_text = sections[i]
         
         if not section_text:
-            section_text = f"Analysis for {section_title} is being compiled based on available research data and contextual information from the knowledge base."
+            continue  # Skip empty sections instead of generating filler
         
         # Clean section text
         section_text = re.sub(r'^\d+\.\s*|^#+\s*', '', section_text).strip()
+        section_text = re.sub(r'^' + re.escape(base_section_title) + r':?\s*', '', section_text, flags=re.IGNORECASE).strip()
         
         # Ensure proper word count (200-300 words)
         words = section_text.split()
         if len(words) < 180:
-            # Pad if too short
-            section_text += "\n\nThis analysis is derived from comprehensive evaluation of the available research data, technical specifications, and contextual information retrieved from the knowledge base. Further detailed investigation of these findings would provide additional insights into the implications and applications of this research."
+            continue  # Skip sections that are too short
         elif len(words) > 350:
-            # Truncate if too long
             section_text = ' '.join(words[:330]) + "..."
         
-        # Assign ONE image per paragraph (distributed evenly)
-        para_image = unused_images.pop(0) if unused_images else None
+        # Create contextual title with key concepts
+        section_title = create_contextual_title(base_section_title, query_keywords, section_text)
+        
+        # Assign media intelligently based on content
+        para_image = None
         para_table = None
         
         # Find table references in text
-        for tbl in media_references.get('tables', []):
-            if tbl.lower() in section_text.lower():
+        for tbl in unused_tables[:]:
+            if tbl.lower() in section_text.lower() or 'table' in section_text.lower():
                 para_table = tbl
-                if tbl in unused_tables:
-                    unused_tables.remove(tbl)
+                unused_tables.remove(tbl)
                 break
         
-        # If no table found in text, assign one if available
-        if not para_table and unused_tables and i % 2 == 0:
-            para_table = unused_tables.pop(0)
-        
-        # Enhance text with natural media references
-        if para_image and "figure" not in section_text.lower() and "fig" not in section_text.lower():
-            section_text += f"\n\nThe accompanying visualization in {para_image} provides detailed illustration of these key aspects and relationships."
-        
-        if para_table and "table" not in section_text.lower():
-            section_text += f"\n\nComprehensive measurements and detailed data are presented in {para_table} for reference."
+        # Assign image if figure is mentioned or for visual sections
+        if ('figure' in section_text.lower() or 'fig' in section_text.lower() or 
+            'visualization' in section_text.lower() or i % 2 == 0) and unused_images:
+            para_image = unused_images.pop(0)
         
         paragraphs_data.append({
             "title": section_title,
@@ -282,30 +319,29 @@ def parse_to_streamable_structure(agent_response: str, media_references: Dict, u
             "tables": [para_table] if para_table else []
         })
     
-    # Handle remaining media
-    if unused_images or unused_tables:
-        additional_text = "Additional reference materials and supporting data are available for further investigation."
-        if unused_images:
-            additional_text += f" Visual materials include: {', '.join(unused_images[:3])}."
-        if unused_tables:
-            additional_text += f" Supplementary data tables: {', '.join(unused_tables[:3])}."
-        
-        paragraphs_data.append({
-            "title": "Additional Resources",
-            "text": additional_text,
-            "images": unused_images[:3] if unused_images else [],
-            "tables": unused_tables[:3] if unused_tables else []
-        })
-    
     return paragraphs_data
 
 
-# ============================================================================
-# MAIN GENERATOR WITH STREAMING
-# ============================================================================
+def extract_key_concepts(query: str) -> List[str]:
+    """Extract key concepts from query for contextual titles"""
+    # Remove common words and extract meaningful terms
+    common_words = {'what', 'how', 'why', 'when', 'where', 'the', 'is', 'are', 'of', 'in', 'on', 'for', 'to', 'and'}
+    words = query.lower().split()
+    keywords = [w for w in words if len(w) > 3 and w not in common_words]
+    return keywords[:3]  # Return top 3 key concepts
 
-def generate_text_with_gemini(user_input: str, user_type: str = 'scientist') -> Generator[str, None, None]:
-    """Enhanced generator with detailed real-time streaming of agent thinking process"""
+
+def create_contextual_title(base_title: str, keywords: List[str], content: str) -> str:
+    """Create contextual paragraph title with key concepts"""
+    # Find relevant keyword in content
+    for keyword in keywords:
+        if keyword in content.lower():
+            return f"{base_title}: {keyword.title()}"
+    return base_title
+
+
+def generate_text_with_gemini(user_input: str, user_type: str = 'scientist', deep_think: bool = False) -> Generator[str, None, None]:
+    """Enhanced generator with proper streaming and relevant content only"""
     
     api_key = os.getenv("GOOGLE_API_KEY")
     tavily_key = os.getenv("TAVILY_API_KEY")
@@ -319,187 +355,94 @@ def generate_text_with_gemini(user_input: str, user_type: str = 'scientist') -> 
     os.environ["TAVILY_API_KEY"] = tavily_key
     
     try:
-        # Initial setup
-        yield stream_event("thinking_step", {
-            "step": "initialization",
-            "message": f"🚀 Initializing {user_type.upper()} analysis mode",
-            "details": {
-                "user_type": user_type,
-                "query_length": len(user_input)
-            }
-        })
+        # Stream query first
+        yield stream_event("query", user_input)
+        time.sleep(0.05)
         
         yield stream_event("thinking_step", {
-            "step": "query_processing",
-            "message": f"📋 Processing query",
-            "details": {"query": user_input[:200] + ("..." if len(user_input) > 200 else "")}
+            "step": "initialization",
+            "message": f"Initializing {user_type.upper()} analysis mode",
+            "details": {"user_type": user_type, "query_length": len(user_input)}
         })
         
         # Initialize LLM
         yield stream_event("thinking_step", {
             "step": "model_loading",
-            "message": "🧠 Loading Gemini 2.0 Flash model with streaming capabilities"
+            "message": "Loading Gemini model"
         })
         
         llm = init_chat_model(
             "gemini-2.0-flash-exp",
             model_provider="google_genai",
             streaming=True,
-            temperature=0.7
+            temperature=0.3 if deep_think else 0.7  # Lower temp for deep think
         )
         
         # Retrieve documents
         yield stream_event("thinking_step", {
             "step": "retrieval_start",
-            "message": "📊 Searching knowledge base for relevant documents..."
+            "message": "Searching knowledge base..."
         })
         
-        context_result = get_context_with_media(user_input, user_type, k=10)
+        context_result = get_context_with_media(user_input, user_type, k=15 if deep_think else 10)
         
-        # Stream detailed retrieval results
         yield stream_event("thinking_step", {
             "step": "retrieval_complete",
-            "message": f"✅ Successfully retrieved {context_result['total_documents']} relevant documents",
+            "message": f"Retrieved {context_result['total_documents']} relevant documents",
             "details": {
                 "total_documents": context_result['total_documents'],
                 "images_found": len(context_result['references']['images']),
-                "tables_found": len(context_result['references']['tables']),
-                "image_ids": context_result['references']['images'][:5],
-                "table_ids": context_result['references']['tables'][:5]
-            },
-            "preview": context_result['context'][:1000] + "..." if len(context_result['context']) > 1000 else context_result['context']
+                "tables_found": len(context_result['references']['tables'])
+            }
         })
         
-        # Show first few retrieved documents
-        for idx, doc in enumerate(context_result['documents'][:3], 1):
-            yield stream_event("thinking_step", {
-                "step": f"document_preview_{idx}",
-                "message": f"📄 Document {idx} preview",
-                "output": doc[:600] + ("..." if len(doc) > 600 else "")
-            })
-        
-        # Setup tools
-        yield stream_event("thinking_step", {
-            "step": "tool_setup",
-            "message": "🔧 Configuring analysis tools (Knowledge Base + Web Search)"
-        })
-        
-        rag_tool = Tool(
-            name="KnowledgeBaseRetrieval",
-            func=rag_retrieval_tool,
-            description="Search internal knowledge base for scientific documents, research papers, and technical data"
-        )
-        
-        web_search = TavilySearchResults(
-            max_results=3,
-            name="WebSearch",
-            description="Search the web for current information, recent developments, and external sources"
-        )
-        
-        tools = [rag_tool, web_search]
-        
-        # Build enhanced query
+        # Setup tools with enhanced prompt
         role_prompt = ROLE_PROMPTS.get(user_type, ROLE_PROMPTS['scientist'])
+        
         enhanced_query = f"""{role_prompt}
 
 User Query: {user_input}
 
 Available Context from Knowledge Base:
-{context_result['context'][:6000]}
+{context_result['context']}
 
-IMPORTANT: Provide comprehensive analysis following the exact structure above. Each section MUST be 200-300 words (approximately 15-25 sentences). Include specific data, measurements, and technical details. Naturally reference the figures and tables available in the context."""
+CRITICAL INSTRUCTIONS:
+1. Answer ONLY based on the provided context - do not generate speculative content
+2. Each section MUST be 200-300 words with specific data from the context
+3. Include key concepts from the query: {extract_key_concepts(user_input)}
+4. Reference figures and tables naturally when they support your points
+5. If context is insufficient for a section, SKIP that section entirely
+6. Maintain scientific accuracy - cite specific measurements, dates, and findings from the documents"""
         
-        yield stream_event("thinking_step", {
-            "step": "agent_initialization",
-            "message": "🤖 Initializing ReAct agent with reasoning capabilities",
-            "details": {
-                "tools_available": ["KnowledgeBaseRetrieval", "WebSearch"],
-                "max_iterations": 6,
-                "context_length": len(enhanced_query)
-            }
-        })
+        # Rest of agent setup...
+        rag_tool = Tool(
+            name="KnowledgeBaseRetrieval",
+            func=rag_retrieval_tool,
+            description="Search internal knowledge base for scientific documents"
+        )
         
-        # Create agent
+        web_search = TavilySearchResults(max_results=3, name="WebSearch")
+        tools = [rag_tool, web_search]
+        
         prompt = hub.pull("hwchase17/react")
         agent = create_react_agent(llm, tools, prompt)
-        
-        # Custom callback for detailed streaming
-        class DetailedAgentCallback(BaseCallbackHandler):
-            def __init__(self, generator_func):
-                self.generator_func = generator_func
-                self.iteration = 0
-                
-            def on_agent_action(self, action, **kwargs):
-                self.iteration += 1
-                self.generator_func(stream_event("thinking_step", {
-                    "step": f"agent_action_{self.iteration}",
-                    "message": f"🎯 Agent Action {self.iteration}: Using {action.tool}",
-                    "details": {
-                        "tool": action.tool,
-                        "tool_input": str(action.tool_input)[:500]
-                    }
-                }))
-            
-            def on_tool_start(self, serialized, input_str, **kwargs):
-                tool_name = serialized.get("name", "Unknown")
-                self.generator_func(stream_event("thinking_step", {
-                    "step": "tool_execution",
-                    "message": f"⚡ Executing {tool_name}",
-                    "details": {"input": input_str[:300]}
-                }))
-            
-            def on_tool_end(self, output, **kwargs):
-                # Stream tool output in detail
-                output_str = str(output)
-                self.generator_func(stream_event("thinking_step", {
-                    "step": "tool_result",
-                    "message": "✅ Tool execution completed",
-                    "output": output_str[:1500] + ("..." if len(output_str) > 1500 else "")
-                }))
-            
-            def on_agent_finish(self, finish, **kwargs):
-                self.generator_func(stream_event("thinking_step", {
-                    "step": "agent_complete",
-                    "message": "🎉 Agent reasoning completed"
-                }))
-        
-        # Store yielded events
-        def yield_wrapper(event_str):
-            nonlocal latest_yield
-            latest_yield = event_str
-        
-        latest_yield = None
-        callback = DetailedAgentCallback(yield_wrapper)
-        
         agent_executor = AgentExecutor(
             agent=agent,
             tools=tools,
             verbose=True,
             handle_parsing_errors=True,
-            max_iterations=6,
-            callbacks=[callback]
+            max_iterations=8 if deep_think else 6
         )
         
         yield stream_event("thinking_step", {
             "step": "agent_execution_start",
-            "message": "🔄 Starting agent execution with iterative reasoning"
+            "message": "Analyzing with AI agent"
         })
         
-        # Execute agent
         result = agent_executor.invoke({"input": enhanced_query})
-        
-        # Yield any pending callbacks
-        if latest_yield:
-            yield latest_yield
-        
-        yield stream_event("thinking_step", {
-            "step": "response_structuring",
-            "message": "✨ Structuring final response into formatted sections"
-        })
-        
         agent_output = result.get('output', '')
         
-        # Parse into structured format
+        # Parse and filter relevant paragraphs
         paragraphs_data = parse_to_streamable_structure(
             agent_output,
             context_result['references'],
@@ -507,58 +450,47 @@ IMPORTANT: Provide comprehensive analysis following the exact structure above. E
             user_input
         )
         
-        yield stream_event("thinking_step", {
-            "step": "final_formatting",
-            "message": f"📝 Generated {len(paragraphs_data)} structured sections",
-            "details": {
-                "sections": [p['title'] for p in paragraphs_data],
-                "total_images": sum(len(p['images']) for p in paragraphs_data),
-                "total_tables": sum(len(p['tables']) for p in paragraphs_data)
-            }
-        })
-        
-        # Generate title
+        # Generate title with key concepts
+        key_concepts = extract_key_concepts(user_input)
         role_titles = {
-            'scientist': 'Scientific Analysis Report',
-            'investor': 'Investment Analysis Report',
-            'mission-architect': 'Mission Architecture Report'
+            'scientist': 'Scientific Analysis',
+            'investor': 'Investment Analysis',
+            'mission-architect': 'Mission Architecture'
         }
-        overall_title = f"{role_titles.get(user_type, 'Analysis Report')}: {user_input[:60]}"
+        overall_title = f"{role_titles.get(user_type, 'Analysis')}: {' & '.join([k.title() for k in key_concepts[:2]])}"
         
+        # Stream title
         yield stream_event('title', overall_title)
-        time.sleep(0.05)
+        time.sleep(0.1)
         
-        # Stream paragraphs with brief delay for smooth rendering
+        # Stream paragraphs one by one
         for idx, para in enumerate(paragraphs_data, 1):
             yield stream_event("thinking_step", {
                 "step": f"streaming_section_{idx}",
-                "message": f"📤 Streaming section {idx}/{len(paragraphs_data)}: {para['title']}"
+                "message": f"Streaming: {para['title']}"
             })
+            time.sleep(0.05)
             
             yield stream_event('paragraph', para)
-            time.sleep(0.08)
+            time.sleep(0.15)  # Visible streaming delay
         
         # Stream metadata
-        all_images = set()
-        all_tables = set()
+        all_images = []
+        all_tables = []
         for para in paragraphs_data:
-            all_images.update(para.get('images', []))
-            all_tables.update(para.get('tables', []))
+            all_images.extend(para.get('images', []))
+            all_tables.extend(para.get('tables', []))
         
         metadata = {
             "total_paragraphs": len(paragraphs_data),
-            "total_images": sorted(list(all_images)),
-            "total_tables": sorted(list(all_tables)),
+            "total_images": all_images,
+            "total_tables": all_tables,
             "source_documents": context_result['total_documents'],
-            "user_type": user_type
+            "user_type": user_type,
+            "query": user_input
         }
-        
         yield stream_event('metadata', metadata)
-        
-        yield stream_event("thinking_step", {
-            "step": "complete",
-            "message": "✅ Analysis complete and delivered"
-        })
+        time.sleep(0.05)
         
         yield stream_event("done", None)
         
@@ -566,10 +498,5 @@ IMPORTANT: Provide comprehensive analysis following the exact structure above. E
         print(f"[ERROR] {str(e)}")
         import traceback
         traceback.print_exc()
-        
-        yield stream_event("thinking_step", {
-            "step": "error",
-            "message": f"❌ Error occurred: {str(e)}"
-        })
         yield stream_event('error', f"Error: {str(e)}")
         yield stream_event("done", None)
