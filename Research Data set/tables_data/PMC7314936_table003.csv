@@ -1,0 +1,10 @@
+Environment,Arabidopsis,Wheat,Units
+Light intensity (PPFD),150 ± 1.2,600 ± 1.1,μmol⋅m–2 ⋅s–1
+Photoperiod (Light:Dark),16:8,20:4,hr
+CO2concentration,400 ± 5.3,1500 ± 6.0,μmol mol–1
+Temperature (Light:Dark),22:18 (± 0.13),23:23 (± 0.06),°C
+Humidity (%),65 ± 0.9,75 ± 0.8,%
+Experiment duration,48 (6 wk),33,Days
+Planting area,0.1,0.1,m2
+# Plants grown/Planted,21/36,48/60,Plants
+Germination rate,58,80,%

@@ -1,0 +1,19 @@
+Function,Activation z-score,Predicted Activation State,p-Value,# Genes
+Incorporation of D-Glucose,2.000,Increased,3.93E-02,6
+Synthesis of Phosphatidylserine,2.000,Increased,1.51E-03,5
+Beta-Oxidation of Fatty Acid,2.153,Increased,2.00E-02,17
+Concentration of Choline-Phospholipid,2.154,Increased,1.27E-02,14
+Synthesis of D-Glucose,2.302,Increased,3.44E-02,21
+Synthesis of Monosaccharide,2.463,Increased,2.76E-02,22
+Uptake of Fatty Acid,2.754,Increased,1.67E-02,19
+Glycolysis of Carbohydrate,-2.758,Decreased,1.36E-02,9
+Glycolysis of D-Glucose,-2.571,Decreased,2.91E-02,8
+Glycolysis,-2.548,Decreased,8.88E-03,18
+Concentration of Fatty Acid,-2.541,Decreased,2.11E-02,69
+Disorder of Lipid Metabolism,-2.040,Decreased,9.39E-03,58
+Trends,,,,
+Oxidation of Lipid,1.843,Increased,1.31E-03,56
+Oxidation of Fatty Acid,1.891,Increased,2.53E-03,44
+Biliary Excretion of Lipid,1.963,Increased,2.16E-02,4
+Hydrolysis of Diacylglycerol,1.980,Increased,2.16E-02,4
+Concentration of Phosphatidylcholine,1.989,Increased,2.82E-02,11

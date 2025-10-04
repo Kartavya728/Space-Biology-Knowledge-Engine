@@ -1,0 +1,22 @@
+,The presence/absence of antimicrobial resistance genes that is as follows:
+Sample,Species identified,Copper-translocating P-type ATPase,DNA gyrase subunit A,DNA gyrase subunit B,DNA-directed RNA polymerase beta subunit,Topoisomerase IV subunit A,Topoisomerase IV subunit B,LSU ribosomal protein L20p,LSU ribosomal protein L35p,SSU ribosomal protein S7p (S5e),SSU ribosomal protein S7p (S5e),Translation elongation factor G,Translation elongation factor Tu,Translation initiation factor 3
+F1-2P,Enterobacter bugandensis,+,+,+,+,+,+,+,+,,,,,+
+F1-4P,Staphylococcus aureus,+,+,+,+,+,++,,+,+,+,+,+,+
+F1-5P,Pantoea conspicua,+,+,+,+,+,+,++,+,+,+,+,+,+
+F1-8P,Microbacterium hominis,++,++,+,+,+,+,,,+,+,+,+,
+F2-1P,Acinetobacter pittii,+,+,+,+,+,+,+,+,+,+,+,+,+
+F2-1P,Kocuria palustris,+,+,+,+,+,+,+,+,+,+,+,+,+
+F2-2P,Staphylococcus saprophyticus,+,+,+,+,+,+,+,+,+,+,+,+,+
+F2-5P,Paenibacillus polymyxa,+,+,+,+,+,+,+,+,+,+,+,+,+
+F2-5P,Pantoea conspicua,+,+,+,+,+,+,+,+,+,+,+,+,+
+F2-7P,Methylobacterium ajmalii,+,+,+,+,+,+,+,+,+,+,+,+,+
+F2-7P,Sphingomonas sanguinis,+,+,+,+,+,+,+,+,+,+,+,+,+
+F2-8P,Paenibacillus polymyxa,+,+,+,+,+,+,+,+,+,+,+,+,+
+F2-8P,Staphylococcus aureus,+,+,+,+,+,+,+,+,+,+,+,+,+
+F3-1P,Kalamiella piersonii,+,+,+,+,+,+,+,+,+,+,+,+,+
+F3-2P,Staphylococcus saprophyticus,+,+,+,+,+,+,+,+,+,+,+,+,+
+F3-3P,Klebsiella pneumoniae,+,+,+,+,+,+,+,+,+,+,+,+,+
+F3-4P,Pantoea dispersa,,,,,,+,+,+,+,+,+,+,+
+F3-5P,Kalamiella piersonii,+,+,+,+,+,+,+,+,+,+,+,+,+
+F3-7P,Kalamiella piersonii,+,+,+,+,+,+,+,+,+,+,+,+,+
+F3-8P,Kalamiella piersonii,+,+,+,+,+,+,+,+,+,+,+,+,+

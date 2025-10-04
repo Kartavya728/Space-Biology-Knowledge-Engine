@@ -1,0 +1,13 @@
+Name,Type,Catalytic pentapeptide,Molecular weight (kDa),Length,pI,BLASTx E-score,topBLASTx Organism
+EsCasp10_1X,Initiator,QACQP,72.1,634,5.83,9.28e-16,Caspase 10 Homo sapiens
+EsCasp10_2X,Initiator,QACQP,34.4,297,4.69,7.95e-17,Caspase 10 Homo sapiens
+EsCasp8,Initiator,QACQG,63.1,560,7.76,2.78e-57,Caspase 8 Rattus norvegicus
+EsCasp2_1X,Initiator,QANSV,67.7,591,5.28,3.58e-08,Caspase 2 Mus musculus
+EsCasp2_2X,Initiator,QACRS,41.4,368,5.67,4e-25,Caspase 2 Mus musculus
+EsCasp9,Initiator,QACQP,46.8,481,4.77,3.44e-13,Caspase 9 Homo sapiens
+EsCasp7_1X,Executioner,QSCRG,38.4,337,8.62,89e-58,Caspase 7 Mesocricetus auratus
+EsCasp7_2X,Executioner,QACRG,41.5,370,5.13,6.09e-70,Caspase 7 Homo sapiens
+EsCasp7_3X,Executioner,QACRG,33.9,296,6.71,1.39e-71,Caspase 7 Mus musculus
+EsCasp7_4X,Executioner,QACRG,23.9,213,4.75,7.03e-56,Caspase 7 Mus musculus
+EsCasp3_1X,Executioner,QACRG,35.3,313,6.97,2.63e-65,Caspase 3 Bos taurus
+EsCasp3_2X,Executioner,QACRG,41.2,365,6.8,4.52e-72,Caspase 3 Mus musculus

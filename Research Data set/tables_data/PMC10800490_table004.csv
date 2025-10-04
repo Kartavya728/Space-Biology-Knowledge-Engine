@@ -1,0 +1,36 @@
+Gene ID,Log2 Fold Change,padj,Symbol,Description
+AT4G17615,-0.5692,1.08E-03,CBL1,Calcineurin B-like protein 1
+AT5G66650,-1.4308,3.72E-04,CMCU,Calcium uniporter protein 3
+AT4G32060,-0.5073,3.60E-04,MICU,"Calcium uptake protein, mitochondrial"
+AT5G54590,-0.6115,5.94E-03,CRLK1,Calcium/calmodulin-regulated receptor-like kinase
+AT5G37770,-1.7365,4.38E-09,CML24,Calcium-binding protein
+AT5G42380,-2.7770,8.69E-03,CML37,Calcium-binding protein
+AT5G49480,-1.0429,5.98E-06,CP1,Calcium-binding protein
+AT2G46600,-2.6536,8.42E-14,KIC,Calcium-binding protein
+AT4G27280,-3.6521,2.59E-10,KRP1,Calcium-binding protein
+AT5G54490,-2.2801,3.69E-06,PBP1,Calcium-binding protein
+AT3G14590,-1.1538,2.31E-04,NTMC2T6.2,Calcium-dependent lipid-binding family protein
+AT4G21940,-0.8663,2.51E-03,CPK15,Calcium-dependent protein kinase
+AT5G66210,-1.7608,1.82E-09,CPK28,Calcium-dependent protein kinase
+AT1G76040,-0.9149,3.36E-03,CPK29,Calcium-dependent protein kinase
+AT3G57530,-1.9357,1.37E-11,CPK32,Calcium-dependent protein kinase
+AT4G09570,-0.4804,3.47E-03,CPK4,Calcium-dependent protein kinase
+AT1G27770,-1.8644,2.82E-11,ACA1,Calcium-transporting ATPase
+AT2G41010,-1.5839,2.42E-12,CAMBP25,Calmodulin-binding protein
+AT5G62570,-1.4615,3.55E-08,CBP60A,Calmodulin-binding protein
+AT2G24300,-1.0421,3.92E-03,CBP60E,Calmodulin-binding protein
+AT5G26920,-2.8406,1.07E-06,CBP60G,Calmodulin-binding protein
+AT5G64220,-0.4456,1.03E-04,CAMTA2,Calmodulin-binding transcription activator
+AT2G22300,-0.5213,1.30E-03,CAMTA3,Calmodulin-binding transcription activator
+AT1G67310,-0.4575,3.13E-05,CAMTA4,Calmodulin-binding transcription activator
+AT2G41100,-1.4492,5.29E-06,CML12,Calmodulin-like protein
+AT2G43290,-1.7077,5.75E-14,CML5,Calmodulin-like protein
+AT3G51920,-0.8321,5.20E-06,CML9,Calmodulin-like protein
+AT1G01130,-0.9225,5.87E-05,CIPK,CBL-interacting serine/threonine-protein kinase
+AT2G30360,-0.7795,9.29E-05,CIPK11,CBL-interacting serine/threonine-protein kinase
+AT5G01820,-0.7076,1.98E-03,CIPK14,CBL-interacting serine/threonine-protein kinase
+AT1G48260,-0.7532,6.49E-03,CIPK17,CBL-interacting serine/threonine-protein kinase
+AT5G07070,-0.7082,5.74E-05,CIPK2,CBL-interacting serine/threonine-protein kinase
+AT3G19100,-0.4980,3.52E-04,CRK2,CDPK-related kinase
+AT5G53130,-1.2025,1.84E-07,CNGC1,Cyclic nucleotide-gated ion channel
+AT5G54250,-0.8611,5.00E-05,CNGC4,Cyclic nucleotide-gated ion channel

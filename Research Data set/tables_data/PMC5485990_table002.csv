@@ -1,0 +1,12 @@
+Cells/Organism,Radiation Type and Quality,Dose/Dose Rate Range,Method,Result,Reference
+Cell Line
+Human embryonic kidney cells (HEK 293),C (34 keV/µm)Ne (91 keV/µm);Ar (272 keV/µm);Ni (906 keV/µm);Pb (9674 keV/µm),0.1–60 Gy~1 Gy/min,Fluorescence d2EGFP reporter gene assay,RBE for NF-κB dependentd2EGFPexpression varies by particle types with peak RBE = 8.9,Hellweg et al. [39]
+Human monocytes (MM6),Fe,0.2–1.4 Gy1 Gy/min,EMSA on nuclear lysates,NF-κB DNA binding activity increased in a dose and time dependent manner,Natarajan et al. [40]
+Human embryonic kidney cells (HEK 293),Ar (230 keV/µm),0.2–30 Gy,Fluorescence d2EGFP reporter gene assay,Increased NF-κB dependentd2EGFPexpression in a dose and time dependent manner,Baumstark-Khan et al. [41]
+Human embryonic kidney cells (HEK 293),C (33 and 73 keV/µm),0.2–20 Gy~1 Gy/min,Fluorescence d2EGFP reporter gene assay,NF-κB dependentd2EGFPexpression was comparable to X-rays,Hellweg et al. [42]
+Chinese hamster cells (V79),O,1 Gy,Western blot on whole cell lysates,"Decreased NF-κB p65 level at 30 min post irradiation, but the level recovered at longer time points",Mitra et al. [43]
+Mouse Study
+Mouse bone marrow (BALB/cJ),Proton (0.7 keV/µm),1 Gy5 and 10 mGy/min,ELISA on nuclear lysates,NF-κB p65 DNA binding activity was both dose rate and time dependent,Rithidech et al. [44]
+Mouse spleen T cells (C57BL/6),SPE protons,1.7 Gy delivered over 36 h,ELISA on whole cell lysates,Increased total and phosphorylated form of NF-κB p65,Rizvi et. al. [45]
+Mouse heart and bone marrow (CBA/CaJ),Si (77 keV/µm),0.1–0.5 Gy10 mGy/min in two fractionations with 15 days apart,ELISA on nuclear lysates,Increased NF-κB p65 DNA binding activity up to 6 months post irradiation,Tungjai et al. [46]
+Mouse liver (CBA/CaJ),Ti (107 keV/µm),0.1–0.5 Gy0.01 Gy/min,ELISA on nuclear lysates,Increased level of NF-κB p65 DNA binding activity up to 6 months post irradiation,Jangiam et al. [47]

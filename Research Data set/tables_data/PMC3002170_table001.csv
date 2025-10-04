@@ -1,0 +1,20 @@
+Baseline characteristic,Treatment arm,Randomization strata
+Lycopene (n= 29),Fish (n= 27),Placebo (n= 28),Low tomato (n= 35),High tomato (n= 49),Low fish (n= 58),High fish (n= 26)
+Mean(SD)
+Age at Diagnosis (years),61 (7),62 (8),59 (8),58 (7),63 (8),60 (8),62 (6)
+Body mass index (kg/m2)a,28.0 (5.2),26.7 (4.7),25.6 (3.3),26.7 (5.0),26.9 (4.3),26.4 (4.2),27.6 (5.3)
+Fish intake (servings/week),2.1 (1.7),2.1 (1.7),2.5 (2.3),1.7 (1.3),2.6 (2.1),1.2 (0.5),4.5 (1.7)
+Tomato intake (servings/week),5.1 (3.2),7.1 (7.1),7.0 (5.8),2.6 (0.9),9.1 (5.9),5.0 (3.5),9.5 (7.8)
+PSA at baseline (ng/ml)a,4.46 (2.63),4.54 (2.25),4.84 (4.40),5.10 (4.30),4.26 (2.08),4.86 (3.52),4.05 (2.23)
+Percent(%)
+Caucasian,83,78,79,83,78,81,77
+Gleason sum for eligibility(n)
+5–6,28,26,27,34,47,56,25
+7,1,1,1,1,2,2,1
+% Positive cores at eligibility biopsy
+1–15%,12,20,19,22,29,39,12
+15–33%,16,7,9,13,19,19,13
+>33%b,1,0,0,0,1,0,1
+T-stage(n)
+≤T1c,26,19,21,26,40,42,24
+T2,3,8,7,9,9,16,2

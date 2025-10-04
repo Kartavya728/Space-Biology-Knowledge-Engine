@@ -1,0 +1,41 @@
+DEG/DEG Overlap
+Condition,Gene
+Down HLU+LDR/Down HLU,Gm12918
+Down HLU/Down LDR,Rps13
+DMP/DMP Overlap
+Condition,Methylated promoter of gene
+Hypo LDR/Hypo HLU,Gm38049; Zfp648; 1700018C11Rik;
+B230104I21Rik; Cald1; Lmod3
+Smco3; Angpt2; Gm28515
+Sln; Gm27159; Gm15271
+4933405E24Rik; Ndel1; Gm11373
+Gm5083; Cdhr2; Mir8097
+1700011A15Rik; Krt8; Mir8094
+Pcdh12; Tmem180
+Hypo LDR/Hypo HLU+LDR,Gm16564; Gm37267; Adamtsl2
+Gm13413; Bbox1; Gm11805
+1700071G01Rik; Prr33; Cdhr4
+Slfn4; Krt19; Gm6401
+Gm15516; Mx2; Gm10268
+Gm25301; Armcx2; Gm15726
+Gm15247
+Hypo HLU/Hypo HLU+LDR,Gm29100; Nav1; Gm29282
+Cfi; Mypopos; Adgb
+Gm26535; Abi3; Gm6969
+Lpar6
+Hyper LDR/Hyper HLU+LDR,Otos; Sys1; Klhl34
+Crh; Pcdhb12
+Hyper HLU/Hyper HLU+LDR,Gm35801
+Hypo LDR/Hyper HLU+LDR,Gm6987
+Hyper HLU/Hyper LDR,1700019N19Rik; Cnpy1; Gm6024
+Gm15700; Gm27679
+Hypo LDR/Hypo HLU/Hypo HLU+LDR,Trp53inp2; Gm22518; Dio1
+Mir704; Gm805; Gm24998
+Gm15648
+Hyper LDR/Hyper HLU/Hyper HLU+LDR,Cbfa2t2-ps1
+DEG/DMP Overlap
+Condition,Gene or Methylated promoter of gene
+Down HLU+LDR/Hyper HLU+LDR,Gm7120
+Down HLU+LDR/Hypo HLU+LDR,Ephx4
+Down HLU+LDR/Hypo HLU,Blnk
+Up HLU+LDR/Hyper LDR,Rgag4

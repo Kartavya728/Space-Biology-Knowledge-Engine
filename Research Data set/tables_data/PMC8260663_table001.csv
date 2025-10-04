@@ -1,0 +1,13 @@
+Genotype,Treatment,Hippocampus,Plasma
+Wild type,Isolation,"Upregulation of 11 cytokines (IL-6, IFN-γ, IL-4, IL-9, IL-13, LIF, MCP-1, M-CSF, TNF-α, MIG, G-CSF); Fig.2","Upregulation of two cytokines (Eotaxin, MDC); Fig.7"
+Downregulation of corticosterone levelsa
+MCAT,Isolation,Mitigation of cytokine changes; Fig.2,No mitigation of cytokine changes; Fig.7
+No change in corticosterone levels
+Wild type,Simulated microgravity,"Upregulation of four (IL-3, IL-1β, IL-10, IL-17) and downregulation of one cytokine(s) (IL-12); Fig.4",Upregulation of one cytokine (IL−20); Fig.6
+Upregulation of corticosterone levels
+MCAT,Simulated microgravity,Mitigation of cytokine changes; Fig.4,Mitigation of cytokine changes; Fig.6
+Mitigation of corticosterone changes
+Wild type,Isolation + Simulated microgravity,Downregulation of one cytokine (IL-13); Fig.3,"Upregulation of two (IL−20, IFN-β1) and downregulation of one cytokine(s) (MDC); Fig.5"
+Upregulation of corticosterone levels
+MCAT,Isolation + Simulated microgravity,Mitigation of cytokine change; Fig.3,Mitigation of cytokine changes; Fig.5
+Mitigation of corticosterone changes

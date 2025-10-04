@@ -1,0 +1,32 @@
+,Number of PhyloChip-detected genera from:
+Taxa,SAF cleanroom floor (GI-36-4),SAF–GSE (GI-36-3),Bldg 144 cleanroom floor (GI-42-1),Bldg 144 GSE (GI-42-2)
+,As is,PMA,As is,PMA,As is,PMA,As is,PMA
+Actinobacteria,19,,131,,16,11,73,18
+Armatimonadetes,,,,,,,1,
+Bacteroidetes,1,,16,,4,2,3,2
+Verrucomicrobia,,,,,1,,,
+Chloroflexi,,,2,,,,,
+Deinococcus-Thermus,1,,2,,,,2,1
+Acidobacteria,2,,4,,,,1,
+Firmicutes,12,4,67,2,6,14,28,13
+Fusobacteria,,,1,,,,2,
+Gemmatimonadetes,,,1,,,,,1
+Nitrospirae,1,,,,,,,
+Planctomycetes,,,4,,,2,2,1
+,,,,,,,,
+Proteobacteria
+Alpha,18,3,59,1,55,24,39,9
+Beta,19,,61,,53,28,41,18
+Delta,,,2,,2,,,
+Gamma,18,2,54,,56,20,38,4
+Epsilon,,,1,,,,,
+Fibrobacteres,,,,,1,,,
+Cyanobacteria,2,,4,,4,4,6,5
+,,,,,,,,
+Unidentified division
+BRC1,,,1,,,,,
+OP11,,,,,1,,,
+OP3,,,,,,,,1
+TM7,,1,1,,,,,1
+WS3,,,,,,,1,1
+Total number of genera,94,9,411,3,199,106,236,75

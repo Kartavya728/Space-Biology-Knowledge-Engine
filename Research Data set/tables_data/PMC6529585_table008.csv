@@ -1,0 +1,23 @@
+Accession,Relative protein abundance∗,P-value,EggNog,EggNog annotation
+BS090_010953,2.31,8.94E-04,ENOG410PMF7,Chitin recognition protein
+BS090_001871,2.14,3.38E-03,ENOG410PG7M,Exo-polygalacturonase
+BS090_000013,1.95,1.89E-02,ENOG410PMJX,Chitin deacetylase-like mannoprotein MP98
+BS090_003824,1.93,9.34E-03,ENOG410PMRY,LysM domain
+BS090_001404,1.67,6.92E-03,ENOG41KOG1458,"Fructose-1,6-bisphosphatase"
+BS090_000044,1.58,8.22E-03,ENOG410PMJX,Chitin deacetylase-like mannoprotein MP98
+BS090_000502,1.28,7.07E-03,ENOG410PJKF,Catalyzes the epimerization of the S- and R-forms of NAD(P)HX
+BS090_011896,1.21,9.04E-03,ENOG410PK51,Glyco_18
+BS090_010859,-1.09,2.80E-02,ENOG410PGWP,Mannose-6-phosphate isomerase
+BS090_011008,-1.10,5.27E-04,ENOG410PG84,Beta-glucosidase
+BS090_007695,-1.13,2.36E-03,ENOG410PJ6P,"Glucan 1,4-alpha-glucosidase"
+BS090_008700,-1.16,5.40E-03,ENOG410PK8I,WSC domain
+BS090_006133,-1.17,5.18E-03,ENOG410PF9K,Glyceraldehyde-3-phosphate dehydrogenase
+BS090_002903,-1.37,3.43E-02,ENOG410PJIN,Glycolipid transfer protein HET-C2
+BS090_003039,-1.47,9.13E-04,ENOG410PH6W,Cell wall
+BS090_008425,-1.49,2.12E-03,ENOG410PIQS,Snf1 kinase complex beta-subunit Gal83
+BS090_003291,-1.51,4.22E-03,ENOG410PM6H,Glucanase
+BS090_011829,-1.66,1.43E-03,ENOG410PMDW,Alpha-amylase
+BS090_011280,-1.91,8.40E-03,ENOG410PKN9,Oxalate decarboxylase
+BS090_004931,-2.02,3.61E-02,ENOG410PM9J,Major intrinsic protein
+BS090_004087,-2.34,9.93E-05,ENOG410QEDC,Phosphoglycerate mutase
+""

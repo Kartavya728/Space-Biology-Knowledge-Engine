@@ -1,0 +1,39 @@
+Drug,Use,No. of DEGs,FDR
+Atorvastatin calcium,"Anti-CVD, antihypercholesterolemic",7,0.0069
+Cerivastatin,"Anti-CVD, antihypercholesterolemic",3,0.0371
+Simvastatin,"Anti-CVD, antihypercholesterolemic",14,0.0007
+Abciximab,Antithrombotic,4,0.0002
+Losartan,"Antihypertensive, angiotensin receptor blocker",6,0.0190
+Valsartan,"Antihypertensive, angiotensin receptor blocker",6,0.0051
+Hydrochlorothiazide,"Antihypertensive, diuretic",2,0.0305
+Isoproterenol,"Anti-bradycardia, non-selective β-adrenergic receptor agonist",24,1.043 × 10−6
+Muraglitazar,Antidiabetic,11,0.0037
+Rosiglitazone,Antidiabetic,27,3.669 × 10−5
+Tesaglitazar,Antidiabetic,12,0.0025
+Troglitazone,Antidiabetic,17,0.0305
+Basiliximab,"Immune suppressor, organ transplant",4,0.0002
+Muromonab,"Immune suppressor, organ transplant",4,0.0003
+Efalizumab,"Anti-auto immune disease, anti-psoriasis",4,0.0001
+Etanercept,"Anti-auto immune disease, anti-psoriasis",4,0.0002
+Alefacept,"Anti-auto immune disease, psoriasis",4,0.0001
+Rituximab,Anti-Rheumatoid arthritis,4,0.0001
+Adalimumab,"Anti-rheumatoid arthritis, anti-Crohn’s disease, anti-psoriasis",4,0.0001
+Palivizumab,Antiviral,4,9.213 × 10−5
+Nevirapine,Anti-HIV,5,0.0246
+Daclizumab,Anti-MS,4,0.0001
+Natalizumab,Anti-MS,4,0.0001
+Apomab,Anticancer,4,0.0048
+Bevacizumab,Anticancer,4,0.0001
+Cetuximab,Anticancer,4,0.0001
+Ibritumomab,Anticancer,4,0.0001
+temozolomide,"Anticancer, brain",6,0.0414
+Trastuzumab,"Anticancer, breast",4,0.0002
+Alemtuzumab,"Anticancer, leukemia",4,0.0001
+Dasatinib,"Anticancer, leukemia",12,0.0018
+Doxorubicin,"Anticancer, leukemia",32,9.174 × 10−7
+Gemtuzumab ozogamicin,"Anticancer, leukemia",4,0.0001
+Tositumomab,Anti-non-Hodgkins lymphoma,4,0.0001
+Clodronate,Antiosteoporotic,5,0.0039
+Raloxifene Hydrochloride,Antiosteoporotic,13,0.0305
+Zoledronic acid,Antiosteoporotic,19,0.0198
+Melatonin,Sleeping aid,11,5.279 × 10−5

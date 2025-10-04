@@ -1,0 +1,6 @@
+Treatment,Label,Facility,Replicates,Note
+Control (1g),1 g,Static Gondola,12,Plants grown under normal gravity conditions
+Simulated Microgravity,sim-µg,RPM,12,Plants exposed to simulated microgravity
+Partial Gravity (Moon),sim-Moon g,RPM,12,Plants exposed to simulated partial Moon gravity
+Hypergravity 2g,2 g,LDC,12,Plants exposed to a gravity level of 2g
+Hypergravity 4g,4 g,LDC,12,Plants exposed to a gravity level of 4g

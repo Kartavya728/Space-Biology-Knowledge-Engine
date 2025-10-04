@@ -1,0 +1,9 @@
+Subject area,Biology
+More specific subject area,Plant biology
+Type of data,"Tables, Graphs, Figures"
+How data was acquired,"DNA-PCR, Quantitative Realtime PCR (qPCR), Plant phenotypes, Pollen tube germination assay, Image J analyses"
+Data format,"Raw, Analyzed"
+Experimental factors,Col-0 (Columbia) and SALK_063500 Arabidopsis plants
+Experimental features,DNA-PCR was employed to identify the T-DNA insertion in SALK_063500. AT1G05290 expression levels were examined with qPCR. Both silique and pollen tube germination phenotypes were recorded.
+Data source location,"Gainesville, Florida, USA"
+Data accessibility,Data is within this article.

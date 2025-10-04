@@ -1,0 +1,38 @@
+Drugs,Disease,Link Prediction Probability
+L-CARNITINE,Metabolic disease,1
+THIAMINE,Autoimmune disease of the musculoskeletal system,1
+TELITHROMYCIN,Breast cancer,0.98
+FLUOCINOLONE ACETONIDE,Uterine disease,0.96
+RIBOFLAVIN,Autoimmune disease of the musculoskeletal system,0.94
+AZATHIOPRINE,Cardiovascular system disease,0.94
+IVERMECTIN,Allergic rhinitis,0.9
+INSULIN LISPRO,Urinary system disease,0.9
+NELARABINE,Hypervitaminosis,0.9
+SURAMIN,Allergic rhinitis,0.89
+TETRACYCLINE,Male reproductive organ cancer,0.86
+INSULIN DETEMIR,Urinary system disease,0.85
+PRAMLINTIDE,Type 2 diabetes mellitus,0.84
+ARCITUMOMAB,Breast cancer,0.83
+CLINDAMYCIN,Influenza and pneumonia,0.83
+L-ORNITHINE,Vasomotor and allergic rhinitis,0.83
+BUDESONIDE,Autoimmune thyroiditis,0.82
+GOLIMUMAB,Benign neoplasm,0.82
+ARCITUMOMAB,Skin disease,0.82
+"INSULIN, ISOPHANE",Unspecified diabetes mellitus,0.82
+HYDROCORTISONE,Integumentary system cancer,0.82
+CHLOROQUINE,Bone inflammation disease,0.82
+L-CARNITINE,Malignant neoplasm,0.82
+INSULIN GLARGINE,Disease of the genitourinary system,0.81
+KETOCONAZOLE,Allergic rhinitis,0.8
+WARFARIN,Generalized skin eruption,0.79
+ARCITUMOMAB,Nasal cavity disease,0.79
+KETOCONAZOLE,Malignant neoplasm of prostate,0.79
+VITAMIN C,Lung disease,0.78
+GALSULFASE,Malignant neoplasm of other endocrine glands,0.77
+L-ORNITHINE,Arterial fibrillation,0.75
+LUCINACTANT,Mood disorder,0.75
+VITAMIN C,"Mental, behavioral and neurodevelopmental disorders",0.74
+TETRACYCLINE,Allergic rhinitis,0.74
+SURAMIN,Other disorders of central nervous system,0.73
+SULFASALAZINE,Other and unspecified noninfective gastroenteritis and colitis,0.71
+TINIDAZOLE,Bronchial disease,0.71

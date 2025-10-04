@@ -1,0 +1,11 @@
+Subnetwork with Hub-Gene,Jaccard Similarity Index between HZE and γR Subnetworks
+DNA Metabolic Process,Nucleic Acid Response Process
+AT1G09815,0.5789,0.5789
+AT2G31320,0.6176,0.6176
+AT4G21070,0.7619,-
+AT1G13330,0.4814,0.4285
+AT4G29170,0.4444,0.4444
+AT2G46610,-,0.6250
+Subnetwork with hub-gene,Jaccard similarity index between LRD3 and LRD4 subnetworks
+DNA metabolic process and Response to DNA damage to stimulus,DNA metabolic process & Response to DNA damage to stimulus
+AT3G27060,1.0,0.1224

@@ -1,0 +1,14 @@
+Mission,Experiment duration,Culture hardware,Food source/diet,Image-based quantitative phenotyping on ISS
+"STS-42, 199236,37",8 days,Agar Plate,E. Coli OP50,No
+"STS-76, 199660",9 days,M9 buffer,No Food,No
+"STS-95, 1998",10 days,---,----,No
+"STS-107, 200338",16 days,Agar and CeMM Plates,UV killedE. coli OP50and CeMM both,No
+"ICE-FIRST, 200452",10 days,Polyethylene bags,CeMM,No
+"CSI-1, 200658",6 months,Opticells,CeMM,"Yes, for development and behaviors"
+"CERISE, 200917,53",8 days,Polyethylene bag,E. Coli OP50,"Yes, videos to quantify worm behaviors"
+"Shenzhou-8 Mission, 201139",17 days,Agar Plate,E ColiOP50,No
+"Space Aging, 2015",70 days,culture chambers,CeMM,"Yes, No published result"
+"Epigenetics, 201561",17 days,NIPRO bag,E. Coli OP50,No
+"Nematode Muscle, 201562",4 days,NIPRO bag,E. Coli OP50,No
+"Molecular Muscle experiment, 201863",7 days,Polyethylene bag,Freeze-driedOP50,No
+"This Study, 2021",49 days,Fluorinated Ethylene Propylene bag,CeMM,"Yes, to quantify muscle strength and behaviors"

@@ -1,0 +1,22 @@
+Crop name,EDEN ISS [kg/(m2*d)],Experiments by other scientists [kg/(m2*d)]
+Batavia,0.043,Meinen et al. (2018): 0.033; same environmental conditions.
+Expertise,0.065,Meinen et al. (2018): 0.051; same environmental conditions.
+Outredgeous,0.058,"Meinen et al. (2018): 0.040; same environmental conditions.Richards et al. (2004b): 0.0362; 25°C, 65% rh, 1200 ppm CO2, 300 μmol/(m2*s), 16 h photoperiod."
+Waldmann’s Green,0.080,"Wheeler et al. (2008): 0.1612; 23°C, 65–75% rh, 1000–1200 ppm CO2, 280–336 μmol/(m2*s), 16 h photoperiod."
+Other lettuce types,n.a.,"Edney et al. (2006), Flandria type: 0.0292; 22°C, 50% rh 1200 ppm CO2, 300 μmol/(m2*s), 16 h photoperiod.Richards et al. (2004a), Flandria type: 0.063; 25°C, 50% rh, 1200 ppm CO2, 300 μmol/(m2*s), 16 h photoperiod."
+Red Giant,0.130,No reference literature found
+Frizzy Lizzy,0.107,"Meinen et al. (2018): 0.322; same environmental conditions, but 10 times higher plant density."
+Swiss Chard,0.102,"Meinen et al. (2018): 0.377; same environmental conditions, but 10 times higher plant density."
+Arugula (initial light intensity),0.111,
+Arugula (higher light intensity),0.188,Meinen et al. (2018): 0.162; same environmental conditions.
+Mizuna,0.194,No reference literature found
+Other leafy greens,n.a.,"Fu et al. (2016)1: 0.100; 500 μmol/(m2*s), no values for temperature, rh, CO2and photoperiod given."
+Basil Dolly,0.060,No reference literature found
+Parsley,0.062,"Meinen et al. (2018): 0.143; same environmental conditions, but 3 times higher plant density."
+Chives,0.053,Meinen et al. (2018): 0.052; same environmental conditions.
+Tomato F1 3496B,0.046,"Wang et al. (2019): 0.048; 25°C, 70% rh, 400 ppm CO2, 250 μmol/(m2*s), 14 h photoperiod.Spencer et al. (2019): 0.049; 22°C, 60% rh, 1507 ppm CO2, 324 μmol/(m2*s), 16 h photoperiod.Masuda et al. (2005): 0.028; 330 μmol/(m2*s), no values for temperature, rh, CO2and photoperiod given.Wheeler et al. (2008): 0.0752; 26°C, 65–75% rh, 1000–1200 ppm CO2, 549–893 μmol/(m2*s), 12 h photoperiod."
+Tomato F1 1202,0.052,
+Cucumber Picowell,0.321,"Fu et al. (2016): 0.2283; 500 μmol/(m2*s), no values for temperature, rh, CO2and photoperiod given."
+Radish Raxe,0.078,"Meinen et al. (2018): 0.058; same environmental conditions.Edney et al. (2006): 0.2034; 22°C, 50% rh 1200 ppm CO2, 300 μmol/(m2*s), 16 h photoperiod."
+Radish Lennox,0.059,
+Kohlrabi,0.141,"Masuda et al. (2005): 0.121; 330 μmol/(m2*s), no values for temperature, rh, CO2and photoperiod given."

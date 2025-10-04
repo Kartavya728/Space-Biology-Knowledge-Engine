@@ -1,0 +1,6 @@
+GeneLab Accession,Assay,GeneLab count,Original count,Loci in both,Difference,In-house reference
+GLDS-17,Microarray,2459,499,34,1960,37
+GLDS-44,Microarray,4031,3826,2597,205,41
+GLDS-121,Microarray,2122,2177,2121,–55,40
+GLDS-37,RNA-seq,2785,2084,927,701,38
+GLDS-38,RNA-seq,3870,2919,2404,951,39

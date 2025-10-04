@@ -1,0 +1,28 @@
+,Number of annotated genes in the microorganisms that are as follows:
+Subsystem feature,Enterobacter bugandensis,Staphylococcus aureus,Pantoea conspicua,Microbacterium hominis,Acinetobacter pittii,Kocuria palustris,Staphylococcus saprophyticus,Paenibacillus polymyxa,Pantoea conspicua,Methylobacterium ajmalii
+,F1-2P,F1-4P,F1-5P,F1-8P,F2-1P,F2-1P,F2-2P,F2-5P,F2-5P,F2-7P
+Carbohydrates,614,177,388,,213,224,216,351,365,254
+Amino acids and derivatives,473,286,392,256,350,290,308,296,377,485
+"Cofactors, vitamins, prosthetic groups, pigments",268,123,178,120,175,167,104,131,172,210
+Protein metabolism,263,94,211,134,207,198,167,182,204,217
+Membrane transport,238,61,106,73,107,30,36,56,105,160
+RNA metabolism,232,34,59,31,56,24,40,58,59,40
+Cell wall and capsule,220,42,42,20,24,10,36,87,42,27
+Stress response,167,30,100,19,71,25,33,36,101,75
+Regulation and cell signaling,153,34,66,13,46,11,47,27,66,55
+Respiration,149,20,117,46,86,35,19,35,104,155
+"Fatty acids, lipids, and isoprenoids",133,58,72,42,130,85,62,77,71,115
+DNA metabolism,130,64,97,62,72,54,71,84,97,95
+Nucleosides and nucleotides,113,78,116,87,76,61,76,112,107,93
+"Virulence, disease, and defense",101,118,74,39,71,38,46,63,73,99
+Motility and chemotaxis,96,,100,,,,,42,100,93
+Sulfur metabolism,65,11,34,4,44,20,7,10,34,39
+Iron acquisition and metabolism,54,69,28,3,2,4,28,29,28,
+Phosphorus metabolism,47,23,43,35,36,25,30,49,43,39
+Nitrogen metabolism,44,36,31,7,9,26,10,24,31,15
+Metabolism of aromatic compounds,40,3,9,12,76,23,5,4,9,58
+Cell division and cell cycle,39,4,8,,2,6,5,3,8,2
+Miscellaneous,35,11,16,25,41,36,12,15,16,17
+Potassium metabolism,30,5,13,4,11,2,2,5,13,10
+Dormancy and sporulation,3,8,4,1,2,2,13,38,4,1
+Secondary metabolism,,5,5,11,7,4,4,6,5,5

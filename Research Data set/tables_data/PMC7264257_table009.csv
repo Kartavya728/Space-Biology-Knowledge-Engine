@@ -1,0 +1,7 @@
+,,Average,Edible fresh,Time normalized,Edible fresh
+,,cultivation,weight per,edible fresh weight,weight per
+,Cycles for,cycle,cultivation,per cultivation,cultivation
+Crop name,evaluation,length (d),area (kg/m2),area (kg/m2/d),volume (kg/m3)
+Radish Raxe,10,22.6,1.82 ± 0.24 (1.10–3.21),0.078 ± 0.009 (0.044–0.119),1.98–5.78
+Radish Lennox,9,23.0,1.33 ± 0.06 (1.07–1.68),0.059 ± 0.002 (0.045–0.068),1.93–3.03
+Kohlrabi,6,58.71,8.11 ± 0.81 (5.74–10.58),0.141 ± 0.008 (0.113–0.165),10.34–19.06

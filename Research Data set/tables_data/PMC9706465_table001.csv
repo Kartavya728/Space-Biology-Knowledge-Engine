@@ -1,0 +1,20 @@
+SI. No.,Germplasm_ID,Mutant_Name,Gene_ID,Gene_Name,Specific function of the gene in pathway,Response to anoxia
+Ca signaling mutants
+1,SALK_078400,cml39,AT1G76640,CALMODULIN LIKE 39,Ca-binding EF-hand family protein,S
+2,CS872685,aca11,AT3G57330,AUTOINHIBITED Ca2+-ATPase 11,Ca2+-ATPase,S
+3,SALK_029620C,aca4,AT2G41560,AUTOINHIBITED Ca2+-ATPase 4,Ca2+-ATPase,S
+ROS signaling mutants
+4,CS9555,atrbohD,AT5G47910,RESPIRATORY BURST OXIDASE HOMOLOGUE D,Regulates ROI production,S
+5,SALK_057686C,apx2,AT3G09640,ASCORBATE PEROXIDASE 2,Scavenge hydrogen peroxide,S
+6,CS6962C,rev-6,AT5G60690,REVOLUTA,ROS-sensitive TF involved in senescence,S
+Mutants associated with regulation of vacuolar pH
+7,SALK_034001c,nhx1,AT5G27150,Na+/H+EXCHANGER 1,Vacuolar Na+/H+antiporter,S
+8,SALK_084844c,nhx2-3,AT3G05030,Na+/H+EXCHANGER 2,vacuolar K+/H+exchanger,S
+9,SALK_142642c,vha-a2,AT2G21410,VACUOLAR PROTON ATPase A2,Vacuolar proton ATPase subunit VHA-a isoform 2,S
+10,SALK_029786c,vha-a3,AT4G39080,VACUOLAR PROTON ATPase A3,Vacuolar proton ATPase subunit VHA-a isoform 3,S
+Other mutants
+11,SALK_142672C,hai1-1,AT5G59220,HIGHLY ABA-INDUCED PP2C GENE 1,Negative regulator of ABA signaling,S
+12,CS874182,pr1,AT2G14610,PATHOGENESIS-RELATED GENE 1,Induced in SAR,S
+13,SALK_055063C,pr5,AT1G75040,PATHOGENESIS-RELATED GENE 5,Involved in response to pathogens,S
+14,CS16353,rgl1-2,AT1G66350,RGA-LIKE 1,Negative regulator of GA response,S
+15,SALK_131604C,crk37,AT4G04500,CYSTEINE-RICH RLK 37,Protein kinase,S

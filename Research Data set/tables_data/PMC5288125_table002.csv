@@ -1,0 +1,39 @@
+Differentially Expressed Genes
+ob/ob+12 ng/h leptinvs. ob/ob+veh (n=23 genes),ob/ob+140 ng/h leptinvs. ob/ob+veh (n=35 genes)
+Symbol,Fold Change,P <,Symbol,Fold Change,P <
+,
+Alox12,−1.2,0.019,Alox12,−1.3,0.042
+Alpl,1.4,0.004,Alpl,1.7,0.001
+Bglap,1.9,0.001,Bglap,3.0,0.000
+Bmp7,1.2,0.009,Bmp7,1.3,0.012
+Calcr,2.2,0.007,Calcr,2.2,0.017
+Cd40,1.4,0.000,Car2,−3.8,0.000
+Col1a1,1.5,0.015,Cd40,2.7,0.000
+Col1a2,1.4,0.032,Cnr2,1.6,0.006
+Crtap,1.1,0.030,Col1a1,1.7,0.011
+Il6ra,−1.3,0.003,Col1a2,1.6,0.007
+Lepre1,1.3,0.003,Comt,−1.4,0.002
+Ltbp2,1.2,0.009,Dbp,1.8,0.002
+Mmp2,1.4,0.012,Dkk1,1.3,0.038
+Npy,1.5,0.025,Enpp1,−1.2,0.004
+Nr3c1,1.2,0.018,Esr1,1.2,0.022
+Plod2,1.4,0.009,Il15,1.4,0.019
+Pth1r,1.3,0.003,Il6ra,−1.3,0.018
+Sfrp4,1.4,0.002,Itga1,1.1,0.040
+Sparc,1.4,0.010,Lepre1,1.5,0.000
+Stat1,1.2,0.003,Lrp5,1.3,0.000
+Timp2,1.1,0.033,Lrp6,1.2,0.014
+Tnfaip3,1.3,0.030,Ltbp2,1.6,0.000
+Twist1,1.2,0.027,Mmp2,1.4,0.017
+,,,Mthfr,1.4,0.008
+,,,Nfatc1,1.2,0.002
+,,,Npy,1.5,0.044
+,,,Nr3c1,1.3,0.000
+,,,Plod2,1.5,0.010
+,,,Pth1r,1.3,0.027
+,,,Sfrp4,1.6,0.004
+,,,Sparc,1.5,0.008
+,,,Stat1,1.5,0.002
+,,,Tnfaip3,1.3,0.006
+,,,Tnfrsf11b,1.2,0.038
+,,,Tnfrsf1b,1.6,0.001

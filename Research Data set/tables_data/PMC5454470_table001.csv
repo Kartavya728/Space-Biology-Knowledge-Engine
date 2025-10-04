@@ -1,0 +1,3 @@
+Target,Manufacturer (Product no.); Purification,Immunogen,Host (Mono- or Polyclonal),Working Concentration,Positive Control,Negative Control
+CtBP2,BD Biosciences (612044); affinity purified,Amino acids 361–445 of mouse CtBP2,Mouse (monoclonal),1:250,Braude et al. (2015),Primary Ab omission
+Shank1a,Neuromics (19016); affinity purified,Peptide mapping COOH-terminus of rat Shank1a,Rabbit (polyclonal),1:250,Braude et al. (2015),Stella et al. (2012); Primary Ab omission

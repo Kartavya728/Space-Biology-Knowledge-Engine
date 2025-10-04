@@ -1,0 +1,9 @@
+,Biomarkers of chronic hypertonicity,Angiogenesis,Antioxidant,Passive transport,Active transport,Body water retention
+,Saliva Osmolality,Leukocyte SGK1 mRNA,Plasma VEGF,RBC GPX,Saliva AQP5,RBC K:Na,Half-life of water in the body,Body weight
+,Baseline,Change,Baseline,Change,Baseline,Change,Baseline,Change,Baseline,Change,Baseline,Change,Baseline,Change,Change
+,mmol/kg,A.U. (2^-deltaCt),ng/ml,nmol/min/mg Hb,ng/ml,,,Days,%
+1,65,−5,0.060,−0.037,4670.8,+1878,462.6,−167.3,0.369,+1.640,8.9,−0.57,17.9,−6.7,+0.9
+2,81,+10,0.025,−0.000,8807.3,+767,596.5,−31.1,0,+0.158,9.7,−0.70,15.3,−4.7,+3.0
+3,106,−19,0.080,−0.018,3731.9,+1213,401.8,+84.0,0,+1.82,9.3,−1.50,15.0,−1.6,+2.7
+4,122,−45,0.067,−0.032,3175.7,+2823,455.1,+163.7,0.153,+0.084,11.1,−1.79,11.4,−1.8,+2.0
+5,153,−36,0.122,−0.064,4213.4,+2257,318.4,+207.0,0.464,−0.352,8.5,−1.71,11.6,−2.5,+0.6

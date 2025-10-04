@@ -1,0 +1,13 @@
+Analysis Effects (Contrasts),Description
+R (µg),Effect of radiation alone in simulated microgravity
+R (1g),Effect of radiation alone in Earth gravity
+Iso (µg),Effect of isoproterenol alone in simulated microgravity
+Iso (1g),Effect of isoproterenol alone in Earth gravity
+"Iso (µg, R)",Effect of isoproterenol on irradiated cells in simulated microgravity
+"Iso (1g, R)",Effect of isoproterenol on irradiated cells in Earth gravity
+Iso × R (µg),Synergistic effect of Isoproterenol and radiation in simulated microgravity
+Iso × R (1g),Synergistic effect of Isoproterenol and radiation in Earth gravity
+µg,Average effect of microgravity over all combinations of the other factors (R and Iso)
+Iso ×g,Average synergistic effect of Isoproterenol and gravity for non-irradiated cells
+R ×g,Average synergistic effect of radiation and gravity for cells without Isoproterenol
+Iso × R ×g,"Three-way synergistic effect of Isoproterenol, radiation, and gravity"

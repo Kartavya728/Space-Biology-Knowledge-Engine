@@ -1,0 +1,17 @@
+TAIR ID,Description,Subcellular Location,Peptide Sequence(Phosphorylation site in red),L2FC
+AT4G02930,GTP binding elongation factor,mitochondrion,NMITGAAQMDGGILVVSGPDGPMPQTK,0.48
+AT3G01570,Oleosin family protein,vacuole,THSHQLQVHPQR,0.37
+AT4G32410,Cellulose synthase 1,"plasma membrane, Golgi",TTSGPLGPSDR,0.23
+AT4G37870,PEP carboxykinase1,cytosol,SAPTTPINQNAAAAFAAVSEEER,−0.04
+AT1G64740,Tubulin alpha-1,cytosol,TIQFVDWCPTGFK,−0.24
+AT1G04820,Tubulin alpha-4,plasma membrane,TIQFVDWCPTGFK,−0.24
+AT4G14960,Tubulin alpha-6,cytosol,TIQFVDWCPTGFK,−0.24
+AT5G19770,Tubulin alpha-3,cytosol,TVQFVDWCPTGFK,−0.26
+AT4G30190,AHA2,plasma membrane,GLDIETPSHYTV,−0.36
+AT2G21660,AtGRP7,nucleus,SGGGGGYSGGGGSYGGGGGR,−0.39
+AT5G20650,Copper transporter 5,vacuole,SSSGVSAPLIPK,−0.44
+AT5G57870,Translation initiation factor,"cytosol, nucleus",GESVVSNLVPVQSASR,−0.46
+AT4G39260,AtGRP8,nucleus,SGGGGGYSGGGGGGYSGGGGGGYER,−0.54
+AT5G55220,Chaperone family protein,plastid,EVENSISEFK,−0.61
+AT2G30930,Unknown protein,plasma membrane,ATSALSEAK,−0.87
+AT4G27450,Aluminum induced protein,cytosol,VDSEGVLCGANFK,−1.23

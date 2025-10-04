@@ -1,0 +1,13 @@
+ORF,Protein,Relative protein abundance∗,P-value,Putative function/activity
+AFUA_4G13510,AcuD/Icl1,1.78,4.60E-03,Isocitrate lyase involved in the glyoxylate cycle
+AFUA_6G11610,CbhB,1.42,3.85E-03,Cellobiohydrolase
+AFUA_5G07080,,1.39,4.37E-02,Hydrolase
+AFUA_8G01490,,1.32,1.64E-02,Cellobiohydrolase
+AFUA_4G11730,GldB,1.08,3.70E-02,Glycerol dehydrogenase
+AFUA_1G10350,,1.03,4.74E-03,Phosphoglycerate kinase
+AFUA_2G05910,HxkA,1.01,1.07E-02,Hexokinase
+AFUA_1G06960,,1.00,3.76E-02,Pyruvate dehydrogenase complex subunit alpha
+AFUA_6G05210,,-1.18,1.36E-04,Malate dehydrogenase involved in the citric acid cycle
+AFUA_5G06240,AlcC,-1.22,1.83E-04,Alcohol dehydrogenase
+AFUA_4G08410,,-2.23,1.53E-02,Mannose-6-phosphate isomerase
+""

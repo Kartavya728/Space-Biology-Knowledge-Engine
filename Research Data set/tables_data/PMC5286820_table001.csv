@@ -1,0 +1,14 @@
+Gene,Symbol,Log2(FC),Catalytic activity,Hormone,Cell Wall,Sugar,Biotic stress,Mobile mRNA,Dark,Salt,Root cell,Water,SUBA3
+p< 0.05;q< 0.05
+At4g26260,MIOX4,1.570,X,X,,X,,,,,X,,cytosol
+At4g24890,PAP24,1.414,X,,X,,,,,,,,extracellular
+At3g47340,ASN1,2.080,X,,,X,,,X,,,,cytosol
+At2g25150,,1.839,X,,,,,,,,,,cytosol
+At5g02020,SIS,1.200,,,,,,,,X,,,nucleus
+At5g66780,,1.556,,,,,,,,,,,plastid
+At3g28310,,1.430,,,,,,,,,,,nucleus
+p< 0.05 only
+At3g60140,DIN2,2.214,X,,,X,,X,X,,,,"vacuole, extracellular"
+At4g35770,STR15/SEN1,2.100,,X,,,,,X,,,,"plastid (chloro., thylakoid)"
+At3g48740,SWEET11,1.804,,,,X,X,,,,,,plasma membrane
+At4g10310,HKT1,1.021,,,,,,,,X,,X,plasma membrane

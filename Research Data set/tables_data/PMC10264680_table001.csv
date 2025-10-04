@@ -1,0 +1,21 @@
+Protein ID,Protein Name,Protein Symbol,Mean L/H,Representative GO Terms (BiologicalProcesses),No. of TM Helices,Presence of signal peptide
+AT1G66230,MYB DOMAIN PROTEIN 20,ATMYB20,0.02,regulation of secondary cell wall biogenesis (GO:2000652),0,NO
+AT3G16630,Kinesin-like protein KIN-13A,KIN13A,0.09,microtubule depolymerization(GO:0007019),0,NO
+AT3G61480,"Quinoprotein amine dehydrogenase, beta chain-like RIC1-like guanyl-nucleotide exchange factor",,0.10,intracellular protein transport(GO:0006886),0,NO
+AT3G22240,CYSTEINE-RICH TRANSMEMBRANE MODULE 9,ATHCYSTM9,0.26,indole-containing compound biosynthetic process(GO:0042435),0,NO
+AT3G08610,NADH dehydrogenase ubiquinone 1 alpha subcomplex subunit,,0.30,catabolic process(GO:0009056),1,NO
+AT4G36670,POLYOL/MONOSACCHARIDE TRANSPORTER 6,ATPMT6,0.31,response to temperature stimulus(GO:0009266),12,NO
+AT3G45650,Protein NRT1/PTR FAMILY 2.7,NPF2.7,0.35,GO:0015698,12,NO
+AT5G25820,Exostosin family protein,,0.35,root morphogenesis(GO:0010015),1,NO
+AT1G65730,Probable metal-nicotianamine transporter YSL7,YSL7,0.37,catabolic process(GO:0009056),17,NO
+AT1G12950,Protein DETOXIFICATION 31,DTX31,0.38,root hair elongation(GO:0048767),12,NO
+AT2G25980,JACALIN-RELATED LECTIN 20,JAL20,0.38,,0,NO
+AT5G35940,Mannose-binding lectin superfamily protein,,0.38,organic acid metabolic process(GO:0006082),0,NO
+AT5G40780,LYSINE HISTIDINE TRANSPORTER 1,LHT1,0.39,amino acid transmembrane transport(GO:0003333),11,NO
+AT1G17260,AUTOINHIBITED H(+)-ATPASE 10,AHA10,0.40,proton transmembrane transport(GO:1902600),10,NO
+AT2G01520,MLP-LIKE PROTEIN 328,MLP328,0.40,defense response(GO:0006952),0,NO
+AT2G39510,USUALLY MULTIPLE ACIDS MOVE IN AND OUT TRANSPORTERS 14,UMAMIT14,0.40,L-glutamate import across plasma membrane(GO:0098712),10,NO
+AT5G26260,TRAF-like family protein,,0.40,plant epidermis development(GO:0090558),0,YES
+AT3G20380,TRAF-like family protein,,0.41,,0,YES
+AT1G14160,CASP-LIKE PROTEIN 1A1,CASPL1A1,0.42,cell wall modification(GO:0042545),4,NO
+AT1G50630,Extracellular ligand-gated ion channel protein (DUF3537),,0.42,root development(GO:0048364),7,NO

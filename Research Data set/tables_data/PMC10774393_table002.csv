@@ -1,0 +1,10 @@
+Pathway namea,Unique genes,ProteomicsP-value,RNA-Seq Gene expressionP-value,CombinedP-value (Fisher)
+Arginine biosynthesis,16,0.04,0.02,0.01
+Purine metabolism,44,0.05,0.03,0.01
+Thiamine metabolism,9,0.00,1.00,0.02
+Quorum sensing,36,0.45,0.01,0.03
+Phosphotransferase system (PTS),16,0.05,0.12,0.04
+Ribosome,56,0.04,1.00,0.17
+Fructose and mannose metabolism,14,0.05,0.44,0.11
+Two-component system,62,0.88,0.04,0.15
+Riboflavin metabolism,9,0.49,0.05,0.12

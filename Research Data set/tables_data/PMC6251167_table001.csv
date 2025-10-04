@@ -1,0 +1,22 @@
+Bacteria,Strain number,Source,GenBank accession number,ISSEnterobacter bugandensisisolates (n= 5)
+dDDH,ANI (%)
+E. bugandensis,IF2SW-P2,ISS-WHC,POUR00000000,100,100.00
+E. bugandensis,IF2SW-B1,ISS-WHC,POUQ00000000,100,99.99
+E. bugandensis,IF2SW-B5,ISS-WHC,RBVJ00000000,100,99.99
+E. bugandensis,IF2SW-P3,ISS-WHC,POUP00000000,100,99.99
+E. bugandensis,IF3SW-P2,ISS-AREED,POUO00000000,100,99.99
+E. bugandensis,EB-247T,Nosocomial,FYBI00000000,89.2,98.66
+E. bugandensis,153 ECLO,Nosocomial,NZ_JVSD00000000,89.4,98.73
+E. bugandensis,MBRL1077,Nosocomial,PRJNA310238,63.9,95.26
+E. aerogenes,KCTC 2190,Nosocomial,CP002824,22.7,78.74
+E. asburiae,ATCC 35953T,Nosocomial,NZ_CP011863,30.4,85.59
+E. cancerogenus,ATCC 35316,Stool,NZ_ABWM00000000,31.8,86.10
+E. cloacae,ATCC 13047T,Spinal fluid,NC_014121,35.4,87.91
+E. hormaechei,ATCC 49162T,Sputum,AFHR01000000,35.4,87.82
+E. kobei,DSM 13645T,Blood,NZ_CP017181,42.8,90.54
+E. lignolyticus,SCF1,Soil,CP002272,23.5,79.98
+E. ludwigii,EN-119T,Human,NZ_CP017279,34.4,87.57
+E. massiliensis,JC163T,Stool,NZ_CAEO00000000,22.8,79.07
+E. mori,LMG 25706T,Mulberry,NZ_AEXB00000000,37.0,88.59
+E. muelleri,JM-458T,Rhizosphere,FXLQ00000000,44.6,90.77
+Xenorhabdus nematophila,ATCC 19061T,Intestine,FN667742,22.8,69.41

@@ -1,0 +1,35 @@
+Symbol,Definition
+AAA,Avionics air assembly
+ADVSC,Advance Astroculture
+APH,Advance Plant Habitat
+BLSS,Bioregenerative life support systems
+BPS,Biomass Production System
+CQY,Canopy quantum yield
+CWF,Cool white fluorescent
+DAP,Days after planting
+DPM,Data processing module
+EMA,Experiment Monitoring Area
+ECS,Environmental control subsystems
+FDS,Fire detection system
+GC,Growth chamber
+GLA,Growth light assembly
+GUI,Graphical user interface
+HPS,High pressure sodium
+ISS,International Space Station
+KFT,Kennedy fixation tubes
+KSC,Kennedy Space Center
+MTL,Moderate temperature loop
+NIR,Near-infrared
+ORU,Orbital replacement unit
+PH-01,Plant Habitat 1 experiment
+PHARMER,Plant habitat avionics realtime manager in EXPRESS rack
+PDA,Power distribution assembly
+Pnet,Canopy net photosynthetic rate
+PPFD,Photosynthetic photon flux density
+Rdark,Canopy dark respiration rate
+SC,Science carrier
+TCS,Thermal control subsystem
+TReK,Telescience resource kit software
+VES,Vacuum exhaust system
+WGS,Waste gas system
+WRADS,Water recovery and distribution subsystem

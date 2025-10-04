@@ -1,0 +1,35 @@
+REAGENT or RESOURCE,SOURCE,IDENTIFIER
+Antibodies
+monoclonal antibody against Pericardin,"Developmental Studies Hybridoma Bank Iowa City, IA 52242.",DSHB Cat # EC11 RRID:AB_528431
+"0S proteasome subunits a1,2,3,5,6 & 7","Enzo Life Sciences, Farmingdale, NY",Cat # BML-PW8195 RRID:AB_10541045
+Mouse anti-GFP,"Invitrogen, Carlsbad, CA, USA",Cat # 33-2600 RRID:AB_2533111
+anti-rabbit IgG conjugated with Alexa Fluor 488,"Invitrogen, Carlsbad, CA, USA",Cat # Cat #R37116RRID:AB_2556544
+anti-mouse IgG conjugated with Alexa Fluor 594,"Invitrogen, Carlsbad, CA, USA",R37121RRID:AB_2556549
+Phalloidin-Alexa Fluor 594,"Molecular Probes, Eugene, OR",Cat # A12381 RRID:AB_2315633
+"Chemicals, Peptides, and Recombinant Proteins"
+Flynap,"Carolina Biological Supply Co, Burlington, NC",#173010
+Critical Commercial Assays
+miRNeasy Mini kit,QIAGEN,Cat. No. 217004
+Illumina TruSeq™ RNA sample preparation kit,"Illumina, San Diego, CA)",RS-122-2001
+Deposited Data
+Drosophila melanogastergenome Ensembl.BDGP5,ensembl,http://uswest.ensembl.org/Drosophila_melanogaster/Info/Index
+Kyoto Encyclopedia of Genes and Genomes,https://www.kegg.jp/,RRID:SCR_012773
+NASA Gene Labs,This paper,https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-347
+Experimental Models: Organisms/Strains
+Canton S Wildtype Strain,Bloomington Drosophila Stock Center,"BDSC Cat# 64349, RRID:BDSC_64349"
+Sei/hERG mutant,Dr. Barry Ganetsky,N/A
+PolyQ46-GFP line,Dr. Girish Melkani,N/A
+Software and Algorithms
+SOHA Semi Automated Optical Heartbeat Analysis,http://www.sohasoftware.com,N/A
+Axiovision software,Zeiss,RRID:SCR_002677
+Weka Trainable Segmentation plugin in ImageJ,https://www.cs.waikato.ac.nz/ml/weka/,RRID:SCR_001214 RRID:SCR_001935
+FASTX-Toolkit,"Hannon Lab, Cold Spring Harbor, NY, USA)",RRID:SCR_005534
+BEDTools,https://github.com/arq5x/bedtools2,RRID:SCR_006646
+AltAnalyze,http://www.altanalyze.org/,RRID:SCR_002951
+Top Hat,http://ccb.jhu.edu/software/tophat/index.shtml,RRID:SCR_013035
+Bow Tie,http://bowtie-bio.sourceforge.net/index.shtml,RRID:SCR_005476
+Other
+9300 EM-CCD cameras,Hamamatsu Corp.,https://www.hamamatsu.com/eu/en/product/cameras/emccd-cameras/index.html
+Zeiss Apotome microscope,Zeiss,https://www.zeiss.com/microscopy/us/products/imaging-systems/apotome-for-biology.html
+Agilent 2200 Tapestation system,"Agilent, Santa Clara, CA",https://www.agilent.com/en/product/automated-electrophoresis/tapestation-systems
+Illumina HiSeq 2000,"Illumina, San Diego, CA)",https://www.illumina.com

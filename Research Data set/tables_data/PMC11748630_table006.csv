@@ -1,0 +1,6 @@
+Gene set name,Description,FDRq-value
+GOBP MONOCARBOXYLIC ACID BIOSYNTHETIC and METABOLIC PROCESS,Chemical reactions and pathways resulting in the formation and metabolism of monocarboxylic acids,< 0.001
+GOBP LIPID and CELLULAR LIPID METABOLIC PROCESS,Chemical reactions and pathways involving lipids,< 0.001
+GOBP SMALL MOLECULE BIOSYNTHETIC PROCESS,Chemical reactions and pathways resulting in the formation of small molecules,< 0.001
+GOBP ORGANIC ACID BIOSYNTHETIC and METABOLIC PROCESS,Chemical reactions and pathways resulting in the formation and metabolism of organic acids,< 0.001
+GOBP TRIGLYCERIDE RICH and VERY LOW DENSITY LIPOPROTEIN PARTICLE CLEARANCE,Process in which a triglyceride-rich and very-low-density lipoprotein particles are removed from the blood via receptor-mediated endocytosis and its constituent parts degraded,< 0.001

@@ -1,0 +1,20 @@
+Genes,C. elegans,Soleus
+Both upregulated
+Mcm2,0.4,0.38
+Mpv17,0.39,0.32
+Ppm1k,0.33,0.58
+Both downregulated
+Rab20,−0.4,−0.48
+Thbd,−0.64,−0.45
+Opposite regulation
+Nsmce1,0.5,−0.41
+Tmem205,0.39,−0.78
+Shq1,0.36,−0.36
+Exosc3,0.33,−0.34
+Ppp4r4,−0.32,1.63
+Syt12,−0.32,0.72
+Dpp4,−0.36,0.55
+Ric3,−0.37,0.49
+Htr7,−0.38,0.77
+Plce1,−0.5,0.39
+Pde4b,−0.51,0.73

@@ -1,0 +1,19 @@
+Phylum/class (number of genera),Number of pyrosequences that are retrieved from:
+Number of OTU,ISS HEPA total,ISS HEPA viable,ISS Debris total,ISS Debris viable,JPL-SAF Debris total,JPL-SAF Debris viable,JPL-103 Debris total,JPL-103 Debris viable
+Ascomycota
+Dothideomycetes (25),46,116,,24,2681,2997,2089,1184,2362
+Eurotiomycetes (7),24,508,,6278,1537,265,269,7,63
+Leotiomycetes (2),2,,,,,16,,,
+Arthoniomycetes,8,,,,,51,29,1,
+No rank,1,,,,,3,,,
+Saccharomycetes (5),6,2536,,2859,,46,5,,
+Sordariomycetes (11),12,,,233,,66,34,,
+Basidiomycota
+Agaricomycetes (3),4,,,148,,8,,,
+Cystobasidiomycetes (3),7,,,,,18,43,424,1020
+Exobasidiomycetes,6,498,,555,,,,3,
+Microbotryomycetes (3),8,108,,401,,280,111,8,
+Pucciniomycetes,3,,,,,2,18,,
+Tremellomycetes (5),23,,,11,4110,204,175,90,186
+Chytridiomycetes,2,,,,,4,1,,
+Early diverging fungal lineages,1,,,,,5,3,,

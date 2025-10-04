@@ -1,0 +1,24 @@
+Gene Symbol,Gene Name,Fold Regulation
+Cdkn1a,Cyclin-dependent kinase inhibitor 1A (P21),6.80
+Myc,Myelocytomatosis oncogene,3.91
+Hif1a,"Hypoxia inducible factor 1, alpha subunit",1.58
+Pmaip1,Phorbol-12-myristate-13-acetate-induced protein 1,1.54
+Prkca,"Protein kinase C, alpha",1.49
+Trp53bp2,Transformation related protein 53 binding protein 2,1.41
+Apex1,Apurinic/apyrimidinic endonuclease 1,1.28
+Ercc1,"Excision repair cross-complementing rodent repair deficiency,complementation group 1",1.27
+Foxo3,Forkhead box O3,1.27
+Mlh1,MutL homolog 1 (E. coli),1.19
+Pten,Phosphatase and tensin homolog,1.18
+Xrcc5,X-ray repair complementing defective repair in Chinese hamster cells 5,1.13
+Atr,Ataxia telangiectasia and rad3 related,1.10
+Cdk4,Cyclin-dependent kinase 4,−1.16
+Apaf1,Apoptotic peptidase activating factor 1,−1.41
+Tnfrsf10b,"Tumor necrosis factor receptor superfamily, member 10b",−1.92
+Chek2,CHK2 checkpoint homolog (S. pombe),−2.15
+Traf1,Tnf receptor-associated factor 1,−2.25
+Jun,Jun oncogene,−2.31
+Pttg1,Pituitary tumor-transforming gene 1,−2.42
+Btg2,"B-cell translocation gene 2, anti-proliferative",−3.50
+Cdk1,Cyclin-dependent kinase 1,−4.11
+Tnf,Tumor necrosis factor,−9.86

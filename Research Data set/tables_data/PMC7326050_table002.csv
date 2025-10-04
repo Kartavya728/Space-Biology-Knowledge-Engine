@@ -1,0 +1,21 @@
+Gene name,ATCC 1015 gene (ASPNIDRAFT2_),CBS 513.88 gene,JSC-093350089 variant,Mutation type,SM(s) produced
+pyrD,1160356,An15g00470,,,Pyranonigrin A
+pyrC,1154752,An18g00490,• Chr20.1_A99382AACC• Chr20.1_TCCA99386T• Chr20.1_TG99395T• Chr20.1_CA99512C• Chr20.1_C99516CT• Chr20.1_G99534GA• Chr20.1_TGC99735T• Chr20.1_A99738AAT• Chr20.1_T99840TA• Chr20.1_T99874TA• Chr20.1_AT99901A• Chr20.1_A99950AGC• Chr20.1_TAA99951T• Chr20.1_T99991TG• Chr20.1_AG100072A• Chr20.1_T100104TATC• Chr20.1_T100138TTAG• Chr20.1_AG100245A• Chr20.1_TATAG100617T• Chr20.1_G101007GA• Chr20.1_AAGG101585A,• Intergenic INDEL (downstream)• Intergenic INDEL (downstream)• Intergenic INDEL (downstream)• Intergenic INDEL (downstream)• Intergenic INDEL (downstream)• Intergenic INDEL (downstream)• Intergenic INDEL (downstream)• Intergenic INDEL (downstream)• Intergenic INDEL (downstream)• Intergenic INDEL (downstream)• Intergenic INDEL (downstream)• Intergenic INDEL (downstream)• Intergenic INDEL (downstream)• Intergenic INDEL (downstream)• Intergenic INDEL (downstream)• Intergenic INDEL (downstream)• Intergenic INDEL (downstream)• Intergenic INDEL (downstream)• Intergenic INDEL (downstream)• Intron INDEL• Intron INDEL,
+pyrB,1188024,An18g00500,,,
+pyrE,1139558,An18g00510,,,
+pyrA*,1128344,An18g00520,Chr20.1_TGA121427T,Intergenic INDEL (downstream),
+""
+ktnA,1222896,An04g09510,• Chr18.1_A6084T• Chr18.1_T6157C• Chr18.1_A6299G,• Intron SNP• Intron SNP• Intron SNP,Kotanin
+ktnB,1126846,An04g09520,,,
+ktnS*,1126849,An04g09530,,,
+ktnC,1094747,An04g09540,,,
+ktnD,1167408,An04g09540,• Chr18.1_C21654G• Chr18.1_G21655T• Chr18.1_T21665C• Chr18.1_GA23281G• Chr18.1_TGGACTTCATTGAC23400T• Chr18.1_AG23497A,• Synonymous SNP• Missense SNP• Missense SNP• Intergenic INDEL (upstream)• Promoter region INDEL• Intergenic INDEL (upstream),
+""
+epaC,1114645,An09g01800,• Chr1.1_CT423438C• Chr1.1_T423443TA• Chr1.1_GC425206G,• Intergenic INDEL (downstream)• Intergenic INDEL (downstream)• Intergenic INDEL (upstream),Pestalamides
+epaB,1155683,An09g01820,Chr1.1_T426759TAA,3′ UTR INDEL,
+orf3,1114655,An09g01840,Chr1.1_A430682AC,Intergenic INDEL (upstream),
+orf2,1080155,An09g01850,Chr1.1_AC432567A,Intergenic INDEL (downstream),
+epaA*,1080089,An09g01860,• Chr1.1_T436165G• Chr1.1_T439007G• Chr1.1_TC443237T• Chr1.1_GT443250G• Chr1.1_C443255CT,• Missense SNP• Missense SNP• Intergenic INDEL (downstream)• Intergenic INDEL (downstream)• Intergenic INDEL (downstream),
+orf1 (azaJ),1114656,An09g01880,• Chr1.1_TTTA446289T• Chr1.1_C447318G• Chr1.1_CAA447488C• Chr1.1_A447492AAG• Chr1.1_T447561TG,• 3′ UTR INDEL• Synonymous SNP• 5′ UTR INDEL• 5′UTR INDEL• Intergenic INDEL (upstream),
+""
+albA*,1099425,An09g05730,• Chr1.1_T1340832TTA• Chr1.1_C1346092T,• Intergenic INDEL (downstream)• Synonymous SNP,"Aurasperones, fonsecinones, asperpyrones, and melanin"

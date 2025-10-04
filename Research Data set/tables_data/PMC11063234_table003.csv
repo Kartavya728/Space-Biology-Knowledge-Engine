@@ -1,0 +1,21 @@
+Protein name,Log fold change,p-value,Protein description,Function
+ACOC1,−1.3977,3.27E-02,Aconitase,Cellular iron homeostasis
+ARK72,−1.5265,1.82E-02,Aflatoxin B1 aldehyde reductase member 2,Doxorubicin metabolic processes
+GLYC,−1.6638,3.79E-02,Serine hydroxymethyltransferase,Serine and glycine biosynthetic processes
+MUP20,1.1216,5.92E-06,Major urinary protein 20,Olfactory learning
+SAA1,1.5990,6.61E-04,Serum amyloid A-1 protein,Acute-phase response; cholesterol metabolic process
+HVM34,2.5801,2.27E-03,Ig heavy chain V region AMPC1,Complement activation; innate immune response
+KV5A9,1.5679,3.18E-03,Ig kappa chain V-V region L7 (Fragment),Adaptive immune response
+KV3A1,1.3757,5.73E-03,"Ig kappa chain V-III region PC 2880/PC 1,229",Adaptive immune response
+HYES,−1.6366,6.40E-03,Bifunctional epoxide hydrolase 2,Cholesterol homeostasis; production involved in inflammatory response
+ARLY,−1.6800,6.06E-03,Argininosuccinate lyase (ASAL),Arginine biosynthetic process via ornithine
+AL9A1,−1.7514,6.96E-03,4-trimethylaminobutyraldehyde dehydrogenase,Carnitine biosynthetic process
+FAS,−1.4609,7.53E-03,Fatty acid synthase,Acetyl-CoA metabolic process
+BHMT1,−1.5636,6.06E-03,Betaine-homocysteine S-methyltransferase 1,Amino-acid betaine catabolic process
+GPDA,−1.3218,3.06E-2,glycerol-3-phosphate dehydrogenase,Carbohydrate metabolism; gluconeogenesis
+GSTT3,−1.4132,4.09E-04,Glutathione S-transferase theta-3,Glutathione metabolic process
+GSTM6,−2.1219,1.51E-02,Glutathione S-transferase Mu 6,Glutathione metabolic process
+GRHPR,−1.3113,2.02E-02,Glyoxylate reductase,Dicarboxylic acid metabolic process
+HEM2,−1.5299,1.58E-02,Delta-aminolevulinic acid dehydratase,"Cellular response to ions (lead, aluminum, cadmium)"
+HUTH,−1.8821,9.97E-03,Histidine ammonia-lyase (Histidase),Histidine catabolic process
+S14L2,−1.3317,1.33E-02,SEC14-like protein 2,Acute phase response

@@ -1,0 +1,30 @@
+NFWR,Limb sampled,Colony Forming Units,Closest match
+134,Right Back,90,Cladisporiumspecies
+,,,Penicilliumspecies
+,,,Hyphomycetesspecies
+,Right Front*,30,Cladosporiumspecies
+135,Right Back,30,Penicilliumspecies
+,Right Front,30,Hyphomycetesspecies
+,Left Back,690,Cladosporiumspecies (3 different species)
+,,,Exophiliaspecies
+,,,Hyphomycetesspecies
+,Left Front,30,Hyphomycetesspecies
+136,Left Front,30,Cladosporiumspecies
+,Left Back,30,Penicilliumspecies
+,Right Back,60,Hyphomycetesspecies
+,,,Cladosporiumspecies
+137,Right Front,30,Penicilliumspecies
+,Right Back,150,Penicilliumspecies
+,Left Front,180,Cladosporiumspecies (2 different species)
+,,,Hyphomycetesspecies (2 different species)
+,,,Aureobasidiumspecies
+138,Left Back*,60,Acremoniumspecies
+139,Lower Lip,30,Cladosporiumspecies
+,Left Back,1100,Streptomycetesspecies
+,,,Cladosporiumspecies (2 different species)
+,Left Front,210,Penicilliumspecies
+,,,Cladosporiumspecies
+,Right Front,960,Penicilliumspecies
+,,,Cladosporiumspecies
+,,,Streptomycetesspecies
+,Right Back,30,Penicilliumspecies

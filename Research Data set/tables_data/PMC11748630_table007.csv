@@ -1,0 +1,4 @@
+Pathways,Number of CRISP genes,Number of KEGG pathway genes,Fold enrichment,Enrichment FDR
+Cholesterol metabolism,4,49,45.2,< 0.001
+Fatty acid metabolism,2,62,19.8,0.049
+Alcoholic liver disease,3,139,15.8,0.01

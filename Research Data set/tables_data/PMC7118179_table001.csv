@@ -1,0 +1,96 @@
+Bin name,Taxonomya,GenBank assembly accession no.,Total length (bp),N50(bp),GC content (%),Completeness (%),Redundancy (%)
+Bin_1_1,Mycobacteriumsp. AWPF1,SSGB00000000,"2,707,225","10,968",68.44,38.85,0.72
+Bin_1_3,Mycobacteriumsp. AWPF2,SSGA00000000,"4,217,119","13,813",68.81,60.43,3.6
+Bin_1_5,UnclassifiedActinobacteriafamilyUBA10799bacterium AWPF1,SSET00000000,"3,552,223","35,771",69.31,84.17,8.63
+Bin_1_8,UnclassifiedActinobacteriafamilyUBA10799bacterium AWPF2,SSES00000000,"1,125,909","10,906",67.03,22.3,9.35
+Bin_10_1,Polynucleobactersp.,SSFP00000000,"1,928,064","15,906",42.88,78.42,7.19
+Bin_11_1,Tolumonassp.,SSEX00000000,"1,832,732","10,968",47.81,53.24,2.88
+Bin_11_4,UnclassifiedCyclobacteriaceaebacterium,SSEN00000000,"2,496,402","8,305",45.51,36.69,9.35
+Bin_11_5,CyclobacteriaceaeELB16-189 sp.,VIGN00000000,"1,066,491","8,282",43.86,36.69,12.23
+Bin_12_3,UnclassifiedHyphomicrobiaceaebacterium,SSEH00000000,"2,999,406","8,617",55.82,7.19,12.23
+Bin_14_1,Novosphingobiumsp.,SSFU00000000,"1,517,683","8,392",64.2,29.5,0.72
+Bin_14_3,UnclassifiedGammaproteobacteriabacterium AWPF1,SSEJ00000000,"2,472,121","8,119",63.57,51.08,14.39
+Bin_14_4,Pseudoxanthomonassp.,SSFJ00000000,"1,848,156","8,064",67.96,34.53,0
+Bin_14_5,UnclassifiedGammaproteobacteriabacterium AWPF2,SSEI00000000,"1,859,286","10,791",62.7,43.17,41.73
+Bin_15_1,Nitrosomonassp. AWPF2,SSFW00000000,"2,557,120","18,443",43.85,83.45,1.44
+Bin_15_2,BurkholderiaceaeUBA7693 sp.,SSGW00000000,"2,650,165","9,223",49.03,22.3,0.72
+Bin_15_3,MoranbacteralesUBA1568 sp.,SSGE00000000,"580,840","8,401",50.03,48.2,2.88
+Bin_15_5,UnclassifiedMoranbacteralesUBA1568 sp. AWPF1,SSEE00000000,"880,789","8,806",45.6,66.91,19.42
+Bin_15_6,UnclassifiedMoranbacteralesUBA1568 sp. AWPF2,SSED00000000,"1,461,468","7,107",48.36,52.52,15.83
+Bin_17_3,UnclassifiedRhodocyclaceaebacterium AWPF3,SSDZ00000000,"3,614,409","8,707",60.2,60.43,10.79
+Bin_19_1,Ottowiasp. AWPF1,SSFT00000000,"2,464,482","7,364",68.69,17.27,2.16
+Bin_19_2,Ottowiasp. AWPF2,SSFS00000000,"2,330,319","8,499",69.66,42.45,6.47
+Bin_19_5,Thermomonassp.,SSFC00000000,"1,187,954","11,860",67.14,38.13,0.72
+Bin_2_1,UnclassifiedThermomicrobialesfamily UBA6265 bacterium,SSDT00000000,"2,680,321","10,114",60.7,49.64,7.91
+Bin_20_1,Niabellasp.,SSFZ00000000,"1,214,478","6,588",38.77,33.81,7.91
+Bin_21_1,Zoogloeasp.,SSDR00000000,"2,929,105","10,734",64.98,55.4,1.44
+Bin_21_3,Limnohabitanssp. AWPF1,SSGJ00000000,"1,670,846","9,983",63.22,19.42,0.72
+Bin_23_2,FlavobacteriumGCA_002422095.1,SSGM00000000,"1,906,623","10,479",32.59,66.19,9.35
+Bin_23_3,Flavobacteriumsp.,SSGL00000000,"2,075,117","12,249",32.14,33.09,2.88
+Bin_24_1,Rhodoferaxsp.,SSFF00000000,"3,654,053","136,395",62.3,99.28,7.19
+Bin_24_2,Limnohabitanssp. AWPF2,SSGI00000000,"2,967,058","22,882",63.25,73.38,5.04
+Bin_24_4,Pseudorhodobactersp.,SSFK00000000,"3,302,298","8,369",63.29,49.64,10.79
+Bin_25_1,UnclassifiedRhodocyclaceaebacterium AWPF1,SSDY00000000,"2,178,082","10,805",64.25,62.59,2.16
+Bin_25_2,FlavobacterialesPHOS-HE28 sp.,SSGN00000000,"4,081,487","21,145",62.07,76.98,7.91
+Bin_25_4,Dechloromonassp.,SSGP00000000,"3,029,215","19,114",62.22,58.99,5.76
+Bin_26_1,UnclassifiedSphingomonadalesbacterium,SSDV00000000,"3,053,326","60,967",64.22,99.28,0.72
+Bin_26_2,Mycobacterium mageritense,SSGC00000000,"7,650,754","60,194",66.88,79.14,5.76
+Bin_26_3,UnclassifiedDongiaceaebacterium,SSEL00000000,"5,719,975","142,361",61.3,99.28,5.04
+Bin_27_1,Thauera aminoaromatica,SSFD00000000,"5,236,562","14,873",67.89,73.38,8.63
+Bin_27_2,UnclassifiedBurkholderiaceaebacterium,SSER00000000,"3,032,333","8,502",67.32,22.3,0.72
+Bin_29_1,UnclassifiedMycobacteriumbacterium,SSEC00000000,"6,629,733","18,228",66.91,85.61,7.91
+Bin_29_2,Mycobacterium arupense,SSGD00000000,"5,009,268","45,297",66.94,99.28,7.19
+Bin_3_3,Chryseobacterium cucumeris,SSGV00000000,"2,503,246","11,245",36.61,22.3,0
+Bin_3_4,UnclassifiedChitinophagaceaebacterium,SSEO00000000,"1,501,328","17,275",33.51,50.36,0.72
+Bin_3_8,UnclassifiedBacteroidiabacterium,SSEU00000000,"2,309,706","6,910",35.54,57.55,19.42
+Bin_30,UnclassifiedBurkholderiaceaebacterium AWPF1,SSEQ00000000,"6,171,595","8,294",70.29,47.48,4.32
+Bin_31_2,Aeromicrobiumsp.,SSHC00000000,"1,861,791","18,902",58.23,82.73,1.44
+Bin_34,UnclassifiedDesulfurellabacterium,SSEM00000000,"6,288,683","10,284",58.83,3.6,5.04
+Bin_35_1,Pseudomonas monteilii,SSFN00000000,"5,048,709","26,274",63.26,51.8,2.16
+Bin_35_2,ThiobacillusGCA_002343685.1,SSFB00000000,"3,564,805","105,954",62.36,86.33,5.76
+Bin_35_3,UnclassifiedNevskiaceaebacterium AWPF1,SSEB00000000,"3,246,569","241,139",65.99,86.33,2.16
+Bin_36_2,CrocinitomicaceaeUBA5422 sp. AWPF1,SSGS00000000,"1,134,521","8,082",36.56,17.27,0
+Bin_38_1,Nitrosomonassp. AWPF1,SSFV00000000,"2,613,687","22,274",44.56,57.55,0
+Bin_39_1,Pelomonassp.,SSFQ00000000,"3,131,775","9,407",69.9,30.22,2.16
+Bin_4_1,Cupriavidussp.,SSGQ00000000,"3,464,703","7,277",64.08,16.55,2.88
+Bin_4_3,Rhizobiumsp. AWPF1,SSFH00000000,"4,147,977","10,631",61.05,18.71,1.44
+Bin_42_2,Methylophilus methylotrophus,SSGG00000000,"1,188,656","14,601",49.11,28.06,2.88
+Bin_43_1,Chryseobacteriumsp.,SSGU00000000,"2,092,908","10,855",38.01,44.6,7.91
+Bin_43_5,CrocinitomicaceaeUBA5422 sp. AWPF2,SSGR00000000,"641,979","9,434",42.11,35.25,17.27
+Bin_44_1,BetaproteobacterialesUBA11063sp. AWPF1,SSGY00000000,"2,803,113","14,546",36.96,86.33,2.16
+Bin_45_1,BetaproteobacterialesUBA11063sp. AWPF2,SSGX00000000,"2,467,391","70,519",35.22,79.14,1.44
+Bin_45_4,“CandidatusGracilibacteria” UBA5532 sp.,SSGK00000000,"668,037","10,255",37.87,58.27,0.72
+Bin_48_1,Afipiasp.,SSHB00000000,"3,379,245","12,763",61.87,54.68,2.88
+Bin_48_2,Rhizobiumsp. AWPF2,SSFG00000000,"2,353,640","12,778",60.82,38.13,0.72
+Bin_5_1,Lysobactersp.,SSGH00000000,"4,387,597","162,300",65.61,94.24,5.76
+Bin_5_5,UnclassifiedXanthomonadaceaebacterium,SSEV00000000,"3,535,438","16,226",63.31,47.48,0.72
+Bin_5_7,UnclassifiedRhodocyclaceaebacterium AWPF2,SSDX00000000,"1,708,980","12,103",65.16,33.09,0.72
+Bin_51_4,UnclassifiedSaccharimonadalesUBA4665,SSDW00000000,"818,540","13,215",50.23,61.87,8.63
+Bin_52_1,Pseudomonas alcaligenes,SSFO00000000,"3,682,067","12,539",64.72,71.22,3.6
+Bin_52_2,Pseudomonassp. AWPF1,SSFM00000000,"1,540,019","11,651",61.81,17.27,4.32
+Bin_54_1,Nitrosomonas oligotropha,SSFX00000000,"2,754,397","36,184",49.22,67.63,0.72
+Bin_54_3,NitrosomonasGCA_002083595.1,SSFY00000000,"2,292,023","8,445",48.32,29.5,6.47
+Bin_55_1,46-32 GCA 001898405.1,SSHF00000000,"5,043,020","214,644",44.27,94.96,0
+Bin_55_2,Methylophilussp.,SSGF00000000,"2,747,675","94,685",50.49,66.91,2.16
+Bin_56_1,Thiothrixsp.,SSFA00000000,"4,155,808","145,664",44.77,69.78,3.6
+Bin_56_2,Pedobactersp.,SSFR00000000,"2,341,987","206,071",38.94,98.56,0.72
+Bin_57_1,Rheinheimerasp.,SSFI00000000,"3,863,184","45,966",52.26,63.31,2.88
+Bin_57_2,UBA7239 sp.,SSEW00000000,"1,251,491","7,537",52.91,38.13,9.35
+Bin_59_2,UnclassifiedNevskiaceaebacterium AWPF2,SSEA00000000,"2,177,696","27,134",59.28,27.34,5.04
+Bin_63_2,Unclassified WS6 bacterium,SSDS00000000,"1,242,531","11,680",44.02,34.53,9.35
+Bin_64_3,Romboutsiasp.,SSFE00000000,"381,413","7,806",27.61,45.32,0
+Bin_65,Crocinitomicaceae40-80 sp.,SSGT00000000,"2,395,197","12,217",40.24,70.5,2.16
+Bin_67,UnclassifiedSpirochaetesclassUBA12135bacterium,SSDU00000000,"1,932,890","10,511",31.46,5.04,0
+Bin_68_2,UnclassifiedMoranbacteralesclass UBA1568 bacterium,SSEF00000000,"1,023,203","34,589",53.99,79.14,5.76
+Bin_7_2,UnclassifiedBurkholderiaceaebacterium AWPF2,SSEP00000000,"2,384,147","7,064",63.49,12.95,0.72
+Bin_7_3,Alicycliphilussp.,SSHA00000000,"3,015,590","10,496",66.2,43.17,5.76
+Bin_7_4,Aquabacteriumsp. AWPF1,SSGZ00000000,"1,352,035","7,819",65.11,21.58,0
+Bin_7_5,Pseudomonassp. AWPF2,SSFL00000000,"1,978,447","9,650",63.83,51.08,10.79
+Bin_7_6,Aquabacteriumsp. AWPF2,VKOJ00000000,"2,228,505","10,843",63.58,33.81,2.16
+Bin_71,UnclassifiedLeptospirabacterium,SSEG00000000,"1,795,065","38,625",54.29,6.17,0
+Bin_8_1,Acinetobactersp. AWPF1,SSHE00000000,"2,045,996","23,569",41.75,75.54,2.16
+Bin_8_2,Thiothrixsp. AWPF1,SSEZ00000000,"1,300,697","7,394",44.99,30.22,1.44
+Bin_8_3,Thiothrixsp. AWPF2,SSEY00000000,"2,137,450","7,937",45.31,47.48,16.55
+Bin_8_5,Acinetobactersp. AWPF2,SSHD00000000,"1,422,583","9,315",42.74,74.1,7.19
+Bin_9_3,UnclassifiedElusimicrobiaorder F11 bacterium,SSEK00000000,"2,256,510","6,750",63.91,51.8,10.79
+Bin_9_4,Dokdonellasp.,SSGO00000000,"1,632,646","10,049",62.2,31.65,2.16

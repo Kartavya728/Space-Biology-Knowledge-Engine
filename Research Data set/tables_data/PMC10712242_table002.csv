@@ -1,0 +1,36 @@
+TAIR.ID,Protein ID,Symbol,Root,Shoot
+L2FC,L2FC
+AT4G23560,Endoglucanase 20,,0.86,1.13
+AT5G49360,Beta-D-xylosidase 1,BXL1,0.48,–
+AT4G24510,Protein ECERIFERUM 2,CER2,0.2,0.68
+AT4G32410,Cellulose synthase A catalytic subunit 1 [UDP-forming],CESA1,−0.44,–
+AT5G05170,Cellulose synthase A catalytic subunit 3 [UDP-forming],CESA3,−0.44,–
+AT5G09870,Cellulose synthase A catalytic subunit 5 [UDP-forming],CESA5,−0.52,–
+AT5G64740,Cellulose synthase A catalytic subunit 6 [UDP-forming],CESA6,−0.51,−0.83
+AT5G17420,Cellulose synthase A catalytic subunit 7 [UDP-forming],CESA7,−2.37,–
+AT1G55850,Cellulose synthase-like protein E1,CSLE1,−0.22,−0.33
+AT4G23990,Cellulose synthase-like protein G3,CSLG3,−0.51,–
+AT2G04780,Fasciclin-like arabinogalactan protein 7,FLA7,1.51,1.43
+AT1G03870,Fasciclin-like arabinogalactan protein 9,FLA9,0.73,0.57
+AT2G36250,Tubulin/FtsZ family protein,FTSZ2-1,−0.36,−0.42
+AT5G06680,Gamma-tubulin complex component 3,GCP3,−0.25,−0.45
+AT3G01640,Glucuronokinase 1,GLCAK1,0.28,–
+AT4G20260,Plasma membrane-associated cation-binding protein 1,PCAP1,0.49,0.52
+AT5G44610,Plasma membrane-associated cation-binding protein 2,PCAP2,1.08,1.47
+AT3G02230,UDP-arabinopyranose mutase 1,RGP1,0.22,–
+AT5G15650,UDP-arabinopyranose mutase 2,RGP2,0.56,–
+AT3G05530,26S proteasome regulatory subunit 6A homolog A,RPT5A,0.35,0.77
+AT3G16640,Translationally controlled tumor protein 1,TCTP1,0.38,–
+AT3G10220,Tubulin-folding cofactor B,TFCB,−0.4,–
+AT1G64740,Tubulin alpha-1 chain,TUBA1,–,−0.78
+AT5G19770,Tubulin alpha-5 chain,TUBA5,–,−0.3
+AT5G62690,Tubulin beta-2 chain,TUBB2,0.23,–
+AT5G44340,Tubulin beta-4 chain,TUBB4,0.36,–
+AT2G29550,Tubulin beta-7 chain,TUBB7,−0.41,–
+AT5G23860,Tubulin beta-8 chain,TUBB8,0.43,–
+AT4G20890,Tubulin beta-9 chain,TUBB9,0.6,–
+AT5G05620,Tubulin gamma-2 chain,TUBG2,−0.31,–
+AT1G76030,V-type proton ATPase subunit B1,VHA-B1,0.16,0.23
+AT2G41740,Villin-2,VLN2,0.39,0.6
+AT3G57410,Villin-3,VLN3,0.34,1.12
+AT4G30160,Villin-4,VLN4,0.39,0.49

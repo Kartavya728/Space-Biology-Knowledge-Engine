@@ -1,0 +1,14 @@
+,GeneLab Study,Tissue,Sequencing Type,Strain,Mission/Flight,Flight Duration
+A.,GLDS-4,Thymus,Microarray,C57BL/6NTac,STS-118,13-days (12.76 day)
+GLDS-244,Thymus,RNA-sequencing,C57BL/6NTac,RR-6 (SpaceX-13),"29-days (n= 9, LAR);53–56-days (n= 10, ISS terminal)"
+GLDS-245,Liver,RNA-sequencing,C57BL/6NTac,RR-6 (SpaceX-13),"29-days (n= 9, LAR);53–56-days (n= 10, ISS terminal)"
+GLDS-246,Spleen,RNA-sequencing,C57BL/6NTac,RR-6 (SpaceX-13),"29-days (n= 9, LAR);53–56-days (n= 10, ISS terminal)"
+GLDS-288,Spleen,RNA-sequencing,C57BL/6J (flight); Charles RiverLaboratories Japan (GC),TCU (SpaceX-9),35-days
+GLDS-289,Thymus,RNA-sequencing,C57BL/6J (flight); Charles RiverLaboratories Japan (GC),"TCU (SpaceX-9, MHU-1; SpaceX-12, MHU-2)",35-days MHU-1;30-days MHU-2
+,GeneLab Study,Age at Initiation,Age at Euthanasia,Sex,Sample Size (n/Cohort),Controls,Collection Location
+B.,GLDS-4,~6.5-weeks,8-weeks,n/a,FLT (n= 4);GC (n= 4),Synchronous Ground Controls (GC),Ground post-flight
+GLDS-244,32-weeks,36-weeks LAR;44-weeks ISS terminal;36-weeks LAR/ISS terminal Baseline GC;41-weeks LAR GC;44-weeks ISS Terminal GC,Female,LAR (n= 9);ISS terminal (n= 10);Baseline LAR (n= 10);Baseline ISS Terminal (n= 9);LAR GC (n= 9);ISS Terminal GC (n= 10),"Baseline(LAR, ISS terminal);synchronous GC(LAR, ISS terminal)",4-days post-flight (LAR);53–56-day In-flight(ISS terminal)
+GLDS-245,32-weeks,36-weeks LAR;44-weeks ISS terminal;36-weeks LAR/ISS terminal Baseline GC;41-weeks LAR GC;44-weeks ISS Terminal GC,Female,LAR (n= 9);ISS terminal (n= 10);Baseline LAR (n= 10);Baseline ISS Terminal (n= 9);LAR GC (n= 9);ISS Terminal GC (n= 10),"Baseline(LAR, ISS terminal);synchronous GC(LAR, ISS terminal)",4-days post-flight (LAR);53–56-day In-flight(ISS terminal)
+GLDS-246,32-weeks,36-weeks LAR;44-weeks ISS terminal;36-weeks LAR/ISS terminal Baseline GC;41-weeks LAR GC;44-weeks ISS Terminal GC,Female,LAR (n= 9);ISS terminal (n= 10);Baseline LAR (n= 10);Baseline ISS Terminal (n= 9);LAR GC (n= 9);ISS Terminal GC (n= 10),"Baseline(LAR, ISS terminal);synchronous GC(LAR, ISS terminal)",4-days post-flight (LAR);53–56-day In-flight(ISS terminal)
+GLDS-288,8-weeks,12-weeks,Male,"Spaceflight (MG,n= 3);Spaceflight w/centrifugation(AG,n= 3);Synchronous (GC,n= 3)",Spaceflight w/centrifugation; Synchronous GC,Ground post-flight
+GLDS-289,8-weeks MHU-1;9-weeks MHU-2,12-weeks,Male,"Spaceflight (MG, MHU-1,n= 3);Spaceflight w/centrifugation(AG, MHU-1,n= 3);Synchronous (GC, MHU-1,n= 3);Spaceflight (MG, MHU-2,n= 3);Spaceflight w/centrifugation(AG, MHU-2,n= 3);Synchronous (GC, MHU-2,n= 3)","Spaceflight w/centrifugation(AG, MHU-1);Synchronous(GC, MHU-1);Spaceflight w/centrifugation(AG, MHU-2);Synchronous(GC, MHU-2)",Ground post-flight

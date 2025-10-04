@@ -1,0 +1,15 @@
+Level1,Level2,Risk Ratio,Prob > Chisq
+Hours 1–24 Post-infection
+1g-water,1g-asparaginase,1.3352328,0.3485
+LSMMG-asparaginase,1g-asparaginase,5.5078408,<.0001∗
+LSMMG-asparaginase,1g-water,4.125004,<.0001∗
+LSMMG-water,1g-asparaginase,5.5609204,<.0001∗
+LSMMG-water,1g-water,4.1647571,<.0001∗
+LSMMG-water,LSMMG-asparaginase,1.0096371,0.9766
+Hours 12–24 Post-infection
+1g-water,1g-asparaginase,1.4371124,0.3784
+LSMMG-asparaginase,1g-asparaginase,1.4095858,0.4001
+LSMMG-water,1g-asparaginase,4.1156768,0.0018∗
+LSMMG-water,1g-water,2.8638518,0.0134∗
+LSMMG-water,LSMMG-asparaginase,2.9197774,0.0197∗
+1g-water,LSMMG-asparaginase,1.0195281,0.9627

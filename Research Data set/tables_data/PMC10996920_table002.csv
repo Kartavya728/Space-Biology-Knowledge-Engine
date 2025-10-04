@@ -1,0 +1,12 @@
+Dataset,Total N,Sequencedn,Treatment Group,Sequencedn
+Normal mouse,12,"Twelve animals in three pools, each containing four spleens",N/A,Three pooled samples each containing four unique mouse spleens
+CASIS,6,6,FlightGround,Three individual mouse spleensThree individual mouse spleens
+TARDISa,80,"Spleen, 32BM, 24",Loaded saline,Four individual mouse spleens; three individual mouse BM
+Loaded CpG1826,Four individual mouse spleens; three individual mouse BM
+Loaded TT,Four individual mouse spleens; three individual mouse BM
+Loaded TT + CpG1826,Four individual mouse spleens; three individual mouse BM
+Loaded saline,Four individual mouse spleens; three individual mouse BM
+Loaded CpG1826,Four individual mouse spleens; three individual mouse BM
+Loaded TT,Four individual mouse spleens; three individual mouse BM
+Loaded TT + CpG1826,Four individual mouse spleens; three individual mouse BM
+Hypervaccinated,6,"Six animals in three pools, each containing the spleen and BM from two animals",N/A,"Three pooled samples, each containing the spleen and BM from two unique animals"

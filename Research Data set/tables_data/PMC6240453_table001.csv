@@ -1,0 +1,22 @@
+Upregulated,Downregulated
+GO term,Description,FDR,GO term,Description,FDR
+GO:0010876,Lipid localization,4.00E‐16,GO:0051726,Regulation of cell cycle,3.70E‐06
+GO:0006869,Lipid transport,1.20E‐07,GO:0007049,Cell cycle,3.90E‐06
+GO:0042221,Response to chemical stimulus,8.80E‐07,GO:0065004,Protein‐DNA complex assembly,7.50E‐05
+GO:0009698,Phenylpropanoid metabolic process,1.10E‐05,GO:0031497,Chromatin assembly,7.50E‐05
+GO:0010054,Trichoblast differentiation,1.80E‐05,GO:0006323,DNA packaging,0.0001
+GO:0006810,Transport,2.10E‐05,GO:0007166,Cell surface receptor–linked signaling pathway,0.00021
+GO:0010015,Root morphogenesis,2.10E‐05,GO:0006333,Chromatin assembly or disassembly,0.0003
+GO:0051234,Establishment of localization,2.20E‐05,GO:0007167,Enzyme‐linked receptor protein signaling pathway,0.00046
+GO:0010053,Root epidermal cell differentiation,3.70E‐05,GO:0007169,Transmembrane receptor protein tyrosine kinase signaling pathway,0.00046
+GO:0006725,Cellular aromatic compound metabolic process,4.30E‐05,GO:0022402,Cell cycle process,0.00063
+GO:0051179,Localization,4.80E‐05,GO:0051301,Cell division,0.00067
+GO:0050896,Response to stimulus,7.20E‐05,GO:0006996,Organelle organization,0.0015
+GO:0009699,Phenylpropanoid biosynthetic process,8.80E‐05,GO:0022607,Cellular component assembly,0.0024
+GO:0019748,Secondary metabolic process,0.0001,GO:0007010,Cytoskeleton organization,0.0034
+GO:0048469,Cell maturation,0.00011,GO:0048366,Leaf development,0.0055
+GO:0048765,Root hair cell differentiation,0.00011,GO:0044085,Cellular component biogenesis,0.0059
+GO:0048764,Trichoblast maturation,0.00011,GO:0016043,Cellular component organization,0.0067
+GO:0009664,Plant‐type cell wall organization,0.00015,GO:0006259,DNA metabolic process,0.0068
+GO:0048468,Cell development,0.00016,GO:0006325,Chromatin organization,0.0073
+GO:0022622,Root system development,0.00023,GO:0048827,Phyllome development,0.0088

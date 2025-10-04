@@ -1,0 +1,31 @@
+Samplea,Species identified,NCBI accession no. of type strain,Type strain,ANI with type strain (%),CheckM completeness (%),Identified pipeline (MetaSPAdes and metaWRAP),Location,Temperature,Relative humidity,Radiation measurements (TEPCb; µGy; total dose/day session),Sampling date
+F1-2P,Enterobacter bugandensis,NZ_LT992502.1,EB-247,98.62,99.37,Yes,Waste and hygiene compartment,22.9,40.20,268,3/4/15
+F1-2P,Klebsiella quasipneumoniae,CCDF00000000.1,01A030,96.60,99.40,MetaWRAP,Waste and hygiene compartment,22.9,40.20,268,3/4/15
+F1-4P,Staphylococcus aureus,NZ_CP035101.1,ATCC 12600,98.25,90.81,MetaSPAdes,Surface of the dining table,22.9,40.20,268,3/4/15
+F1-5P,Pantoea brenneri,MLFN00000000.1,LMG 24534,99.13,100.00,Yes,"US node 1, zero-G stowage rack",26.0,40.20,268,3/4/15
+F1-7P,Methylobacterium ajmalii,GCF_016613415.1,IF7SW-B2,99.98,100.00,MetaWRAP,Overhead 3 panel surface of the Materials Science Research Rack 1,22.2,40.20,268,3/4/15
+F1-8P,Microbacterium aurum,NZ_BCWI00000000.1,NBRC 15708,95.95,94.11,Yes,Crew quarters-2 bump-out exterior aft wall,22.6,40.20,268,3/4/15
+F2-1P,Acinetobacter pittii,BBST00000000.1/,DSM 25618,98.26,100.00,MetaSPAdes,Port panel of the cupola,22.8,39.25,380,5/15/15
+F2-1P,Kocuria palustris,NZ_JAFBCR000000000.1,DSM 11925,98.87,100.00,MetaSPAdes,Port panel of the cupola,22.8,39.25,380,5/15/15
+F2-2P,Staphylococcus saprophyticus,PPRA00000000.1/,CCUG 38042,99.62,99.44,MetaSPAdes,Waste and hygiene compartment,22.8,39.25,380,5/15/15
+F2-5P,Paenibacillus polymyxa,NZ_CP049783.1,DSM 36,98.34,99.56,Yes,"US node 1, zero-G stowage rack",24.7,39.25,380,5/15/15
+F2-5P,Pantoea brenneri,MLFN00000000.1,LMG 24534,99.13,100.00,Yes,"US node 1, zero-G stowage rack",24.7,39.25,380,5/15/15
+F2-7P,Bacillus velezensis,LHCC00000000.1/,KCTC 13012,98.05,90.39,MetaWRAP,Overhead-3 panel surface of the Materials Science Research Rack 1,21.8,39.25,380,5/15/15
+F2-7P,Methylobacterium ajmalii,GCF_016613415.1,IF7SW-B2,99.98,100.00,Yes,Overhead-3 panel surface of the Materials Science Research Rack 1,21.8,39.25,380,5/15/15
+F2-7P,Sphingomonas sanguinis,BCTY00000000,NBRC 13937,99.71,99.42,Yes,Overhead-3 panel surface of the Materials Science Research Rack 1,21.8,39.25,380,5/15/15
+F2-7P,Staphylococcus saprophyticus,NC_007350.1,ATCC 15305,99.55,98.89,MetaWRAP,Overhead-3 panel surface of the Materials Science Research Rack 1,21.8,39.25,380,5/15/15
+F2-8P,Methylorubrum extorquens,NZ_LT962688.1,TK 0001,96.57,98.28,MetaWRAP,Crew quarters-2 bump-out exterior aft wall,22.8,39.25,380,5/15/15
+F2-8P,Paenibacillus polymyxa,NZ_CP049783.1,DSM 36,98.30,99.85,Yes,Crew quarters-2 bump-out exterior aft wall,22.8,39.25,380,5/15/15
+F2-8P,Staphylococcus aureus,NZ_CP035101.1,ATCC 12600,97.48,97.46,Yes,Crew quarters-2 bump-out exterior aft wall,22.8,39.25,380,5/15/15
+F3-1P,Kalamiella piersonii,NZ_RARB00000000.1,IIIF1SW-P2,99.99,89.69,Yes,Port panel of the cupola,20.8,41.25,162,5/5/16
+F3-2P,Cutibacterium acnes,NZ_CP023676.1,ATCC 6919,99.74,91.36,MetaWRAP,Waste and hygiene compartment,21.9,41.25,162,5/5/16
+F3-2P,Staphylococcus saprophyticus,NC_007350.1,ATCC 15305,99.33,96.57,Yes,Waste and hygiene compartment,21.9,41.25,162,5/5/16
+F3-3P,Klebsiella pneumoniae,JOOW00000000,ATCC 13883,96.55,89.66,MetaSPAdes,The foot platform of the Advanced Resistive Exercise Device,21.9,41.25,162,5/5/16
+F3-3P,Klebsiella quasipneumoniae,NZ_CP012252.1,01A030,96.59,98.47,MetaWRAP,The foot platform of the Advanced Resistive Exercise Device,21.9,41.25,162,5/5/16
+F3-3P,Staphylococcus saprophyticus,NC_007350.1,ATCC 15305,99.52,82.39,MetaWRAP,The foot platform of the Advanced Resistive Exercise Device,21.9,41.25,162,5/5/16
+F3-4P,Pantoea dispersa,NZ_SCKT00000000.1,DSM 30073,98.00,99.33,Yes,Surface of the dining table,21.9,41.25,162,5/5/16
+F3-4P,Pantoea dispersa,NZ_SCKT00000000.1,DSM 30073,97.89,92.92,Yes,Surface of the dining table,21.9,41.25,162,5/5/16
+F3-5P,Kalamiella piersonii,NZ_RARB00000000.1,IIIF1SW-P2,99.98,88.94,Yes,"US node 1, zero-G stowage rack",27.2,41.25,162,5/5/16
+F3-7P,Kalamiella piersonii,NZ_RARB00000000.1,IIIF1SW-P2,99.98,87.70,Yes,Overhead-3 panel surface of the Materials Science Research Rack 1,21.4,41.25,162,5/5/16
+F3-7P,Klebsiella aerogenes,NC_015663.1,KCTC 2190,98.52,90.49,MetaWRAP,Overhead-3 panel surface of the Materials Science Research Rack 1,21.4,41.25,162,5/5/16
+F3-8P,Kalamiella piersonii,NZ_RARB00000000.1,IIIF1SW-P2,99.98,89.38,Yes,Crew quarters-2 bump-out exterior aft wall,20.8,41.25,162,5/5/16

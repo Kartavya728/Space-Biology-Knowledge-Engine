@@ -1,0 +1,40 @@
+GO term,# Genes in genome assigned (A),# Genes differentially regulated (B),Percentage of # genes in genome (A/B),Percentage of # genes differentially regulated (B/454)*
+biofilm formation,54,12,22.2%,2.6%
+carbohydrate metabolic process,241,29,12.0%,6.4%
+cell adhesion,45,7,15.6%,1.5%
+cell budding,84,3,3.6%,0.7%
+cell cycle,366,24,6.6%,5.3%
+cell development,82,10,12.2%,2.2%
+cell wall organization,155,12,7.7%,2.6%
+cellular homeostasis,130,12,9.2%,2.6%
+cellular membrane organization,212,9,4.2%,2.0%
+cellular protein modification process,471,32,6.8%,7.0%
+cellular respiration,105,4,3.8%,0.9%
+conjugation,93,7,7.5%,1.5%
+cytokinesis,117,4,3.4%,0.9%
+cytoskeleton organization,177,9,5.1%,2.0%
+DNA metabolic process,307,19,6.2%,4.2%
+filamentous growth,511,51,10.0%,11.2%
+generation of precursor metabolites and energy,167,7,4.2%,1.5%
+growth of unicellular organism as a thread of attached cells,78,6,7.7%,1.3%
+hyphal growth,181,5,2.8%,1.1%
+interspecies interaction between organisms,106,14,13.2%,3.1%
+lipid metabolic process,251,23,9.2%,5.1%
+nucleus organization,47,1,2.1%,0.2%
+organelle organization,838,42,5.0%,9.3%
+pathogenesis,352,15,4.3%,3.3%
+protein catabolic process,152,10,6.6%,2.2%
+protein folding,80,5,6.3%,1.1%
+pseudohyphal growth,52,2,3.8%,0.4%
+regulation of biological process,1356,82,6.0%,18.1%
+response to chemical stimulus,612,49,8.0%,10.8%
+response to drug,399,28,7.0%,6.2%
+response to stress,504,61,12.1%,13.4%
+ribosome biogenesis,286,6,2.1%,1.3%
+RNA metabolic process,669,17,2.5%,3.7%
+signal transduction,189,5,2.6%,1.1%
+translation,387,2,0.5%,0.4%
+transport,951,81,8.5%,17.8%
+transposition,4,1,25.0%,0.2%
+vesicle-mediated transport,288,20,6.9%,4.4%
+vitamin metabolic process,59,5,8.5%,1.1%

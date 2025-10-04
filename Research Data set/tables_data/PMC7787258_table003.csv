@@ -1,0 +1,24 @@
+TERM,Dir.,Description,Count,Fold,FDR
+BP_GO:0022008,up,neurogenesis,83,2.6,<0.001
+BP_GO:0009267,up,cellular response to starvation,21,3.9,<0.001
+BP_GO:0006364,up,rRNA processing,14,5.4,0.001
+BP_GO:0000462,up,SSU-rRNA maturation from tricistronicrRNA,11,6.4,0.005
+MF_GO:0003676,up,nucleic acid binding,56,2.2,<0.001
+MF_GO:0004004,up,ATP-dependent RNA helicase activity,13,4.5,0.03
+MF_GO:0004402,up,histone acetyltransferase activity,11,4.8,0.08
+CC_GO:0032040,up,small subunit processome,17,8.7,<0.001
+CC_GO:0005739,up,nucleolus,36,3.6,<0.001
+CG_GO:0005634,up,nucleus,171,1.6,<0.001
+BP_GO:0055114,dwn,oxidative-reduction process,64,2.4,<0.001
+BP_GO:0006508,dwn,proteolysis,68,2.2,<0.001
+BP_GO:0007156,dwn,homophilic cell adhesion via plasma membrane,13,5.8,0.001
+MF_GO:0020037,dwn,heme binding,26,2.8,0.007
+MF_GO:0004252,dwn,serine-type endopeptidase,41,2,0.02
+MF_GO:0005509,dwn,calcium ion binding,33,2.2,0.04
+CC_GO:0005615,dwn,extracellular space,99,2.5,<0.001
+CC_GO:0005576,dwn,extracellular region,80,2.2,<0.001
+CC_GO:0016021,dwn,integral component of membrane,255,1.4,<0.001
+CC_GO:0005887,dwn,integral component of plasma membrane,59,1.8,0.01
+CC_GO:0031012,dwn,extracellular matrix,25,2.6,0.03
+CC_GO:0005604,dwn,basement membrane,7,9.5,0.04
+KEGG:dme01100,dwn,metabolic pathways,79,1.5,0.01

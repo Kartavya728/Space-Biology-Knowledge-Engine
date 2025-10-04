@@ -1,0 +1,32 @@
+Species (NCBI accession no.),ANI value (%),dDDH (%) (Formula 2)
+,IF7SW-B2T,IIF1SW-B5,IIF4SW-B5,IF7SW-B2T,IIF1SW-B5,IIF4SW-B5
+Methylobacterium ajmaliiIF7SW-B2T(JACWCT000000000),100,100,100,100,100,99.9
+Methylobacterium ajmaliiIIF1SW-B5 (JACWCUOOOOOOOOO),100,100,100,100,100,99.9
+Methylobacterium ajmaliiIIF4SW-B5 (JACWCVOOOOOOOOO),99.7,99.6,100,99.9,99.9,100
+Methylobacterium indicumSE2.11T(GCA_001043895.1),93.0,92.9,92.7,45.8,45.8,46.4
+Methylobacterium currusPR1016A1(GCA_003058325.1),90.5,90.5,90.8,36.4,36.4,37.5
+Methylobacterium terraeKCTC 52904T(GCA_003173755.1),90.4,90.4,90.4,34.8,34.8,35.8
+Methylobacterium plataniJCM 14648T(GCA_001043885.1),90.2,90.3,90.4,35.4,35.5,36.4
+Methylobacterium tarhaniaeDSM 25844T(GCA_001043955.1),89.7,89.5,89.7,34.5,34.6,35.6
+Methylobacterium aquaticum DSM 16371T(GCA_001043915.1),89.0,89.0,89.1,33.6,33.6,34.5
+Methylobacterium variabileDSM 16961T(GCA_001043975.1),88.9,88.8,88.9,33.5,33.6,34.4
+Methylobacterium crusticolaMIMD6T(GCA_003574465.1),84.7,84.9,85.1,26.4,26.4,27.1
+Methylobacterium nodulansORS 2060T(GCA_000022085.1),82.7,82.7,82.8,24.2,24.3,24.9
+Methylobacterium dankookenseDSM 22415T(GCA_902141855.1),81.6,81.5,81.7,22.9,23.0,23.5
+Methylobacterium segetis17J42-11(GCA_004348265.1),81.2,81.2,81.4,22.7,22.8,23.4
+Methylobacterium oxalidisDSM 24028T(GCA_007992195.1),81.2,81.1,81.2,22.3,22.4,23.0
+Methylobacterium duransKCTC 52908T(GCA_003173715.1),81.0,80.9,81.0,22.4,22.5,23.1
+Methylobacterium organophilumDSM 760T(GCA_003096615.1),80.9,80.8,81.2,22.4,22.4,22.9
+Methylobacterium radiotoleransJCM 2831T(GCA_000019725.1),80.9,80.8,81.2,22.2,22.3,22.8
+Methylobacterium brachiatumTX0642T(GCA_003697185.1),80.9,80.9,81.1,22.5,22.5,22.9
+Methylobacterium soliYIM 48816T(GCA_008806385.1),80.8,80.7,80.9,22.2,22.2,22.8
+Methylobacterium pseudosasicolaBL36T(GCA_900114535.1),80.7,80.6,80.8,21.7,21.8,22.3
+Methylorubrum extorqunensTK 0001T(GCA_900234795.1),80.6,80.6,80.9,22.0,22.0,22.5
+Methylobacterium oryzaeDSM 18207T(GCA_000757795.1),80.6,80.4,80.6,21.9,22.0,22.5
+Methylobacterium phyllosphaeraeDSM 19779T(GCA_001936175.1),80.6,80.5,80.6,21.8,21.9,22.4
+Methylobacterium phyllostachyos BL47T(GCA_900103445.1),80.4,80.4,80.4,21.8,21.8,22.3
+Methylobacterium gossipiicola CCM 7572T(GCA_900113485.1),80.3,80.4,80.4,21.8,21.9,22.5
+Methylobacterium haplocladiiDSM 24195T(GCA_007992175.1),80.3,80.2,80.4,21.7,21.8,22.3
+Methylobacterium gnaphaliiDSM 24027T(GCA_007992215.1),79.9,79.8,80.0,21.4,21.5,21.9
+Microvirga subterraneaDSM 14364T(GCA_003350535.1),79.0,78.9,78.8,20.8,20.8,21.2
+Enterovirga rhinocerotisDSM 25903T(GCA_004363955.1),78.1,78.1,78.3,20.8,20.8,20.9

@@ -1,0 +1,4 @@
+Species and strain,NCBI accession no.,Isolation location,No. of scaffolds,Genome size (bp),N50(bp),Median coverage (×),G+C content (%),No. of raw reads (millions),No. of filtered reads used for assembly (millions),No. of coding sequences
+Sphingomonas sanguinisIIF7SW-B3A,JABEOW000000000.1,Lab 3 overhead,53,"3,989,786","149,509","1,102",66.23,30.91,30.67,"3,659"
+Sphingomonas sanguinisIIF7SW-B5,JABEOV000000000.1,Lab 3 overhead,51,"4,398,996","375,188",916,66.08,28.3,28.1,"4,047"
+Sphingomonas paucimobilisFKI-L5-BR-P1,JABEOU000000000.1,KSC-PHSFacleanroom floor,73,"4,572,738","138,969",448,65.53,14.27,14.18,"4,182"

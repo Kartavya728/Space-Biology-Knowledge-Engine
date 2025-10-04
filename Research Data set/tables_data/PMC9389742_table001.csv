@@ -1,0 +1,42 @@
+Protein,Functional description
+Acin1,Mediates apoptotic chromatin condensation following caspase 3 activation without fragmentation
+Aifm1,"Contributes to caspase-independent apoptosis, also activates executioner caspases 7"
+Aifm3,"Implicated in intrinsic, caspase-dependent, apoptosis via reduced mitochondrial membrane potential"
+Apaf1,Forms the apoptosome complex with cytochrome C
+Api5a,Anti-apoptotic factor that inhibits E2f1-induced apoptosis
+Arts,Regulates cytoskeletal organization and is required for Tgf-β induced apoptosis
+Aspp1,Enhances the transactivation and DNA-binding activity of p53 at the promoters of pro-apoptotic genes
+Atm,Senses DNA damage and activates checkpoint signaling in response to apoptotic or genotoxic stressors
+Aven,Inhibits Apaf1-dependent intrinsic apoptosis
+Bcl2L1,Blocks caspase activation and the release of cytochrome C from the mitochondria. BclXL isoform
+Bag1,"Strengthens anti-apoptotic Bcl2 repression, inhibits pro-death PP1R15 phosphatase"
+Bag4,Prevents constitutive signaling via Tnf superfamily receptor member 1A
+Bak,Forms pores in the mitochondrial membrane via oligomerization in response to intracellular stress
+Bax,Upon activation results in cytochrome C release and intrinsic apoptosis
+Birc6,"Targets caspases 3, 7, and 9 as well as mitochondrial-derived Diablo/Smac for proteasome degradation"
+Bnip3,Overcomes Bcl2-type suppression of pro-death effectors Bax/Bak. Induced by hypoxia-dependent signaling
+Casp2,"Activated in the DISC via caspase 8, the intrinsic p53-induced PIDDosome, and is cleaved by caspase 3"
+Casp3,Pro-apoptotic executioner and targets structural proteins and activates effectors to assist in cell breakdown
+Casp7a,Pro-apoptotic executioner and targets structural proteins and activates effectors to assist in cell breakdown
+Casp8,"Pro-apoptotic initiator and activated during extrinsic, receptor-mediated, apoptosis via DISC assembly"
+Casp9,Pro-apoptotic initiator and activated via the apoptosome in response to fatal levels of intracellular stress
+Casp10,"Pro-apoptotic initiator and activated during extrinsic, receptor-mediated, apoptosis via DISC assembly"
+CatLa,"Lysosomal cysteine protease and degrades pro-death CatD, protects against neuronal apoptosis"
+Daxxa,Proposed to mediate apoptosis in response to Fas death receptor stimulation
+Diablo,Promotes caspase-dependent apoptosis and suppresses inhibitors of apoptosis after mitochondrial release
+Diap2,Inhibitor that inactivates effector caspase Drice (caspase 3 homolog) via ubiquitination
+Fadd,Adaptor protein that recruits and activates caspases 8 and 10 in response to Tnfr stimulation
+Hsp7c,Up-expression correlates with reduced apoptosis. Binds LPS. High levels inhibit p53 activation
+Hsp90,"Inducible molecular chaperone that stabilizes Akt kinase, which targets caspase 9 to inhibit apoptosis"
+Jnk,"Phosphorylates transcription factors in response to radiation, including Jun, and promotes apoptosis"
+Jun,"Demonstrated role in promoting apoptosis, antagonized by Bcl2 inhibitor"
+Lbp1,Binds LPS by the lipid A region. Plays a role in establishing the light organ symbiosis
+Lbp2,Binds gram-negative LPS by the lipid A region
+Lbp3,Binds gram-negative LPS by the lipid A region
+Litaf,"p53 inducible, promotes Tnf-α transcription in response to LPS. Inhibits anti-apoptotic Bcl6 and BclXL"
+Mcl1,Promotes cell survival and inhibits intrinsic apoptosis by blocking Bak/Bax
+Pin1,"Promotes cellular survival and inhibits pro-apoptotic factors including Bak, Bax, Fadd, and Daxx"
+RipK1,Activates pro-death Jnk cascade in response to Tnf-α. Also promotes cell survival via NF-κB activation
+Traf2,Promotes p53-dependent apoptosis via Jnk activation. Regulates NF-κB
+Traf6,Activates NF-κB and contributes to apoptosis through Ask1-dependent Jnk activation
+Xiapa,Inhibitor of apoptosis that targets proteins to proteasome for degradation via ubiquitination

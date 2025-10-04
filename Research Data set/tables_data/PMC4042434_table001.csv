@@ -1,0 +1,34 @@
+,Radiation Dose,
+Endpoint,Control,0.5 mGy(primingDose),6 Gy(ChallengingDose),"0.5 mGy, 6Gy",FDR-Adjusted P-value*
+,
+Total Tibia,,,,,
+Length (mm),18.0 ± 0.1,18.0 ± 0.1,17.7 ± 0.1,17.8 ± 0.1,NS
+Bone volume (mm3),16.7 ± 0.7,16.5 ± 0.4,16.5 ± 0.6,16.4 ± 0.5,NS
+Midshaft Tibia(cortical bone),,,,,
+Cross-sectional volume (mm3),0.23 ± 0.02,0.22 ± 0.01,0.22 ± 0.01,0.22 ± 0.02,NS
+Cortical volume (mm3),0.16 ± 0.01,0.15 ± 0.00,0.15 ± 0.01,0.15 ± 0.01,NS
+Marrow volume (mm3),0.07 ± 0.00,0.06 ± 0.00,0.07 ± 0.00,0.07 ± 0.00,NS
+Cortical thickness (μm),242 ± 13,242 ± 6,234 ± 7,233 ± 10,NS
+IMax(mm4),0.09 ± 0.02,0.08 ± 0.00,0.08 ± 0.01,0.08 ± 0.01,NS
+IMin(mm4),0.06 ± 0.01,0.05 ± 0.00,0.05 ± 0.01,0.06 ± 0.01,NS
+Ipolar(mm4),0.15 ± 0.03,0.13 ± 0.01,0.14 ± 0.02,0.14 ± 0.02,NS
+Proximal Tibia Metaphysis(cancellousbone),,,,
+Bone volume/Tissue volume(%),13.9 ± 0.5,11.7 ± 0.7,8.2 ± 0.7a,9.1 ± 0.9,<0.0014
+,,,,,<0.001
+Connectivity density (mm−3),172 ± 12,138 ± 18,43 ± 6a,56 ± 15,4
+,,,,,<0.001
+Trabecular number (mm−1),6.3 ± 0.1,6.1 ± 0.2,4.6 ± 0.2a,4.6 ± 0.2,4
+,,,,,<0.001
+Trabecular thickness (mm),41 ± 1,39 ± 0,45 ± 1a,46 ± 1,4
+,,,,,<0.001
+Trabecular separation (mm),156 ± 3,161 ± 5,216 ± 8a,214 ± 9,4
+Lumbar Vertebra(cancellousbone),,,,
+Bone volume/Tissue volume(%),17.2 ± 0.5,15.7 ± 0.6,14.2 ± 0.6,15.1 ± 1.2,0.093
+,,,,,<0.001
+Connectivity density (mm−3),254 ± 10,258 ± 7,132 ± 9a,144 ± 12,4
+Trabecular number (mm−1),5.4 ± 0.1,5.5 ± 0.1,4.9 ± 0.1a,4.9 ± 0.1,<0.001
+,,,,,4
+,,,,,<0.001
+Trabecular thickness (mm),38 ± 1,37 ± 1,43 ± 1a,44 ± 2,4
+,,,,,<0.001
+Trabecular separation (mm),180 ± 3,179 ± 4,203 ± 5a,202 ± 6,4
