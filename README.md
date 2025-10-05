@@ -1,4 +1,5 @@
-# 🛰️ Space Biology Knowledge Engine
+# 🛰️ Astrogenesis
+Website link: https://space-apps-frontend-black.vercel.app/
 
 > **AI-Powered Analysis Platform for NASA Bioscience Research**  
 > *Transforming 608 NASA publications into actionable insights through advanced AI, knowledge graphs, and interactive exploration*
@@ -278,18 +279,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📞 Contact
-
-**Project Team**: [Your Team Name]  
-**Email**: your.email@example.com  
-**GitHub**: [@yourusername](https://github.com/yourusername)  
-**LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
 
 ---
 
 <div align="center">
 
-### 🌟 **Built with ❤️ for NASA Hackathon 2024** 🌟
+### 🌟 **Built with ❤️ for NASA Hackathon 2025** 🌟
 
 *Transforming space biology research into actionable intelligence*
 
